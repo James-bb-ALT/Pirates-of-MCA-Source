@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/fisherman_sea_blue_tattered_peg_right_leggings"
+  }
+}

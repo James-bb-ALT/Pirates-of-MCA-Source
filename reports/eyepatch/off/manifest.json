@@ -1,0 +1,30 @@
+{
+  "version": "8.0.0-alpha.11",
+  "frames": 23,
+  "files": {
+    "0000_HAT-POSE-idle.png": "0cb1745c13a0466bbec50495e3f94aeb6896bbc09158ab40690766e9972df674",
+    "0001_HAT-POSE-head_turn.png": "bb0ec015fa51bbf9a5bb729b68417066f0c5e60c55cec747f9f59db7e19c1cff",
+    "0002_HAT-POSE-walk.png": "f22a5a055ed81b0b48149f34065131e572d9e3491cd21c122d18faaf64c217e2",
+    "0003_HAT-POSE-run.png": "0125db9fc425121bdfd1dd68330168527e2d05ff556af64f98e1337665c5b899",
+    "0004_HAT-POSE-attack.png": "19da0336ff835bef72a7c459c394323a85ab0e80625e60df7b31dfbc60017f6f",
+    "0005_HAT-POSE-hurt.png": "e47083db3744ffb1bed83168dcebc64efbf88abbdcf4036fcb360e080455af4a",
+    "0006_HAT-POSE-swim.png": "c9fc2410742c36c50c86197730132d5b57c8d65f6294d61a09442c14bf7077c2",
+    "0007_HAT-POSE-sit.png": "6c8d2869ed3cae4b5e6db4b25b6451d860d12532a5d8165adea7ec842335ed73",
+    "0008_HAT-POSE-sleep.png": "4560529a11de3e718e17be6c2408c9b2a9403309719c383ec760d606cd4b7a9a",
+    "0009_EYE-alone-0-front.png": "51d6e6f7f5f165b2ff82aacf154b5d44e0430d967b3b15b8fef2e9546abd9ead",
+    "0010_EYE-alone-0-side.png": "872d1dc1be8198b2acc64019be645990af3896cc6b624b737f5ac4db723eb6a0",
+    "0011_EYE-alone-0-back.png": "a82ae94f87f3e18242a0fc326bdfb3bfbffc7f88d3207309bbf317d225628f50",
+    "0012_EYE-alone-1-front.png": "fc772a8a278e02aa8b2969a31c4536fddcf753c36604728ce4436b08cbb3a3b1",
+    "0013_EYE-alone-1-side.png": "128e7a6b88cb0d88b594907195f71cd2daca92993219c178cabeb9f2465b2311",
+    "0014_EYE-alone-1-back.png": "e1f4ad65788ce1b7dc5c38248bd1a7d9c575f81ab19c6c6904a6715b50b89770",
+    "0015_EYE-combined-0-front.png": "9ab5111d32e05629c546e91645239a24a05edf8fbc3841831346743fc4431281",
+    "0016_EYE-combined-0-side.png": "2f7371b5086b1883a73cfb07cf8776933f10ff8cfa98754e3a4a3a294fa444d6",
+    "0017_EYE-combined-0-back.png": "060d962f9ded9529c45b80a5022b22b6ba4d434b9dfc3035269c4d76aadfbcaa",
+    "0018_EYE-combined-1-front.png": "fce8be07010e06465dc7faa52342e5b958582139579a5d1395bf2cab92fe83ff",
+    "0019_EYE-combined-1-side.png": "960800562e7fdcaa1b54dd7c529478c52ce1619a636c9f7004d7d4f708124e22",
+    "0020_EYE-combined-1-back.png": "88bbd9fbde824bb462b5cd0d00716df1acd02f3aceadd269025d3d554690d048",
+    "0021_EYE-after-chunk-reload.png": "b45c2776e83fc9878499d27f87dab5f391f7529a9f561383e806ec0c7a2931e3",
+    "0022_EYE-after-reopen.png": "4dba12a60b218d832d689e1d9061d6dd2a17c030d6b19ab61e5d91d3091b4cd0",
+    "execution.log": "d44f8b15fd25f7bed2e1af338633ae8fb25cbdb06bfa74790cdca18b7b76f5a0"
+  }
+}

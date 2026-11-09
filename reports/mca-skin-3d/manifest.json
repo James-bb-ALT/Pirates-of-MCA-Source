@@ -1,0 +1,197 @@
+{
+  "mods": [
+    {
+      "file": "3d-armor-0.9.4.2-mod.jar",
+      "id": "armor_3d",
+      "version": "0.9.4.2",
+      "sha256": "c2f2cf8fd2d7a276e63af47fc178faf44c7966a567342863fb94b9e1e45edfd4"
+    },
+    {
+      "file": "bettercombat-fabric-3.2.2+26.2.jar",
+      "id": "bettercombat",
+      "version": "3.2.2",
+      "sha256": "cce827992f517b181bc25c4f6c35e2c75818d29fcdbea90c3838704364b04639"
+    },
+    {
+      "file": "cloth-config-26.2.155.jar",
+      "id": "cloth-config",
+      "version": "26.2.155",
+      "sha256": "def4be7639cd66704f7e304d658ea0f6bf490fb4a6eaa2dbf18ec2c3999d6349"
+    },
+    {
+      "file": "emf_compat_better_combat_fabric_26.2_2.1.0.jar",
+      "id": "emf_compat_better_combat",
+      "version": "2.1.0",
+      "sha256": "aa3bd6d9d7c1f71705745bcafb088894720920f4ae9a63b5e5a7b1f7a994097a"
+    },
+    {
+      "file": "emf_compat_core_fabric_26.2_2.3.2.jar",
+      "id": "emf_compat_core",
+      "version": "2.3.2",
+      "sha256": "fe3927e5cec90929c41553d28b882943c57fc61b9fd707321332af088d2f4757"
+    },
+    {
+      "file": "entity_model_features-3.3.11-26.2-fabric.jar",
+      "id": "entity_model_features",
+      "version": "3.3.11",
+      "sha256": "26b13c2ee755932e74f80ecf6baf16a25582568ae7482cf472751abb98e7b14a"
+    },
+    {
+      "file": "entity_texture_features-7.2.5-26.2-fabric.jar",
+      "id": "entity_texture_features",
+      "version": "7.2.5",
+      "sha256": "ac66cf294fbd2b1eb1576bdc2396cb096abcd54d9f8f39ecb1973abbc4e00488"
+    },
+    {
+      "file": "PlayerAnimationLibMerged-1.2.8+mc.26.2.jar",
+      "id": "player_animation_library",
+      "version": "1.2.8+mc.26.2",
+      "sha256": "644aa199c5e905f098ead8b3d857e39a04712201871367129b36b144b12d13c8"
+    },
+    {
+      "file": "skinlayers3d-fabric-1.11.4-mc26.2.jar",
+      "id": "skinlayers3d",
+      "version": "1.11.4",
+      "sha256": "a78a3964e3f6baa87c52cc2dec5d10cca13f3fdca2fd677eb769fcf3eb3684d6"
+    }
+  ],
+  "resource_packs": [
+    "FreshAnimations_v1.11.2_26.1+.zip",
+    "FA+All_Extensions-v1.10.1.zip",
+    "FA+Player-v1.1.zip"
+  ],
+  "body_skin_ids_tested": [
+    "mca:skins/skin/female/0.png",
+    "mca:skins/skin/female/0_classic.png",
+    "mca:skins/skin/female/1.png",
+    "mca:skins/skin/female/1_classic.png",
+    "mca:skins/skin/female/2.png",
+    "mca:skins/skin/female/2_classic.png",
+    "mca:skins/skin/female/3.png",
+    "mca:skins/skin/female/3_classic.png",
+    "mca:skins/skin/female/4.png",
+    "mca:skins/skin/female/4_classic.png",
+    "mca:skins/skin/male/0.png",
+    "mca:skins/skin/male/0_classic.png",
+    "mca:skins/skin/male/1.png",
+    "mca:skins/skin/male/1_classic.png",
+    "mca:skins/skin/male/2.png",
+    "mca:skins/skin/male/2_classic.png",
+    "mca:skins/skin/male/3.png",
+    "mca:skins/skin/male/3_classic.png",
+    "mca:skins/skin/male/4.png",
+    "mca:skins/skin/male/4_classic.png"
+  ],
+  "screenshots": [
+    {
+      "file": "0000_MCA-SKIN3D-0.png",
+      "sha256": "7f7fdca70e64206f6ab3b6be8ce36821b97f11b3481e44500e0ec9de8592ee1e",
+      "bytes": 225241
+    },
+    {
+      "file": "0001_MCA-SKIN3D-0_classic.png",
+      "sha256": "641a273dc287fd15f917c6e1e813cd118dd6501778aa0bed308da140f6e95eb0",
+      "bytes": 225410
+    },
+    {
+      "file": "0002_MCA-SKIN3D-1.png",
+      "sha256": "e3c77770ebd0fcb1499ee7d41989d6411afefc7dd62248e25ef40fbe518d6271",
+      "bytes": 225682
+    },
+    {
+      "file": "0003_MCA-SKIN3D-1_classic.png",
+      "sha256": "31d8c6a470447af4ac65bd0600bffaac233bc2ddc134e10387de0f62fa9688dc",
+      "bytes": 225780
+    },
+    {
+      "file": "0004_MCA-SKIN3D-2.png",
+      "sha256": "804dccafc5e3e048b9cd873ae57caee9d548c1244444011819d419c4df4deae3",
+      "bytes": 225533
+    },
+    {
+      "file": "0005_MCA-SKIN3D-2_classic.png",
+      "sha256": "db695bb67be62671af0319e594949caaf64f8b453def585db6cffecaddecca6d",
+      "bytes": 225943
+    },
+    {
+      "file": "0006_MCA-SKIN3D-3.png",
+      "sha256": "86b33625d788b947b5c7eac2cf9fdec095d29496178e1d1b82403fec38f81a0c",
+      "bytes": 226708
+    },
+    {
+      "file": "0007_MCA-SKIN3D-3_classic.png",
+      "sha256": "4e8c9c3e86871ecbea838a10b2b5616a980ce7ea4c6fb2bc8cf503660faae872",
+      "bytes": 226526
+    },
+    {
+      "file": "0008_MCA-SKIN3D-4.png",
+      "sha256": "1d0ead911714ad429715d51f443f7b89374f501d3997059edc17f1228d0e1b44",
+      "bytes": 225393
+    },
+    {
+      "file": "0009_MCA-SKIN3D-4_classic.png",
+      "sha256": "df9f2f5399356be1b6030403aacdd88b39dcc3898e986a6655ba38dfeed0fc67",
+      "bytes": 225621
+    },
+    {
+      "file": "0010_MCA-SKIN3D-0.png",
+      "sha256": "d74d7b0dc78c0bb37be70cb05d33aba4e97a870def05336cfb5760507074bb0b",
+      "bytes": 226795
+    },
+    {
+      "file": "0011_MCA-SKIN3D-0_classic.png",
+      "sha256": "492e3207c80c56e5b2190892214ffdabe02586562aadf7900f84dc2612e73911",
+      "bytes": 226952
+    },
+    {
+      "file": "0012_MCA-SKIN3D-1.png",
+      "sha256": "915c5e15093cc9cc83181fe89148f682788a56f7688ae00bd8e343689ea51dea",
+      "bytes": 226725
+    },
+    {
+      "file": "0013_MCA-SKIN3D-1_classic.png",
+      "sha256": "e06cb9dbf20a74585833a8ff9b8c760770fe9fa3a096893d197efad454df0a65",
+      "bytes": 226400
+    },
+    {
+      "file": "0014_MCA-SKIN3D-2.png",
+      "sha256": "8e74ba0980c4e9c3f4bb601638113f495beebdcfd15b63f5760786b5c4517501",
+      "bytes": 226222
+    },
+    {
+      "file": "0015_MCA-SKIN3D-2_classic.png",
+      "sha256": "310184a699af1d2a6ea5b698421edc2a7364d6bb4d263349ad963b11843549dc",
+      "bytes": 227111
+    },
+    {
+      "file": "0016_MCA-SKIN3D-3.png",
+      "sha256": "dfdf88c3bf62832c4c6597ffe3a34b5a0c46638ccfceefcf2a7ef784fd416b7f",
+      "bytes": 227481
+    },
+    {
+      "file": "0017_MCA-SKIN3D-3_classic.png",
+      "sha256": "41ae4edda523dc7c76397f4c03517db088af2c4d74ea51ff74ff5865935de10d",
+      "bytes": 226701
+    },
+    {
+      "file": "0018_MCA-SKIN3D-4.png",
+      "sha256": "f461e660aa6bd42f6f30caf2610ff92d3dcd62b23fc42e7761a8afbbfa124877",
+      "bytes": 227313
+    },
+    {
+      "file": "0019_MCA-SKIN3D-4_classic.png",
+      "sha256": "0e99ebc1830f0149f711ee72d030d44812589b8470f6e2861dc4860cea14caac",
+      "bytes": 227164
+    },
+    {
+      "file": "0020_MCA-SKIN3D-player-3d-armor-cem-and-skinlayers.png",
+      "sha256": "dacd53e6bf6826dac8686d8ec557da1c2f54f83331a28325c64d3c30b441c877",
+      "bytes": 248097
+    },
+    {
+      "file": "0021_MCA-SKIN3D-player-skinlayers-no-armor.png",
+      "sha256": "c3e28d26a8c991bd595dbe00b1d6075670715138a7f4364e582a276ff2109e22",
+      "bytes": 246939
+    }
+  ]
+}

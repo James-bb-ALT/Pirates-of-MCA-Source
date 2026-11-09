@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/craftsman_ivory_pristine_normal_boots"
+  }
+}

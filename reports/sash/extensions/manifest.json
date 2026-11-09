@@ -1,0 +1,28 @@
+{
+  "version": "9.0.0-alpha.12",
+  "frames": 21,
+  "files": {
+    "0000_HAT-POSE-idle.png": "c656b35a342cf7da933c2b08226b5602c59578506cf66a1c7cf05d78e0cd7865",
+    "0001_HAT-POSE-head_turn.png": "ee4814eac9dc99a8cf3a0b6ea32e708e8bbc1e9dae8a3395ece4eb9a72e7e052",
+    "0002_HAT-POSE-walk.png": "4679a6edafaaaca6b63ff33f49dd3d28a005cfef1b757f5bb7db5b4d37328f92",
+    "0003_HAT-POSE-run.png": "178b010c68ddfc2096d4973f1e6d659b33c55cc3867892e8999ff322e59c645a",
+    "0004_HAT-POSE-attack.png": "4545d6a7b188e1e50b3d79ee6f518413d4bc137b56f4ea37f9b1f9e710423ff2",
+    "0005_HAT-POSE-hurt.png": "be471370f9101b84de120d586dcbe28a2496b6d78c8db0aaa9439e89ac0e5b9b",
+    "0006_HAT-POSE-swim.png": "76160bc805d7f56b051771bf7eca57525817844f75127ef6496de84d64aebcca",
+    "0007_HAT-FIT-swim-dry.png": "1f27fc15f370be780431e76c57f86849888a75ad5dce8486127464e9efc901e0",
+    "0008_HAT-POSE-sit.png": "5d2741db3e40a5675e6392e904d604e9dd7a45d735f61d17cf3da8633157590d",
+    "0009_HAT-POSE-sleep.png": "6bcafc141e0940702699b5c55876397aeca32bfb9bace7d16a82bdf81e085fb1",
+    "0010_SASH-0-front.png": "e5896456afca98344455b19952b66b87e5d632be2e8dfe0d99ce294b7553d83e",
+    "0011_SASH-0-side.png": "762228c3caf1a2ca309060eca26b4bcc42604db609cc7bdc17da952f1e60d531",
+    "0012_SASH-0-back.png": "7c807e215829de8f7e3a5118ccb5b15b378e5978e783dcdb6a9a64fffe5d6643",
+    "0013_SASH-1-front.png": "6b35d40da73303ab38fcf0b5a70b3fef6c1f464d8e1d686a5dff50627a7e3ac2",
+    "0014_SASH-1-side.png": "e80a162349519eb7b4636ad45155d17422cc79e17dc64e1a4ce77f77378319df",
+    "0015_SASH-1-back.png": "66d7eb2269e63951e36d114d9cb128a70bd88f946424e644a8d9c97bd99acc42",
+    "0016_HAT-PLAYER-no-hat-idle.png": "5d53f365ac458d04e5c5688f6d8643e9315f959021c0ed361d7c57f878a75da8",
+    "0017_HAT-PLAYER-hat-idle.png": "a9749edc1176742417c1c27c51cb409de5d832706f489cf46abb5358bb245921",
+    "0018_HAT-PLAYER-bettercombat-attack.png": "17f42246e4948edf621877a19d178faf54b2e4290d37da11165b506fb732fed1",
+    "0019_EYE-after-chunk-reload.png": "0683bc099e8ba01b0b04b1efafbf1ec8def3b6dba2af63d48c39b3144eb4abcd",
+    "0020_EYE-after-reopen.png": "cc73b4ea767146a206d2e66965ebc23857b57cead8bd49e067cd275fd904d002",
+    "execution.log": "5aa08afd9aa9e3057a07fec3580ed2584234ecb0c2c88e496b5e9f08155c0c67"
+  }
+}

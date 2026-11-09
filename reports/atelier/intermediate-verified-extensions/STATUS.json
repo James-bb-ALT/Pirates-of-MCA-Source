@@ -1,0 +1,5 @@
+{
+  "result": "PASS_RENDER_SCENARIOS",
+  "jar_sha256": "7df74fec95b0e33996153be4cc09c7b52cd3661fe714c47ebcf5424883d30119",
+  "pending_change": "server gamerule mob drops gate, tested in final server suite"
+}

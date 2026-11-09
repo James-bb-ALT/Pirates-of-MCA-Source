@@ -1,0 +1,215 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version '1.17.21'
+}
+
+version = project.mod_version
+group = 'dev.arandu'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://api.modrinth.com/maven'; content { includeGroup 'maven.modrinth' } }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    implementation files('reference-jars/mca-fabric-8.1.11+26.2.jar')
+    implementation files('reference-jars/fish_of_thieves-mc26.2-v26.2.2.0-fabric(3).jar')
+    if (project.hasProperty('compatMods')) {
+        runtimeOnly fileTree(project.property('compatMods')) {
+            include '*.jar'
+            exclude 'fabric-api-*.jar', 'mca-fabric-*.jar', 'fish_of_thieves-*.jar', '*Pirates*.jar', 'yet_another_config_lib*.jar'
+        }
+    }
+    runtimeOnly 'maven.modrinth:yacl:3.9.7+26.2-fabric'
+    testImplementation 'org.junit.jupiter:junit-jupiter:6.0.1'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:6.0.1'
+}
+
+sourceSets {
+    main {
+        java.srcDirs = ['source/src/main/java']
+        resources.srcDirs = ['source/src/main/resources']
+    }
+    test { java.srcDirs = ['qa']; java.include '**/*.java' }
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+    withSourcesJar()
+}
+fabricApi {
+    configureTests {
+        createSourceSet = true
+        modId = 'piratesmca-tests'
+        enableGameTests = true
+        enableClientGameTests = true
+        eula = true // Authorized by the user for this isolated test server.
+    }
+}
+loom {
+    runs {
+        server { runDir 'run/server' }
+        client { runDir 'run/client' }
+    }
+}
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 25
+}
+tasks.register('validatePirateAssets', Exec) {
+    commandLine 'python', 'scripts/pmca/validar_assets.py', '--root', '.'
+}
+tasks.register('validateTricorneExport', Exec) {
+    commandLine 'python', '-m', 'unittest', 'discover', '-s', 'scripts/pmca/tests', '-v'
+}
+tasks.named('check') { dependsOn tasks.named('validatePirateAssets'), tasks.named('validateTricorneExport') }
+compileTestJava.source('source/tests_ledger.java')
+tasks.register('verifyReferenceJars') {
+    def expected = [
+        'reference-jars/mca-fabric-8.1.11+26.2.jar': '6ddc6982da1a35aeb93b9ccaa80083b0ae6d8aabc44b9d4006c45f0ce47f5871',
+        'reference-jars/fish_of_thieves-mc26.2-v26.2.2.0-fabric(3).jar': 'f8a7da180423b789d1c1af946cb697c1ce2c0e21d715a972419cc7bb27367634'
+    ]
+    inputs.files(expected.keySet())
+    doLast {
+        expected.each { path, sha ->
+            def actual = java.security.MessageDigest.getInstance('SHA-256').digest(file(path).bytes).encodeHex().toString()
+            if (actual != sha) throw new GradleException("Reference JAR changed: ${path}")
+        }
+    }
+}
+compileJava.dependsOn verifyReferenceJars
+tasks.withType(AbstractArchiveTask).configureEach {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+jar { from('source/LICENCE.txt') { rename { 'LICENSE' } } }
+
+tasks.register('ledgerRegressions', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'LedgerRegressions'
+}
+tasks.register('ledgerSafetyRegressions', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'LedgerSafetyRegressions'
+}
+test { useJUnitPlatform(); testLogging { showStandardStreams = true } }
+tasks.named('runClientGameTest') {
+    maxHeapSize = '4G'
+    if (project.hasProperty('compatMods')) {
+        def fixture = file(project.property('compatMods')).parentFile
+        doFirst {
+            copy { from new File(fixture, 'overrides'); into layout.buildDirectory.dir('run/clientGameTest') }
+        }
+    }
+}
+
+tasks.register('gameTestJar', Jar) {
+    archiveClassifier = 'gametest'
+    from sourceSets.gametest.output
+}
+tasks.register('runProductionClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    dependsOn tasks.named('gameTestJar')
+    runDir = layout.projectDirectory.dir(project.hasProperty('visualPegAudit') ? 'run/visual-peg-audit' : project.hasProperty('visualAssetAudit') ? 'run/visual-asset-audit' : project.hasProperty('atelierCatalogueCapture') ? 'run/atelier-catalogue-test' : project.hasProperty('atelierBase') ? 'run/atelier-base-test' : project.hasProperty('atelierReview') ? 'run/atelier-test' : project.hasProperty('spawnEquipmentReview') ? 'run/spawn-equipment-test' : project.hasProperty('outfitBase') ? 'run/outfit-base-test' : project.hasProperty('outfitReview') ? 'run/outfit-test' : project.hasProperty('sashFitReview') ? 'run/sash-fit-test' : project.hasProperty('sashReview') ? 'run/sash-test' : project.hasProperty('eyepatchReview') ? 'run/eyepatch-test' : project.hasProperty('creativeReview') ? 'run/creative-tab-test' : project.hasProperty('hairReview') ? 'run/tricorne-hair-test' : project.hasProperty('poseReview') ? 'run/tricorne-pose-test' : project.hasProperty('mcaSkin3dReview') ? 'run/mca-skin-3d-test' : 'run/production-client-test')
+    useXVFB = false
+    if (project.hasProperty('reconstructionReview')) runDir = layout.projectDirectory.dir('run/reconstruction-' + project.property('reconstructionReview'))
+    if (project.hasProperty('reconstructionCatalogue')) runDir = layout.projectDirectory.dir('run/reconstruction-catalogue')
+    if (project.hasProperty('weaponHandheldReview')) runDir = layout.projectDirectory.dir('run/weapon-handheld-test')
+    if (project.hasProperty('dialogueReview')) runDir = layout.projectDirectory.dir('run/dialogue-test')
+    if (project.hasProperty('mcaSkin3dReview')) runDir = layout.projectDirectory.dir('run/mca-skin-3d-test')
+    if (project.hasProperty('visualFixReview')) runDir = layout.projectDirectory.dir('run/visual-fix-' + project.property('visualFixReview'))
+    if (project.hasProperty('persistenceReview')) runDir = layout.projectDirectory.dir('run/visual-fix-persistence')
+    if (project.hasProperty('visualComparisonSave')) {
+        def comparisonSource = file(project.property('visualComparisonSave'))
+        def comparisonTarget = new File(runDir.get().asFile, 'saves/Visual Comparison Copy')
+        doFirst { copy { from comparisonSource; into comparisonTarget } }
+        jvmArgs.add('-Dpiratesmca.visualComparisonSave=' + comparisonTarget.absolutePath)
+    }
+    mods.from(tasks.named('gameTestJar'), files('reference-jars').asFileTree.matching { include '*.jar' })
+    mods.from(configurations.gametestRuntimeClasspath.filter {
+        it.name.startsWith('fabric-api-') || it.name.startsWith('fabric-client-gametest-api-') || it.name.startsWith('yacl-')
+    })
+    if (project.hasProperty('compatMods')) {
+        mods.from(fileTree(project.property('compatMods')) { include '*.jar'; exclude 'fabric-api-*.jar', 'yet_another_config_lib*.jar' })
+        doFirst {
+            copy { from new File(file(project.property('compatMods')).parentFile, 'overrides'); into runDir }
+            if (project.hasProperty('disableFAPlayer')) {
+                def optionsFile = new File(runDir.get().asFile, 'options.txt')
+                optionsFile.setText(optionsFile.readLines('UTF-8').collect { line ->
+                    if (!line.startsWith('resourcePacks:')) return line
+                    def packs = new groovy.json.JsonSlurper().parseText(line.substring('resourcePacks:'.length()))
+                    'resourcePacks:' + groovy.json.JsonOutput.toJson(packs.findAll { it != 'file/FA+Player-v1.1.zip' })
+                }.join('\n') + '\n', 'UTF-8')
+            }
+            if (project.hasProperty('disableFreshAnimations')) {
+                def optionsFile = new File(runDir.get().asFile, 'options.txt')
+                optionsFile.setText(optionsFile.readLines('UTF-8').collect { line ->
+                    if (!line.startsWith('resourcePacks:')) return line
+                    def packs = new groovy.json.JsonSlurper().parseText(line.substring('resourcePacks:'.length()))
+                    'resourcePacks:' + groovy.json.JsonOutput.toJson(packs.findAll { !it.contains('FreshAnimations') && !it.contains('FA+') })
+                }.join('\n') + '\n', 'UTF-8')
+            }
+        }
+    }
+    jvmArgs.addAll(project.hasProperty('atelierReview') ? '-Xmx6G' : '-Xmx4G', '-Dfabric.client.gametest', '-Dfabric.client.gametest.testModResourcesPath=' + file('src/gametest/resources').absolutePath)
+    if (project.hasProperty('atelierCatalogueCapture')) jvmArgs.add('-Dpiratesmca.atelierCatalogueCapture=true')
+    if (project.hasProperty('weaponHandheldReview')) jvmArgs.add('-Dpiratesmca.weaponHandheldReview=true')
+    if (project.hasProperty('dialogueReview')) jvmArgs.add('-Dpiratesmca.dialogueReview=true')
+    if (project.hasProperty('mcaSkin3dReview')) jvmArgs.add('-Dpiratesmca.mcaSkin3dReview=true')
+    if (project.hasProperty('visualAssetAudit')) jvmArgs.add('-Dpiratesmca.visualAssetAudit=true')
+    if (project.hasProperty('visualFixReview')) jvmArgs.addAll('-Dpiratesmca.visualAssetAudit=true', '-Dpiratesmca.visualFixReview=' + project.property('visualFixReview'))
+    if (project.hasProperty('disableFreshAnimations')) jvmArgs.addAll('-Dpiratesmca.disableFreshAnimations=true','-Dpiratesmca.disableFAPlayer=true')
+    if (project.hasProperty('visualPegAudit')) jvmArgs.addAll('-Dpiratesmca.visualAssetAudit=true','-Dpiratesmca.visualPegOnly=true')
+    if (project.hasProperty('reconstructionReview')) jvmArgs.add('-Dpiratesmca.reconstructionReview=' + project.property('reconstructionReview'))
+    if (project.hasProperty('disableFAPlayer')) jvmArgs.add('-Dpiratesmca.disableFAPlayer=true')
+    if (project.hasProperty('atelierReview')) { jvmArgs.addAll('-Dpiratesmca.spawnEquipmentReview=true','-Dpiratesmca.atelierReview=true') }
+    if (project.hasProperty('spawnEquipmentReview')) jvmArgs.add('-Dpiratesmca.spawnEquipmentReview=true')
+    if (project.hasProperty('outfitReview')) jvmArgs.addAll('-Dpiratesmca.outfitReview=true', '-Dpiratesmca.poseReview=true', '-Dpiratesmca.eyepatchReview=true')
+    if (project.hasProperty('clientReopen')) jvmArgs.add('-Dpiratesmca.clientReopen=true')
+    if (project.hasProperty('playableSmoke')) jvmArgs.add('-Dpiratesmca.playableSmoke=true')
+    if (project.hasProperty('poseReview') || project.hasProperty('hairReview') || project.hasProperty('eyepatchReview') || project.hasProperty('sashReview')) jvmArgs.add('-Dpiratesmca.poseReview=true')
+    if (project.hasProperty('sashReview')) jvmArgs.add('-Dpiratesmca.sashReview=true')
+    if (project.hasProperty('sashFitReview')) {
+        jvmArgs.add('-Dpiratesmca.sashFitReview=true')
+        jvmArgs.add('-Dpiratesmca.sashFitSave=' + file('run/sash-fit-test/saves/Fit Original').absolutePath)
+    }
+    if (project.hasProperty('sashFitReplay')) {
+        runDir = layout.projectDirectory.dir('run/sash-fit-test')
+        jvmArgs.add('-Dpiratesmca.sashReplayOriginal=true')
+        jvmArgs.add('-Dpiratesmca.sashFitSave=' + file('run/sash-fit-test/saves/Fit Original').absolutePath)
+    }
+    if (project.hasProperty('eyepatchReview')) jvmArgs.add('-Dpiratesmca.eyepatchReview=true')
+    if (project.hasProperty('hairReview')) jvmArgs.add('-Dpiratesmca.hairReview=true')
+    if (project.hasProperty('extensionsReview')) jvmArgs.add('-Dpiratesmca.emfExtensionsReview=true')
+    if (project.hasProperty('playerReview')) jvmArgs.add('-Dpiratesmca.playerReview=true')
+    if (project.hasProperty('creativeReview')) jvmArgs.add('-Dpiratesmca.creativeReview=true')
+    if (project.hasProperty('clientUuid')) programArgs.addAll('--uuid', project.property('clientUuid').toString())
+    doFirst {
+        def artifact = tasks.jar.archiveFile.get().asFile
+        println 'QA_ARTIFACT_SHA256 ' + java.security.MessageDigest.getInstance('SHA-256').digest(artifact.bytes).encodeHex() + ' ' + artifact.name
+    }
+}
+
+tasks.register('runAlpha5Baseline', net.fabricmc.loom.task.prod.ServerProductionRunTask) {
+    runDir = layout.projectDirectory.dir('run/alpha5-baseline')
+    mods.setFrom(files('baseline/PiratesMCA_Alpha5_CrewRuntime_FIX.jar'), files('reference-jars').asFileTree.matching { include '*.jar' })
+    mods.from(configurations.runtimeClasspath.filter { it.name.startsWith('fabric-api-') || it.name.startsWith('yacl-') })
+    programArgs.add('nogui')
+    jvmArgs.addAll('-Xmx2G', '-Dfabric.loader.disableErrorGui=true')
+    doFirst {
+        runDir.get().asFile.mkdirs()
+        new File(runDir.get().asFile, 'eula.txt').text = 'eula=true\n'
+        new File(runDir.get().asFile, 'server.properties').text = 'server-ip=127.0.0.1\nserver-port=25576\nonline-mode=false\nmotd=Isolated Alpha 5 audit\n'
+    }
+}
+
+// Supplied collection completeness/face/atlas checks; graphical proof remains a client gate.
+tasks.register('validateAtelierAssets', Exec) {
+    commandLine 'python', 'scripts/pmca/validate_atelier.py'
+}
+tasks.named('check') { dependsOn tasks.named('validateAtelierAssets') }
+tasks.register('validateWardrobeGeometry', Exec) { commandLine 'python', 'scripts/pmca/validate_wardrobe.py' }
+tasks.named('check') { dependsOn tasks.named('validateWardrobeGeometry') }

@@ -1,0 +1,39 @@
+{
+  "silent": false,
+  "auto": false,
+  "answers": [
+    {
+      "name": "investigate",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_friendly_share_the_find.investigate.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "sell_it",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_friendly_share_the_find.sell_it.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "keep_safe",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_friendly_share_the_find.keep_safe.reply"
+          }
+        }
+      ]
+    }
+  ]
+}

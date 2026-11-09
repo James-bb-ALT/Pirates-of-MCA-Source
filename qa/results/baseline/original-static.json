@@ -1,0 +1,70 @@
+{
+  "baseline": "2.0.0-alpha.5",
+  "results": [
+    {
+      "category": "JAR integrity",
+      "result": "PASS",
+      "detail": "ZIP members CRC"
+    },
+    {
+      "category": "Version match",
+      "result": "PASS",
+      "detail": "('2.0.0-alpha.5', '2.0.0-alpha.5')"
+    },
+    {
+      "category": "No bundled game libs",
+      "result": "PASS",
+      "detail": "Java packages"
+    },
+    {
+      "category": "Clothing count",
+      "result": "PASS",
+      "detail": "48 PNGs"
+    },
+    {
+      "category": "Trade counts",
+      "result": "PASS",
+      "detail": "20 offers; 5 trade sets"
+    },
+    {
+      "category": "JSON syntax / chain id",
+      "result": "PASS",
+      "detail": "[]"
+    },
+    {
+      "category": "CrewRuntime class",
+      "result": "PASS",
+      "detail": "expected runtime class"
+    },
+    {
+      "category": "Runtime not tested",
+      "result": "WARN",
+      "detail": "JAR SHA256 da10c673d1282b70797a5e1c57dfec086566cd7753b2a4cfbf8a366c538a5d8b; static audit cannot prove startup or gameplay"
+    },
+    {
+      "category": "Reproducible build script version",
+      "result": "FAIL",
+      "detail": "build_offline.sh must produce Alpha5, not Alpha4"
+    },
+    {
+      "category": "No stub-based release",
+      "result": "FAIL",
+      "detail": "release build must use real Fabric Loom dependencies"
+    },
+    {
+      "category": "Java target matches manifest",
+      "result": "FAIL",
+      "detail": "manifest requires Java>=25; old script uses -source 21 -target 21"
+    },
+    {
+      "category": "ResourceKey.location crash regression",
+      "result": "PASS",
+      "detail": "CrewRuntime must not call stale descriptor ResourceKey.location"
+    }
+  ],
+  "counts": {
+    "PASS": 8,
+    "FAIL": 3,
+    "WARN": 1
+  }
+}

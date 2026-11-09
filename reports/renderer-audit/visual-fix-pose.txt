@@ -1,0 +1,270 @@
+Compiled from "HumanoidModelPose.java"
+public final class net.conczin.mca.client.render.HumanoidModelPose extends java.lang.Record {
+  private final net.minecraft.client.model.geom.PartPose root;
+
+  private final net.minecraft.client.model.geom.PartPose head;
+
+  private final net.minecraft.client.model.geom.PartPose body;
+
+  private final net.minecraft.client.model.geom.PartPose leftArm;
+
+  private final net.minecraft.client.model.geom.PartPose rightArm;
+
+  private final net.minecraft.client.model.geom.PartPose leftLeg;
+
+  private final net.minecraft.client.model.geom.PartPose rightLeg;
+
+  public net.conczin.mca.client.render.HumanoidModelPose(net.minecraft.client.model.geom.PartPose, net.minecraft.client.model.geom.PartPose, net.minecraft.client.model.geom.PartPose, net.minecraft.client.model.geom.PartPose, net.minecraft.client.model.geom.PartPose, net.minecraft.client.model.geom.PartPose, net.minecraft.client.model.geom.PartPose);
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #7                  // Field root:Lnet/minecraft/client/model/geom/PartPose;
+         9: aload_0
+        10: aload_2
+        11: putfield      #13                 // Field head:Lnet/minecraft/client/model/geom/PartPose;
+        14: aload_0
+        15: aload_3
+        16: putfield      #16                 // Field body:Lnet/minecraft/client/model/geom/PartPose;
+        19: aload_0
+        20: aload         4
+        22: putfield      #19                 // Field leftArm:Lnet/minecraft/client/model/geom/PartPose;
+        25: aload_0
+        26: aload         5
+        28: putfield      #22                 // Field rightArm:Lnet/minecraft/client/model/geom/PartPose;
+        31: aload_0
+        32: aload         6
+        34: putfield      #25                 // Field leftLeg:Lnet/minecraft/client/model/geom/PartPose;
+        37: aload_0
+        38: aload         7
+        40: putfield      #28                 // Field rightLeg:Lnet/minecraft/client/model/geom/PartPose;
+        43: return
+
+  public static net.conczin.mca.client.render.HumanoidModelPose capture(net.minecraft.client.model.HumanoidModel<?>);
+    Code:
+         0: new           #8                  // class net/conczin/mca/client/render/HumanoidModelPose
+         3: dup
+         4: aload_0
+         5: invokevirtual #31                 // Method net/minecraft/client/model/HumanoidModel.root:()Lnet/minecraft/client/model/geom/ModelPart;
+         8: invokevirtual #36                 // Method net/minecraft/client/model/geom/ModelPart.storePose:()Lnet/minecraft/client/model/geom/PartPose;
+        11: aload_0
+        12: getfield      #42                 // Field net/minecraft/client/model/HumanoidModel.head:Lnet/minecraft/client/model/geom/ModelPart;
+        15: invokevirtual #36                 // Method net/minecraft/client/model/geom/ModelPart.storePose:()Lnet/minecraft/client/model/geom/PartPose;
+        18: aload_0
+        19: getfield      #45                 // Field net/minecraft/client/model/HumanoidModel.body:Lnet/minecraft/client/model/geom/ModelPart;
+        22: invokevirtual #36                 // Method net/minecraft/client/model/geom/ModelPart.storePose:()Lnet/minecraft/client/model/geom/PartPose;
+        25: aload_0
+        26: getfield      #47                 // Field net/minecraft/client/model/HumanoidModel.leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+        29: invokevirtual #36                 // Method net/minecraft/client/model/geom/ModelPart.storePose:()Lnet/minecraft/client/model/geom/PartPose;
+        32: aload_0
+        33: getfield      #49                 // Field net/minecraft/client/model/HumanoidModel.rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+        36: invokevirtual #36                 // Method net/minecraft/client/model/geom/ModelPart.storePose:()Lnet/minecraft/client/model/geom/PartPose;
+        39: aload_0
+        40: getfield      #51                 // Field net/minecraft/client/model/HumanoidModel.leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        43: invokevirtual #36                 // Method net/minecraft/client/model/geom/ModelPart.storePose:()Lnet/minecraft/client/model/geom/PartPose;
+        46: aload_0
+        47: getfield      #53                 // Field net/minecraft/client/model/HumanoidModel.rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        50: invokevirtual #36                 // Method net/minecraft/client/model/geom/ModelPart.storePose:()Lnet/minecraft/client/model/geom/PartPose;
+        53: invokespecial #55                 // Method "<init>":(Lnet/minecraft/client/model/geom/PartPose;Lnet/minecraft/client/model/geom/PartPose;Lnet/minecraft/client/model/geom/PartPose;Lnet/minecraft/client/model/geom/PartPose;Lnet/minecraft/client/model/geom/PartPose;Lnet/minecraft/client/model/geom/PartPose;Lnet/minecraft/client/model/geom/PartPose;)V
+        56: areturn
+
+  public void applyTo(net.minecraft.client.model.HumanoidModel<?>);
+    Code:
+         0: aload_1
+         1: invokevirtual #31                 // Method net/minecraft/client/model/HumanoidModel.root:()Lnet/minecraft/client/model/geom/ModelPart;
+         4: aload_0
+         5: getfield      #7                  // Field root:Lnet/minecraft/client/model/geom/PartPose;
+         8: invokevirtual #58                 // Method net/minecraft/client/model/geom/ModelPart.loadPose:(Lnet/minecraft/client/model/geom/PartPose;)V
+        11: aload_1
+        12: getfield      #42                 // Field net/minecraft/client/model/HumanoidModel.head:Lnet/minecraft/client/model/geom/ModelPart;
+        15: aload_0
+        16: getfield      #13                 // Field head:Lnet/minecraft/client/model/geom/PartPose;
+        19: invokevirtual #58                 // Method net/minecraft/client/model/geom/ModelPart.loadPose:(Lnet/minecraft/client/model/geom/PartPose;)V
+        22: aload_1
+        23: getfield      #45                 // Field net/minecraft/client/model/HumanoidModel.body:Lnet/minecraft/client/model/geom/ModelPart;
+        26: aload_0
+        27: getfield      #16                 // Field body:Lnet/minecraft/client/model/geom/PartPose;
+        30: invokevirtual #58                 // Method net/minecraft/client/model/geom/ModelPart.loadPose:(Lnet/minecraft/client/model/geom/PartPose;)V
+        33: aload_1
+        34: getfield      #47                 // Field net/minecraft/client/model/HumanoidModel.leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+        37: aload_0
+        38: getfield      #19                 // Field leftArm:Lnet/minecraft/client/model/geom/PartPose;
+        41: invokevirtual #58                 // Method net/minecraft/client/model/geom/ModelPart.loadPose:(Lnet/minecraft/client/model/geom/PartPose;)V
+        44: aload_1
+        45: getfield      #49                 // Field net/minecraft/client/model/HumanoidModel.rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+        48: aload_0
+        49: getfield      #22                 // Field rightArm:Lnet/minecraft/client/model/geom/PartPose;
+        52: invokevirtual #58                 // Method net/minecraft/client/model/geom/ModelPart.loadPose:(Lnet/minecraft/client/model/geom/PartPose;)V
+        55: aload_1
+        56: getfield      #51                 // Field net/minecraft/client/model/HumanoidModel.leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        59: aload_0
+        60: getfield      #25                 // Field leftLeg:Lnet/minecraft/client/model/geom/PartPose;
+        63: invokevirtual #58                 // Method net/minecraft/client/model/geom/ModelPart.loadPose:(Lnet/minecraft/client/model/geom/PartPose;)V
+        66: aload_1
+        67: getfield      #53                 // Field net/minecraft/client/model/HumanoidModel.rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        70: aload_0
+        71: getfield      #28                 // Field rightLeg:Lnet/minecraft/client/model/geom/PartPose;
+        74: invokevirtual #58                 // Method net/minecraft/client/model/geom/ModelPart.loadPose:(Lnet/minecraft/client/model/geom/PartPose;)V
+        77: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #62,  0             // InvokeDynamic #0:toString:(Lnet/conczin/mca/client/render/HumanoidModelPose;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #66,  0             // InvokeDynamic #0:hashCode:(Lnet/conczin/mca/client/render/HumanoidModelPose;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #70,  0             // InvokeDynamic #0:equals:(Lnet/conczin/mca/client/render/HumanoidModelPose;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.client.model.geom.PartPose root();
+    Code:
+         0: aload_0
+         1: getfield      #7                  // Field root:Lnet/minecraft/client/model/geom/PartPose;
+         4: areturn
+
+  public net.minecraft.client.model.geom.PartPose head();
+    Code:
+         0: aload_0
+         1: getfield      #13                 // Field head:Lnet/minecraft/client/model/geom/PartPose;
+         4: areturn
+
+  public net.minecraft.client.model.geom.PartPose body();
+    Code:
+         0: aload_0
+         1: getfield      #16                 // Field body:Lnet/minecraft/client/model/geom/PartPose;
+         4: areturn
+
+  public net.minecraft.client.model.geom.PartPose leftArm();
+    Code:
+         0: aload_0
+         1: getfield      #19                 // Field leftArm:Lnet/minecraft/client/model/geom/PartPose;
+         4: areturn
+
+  public net.minecraft.client.model.geom.PartPose rightArm();
+    Code:
+         0: aload_0
+         1: getfield      #22                 // Field rightArm:Lnet/minecraft/client/model/geom/PartPose;
+         4: areturn
+
+  public net.minecraft.client.model.geom.PartPose leftLeg();
+    Code:
+         0: aload_0
+         1: getfield      #25                 // Field leftLeg:Lnet/minecraft/client/model/geom/PartPose;
+         4: areturn
+
+  public net.minecraft.client.model.geom.PartPose rightLeg();
+    Code:
+         0: aload_0
+         1: getfield      #28                 // Field rightLeg:Lnet/minecraft/client/model/geom/PartPose;
+         4: areturn
+}
+Compiled from "SkinLayer.java"
+public class net.conczin.mca.client.render.layer.SkinLayer<S extends net.minecraft.client.renderer.entity.state.HumanoidRenderState, M extends net.minecraft.client.model.HumanoidModel<S>> extends net.conczin.mca.client.render.layer.VillagerLayer<S, M> {
+  public net.conczin.mca.client.render.layer.SkinLayer(net.minecraft.client.renderer.entity.RenderLayerParent<S, M>, M);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokespecial #1                  // Method net/conczin/mca/client/render/layer/VillagerLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;)V
+         6: return
+
+  protected void prepareModel(S);
+    Code:
+         0: aload_1
+         1: invokestatic  #7                  // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.require:(Ljava/lang/Object;)Lnet/conczin/mca/client/render/VillagerStateHolder;
+         4: aload_0
+         5: invokevirtual #13                 // Method getParentModel:()Lnet/minecraft/client/model/EntityModel;
+         8: checkcast     #19                 // class net/minecraft/client/model/HumanoidModel
+        11: invokestatic  #21                 // Method net/conczin/mca/client/render/HumanoidModelPose.capture:(Lnet/minecraft/client/model/HumanoidModel;)Lnet/conczin/mca/client/render/HumanoidModelPose;
+        14: invokeinterface #27,  2           // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.mca$setHumanoidModelPose:(Lnet/conczin/mca/client/render/HumanoidModelPose;)V
+        19: return
+
+  public net.minecraft.resources.Identifier getSkin(S);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokestatic  #31                 // Method net/conczin/mca/client/render/VillagerVisuals.require:(Ljava/lang/Object;)Lnet/conczin/mca/client/render/VillagerVisuals;
+         5: invokevirtual #36                 // Method getSkin:(Lnet/conczin/mca/client/render/VillagerVisuals;)Lnet/minecraft/resources/Identifier;
+         8: areturn
+
+  public net.minecraft.resources.Identifier getSkin(net.conczin.mca.client.render.VillagerVisuals);
+    Code:
+         0: aload_1
+         1: invokevirtual #40                 // Method net/conczin/mca/client/render/VillagerVisuals.skin:()Ljava/lang/String;
+         4: invokestatic  #44                 // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+         7: ifne          24
+        10: aload_0
+        11: aload_1
+        12: invokevirtual #40                 // Method net/conczin/mca/client/render/VillagerVisuals.skin:()Ljava/lang/String;
+        15: invokedynamic #50,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+        20: invokevirtual #54                 // Method cached:(Ljava/lang/String;Ljava/util/function/Function;)Lnet/minecraft/resources/Identifier;
+        23: areturn
+        24: aload_1
+        25: invokevirtual #58                 // Method net/conczin/mca/client/render/VillagerVisuals.skinGene:()F
+        28: ldc           #62                 // float 5.0f
+        30: fmul
+        31: fconst_0
+        32: ldc           #63                 // float 4.0f
+        34: invokestatic  #64                 // Method java/lang/Math.clamp:(FFF)F
+        37: f2i
+        38: istore_2
+        39: aload_0
+        40: aload_1
+        41: invokevirtual #70                 // Method net/conczin/mca/client/render/VillagerVisuals.genderDataName:()Ljava/lang/String;
+        44: iload_2
+        45: invokedynamic #73,  0             // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+        50: invokedynamic #77,  0             // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+        55: invokevirtual #54                 // Method cached:(Ljava/lang/String;Ljava/util/function/Function;)Lnet/minecraft/resources/Identifier;
+        58: areturn
+
+  public int getColor(S, float);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokestatic  #31                 // Method net/conczin/mca/client/render/VillagerVisuals.require:(Ljava/lang/Object;)Lnet/conczin/mca/client/render/VillagerVisuals;
+         5: fload_2
+         6: invokevirtual #78                 // Method getColor:(Lnet/conczin/mca/client/render/VillagerVisuals;F)I
+         9: ireturn
+
+  public int getColor(net.conczin.mca.client.render.VillagerVisuals, float);
+    Code:
+         0: aload_1
+         1: invokevirtual #82                 // Method net/conczin/mca/client/render/VillagerVisuals.skinDye:()I
+         4: istore_3
+         5: iload_3
+         6: ldc           #86                 // int -16777216
+         8: if_icmpeq     13
+        11: iload_3
+        12: ireturn
+        13: aload_1
+        14: invokevirtual #87                 // Method net/conczin/mca/client/render/VillagerVisuals.albinism:()Z
+        17: ifeq          25
+        20: ldc           #91                 // float 0.1f
+        22: goto          26
+        25: fconst_1
+        26: fstore        4
+        28: getstatic     #92                 // Field net/conczin/mca/client/resources/ColorPalette.SKIN:Lnet/conczin/mca/client/resources/ColorPalette;
+        31: aload_1
+        32: invokevirtual #98                 // Method net/conczin/mca/client/render/VillagerVisuals.melaninGene:()F
+        35: fload         4
+        37: fmul
+        38: aload_1
+        39: invokevirtual #101                // Method net/conczin/mca/client/render/VillagerVisuals.hemoglobinGene:()F
+        42: fload         4
+        44: fmul
+        45: aload_1
+        46: invokevirtual #104                // Method net/conczin/mca/client/render/VillagerVisuals.infectionProgress:()F
+        49: invokevirtual #107                // Method net/conczin/mca/client/resources/ColorPalette.getColor:(FFF)I
+        52: ireturn
+}

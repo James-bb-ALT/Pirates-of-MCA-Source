@@ -1,0 +1,193 @@
+Compiled from "CustomHeadLayer.java"
+public class net.minecraft.client.renderer.entity.layers.CustomHeadLayer<S extends net.minecraft.client.renderer.entity.state.LivingEntityRenderState, M extends net.minecraft.client.model.EntityModel<S> & net.minecraft.client.model.HeadedModel> extends net.minecraft.client.renderer.entity.layers.RenderLayer<S, M> {
+  private static final float ITEM_SCALE;
+
+  private static final float SKULL_SCALE;
+
+  private final net.minecraft.client.renderer.entity.layers.CustomHeadLayer$Transforms transforms;
+
+  private final java.util.function.Function<net.minecraft.world.level.block.SkullBlock$Type, net.minecraft.client.model.object.skull.SkullModelBase> skullModels;
+
+  private final net.minecraft.client.renderer.PlayerSkinRenderCache playerSkinRenderCache;
+
+  public net.minecraft.client.renderer.entity.layers.CustomHeadLayer(net.minecraft.client.renderer.entity.RenderLayerParent<S, M>, net.minecraft.client.model.geom.EntityModelSet, net.minecraft.client.renderer.PlayerSkinRenderCache);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: aload_3
+         4: getstatic     #52                 // Field net/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms.DEFAULT:Lnet/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms;
+         7: invokespecial #55                 // Method "<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/geom/EntityModelSet;Lnet/minecraft/client/renderer/PlayerSkinRenderCache;Lnet/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms;)V
+        10: return
+
+  public net.minecraft.client.renderer.entity.layers.CustomHeadLayer(net.minecraft.client.renderer.entity.RenderLayerParent<S, M>, net.minecraft.client.model.geom.EntityModelSet, net.minecraft.client.renderer.PlayerSkinRenderCache, net.minecraft.client.renderer.entity.layers.CustomHeadLayer$Transforms);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokespecial #65                 // Method net/minecraft/client/renderer/entity/layers/RenderLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;)V
+         5: aload_0
+         6: aload         4
+         8: putfield      #67                 // Field transforms:Lnet/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms;
+        11: aload_0
+        12: aload_2
+        13: invokedynamic #87,  0             // InvokeDynamic #0:apply:(Lnet/minecraft/client/model/geom/EntityModelSet;)Ljava/util/function/Function;
+        18: invokestatic  #93                 // Method net/minecraft/util/Util.memoize:(Ljava/util/function/Function;)Ljava/util/function/Function;
+        21: putfield      #95                 // Field skullModels:Ljava/util/function/Function;
+        24: aload_0
+        25: aload_3
+        26: putfield      #97                 // Field playerSkinRenderCache:Lnet/minecraft/client/renderer/PlayerSkinRenderCache;
+        29: return
+
+  public void submit(com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, int, S, float, float);
+    Code:
+         0: aload         4
+         2: getfield      #112                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.headItem:Lnet/minecraft/client/renderer/item/ItemStackRenderState;
+         5: invokevirtual #118                // Method net/minecraft/client/renderer/item/ItemStackRenderState.isEmpty:()Z
+         8: ifeq          20
+        11: aload         4
+        13: getfield      #122                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.wornHeadType:Lnet/minecraft/world/level/block/SkullBlock$Type;
+        16: ifnonnull     20
+        19: return
+        20: aload_1
+        21: invokevirtual #128                // Method com/mojang/blaze3d/vertex/PoseStack.pushPose:()V
+        24: aload_1
+        25: aload_0
+        26: getfield      #67                 // Field transforms:Lnet/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms;
+        29: invokevirtual #132                // Method net/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms.horizontalScale:()F
+        32: fconst_1
+        33: aload_0
+        34: getfield      #67                 // Field transforms:Lnet/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms;
+        37: invokevirtual #132                // Method net/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms.horizontalScale:()F
+        40: invokevirtual #136                // Method com/mojang/blaze3d/vertex/PoseStack.scale:(FFF)V
+        43: aload_0
+        44: invokevirtual #140                // Method getParentModel:()Lnet/minecraft/client/model/EntityModel;
+        47: astore        7
+        49: aload         7
+        51: invokevirtual #146                // Method net/minecraft/client/model/EntityModel.root:()Lnet/minecraft/client/model/geom/ModelPart;
+        54: aload_1
+        55: invokevirtual #152                // Method net/minecraft/client/model/geom/ModelPart.translateAndRotate:(Lcom/mojang/blaze3d/vertex/PoseStack;)V
+        58: aload         7
+        60: checkcast     #154                // class net/minecraft/client/model/HeadedModel
+        63: aload_1
+        64: invokeinterface #157,  2          // InterfaceMethod net/minecraft/client/model/HeadedModel.translateToHead:(Lcom/mojang/blaze3d/vertex/PoseStack;)V
+        69: aload         4
+        71: getfield      #122                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.wornHeadType:Lnet/minecraft/world/level/block/SkullBlock$Type;
+        74: ifnull        157
+        77: aload_1
+        78: fconst_0
+        79: aload_0
+        80: getfield      #67                 // Field transforms:Lnet/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms;
+        83: invokevirtual #160                // Method net/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms.skullYOffset:()F
+        86: fconst_0
+        87: invokevirtual #163                // Method com/mojang/blaze3d/vertex/PoseStack.translate:(FFF)V
+        90: aload_1
+        91: ldc           #37                 // float 1.1875f
+        93: ldc           #37                 // float 1.1875f
+        95: ldc           #37                 // float 1.1875f
+        97: invokevirtual #136                // Method com/mojang/blaze3d/vertex/PoseStack.scale:(FFF)V
+       100: aload         4
+       102: getfield      #122                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.wornHeadType:Lnet/minecraft/world/level/block/SkullBlock$Type;
+       105: astore        8
+       107: aload_0
+       108: getfield      #95                 // Field skullModels:Ljava/util/function/Function;
+       111: aload         8
+       113: invokeinterface #167,  2          // InterfaceMethod java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+       118: checkcast     #169                // class net/minecraft/client/model/object/skull/SkullModelBase
+       121: astore        9
+       123: aload_0
+       124: aload         4
+       126: aload         8
+       128: invokevirtual #173                // Method resolveSkullRenderType:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;Lnet/minecraft/world/level/block/SkullBlock$Type;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+       131: astore        10
+       133: aload         4
+       135: getfield      #176                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.wornHeadAnimationPos:F
+       138: aload_1
+       139: aload_2
+       140: iload_3
+       141: aload         9
+       143: aload         10
+       145: aload         4
+       147: getfield      #180                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.outlineColor:I
+       150: aconst_null
+       151: invokestatic  #186                // Method net/minecraft/client/renderer/blockentity/SkullBlockRenderer.submitSkull:(FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;ILnet/minecraft/client/model/object/skull/SkullModelBase;Lnet/minecraft/client/renderer/rendertype/RenderType;ILnet/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay;)V
+       154: goto          184
+       157: aload_1
+       158: aload_0
+       159: getfield      #67                 // Field transforms:Lnet/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms;
+       162: invokestatic  #189                // Method translateToHead:(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms;)V
+       165: aload         4
+       167: getfield      #112                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.headItem:Lnet/minecraft/client/renderer/item/ItemStackRenderState;
+       170: aload_1
+       171: aload_2
+       172: iload_3
+       173: getstatic     #194                // Field net/minecraft/client/renderer/texture/OverlayTexture.NO_OVERLAY:I
+       176: aload         4
+       178: getfield      #180                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.outlineColor:I
+       181: invokevirtual #197                // Method net/minecraft/client/renderer/item/ItemStackRenderState.submit:(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;III)V
+       184: aload_1
+       185: invokevirtual #200                // Method com/mojang/blaze3d/vertex/PoseStack.popPose:()V
+       188: return
+
+  private net.minecraft.client.renderer.rendertype.RenderType resolveSkullRenderType(net.minecraft.client.renderer.entity.state.LivingEntityRenderState, net.minecraft.world.level.block.SkullBlock$Type);
+    Code:
+         0: aload_2
+         1: getstatic     #216                // Field net/minecraft/world/level/block/SkullBlock$Types.PLAYER:Lnet/minecraft/world/level/block/SkullBlock$Types;
+         4: if_acmpne     28
+         7: aload_1
+         8: getfield      #220                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.wornHeadProfile:Lnet/minecraft/world/item/component/ResolvableProfile;
+        11: astore_3
+        12: aload_3
+        13: ifnull        28
+        16: aload_0
+        17: getfield      #97                 // Field playerSkinRenderCache:Lnet/minecraft/client/renderer/PlayerSkinRenderCache;
+        20: aload_3
+        21: invokevirtual #224                // Method net/minecraft/client/renderer/PlayerSkinRenderCache.getOrDefault:(Lnet/minecraft/world/item/component/ResolvableProfile;)Lnet/minecraft/client/renderer/PlayerSkinRenderCache$RenderInfo;
+        24: invokevirtual #227                // Method net/minecraft/client/renderer/PlayerSkinRenderCache$RenderInfo.renderType:()Lnet/minecraft/client/renderer/rendertype/RenderType;
+        27: areturn
+        28: aload_2
+        29: aconst_null
+        30: invokestatic  #231                // Method net/minecraft/client/renderer/blockentity/SkullBlockRenderer.getSkullRenderType:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+        33: areturn
+
+  public static void translateToHead(com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.entity.layers.CustomHeadLayer$Transforms);
+    Code:
+         0: aload_0
+         1: fconst_0
+         2: ldc           #233                // float -0.25f
+         4: aload_1
+         5: invokevirtual #236                // Method net/minecraft/client/renderer/entity/layers/CustomHeadLayer$Transforms.yOffset:()F
+         8: fadd
+         9: fconst_0
+        10: invokevirtual #163                // Method com/mojang/blaze3d/vertex/PoseStack.translate:(FFF)V
+        13: aload_0
+        14: getstatic     #242                // Field com/mojang/math/Axis.YP:Lcom/mojang/math/Axis;
+        17: ldc           #243                // float 180.0f
+        19: invokeinterface #247,  2          // InterfaceMethod com/mojang/math/Axis.rotationDegrees:(F)Lorg/joml/Quaternionf;
+        24: invokevirtual #251                // Method com/mojang/blaze3d/vertex/PoseStack.mulPose:(Lorg/joml/Quaternionfc;)V
+        27: aload_0
+        28: ldc           #35                 // float 0.625f
+        30: ldc           #252                // float -0.625f
+        32: ldc           #252                // float -0.625f
+        34: invokevirtual #136                // Method com/mojang/blaze3d/vertex/PoseStack.scale:(FFF)V
+        37: return
+
+  public void submit(com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, int, net.minecraft.client.renderer.entity.state.EntityRenderState, float, float);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: iload_3
+         4: aload         4
+         6: checkcast     #108                // class net/minecraft/client/renderer/entity/state/LivingEntityRenderState
+         9: fload         5
+        11: fload         6
+        13: invokevirtual #255                // Method submit:(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;ILnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;FF)V
+        16: return
+
+  private static net.minecraft.client.model.object.skull.SkullModelBase lambda$new$0(net.minecraft.client.model.geom.EntityModelSet, net.minecraft.world.level.block.SkullBlock$Type);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokestatic  #258                // Method net/minecraft/client/renderer/blockentity/SkullBlockRenderer.createModel:(Lnet/minecraft/client/model/geom/EntityModelSet;Lnet/minecraft/world/level/block/SkullBlock$Type;)Lnet/minecraft/client/model/object/skull/SkullModelBase;
+         5: areturn
+}

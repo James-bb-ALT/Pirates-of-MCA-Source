@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "lfpirates:item/spodnie_majtek_item"
+  }
+}

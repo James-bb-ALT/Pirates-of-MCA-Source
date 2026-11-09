@@ -1,0 +1,28 @@
+{
+  "version": "6.0.1-alpha.9",
+  "artifact_sha256": "f41a706efb6e60762cb8d31ddc1faa5369f96ad477053424808749c4d35ebb71",
+  "controlled_fixture": true,
+  "phases": [
+    "idle",
+    "head_turn",
+    "walk",
+    "run",
+    "attack",
+    "hurt",
+    "swim",
+    "sit",
+    "sleep"
+  ],
+  "files": {
+    "0000_HAT-POSE-idle.png": "3674c29da4b6bd2037397144497df101d3028018cd246364eaa988ebc4b4255a",
+    "0001_HAT-POSE-head_turn.png": "0ae8165767af4a94d9d7a90367d3194765d099f769295c79366fc3ea2ed1001d",
+    "0002_HAT-POSE-walk.png": "5e1d26726369d58af79f9a86b0c0008a91878ac520a407e11c106d0c09fae1d9",
+    "0003_HAT-POSE-run.png": "cfa1c499fe2a8b537637e01bc0ecf76d3ba3ada2bc7079d20420d0ca31b06ed8",
+    "0004_HAT-POSE-attack.png": "cb72988f675b3a5463a2c19017c468cf0dfcdb08ef7de09661c94ad4bb272e00",
+    "0005_HAT-POSE-hurt.png": "ab51627a92d830be0786c8d13f707647140a23427b24c3761a181185f7bcf2d4",
+    "0006_HAT-POSE-swim.png": "03fa5082b1fd789c75d290a95fe5bccc223ceecab974f29a949823e489f67478",
+    "0007_HAT-POSE-sit.png": "09b8c7a68ffd3a21de03a773d31eebc931af95920fff1b9dd7ff588ae566a933",
+    "0008_HAT-POSE-sleep.png": "1c404b44e8028d83f817429045cd9b4af335bf720ad2aa440c3a62af439d27e5",
+    "execution.log": "af354d0a46bb389376df990efe562399d66b6c8048c8bd779a50c9ca81c4ac3b"
+  }
+}

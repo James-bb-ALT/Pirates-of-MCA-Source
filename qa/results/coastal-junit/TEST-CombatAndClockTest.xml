@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CombatAndClockTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-04T02:10:25.673Z" hostname="DESKTOP" time="0.092">
+  <properties/>
+  <testcase name="ultimatumPausesOfflineAndSurvivesReload()" classname="CombatAndClockTest" time="0.07"/>
+  <testcase name="fatalBrawlHitStopsAtQuarterHealth()" classname="CombatAndClockTest" time="0.005"/>
+  <testcase name="externalDamageRemainsLethal()" classname="CombatAndClockTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

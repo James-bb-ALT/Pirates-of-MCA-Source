@@ -1,0 +1,11 @@
+{
+  "version": "11.0.0-alpha.15",
+  "result": "PASS_EXECUTED_SCENARIOS",
+  "universal_certification": false,
+  "items": 4444,
+  "armor_pieces": 4349,
+  "weapons": 10,
+  "extra_skins": 20,
+  "prosthetic_items": 17,
+  "jar_sha256": "28591bfa3f609f986828e4ca3aa165b6a4406b8830548d33d7ad5f148c5e9858"
+}

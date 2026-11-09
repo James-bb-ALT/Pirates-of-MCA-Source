@@ -1,0 +1,8 @@
+3e2412aec02a4178ce87dee560eae6d70783b159a0272beaa8f9cebd4e921461  CHANGELOG.md
+3b45f8624ac25fa7026d4324e3bafd2203ac4270c92d89cac5c27f07bb247e70  LEIA-ME.md
+aa193637146089958ad6722c71df11419f80bc2e48d910f01d7a919b037be92e  piratesmca-6.0.1-alpha.9-assets.zip
+81cc642912b6d8602aa635b8013ea33286f9a81e0ab27e822d8db1cbffad3f0b  piratesmca-6.0.1-alpha.9-sources.jar
+3c49f94871ea54e11c3721bd974ab3cdb00dca9e48d592a6f8519674b0e975e9  piratesmca-6.0.1-alpha.9-workspace.zip
+f41a706efb6e60762cb8d31ddc1faa5369f96ad477053424808749c4d35ebb71  piratesmca-6.0.1-alpha.9.jar
+64c3f9b2a34b2bf75de6c74a49f79e7b3235117d8382a8d7445f9334e6c49c75  tricorne_mvp.md
+2f9eadb441ab173d081d7d9dceea7d5a016ebab7dc5bd6ec38a36250044ea41b  tricorne_validation_6.0.1.md

@@ -1,0 +1,9 @@
+{
+  "id": "piratesmca:sash_mvp",
+  "logical_slots": {"head": "piratesmca:tricorne_classic", "face": "piratesmca:eyepatch_leather", "waist": "piratesmca:sash_red"},
+  "equipment": {"head": "piratesmca:tricorne_eyepatch", "chest": "piratesmca:sash_red"},
+  "spawn_tags": ["pmca_preset_tricorne_classic", "pmca_preset_eyepatch_leather", "pmca_preset_sash_red"],
+  "requires": ["adult", "pirate"],
+  "replace_existing_equipment": false,
+  "notes": "Waist maps to native CHEST for this MVP. No defense or generic armor mixing. Head cosmetics remain independent."
+}

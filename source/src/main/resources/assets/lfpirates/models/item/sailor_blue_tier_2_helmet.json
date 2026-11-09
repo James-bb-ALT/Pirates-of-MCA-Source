@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "lfpirates:item/kapelusz_marynarkablue_iitier_item"
+  }
+}

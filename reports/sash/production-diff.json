@@ -1,0 +1,22 @@
+{
+  "changed_existing": [
+    "dev/arandu/piratesmca/PirateWearables.class",
+    "dev/arandu/piratesmca/PiratesOfMCA.class",
+    "fabric.mod.json",
+    "piratesmca.mixins.json",
+    "assets/piratesmca/lang/en_us.json",
+    "assets/piratesmca/lang/pt_br.json"
+  ],
+  "added": [
+    "assets/piratesmca/items/sash_red.json",
+    "assets/piratesmca/models/item/sash_red.json",
+    "assets/piratesmca/textures/item/sash_red.png",
+    "dev/arandu/piratesmca/PirateSash.class",
+    "dev/arandu/piratesmca/client/PiratesMCAClient.class",
+    "dev/arandu/piratesmca/client/SashLayer.class",
+    "dev/arandu/piratesmca/client/SashRenderData.class",
+    "dev/arandu/piratesmca/mixin/client/SashExtractMixin.class",
+    "dev/arandu/piratesmca/mixin/client/SashStateMixin.class"
+  ],
+  "removed": []
+}

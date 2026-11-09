@@ -1,0 +1,7 @@
+{
+  "observed_utc": "2026-11-03T19:52:05.3033397Z",
+  "pid": 30728,
+  "last_game_log": "16:50:18 Stopping / FastQuit Exiting",
+  "status": "BLOCKED",
+  "note": "Functional assertions completed and checkpoint saved; JVM did not exit for more than 120 seconds. jcmd attach did not respond. Auditor terminated only isolated test process. Cause not established."
+}

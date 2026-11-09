@@ -1,0 +1,55 @@
+{
+  "title": "Pirates of MCA — capturas compactas para upload",
+  "crop_px": [
+    315,
+    100,
+    539,
+    395
+  ],
+  "image_size_px": [
+    224,
+    295
+  ],
+  "format": "JPEG",
+  "quality": 90,
+  "screenshots": 3333,
+  "skins": 20,
+  "armor_configurations": 1091,
+  "parts": [
+    {
+      "file": "piratesmca-skins.zip",
+      "bytes": 774838,
+      "sha256": "ed390a36c4c5073753af2c2353418be32c6ef565cbedcf9b2468609a02c4ee4c",
+      "images": 60,
+      "configurations": 0
+    },
+    {
+      "file": "piratesmca-armor-01-of-04.zip",
+      "bytes": 10614871,
+      "sha256": "0f02ee9189cd9b14ba542c3a2eac620349e8fd3574e0e44defbef365386b2eab",
+      "images": 819,
+      "configurations": 273
+    },
+    {
+      "file": "piratesmca-armor-02-of-04.zip",
+      "bytes": 10527126,
+      "sha256": "fb9ea3c56b2d5bb6e0cca862acc9cbb4cc0b2483c7d826d17d9c8feba9fb39a0",
+      "images": 819,
+      "configurations": 273
+    },
+    {
+      "file": "piratesmca-armor-03-of-04.zip",
+      "bytes": 10788257,
+      "sha256": "7ad4496d93cc3170e43801fffcb4f8d15c94eef93a4a1db581ecf55d1b4d8f95",
+      "images": 819,
+      "configurations": 273
+    },
+    {
+      "file": "piratesmca-armor-04-of-04.zip",
+      "bytes": 10556572,
+      "sha256": "5b1120d2e253a206a76071f068dc67202a61d439b988dca684a5d6ba346eaf6b",
+      "images": 816,
+      "configurations": 272
+    }
+  ]
+}

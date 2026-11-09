@@ -1,0 +1,912 @@
+{
+  "isolated": true,
+  "headless": true,
+  "personal_profile_used": false,
+  "results": [
+    {
+      "version": "5.2.2",
+      "name": "captain_armor_pristine_normal",
+      "format": "free",
+      "cubes": [
+        {
+          "name": "helmet__head__0",
+          "from": [
+            -4.7,
+            30.1,
+            -4.7
+          ],
+          "to": [
+            4.7,
+            32,
+            4.7
+          ]
+        },
+        {
+          "name": "helmet__head__1",
+          "from": [
+            -5.6,
+            31.200000000000003,
+            -5.3
+          ],
+          "to": [
+            5.6,
+            32.1,
+            5.3
+          ]
+        },
+        {
+          "name": "helmet__head__2",
+          "from": [
+            -6.7,
+            30.2,
+            -3.75
+          ],
+          "to": [
+            -4.6,
+            33.4,
+            2.75
+          ]
+        },
+        {
+          "name": "helmet__head__3",
+          "from": [
+            4.6,
+            30.2,
+            -3.75
+          ],
+          "to": [
+            6.699999999999999,
+            33.4,
+            2.75
+          ]
+        },
+        {
+          "name": "helmet__head__4",
+          "from": [
+            -4.5,
+            31.900000000000002,
+            -3
+          ],
+          "to": [
+            4.5,
+            35.1,
+            3
+          ]
+        },
+        {
+          "name": "helmet__head__5",
+          "from": [
+            -4.4,
+            31.25,
+            4.6
+          ],
+          "to": [
+            4.4,
+            32,
+            5.6
+          ]
+        },
+        {
+          "name": "helmet__head__6",
+          "from": [
+            -0.9,
+            31.6,
+            5.05
+          ],
+          "to": [
+            0.9,
+            33.1,
+            5.75
+          ]
+        },
+        {
+          "name": "helmet__head__7",
+          "from": [
+            2.8,
+            32,
+            -1.3
+          ],
+          "to": [
+            3.5,
+            38,
+            -0.3
+          ]
+        },
+        {
+          "name": "helmet__head__8",
+          "from": [
+            3.4,
+            32,
+            -2.1
+          ],
+          "to": [
+            4.1,
+            37.5,
+            -1.1
+          ]
+        },
+        {
+          "name": "helmet__head__9",
+          "from": [
+            4,
+            32,
+            -2.9
+          ],
+          "to": [
+            4.7,
+            37,
+            -1.9
+          ]
+        },
+        {
+          "name": "chestplate__body__0",
+          "from": [
+            -4.45,
+            11.850000000000001,
+            -2.5
+          ],
+          "to": [
+            4.45,
+            24.1,
+            2.5
+          ]
+        },
+        {
+          "name": "chestplate__body__1",
+          "from": [
+            -4.1,
+            13.399999999999999,
+            2.2199999999999998
+          ],
+          "to": [
+            -2.4999999999999996,
+            23.2,
+            2.92
+          ]
+        },
+        {
+          "name": "chestplate__body__2",
+          "from": [
+            2.5,
+            13.399999999999999,
+            2.2199999999999998
+          ],
+          "to": [
+            4.1,
+            23.2,
+            2.92
+          ]
+        },
+        {
+          "name": "chestplate__body__3",
+          "from": [
+            -0.55,
+            12.900000000000002,
+            2.28
+          ],
+          "to": [
+            0.55,
+            22.1,
+            2.96
+          ]
+        },
+        {
+          "name": "chestplate__body__4",
+          "from": [
+            -0.6,
+            20.25,
+            2.55
+          ],
+          "to": [
+            0.12,
+            21,
+            3.25
+          ]
+        },
+        {
+          "name": "chestplate__body__5",
+          "from": [
+            -0.6,
+            17.25,
+            2.55
+          ],
+          "to": [
+            0.12,
+            18,
+            3.25
+          ]
+        },
+        {
+          "name": "chestplate__body__6",
+          "from": [
+            -0.6,
+            14.25,
+            2.55
+          ],
+          "to": [
+            0.12,
+            15,
+            3.25
+          ]
+        },
+        {
+          "name": "chestplate__body__7",
+          "from": [
+            -4.25,
+            7.85,
+            -2.75
+          ],
+          "to": [
+            -1.4500000000000002,
+            13,
+            -1.75
+          ]
+        },
+        {
+          "name": "chestplate__body__8",
+          "from": [
+            1.45,
+            7.85,
+            -2.75
+          ],
+          "to": [
+            4.25,
+            13,
+            -1.75
+          ]
+        },
+        {
+          "name": "chestplate__body__9",
+          "from": [
+            -4.15,
+            7.549999999999999,
+            1.98
+          ],
+          "to": [
+            -2.1000000000000005,
+            12.95,
+            2.88
+          ]
+        },
+        {
+          "name": "chestplate__body__10",
+          "from": [
+            2.1,
+            7.549999999999999,
+            1.98
+          ],
+          "to": [
+            4.15,
+            12.95,
+            2.88
+          ]
+        },
+        {
+          "name": "chestplate__body__11",
+          "from": [
+            -4.22,
+            7.250000000000001,
+            1.97
+          ],
+          "to": [
+            -2.0999999999999996,
+            7.800000000000001,
+            2.92
+          ]
+        },
+        {
+          "name": "chestplate__body__12",
+          "from": [
+            2.1,
+            7.250000000000001,
+            1.97
+          ],
+          "to": [
+            4.220000000000001,
+            7.800000000000001,
+            2.92
+          ]
+        },
+        {
+          "name": "chestplate__body__13",
+          "from": [
+            -1.5,
+            15.1,
+            2.5599999999999996
+          ],
+          "to": [
+            1.5,
+            18.5,
+            3.36
+          ]
+        },
+        {
+          "name": "chestplate__body__14",
+          "from": [
+            -4.45,
+            12.65,
+            -2.78
+          ],
+          "to": [
+            4.45,
+            14,
+            2.72
+          ]
+        },
+        {
+          "name": "chestplate__body__15",
+          "from": [
+            -1.2,
+            12.55,
+            2.63
+          ],
+          "to": [
+            1.2,
+            14,
+            3.48
+          ]
+        },
+        {
+          "name": "chestplate__body__16",
+          "from": [
+            -3.4,
+            20.3,
+            2.85
+          ],
+          "to": [
+            -2.4,
+            21,
+            3.45
+          ]
+        },
+        {
+          "name": "chestplate__body__17",
+          "from": [
+            2.4,
+            20.3,
+            2.85
+          ],
+          "to": [
+            3.4,
+            21,
+            3.45
+          ]
+        },
+        {
+          "name": "chestplate__body__18",
+          "from": [
+            -3.4,
+            18,
+            2.85
+          ],
+          "to": [
+            -2.4,
+            18.7,
+            3.45
+          ]
+        },
+        {
+          "name": "chestplate__body__19",
+          "from": [
+            2.4,
+            18,
+            2.85
+          ],
+          "to": [
+            3.4,
+            18.7,
+            3.45
+          ]
+        },
+        {
+          "name": "chestplate__body__20",
+          "from": [
+            -3.4,
+            15.7,
+            2.85
+          ],
+          "to": [
+            -2.4,
+            16.4,
+            3.45
+          ]
+        },
+        {
+          "name": "chestplate__body__21",
+          "from": [
+            2.4,
+            15.7,
+            2.85
+          ],
+          "to": [
+            3.4,
+            16.4,
+            3.45
+          ]
+        },
+        {
+          "name": "chestplate__body__22",
+          "from": [
+            -4.55,
+            7.3,
+            -2.25
+          ],
+          "to": [
+            4.55,
+            12.5,
+            -1.5
+          ]
+        },
+        {
+          "name": "chestplate__body__23",
+          "from": [
+            -1.1,
+            12.55,
+            2.7
+          ],
+          "to": [
+            1.1,
+            14.55,
+            3.5
+          ]
+        },
+        {
+          "name": "chestplate__right_arm__0",
+          "from": [
+            -8.3,
+            12.9,
+            -2.35
+          ],
+          "to": [
+            -3.700000000000001,
+            23.8,
+            2.35
+          ]
+        },
+        {
+          "name": "chestplate__right_arm__1",
+          "from": [
+            -8.4,
+            11.4,
+            -2.55
+          ],
+          "to": [
+            -3.6000000000000005,
+            13.8,
+            2.55
+          ]
+        },
+        {
+          "name": "chestplate__right_arm__2",
+          "from": [
+            -8.42,
+            12.450000000000001,
+            -2.58
+          ],
+          "to": [
+            -3.58,
+            12.9,
+            2.62
+          ]
+        },
+        {
+          "name": "chestplate__right_arm__3",
+          "from": [
+            -8.55,
+            21.55,
+            -2.77
+          ],
+          "to": [
+            -3.450000000000001,
+            24.75,
+            2.73
+          ]
+        },
+        {
+          "name": "chestplate__right_arm__4",
+          "from": [
+            -7.75,
+            20.150000000000002,
+            2.05
+          ],
+          "to": [
+            -7.2,
+            22.55,
+            2.85
+          ]
+        },
+        {
+          "name": "chestplate__right_arm__5",
+          "from": [
+            -6.35,
+            20.150000000000002,
+            2.05
+          ],
+          "to": [
+            -5.8,
+            22.55,
+            2.85
+          ]
+        },
+        {
+          "name": "chestplate__right_arm__6",
+          "from": [
+            -5.05,
+            20.150000000000002,
+            2.05
+          ],
+          "to": [
+            -4.5,
+            22.55,
+            2.85
+          ]
+        },
+        {
+          "name": "chestplate__left_arm__0",
+          "from": [
+            3.7,
+            12.9,
+            -2.35
+          ],
+          "to": [
+            8.3,
+            23.8,
+            2.35
+          ]
+        },
+        {
+          "name": "chestplate__left_arm__1",
+          "from": [
+            3.6,
+            11.4,
+            -2.55
+          ],
+          "to": [
+            8.4,
+            13.8,
+            2.55
+          ]
+        },
+        {
+          "name": "chestplate__left_arm__2",
+          "from": [
+            3.58,
+            12.450000000000001,
+            -2.58
+          ],
+          "to": [
+            8.42,
+            12.9,
+            2.62
+          ]
+        },
+        {
+          "name": "chestplate__left_arm__3",
+          "from": [
+            3.45,
+            21.55,
+            -2.77
+          ],
+          "to": [
+            8.55,
+            24.75,
+            2.73
+          ]
+        },
+        {
+          "name": "chestplate__left_arm__4",
+          "from": [
+            4.25,
+            20.150000000000002,
+            2.05
+          ],
+          "to": [
+            4.8,
+            22.55,
+            2.85
+          ]
+        },
+        {
+          "name": "chestplate__left_arm__5",
+          "from": [
+            5.65,
+            20.150000000000002,
+            2.05
+          ],
+          "to": [
+            6.2,
+            22.55,
+            2.85
+          ]
+        },
+        {
+          "name": "chestplate__left_arm__6",
+          "from": [
+            6.95,
+            20.150000000000002,
+            2.05
+          ],
+          "to": [
+            7.5,
+            22.55,
+            2.85
+          ]
+        },
+        {
+          "name": "leggings__body__0",
+          "from": [
+            -4.27,
+            11.7,
+            -2.4
+          ],
+          "to": [
+            4.27,
+            14.2,
+            2.4
+          ]
+        },
+        {
+          "name": "leggings__body__1",
+          "from": [
+            -1,
+            12.8,
+            2.1
+          ],
+          "to": [
+            1,
+            14.4,
+            3.1
+          ]
+        },
+        {
+          "name": "leggings__right_leg__0",
+          "from": [
+            -4.3,
+            3,
+            -2.25
+          ],
+          "to": [
+            0.2999999999999998,
+            12,
+            2.25
+          ]
+        },
+        {
+          "name": "leggings__right_leg__1",
+          "from": [
+            -4.4,
+            10.6,
+            -2.36
+          ],
+          "to": [
+            0.39999999999999947,
+            11.5,
+            2.36
+          ]
+        },
+        {
+          "name": "leggings__right_leg__2",
+          "from": [
+            -4.33,
+            2.5000000000000004,
+            -2.3
+          ],
+          "to": [
+            0.33000000000000007,
+            3.4000000000000004,
+            2.3
+          ]
+        },
+        {
+          "name": "leggings__left_leg__0",
+          "from": [
+            -0.2999999999999998,
+            3,
+            -2.25
+          ],
+          "to": [
+            4.3,
+            12,
+            2.25
+          ]
+        },
+        {
+          "name": "leggings__left_leg__1",
+          "from": [
+            -0.3999999999999999,
+            10.6,
+            -2.36
+          ],
+          "to": [
+            4.4,
+            11.5,
+            2.36
+          ]
+        },
+        {
+          "name": "leggings__left_leg__2",
+          "from": [
+            -0.33000000000000007,
+            2.5000000000000004,
+            -2.3
+          ],
+          "to": [
+            4.33,
+            3.4000000000000004,
+            2.3
+          ]
+        },
+        {
+          "name": "boots__right_leg__0",
+          "from": [
+            -4.42,
+            0.25,
+            -2.42
+          ],
+          "to": [
+            0.41999999999999993,
+            5.2,
+            2.42
+          ]
+        },
+        {
+          "name": "boots__right_leg__1",
+          "from": [
+            -4.5,
+            3.45,
+            -2.49
+          ],
+          "to": [
+            0.5,
+            4.9,
+            2.49
+          ]
+        },
+        {
+          "name": "boots__right_leg__2",
+          "from": [
+            -4.54,
+            0.050000000000000266,
+            -2.8499999999999996
+          ],
+          "to": [
+            0.54,
+            1.4000000000000004,
+            3.2
+          ]
+        },
+        {
+          "name": "boots__right_leg__3",
+          "from": [
+            -2.6,
+            2.9499999999999997,
+            2.12
+          ],
+          "to": [
+            -1.4000000000000001,
+            4.1,
+            2.77
+          ]
+        },
+        {
+          "name": "boots__left_leg__0",
+          "from": [
+            -0.41999999999999993,
+            0.25,
+            -2.42
+          ],
+          "to": [
+            4.42,
+            5.2,
+            2.42
+          ]
+        },
+        {
+          "name": "boots__left_leg__1",
+          "from": [
+            -0.5,
+            3.45,
+            -2.49
+          ],
+          "to": [
+            4.5,
+            4.9,
+            2.49
+          ]
+        },
+        {
+          "name": "boots__left_leg__2",
+          "from": [
+            -0.54,
+            0.050000000000000266,
+            -2.8499999999999996
+          ],
+          "to": [
+            4.54,
+            1.4000000000000004,
+            3.2
+          ]
+        },
+        {
+          "name": "boots__left_leg__3",
+          "from": [
+            1.4,
+            2.9499999999999997,
+            2.12
+          ],
+          "to": [
+            2.5999999999999996,
+            4.1,
+            2.77
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "captain_armor_pristine_normal.png",
+          "width": 128,
+          "height": 128,
+          "error": 0
+        }
+      ],
+      "webgl": true,
+      "source": "models/blockbench/wardrobe/pirateatelier/captain_armor_pristine_normal.bbmodel",
+      "status": "PASS"
+    }
+  ],
+  "page_errors": [],
+  "post_requests": [
+    {
+      "method": "POST",
+      "url": "https://blckbn.ch/api/event/new_installation",
+      "blocked": true
+    },
+    {
+      "method": "POST",
+      "url": "https://web.blockbench.net/cdn-cgi/rum?",
+      "blocked": true
+    }
+  ],
+  "console": [
+    {
+      "type": "log",
+      "text": "Three.js r129"
+    },
+    {
+      "type": "log",
+      "text": "%cBlockbench 5.2.2 Web (Electron) border: 2px solid #3e90ff; padding: 4px 8px; font-size: 1.2em;"
+    },
+    {
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "log",
+      "text": "All plugin installations resolved"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x2bb40488c000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x2bb40488c000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x2bb40488c000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x2bb40488c000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "isolated": true,
+  "headless": true,
+  "personal_profile_used": false,
+  "results": [
+    {
+      "version": "5.2.2",
+      "name": "tricorne_classic",
+      "format": "java_block",
+      "cubes": [
+        {
+          "name": "crown",
+          "from": [
+            3.6,
+            12.5,
+            4.6
+          ],
+          "to": [
+            12.4,
+            16,
+            11.4
+          ]
+        },
+        {
+          "name": "burgundy_band",
+          "from": [
+            3.5,
+            12.5,
+            4.5
+          ],
+          "to": [
+            12.5,
+            13.15,
+            11.5
+          ]
+        },
+        {
+          "name": "brim_0",
+          "from": [
+            6,
+            12,
+            1.4
+          ],
+          "to": [
+            10,
+            12.6,
+            3.2
+          ]
+        },
+        {
+          "name": "brim_1",
+          "from": [
+            4,
+            12,
+            3.2
+          ],
+          "to": [
+            12,
+            12.6,
+            5
+          ]
+        },
+        {
+          "name": "brim_2",
+          "from": [
+            2,
+            12,
+            5
+          ],
+          "to": [
+            14,
+            12.6,
+            7
+          ]
+        },
+        {
+          "name": "brim_3",
+          "from": [
+            1,
+            12,
+            7
+          ],
+          "to": [
+            15,
+            12.6,
+            11.8
+          ]
+        },
+        {
+          "name": "front_fold",
+          "from": [
+            6,
+            12.6,
+            1.4
+          ],
+          "to": [
+            10,
+            14.1,
+            2.4
+          ]
+        },
+        {
+          "name": "left_fold",
+          "from": [
+            1,
+            12.6,
+            7
+          ],
+          "to": [
+            2.2,
+            14.6,
+            11.8
+          ]
+        },
+        {
+          "name": "right_fold",
+          "from": [
+            13.8,
+            12.6,
+            7
+          ],
+          "to": [
+            15,
+            14.6,
+            11.8
+          ]
+        },
+        {
+          "name": "front_gold",
+          "from": [
+            6,
+            14.1,
+            1.35
+          ],
+          "to": [
+            10,
+            14.45,
+            2.45
+          ]
+        },
+        {
+          "name": "left_gold",
+          "from": [
+            0.95,
+            14.6,
+            6.95
+          ],
+          "to": [
+            2.25,
+            14.95,
+            11.85
+          ]
+        },
+        {
+          "name": "right_gold",
+          "from": [
+            13.75,
+            14.6,
+            6.95
+          ],
+          "to": [
+            15.05,
+            14.95,
+            11.85
+          ]
+        },
+        {
+          "name": "left_slope_gold",
+          "from": [
+            3.95,
+            12.6,
+            3.15
+          ],
+          "to": [
+            6.05,
+            12.95,
+            3.65
+          ]
+        },
+        {
+          "name": "right_slope_gold",
+          "from": [
+            9.95,
+            12.6,
+            3.15
+          ],
+          "to": [
+            12.05,
+            12.95,
+            3.65
+          ]
+        },
+        {
+          "name": "back_gold",
+          "from": [
+            2.2,
+            12.6,
+            11.35
+          ],
+          "to": [
+            13.8,
+            12.95,
+            11.85
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "tricorne_classic.png",
+          "width": 64,
+          "height": 64,
+          "error": 0
+        }
+      ],
+      "webgl": true,
+      "source": "models/blockbench/head/tricorne_classic.bbmodel",
+      "status": "PASS"
+    },
+    {
+      "version": "5.2.2",
+      "name": "reference_adult_mca",
+      "format": "free",
+      "cubes": [
+        {
+          "name": "reference_head",
+          "from": [
+            -4,
+            24,
+            -4
+          ],
+          "to": [
+            4,
+            32,
+            4
+          ]
+        },
+        {
+          "name": "reference_body",
+          "from": [
+            -4,
+            12,
+            -2
+          ],
+          "to": [
+            4,
+            24,
+            2
+          ]
+        },
+        {
+          "name": "reference_right_arm",
+          "from": [
+            -8,
+            12,
+            -2
+          ],
+          "to": [
+            -4,
+            24,
+            2
+          ]
+        },
+        {
+          "name": "reference_left_arm",
+          "from": [
+            4,
+            12,
+            -2
+          ],
+          "to": [
+            8,
+            24,
+            2
+          ]
+        },
+        {
+          "name": "reference_right_leg",
+          "from": [
+            -3.9,
+            0,
+            -2
+          ],
+          "to": [
+            0.1,
+            12,
+            2
+          ]
+        },
+        {
+          "name": "reference_left_leg",
+          "from": [
+            -0.1,
+            0,
+            -2
+          ],
+          "to": [
+            3.9,
+            12,
+            2
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "reference_only.png",
+          "width": 64,
+          "height": 64,
+          "error": 0
+        }
+      ],
+      "webgl": true,
+      "source": "models/blockbench/reference_adult_mca.bbmodel",
+      "status": "PASS"
+    }
+  ],
+  "page_errors": [],
+  "post_requests": [
+    {
+      "method": "POST",
+      "url": "https://blckbn.ch/api/event/new_installation",
+      "blocked": true
+    },
+    {
+      "method": "POST",
+      "url": "https://web.blockbench.net/cdn-cgi/rum?",
+      "blocked": true
+    }
+  ],
+  "console": [
+    {
+      "type": "log",
+      "text": "Three.js r129"
+    },
+    {
+      "type": "log",
+      "text": "%cBlockbench 5.2.2 Web (Electron) border: 2px solid #3e90ff; padding: 4px 8px; font-size: 1.2em;"
+    },
+    {
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "log",
+      "text": "All plugin installations resolved"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xb0c00730000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xb0c00730000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xb0c00730000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xb0c00730000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ]
+}

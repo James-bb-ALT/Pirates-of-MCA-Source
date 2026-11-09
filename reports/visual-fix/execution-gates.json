@@ -1,0 +1,166 @@
+{
+  "final_jar_sha256": "6bf985d7804a6126a024033db7f2aaaf36d1ad4c30aaeafbcb2a82a9ad87898a",
+  "gates": [
+    {
+      "gate": "full-final-on",
+      "result": "PASS_EXECUTION",
+      "screenshots_logged": 2175,
+      "jar_sha256": "9a3df4c9365a34725129bfc77c16e36a85002ed1bef6227cf2214cf398fa1305",
+      "reused_candidate": true,
+      "log": "reports/visual-fix-full-final-on.log",
+      "log_sha256": "e976d63bc6fe92a487b4eabe893d9fabd829bada28e64356bf33a36db958b5d7",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "full-final-off",
+      "result": "PASS_EXECUTION",
+      "screenshots_logged": 2175,
+      "jar_sha256": "5d7993ce89fe5b8a27d750c334891a31cb0cdef46d30aca7b3dc7fdb120f309b",
+      "reused_candidate": true,
+      "log": "reports/visual-fix-full-final-off.log",
+      "log_sha256": "efb7b3324f5024d90309f921d1bd49ead76608ab878ad9d5a7db4e4aea650871",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "weapons-on",
+      "result": "PASS_EXECUTION",
+      "screenshots_logged": 664,
+      "jar_sha256": "5d7993ce89fe5b8a27d750c334891a31cb0cdef46d30aca7b3dc7fdb120f309b",
+      "reused_candidate": true,
+      "log": "reports/visual-fix-weapons-on.log",
+      "log_sha256": "f95bfe600e6ca681c46ebaf89d69cd5daad7dfba5e2382ebb3433c80ef4ef050",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "weapons-off",
+      "result": "PASS_EXECUTION",
+      "screenshots_logged": 664,
+      "jar_sha256": "5d7993ce89fe5b8a27d750c334891a31cb0cdef46d30aca7b3dc7fdb120f309b",
+      "reused_candidate": true,
+      "log": "reports/visual-fix-weapons-off.log",
+      "log_sha256": "70d726db36b62cd0161b8049df581959899048007493516de0abd8dab44ce765",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "prototypes-on",
+      "result": "RUNNING_OR_INCOMPLETE",
+      "screenshots_logged": 0,
+      "jar_sha256": "6bf985d7804a6126a024033db7f2aaaf36d1ad4c30aaeafbcb2a82a9ad87898a",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-prototypes-on.log",
+      "log_sha256": "eee18629f9321cc52f5b4c75c0c21a2a40e5d8bfdec4dfcf6b8ac1f506f1a093",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "prototypes-off",
+      "result": "BLOCKED_OTHER_JAR",
+      "screenshots_logged": 440,
+      "jar_sha256": "5d7993ce89fe5b8a27d750c334891a31cb0cdef46d30aca7b3dc7fdb120f309b",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-prototypes-off.log",
+      "log_sha256": "e78043a787ade3f1bc595daabe237c65485d4ec7ce0b643e5cbd5d11742f4d1d",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "variants-on",
+      "result": "RUNNING_OR_INCOMPLETE",
+      "screenshots_logged": 0,
+      "jar_sha256": "5d7993ce89fe5b8a27d750c334891a31cb0cdef46d30aca7b3dc7fdb120f309b",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-variants-on.log",
+      "log_sha256": "a030f014ab014a17a836de897d3850d8d810d39d9a506177899228b337aa8d4b",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "heads-on",
+      "result": "NOT_RUN",
+      "screenshots_logged": 0,
+      "jar_sha256": "",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-heads-on.log",
+      "log_sha256": "",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "heads-off",
+      "result": "NOT_RUN",
+      "screenshots_logged": 0,
+      "jar_sha256": "",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-heads-off.log",
+      "log_sha256": "",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "avatar-slim-on",
+      "result": "NOT_RUN",
+      "screenshots_logged": 0,
+      "jar_sha256": "",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-avatar-slim-on.log",
+      "log_sha256": "",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "avatar-slim-off",
+      "result": "NOT_RUN",
+      "screenshots_logged": 0,
+      "jar_sha256": "",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-avatar-slim-off.log",
+      "log_sha256": "",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "probe-comparison-on",
+      "result": "NOT_RUN",
+      "screenshots_logged": 0,
+      "jar_sha256": "",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-probe-comparison-on.log",
+      "log_sha256": "",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "persistence",
+      "result": "NOT_RUN",
+      "screenshots_logged": 0,
+      "jar_sha256": "",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-persistence.log",
+      "log_sha256": "",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "persistence-reopen",
+      "result": "NOT_RUN",
+      "screenshots_logged": 0,
+      "jar_sha256": "",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-persistence-reopen.log",
+      "log_sha256": "",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "server-gametests",
+      "result": "NOT_RUN",
+      "screenshots_logged": 0,
+      "jar_sha256": "",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-server-gametests.log",
+      "log_sha256": "",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    },
+    {
+      "gate": "build-regressions",
+      "result": "NOT_RUN",
+      "screenshots_logged": 0,
+      "jar_sha256": "",
+      "reused_candidate": false,
+      "log": "reports/visual-fix-build-regressions.log",
+      "log_sha256": "",
+      "visual_approval": "SEPARATE_REVIEW_REQUIRED"
+    }
+  ],
+  "all_visual_areas_approved": false
+}

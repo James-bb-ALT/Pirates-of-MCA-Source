@@ -1,0 +1,1263 @@
+Compiled from "EMFModelPartRoot.java"
+public class traben.entity_model_features.models.parts.EMFModelPartRoot extends traben.entity_model_features.models.parts.EMFModelPartVanilla {
+  public final traben.entity_model_features.models.EMFModel_ID modelName;
+
+  public final net.minecraft.client.model.geom.ModelPart vanillaRoot;
+
+  public final traben.entity_texture_features.utils.ETFLruCache$UUIDInteger entitySuffixMap;
+
+  private final java.util.Map<java.lang.String, traben.entity_model_features.models.parts.EMFModelPartVanilla> allVanillaParts;
+
+  private final java.util.Map<java.lang.Integer, net.minecraft.client.model.geom.ModelPart> vanillaFormatModelPartOfEachState;
+
+  public traben.entity_model_features.utils.EMFDirectoryHandler directoryContext;
+
+  public traben.entity_texture_features.ETFApi$ETFVariantSuffixProvider variantTester;
+
+  public boolean containsCustomModel;
+
+  public boolean containsCustomAnims;
+
+  private long lastMobCountAnimatedOn;
+
+  private final java.util.Set<java.lang.Integer> hasRemovedTopLevelJemTextureFromChildren;
+
+  protected final java.util.Map<java.lang.Integer, java.util.function.Consumer<com.mojang.blaze3d.vertex.PoseStack>> leftArmPositioners;
+
+  protected final java.util.Map<java.lang.Integer, java.util.function.Consumer<com.mojang.blaze3d.vertex.PoseStack>> rightArmPositioners;
+
+  protected final java.util.Map<traben.entity_model_features.models.animation.EMFAttachment$Type, java.util.Map<java.lang.Integer, java.util.function.Consumer<com.mojang.blaze3d.vertex.PoseStack>>> otherPositioners;
+
+  public boolean isMainModel;
+
+  private final java.util.Set<java.lang.String> registeredSet;
+
+  private final java.util.HashMap<java.lang.Integer, java.lang.Runnable> animations;
+
+  private java.lang.Runnable animation;
+
+  private final java.util.Map<java.lang.Integer, net.minecraft.resources.Identifier> jemLevelOverride;
+
+  public java.util.function.Consumer<com.mojang.blaze3d.vertex.PoseStack> getPositionerForAttachment(traben.entity_model_features.models.animation.EMFAttachment$Type);
+    Code:
+         0: aload_1
+         1: invokevirtual #1                  // Method traben/entity_model_features/models/animation/EMFAttachment$Type.isHumanoidHand:()Z
+         4: ifeq          56
+         7: aload_1
+         8: getstatic     #7                  // Field traben/entity_model_features/models/animation/EMFAttachment$Type.RIGHT_HAND:Ltraben/entity_model_features/models/animation/EMFAttachment$Type;
+        11: if_acmpne     36
+        14: aload_0
+        15: getfield      #11                 // Field rightArmPositioners:Ljava/util/Map;
+        18: aload_0
+        19: getfield      #17                 // Field currentModelVariant:I
+        22: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        25: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        30: checkcast     #33                 // class java/util/function/Consumer
+        33: goto          55
+        36: aload_0
+        37: getfield      #35                 // Field leftArmPositioners:Ljava/util/Map;
+        40: aload_0
+        41: getfield      #17                 // Field currentModelVariant:I
+        44: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        47: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        52: checkcast     #33                 // class java/util/function/Consumer
+        55: areturn
+        56: aload_0
+        57: getfield      #38                 // Field otherPositioners:Ljava/util/Map;
+        60: aload_1
+        61: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        66: checkcast     #28                 // class java/util/Map
+        69: astore_2
+        70: aload_2
+        71: ifnonnull     76
+        74: aconst_null
+        75: areturn
+        76: aload_2
+        77: aload_0
+        78: getfield      #17                 // Field currentModelVariant:I
+        81: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        84: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        89: checkcast     #33                 // class java/util/function/Consumer
+        92: areturn
+
+  public traben.entity_model_features.models.parts.EMFModelPartRoot getRoot();
+    Code:
+         0: aload_0
+         1: areturn
+
+  public traben.entity_model_features.models.parts.EMFModelPartRoot(traben.entity_model_features.models.EMFModel_ID, traben.entity_model_features.utils.EMFDirectoryHandler, net.minecraft.client.model.geom.ModelPart, java.util.Collection<java.lang.String>, java.util.Map<java.lang.String, traben.entity_model_features.models.parts.EMFModelPartVanilla>);
+    Code:
+         0: aload_0
+         1: ldc           #41                 // String root
+         3: aload_3
+         4: aload         4
+         6: aload         5
+         8: aconst_null
+         9: invokespecial #43                 // Method traben/entity_model_features/models/parts/EMFModelPartVanilla."<init>":(Ljava/lang/String;Lnet/minecraft/client/model/geom/ModelPart;Ljava/util/Collection;Ljava/util/Map;Ltraben/entity_model_features/models/parts/EMFModelPartRoot;)V
+        12: aload_0
+        13: new           #49                 // class traben/entity_texture_features/utils/ETFLruCache$UUIDInteger
+        16: dup
+        17: invokespecial #51                 // Method traben/entity_texture_features/utils/ETFLruCache$UUIDInteger."<init>":()V
+        20: putfield      #54                 // Field entitySuffixMap:Ltraben/entity_texture_features/utils/ETFLruCache$UUIDInteger;
+        23: aload_0
+        24: new           #58                 // class java/util/HashMap
+        27: dup
+        28: invokespecial #60                 // Method java/util/HashMap."<init>":()V
+        31: putfield      #61                 // Field vanillaFormatModelPartOfEachState:Ljava/util/Map;
+        34: aload_0
+        35: aconst_null
+        36: putfield      #64                 // Field variantTester:Ltraben/entity_texture_features/ETFApi$ETFVariantSuffixProvider;
+        39: aload_0
+        40: iconst_0
+        41: putfield      #68                 // Field containsCustomModel:Z
+        44: aload_0
+        45: iconst_0
+        46: putfield      #72                 // Field containsCustomAnims:Z
+        49: aload_0
+        50: lconst_0
+        51: putfield      #75                 // Field lastMobCountAnimatedOn:J
+        54: aload_0
+        55: new           #79                 // class java/util/HashSet
+        58: dup
+        59: invokespecial #81                 // Method java/util/HashSet."<init>":()V
+        62: putfield      #82                 // Field hasRemovedTopLevelJemTextureFromChildren:Ljava/util/Set;
+        65: aload_0
+        66: new           #58                 // class java/util/HashMap
+        69: dup
+        70: invokespecial #60                 // Method java/util/HashMap."<init>":()V
+        73: putfield      #35                 // Field leftArmPositioners:Ljava/util/Map;
+        76: aload_0
+        77: new           #58                 // class java/util/HashMap
+        80: dup
+        81: invokespecial #60                 // Method java/util/HashMap."<init>":()V
+        84: putfield      #11                 // Field rightArmPositioners:Ljava/util/Map;
+        87: aload_0
+        88: new           #58                 // class java/util/HashMap
+        91: dup
+        92: invokespecial #60                 // Method java/util/HashMap."<init>":()V
+        95: putfield      #38                 // Field otherPositioners:Ljava/util/Map;
+        98: aload_0
+        99: iconst_0
+       100: putfield      #86                 // Field isMainModel:Z
+       103: aload_0
+       104: new           #79                 // class java/util/HashSet
+       107: dup
+       108: invokespecial #81                 // Method java/util/HashSet."<init>":()V
+       111: putfield      #89                 // Field registeredSet:Ljava/util/Set;
+       114: aload_0
+       115: new           #58                 // class java/util/HashMap
+       118: dup
+       119: invokespecial #60                 // Method java/util/HashMap."<init>":()V
+       122: putfield      #92                 // Field animations:Ljava/util/HashMap;
+       125: aload_0
+       126: aconst_null
+       127: putfield      #96                 // Field animation:Ljava/lang/Runnable;
+       130: aload_0
+       131: new           #58                 // class java/util/HashMap
+       134: dup
+       135: invokespecial #60                 // Method java/util/HashMap."<init>":()V
+       138: putfield      #100                // Field jemLevelOverride:Ljava/util/Map;
+       141: aload_0
+       142: aload         5
+       144: putfield      #103                // Field allVanillaParts:Ljava/util/Map;
+       147: aload_0
+       148: getfield      #103                // Field allVanillaParts:Ljava/util/Map;
+       151: aload_0
+       152: getfield      #106                // Field name:Ljava/lang/String;
+       155: aload_0
+       156: invokeinterface #110,  3          // InterfaceMethod java/util/Map.putIfAbsent:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       161: pop
+       162: aload_0
+       163: aload_1
+       164: putfield      #114                // Field modelName:Ltraben/entity_model_features/models/EMFModel_ID;
+       167: aload_0
+       168: aload_2
+       169: putfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       172: aload_0
+       173: aload_3
+       174: putfield      #122                // Field vanillaRoot:Lnet/minecraft/client/model/geom/ModelPart;
+       177: return
+
+  protected float[] debugBoxColor();
+    Code:
+         0: iconst_3
+         1: newarray       float
+         3: dup
+         4: iconst_0
+         5: fconst_1
+         6: fastore
+         7: dup
+         8: iconst_1
+         9: fconst_0
+        10: fastore
+        11: dup
+        12: iconst_2
+        13: fconst_0
+        14: fastore
+        15: areturn
+
+  public java.util.Collection<traben.entity_model_features.models.parts.EMFModelPartVanilla> getAllVanillaPartsEMF();
+    Code:
+         0: aload_0
+         1: getfield      #103                // Field allVanillaParts:Ljava/util/Map;
+         4: invokeinterface #126,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+         9: areturn
+
+  public java.util.Map<java.lang.String, traben.entity_model_features.models.parts.EMFModelPartVanilla> getAllVanillaPartsByNameEMF();
+    Code:
+         0: aload_0
+         1: getfield      #103                // Field allVanillaParts:Ljava/util/Map;
+         4: areturn
+
+  public void oneTimeRunnable();
+    Code:
+         0: aload_0
+         1: invokevirtual #130                // Method registerModelRunnableWithEntityTypeContext:()V
+         4: return
+
+  private void registerModelRunnableWithEntityTypeContext();
+    Code:
+         0: invokestatic  #133                // Method traben/entity_model_features/models/animation/state/EMFState.state:()Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;
+         3: astore_1
+         4: aload_1
+         5: ifnull        134
+         8: aload_1
+         9: invokeinterface #139,  1          // InterfaceMethod traben/entity_model_features/models/animation/state/EMFEntityRenderState.typeString:()Ljava/lang/String;
+        14: astore_2
+        15: aload_0
+        16: getfield      #89                 // Field registeredSet:Ljava/util/Set;
+        19: aload_2
+        20: invokeinterface #145,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+        25: ifeq          29
+        28: return
+        29: aload_0
+        30: getfield      #89                 // Field registeredSet:Ljava/util/Set;
+        33: aload_2
+        34: invokeinterface #151,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+        39: pop
+        40: invokestatic  #154                // Method traben/entity_model_features/EMF.config:()Ltraben/tconfig/TConfigHandler;
+        43: invokevirtual #160                // Method traben/tconfig/TConfigHandler.getConfig:()Ltraben/tconfig/TConfig;
+        46: checkcast     #166                // class traben/entity_model_features/config/EMFConfig
+        49: astore_3
+        50: aload_3
+        51: getfield      #168                // Field traben/entity_model_features/config/EMFConfig.debugOnRightClick:Z
+        54: ifeq          84
+        57: invokestatic  #171                // Method traben/entity_model_features/EMFManager.getInstance:()Ltraben/entity_model_features/EMFManager;
+        60: getfield      #177                // Field traben/entity_model_features/EMFManager.rootPartsPerEntityTypeForDebug:Ljava/util/Map;
+        63: aload_2
+        64: invokedynamic #180,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+        69: invokeinterface #184,  3          // InterfaceMethod java/util/Map.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+        74: checkcast     #146                // class java/util/Set
+        77: aload_0
+        78: invokeinterface #151,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+        83: pop
+        84: invokestatic  #171                // Method traben/entity_model_features/EMFManager.getInstance:()Ltraben/entity_model_features/EMFManager;
+        87: getfield      #188                // Field traben/entity_model_features/EMFManager.rootPartsPerEntityTypeForVariation:Ljava/util/Map;
+        90: aload_2
+        91: invokedynamic #191,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+        96: invokeinterface #184,  3          // InterfaceMethod java/util/Map.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+       101: checkcast     #146                // class java/util/Set
+       104: aload_0
+       105: invokeinterface #151,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+       110: pop
+       111: aload_0
+       112: getfield      #64                 // Field variantTester:Ltraben/entity_texture_features/ETFApi$ETFVariantSuffixProvider;
+       115: ifnull        134
+       118: aload_3
+       119: getfield      #192                // Field traben/entity_model_features/config/EMFConfig.logModelCreationData:Z
+       122: ifeq          134
+       125: aload_2
+       126: invokedynamic #195,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       131: invokestatic  #199                // Method traben/entity_model_features/utils/EMFUtils.log:(Ljava/lang/String;)V
+       134: return
+
+  public void doVariantCheck(traben.entity_model_features.models.animation.state.EMFEntityRenderState);
+    Code:
+         0: aload_0
+         1: getfield      #64                 // Field variantTester:Ltraben/entity_texture_features/ETFApi$ETFVariantSuffixProvider;
+         4: ifnonnull     13
+         7: aload_0
+         8: iconst_1
+         9: invokevirtual #205                // Method setVariantStateTo:(I)V
+        12: return
+        13: aload_1
+        14: invokeinterface #209,  1          // InterfaceMethod traben/entity_model_features/models/animation/state/EMFEntityRenderState.uuid:()Ljava/util/UUID;
+        19: astore_2
+        20: aload_0
+        21: getfield      #54                 // Field entitySuffixMap:Ltraben/entity_texture_features/utils/ETFLruCache$UUIDInteger;
+        24: aload_2
+        25: invokevirtual #213                // Method traben/entity_texture_features/utils/ETFLruCache$UUIDInteger.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        28: checkcast     #22                 // class java/lang/Integer
+        31: invokevirtual #214                // Method java/lang/Integer.intValue:()I
+        34: istore_3
+        35: iload_3
+        36: iconst_m1
+        37: if_icmpeq     49
+        40: aload_0
+        41: aload_1
+        42: aload_2
+        43: invokevirtual #218                // Method checkIfShouldExpireEntity:(Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;Ljava/util/UUID;)V
+        46: goto          77
+        49: iconst_1
+        50: aload_0
+        51: getfield      #64                 // Field variantTester:Ltraben/entity_texture_features/ETFApi$ETFVariantSuffixProvider;
+        54: aload_1
+        55: invokeinterface #222,  2          // InterfaceMethod traben/entity_texture_features/ETFApi$ETFVariantSuffixProvider.getSuffixForETFEntity:(Ltraben/entity_texture_features/features/state/ETFEntityRenderState;)I
+        60: invokestatic  #228                // Method java/lang/Math.max:(II)I
+        63: istore_3
+        64: aload_0
+        65: getfield      #54                 // Field entitySuffixMap:Ltraben/entity_texture_features/utils/ETFLruCache$UUIDInteger;
+        68: aload_2
+        69: iload_3
+        70: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        73: invokevirtual #234                // Method traben/entity_texture_features/utils/ETFLruCache$UUIDInteger.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        76: pop
+        77: invokestatic  #171                // Method traben/entity_model_features/EMFManager.getInstance:()Ltraben/entity_model_features/EMFManager;
+        80: getfield      #237                // Field traben/entity_model_features/EMFManager.lastModelSuffixOfEntity:Ltraben/entity_texture_features/utils/ETFLruCache$UUIDInteger;
+        83: aload_2
+        84: iload_3
+        85: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        88: invokevirtual #234                // Method traben/entity_texture_features/utils/ETFLruCache$UUIDInteger.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        91: pop
+        92: aload_0
+        93: iload_3
+        94: invokevirtual #205                // Method setVariantStateTo:(I)V
+        97: return
+
+  public void checkIfShouldExpireEntity(traben.entity_model_features.models.animation.state.EMFEntityRenderState, java.util.UUID);
+    Code:
+         0: aload_0
+         1: getfield      #64                 // Field variantTester:Ltraben/entity_texture_features/ETFApi$ETFVariantSuffixProvider;
+         4: aload_2
+         5: invokeinterface #240,  2          // InterfaceMethod traben/entity_texture_features/ETFApi$ETFVariantSuffixProvider.entityCanUpdate:(Ljava/util/UUID;)Z
+        10: ifeq          124
+        13: getstatic     #244                // Field traben/entity_model_features/models/parts/EMFModelPartRoot$1.$SwitchMap$traben$entity_texture_features$config$ETFConfig$UpdateFrequency:[I
+        16: invokestatic  #154                // Method traben/entity_model_features/EMF.config:()Ltraben/tconfig/TConfigHandler;
+        19: invokevirtual #160                // Method traben/tconfig/TConfigHandler.getConfig:()Ltraben/tconfig/TConfig;
+        22: checkcast     #166                // class traben/entity_model_features/config/EMFConfig
+        25: getfield      #250                // Field traben/entity_model_features/config/EMFConfig.modelUpdateFrequency:Ltraben/entity_texture_features/config/ETFConfig$UpdateFrequency;
+        28: invokevirtual #254                // Method traben/entity_texture_features/config/ETFConfig$UpdateFrequency.ordinal:()I
+        31: iaload
+        32: lookupswitch  { // 2
+                       1: 60
+                       2: 63
+                 default: 75
+            }
+        60: goto          124
+        63: aload_0
+        64: getfield      #54                 // Field entitySuffixMap:Ltraben/entity_texture_features/utils/ETFLruCache$UUIDInteger;
+        67: aload_2
+        68: invokevirtual #259                // Method traben/entity_texture_features/utils/ETFLruCache$UUIDInteger.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+        71: pop
+        72: goto          124
+        75: invokestatic  #154                // Method traben/entity_model_features/EMF.config:()Ltraben/tconfig/TConfigHandler;
+        78: invokevirtual #160                // Method traben/tconfig/TConfigHandler.getConfig:()Ltraben/tconfig/TConfig;
+        81: checkcast     #166                // class traben/entity_model_features/config/EMFConfig
+        84: getfield      #250                // Field traben/entity_model_features/config/EMFConfig.modelUpdateFrequency:Ltraben/entity_texture_features/config/ETFConfig$UpdateFrequency;
+        87: invokevirtual #262                // Method traben/entity_texture_features/config/ETFConfig$UpdateFrequency.getDelay:()I
+        90: istore_3
+        91: aload_1
+        92: invokestatic  #265                // Method traben/entity_model_features/models/animation/math/EMFMath.getTime:(Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;)F
+        95: iload_3
+        96: i2f
+        97: frem
+        98: f2i
+        99: istore        4
+       101: iload         4
+       103: aload_2
+       104: invokevirtual #271                // Method java/util/UUID.hashCode:()I
+       107: invokestatic  #276                // Method java/lang/Math.abs:(I)I
+       110: iload_3
+       111: irem
+       112: if_icmpne     124
+       115: aload_0
+       116: getfield      #54                 // Field entitySuffixMap:Ltraben/entity_texture_features/utils/ETFLruCache$UUIDInteger;
+       119: aload_2
+       120: invokevirtual #259                // Method traben/entity_texture_features/utils/ETFLruCache$UUIDInteger.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+       123: pop
+       124: return
+
+  public void addAndSetVariantOfJem(traben.entity_model_features.models.jem_objects.EMFJemData, int);
+    Code:
+         0: invokestatic  #154                // Method traben/entity_model_features/EMF.config:()Ltraben/tconfig/TConfigHandler;
+         3: invokevirtual #160                // Method traben/tconfig/TConfigHandler.getConfig:()Ltraben/tconfig/TConfig;
+         6: checkcast     #166                // class traben/entity_model_features/config/EMFConfig
+         9: getfield      #192                // Field traben/entity_model_features/config/EMFConfig.logModelCreationData:Z
+        12: ifeq          31
+        15: aload_1
+        16: invokevirtual #280                // Method traben/entity_model_features/models/jem_objects/EMFJemData.getMobModelIDInfo:()Ltraben/entity_model_features/models/EMFModel_ID;
+        19: invokevirtual #286                // Method traben/entity_model_features/models/EMFModel_ID.getfileName:()Ljava/lang/String;
+        22: iload_2
+        23: invokedynamic #291,  0            // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+        28: invokestatic  #199                // Method traben/entity_model_features/utils/EMFUtils.log:(Ljava/lang/String;)V
+        31: new           #58                 // class java/util/HashMap
+        34: dup
+        35: invokespecial #60                 // Method java/util/HashMap."<init>":()V
+        38: astore_3
+        39: aload_1
+        40: getfield      #294                // Field traben/entity_model_features/models/jem_objects/EMFJemData.models:Ljava/util/LinkedList;
+        43: invokevirtual #298                // Method java/util/LinkedList.iterator:()Ljava/util/Iterator;
+        46: astore        4
+        48: aload         4
+        50: invokeinterface #304,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        55: ifeq          124
+        58: aload         4
+        60: invokeinterface #309,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        65: checkcast     #313                // class traben/entity_model_features/models/jem_objects/EMFPartData
+        68: astore        5
+        70: aload         5
+        72: getfield      #315                // Field traben/entity_model_features/models/jem_objects/EMFPartData.part:Ljava/lang/String;
+        75: ifnull        121
+        78: aload_3
+        79: invokeinterface #318,  1          // InterfaceMethod java/util/Map.keySet:()Ljava/util/Set;
+        84: aload         5
+        86: getfield      #322                // Field traben/entity_model_features/models/jem_objects/EMFPartData.id:Ljava/lang/String;
+        89: invokestatic  #325                // Method traben/entity_model_features/utils/EMFUtils.getIdUnique:(Ljava/util/Set;Ljava/lang/String;)Ljava/lang/String;
+        92: astore        6
+        94: aload_3
+        95: aload         6
+        97: new           #329                // class traben/entity_model_features/models/parts/EMFModelPartCustom
+       100: dup
+       101: aload         5
+       103: iload_2
+       104: aload         5
+       106: getfield      #315                // Field traben/entity_model_features/models/jem_objects/EMFPartData.part:Ljava/lang/String;
+       109: aload         6
+       111: aload_0
+       112: invokespecial #331                // Method traben/entity_model_features/models/parts/EMFModelPartCustom."<init>":(Ltraben/entity_model_features/models/jem_objects/EMFPartData;ILjava/lang/String;Ljava/lang/String;Ltraben/entity_model_features/models/parts/EMFModelPartRoot;)V
+       115: invokeinterface #334,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       120: pop
+       121: goto          48
+       124: aload_1
+       125: invokevirtual #335                // Method traben/entity_model_features/models/jem_objects/EMFJemData.getCustomTexture:()Lnet/minecraft/resources/Identifier;
+       128: astore        4
+       130: aload_0
+       131: getfield      #103                // Field allVanillaParts:Ljava/util/Map;
+       134: invokeinterface #339,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+       139: invokeinterface #342,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+       144: astore        5
+       146: aload         5
+       148: invokeinterface #304,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+       153: ifeq          434
+       156: aload         5
+       158: invokeinterface #309,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       163: checkcast     #343                // class java/util/Map$Entry
+       166: astore        6
+       168: aload         6
+       170: invokeinterface #345,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+       175: checkcast     #44                 // class traben/entity_model_features/models/parts/EMFModelPartVanilla
+       178: astore        7
+       180: aload         7
+       182: getfield      #348                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.allKnownStateVariants:Ljava/util/Map;
+       185: iconst_0
+       186: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       189: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       194: checkcast     #351                // class traben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState
+       197: invokevirtual #353                // Method traben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState.copy:()Ltraben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState;
+       200: astore        8
+       202: aload         7
+       204: aload         8
+       206: invokevirtual #357                // Method traben/entity_model_features/models/parts/EMFModelPartVanilla.setFromState:(Ltraben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState;)V
+       209: aload         7
+       211: aload         4
+       213: putfield      #361                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.textureOverride:Lnet/minecraft/resources/Identifier;
+       216: new           #58                 // class java/util/HashMap
+       219: dup
+       220: aload         7
+       222: getfield      #365                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.vanillaChildren:Ljava/util/Map;
+       225: invokespecial #368                // Method java/util/HashMap."<init>":(Ljava/util/Map;)V
+       228: astore        9
+       230: aload_3
+       231: invokeinterface #339,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+       236: invokeinterface #342,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+       241: astore        10
+       243: aload         10
+       245: invokeinterface #304,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+       250: ifeq          404
+       253: aload         10
+       255: invokeinterface #309,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       260: checkcast     #343                // class java/util/Map$Entry
+       263: astore        11
+       265: aload         11
+       267: invokeinterface #345,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+       272: checkcast     #329                // class traben/entity_model_features/models/parts/EMFModelPartCustom
+       275: astore        12
+       277: aload         6
+       279: invokeinterface #371,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+       284: checkcast     #374                // class java/lang/String
+       287: aload         12
+       289: getfield      #376                // Field traben/entity_model_features/models/parts/EMFModelPartCustom.partToBeAttached:Ljava/lang/String;
+       292: invokevirtual #379                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       295: ifeq          401
+       298: invokestatic  #154                // Method traben/entity_model_features/EMF.config:()Ltraben/tconfig/TConfigHandler;
+       301: invokevirtual #160                // Method traben/tconfig/TConfigHandler.getConfig:()Ltraben/tconfig/TConfig;
+       304: checkcast     #166                // class traben/entity_model_features/config/EMFConfig
+       307: getfield      #192                // Field traben/entity_model_features/config/EMFConfig.logModelCreationData:Z
+       310: ifeq          331
+       313: aload         11
+       315: invokeinterface #371,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+       320: checkcast     #374                // class java/lang/String
+       323: invokedynamic #382,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       328: invokestatic  #199                // Method traben/entity_model_features/utils/EMFUtils.log:(Ljava/lang/String;)V
+       331: aload         12
+       333: getfield      #383                // Field traben/entity_model_features/models/parts/EMFModelPartCustom.attach:Z
+       336: ifne          368
+       339: aload         7
+       341: invokestatic  #386                // InterfaceMethod java/util/List.of:()Ljava/util/List;
+       344: putfield      #392                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.cubes:Ljava/util/List;
+       347: aload         7
+       349: getfield      #396                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.children:Ljava/util/Map;
+       352: invokeinterface #126,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+       357: iload_2
+       358: invokedynamic #399,  0            // InvokeDynamic #5:accept:(I)Ljava/util/function/Consumer;
+       363: invokeinterface #403,  2          // InterfaceMethod java/util/Collection.forEach:(Ljava/util/function/Consumer;)V
+       368: aload         9
+       370: aload         7
+       372: getfield      #396                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.children:Ljava/util/Map;
+       375: invokeinterface #318,  1          // InterfaceMethod java/util/Map.keySet:()Ljava/util/Set;
+       380: aload         11
+       382: invokeinterface #371,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+       387: checkcast     #374                // class java/lang/String
+       390: invokestatic  #325                // Method traben/entity_model_features/utils/EMFUtils.getIdUnique:(Ljava/util/Set;Ljava/lang/String;)Ljava/lang/String;
+       393: aload         12
+       395: invokeinterface #334,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       400: pop
+       401: goto          243
+       404: aload         7
+       406: aload         9
+       408: putfield      #396                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.children:Ljava/util/Map;
+       411: aload         7
+       413: getfield      #348                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.allKnownStateVariants:Ljava/util/Map;
+       416: iload_2
+       417: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       420: aload         7
+       422: invokevirtual #409                // Method traben/entity_model_features/models/parts/EMFModelPartVanilla.getCurrentState:()Ltraben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState;
+       425: invokeinterface #334,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       430: pop
+       431: goto          146
+       434: aload_0
+       435: getfield      #412                // Field allKnownStateVariants:Ljava/util/Map;
+       438: iload_2
+       439: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       442: aload_0
+       443: getfield      #412                // Field allKnownStateVariants:Ljava/util/Map;
+       446: iconst_0
+       447: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       450: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       455: checkcast     #351                // class traben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState
+       458: invokevirtual #353                // Method traben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState.copy:()Ltraben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState;
+       461: invokeinterface #110,  3          // InterfaceMethod java/util/Map.putIfAbsent:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       466: pop
+       467: aload_0
+       468: iload_2
+       469: invokevirtual #205                // Method setVariantStateTo:(I)V
+       472: aload_1
+       473: getfield      #413                // Field traben/entity_model_features/models/jem_objects/EMFJemData.hasAttachmentsLeft:Z
+       476: ifeq          500
+       479: aload_0
+       480: getfield      #35                 // Field leftArmPositioners:Ljava/util/Map;
+       483: iload_2
+       484: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       487: aload_0
+       488: getstatic     #416                // Field traben/entity_model_features/models/animation/EMFAttachment$Type.LEFT_HAND:Ltraben/entity_model_features/models/animation/EMFAttachment$Type;
+       491: invokevirtual #419                // Method getAttachmentPositioner:(Ltraben/entity_model_features/models/animation/EMFAttachment$Type;)Ljava/util/function/Consumer;
+       494: invokeinterface #334,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       499: pop
+       500: aload_1
+       501: getfield      #423                // Field traben/entity_model_features/models/jem_objects/EMFJemData.hasAttachmentsRight:Z
+       504: ifeq          528
+       507: aload_0
+       508: getfield      #11                 // Field rightArmPositioners:Ljava/util/Map;
+       511: iload_2
+       512: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       515: aload_0
+       516: getstatic     #7                  // Field traben/entity_model_features/models/animation/EMFAttachment$Type.RIGHT_HAND:Ltraben/entity_model_features/models/animation/EMFAttachment$Type;
+       519: invokevirtual #419                // Method getAttachmentPositioner:(Ltraben/entity_model_features/models/animation/EMFAttachment$Type;)Ljava/util/function/Consumer;
+       522: invokeinterface #334,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       527: pop
+       528: aload_1
+       529: getfield      #426                // Field traben/entity_model_features/models/jem_objects/EMFJemData.hasAttachmentsOther:Z
+       532: ifeq          612
+       535: getstatic     #429                // Field traben/entity_model_features/models/animation/EMFAttachment$Type.NON_HANDS:[Ltraben/entity_model_features/models/animation/EMFAttachment$Type;
+       538: astore        5
+       540: aload         5
+       542: arraylength
+       543: istore        6
+       545: iconst_0
+       546: istore        7
+       548: iload         7
+       550: iload         6
+       552: if_icmpge     612
+       555: aload         5
+       557: iload         7
+       559: aaload
+       560: astore        8
+       562: aload_0
+       563: aload         8
+       565: invokevirtual #419                // Method getAttachmentPositioner:(Ltraben/entity_model_features/models/animation/EMFAttachment$Type;)Ljava/util/function/Consumer;
+       568: astore        9
+       570: aload         9
+       572: ifnull        606
+       575: aload_0
+       576: getfield      #38                 // Field otherPositioners:Ljava/util/Map;
+       579: aload         8
+       581: invokedynamic #433,  0            // InvokeDynamic #6:apply:()Ljava/util/function/Function;
+       586: invokeinterface #184,  3          // InterfaceMethod java/util/Map.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+       591: checkcast     #28                 // class java/util/Map
+       594: iload_2
+       595: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       598: aload         9
+       600: invokeinterface #334,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       605: pop
+       606: iinc          7, 1
+       609: goto          548
+       612: return
+
+  public void discoverAndInitVariants(java.lang.String);
+    Code:
+         0: invokestatic  #154                // Method traben/entity_model_features/EMF.config:()Ltraben/tconfig/TConfigHandler;
+         3: invokevirtual #160                // Method traben/tconfig/TConfigHandler.getConfig:()Ltraben/tconfig/TConfig;
+         6: checkcast     #166                // class traben/entity_model_features/config/EMFConfig
+         9: getfield      #192                // Field traben/entity_model_features/config/EMFConfig.logModelCreationData:Z
+        12: istore_2
+        13: aload_0
+        14: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+        17: aload_0
+        18: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+        21: getfield      #434                // Field traben/entity_model_features/utils/EMFDirectoryHandler.rawFileName:Ljava/lang/String;
+        24: invokevirtual #439                // Method traben/entity_model_features/utils/EMFDirectoryHandler.getRelativeDirectoryLocationNoValidation:(Ljava/lang/String;)Ljava/lang/String;
+        27: astore_3
+        28: aload_0
+        29: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+        32: aload_0
+        33: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+        36: getfield      #434                // Field traben/entity_model_features/utils/EMFDirectoryHandler.rawFileName:Ljava/lang/String;
+        39: invokedynamic #442,  0            // InvokeDynamic #7:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+        44: invokevirtual #443                // Method traben/entity_model_features/utils/EMFDirectoryHandler.getRelativeFilePossiblyEMFOverridden:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+        47: astore        4
+        49: iload_2
+        50: ifeq          67
+        53: aload         4
+        55: invokestatic  #447                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+        58: aload_3
+        59: invokedynamic #450,  0            // InvokeDynamic #8:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        64: invokestatic  #199                // Method traben/entity_model_features/utils/EMFUtils.log:(Ljava/lang/String;)V
+        67: invokestatic  #453                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+        70: invokevirtual #458                // Method net/minecraft/client/Minecraft.getResourceManager:()Lnet/minecraft/server/packs/resources/ResourceManager;
+        73: astore        5
+        75: aload         5
+        77: aload         4
+        79: invokestatic  #462                // Method traben/entity_model_features/utils/EMFResourceCaching.resourceExists:(Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/resources/Identifier;)Z
+        82: istore        6
+        84: iload         6
+        86: ifne          155
+        89: invokestatic  #154                // Method traben/entity_model_features/EMF.config:()Ltraben/tconfig/TConfigHandler;
+        92: invokevirtual #160                // Method traben/tconfig/TConfigHandler.getConfig:()Ltraben/tconfig/TConfig;
+        95: checkcast     #166                // class traben/entity_model_features/config/EMFConfig
+        98: getfield      #468                // Field traben/entity_model_features/config/EMFConfig.allowOptifineFallbackProperties:Z
+       101: ifeq          155
+       104: aload_0
+       105: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       108: aload_1
+       109: invokedynamic #442,  0            // InvokeDynamic #7:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       114: invokevirtual #443                // Method traben/entity_model_features/utils/EMFDirectoryHandler.getRelativeFilePossiblyEMFOverridden:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+       117: astore        7
+       119: iload_2
+       120: ifeq          137
+       123: aload         7
+       125: invokestatic  #447                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       128: aload_3
+       129: invokedynamic #471,  0            // InvokeDynamic #9:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       134: invokestatic  #199                // Method traben/entity_model_features/utils/EMFUtils.log:(Ljava/lang/String;)V
+       137: aload         5
+       139: aload         7
+       141: invokestatic  #462                // Method traben/entity_model_features/utils/EMFResourceCaching.resourceExists:(Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/resources/Identifier;)Z
+       144: istore        6
+       146: iload         6
+       148: ifeq          155
+       151: aload         7
+       153: astore        4
+       155: iload         6
+       157: ifeq          567
+       160: iload_2
+       161: ifeq          178
+       164: aload         4
+       166: invokestatic  #447                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       169: aload_3
+       170: invokedynamic #472,  0            // InvokeDynamic #10:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       175: invokestatic  #199                // Method traben/entity_model_features/utils/EMFUtils.log:(Ljava/lang/String;)V
+       178: aload_0
+       179: aload         4
+       181: aload_3
+       182: invokedynamic #473,  0            // InvokeDynamic #11:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       187: invokestatic  #474                // Method traben/entity_model_features/utils/EMFUtils.res:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+       190: iconst_1
+       191: anewarray     #374                // class java/lang/String
+       194: dup
+       195: iconst_0
+       196: ldc_w         #477                // String models
+       199: aastore
+       200: invokestatic  #478                // Method traben/entity_texture_features/ETFApi.getVariantSupplierOrNull:(Lnet/minecraft/resources/Identifier;Lnet/minecraft/resources/Identifier;[Ljava/lang/String;)Ltraben/entity_texture_features/ETFApi$ETFVariantSuffixProvider;
+       203: putfield      #64                 // Field variantTester:Ltraben/entity_texture_features/ETFApi$ETFVariantSuffixProvider;
+       206: aload_0
+       207: getfield      #64                 // Field variantTester:Ltraben/entity_texture_features/ETFApi$ETFVariantSuffixProvider;
+       210: astore        8
+       212: aload         8
+       214: instanceof    #484                // class traben/entity_texture_features/features/property_reading/PropertiesRandomProvider
+       217: ifeq          237
+       220: aload         8
+       222: checkcast     #484                // class traben/entity_texture_features/features/property_reading/PropertiesRandomProvider
+       225: astore        7
+       227: aload         7
+       229: invokedynamic #486,  0            // InvokeDynamic #12:accept:()Ljava/util/function/BiConsumer;
+       234: invokevirtual #489                // Method traben/entity_texture_features/features/property_reading/PropertiesRandomProvider.setOnMeetsRuleHook:(Ljava/util/function/BiConsumer;)V
+       237: aload_0
+       238: getfield      #64                 // Field variantTester:Ltraben/entity_texture_features/ETFApi$ETFVariantSuffixProvider;
+       241: ifnull        542
+       244: aload_0
+       245: getfield      #64                 // Field variantTester:Ltraben/entity_texture_features/ETFApi$ETFVariantSuffixProvider;
+       248: invokeinterface #493,  1          // InterfaceMethod traben/entity_texture_features/ETFApi$ETFVariantSuffixProvider.getAllSuffixes:()Ljava/util/Set;
+       253: astore        7
+       255: aload         7
+       257: iconst_1
+       258: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       261: invokeinterface #496,  2          // InterfaceMethod java/util/Set.remove:(Ljava/lang/Object;)Z
+       266: pop
+       267: aload         7
+       269: iconst_0
+       270: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       273: invokeinterface #496,  2          // InterfaceMethod java/util/Set.remove:(Ljava/lang/Object;)Z
+       278: pop
+       279: aload         7
+       281: invokeinterface #498,  1          // InterfaceMethod java/util/Set.isEmpty:()Z
+       286: ifne          522
+       289: aload         7
+       291: invokeinterface #342,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+       296: astore        8
+       298: aload         8
+       300: invokeinterface #304,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+       305: ifeq          519
+       308: aload         8
+       310: invokeinterface #309,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       315: checkcast     #22                 // class java/lang/Integer
+       318: invokevirtual #214                // Method java/lang/Integer.intValue:()I
+       321: istore        9
+       323: aload_0
+       324: iconst_1
+       325: invokevirtual #205                // Method setVariantStateTo:(I)V
+       328: invokestatic  #154                // Method traben/entity_model_features/EMF.config:()Ltraben/tconfig/TConfigHandler;
+       331: invokevirtual #160                // Method traben/tconfig/TConfigHandler.getConfig:()Ltraben/tconfig/TConfig;
+       334: checkcast     #166                // class traben/entity_model_features/config/EMFConfig
+       337: getfield      #192                // Field traben/entity_model_features/config/EMFConfig.logModelCreationData:Z
+       340: aload_0
+       341: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       344: getfield      #501                // Field traben/entity_model_features/utils/EMFDirectoryHandler.namespace:Ljava/lang/String;
+       347: aload_0
+       348: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       351: getfield      #434                // Field traben/entity_model_features/utils/EMFDirectoryHandler.rawFileName:Ljava/lang/String;
+       354: iload         9
+       356: invokedynamic #504,  0            // InvokeDynamic #11:makeConcatWithConstants:(I)Ljava/lang/String;
+       361: invokestatic  #507                // Method traben/entity_model_features/utils/EMFDirectoryHandler.getDirectoryManagerOrNull:(ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       364: astore        10
+       366: aload_0
+       367: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       370: aload         10
+       372: invokevirtual #511                // Method traben/entity_model_features/utils/EMFDirectoryHandler.validForThisBase:(Ltraben/entity_model_features/utils/EMFDirectoryHandler;)Z
+       375: istore        11
+       377: iload_2
+       378: ifeq          405
+       381: aload_0
+       382: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       385: getfield      #501                // Field traben/entity_model_features/utils/EMFDirectoryHandler.namespace:Ljava/lang/String;
+       388: aload_0
+       389: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       392: getfield      #434                // Field traben/entity_model_features/utils/EMFDirectoryHandler.rawFileName:Ljava/lang/String;
+       395: iload         9
+       397: invokedynamic #515,  0            // InvokeDynamic #13:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
+       402: invokestatic  #199                // Method traben/entity_model_features/utils/EMFUtils.log:(Ljava/lang/String;)V
+       405: iload         11
+       407: ifeq          422
+       410: aload         10
+       412: aload_0
+       413: getfield      #114                // Field modelName:Ltraben/entity_model_features/models/EMFModel_ID;
+       416: invokestatic  #518                // Method traben/entity_model_features/EMFManager.getJemDataWithDirectory:(Ltraben/entity_model_features/utils/EMFDirectoryHandler;Ltraben/entity_model_features/models/EMFModel_ID;)Ltraben/entity_model_features/models/jem_objects/EMFJemData;
+       419: goto          423
+       422: aconst_null
+       423: astore        12
+       425: aload         12
+       427: ifnull        457
+       430: aload_0
+       431: aload         12
+       433: iload         9
+       435: invokevirtual #522                // Method addAndSetVariantOfJem:(Ltraben/entity_model_features/models/jem_objects/EMFJemData;I)V
+       438: invokestatic  #171                // Method traben/entity_model_features/EMFManager.getInstance:()Ltraben/entity_model_features/EMFManager;
+       441: aload         12
+       443: aload_0
+       444: iload         9
+       446: invokevirtual #526                // Method traben/entity_model_features/EMFManager.setupAnimationsFromJemToModel:(Ltraben/entity_model_features/models/jem_objects/EMFJemData;Ltraben/entity_model_features/models/parts/EMFModelPartRoot;I)V
+       449: aload_0
+       450: iconst_1
+       451: putfield      #68                 // Field containsCustomModel:Z
+       454: goto          516
+       457: aload_0
+       458: getfield      #412                // Field allKnownStateVariants:Ljava/util/Map;
+       461: iload         9
+       463: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       466: aload_0
+       467: getfield      #412                // Field allKnownStateVariants:Ljava/util/Map;
+       470: iconst_1
+       471: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       474: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       479: checkcast     #351                // class traben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState
+       482: invokeinterface #334,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       487: pop
+       488: iload_2
+       489: ifeq          516
+       492: aload_0
+       493: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       496: getfield      #501                // Field traben/entity_model_features/utils/EMFDirectoryHandler.namespace:Ljava/lang/String;
+       499: aload_0
+       500: getfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       503: getfield      #434                // Field traben/entity_model_features/utils/EMFDirectoryHandler.rawFileName:Ljava/lang/String;
+       506: iload         9
+       508: invokedynamic #530,  0            // InvokeDynamic #14:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
+       513: invokestatic  #199                // Method traben/entity_model_features/utils/EMFUtils.log:(Ljava/lang/String;)V
+       516: goto          298
+       519: goto          539
+       522: iload_2
+       523: ifeq          539
+       526: aload         4
+       528: invokestatic  #447                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       531: invokedynamic #531,  0            // InvokeDynamic #15:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       536: invokestatic  #532                // Method traben/entity_model_features/utils/EMFUtils.logWarn:(Ljava/lang/String;)V
+       539: goto          585
+       542: iload_2
+       543: ifeq          559
+       546: aload         4
+       548: invokestatic  #447                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       551: invokedynamic #535,  0            // InvokeDynamic #16:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       556: invokestatic  #532                // Method traben/entity_model_features/utils/EMFUtils.logWarn:(Ljava/lang/String;)V
+       559: aload_0
+       560: aconst_null
+       561: putfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       564: goto          585
+       567: iload_2
+       568: ifeq          580
+       571: aload_3
+       572: invokedynamic #536,  0            // InvokeDynamic #17:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       577: invokestatic  #532                // Method traben/entity_model_features/utils/EMFUtils.logWarn:(Ljava/lang/String;)V
+       580: aload_0
+       581: aconst_null
+       582: putfield      #118                // Field directoryContext:Ltraben/entity_model_features/utils/EMFDirectoryHandler;
+       585: return
+
+  public void setVariant1ToVanilla0();
+    Code:
+         0: aload_0
+         1: getfield      #412                // Field allKnownStateVariants:Ljava/util/Map;
+         4: iconst_1
+         5: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         8: aload_0
+         9: getfield      #412                // Field allKnownStateVariants:Ljava/util/Map;
+        12: iconst_0
+        13: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        16: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        21: checkcast     #351                // class traben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState
+        24: invokeinterface #334,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        29: pop
+        30: aload_0
+        31: getfield      #103                // Field allVanillaParts:Ljava/util/Map;
+        34: invokedynamic #537,  0            // InvokeDynamic #18:accept:()Ljava/util/function/BiConsumer;
+        39: invokeinterface #538,  2          // InterfaceMethod java/util/Map.forEach:(Ljava/util/function/BiConsumer;)V
+        44: return
+
+  public boolean hasAnimation();
+    Code:
+         0: aload_0
+         1: getfield      #96                 // Field animation:Ljava/lang/Runnable;
+         4: ifnull        11
+         7: iconst_1
+         8: goto          12
+        11: iconst_0
+        12: ireturn
+
+  public void setVariantStateTo(int);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: invokespecial #540                // Method traben/entity_model_features/models/parts/EMFModelPartVanilla.setVariantStateTo:(I)V
+         5: aload_0
+         6: aload_0
+         7: getfield      #92                 // Field animations:Ljava/util/HashMap;
+        10: iload_1
+        11: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        14: invokevirtual #541                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        17: checkcast     #542                // class java/lang/Runnable
+        20: putfield      #96                 // Field animation:Ljava/lang/Runnable;
+        23: return
+
+  public void animate();
+    Code:
+         0: aload_0
+         1: getfield      #96                 // Field animation:Ljava/lang/Runnable;
+         4: ifnull        25
+         7: invokestatic  #133                // Method traben/entity_model_features/models/animation/state/EMFState.state:()Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;
+        10: invokestatic  #544                // Method traben/entity_model_features/utils/EMFAnimationPauseHandler.shouldAnimationsPause:(Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;)Z
+        13: ifne          25
+        16: aload_0
+        17: getfield      #96                 // Field animation:Ljava/lang/Runnable;
+        20: invokeinterface #550,  1          // InterfaceMethod java/lang/Runnable.run:()V
+        25: return
+
+  public void animateNoPause();
+    Code:
+         0: aload_0
+         1: getfield      #96                 // Field animation:Ljava/lang/Runnable;
+         4: ifnull        16
+         7: aload_0
+         8: getfield      #96                 // Field animation:Ljava/lang/Runnable;
+        11: invokeinterface #550,  1          // InterfaceMethod java/lang/Runnable.run:()V
+        16: return
+
+  public void receiveAnimationHandler(int, traben.entity_model_features.models.animation.EMFAnimationHandler);
+    Code:
+         0: aload_0
+         1: iconst_1
+         2: putfield      #72                 // Field containsCustomAnims:Z
+         5: aload_0
+         6: aload_2
+         7: iload_1
+         8: invokedynamic #553,  0            // InvokeDynamic #19:run:(Ltraben/entity_model_features/models/parts/EMFModelPartRoot;Ltraben/entity_model_features/models/animation/EMFAnimationHandler;I)Ljava/lang/Runnable;
+        13: astore_3
+        14: aload_0
+        15: getfield      #92                 // Field animations:Ljava/util/HashMap;
+        18: iload_1
+        19: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        22: aload_3
+        23: invokevirtual #556                // Method java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        26: pop
+        27: return
+
+  public net.minecraft.resources.Identifier getTopLevelJemTexture();
+    Code:
+         0: aload_0
+         1: getfield      #17                 // Field currentModelVariant:I
+         4: istore_1
+         5: aload_0
+         6: getfield      #82                 // Field hasRemovedTopLevelJemTextureFromChildren:Ljava/util/Set;
+         9: iload_1
+        10: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        13: invokeinterface #145,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+        18: ifeq          38
+        21: aload_0
+        22: getfield      #100                // Field jemLevelOverride:Ljava/util/Map;
+        25: iload_1
+        26: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        29: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        34: checkcast     #557                // class net/minecraft/resources/Identifier
+        37: areturn
+        38: aload_0
+        39: getfield      #82                 // Field hasRemovedTopLevelJemTextureFromChildren:Ljava/util/Set;
+        42: iload_1
+        43: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        46: invokeinterface #151,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+        51: pop
+        52: aload_0
+        53: getfield      #559                // Field textureOverride:Lnet/minecraft/resources/Identifier;
+        56: astore_2
+        57: aload_0
+        58: getfield      #100                // Field jemLevelOverride:Ljava/util/Map;
+        61: iload_1
+        62: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        65: aload_2
+        66: invokeinterface #334,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        71: pop
+        72: aload_0
+        73: getfield      #559                // Field textureOverride:Lnet/minecraft/resources/Identifier;
+        76: ifnull        100
+        79: aload_0
+        80: getfield      #103                // Field allVanillaParts:Ljava/util/Map;
+        83: invokeinterface #126,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+        88: aload_2
+        89: iload_1
+        90: invokedynamic #560,  0            // InvokeDynamic #20:accept:(Lnet/minecraft/resources/Identifier;I)Ljava/util/function/Consumer;
+        95: invokeinterface #403,  2          // InterfaceMethod java/util/Collection.forEach:(Ljava/util/function/Consumer;)V
+       100: aload_0
+       101: getfield      #100                // Field jemLevelOverride:Ljava/util/Map;
+       104: iload_1
+       105: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       108: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       113: checkcast     #557                // class net/minecraft/resources/Identifier
+       116: areturn
+
+  public void resetVanillaPartsToDefaults();
+    Code:
+         0: aload_0
+         1: invokevirtual #563                // Method resetState:()V
+         4: aload_0
+         5: getfield      #103                // Field allVanillaParts:Ljava/util/Map;
+         8: invokeinterface #126,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+        13: invokedynamic #566,  0            // InvokeDynamic #21:accept:()Ljava/util/function/Consumer;
+        18: invokeinterface #403,  2          // InterfaceMethod java/util/Collection.forEach:(Ljava/util/function/Consumer;)V
+        23: return
+
+  public java.lang.String toString();
+    Code:
+         0: aload_0
+         1: getfield      #114                // Field modelName:Ltraben/entity_model_features/models/EMFModel_ID;
+         4: invokevirtual #286                // Method traben/entity_model_features/models/EMFModel_ID.getfileName:()Ljava/lang/String;
+         7: invokedynamic #569,  0            // InvokeDynamic #22:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+        12: areturn
+
+  public java.lang.String toStringShort();
+    Code:
+         0: aload_0
+         1: getfield      #114                // Field modelName:Ltraben/entity_model_features/models/EMFModel_ID;
+         4: invokevirtual #286                // Method traben/entity_model_features/models/EMFModel_ID.getfileName:()Ljava/lang/String;
+         7: invokedynamic #569,  0            // InvokeDynamic #22:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+        12: areturn
+
+  private static void lambda$getTopLevelJemTexture$0(net.minecraft.resources.Identifier, int, traben.entity_model_features.models.parts.EMFModelPartVanilla);
+    Code:
+         0: aload_2
+         1: getfield      #361                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.textureOverride:Lnet/minecraft/resources/Identifier;
+         4: aload_0
+         5: invokevirtual #570                // Method net/minecraft/resources/Identifier.equals:(Ljava/lang/Object;)Z
+         8: ifeq          35
+        11: aload_2
+        12: aconst_null
+        13: putfield      #361                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.textureOverride:Lnet/minecraft/resources/Identifier;
+        16: aload_2
+        17: getfield      #348                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.allKnownStateVariants:Ljava/util/Map;
+        20: iload_1
+        21: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        24: invokedynamic #571,  0            // InvokeDynamic #23:apply:()Ljava/util/function/BiFunction;
+        29: invokeinterface #574,  3          // InterfaceMethod java/util/Map.computeIfPresent:(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+        34: pop
+        35: return
+
+  private static traben.entity_model_features.models.parts.EMFModelPartWithState$EMFModelState lambda$getTopLevelJemTexture$1(java.lang.Integer, traben.entity_model_features.models.parts.EMFModelPartWithState$EMFModelState);
+    Code:
+         0: aload_1
+         1: invokevirtual #578                // Method traben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState.copyWithoutTexture:()Ltraben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState;
+         4: areturn
+
+  private void lambda$receiveAnimationHandler$0(traben.entity_model_features.models.animation.EMFAnimationHandler, int);
+    Code:
+         0: aload_0
+         1: getfield      #75                 // Field lastMobCountAnimatedOn:J
+         4: invokestatic  #171                // Method traben/entity_model_features/EMFManager.getInstance:()Ltraben/entity_model_features/EMFManager;
+         7: getfield      #581                // Field traben/entity_model_features/EMFManager.entityRenderCount:J
+        10: lcmp
+        11: ifeq          255
+        14: aload_0
+        15: invokestatic  #171                // Method traben/entity_model_features/EMFManager.getInstance:()Ltraben/entity_model_features/EMFManager;
+        18: getfield      #581                // Field traben/entity_model_features/EMFManager.entityRenderCount:J
+        21: putfield      #75                 // Field lastMobCountAnimatedOn:J
+        24: invokestatic  #133                // Method traben/entity_model_features/models/animation/state/EMFState.state:()Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;
+        27: astore_3
+        28: aload_3
+        29: ifnull        57
+        32: aload_3
+        33: invokeinterface #584,  1          // InterfaceMethod traben/entity_model_features/models/animation/state/EMFEntityRenderState.isFirstPersonHand:()Z
+        38: ifeq          57
+        41: invokestatic  #154                // Method traben/entity_model_features/EMF.config:()Ltraben/tconfig/TConfigHandler;
+        44: invokevirtual #160                // Method traben/tconfig/TConfigHandler.getConfig:()Ltraben/tconfig/TConfig;
+        47: checkcast     #166                // class traben/entity_model_features/config/EMFConfig
+        50: getfield      #587                // Field traben/entity_model_features/config/EMFConfig.preventFirstPersonHandAnimating:Z
+        53: ifeq          57
+        56: return
+        57: invokestatic  #590                // Method traben/entity_model_features/utils/EMFAnimationPauseHandler.getEntityPartsAnimPaused:()[Lnet/minecraft/client/model/geom/ModelPart;
+        60: astore        4
+        62: iconst_0
+        63: istore        5
+        65: getstatic     #594                // Field traben/entity_model_features/models/animation/state/EMFState.animationHooks:Ljava/util/List;
+        68: invokeinterface #597,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        73: astore        6
+        75: aload         6
+        77: invokeinterface #304,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        82: ifeq          138
+        85: aload         6
+        87: invokeinterface #309,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        92: checkcast     #598                // class traben/entity_model_features/EMFAnimationApi$EMFAnimationHook
+        95: astore        7
+        97: aload         7
+        99: new           #600                // class traben/entity_model_features/EMFAnimationApi$EMFAnimationHook$AnimationContext
+       102: dup
+       103: aload_3
+       104: aload_0
+       105: aconst_null
+       106: aload         4
+       108: aload_1
+       109: invokespecial #602                // Method traben/entity_model_features/EMFAnimationApi$EMFAnimationHook$AnimationContext."<init>":(Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;Ltraben/entity_model_features/models/parts/EMFModelPartRoot;Ljava/lang/Throwable;[Lnet/minecraft/client/model/geom/ModelPart;Ltraben/entity_model_features/models/animation/EMFAnimationHandler;)V
+       112: iload         5
+       114: invokevirtual #605                // Method traben/entity_model_features/EMFAnimationApi$EMFAnimationHook.onAnimationStart:(Ltraben/entity_model_features/EMFAnimationApi$EMFAnimationHook$AnimationContext;Z)Z
+       117: ifne          124
+       120: iconst_1
+       121: goto          125
+       124: iconst_0
+       125: istore        8
+       127: iload         8
+       129: ifeq          135
+       132: iconst_1
+       133: istore        5
+       135: goto          75
+       138: iload         5
+       140: ifne          149
+       143: aload_1
+       144: aload         4
+       146: invokevirtual #609                // Method traben/entity_model_features/models/animation/EMFAnimationHandler.animate:([Lnet/minecraft/client/model/geom/ModelPart;)V
+       149: iload         5
+       151: istore        6
+       153: getstatic     #594                // Field traben/entity_model_features/models/animation/state/EMFState.animationHooks:Ljava/util/List;
+       156: aload_0
+       157: aload_3
+       158: aload         4
+       160: aload_1
+       161: iload         6
+       163: invokedynamic #615,  0            // InvokeDynamic #24:accept:(Ltraben/entity_model_features/models/parts/EMFModelPartRoot;Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;[Lnet/minecraft/client/model/geom/ModelPart;Ltraben/entity_model_features/models/animation/EMFAnimationHandler;Z)Ljava/util/function/Consumer;
+       168: invokeinterface #618,  2          // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+       173: goto          255
+       176: astore        5
+       178: aload_0
+       179: getfield      #114                // Field modelName:Ltraben/entity_model_features/models/EMFModel_ID;
+       182: invokevirtual #286                // Method traben/entity_model_features/models/EMFModel_ID.getfileName:()Ljava/lang/String;
+       185: invokedynamic #621,  0            // InvokeDynamic #25:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       190: invokestatic  #622                // Method traben/entity_model_features/utils/EMFUtils.logError:(Ljava/lang/String;)V
+       193: aload         5
+       195: invokevirtual #625                // Method java/lang/Throwable.printStackTrace:()V
+       198: aload_0
+       199: getfield      #114                // Field modelName:Ltraben/entity_model_features/models/EMFModel_ID;
+       202: invokestatic  #447                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       205: invokedynamic #628,  0            // InvokeDynamic #26:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       210: invokestatic  #622                // Method traben/entity_model_features/utils/EMFUtils.logError:(Ljava/lang/String;)V
+       213: aload_0
+       214: getfield      #92                 // Field animations:Ljava/util/HashMap;
+       217: iload_2
+       218: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       221: invokevirtual #629                // Method java/util/HashMap.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+       224: pop
+       225: aload_0
+       226: aconst_null
+       227: putfield      #96                 // Field animation:Ljava/lang/Runnable;
+       230: aload_0
+       231: iconst_0
+       232: putfield      #72                 // Field containsCustomAnims:Z
+       235: getstatic     #594                // Field traben/entity_model_features/models/animation/state/EMFState.animationHooks:Ljava/util/List;
+       238: aload_0
+       239: aload_3
+       240: aload         5
+       242: aload         4
+       244: aload_1
+       245: invokedynamic #630,  0            // InvokeDynamic #27:accept:(Ltraben/entity_model_features/models/parts/EMFModelPartRoot;Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;Ljava/lang/Throwable;[Lnet/minecraft/client/model/geom/ModelPart;Ltraben/entity_model_features/models/animation/EMFAnimationHandler;)Ljava/util/function/Consumer;
+       250: invokeinterface #618,  2          // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+       255: return
+      Exception table:
+         from    to  target type
+            62   173   176   Class java/lang/Throwable
+
+  private void lambda$receiveAnimationHandler$2(traben.entity_model_features.models.animation.state.EMFEntityRenderState, java.lang.Throwable, net.minecraft.client.model.geom.ModelPart[], traben.entity_model_features.models.animation.EMFAnimationHandler, traben.entity_model_features.EMFAnimationApi$EMFAnimationHook);
+    Code:
+         0: aload         5
+         2: new           #600                // class traben/entity_model_features/EMFAnimationApi$EMFAnimationHook$AnimationContext
+         5: dup
+         6: aload_1
+         7: aload_0
+         8: aload_2
+         9: aload_3
+        10: aload         4
+        12: invokespecial #602                // Method traben/entity_model_features/EMFAnimationApi$EMFAnimationHook$AnimationContext."<init>":(Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;Ltraben/entity_model_features/models/parts/EMFModelPartRoot;Ljava/lang/Throwable;[Lnet/minecraft/client/model/geom/ModelPart;Ltraben/entity_model_features/models/animation/EMFAnimationHandler;)V
+        15: iconst_0
+        16: invokevirtual #633                // Method traben/entity_model_features/EMFAnimationApi$EMFAnimationHook.onAnimationEnd:(Ltraben/entity_model_features/EMFAnimationApi$EMFAnimationHook$AnimationContext;Z)V
+        19: return
+
+  private void lambda$receiveAnimationHandler$1(traben.entity_model_features.models.animation.state.EMFEntityRenderState, net.minecraft.client.model.geom.ModelPart[], traben.entity_model_features.models.animation.EMFAnimationHandler, boolean, traben.entity_model_features.EMFAnimationApi$EMFAnimationHook);
+    Code:
+         0: aload         5
+         2: new           #600                // class traben/entity_model_features/EMFAnimationApi$EMFAnimationHook$AnimationContext
+         5: dup
+         6: aload_1
+         7: aload_0
+         8: aconst_null
+         9: aload_2
+        10: aload_3
+        11: invokespecial #602                // Method traben/entity_model_features/EMFAnimationApi$EMFAnimationHook$AnimationContext."<init>":(Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;Ltraben/entity_model_features/models/parts/EMFModelPartRoot;Ljava/lang/Throwable;[Lnet/minecraft/client/model/geom/ModelPart;Ltraben/entity_model_features/models/animation/EMFAnimationHandler;)V
+        14: iload         4
+        16: invokevirtual #633                // Method traben/entity_model_features/EMFAnimationApi$EMFAnimationHook.onAnimationEnd:(Ltraben/entity_model_features/EMFAnimationApi$EMFAnimationHook$AnimationContext;Z)V
+        19: return
+
+  private static void lambda$setVariant1ToVanilla0$0(java.lang.String, traben.entity_model_features.models.parts.EMFModelPartVanilla);
+    Code:
+         0: aload_1
+         1: getfield      #348                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.allKnownStateVariants:Ljava/util/Map;
+         4: iconst_1
+         5: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         8: aload_1
+         9: getfield      #348                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.allKnownStateVariants:Ljava/util/Map;
+        12: iconst_0
+        13: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        16: invokeinterface #27,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        21: checkcast     #351                // class traben/entity_model_features/models/parts/EMFModelPartWithState$EMFModelState
+        24: invokeinterface #334,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        29: pop
+        30: return
+
+  private static void lambda$discoverAndInitVariants$0(traben.entity_texture_features.features.state.ETFEntityRenderState, traben.entity_texture_features.features.property_reading.RandomPropertyRule);
+    Code:
+         0: aload_1
+         1: ifnonnull     23
+         4: invokestatic  #171                // Method traben/entity_model_features/EMFManager.getInstance:()Ltraben/entity_model_features/EMFManager;
+         7: getfield      #637                // Field traben/entity_model_features/EMFManager.lastModelRuleOfEntity:Ltraben/entity_texture_features/utils/ETFLruCache$UUIDInteger;
+        10: aload_0
+        11: invokeinterface #640,  1          // InterfaceMethod traben/entity_texture_features/features/state/ETFEntityRenderState.uuid:()Ljava/util/UUID;
+        16: invokevirtual #259                // Method traben/entity_texture_features/utils/ETFLruCache$UUIDInteger.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+        19: pop
+        20: goto          46
+        23: invokestatic  #171                // Method traben/entity_model_features/EMFManager.getInstance:()Ltraben/entity_model_features/EMFManager;
+        26: getfield      #637                // Field traben/entity_model_features/EMFManager.lastModelRuleOfEntity:Ltraben/entity_texture_features/utils/ETFLruCache$UUIDInteger;
+        29: aload_0
+        30: invokeinterface #640,  1          // InterfaceMethod traben/entity_texture_features/features/state/ETFEntityRenderState.uuid:()Ljava/util/UUID;
+        35: aload_1
+        36: getfield      #643                // Field traben/entity_texture_features/features/property_reading/RandomPropertyRule.ruleNumber:I
+        39: invokestatic  #21                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        42: invokevirtual #234                // Method traben/entity_texture_features/utils/ETFLruCache$UUIDInteger.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        45: pop
+        46: return
+
+  private static java.util.Map lambda$addAndSetVariantOfJem$1(traben.entity_model_features.models.animation.EMFAttachment$Type);
+    Code:
+         0: new           #58                 // class java/util/HashMap
+         3: dup
+         4: invokespecial #60                 // Method java/util/HashMap."<init>":()V
+         7: areturn
+
+  private static void lambda$addAndSetVariantOfJem$0(int, net.minecraft.client.model.geom.ModelPart);
+    Code:
+         0: aload_1
+         1: instanceof    #44                 // class traben/entity_model_features/models/parts/EMFModelPartVanilla
+         4: ifeq          24
+         7: aload_1
+         8: checkcast     #44                 // class traben/entity_model_features/models/parts/EMFModelPartVanilla
+        11: astore_2
+        12: aload_2
+        13: getfield      #648                // Field traben/entity_model_features/models/parts/EMFModelPartVanilla.isOptiFinePartSpecified:Z
+        16: ifne          24
+        19: aload_2
+        20: iload_0
+        21: invokevirtual #651                // Method traben/entity_model_features/models/parts/EMFModelPartVanilla.setHideInTheseStates:(I)V
+        24: return
+
+  private static java.util.Set lambda$registerModelRunnableWithEntityTypeContext$1(java.lang.String);
+    Code:
+         0: new           #79                 // class java/util/HashSet
+         3: dup
+         4: invokespecial #81                 // Method java/util/HashSet."<init>":()V
+         7: areturn
+
+  private static java.util.Set lambda$registerModelRunnableWithEntityTypeContext$0(java.lang.String);
+    Code:
+         0: new           #79                 // class java/util/HashSet
+         3: dup
+         4: invokespecial #81                 // Method java/util/HashSet."<init>":()V
+         7: areturn
+}

@@ -1,0 +1,39 @@
+{
+  "required": true,
+  "package": "dev.arandu.piratesmca.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "SeapostPiratesMixin",
+    "CoastalStructureContextMixin",
+    "CoastalVillagerSpawnMixin",
+    "MCAPiratesMixin",
+    "BrawlFireMixin",
+    "BrawlEffectMixin",
+    "PirateSpawnEggMixin",
+    "PirateEquipmentTaskMixin",
+    "PirateConversationMixin",
+    "PirateBoatDialogueMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "client.TricorneStateMixin",
+    "client.TricorneExtractMixin",
+    "client.TricorneHeadLayerMixin",
+    "client.SashStateMixin",
+    "client.SashExtractMixin",
+    "client.AtelierSkinMixin",
+    "client.AtelierClothingMixin",
+    "client.WardrobeArmorMixin",
+    "client.AtelierFaceHairMixin",
+    "client.PirateLimbsStateMixin",
+    "client.ModelPartCubesAccessor",
+    "client.PirateLimbsExtractMixin",
+    "client.PirateLimbModelMixin",
+    "client.PirateMcaFinalMaskMixin",
+    "client.PirateVillagerLimbMixin",
+    "client.PirateHookHeldMixin"
+    ,"client.PirateHeldAttachmentMixin"
+  ]
+}

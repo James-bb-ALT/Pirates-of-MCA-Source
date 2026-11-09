@@ -1,0 +1,39 @@
+{
+  "silent": false,
+  "auto": false,
+  "answers": [
+    {
+      "name": "offer_help",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_friendly_lost_sailor.offer_help.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ask_details",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_friendly_lost_sailor.ask_details.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "decline",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_friendly_lost_sailor.decline.reply"
+          }
+        }
+      ]
+    }
+  ]
+}

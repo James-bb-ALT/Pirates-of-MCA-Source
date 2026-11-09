@@ -1,0 +1,72 @@
+Compiled from "MixinModel.java"
+public class traben.entity_model_features.mixin.mixins.MixinModel implements traben.entity_model_features.models.IEMFModel {
+  private traben.entity_model_features.models.parts.EMFModelPartRoot emf$thisEMFModelRoot;
+
+  public traben.entity_model_features.mixin.mixins.MixinModel();
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aconst_null
+         6: putfield      #7                  // Field emf$thisEMFModelRoot:Ltraben/entity_model_features/models/parts/EMFModelPartRoot;
+         9: return
+
+  private void emf$discoverEMFModel(net.minecraft.client.model.geom.ModelPart, java.util.function.Function<?, ?>, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+         0: invokestatic  #13                 // Method traben/entity_model_features/EMF.testForForgeLoadingError:()Z
+         3: ifeq          7
+         6: return
+         7: aload_1
+         8: instanceof    #19                 // class traben/entity_model_features/models/parts/EMFModelPartRoot
+        11: ifeq          29
+        14: aload_1
+        15: checkcast     #19                 // class traben/entity_model_features/models/parts/EMFModelPartRoot
+        18: astore        4
+        20: aload_0
+        21: aload         4
+        23: putfield      #7                  // Field emf$thisEMFModelRoot:Ltraben/entity_model_features/models/parts/EMFModelPartRoot;
+        26: goto          51
+        29: aload_1
+        30: instanceof    #21                 // class traben/entity_model_features/models/parts/EMFModelPart
+        33: ifeq          51
+        36: aload_1
+        37: checkcast     #21                 // class traben/entity_model_features/models/parts/EMFModelPart
+        40: astore        5
+        42: aload_0
+        43: aload         5
+        45: invokevirtual #23                 // Method traben/entity_model_features/models/parts/EMFModelPart.getRoot:()Ltraben/entity_model_features/models/parts/EMFModelPartRoot;
+        48: putfield      #7                  // Field emf$thisEMFModelRoot:Ltraben/entity_model_features/models/parts/EMFModelPartRoot;
+        51: aconst_null
+        52: putstatic     #27                 // Field traben/entity_model_features/EMFManager.lastCreatedRootModelPart:Ltraben/entity_model_features/models/parts/EMFModelPartRoot;
+        55: return
+
+  public boolean emf$isEMFModel();
+    Code:
+         0: aload_0
+         1: getfield      #7                  // Field emf$thisEMFModelRoot:Ltraben/entity_model_features/models/parts/EMFModelPartRoot;
+         4: ifnull        11
+         7: iconst_1
+         8: goto          12
+        11: iconst_0
+        12: ireturn
+
+  public traben.entity_model_features.models.parts.EMFModelPartRoot emf$getEMFRootModel();
+    Code:
+         0: aload_0
+         1: getfield      #7                  // Field emf$thisEMFModelRoot:Ltraben/entity_model_features/models/parts/EMFModelPartRoot;
+         4: areturn
+
+  private void emf$discoverEMFModel(org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<net.minecraft.client.renderer.rendertype.RenderType>);
+    Code:
+         0: invokestatic  #32                 // Method traben/entity_model_features/models/animation/state/EMFState.state:()Ltraben/entity_model_features/models/animation/state/EMFEntityRenderState;
+         3: astore_2
+         4: aload_2
+         5: ifnonnull     9
+         8: return
+         9: aload_2
+        10: aload_0
+        11: checkcast     #38                 // class net/minecraft/client/model/Model
+        14: getfield      #40                 // Field net/minecraft/client/model/Model.renderType:Ljava/util/function/Function;
+        17: invokeinterface #44,  2           // InterfaceMethod traben/entity_model_features/models/animation/state/EMFEntityRenderState.setLayerFactory:(Ljava/util/function/Function;)V
+        22: return
+}

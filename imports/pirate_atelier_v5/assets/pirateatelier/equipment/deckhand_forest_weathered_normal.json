@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "pirateatelier:deckhand_forest_weathered_normal"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "pirateatelier:deckhand_forest_weathered_normal"
+      }
+    ]
+  }
+}

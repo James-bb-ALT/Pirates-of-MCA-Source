@@ -1,0 +1,525 @@
+Compiled from "VillagerEntityModelMCA.java"
+public class net.conczin.mca.client.model.VillagerEntityModelMCA extends net.conczin.mca.client.model.VillagerEntityBaseModelMCA {
+  protected static final java.lang.String BREASTPLATE;
+
+  public final net.minecraft.client.model.geom.ModelPart breastsWear;
+
+  public final net.minecraft.client.model.geom.ModelPart leftArmwear;
+
+  public final net.minecraft.client.model.geom.ModelPart rightArmwear;
+
+  public final net.minecraft.client.model.geom.ModelPart leftLegwear;
+
+  public final net.minecraft.client.model.geom.ModelPart rightLegwear;
+
+  public final net.minecraft.client.model.geom.ModelPart bodyWear;
+
+  private boolean wearsHidden;
+
+  public net.conczin.mca.client.model.VillagerEntityModelMCA(net.minecraft.client.model.geom.ModelPart);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokespecial #1                  // Method net/conczin/mca/client/model/VillagerEntityBaseModelMCA."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+         5: aload_0
+         6: aload_0
+         7: getfield      #7                  // Field body:Lnet/minecraft/client/model/geom/ModelPart;
+        10: ldc           #15                 // String jacket
+        12: invokevirtual #17                 // Method net/minecraft/client/model/geom/ModelPart.getChild:(Ljava/lang/String;)Lnet/minecraft/client/model/geom/ModelPart;
+        15: putfield      #23                 // Field bodyWear:Lnet/minecraft/client/model/geom/ModelPart;
+        18: aload_0
+        19: aload_0
+        20: getfield      #26                 // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+        23: ldc           #29                 // String left_sleeve
+        25: invokevirtual #17                 // Method net/minecraft/client/model/geom/ModelPart.getChild:(Ljava/lang/String;)Lnet/minecraft/client/model/geom/ModelPart;
+        28: putfield      #31                 // Field leftArmwear:Lnet/minecraft/client/model/geom/ModelPart;
+        31: aload_0
+        32: aload_0
+        33: getfield      #34                 // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+        36: ldc           #37                 // String right_sleeve
+        38: invokevirtual #17                 // Method net/minecraft/client/model/geom/ModelPart.getChild:(Ljava/lang/String;)Lnet/minecraft/client/model/geom/ModelPart;
+        41: putfield      #39                 // Field rightArmwear:Lnet/minecraft/client/model/geom/ModelPart;
+        44: aload_0
+        45: aload_0
+        46: getfield      #42                 // Field leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        49: ldc           #45                 // String left_pants
+        51: invokevirtual #17                 // Method net/minecraft/client/model/geom/ModelPart.getChild:(Ljava/lang/String;)Lnet/minecraft/client/model/geom/ModelPart;
+        54: putfield      #47                 // Field leftLegwear:Lnet/minecraft/client/model/geom/ModelPart;
+        57: aload_0
+        58: aload_0
+        59: getfield      #50                 // Field rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        62: ldc           #53                 // String right_pants
+        64: invokevirtual #17                 // Method net/minecraft/client/model/geom/ModelPart.getChild:(Ljava/lang/String;)Lnet/minecraft/client/model/geom/ModelPart;
+        67: putfield      #55                 // Field rightLegwear:Lnet/minecraft/client/model/geom/ModelPart;
+        70: aload_0
+        71: aload_1
+        72: ldc           #58                 // String breastplate
+        74: invokestatic  #60                 // Method getChildOrEmpty:(Lnet/minecraft/client/model/geom/ModelPart;Ljava/lang/String;)Lnet/minecraft/client/model/geom/ModelPart;
+        77: putfield      #64                 // Field breastsWear:Lnet/minecraft/client/model/geom/ModelPart;
+        80: return
+
+  public static net.minecraft.client.model.geom.builders.MeshDefinition hairData(net.minecraft.client.model.geom.builders.CubeDeformation);
+    Code:
+         0: aload_0
+         1: invokestatic  #67                 // Method bodyData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+         4: astore_1
+         5: aload_1
+         6: invokevirtual #71                 // Method net/minecraft/client/model/geom/builders/MeshDefinition.getRoot:()Lnet/minecraft/client/model/geom/builders/PartDefinition;
+         9: ldc           #77                 // String head
+        11: invokevirtual #79                 // Method net/minecraft/client/model/geom/builders/PartDefinition.getChild:(Ljava/lang/String;)Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        14: astore_2
+        15: aload_2
+        16: ldc           #84                 // String hat
+        18: invokestatic  #86                 // Method net/minecraft/client/model/geom/builders/CubeListBuilder.create:()Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+        21: bipush        32
+        23: iconst_0
+        24: invokevirtual #92                 // Method net/minecraft/client/model/geom/builders/CubeListBuilder.texOffs:(II)Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+        27: ldc           #96                 // float -4.0f
+        29: ldc           #97                 // float -8.0f
+        31: ldc           #96                 // float -4.0f
+        33: ldc           #98                 // float 8.0f
+        35: ldc           #98                 // float 8.0f
+        37: ldc           #98                 // float 8.0f
+        39: aload_0
+        40: ldc           #99                 // float 0.3f
+        42: invokevirtual #100                // Method net/minecraft/client/model/geom/builders/CubeDeformation.extend:(F)Lnet/minecraft/client/model/geom/builders/CubeDeformation;
+        45: invokevirtual #106                // Method net/minecraft/client/model/geom/builders/CubeListBuilder.addBox:(FFFFFFLnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+        48: getstatic     #110                // Field net/minecraft/client/model/geom/PartPose.ZERO:Lnet/minecraft/client/model/geom/PartPose;
+        51: invokevirtual #116                // Method net/minecraft/client/model/geom/builders/PartDefinition.addOrReplaceChild:(Ljava/lang/String;Lnet/minecraft/client/model/geom/builders/CubeListBuilder;Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        54: pop
+        55: aload_1
+        56: areturn
+
+  public static net.minecraft.client.model.geom.builders.MeshDefinition bodyData(net.minecraft.client.model.geom.builders.CubeDeformation);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokestatic  #120                // Method bodyData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;Z)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+         5: areturn
+
+  public static net.minecraft.client.model.geom.builders.MeshDefinition bodyData(net.minecraft.client.model.geom.builders.CubeDeformation, boolean);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: invokestatic  #123                // Method net/minecraft/client/model/player/PlayerModel.createMesh:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;Z)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+         5: astore_2
+         6: aload_2
+         7: invokevirtual #71                 // Method net/minecraft/client/model/geom/builders/MeshDefinition.getRoot:()Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        10: astore_3
+        11: aload_3
+        12: ldc           #128                // String breasts
+        14: aload_0
+        15: iconst_0
+        16: invokestatic  #130                // Method newBreasts:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;I)Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+        19: getstatic     #110                // Field net/minecraft/client/model/geom/PartPose.ZERO:Lnet/minecraft/client/model/geom/PartPose;
+        22: invokevirtual #116                // Method net/minecraft/client/model/geom/builders/PartDefinition.addOrReplaceChild:(Ljava/lang/String;Lnet/minecraft/client/model/geom/builders/CubeListBuilder;Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        25: pop
+        26: aload_3
+        27: ldc           #58                 // String breastplate
+        29: aload_0
+        30: ldc           #134                // float 0.1f
+        32: invokevirtual #100                // Method net/minecraft/client/model/geom/builders/CubeDeformation.extend:(F)Lnet/minecraft/client/model/geom/builders/CubeDeformation;
+        35: bipush        16
+        37: invokestatic  #130                // Method newBreasts:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;I)Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+        40: getstatic     #110                // Field net/minecraft/client/model/geom/PartPose.ZERO:Lnet/minecraft/client/model/geom/PartPose;
+        43: invokevirtual #116                // Method net/minecraft/client/model/geom/builders/PartDefinition.addOrReplaceChild:(Ljava/lang/String;Lnet/minecraft/client/model/geom/builders/CubeListBuilder;Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        46: pop
+        47: aload_2
+        48: areturn
+
+  public static net.minecraft.client.renderer.entity.ArmorModelSet<net.minecraft.client.model.geom.builders.MeshDefinition> armorData();
+    Code:
+         0: new           #101                // class net/minecraft/client/model/geom/builders/CubeDeformation
+         3: dup
+         4: ldc           #135                // float 0.5f
+         6: invokespecial #136                // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+         9: new           #101                // class net/minecraft/client/model/geom/builders/CubeDeformation
+        12: dup
+        13: fconst_1
+        14: invokespecial #136                // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+        17: invokestatic  #139                // Method net/minecraft/client/model/HumanoidModel.createArmorMeshSet:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/renderer/entity/ArmorModelSet;
+        20: astore_0
+        21: aload_0
+        22: invokevirtual #145                // Method net/minecraft/client/renderer/entity/ArmorModelSet.head:()Ljava/lang/Object;
+        25: checkcast     #72                 // class net/minecraft/client/model/geom/builders/MeshDefinition
+        28: invokestatic  #150                // Method addEmptyBreasts:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)V
+        31: aload_0
+        32: invokevirtual #154                // Method net/minecraft/client/renderer/entity/ArmorModelSet.chest:()Ljava/lang/Object;
+        35: checkcast     #72                 // class net/minecraft/client/model/geom/builders/MeshDefinition
+        38: invokevirtual #71                 // Method net/minecraft/client/model/geom/builders/MeshDefinition.getRoot:()Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        41: ldc           #128                // String breasts
+        43: new           #101                // class net/minecraft/client/model/geom/builders/CubeDeformation
+        46: dup
+        47: fconst_1
+        48: invokespecial #136                // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+        51: iconst_0
+        52: invokestatic  #130                // Method newBreasts:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;I)Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+        55: getstatic     #110                // Field net/minecraft/client/model/geom/PartPose.ZERO:Lnet/minecraft/client/model/geom/PartPose;
+        58: invokevirtual #116                // Method net/minecraft/client/model/geom/builders/PartDefinition.addOrReplaceChild:(Ljava/lang/String;Lnet/minecraft/client/model/geom/builders/CubeListBuilder;Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        61: pop
+        62: aload_0
+        63: invokevirtual #157                // Method net/minecraft/client/renderer/entity/ArmorModelSet.legs:()Ljava/lang/Object;
+        66: checkcast     #72                 // class net/minecraft/client/model/geom/builders/MeshDefinition
+        69: invokestatic  #150                // Method addEmptyBreasts:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)V
+        72: aload_0
+        73: invokevirtual #160                // Method net/minecraft/client/renderer/entity/ArmorModelSet.feet:()Ljava/lang/Object;
+        76: checkcast     #72                 // class net/minecraft/client/model/geom/builders/MeshDefinition
+        79: invokestatic  #150                // Method addEmptyBreasts:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)V
+        82: aload_0
+        83: areturn
+
+  private static void addEmptyBreasts(net.minecraft.client.model.geom.builders.MeshDefinition);
+    Code:
+         0: aload_0
+         1: invokevirtual #71                 // Method net/minecraft/client/model/geom/builders/MeshDefinition.getRoot:()Lnet/minecraft/client/model/geom/builders/PartDefinition;
+         4: ldc           #128                // String breasts
+         6: invokestatic  #86                 // Method net/minecraft/client/model/geom/builders/CubeListBuilder.create:()Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+         9: getstatic     #110                // Field net/minecraft/client/model/geom/PartPose.ZERO:Lnet/minecraft/client/model/geom/PartPose;
+        12: invokevirtual #116                // Method net/minecraft/client/model/geom/builders/PartDefinition.addOrReplaceChild:(Ljava/lang/String;Lnet/minecraft/client/model/geom/builders/CubeListBuilder;Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        15: pop
+        16: return
+
+  public java.lang.Iterable<net.minecraft.client.model.geom.ModelPart> getCommonBodyParts();
+    Code:
+         0: aload_0
+         1: getfield      #7                  // Field body:Lnet/minecraft/client/model/geom/ModelPart;
+         4: aload_0
+         5: getfield      #34                 // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+         8: aload_0
+         9: getfield      #26                 // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+        12: aload_0
+        13: getfield      #50                 // Field rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        16: aload_0
+        17: getfield      #42                 // Field leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        20: invokestatic  #163                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+        23: areturn
+
+  public java.lang.Iterable<net.minecraft.client.model.geom.ModelPart> getBreastParts();
+    Code:
+         0: aload_0
+         1: getfield      #169                // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+         4: aload_0
+         5: getfield      #64                 // Field breastsWear:Lnet/minecraft/client/model/geom/ModelPart;
+         8: invokestatic  #171                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+        11: areturn
+
+  public void setupAnim(net.conczin.mca.client.render.VillagerRenderState);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokespecial #174                // Method net/conczin/mca/client/model/VillagerEntityBaseModelMCA.setupAnim:(Lnet/conczin/mca/client/render/VillagerRenderState;)V
+         5: aload_0
+         6: invokevirtual #178                // Method syncWearParts:()V
+         9: return
+
+  public void setAllVisible(boolean);
+    Code:
+         0: aload_0
+         1: getfield      #182                // Field head:Lnet/minecraft/client/model/geom/ModelPart;
+         4: iload_1
+         5: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+         8: aload_0
+         9: getfield      #188                // Field hat:Lnet/minecraft/client/model/geom/ModelPart;
+        12: iload_1
+        13: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        16: aload_0
+        17: getfield      #7                  // Field body:Lnet/minecraft/client/model/geom/ModelPart;
+        20: iload_1
+        21: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        24: aload_0
+        25: getfield      #26                 // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+        28: iload_1
+        29: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        32: aload_0
+        33: getfield      #34                 // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+        36: iload_1
+        37: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        40: aload_0
+        41: getfield      #42                 // Field leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        44: iload_1
+        45: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        48: aload_0
+        49: getfield      #50                 // Field rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        52: iload_1
+        53: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        56: aload_0
+        57: getfield      #169                // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+        60: iload_1
+        61: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        64: aload_0
+        65: getfield      #31                 // Field leftArmwear:Lnet/minecraft/client/model/geom/ModelPart;
+        68: aload_0
+        69: getfield      #190                // Field wearsHidden:Z
+        72: ifne          83
+        75: iload_1
+        76: ifeq          83
+        79: iconst_1
+        80: goto          84
+        83: iconst_0
+        84: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        87: aload_0
+        88: getfield      #39                 // Field rightArmwear:Lnet/minecraft/client/model/geom/ModelPart;
+        91: aload_0
+        92: getfield      #190                // Field wearsHidden:Z
+        95: ifne          106
+        98: iload_1
+        99: ifeq          106
+       102: iconst_1
+       103: goto          107
+       106: iconst_0
+       107: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       110: aload_0
+       111: getfield      #47                 // Field leftLegwear:Lnet/minecraft/client/model/geom/ModelPart;
+       114: aload_0
+       115: getfield      #190                // Field wearsHidden:Z
+       118: ifne          129
+       121: iload_1
+       122: ifeq          129
+       125: iconst_1
+       126: goto          130
+       129: iconst_0
+       130: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       133: aload_0
+       134: getfield      #55                 // Field rightLegwear:Lnet/minecraft/client/model/geom/ModelPart;
+       137: aload_0
+       138: getfield      #190                // Field wearsHidden:Z
+       141: ifne          152
+       144: iload_1
+       145: ifeq          152
+       148: iconst_1
+       149: goto          153
+       152: iconst_0
+       153: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       156: aload_0
+       157: getfield      #23                 // Field bodyWear:Lnet/minecraft/client/model/geom/ModelPart;
+       160: aload_0
+       161: getfield      #190                // Field wearsHidden:Z
+       164: ifne          175
+       167: iload_1
+       168: ifeq          175
+       171: iconst_1
+       172: goto          176
+       175: iconst_0
+       176: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       179: aload_0
+       180: getfield      #64                 // Field breastsWear:Lnet/minecraft/client/model/geom/ModelPart;
+       183: aload_0
+       184: getfield      #190                // Field wearsHidden:Z
+       187: ifne          198
+       190: iload_1
+       191: ifeq          198
+       194: iconst_1
+       195: goto          199
+       198: iconst_0
+       199: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       202: return
+
+  public net.conczin.mca.client.model.VillagerEntityModelMCA hideWears();
+    Code:
+         0: aload_0
+         1: iconst_1
+         2: putfield      #190                // Field wearsHidden:Z
+         5: aload_0
+         6: getfield      #64                 // Field breastsWear:Lnet/minecraft/client/model/geom/ModelPart;
+         9: iconst_0
+        10: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        13: aload_0
+        14: getfield      #31                 // Field leftArmwear:Lnet/minecraft/client/model/geom/ModelPart;
+        17: iconst_0
+        18: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        21: aload_0
+        22: getfield      #39                 // Field rightArmwear:Lnet/minecraft/client/model/geom/ModelPart;
+        25: iconst_0
+        26: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        29: aload_0
+        30: getfield      #47                 // Field leftLegwear:Lnet/minecraft/client/model/geom/ModelPart;
+        33: iconst_0
+        34: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        37: aload_0
+        38: getfield      #55                 // Field rightLegwear:Lnet/minecraft/client/model/geom/ModelPart;
+        41: iconst_0
+        42: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        45: aload_0
+        46: getfield      #23                 // Field bodyWear:Lnet/minecraft/client/model/geom/ModelPart;
+        49: iconst_0
+        50: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        53: aload_0
+        54: areturn
+
+  public void copyPropertiesTo(net.minecraft.client.model.HumanoidModel<?>);
+    Code:
+         0: aload_1
+         1: instanceof    #8                  // class net/conczin/mca/client/model/VillagerEntityModelMCA
+         4: ifeq          22
+         7: aload_1
+         8: checkcast     #8                  // class net/conczin/mca/client/model/VillagerEntityModelMCA
+        11: astore_2
+        12: aload_0
+        13: aload_2
+        14: invokespecial #193                // Method net/conczin/mca/client/model/VillagerEntityBaseModelMCA.copyPropertiesTo:(Lnet/minecraft/client/model/HumanoidModel;)V
+        17: aload_0
+        18: aload_2
+        19: invokevirtual #197                // Method copyAttributes:(Lnet/conczin/mca/client/model/VillagerEntityModelMCA;)V
+        22: return
+
+  private void copyAttributes(net.conczin.mca.client.model.VillagerEntityModelMCA);
+    Code:
+         0: aload_1
+         1: invokevirtual #178                // Method syncWearParts:()V
+         4: return
+
+  public void syncWearParts();
+    Code:
+         0: aload_0
+         1: getfield      #64                 // Field breastsWear:Lnet/minecraft/client/model/geom/ModelPart;
+         4: aload_0
+         5: getfield      #169                // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+         8: invokestatic  #201                // InterfaceMethod net/conczin/mca/client/model/CommonVillagerModel.copyPartState:(Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;)V
+        11: return
+
+  public void copyVisibility(net.minecraft.client.model.HumanoidModel<?>);
+    Code:
+         0: aload_0
+         1: getfield      #182                // Field head:Lnet/minecraft/client/model/geom/ModelPart;
+         4: aload_1
+         5: getfield      #207                // Field net/minecraft/client/model/HumanoidModel.head:Lnet/minecraft/client/model/geom/ModelPart;
+         8: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        11: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        14: aload_0
+        15: getfield      #188                // Field hat:Lnet/minecraft/client/model/geom/ModelPart;
+        18: aload_1
+        19: getfield      #207                // Field net/minecraft/client/model/HumanoidModel.head:Lnet/minecraft/client/model/geom/ModelPart;
+        22: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        25: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        28: aload_0
+        29: getfield      #7                  // Field body:Lnet/minecraft/client/model/geom/ModelPart;
+        32: aload_1
+        33: getfield      #208                // Field net/minecraft/client/model/HumanoidModel.body:Lnet/minecraft/client/model/geom/ModelPart;
+        36: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        39: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        42: aload_0
+        43: getfield      #23                 // Field bodyWear:Lnet/minecraft/client/model/geom/ModelPart;
+        46: aload_0
+        47: getfield      #190                // Field wearsHidden:Z
+        50: ifne          67
+        53: aload_1
+        54: getfield      #208                // Field net/minecraft/client/model/HumanoidModel.body:Lnet/minecraft/client/model/geom/ModelPart;
+        57: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        60: ifeq          67
+        63: iconst_1
+        64: goto          68
+        67: iconst_0
+        68: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        71: aload_0
+        72: getfield      #169                // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+        75: aload_1
+        76: getfield      #208                // Field net/minecraft/client/model/HumanoidModel.body:Lnet/minecraft/client/model/geom/ModelPart;
+        79: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        82: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        85: aload_0
+        86: getfield      #64                 // Field breastsWear:Lnet/minecraft/client/model/geom/ModelPart;
+        89: aload_0
+        90: getfield      #190                // Field wearsHidden:Z
+        93: ifne          110
+        96: aload_1
+        97: getfield      #208                // Field net/minecraft/client/model/HumanoidModel.body:Lnet/minecraft/client/model/geom/ModelPart;
+       100: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       103: ifeq          110
+       106: iconst_1
+       107: goto          111
+       110: iconst_0
+       111: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       114: aload_0
+       115: getfield      #26                 // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+       118: aload_1
+       119: getfield      #209                // Field net/minecraft/client/model/HumanoidModel.leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+       122: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       125: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       128: aload_0
+       129: getfield      #31                 // Field leftArmwear:Lnet/minecraft/client/model/geom/ModelPart;
+       132: aload_0
+       133: getfield      #190                // Field wearsHidden:Z
+       136: ifne          153
+       139: aload_1
+       140: getfield      #209                // Field net/minecraft/client/model/HumanoidModel.leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+       143: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       146: ifeq          153
+       149: iconst_1
+       150: goto          154
+       153: iconst_0
+       154: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       157: aload_0
+       158: getfield      #34                 // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+       161: aload_1
+       162: getfield      #210                // Field net/minecraft/client/model/HumanoidModel.rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+       165: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       168: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       171: aload_0
+       172: getfield      #39                 // Field rightArmwear:Lnet/minecraft/client/model/geom/ModelPart;
+       175: aload_0
+       176: getfield      #190                // Field wearsHidden:Z
+       179: ifne          196
+       182: aload_1
+       183: getfield      #210                // Field net/minecraft/client/model/HumanoidModel.rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+       186: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       189: ifeq          196
+       192: iconst_1
+       193: goto          197
+       196: iconst_0
+       197: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       200: aload_0
+       201: getfield      #42                 // Field leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+       204: aload_1
+       205: getfield      #211                // Field net/minecraft/client/model/HumanoidModel.leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+       208: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       211: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       214: aload_0
+       215: getfield      #47                 // Field leftLegwear:Lnet/minecraft/client/model/geom/ModelPart;
+       218: aload_0
+       219: getfield      #190                // Field wearsHidden:Z
+       222: ifne          239
+       225: aload_1
+       226: getfield      #211                // Field net/minecraft/client/model/HumanoidModel.leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+       229: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       232: ifeq          239
+       235: iconst_1
+       236: goto          240
+       239: iconst_0
+       240: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       243: aload_0
+       244: getfield      #50                 // Field rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+       247: aload_1
+       248: getfield      #212                // Field net/minecraft/client/model/HumanoidModel.rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+       251: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       254: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       257: aload_0
+       258: getfield      #55                 // Field rightLegwear:Lnet/minecraft/client/model/geom/ModelPart;
+       261: aload_0
+       262: getfield      #190                // Field wearsHidden:Z
+       265: ifne          282
+       268: aload_1
+       269: getfield      #212                // Field net/minecraft/client/model/HumanoidModel.rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+       272: getfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       275: ifeq          282
+       278: iconst_1
+       279: goto          283
+       282: iconst_0
+       283: putfield      #184                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       286: return
+
+  public void setupAnim(net.minecraft.client.renderer.entity.state.HumanoidRenderState);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #213                // class net/conczin/mca/client/render/VillagerRenderState
+         5: invokevirtual #215                // Method setupAnim:(Lnet/conczin/mca/client/render/VillagerRenderState;)V
+         8: return
+
+  public void setupAnim(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #213                // class net/conczin/mca/client/render/VillagerRenderState
+         5: invokevirtual #215                // Method setupAnim:(Lnet/conczin/mca/client/render/VillagerRenderState;)V
+         8: return
+}

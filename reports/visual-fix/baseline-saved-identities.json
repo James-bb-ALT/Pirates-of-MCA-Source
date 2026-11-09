@@ -1,0 +1,385 @@
+{
+  "save": "E:\\Pycharm Projects\\Pirates of MCA\\run\\visual-fix-before-on\\saves\\New World",
+  "regions": [
+    {
+      "path": "dimensions/minecraft/overworld/entities/r.-1.-1.mca",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dimensions/minecraft/overworld/entities/r.-1.0.mca",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dimensions/minecraft/overworld/entities/r.0.-1.mca",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dimensions/minecraft/overworld/entities/r.0.0.mca",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dimensions/minecraft/overworld/entities/r.3.-1.mca",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dimensions/minecraft/overworld/entities/r.3.0.mca",
+      "sha256": "90010cbe535a383e3f2e5e33a97f3c5ea37d14b8592f7e559cf18646613125da"
+    },
+    {
+      "path": "dimensions/minecraft/overworld/entities/r.4.-1.mca",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dimensions/minecraft/overworld/entities/r.4.0.mca",
+      "sha256": "dc671a9c425510ad53e606deb7dd5869408123d9984e33887b2ad9d9784391fe"
+    }
+  ],
+  "pirates": [
+    {
+      "id": "2a01bf0f-1000-431f-b79a-a27b36ac9a4b",
+      "entity_type": "mca:male_villager",
+      "nbt": {
+        "NoGravity": 1,
+        "AgeLocked": 0,
+        "Brain": {
+          "memories": {}
+        },
+        "FoodLevel": 0,
+        "Invulnerable": 0,
+        "FallFlying": 0,
+        "ForcedAge": 0,
+        "Gossips": [],
+        "PortalCooldown": 0,
+        "AbsorptionAmount": 0.0,
+        "LastRestock": 0,
+        "DeathTime": 0,
+        "Xp": 0,
+        "LastGossipDecay": 219,
+        "PersistenceRequired": 1,
+        "id": "mca:male_villager",
+        "UUID": [
+          704757519,
+          268452639,
+          -1214602629,
+          917281355
+        ],
+        "Tags": [
+          "pmca_spawn_equipment_v1",
+          "pmca_atelier_skin_v1",
+          "pmca_outfit_4",
+          "pmca_friendly",
+          "pmca_adult_required",
+          "pmca_seapost",
+          "pmca_hair_v203",
+          "pmca_gender_fixed_v203",
+          "pmca_ready",
+          "pmca_bond_v102_b2d19156-5364-397f-8e33-abd769d6319d",
+          "pmca_crew_a31f509d-be90-3816-8a64-42e7e1da7561",
+          "pmca_guard_brain_v2",
+          "pmca_gender_male",
+          "pmca_profile_v206"
+        ],
+        "Age": 0,
+        "Motion": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Health": 20.0,
+        "equipment": {
+          "head": {
+            "count": 1,
+            "id": "pirateatelier:captain_armor_pristine_peg_right_helmet"
+          },
+          "feet": {
+            "count": 1,
+            "id": "pirateatelier:captain_armor_pristine_peg_right_boots"
+          },
+          "chest": {
+            "count": 1,
+            "id": "pirateatelier:captain_armor_pristine_peg_right_chestplate"
+          },
+          "legs": {
+            "count": 1,
+            "id": "pirateatelier:captain_armor_pristine_peg_right_leggings"
+          }
+        },
+        "LeftHanded": 0,
+        "fall_distance": 0.0,
+        "Air": 300,
+        "OnGround": 0,
+        "NoAI": 1,
+        "Rotation": [
+          180.0,
+          0.0
+        ],
+        "current_impulse_context_reset_grace_time": 0,
+        "RestocksToday": 0,
+        "CustomName": "Ilídio",
+        "Pos": [
+          2047.607070627341,
+          -60.0,
+          0.0
+        ],
+        "Fire": 0,
+        "CanPickUpLoot": 0,
+        "VillagerData": {
+          "profession": "piratesmca:pirate",
+          "level": 1,
+          "type": "minecraft:plains"
+        },
+        "attributes": [
+          {
+            "id": "minecraft:max_health",
+            "base": 20.0
+          },
+          {
+            "id": "minecraft:movement_speed",
+            "base": 0.5
+          },
+          {
+            "id": "minecraft:armor_toughness",
+            "base": 0.0
+          },
+          {
+            "id": "minecraft:attack_damage",
+            "base": 3.0
+          },
+          {
+            "id": "minecraft:armor",
+            "base": 0.0
+          }
+        ],
+        "VillagerDataFinalized": 0,
+        "HurtTime": 0,
+        "MCAData": {
+          "GeneWidth": 0.5,
+          "GeneEumelanin": 0.5,
+          "InteractedWith": 0,
+          "Gender": 1,
+          "EyeColorLeft": -1,
+          "HairBangs": "",
+          "Traits": {},
+          "EyeColor": -1,
+          "SkinColor": -16777216,
+          "LastProcreation": 0,
+          "GeneFace": 0.5,
+          "AgeState": 5,
+          "Memories": {
+            "b2d19156-5364-397f-8e33-abd769d6319d": {
+              "playerUUID": "b2d19156-5364-397f-8e33-abd769d6319d",
+              "interactionFatigue": 0,
+              "lastSeen": 0,
+              "dialogueType": 2,
+              "hearts": 7
+            }
+          },
+          "HairStyle": "mca:skins/hair/male/39.png",
+          "Hair": "",
+          "GenePheomelanin": 0.5,
+          "HairExtra": "",
+          "HairBack": "",
+          "ChatAIPrompt": "You hope to become knowledgeable enough to teach someone your trade. You keep a foreign coin that no local merchant recognizes. You find well-organized storage rooms strangely satisfying.",
+          "GeneMelanin": 0.5,
+          "Mood": 2,
+          "GiftSaturationQueue": [],
+          "Skin": "pirateatelier:textures/skins/captain_civilian.png",
+          "Inventory": [],
+          "IsProcreating": 0,
+          "WearArmor": 0,
+          "GeneEyeBrightness": 0.5,
+          "HasBaby": 0,
+          "IsPanicking": 0,
+          "HairBase": "mca:skins/hair/male/39.png",
+          "HairFront": "",
+          "MCADataVersion": 2,
+          "BabyAge": 0,
+          "MoveState": 0,
+          "GeneHemoglobin": 0.5,
+          "nicknames": {},
+          "HomeVillage": -1,
+          "GeneSize": 0.5,
+          "GeneSkin": 0.5,
+          "GeneBreast": 0.5,
+          "Personality": "mca:friendly",
+          "GrowthAmount": 0,
+          "IsBabyMale": 0,
+          "HairColor": -16777216,
+          "ClothingLocked": 1,
+          "longTermMemory": {},
+          "GeneVoiceTone": 0.5,
+          "InfectionProgress": 0.0,
+          "GeneVoice": 0.5,
+          "Clothes": "piratesmca:skins/clothing/male/4.png",
+          "ActiveChore": 0,
+          "DespawnDelay": 0
+        },
+        "Inventory": []
+      }
+    },
+    {
+      "id": "802198b2-5aba-4bc9-b7fd-7452e8568942",
+      "entity_type": "mca:female_villager",
+      "nbt": {
+        "NoGravity": 1,
+        "AgeLocked": 0,
+        "Brain": {
+          "memories": {}
+        },
+        "FoodLevel": 0,
+        "Invulnerable": 0,
+        "FallFlying": 0,
+        "ForcedAge": 0,
+        "Gossips": [],
+        "PortalCooldown": 0,
+        "AbsorptionAmount": 0.0,
+        "LastRestock": 0,
+        "DeathTime": 0,
+        "Xp": 0,
+        "LastGossipDecay": 219,
+        "PersistenceRequired": 1,
+        "id": "mca:female_villager",
+        "UUID": [
+          -2145281870,
+          1522158537,
+          -1208126382,
+          -396981950
+        ],
+        "Tags": [
+          "pmca_spawn_equipment_v1",
+          "pmca_atelier_skin_v1",
+          "pmca_friendly",
+          "pmca_adult_required",
+          "pmca_seapost",
+          "pmca_hair_v203",
+          "pmca_gender_female",
+          "pmca_crew_64d84e8b-7f25-3e5d-bd09-4e1e4619dcf4",
+          "pmca_gender_fixed_v203",
+          "pmca_ready",
+          "pmca_bond_v102_b2d19156-5364-397f-8e33-abd769d6319d",
+          "pmca_outfit_11",
+          "pmca_guard_brain_v2",
+          "pmca_profile_v206"
+        ],
+        "Age": 0,
+        "Motion": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Health": 20.0,
+        "LeftHanded": 0,
+        "fall_distance": 0.0,
+        "Air": 300,
+        "OnGround": 0,
+        "NoAI": 1,
+        "Rotation": [
+          180.0,
+          0.0
+        ],
+        "current_impulse_context_reset_grace_time": 0,
+        "RestocksToday": 0,
+        "CustomName": "Clotilde",
+        "Pos": [
+          2068.0,
+          -60.0,
+          20.0
+        ],
+        "Fire": 0,
+        "CanPickUpLoot": 0,
+        "VillagerData": {
+          "profession": "piratesmca:pirate",
+          "level": 1,
+          "type": "minecraft:plains"
+        },
+        "attributes": [
+          {
+            "id": "minecraft:max_health",
+            "base": 20.0
+          },
+          {
+            "id": "minecraft:movement_speed",
+            "base": 0.5
+          },
+          {
+            "id": "minecraft:armor_toughness",
+            "base": 0.0
+          },
+          {
+            "id": "minecraft:attack_damage",
+            "base": 3.0
+          },
+          {
+            "id": "minecraft:armor",
+            "base": 0.0
+          }
+        ],
+        "VillagerDataFinalized": 0,
+        "HurtTime": 0,
+        "MCAData": {
+          "GeneWidth": 0.5,
+          "GeneEumelanin": 0.5,
+          "InteractedWith": 0,
+          "Gender": 2,
+          "EyeColorLeft": -1,
+          "HairBangs": "mca:skins/layered_hair/bangs/6.png",
+          "Traits": {},
+          "EyeColor": -1,
+          "SkinColor": -16777216,
+          "LastProcreation": 0,
+          "GeneFace": 0.5,
+          "AgeState": 5,
+          "Memories": {
+            "b2d19156-5364-397f-8e33-abd769d6319d": {
+              "playerUUID": "b2d19156-5364-397f-8e33-abd769d6319d",
+              "interactionFatigue": 0,
+              "lastSeen": 0,
+              "dialogueType": 2,
+              "hearts": 7
+            }
+          },
+          "HairStyle": "mca:hair_style/layered/short_6",
+          "Hair": "",
+          "GenePheomelanin": 0.5,
+          "HairExtra": "",
+          "HairBack": "",
+          "ChatAIPrompt": "You once saw an unfamiliar light moving through the forest at night. You once traveled for days in the wrong direction because of an inaccurate map. You give informal names to tools that you use frequently.",
+          "GeneMelanin": 0.5,
+          "Mood": -2,
+          "GiftSaturationQueue": [],
+          "Skin": "mca:skins/skin/female/3.png",
+          "Inventory": [],
+          "IsProcreating": 0,
+          "WearArmor": 0,
+          "GeneEyeBrightness": 0.5,
+          "HasBaby": 0,
+          "IsPanicking": 0,
+          "HairBase": "mca:skins/layered_hair/base/6.png",
+          "HairFront": "mca:skins/layered_hair/front/6.png",
+          "MCADataVersion": 2,
+          "BabyAge": 0,
+          "MoveState": 0,
+          "GeneHemoglobin": 0.5,
+          "nicknames": {},
+          "HomeVillage": -1,
+          "GeneSize": 0.5,
+          "GeneSkin": 0.5,
+          "GeneBreast": 0.5,
+          "Personality": "mca:friendly",
+          "GrowthAmount": 0,
+          "IsBabyMale": 0,
+          "HairColor": -16777216,
+          "ClothingLocked": 1,
+          "longTermMemory": {},
+          "GeneVoiceTone": 0.5,
+          "InfectionProgress": 0.0,
+          "GeneVoice": 0.5,
+          "Clothes": "piratesmca:skins/clothing/female/11.png",
+          "ActiveChore": 0,
+          "DespawnDelay": 0
+        },
+        "Inventory": []
+      }
+    }
+  ]
+}

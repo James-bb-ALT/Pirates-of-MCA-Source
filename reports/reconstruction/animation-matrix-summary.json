@@ -1,0 +1,162 @@
+{
+  "fa-wide-on": {
+    "status": "PASS_EXECUTED_FIXTURES",
+    "samples": {
+      "MCA:0": {
+        "roots": [
+          "traben.entity_model_features.models.parts.EMFModelPartRoot"
+        ],
+        "samples": 2059,
+        "distinct_matrices": 2059
+      },
+      "MCA:3": {
+        "roots": [
+          "traben.entity_model_features.models.parts.EMFModelPartRoot"
+        ],
+        "samples": 3630,
+        "distinct_matrices": 3630
+      },
+      "MCA:2": {
+        "roots": [
+          "traben.entity_model_features.models.parts.EMFModelPartRoot"
+        ],
+        "samples": 3816,
+        "distinct_matrices": 3774
+      },
+      "AVATAR:0": {
+        "roots": [
+          "traben.entity_model_features.models.parts.EMFModelPartRoot"
+        ],
+        "samples": 365,
+        "distinct_matrices": 365
+      },
+      "AVATAR:2": {
+        "roots": [
+          "traben.entity_model_features.models.parts.EMFModelPartRoot"
+        ],
+        "samples": 365,
+        "distinct_matrices": 365
+      }
+    }
+  },
+  "fa-wide-off": {
+    "status": "PASS_EXECUTED_FIXTURES",
+    "samples": {
+      "MCA:3": {
+        "roots": [
+          "net.minecraft.client.model.geom.ModelPart"
+        ],
+        "samples": 7524,
+        "distinct_matrices": 12
+      },
+      "MCA:0": {
+        "roots": [
+          "net.minecraft.client.model.geom.ModelPart"
+        ],
+        "samples": 6248,
+        "distinct_matrices": 6216
+      },
+      "MCA:2": {
+        "roots": [
+          "net.minecraft.client.model.geom.ModelPart"
+        ],
+        "samples": 11327,
+        "distinct_matrices": 291
+      },
+      "AVATAR:0": {
+        "roots": [
+          "net.minecraft.client.model.geom.ModelPart"
+        ],
+        "samples": 363,
+        "distinct_matrices": 356
+      },
+      "AVATAR:2": {
+        "roots": [
+          "net.minecraft.client.model.geom.ModelPart"
+        ],
+        "samples": 363,
+        "distinct_matrices": 207
+      }
+    }
+  },
+  "fa-slim-on": {
+    "status": "PASS_EXECUTED_FIXTURES",
+    "samples": {
+      "MCA:0": {
+        "roots": [
+          "traben.entity_model_features.models.parts.EMFModelPartRoot"
+        ],
+        "samples": 2563,
+        "distinct_matrices": 2563
+      },
+      "MCA:3": {
+        "roots": [
+          "traben.entity_model_features.models.parts.EMFModelPartRoot"
+        ],
+        "samples": 3900,
+        "distinct_matrices": 3900
+      },
+      "MCA:2": {
+        "roots": [
+          "traben.entity_model_features.models.parts.EMFModelPartRoot"
+        ],
+        "samples": 6201,
+        "distinct_matrices": 6168
+      },
+      "AVATAR:0": {
+        "roots": [
+          "traben.entity_model_features.models.parts.EMFModelPartRoot"
+        ],
+        "samples": 372,
+        "distinct_matrices": 372
+      },
+      "AVATAR:2": {
+        "roots": [
+          "traben.entity_model_features.models.parts.EMFModelPartRoot"
+        ],
+        "samples": 372,
+        "distinct_matrices": 372
+      }
+    }
+  },
+  "fa-slim-off": {
+    "status": "PASS_EXECUTED_FIXTURES",
+    "samples": {
+      "MCA:3": {
+        "roots": [
+          "net.minecraft.client.model.geom.ModelPart"
+        ],
+        "samples": 6350,
+        "distinct_matrices": 10
+      },
+      "MCA:2": {
+        "roots": [
+          "net.minecraft.client.model.geom.ModelPart"
+        ],
+        "samples": 10190,
+        "distinct_matrices": 291
+      },
+      "MCA:0": {
+        "roots": [
+          "net.minecraft.client.model.geom.ModelPart"
+        ],
+        "samples": 5047,
+        "distinct_matrices": 5019
+      },
+      "AVATAR:0": {
+        "roots": [
+          "net.minecraft.client.model.geom.ModelPart"
+        ],
+        "samples": 369,
+        "distinct_matrices": 363
+      },
+      "AVATAR:2": {
+        "roots": [
+          "net.minecraft.client.model.geom.ModelPart"
+        ],
+        "samples": 369,
+        "distinct_matrices": 199
+      }
+    }
+  }
+}

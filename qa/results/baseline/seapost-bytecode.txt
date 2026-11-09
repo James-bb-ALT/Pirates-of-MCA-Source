@@ -1,0 +1,362 @@
+Compiled from "SeapostPieces.java"
+public class com.stevekung.fishofthieves.structure.SeapostPieces$SeapostPiece extends net.minecraft.world.level.levelgen.structure.TemplateStructurePiece {
+  public com.stevekung.fishofthieves.structure.SeapostPieces$SeapostPiece(net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager, net.minecraft.resources.Identifier, net.minecraft.core.BlockPos, net.minecraft.world.level.block.Rotation, int);
+    Code:
+         0: aload_0
+         1: getstatic     #34                 // Field com/stevekung/fishofthieves/registry/FOTStructures$PieceType.SEAPOST_PIECE:Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;
+         4: iconst_0
+         5: aload_1
+         6: aload_2
+         7: aload_2
+         8: invokevirtual #40                 // Method net/minecraft/resources/Identifier.toString:()Ljava/lang/String;
+        11: aload         4
+        13: aload_2
+        14: invokestatic  #44                 // Method makeSettings:(Lnet/minecraft/world/level/block/Rotation;Lnet/minecraft/resources/Identifier;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
+        17: aload_2
+        18: aload_3
+        19: iload         5
+        21: invokestatic  #48                 // Method makePosition:(Lnet/minecraft/resources/Identifier;Lnet/minecraft/core/BlockPos;I)Lnet/minecraft/core/BlockPos;
+        24: invokespecial #51                 // Method net/minecraft/world/level/levelgen/structure/TemplateStructurePiece."<init>":(Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;ILnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/resources/Identifier;Ljava/lang/String;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;Lnet/minecraft/core/BlockPos;)V
+        27: return
+
+  public com.stevekung.fishofthieves.structure.SeapostPieces$SeapostPiece(net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager, net.minecraft.nbt.CompoundTag);
+    Code:
+         0: aload_0
+         1: getstatic     #34                 // Field com/stevekung/fishofthieves/registry/FOTStructures$PieceType.SEAPOST_PIECE:Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;
+         4: aload_2
+         5: aload_1
+         6: aload_2
+         7: invokedynamic #84,  0             // InvokeDynamic #0:apply:(Lnet/minecraft/nbt/CompoundTag;)Ljava/util/function/Function;
+        12: invokespecial #87                 // Method net/minecraft/world/level/levelgen/structure/TemplateStructurePiece."<init>":(Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Ljava/util/function/Function;)V
+        15: return
+
+  protected void addAdditionalSaveData(net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext, net.minecraft.nbt.CompoundTag);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokespecial #93                 // Method net/minecraft/world/level/levelgen/structure/TemplateStructurePiece.addAdditionalSaveData:(Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceSerializationContext;Lnet/minecraft/nbt/CompoundTag;)V
+         6: aload_2
+         7: ldc           #95                 // String Rot
+         9: aload_0
+        10: getfield      #99                 // Field placeSettings:Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
+        13: invokevirtual #105                // Method net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings.getRotation:()Lnet/minecraft/world/level/block/Rotation;
+        16: invokevirtual #110                // Method net/minecraft/world/level/block/Rotation.name:()Ljava/lang/String;
+        19: invokevirtual #116                // Method net/minecraft/nbt/CompoundTag.putString:(Ljava/lang/String;Ljava/lang/String;)V
+        22: return
+
+  private static net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings makeSettings(net.minecraft.world.level.block.Rotation, net.minecraft.resources.Identifier);
+    Code:
+         0: new           #101                // class net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings
+         3: dup
+         4: invokespecial #122                // Method net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings."<init>":()V
+         7: aload_0
+         8: invokevirtual #126                // Method net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings.setRotation:(Lnet/minecraft/world/level/block/Rotation;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
+        11: getstatic     #132                // Field net/minecraft/world/level/block/Mirror.NONE:Lnet/minecraft/world/level/block/Mirror;
+        14: invokevirtual #136                // Method net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings.setMirror:(Lnet/minecraft/world/level/block/Mirror;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
+        17: getstatic     #140                // Field com/stevekung/fishofthieves/structure/SeapostPieces.PIVOTS:Ljava/util/Map;
+        20: aload_1
+        21: invokeinterface #145,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        26: checkcast     #147                // class net/minecraft/core/BlockPos
+        29: invokevirtual #151                // Method net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings.setRotationPivot:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
+        32: getstatic     #157                // Field net/minecraft/world/level/levelgen/structure/templatesystem/BlockIgnoreProcessor.STRUCTURE_BLOCK:Lnet/minecraft/world/level/levelgen/structure/templatesystem/BlockIgnoreProcessor;
+        35: invokevirtual #161                // Method net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings.addProcessor:(Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessor;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
+        38: areturn
+
+  private static net.minecraft.core.BlockPos makePosition(net.minecraft.resources.Identifier, net.minecraft.core.BlockPos, int);
+    Code:
+         0: aload_1
+         1: getstatic     #165                // Field com/stevekung/fishofthieves/structure/SeapostPieces.OFFSETS:Ljava/util/Map;
+         4: aload_0
+         5: invokeinterface #145,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        10: checkcast     #167                // class net/minecraft/core/Vec3i
+        13: invokevirtual #170                // Method net/minecraft/core/BlockPos.offset:(Lnet/minecraft/core/Vec3i;)Lnet/minecraft/core/BlockPos;
+        16: iload_2
+        17: invokevirtual #174                // Method net/minecraft/core/BlockPos.below:(I)Lnet/minecraft/core/BlockPos;
+        20: areturn
+
+  private net.minecraft.resources.ResourceKey<net.minecraft.world.level.storage.loot.LootTable> getRandomLootTables(net.minecraft.util.RandomSource);
+    Code:
+         0: aload_1
+         1: invokeinterface #185,  1          // InterfaceMethod net/minecraft/util/RandomSource.nextFloat:()F
+         6: ldc           #186                // float 0.35f
+         8: fcmpg
+         9: ifge          16
+        12: getstatic     #190                // Field com/stevekung/fishofthieves/registry/FOTLootTables$Chests.SEAPOST_BARREL_COMBAT:Lnet/minecraft/resources/ResourceKey;
+        15: areturn
+        16: aload_1
+        17: invokeinterface #185,  1          // InterfaceMethod net/minecraft/util/RandomSource.nextFloat:()F
+        22: ldc           #191                // float 0.2f
+        24: fcmpg
+        25: ifge          32
+        28: getstatic     #194                // Field com/stevekung/fishofthieves/registry/FOTLootTables$Chests.SEAPOST_BARREL_FIREWORK:Lnet/minecraft/resources/ResourceKey;
+        31: areturn
+        32: getstatic     #197                // Field com/stevekung/fishofthieves/registry/FOTLootTables$Chests.SEAPOST_BARREL_SUPPLY:Lnet/minecraft/resources/ResourceKey;
+        35: areturn
+
+  protected void handleDataMarker(java.lang.String, net.minecraft.core.BlockPos, net.minecraft.world.level.ServerLevelAccessor, net.minecraft.util.RandomSource, net.minecraft.world.level.levelgen.structure.BoundingBox);
+    Code:
+         0: aload_3
+         1: getstatic     #206                // Field net/minecraft/core/registries/Registries.VILLAGER_TYPE:Lnet/minecraft/resources/ResourceKey;
+         4: invokeinterface #212,  2          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.holderLookup:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/HolderLookup;
+         9: astore        6
+        11: aload_3
+        12: getstatic     #215                // Field net/minecraft/core/registries/Registries.VILLAGER_PROFESSION:Lnet/minecraft/resources/ResourceKey;
+        15: invokeinterface #212,  2          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.holderLookup:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/HolderLookup;
+        20: astore        7
+        22: aload_1
+        23: astore        8
+        25: iconst_m1
+        26: istore        9
+        28: aload         8
+        30: invokevirtual #221                // Method java/lang/String.hashCode:()I
+        33: lookupswitch  { // 4
+             -2054775690: 76
+               875661761: 92
+              1070518117: 124
+              1652474148: 108
+                 default: 137
+            }
+        76: aload         8
+        78: ldc           #223                // String seapost_barrel
+        80: invokevirtual #227                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        83: ifeq          137
+        86: iconst_0
+        87: istore        9
+        89: goto          137
+        92: aload         8
+        94: ldc           #229                // String seapost_barrel_with_flower_pot
+        96: invokevirtual #227                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        99: ifeq          137
+       102: iconst_1
+       103: istore        9
+       105: goto          137
+       108: aload         8
+       110: ldc           #231                // String seapost_leather_worker
+       112: invokevirtual #227                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       115: ifeq          137
+       118: iconst_2
+       119: istore        9
+       121: goto          137
+       124: aload         8
+       126: ldc           #233                // String seapost_fisherman
+       128: invokevirtual #227                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       131: ifeq          137
+       134: iconst_3
+       135: istore        9
+       137: iload         9
+       139: tableswitch   { // 0 to 3
+                       0: 168
+                       1: 218
+                       2: 291
+                       3: 452
+                 default: 563
+            }
+       168: aload_3
+       169: aload_2
+       170: invokevirtual #236                // Method net/minecraft/core/BlockPos.below:()Lnet/minecraft/core/BlockPos;
+       173: invokeinterface #240,  2          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.getBlockEntity:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+       178: astore        10
+       180: aload         10
+       182: instanceof    #242                // class net/minecraft/world/RandomizableContainer
+       185: ifeq          215
+       188: aload         10
+       190: checkcast     #242                // class net/minecraft/world/RandomizableContainer
+       193: astore        11
+       195: aload         11
+       197: aload_0
+       198: aload         4
+       200: invokevirtual #244                // Method getRandomLootTables:(Lnet/minecraft/util/RandomSource;)Lnet/minecraft/resources/ResourceKey;
+       203: aload         4
+       205: invokeinterface #248,  1          // InterfaceMethod net/minecraft/util/RandomSource.nextLong:()J
+       210: invokeinterface #252,  4          // InterfaceMethod net/minecraft/world/RandomizableContainer.setLootTable:(Lnet/minecraft/resources/ResourceKey;J)V
+       215: goto          563
+       218: aload_3
+       219: aload_2
+       220: invokevirtual #236                // Method net/minecraft/core/BlockPos.below:()Lnet/minecraft/core/BlockPos;
+       223: invokeinterface #240,  2          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.getBlockEntity:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+       228: astore        10
+       230: aload         10
+       232: instanceof    #242                // class net/minecraft/world/RandomizableContainer
+       235: ifeq          265
+       238: aload         10
+       240: checkcast     #242                // class net/minecraft/world/RandomizableContainer
+       243: astore        11
+       245: aload         11
+       247: aload_0
+       248: aload         4
+       250: invokevirtual #244                // Method getRandomLootTables:(Lnet/minecraft/util/RandomSource;)Lnet/minecraft/resources/ResourceKey;
+       253: aload         4
+       255: invokeinterface #248,  1          // InterfaceMethod net/minecraft/util/RandomSource.nextLong:()J
+       260: invokeinterface #252,  4          // InterfaceMethod net/minecraft/world/RandomizableContainer.setLootTable:(Lnet/minecraft/resources/ResourceKey;J)V
+       265: aload_3
+       266: aload_2
+       267: getstatic     #256                // Field com/stevekung/fishofthieves/structure/SeapostPieces.POTTED_BLOCKS:Ljava/util/List;
+       270: aload         4
+       272: invokestatic  #262                // Method net/minecraft/util/Util.getRandom:(Ljava/util/List;Lnet/minecraft/util/RandomSource;)Ljava/lang/Object;
+       275: checkcast     #264                // class net/minecraft/world/level/block/Block
+       278: invokevirtual #268                // Method net/minecraft/world/level/block/Block.defaultBlockState:()Lnet/minecraft/world/level/block/state/BlockState;
+       281: iconst_2
+       282: invokeinterface #272,  4          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.setBlock:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+       287: pop
+       288: goto          563
+       291: getstatic     #278                // Field net/minecraft/world/entity/EntityTypes.VILLAGER:Lnet/minecraft/world/entity/EntityType;
+       294: aload_3
+       295: invokeinterface #282,  1          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.getLevel:()Lnet/minecraft/server/level/ServerLevel;
+       300: getstatic     #288                // Field net/minecraft/world/entity/EntitySpawnReason.STRUCTURE:Lnet/minecraft/world/entity/EntitySpawnReason;
+       303: invokevirtual #294                // Method net/minecraft/world/entity/EntityType.create:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/EntitySpawnReason;)Lnet/minecraft/world/entity/Entity;
+       306: checkcast     #296                // class net/minecraft/world/entity/npc/villager/Villager
+       309: astore        10
+       311: aload         10
+       313: new           #298                // class net/minecraft/world/entity/npc/villager/VillagerData
+       316: dup
+       317: aload         6
+       319: getstatic     #303                // Field net/minecraft/world/entity/npc/villager/VillagerType.PLAINS:Lnet/minecraft/resources/ResourceKey;
+       322: invokeinterface #309,  2          // InterfaceMethod net/minecraft/core/HolderLookup.getOrThrow:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
+       327: aload         7
+       329: getstatic     #314                // Field net/minecraft/world/entity/npc/villager/VillagerProfession.LEATHERWORKER:Lnet/minecraft/resources/ResourceKey;
+       332: invokeinterface #309,  2          // InterfaceMethod net/minecraft/core/HolderLookup.getOrThrow:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
+       337: iconst_1
+       338: invokespecial #317                // Method net/minecraft/world/entity/npc/villager/VillagerData."<init>":(Lnet/minecraft/core/Holder;Lnet/minecraft/core/Holder;I)V
+       341: invokevirtual #321                // Method net/minecraft/world/entity/npc/villager/Villager.setVillagerData:(Lnet/minecraft/world/entity/npc/villager/VillagerData;)V
+       344: aload         10
+       346: invokevirtual #324                // Method net/minecraft/world/entity/npc/villager/Villager.setPersistenceRequired:()V
+       349: aload         10
+       351: aload_2
+       352: fconst_0
+       353: fconst_0
+       354: invokevirtual #328                // Method net/minecraft/world/entity/npc/villager/Villager.snapTo:(Lnet/minecraft/core/BlockPos;FF)V
+       357: aload         10
+       359: aload_3
+       360: aload_3
+       361: aload         10
+       363: invokevirtual #331                // Method net/minecraft/world/entity/npc/villager/Villager.blockPosition:()Lnet/minecraft/core/BlockPos;
+       366: invokeinterface #335,  2          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.getCurrentDifficultyAt:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/DifficultyInstance;
+       371: getstatic     #288                // Field net/minecraft/world/entity/EntitySpawnReason.STRUCTURE:Lnet/minecraft/world/entity/EntitySpawnReason;
+       374: aconst_null
+       375: invokevirtual #339                // Method net/minecraft/world/entity/npc/villager/Villager.finalizeSpawn:(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData;
+       378: pop
+       379: aload_3
+       380: aload         10
+       382: invokeinterface #343,  2          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.addFreshEntityWithPassengers:(Lnet/minecraft/world/entity/Entity;)V
+       387: aload_3
+       388: aload_2
+       389: getstatic     #349                // Field net/minecraft/world/level/block/Blocks.SPRUCE_TRAPDOOR:Lnet/minecraft/world/level/block/Block;
+       392: invokevirtual #268                // Method net/minecraft/world/level/block/Block.defaultBlockState:()Lnet/minecraft/world/level/block/state/BlockState;
+       395: getstatic     #355                // Field net/minecraft/world/level/block/HorizontalDirectionalBlock.FACING:Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+       398: aload_0
+       399: getfield      #99                 // Field placeSettings:Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
+       402: invokevirtual #105                // Method net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings.getRotation:()Lnet/minecraft/world/level/block/Rotation;
+       405: getstatic     #361                // Field net/minecraft/core/Direction.NORTH:Lnet/minecraft/core/Direction;
+       408: invokevirtual #365                // Method net/minecraft/world/level/block/Rotation.rotate:(Lnet/minecraft/core/Direction;)Lnet/minecraft/core/Direction;
+       411: invokevirtual #371                // Method net/minecraft/world/level/block/state/BlockState.setValue:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+       414: checkcast     #367                // class net/minecraft/world/level/block/state/BlockState
+       417: getstatic     #376                // Field net/minecraft/world/level/block/TrapDoorBlock.HALF:Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+       420: getstatic     #382                // Field net/minecraft/world/level/block/state/properties/Half.TOP:Lnet/minecraft/world/level/block/state/properties/Half;
+       423: invokevirtual #371                // Method net/minecraft/world/level/block/state/BlockState.setValue:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+       426: checkcast     #367                // class net/minecraft/world/level/block/state/BlockState
+       429: getstatic     #386                // Field net/minecraft/world/level/block/TrapDoorBlock.OPEN:Lnet/minecraft/world/level/block/state/properties/BooleanProperty;
+       432: iconst_1
+       433: invokestatic  #392                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       436: invokevirtual #371                // Method net/minecraft/world/level/block/state/BlockState.setValue:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+       439: checkcast     #367                // class net/minecraft/world/level/block/state/BlockState
+       442: iconst_2
+       443: invokeinterface #272,  4          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.setBlock:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+       448: pop
+       449: goto          563
+       452: getstatic     #278                // Field net/minecraft/world/entity/EntityTypes.VILLAGER:Lnet/minecraft/world/entity/EntityType;
+       455: aload_3
+       456: invokeinterface #282,  1          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.getLevel:()Lnet/minecraft/server/level/ServerLevel;
+       461: getstatic     #288                // Field net/minecraft/world/entity/EntitySpawnReason.STRUCTURE:Lnet/minecraft/world/entity/EntitySpawnReason;
+       464: invokevirtual #294                // Method net/minecraft/world/entity/EntityType.create:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/EntitySpawnReason;)Lnet/minecraft/world/entity/Entity;
+       467: checkcast     #296                // class net/minecraft/world/entity/npc/villager/Villager
+       470: astore        10
+       472: aload         10
+       474: new           #298                // class net/minecraft/world/entity/npc/villager/VillagerData
+       477: dup
+       478: aload         6
+       480: getstatic     #303                // Field net/minecraft/world/entity/npc/villager/VillagerType.PLAINS:Lnet/minecraft/resources/ResourceKey;
+       483: invokeinterface #309,  2          // InterfaceMethod net/minecraft/core/HolderLookup.getOrThrow:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
+       488: aload         7
+       490: getstatic     #395                // Field net/minecraft/world/entity/npc/villager/VillagerProfession.FISHERMAN:Lnet/minecraft/resources/ResourceKey;
+       493: invokeinterface #309,  2          // InterfaceMethod net/minecraft/core/HolderLookup.getOrThrow:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
+       498: iconst_1
+       499: invokespecial #317                // Method net/minecraft/world/entity/npc/villager/VillagerData."<init>":(Lnet/minecraft/core/Holder;Lnet/minecraft/core/Holder;I)V
+       502: invokevirtual #321                // Method net/minecraft/world/entity/npc/villager/Villager.setVillagerData:(Lnet/minecraft/world/entity/npc/villager/VillagerData;)V
+       505: aload         10
+       507: invokevirtual #324                // Method net/minecraft/world/entity/npc/villager/Villager.setPersistenceRequired:()V
+       510: aload         10
+       512: aload_2
+       513: fconst_0
+       514: fconst_0
+       515: invokevirtual #328                // Method net/minecraft/world/entity/npc/villager/Villager.snapTo:(Lnet/minecraft/core/BlockPos;FF)V
+       518: aload         10
+       520: aload_3
+       521: aload_3
+       522: aload         10
+       524: invokevirtual #331                // Method net/minecraft/world/entity/npc/villager/Villager.blockPosition:()Lnet/minecraft/core/BlockPos;
+       527: invokeinterface #335,  2          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.getCurrentDifficultyAt:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/DifficultyInstance;
+       532: getstatic     #288                // Field net/minecraft/world/entity/EntitySpawnReason.STRUCTURE:Lnet/minecraft/world/entity/EntitySpawnReason;
+       535: aconst_null
+       536: invokevirtual #339                // Method net/minecraft/world/entity/npc/villager/Villager.finalizeSpawn:(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData;
+       539: pop
+       540: aload_3
+       541: aload         10
+       543: invokeinterface #343,  2          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.addFreshEntityWithPassengers:(Lnet/minecraft/world/entity/Entity;)V
+       548: aload_3
+       549: aload_2
+       550: getstatic     #398                // Field net/minecraft/world/level/block/Blocks.AIR:Lnet/minecraft/world/level/block/Block;
+       553: invokevirtual #268                // Method net/minecraft/world/level/block/Block.defaultBlockState:()Lnet/minecraft/world/level/block/state/BlockState;
+       556: iconst_2
+       557: invokeinterface #272,  4          // InterfaceMethod net/minecraft/world/level/ServerLevelAccessor.setBlock:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+       562: pop
+       563: return
+
+  public void postProcess(net.minecraft.world.level.WorldGenLevel, net.minecraft.world.level.StructureManager, net.minecraft.world.level.chunk.ChunkGenerator, net.minecraft.util.RandomSource, net.minecraft.world.level.levelgen.structure.BoundingBox, net.minecraft.world.level.ChunkPos, net.minecraft.core.BlockPos);
+    Code:
+         0: aload_0
+         1: getfield      #423                // Field templateName:Ljava/lang/String;
+         4: invokestatic  #427                // Method net/minecraft/resources/Identifier.parse:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+         7: astore        8
+         9: aload_0
+        10: new           #147                // class net/minecraft/core/BlockPos
+        13: dup
+        14: aload_0
+        15: getfield      #430                // Field templatePosition:Lnet/minecraft/core/BlockPos;
+        18: invokevirtual #433                // Method net/minecraft/core/BlockPos.getX:()I
+        21: aload_3
+        22: invokevirtual #438                // Method net/minecraft/world/level/chunk/ChunkGenerator.getSeaLevel:()I
+        25: getstatic     #165                // Field com/stevekung/fishofthieves/structure/SeapostPieces.OFFSETS:Ljava/util/Map;
+        28: aload         8
+        30: invokeinterface #145,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        35: checkcast     #147                // class net/minecraft/core/BlockPos
+        38: invokevirtual #441                // Method net/minecraft/core/BlockPos.getY:()I
+        41: isub
+        42: aload_0
+        43: getfield      #430                // Field templatePosition:Lnet/minecraft/core/BlockPos;
+        46: invokevirtual #444                // Method net/minecraft/core/BlockPos.getZ:()I
+        49: invokespecial #447                // Method net/minecraft/core/BlockPos."<init>":(III)V
+        52: putfield      #430                // Field templatePosition:Lnet/minecraft/core/BlockPos;
+        55: aload_0
+        56: aload_1
+        57: aload_2
+        58: aload_3
+        59: aload         4
+        61: aload         5
+        63: aload         6
+        65: aload         7
+        67: invokespecial #449                // Method net/minecraft/world/level/levelgen/structure/TemplateStructurePiece.postProcess:(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/core/BlockPos;)V
+        70: return
+
+  private static net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings lambda$new$0(net.minecraft.nbt.CompoundTag, net.minecraft.resources.Identifier);
+    Code:
+         0: aload_0
+         1: ldc           #95                 // String Rot
+         3: getstatic     #460                // Field net/minecraft/world/level/block/Rotation.LEGACY_CODEC:Lcom/mojang/serialization/Codec;
+         6: invokevirtual #464                // Method net/minecraft/nbt/CompoundTag.read:(Ljava/lang/String;Lcom/mojang/serialization/Codec;)Ljava/util/Optional;
+         9: invokevirtual #470                // Method java/util/Optional.orElseThrow:()Ljava/lang/Object;
+        12: checkcast     #107                // class net/minecraft/world/level/block/Rotation
+        15: aload_1
+        16: invokestatic  #44                 // Method makeSettings:(Lnet/minecraft/world/level/block/Rotation;Lnet/minecraft/resources/Identifier;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
+        19: areturn
+}

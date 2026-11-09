@@ -1,0 +1,499 @@
+Compiled from "VillagerEntityMCARenderer.java"
+public class net.conczin.mca.client.render.VillagerEntityMCARenderer extends net.conczin.mca.client.render.VillagerLikeEntityMCARenderer<net.conczin.mca.entity.VillagerEntityMCA> {
+  public net.conczin.mca.client.render.VillagerEntityMCARenderer(net.minecraft.client.renderer.entity.EntityRendererProvider$Context);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_1
+         3: invokestatic  #1                  // Method createAnimationModel:(Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;)Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+         6: invokevirtual #7                  // Method net/conczin/mca/client/model/VillagerEntityModelMCA.hideWears:()Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+         9: invokespecial #13                 // Method net/conczin/mca/client/render/VillagerLikeEntityMCARenderer."<init>":(Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;Lnet/conczin/mca/client/model/VillagerEntityModelMCA;)V
+        12: aload_0
+        13: getfield      #19                 // Field layers:Ljava/util/List;
+        16: iconst_0
+        17: new           #23                 // class net/conczin/mca/client/render/layer/SkinLayer
+        20: dup
+        21: aload_0
+        22: getstatic     #25                 // Field net/minecraft/client/model/geom/builders/CubeDeformation.NONE:Lnet/minecraft/client/model/geom/builders/CubeDeformation;
+        25: invokestatic  #31                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA.bodyData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+        28: invokestatic  #35                 // Method createVisibleModel:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+        31: invokevirtual #7                  // Method net/conczin/mca/client/model/VillagerEntityModelMCA.hideWears:()Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+        34: invokespecial #39                 // Method net/conczin/mca/client/render/layer/SkinLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;)V
+        37: invokeinterface #42,  3           // InterfaceMethod java/util/List.add:(ILjava/lang/Object;)V
+        42: aload_0
+        43: new           #48                 // class net/conczin/mca/client/render/layer/FaceLayer
+        46: dup
+        47: aload_0
+        48: new           #26                 // class net/minecraft/client/model/geom/builders/CubeDeformation
+        51: dup
+        52: ldc           #50                 // float 0.01f
+        54: invokespecial #51                 // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+        57: invokestatic  #31                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA.bodyData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+        60: invokestatic  #35                 // Method createVisibleModel:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+        63: invokevirtual #7                  // Method net/conczin/mca/client/model/VillagerEntityModelMCA.hideWears:()Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+        66: ldc           #54                 // String normal
+        68: invokespecial #56                 // Method net/conczin/mca/client/render/layer/FaceLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;Ljava/lang/String;)V
+        71: invokevirtual #59                 // Method addLayer:(Lnet/minecraft/client/renderer/entity/layers/RenderLayer;)Z
+        74: pop
+        75: aload_0
+        76: new           #63                 // class net/conczin/mca/client/render/layer/ClothingLayer
+        79: dup
+        80: aload_0
+        81: new           #26                 // class net/minecraft/client/model/geom/builders/CubeDeformation
+        84: dup
+        85: ldc           #65                 // float 0.0625f
+        87: invokespecial #51                 // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+        90: invokestatic  #31                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA.bodyData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+        93: invokestatic  #35                 // Method createVisibleModel:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+        96: ldc           #54                 // String normal
+        98: invokespecial #66                 // Method net/conczin/mca/client/render/layer/ClothingLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;Ljava/lang/String;)V
+       101: invokevirtual #59                 // Method addLayer:(Lnet/minecraft/client/renderer/entity/layers/RenderLayer;)Z
+       104: pop
+       105: aload_0
+       106: new           #67                 // class net/conczin/mca/client/render/layer/HairLayer
+       109: dup
+       110: aload_0
+       111: new           #26                 // class net/minecraft/client/model/geom/builders/CubeDeformation
+       114: dup
+       115: ldc           #69                 // float 0.125f
+       117: invokespecial #51                 // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+       120: invokestatic  #70                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA.hairData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+       123: invokestatic  #35                 // Method createVisibleModel:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+       126: invokespecial #73                 // Method net/conczin/mca/client/render/layer/HairLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;)V
+       129: invokevirtual #59                 // Method addLayer:(Lnet/minecraft/client/renderer/entity/layers/RenderLayer;)Z
+       132: pop
+       133: return
+
+  private static net.conczin.mca.client.model.VillagerEntityModelMCA createAnimationModel(net.minecraft.client.renderer.entity.EntityRendererProvider$Context);
+    Code:
+         0: new           #8                  // class net/conczin/mca/client/model/VillagerEntityModelMCA
+         3: dup
+         4: aload_0
+         5: getstatic     #74                 // Field net/minecraft/client/model/geom/ModelLayers.PLAYER:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+         8: invokevirtual #80                 // Method net/minecraft/client/renderer/entity/EntityRendererProvider$Context.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+        11: invokespecial #86                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        14: areturn
+
+  private static net.conczin.mca.client.model.VillagerEntityModelMCA createVisibleModel(net.minecraft.client.model.geom.builders.MeshDefinition);
+    Code:
+         0: new           #8                  // class net/conczin/mca/client/model/VillagerEntityModelMCA
+         3: dup
+         4: aload_0
+         5: bipush        64
+         7: bipush        64
+         9: invokestatic  #89                 // Method net/minecraft/client/model/geom/builders/LayerDefinition.create:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;II)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+        12: invokevirtual #95                 // Method net/minecraft/client/model/geom/builders/LayerDefinition.bakeRoot:()Lnet/minecraft/client/model/geom/ModelPart;
+        15: invokespecial #86                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        18: astore_1
+        19: aload_1
+        20: invokevirtual #99                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA.receiveDeferredAnimationPose:()Lnet/conczin/mca/client/model/VillagerEntityBaseModelMCA;
+        23: pop
+        24: aload_1
+        25: areturn
+}
+Compiled from "VillagerLikeEntityMCARenderer.java"
+public class net.conczin.mca.client.render.VillagerLikeEntityMCARenderer<T extends net.minecraft.world.entity.Mob & net.conczin.mca.entity.VillagerLike<T>> extends net.minecraft.client.renderer.entity.HumanoidMobRenderer<T, net.conczin.mca.client.render.VillagerRenderState, net.conczin.mca.client.model.VillagerEntityModelMCA> {
+  private static final net.minecraft.resources.Identifier TEXTURE;
+
+  public net.conczin.mca.client.render.VillagerLikeEntityMCARenderer(net.minecraft.client.renderer.entity.EntityRendererProvider$Context, net.conczin.mca.client.model.VillagerEntityModelMCA);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: ldc           #1                  // float 0.5f
+         5: invokespecial #2                  // Method net/minecraft/client/renderer/entity/HumanoidMobRenderer."<init>":(Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;Lnet/minecraft/client/model/HumanoidModel;F)V
+         8: aload_0
+         9: new           #8                  // class net/minecraft/client/renderer/entity/layers/HumanoidArmorLayer
+        12: dup
+        13: aload_0
+        14: aload_0
+        15: invokevirtual #10                 // Method createArmorModelSet:()Lnet/minecraft/client/renderer/entity/ArmorModelSet;
+        18: aload_1
+        19: invokevirtual #16                 // Method net/minecraft/client/renderer/entity/EntityRendererProvider$Context.getEquipmentRenderer:()Lnet/minecraft/client/renderer/entity/layers/EquipmentLayerRenderer;
+        22: invokespecial #22                 // Method net/minecraft/client/renderer/entity/layers/HumanoidArmorLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/renderer/entity/ArmorModelSet;Lnet/minecraft/client/renderer/entity/layers/EquipmentLayerRenderer;)V
+        25: invokevirtual #25                 // Method addLayer:(Lnet/minecraft/client/renderer/entity/layers/RenderLayer;)Z
+        28: pop
+        29: return
+
+  private net.minecraft.client.renderer.entity.ArmorModelSet<net.conczin.mca.client.model.VillagerEntityBaseModelMCA> createArmorModelSet();
+    Code:
+         0: new           #29                 // class net/minecraft/client/renderer/entity/ArmorModelSet
+         3: dup
+         4: aload_0
+         5: ldc           #31                 // float 0.55f
+         7: getstatic     #32                 // Field net/minecraft/world/entity/EquipmentSlot.HEAD:Lnet/minecraft/world/entity/EquipmentSlot;
+        10: invokevirtual #38                 // Method createArmorModel:(FLnet/minecraft/world/entity/EquipmentSlot;)Lnet/conczin/mca/client/model/VillagerEntityBaseModelMCA;
+        13: aload_0
+        14: ldc           #31                 // float 0.55f
+        16: getstatic     #42                 // Field net/minecraft/world/entity/EquipmentSlot.CHEST:Lnet/minecraft/world/entity/EquipmentSlot;
+        19: invokevirtual #38                 // Method createArmorModel:(FLnet/minecraft/world/entity/EquipmentSlot;)Lnet/conczin/mca/client/model/VillagerEntityBaseModelMCA;
+        22: aload_0
+        23: ldc           #45                 // float 0.3f
+        25: getstatic     #46                 // Field net/minecraft/world/entity/EquipmentSlot.LEGS:Lnet/minecraft/world/entity/EquipmentSlot;
+        28: invokevirtual #38                 // Method createArmorModel:(FLnet/minecraft/world/entity/EquipmentSlot;)Lnet/conczin/mca/client/model/VillagerEntityBaseModelMCA;
+        31: aload_0
+        32: ldc           #31                 // float 0.55f
+        34: getstatic     #49                 // Field net/minecraft/world/entity/EquipmentSlot.FEET:Lnet/minecraft/world/entity/EquipmentSlot;
+        37: invokevirtual #38                 // Method createArmorModel:(FLnet/minecraft/world/entity/EquipmentSlot;)Lnet/conczin/mca/client/model/VillagerEntityBaseModelMCA;
+        40: invokespecial #52                 // Method net/minecraft/client/renderer/entity/ArmorModelSet."<init>":(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+        43: areturn
+
+  private net.conczin.mca.client.model.VillagerEntityBaseModelMCA createArmorModel(float, net.minecraft.world.entity.EquipmentSlot);
+    Code:
+         0: new           #55                 // class net/minecraft/client/model/geom/builders/CubeDeformation
+         3: dup
+         4: fload_1
+         5: invokespecial #57                 // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+         8: invokestatic  #60                 // Method net/conczin/mca/client/model/VillagerEntityBaseModelMCA.getModelData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+        11: astore_3
+        12: aload_2
+        13: getstatic     #32                 // Field net/minecraft/world/entity/EquipmentSlot.HEAD:Lnet/minecraft/world/entity/EquipmentSlot;
+        16: if_acmpne     34
+        19: aload_3
+        20: invokevirtual #66                 // Method net/minecraft/client/model/geom/builders/MeshDefinition.getRoot:()Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        23: aload_0
+        24: aload_2
+        25: invokevirtual #72                 // Method armorParts:(Lnet/minecraft/world/entity/EquipmentSlot;)Ljava/util/Set;
+        28: invokevirtual #76                 // Method net/minecraft/client/model/geom/builders/PartDefinition.retainPartsAndChildren:(Ljava/util/Set;)V
+        31: goto          46
+        34: aload_3
+        35: invokevirtual #66                 // Method net/minecraft/client/model/geom/builders/MeshDefinition.getRoot:()Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        38: aload_0
+        39: aload_2
+        40: invokevirtual #72                 // Method armorParts:(Lnet/minecraft/world/entity/EquipmentSlot;)Ljava/util/Set;
+        43: invokevirtual #82                 // Method net/minecraft/client/model/geom/builders/PartDefinition.retainExactParts:(Ljava/util/Set;)V
+        46: new           #61                 // class net/conczin/mca/client/model/VillagerEntityBaseModelMCA
+        49: dup
+        50: aload_3
+        51: bipush        64
+        53: bipush        32
+        55: invokestatic  #85                 // Method net/minecraft/client/model/geom/builders/LayerDefinition.create:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;II)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+        58: invokevirtual #91                 // Method net/minecraft/client/model/geom/builders/LayerDefinition.bakeRoot:()Lnet/minecraft/client/model/geom/ModelPart;
+        61: invokespecial #95                 // Method net/conczin/mca/client/model/VillagerEntityBaseModelMCA."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        64: areturn
+
+  private java.util.Set<java.lang.String> armorParts(net.minecraft.world.entity.EquipmentSlot);
+    Code:
+         0: getstatic     #98                 // Field net/conczin/mca/client/render/VillagerLikeEntityMCARenderer$1.$SwitchMap$net$minecraft$world$entity$EquipmentSlot:[I
+         3: aload_1
+         4: invokevirtual #104                // Method net/minecraft/world/entity/EquipmentSlot.ordinal:()I
+         7: iaload
+         8: tableswitch   { // 1 to 4
+
+                       1: 40
+
+                       2: 48
+
+                       3: 62
+
+                       4: 74
+                 default: 84
+            }
+        40: ldc           #108                // String head
+        42: invokestatic  #110                // InterfaceMethod java/util/Set.of:(Ljava/lang/Object;)Ljava/util/Set;
+        45: goto          101
+        48: ldc           #116                // String body
+        50: ldc           #118                // String left_arm
+        52: ldc           #120                // String right_arm
+        54: ldc           #122                // String breasts
+        56: invokestatic  #124                // InterfaceMethod java/util/Set.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
+        59: goto          101
+        62: ldc           #127                // String left_leg
+        64: ldc           #129                // String right_leg
+        66: ldc           #116                // String body
+        68: invokestatic  #131                // InterfaceMethod java/util/Set.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
+        71: goto          101
+        74: ldc           #127                // String left_leg
+        76: ldc           #129                // String right_leg
+        78: invokestatic  #134                // InterfaceMethod java/util/Set.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
+        81: goto          101
+        84: new           #137                // class java/lang/IllegalStateException
+        87: dup
+        88: aload_1
+        89: invokestatic  #139                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+        92: invokedynamic #145,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+        97: invokespecial #149                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+       100: athrow
+       101: areturn
+
+  protected net.minecraft.client.model.HumanoidModel$ArmPose getArmPose(T, net.minecraft.world.entity.HumanoidArm);
+    Code:
+         0: aload_1
+         1: aload_2
+         2: invokevirtual #152                // Method net/minecraft/world/entity/Mob.getItemHeldByArm:(Lnet/minecraft/world/entity/HumanoidArm;)Lnet/minecraft/world/item/ItemStack;
+         5: astore_3
+         6: aload_2
+         7: aload_1
+         8: invokevirtual #158                // Method net/minecraft/world/entity/Mob.getMainArm:()Lnet/minecraft/world/entity/HumanoidArm;
+        11: if_acmpne     20
+        14: getstatic     #162                // Field net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+        17: goto          23
+        20: getstatic     #168                // Field net/minecraft/world/InteractionHand.OFF_HAND:Lnet/minecraft/world/InteractionHand;
+        23: astore        4
+        25: aload_1
+        26: invokevirtual #171                // Method net/minecraft/world/entity/Mob.isUsingItem:()Z
+        29: ifeq          71
+        32: aload_1
+        33: invokevirtual #175                // Method net/minecraft/world/entity/Mob.getUsedItemHand:()Lnet/minecraft/world/InteractionHand;
+        36: aload         4
+        38: if_acmpne     71
+        41: aload_3
+        42: invokevirtual #179                // Method net/minecraft/world/item/ItemStack.getUseAnimation:()Lnet/minecraft/world/item/ItemUseAnimation;
+        45: astore        5
+        47: aload         5
+        49: getstatic     #185                // Field net/minecraft/world/item/ItemUseAnimation.BOW:Lnet/minecraft/world/item/ItemUseAnimation;
+        52: if_acmpne     59
+        55: getstatic     #191                // Field net/minecraft/client/model/HumanoidModel$ArmPose.BOW_AND_ARROW:Lnet/minecraft/client/model/HumanoidModel$ArmPose;
+        58: areturn
+        59: aload         5
+        61: getstatic     #197                // Field net/minecraft/world/item/ItemUseAnimation.CROSSBOW:Lnet/minecraft/world/item/ItemUseAnimation;
+        64: if_acmpne     71
+        67: getstatic     #200                // Field net/minecraft/client/model/HumanoidModel$ArmPose.CROSSBOW_CHARGE:Lnet/minecraft/client/model/HumanoidModel$ArmPose;
+        70: areturn
+        71: aload_0
+        72: aload_1
+        73: aload_2
+        74: invokespecial #203                // Method net/minecraft/client/renderer/entity/HumanoidMobRenderer.getArmPose:(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/HumanoidArm;)Lnet/minecraft/client/model/HumanoidModel$ArmPose;
+        77: areturn
+
+  public net.conczin.mca.client.render.VillagerRenderState createRenderState();
+    Code:
+         0: new           #207                // class net/conczin/mca/client/render/VillagerRenderState
+         3: dup
+         4: invokespecial #209                // Method net/conczin/mca/client/render/VillagerRenderState."<init>":()V
+         7: areturn
+
+  public void extractRenderState(T, net.conczin.mca.client.render.VillagerRenderState, float);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: fload_3
+         4: invokespecial #212                // Method net/minecraft/client/renderer/entity/HumanoidMobRenderer.extractRenderState:(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/client/renderer/entity/state/HumanoidRenderState;F)V
+         7: aload_2
+         8: invokestatic  #216                // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.require:(Ljava/lang/Object;)Lnet/conczin/mca/client/render/VillagerStateHolder;
+        11: astore        4
+        13: aload         4
+        15: getstatic     #222                // Field net/conczin/mca/entity/VillagerLike$PlayerModel.VILLAGER:Lnet/conczin/mca/entity/VillagerLike$PlayerModel;
+        18: aload_1
+        19: checkcast     #228                // class net/conczin/mca/entity/VillagerLike
+        22: invokestatic  #230                // Method net/conczin/mca/client/render/VillagerRenderData.create:(Lnet/conczin/mca/entity/VillagerLike$PlayerModel;Lnet/conczin/mca/entity/VillagerLike;)Lnet/conczin/mca/client/render/VillagerRenderData;
+        25: invokeinterface #235,  2          // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.mca$setVillagerRenderData:(Lnet/conczin/mca/client/render/VillagerRenderData;)V
+        30: aload_2
+        31: aload_1
+        32: checkcast     #228                // class net/conczin/mca/entity/VillagerLike
+        35: invokeinterface #239,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getVillagerBrain:()Lnet/conczin/mca/entity/ai/brain/VillagerBrain;
+        40: fload_3
+        41: invokevirtual #243                // Method net/conczin/mca/entity/ai/brain/VillagerBrain.getPanicAnimationProgress:(F)F
+        44: putfield      #249                // Field net/conczin/mca/client/render/VillagerRenderState.panicAnimationProgress:F
+        47: aload_1
+        48: aload_2
+        49: invokestatic  #253                // Method net/conczin/mca/client/render/VillagerRenderStateHooks.extractScaledBounds:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)V
+        52: return
+
+  protected void scale(net.conczin.mca.client.render.VillagerRenderState, com.mojang.blaze3d.vertex.PoseStack);
+    Code:
+         0: aload_1
+         1: invokestatic  #259                // Method net/conczin/mca/client/render/VillagerVisuals.require:(Ljava/lang/Object;)Lnet/conczin/mca/client/render/VillagerVisuals;
+         4: astore_3
+         5: aload_3
+         6: invokevirtual #264                // Method net/conczin/mca/client/render/VillagerVisuals.rawVerticalScaleFactor:()F
+         9: fstore        4
+        11: aload_3
+        12: invokevirtual #268                // Method net/conczin/mca/client/render/VillagerVisuals.rawHorizontalScaleFactor:()F
+        15: fstore        5
+        17: aload_2
+        18: fload         5
+        20: fload         4
+        22: fload         5
+        24: invokevirtual #271                // Method com/mojang/blaze3d/vertex/PoseStack.scale:(FFF)V
+        27: aload_3
+        28: invokevirtual #277                // Method net/conczin/mca/client/render/VillagerVisuals.baby:()Z
+        31: ifeq          60
+        34: aload_1
+        35: getfield      #280                // Field net/conczin/mca/client/render/VillagerRenderState.isPassenger:Z
+        38: ifne          60
+        41: aload_1
+        42: getstatic     #284                // Field net/minecraft/world/entity/Pose.SLEEPING:Lnet/minecraft/world/entity/Pose;
+        45: invokevirtual #290                // Method net/conczin/mca/client/render/VillagerRenderState.hasPose:(Lnet/minecraft/world/entity/Pose;)Z
+        48: ifne          60
+        51: aload_2
+        52: fconst_0
+        53: ldc_w         #294                // float 0.6f
+        56: fconst_0
+        57: invokevirtual #295                // Method com/mojang/blaze3d/vertex/PoseStack.translate:(FFF)V
+        60: return
+
+  protected net.minecraft.client.renderer.rendertype.RenderType getRenderType(net.conczin.mca.client.render.VillagerRenderState, boolean, boolean, boolean);
+    Code:
+         0: aconst_null
+         1: areturn
+
+  protected boolean shouldShowName(T, double);
+    Code:
+         0: invokestatic  #298                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+         3: getfield      #304                // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+         6: astore        4
+         8: aload_1
+         9: invokevirtual #308                // Method net/minecraft/world/entity/Mob.getCustomName:()Lnet/minecraft/network/chat/Component;
+        12: ifnull        80
+        15: invokestatic  #298                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+        18: getfield      #312                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+        21: invokevirtual #316                // Method net/minecraft/client/gui/Gui.screen:()Lnet/minecraft/client/gui/screens/Screen;
+        24: instanceof    #322                // class net/conczin/mca/client/gui/VillagerEditorScreen
+        27: ifne          80
+        30: aload         4
+        32: ifnull        80
+        35: invokestatic  #324                // Method net/conczin/mca/Config.getInstance:()Lnet/conczin/mca/Config;
+        38: getfield      #329                // Field net/conczin/mca/Config.showNameTags:Z
+        41: ifeq          80
+        44: aload         4
+        46: aload_1
+        47: invokevirtual #332                // Method net/minecraft/world/entity/player/Player.distanceToSqr:(Lnet/minecraft/world/entity/Entity;)D
+        50: invokestatic  #324                // Method net/conczin/mca/Config.getInstance:()Lnet/conczin/mca/Config;
+        53: getfield      #338                // Field net/conczin/mca/Config.nameTagDistance:F
+        56: f2d
+        57: ldc2_w        #341                // double 2.0d
+        60: invokestatic  #343                // Method java/lang/Math.pow:(DD)D
+        63: dcmpg
+        64: ifge          80
+        67: aload_1
+        68: aload         4
+        70: invokevirtual #349                // Method net/minecraft/world/entity/Mob.isInvisibleTo:(Lnet/minecraft/world/entity/player/Player;)Z
+        73: ifne          80
+        76: iconst_1
+        77: goto          81
+        80: iconst_0
+        81: ireturn
+
+  public net.minecraft.resources.Identifier getTextureLocation(net.conczin.mca.client.render.VillagerRenderState);
+    Code:
+         0: aload_1
+         1: instanceof    #217                // class net/conczin/mca/client/render/VillagerStateHolder
+         4: ifeq          28
+         7: aload_1
+         8: checkcast     #217                // class net/conczin/mca/client/render/VillagerStateHolder
+        11: astore_2
+        12: aload_2
+        13: invokeinterface #353,  1          // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.mca$getVisuals:()Lnet/conczin/mca/client/render/VillagerVisuals;
+        18: astore_3
+        19: aload_3
+        20: ifnull        28
+        23: aload_3
+        24: invokestatic  #357                // Method net/conczin/mca/client/render/DynamicSkinCache.getOrCreateStitchedSkin:(Lnet/conczin/mca/client/render/VillagerVisuals;)Lnet/minecraft/resources/Identifier;
+        27: areturn
+        28: getstatic     #363                // Field TEXTURE:Lnet/minecraft/resources/Identifier;
+        31: areturn
+
+  protected boolean isShaking(net.conczin.mca.client.render.VillagerRenderState);
+    Code:
+         0: aload_1
+         1: invokestatic  #259                // Method net/conczin/mca/client/render/VillagerVisuals.require:(Ljava/lang/Object;)Lnet/conczin/mca/client/render/VillagerVisuals;
+         4: invokevirtual #367                // Method net/conczin/mca/client/render/VillagerVisuals.infectionProgress:()F
+         7: ldc_w         #372                // float 0.2f
+        10: fcmpl
+        11: ifle          18
+        14: iconst_1
+        15: goto          19
+        18: iconst_0
+        19: ireturn
+
+  public void extractRenderState(net.minecraft.world.entity.Mob, net.minecraft.client.renderer.entity.state.HumanoidRenderState, float);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: checkcast     #207                // class net/conczin/mca/client/render/VillagerRenderState
+         6: fload_3
+         7: invokevirtual #373                // Method extractRenderState:(Lnet/minecraft/world/entity/Mob;Lnet/conczin/mca/client/render/VillagerRenderState;F)V
+        10: return
+
+  public void extractRenderState(net.minecraft.world.entity.LivingEntity, net.minecraft.client.renderer.entity.state.LivingEntityRenderState, float);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #153                // class net/minecraft/world/entity/Mob
+         5: aload_2
+         6: checkcast     #207                // class net/conczin/mca/client/render/VillagerRenderState
+         9: fload_3
+        10: invokevirtual #373                // Method extractRenderState:(Lnet/minecraft/world/entity/Mob;Lnet/conczin/mca/client/render/VillagerRenderState;F)V
+        13: return
+
+  protected boolean shouldShowName(net.minecraft.world.entity.LivingEntity, double);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #153                // class net/minecraft/world/entity/Mob
+         5: dload_2
+         6: invokevirtual #376                // Method shouldShowName:(Lnet/minecraft/world/entity/Mob;D)Z
+         9: ireturn
+
+  protected void scale(net.minecraft.client.renderer.entity.state.LivingEntityRenderState, com.mojang.blaze3d.vertex.PoseStack);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #207                // class net/conczin/mca/client/render/VillagerRenderState
+         5: aload_2
+         6: invokevirtual #380                // Method scale:(Lnet/conczin/mca/client/render/VillagerRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;)V
+         9: return
+
+  protected boolean isShaking(net.minecraft.client.renderer.entity.state.LivingEntityRenderState);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #207                // class net/conczin/mca/client/render/VillagerRenderState
+         5: invokevirtual #383                // Method isShaking:(Lnet/conczin/mca/client/render/VillagerRenderState;)Z
+         8: ireturn
+
+  protected net.minecraft.client.renderer.rendertype.RenderType getRenderType(net.minecraft.client.renderer.entity.state.LivingEntityRenderState, boolean, boolean, boolean);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #207                // class net/conczin/mca/client/render/VillagerRenderState
+         5: iload_2
+         6: iload_3
+         7: iload         4
+         9: invokevirtual #387                // Method getRenderType:(Lnet/conczin/mca/client/render/VillagerRenderState;ZZZ)Lnet/minecraft/client/renderer/rendertype/RenderType;
+        12: areturn
+
+  public net.minecraft.resources.Identifier getTextureLocation(net.minecraft.client.renderer.entity.state.LivingEntityRenderState);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #207                // class net/conczin/mca/client/render/VillagerRenderState
+         5: invokevirtual #391                // Method getTextureLocation:(Lnet/conczin/mca/client/render/VillagerRenderState;)Lnet/minecraft/resources/Identifier;
+         8: areturn
+
+  public void extractRenderState(net.minecraft.world.entity.Entity, net.minecraft.client.renderer.entity.state.EntityRenderState, float);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #153                // class net/minecraft/world/entity/Mob
+         5: aload_2
+         6: checkcast     #207                // class net/conczin/mca/client/render/VillagerRenderState
+         9: fload_3
+        10: invokevirtual #373                // Method extractRenderState:(Lnet/minecraft/world/entity/Mob;Lnet/conczin/mca/client/render/VillagerRenderState;F)V
+        13: return
+
+  public net.minecraft.client.renderer.entity.state.EntityRenderState createRenderState();
+    Code:
+         0: aload_0
+         1: invokevirtual #395                // Method createRenderState:()Lnet/conczin/mca/client/render/VillagerRenderState;
+         4: areturn
+
+  protected boolean shouldShowName(net.minecraft.world.entity.Entity, double);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #153                // class net/minecraft/world/entity/Mob
+         5: dload_2
+         6: invokevirtual #376                // Method shouldShowName:(Lnet/minecraft/world/entity/Mob;D)Z
+         9: ireturn
+
+  static {};
+    Code:
+         0: ldc_w         #399                // String textures/entity/steve.png
+         3: invokestatic  #401                // Method net/minecraft/resources/Identifier.parse:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+         6: putstatic     #363                // Field TEXTURE:Lnet/minecraft/resources/Identifier;
+         9: return
+}

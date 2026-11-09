@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "BBW",
+    "BBS",
+    "  S"
+  ],
+  "key": {
+    "B": "minecraft:black_wool",
+    "W": "minecraft:bone",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "piratesmca:pirate_flag",
+    "count": 1
+  }
+}

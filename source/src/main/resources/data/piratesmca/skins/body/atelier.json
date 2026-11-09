@@ -1,0 +1,192 @@
+[
+  {
+    "id": "pirateatelier:textures/skins/captain_civilian.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/deckhand.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/deckhand_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/ships_cook.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/gunner.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/boatswain.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/harbor_merchant.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/smuggler.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/rogue_navigator.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/tavern_raider.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/weathered_sailor.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/fisherman_turned_pirate.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_corsair.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_cabin_boy.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_privateer.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_dock_rat.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_naval_deserter.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_cursed_sailor.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/captain_armor_skin.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/naval_officer_skin.png",
+    "gender": "male",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/captain_civilian_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/ships_cook_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/gunner_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/boatswain_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/harbor_merchant_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/smuggler_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/rogue_navigator_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/tavern_raider_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/weathered_sailor_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/fisherman_turned_pirate_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_corsair_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_cabin_boy_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_privateer_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_dock_rat_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_naval_deserter_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/the_cursed_sailor_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/captain_armor_skin_f.png",
+    "gender": "female",
+    "chance": 0.0
+  },
+  {
+    "id": "pirateatelier:textures/skins/naval_officer_skin_f.png",
+    "gender": "female",
+    "chance": 0.0
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/merchant_sea_blue_pristine_peg_left_chestplate"
+  }
+}

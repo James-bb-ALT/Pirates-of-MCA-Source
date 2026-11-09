@@ -1,0 +1,64 @@
+Compiled from "CustomHeadLayer.java"
+public class net.minecraft.client.renderer.entity.layers.CustomHeadLayer<S extends net.minecraft.client.renderer.entity.state.LivingEntityRenderState, M extends net.minecraft.client.model.EntityModel<S> & net.minecraft.client.model.HeadedModel> extends net.minecraft.client.renderer.entity.layers.RenderLayer<S, M> {
+  private static final float ITEM_SCALE;
+  private static final float SKULL_SCALE;
+  private final net.minecraft.client.renderer.entity.layers.CustomHeadLayer$Transforms transforms;
+  private final java.util.function.Function<net.minecraft.world.level.block.SkullBlock$Type, net.minecraft.client.model.object.skull.SkullModelBase> skullModels;
+  private final net.minecraft.client.renderer.PlayerSkinRenderCache playerSkinRenderCache;
+  public net.minecraft.client.renderer.entity.layers.CustomHeadLayer(net.minecraft.client.renderer.entity.RenderLayerParent<S, M>, net.minecraft.client.model.geom.EntityModelSet, net.minecraft.client.renderer.PlayerSkinRenderCache);
+  public net.minecraft.client.renderer.entity.layers.CustomHeadLayer(net.minecraft.client.renderer.entity.RenderLayerParent<S, M>, net.minecraft.client.model.geom.EntityModelSet, net.minecraft.client.renderer.PlayerSkinRenderCache, net.minecraft.client.renderer.entity.layers.CustomHeadLayer$Transforms);
+  public void submit(com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, int, S, float, float);
+  private net.minecraft.client.renderer.rendertype.RenderType resolveSkullRenderType(net.minecraft.client.renderer.entity.state.LivingEntityRenderState, net.minecraft.world.level.block.SkullBlock$Type);
+  public static void translateToHead(com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.entity.layers.CustomHeadLayer$Transforms);
+  public void submit(com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, int, net.minecraft.client.renderer.entity.state.EntityRenderState, float, float);
+  private static net.minecraft.client.model.object.skull.SkullModelBase lambda$new$0(net.minecraft.client.model.geom.EntityModelSet, net.minecraft.world.level.block.SkullBlock$Type);
+}
+Compiled from "LivingEntityRenderState.java"
+public class net.minecraft.client.renderer.entity.state.LivingEntityRenderState extends net.minecraft.client.renderer.entity.state.EntityRenderState {
+  public float bodyRot;
+  public float yRot;
+  public float xRot;
+  public float deathTime;
+  public float walkAnimationPos;
+  public float walkAnimationSpeed;
+  public float scale;
+  public float ageScale;
+  public float ticksSinceKineticHitFeedback;
+  public boolean isUpsideDown;
+  public boolean isFullyFrozen;
+  public boolean isBaby;
+  public boolean isInWater;
+  public boolean isAutoSpinAttack;
+  public boolean hasRedOverlay;
+  public boolean isInvisibleToPlayer;
+  public net.minecraft.core.Direction bedOrientation;
+  public net.minecraft.world.entity.Pose pose;
+  public final net.minecraft.client.renderer.item.ItemStackRenderState headItem;
+  public float wornHeadAnimationPos;
+  public net.minecraft.world.level.block.SkullBlock$Type wornHeadType;
+  public net.minecraft.world.item.component.ResolvableProfile wornHeadProfile;
+  public net.minecraft.client.renderer.entity.state.LivingEntityRenderState();
+  public boolean hasPose(net.minecraft.world.entity.Pose);
+}
+Compiled from "HumanoidRenderState.java"
+public class net.minecraft.client.renderer.entity.state.HumanoidRenderState extends net.minecraft.client.renderer.entity.state.ArmedEntityRenderState {
+  public float swimAmount;
+  public float speedValue;
+  public float maxCrossbowChargeDuration;
+  public float ticksUsingItem;
+  public net.minecraft.world.InteractionHand useItemHand;
+  public boolean isCrouching;
+  public boolean isFallFlying;
+  public boolean isVisuallySwimming;
+  public boolean isPassenger;
+  public boolean isUsingItem;
+  public float elytraRotX;
+  public float elytraRotY;
+  public float elytraRotZ;
+  public net.minecraft.world.item.ItemStack headEquipment;
+  public net.minecraft.world.item.ItemStack chestEquipment;
+  public net.minecraft.world.item.ItemStack legsEquipment;
+  public net.minecraft.world.item.ItemStack feetEquipment;
+  public net.minecraft.client.renderer.entity.state.HumanoidRenderState();
+  public float ticksUsingItem(net.minecraft.world.entity.HumanoidArm);
+}

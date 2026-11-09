@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "pirateatelier:corsair_copper_weathered_peg_left"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "pirateatelier:corsair_copper_weathered_peg_left"
+      }
+    ]
+  }
+}

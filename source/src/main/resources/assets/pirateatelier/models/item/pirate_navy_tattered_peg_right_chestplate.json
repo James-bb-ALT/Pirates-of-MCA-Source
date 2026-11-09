@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/pirate_navy_tattered_peg_right_chestplate"
+  }
+}

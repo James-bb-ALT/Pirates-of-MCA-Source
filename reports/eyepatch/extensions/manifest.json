@@ -1,0 +1,33 @@
+{
+  "version": "8.0.0-alpha.11",
+  "frames": 26,
+  "files": {
+    "0000_HAT-POSE-idle.png": "6844c7dd997db6f849c7f7d515381c327751f602e196ce39939df06406c20659",
+    "0001_HAT-POSE-head_turn.png": "d6b942550a1b2bb7d3b49396a30db3833e65770df4d89381f4635f7607fc8d48",
+    "0002_HAT-POSE-walk.png": "ebb02f9d6329a1dd898943430aa8b7ad0f2ad0b42a735ae4ec371b4797a199ad",
+    "0003_HAT-POSE-run.png": "d61993ca397f040c59dff5bf7601792252e0c07eb32342e7593e1eddb0f35511",
+    "0004_HAT-POSE-attack.png": "4c712df072b18e6f8bad43d36e95960d29aacee1f15431b32b5f4c9c37b126c7",
+    "0005_HAT-POSE-hurt.png": "bfe8b7fde0a38e41ad5ff54961ba17d15f0fcfd81bec0198f6a0b05c42504b0f",
+    "0006_HAT-POSE-swim.png": "39cc779f5e07cb32152cb0b815a8de733617b6c0addf5468c82060b9dce966a1",
+    "0007_HAT-POSE-sit.png": "a3d7c67618bc6247de74be01f2e0ecf461b54511cdc1ce5e683d1f0453546348",
+    "0008_HAT-POSE-sleep.png": "995eb7d38ac3846fe9136162f864c002bd9425ecab470dc2be0d19096ecf9291",
+    "0009_EYE-alone-0-front.png": "33d96d9978299a3116a7c1cb39a8f15c37aaa2ae799c66cd312dee7b922c65bc",
+    "0010_EYE-alone-0-side.png": "6cc06ff2e378d1c14ced21e949719af19228deeebca7bffd2052a803d263a08f",
+    "0011_EYE-alone-0-back.png": "0a0b48994e6bca7a6548bc05f3dfca132e9a4fb701090f24e6c656426255ae79",
+    "0012_EYE-alone-1-front.png": "34ebe67c64462719a620197ff305efee46b1e32b78bc9f9591e87f2a40a9a9e9",
+    "0013_EYE-alone-1-side.png": "e3edc7811ead4e8e9877b4df4aede55bc1802d88a768ad62df2f9000d2bad470",
+    "0014_EYE-alone-1-back.png": "e3c2d6969ceabe54c38553b707975e13bfd768e1cefdb1a5f62940391e967696",
+    "0015_EYE-combined-0-front.png": "5ae36fefcd78a005c0fcc4a2fb684888d2a3f700a1749a0e23c75a4ea18c4ad7",
+    "0016_EYE-combined-0-side.png": "13376b4cc3ea536e91bb1afe5d668f86b1c2dc13b0c9ee370ba8aa2898f6f884",
+    "0017_EYE-combined-0-back.png": "1d145d80ee2631e3d6b31632441fcc09ce08bbd7dac276472b6be7aa9bb7633c",
+    "0018_EYE-combined-1-front.png": "4134655fccc9fc76e7cb291c4193057c87a06af73cd8a56538f054b2603bb267",
+    "0019_EYE-combined-1-side.png": "c5afcb11f9643f51f919f20016e70213927a51ca6adba63cb5656d1200bb412d",
+    "0020_EYE-combined-1-back.png": "fccdcfc9b018eaca6f032e585460f8cf7e9beff15a91e1aaf4a62ff4abdb1b4d",
+    "0021_HAT-PLAYER-no-hat-idle.png": "00cee77c41c60e2ef7a1e607b9ce91aa007283da58c9118bbb855f2e6facf034",
+    "0022_HAT-PLAYER-hat-idle.png": "175a69c3e07e59626783bceebe56444f49c127dbc2de783b406b00785ea009ba",
+    "0023_HAT-PLAYER-bettercombat-attack.png": "2d0040da7e5974e765fb040923b9a1f7fd927f78366527ba4c5e6396fa7e24ca",
+    "0024_EYE-after-chunk-reload.png": "08c8a6bdd58cef7dd7f91e54b5f4004bd198bfcbd1710349d457c8b3be923a49",
+    "0025_EYE-after-reopen.png": "b4a144fe6820d877164ce6724aa941eca618d7b05956e98109ea8926514c173f",
+    "execution.log": "5b7c3efdb1a12220626dc908699dc4fd1526d38e267cee1be7228ea4fdcb7370"
+  }
+}

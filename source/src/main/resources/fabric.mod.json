@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "piratesmca",
+  "version": "13.0.0-alpha.19",
+  "name": "Pirates of MCA - Fish of Thieves Compatibility",
+  "description": "Pirates of MCA for Fabric 26.2: reactive EN/PT pirate dialogue, crew hierarchy, modular wardrobe aligned to the MCA renderer, reconstructed 3D peg legs, 38 gender-valid pirate skins with separate face/blink materials and native MCA hair. Vanilla handheld weapons and original NPC data preserved. See visual validation report for tested scope.",
+  "authors": [
+    "Arandu compatibility project"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.arandu.piratesmca.PiratesOfMCA"
+    ],
+    "client": [
+      "dev.arandu.piratesmca.client.PiratesMCAClient"
+    ]
+  },
+  "mixins": [
+    "piratesmca.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "26.2",
+    "fabricloader": ">=0.19.0",
+    "fabric-api": "*",
+    "mca": "8.1.11+26.2",
+    "fishofthieves": "26.2.2.0",
+    "java": ">=25"
+  }
+}

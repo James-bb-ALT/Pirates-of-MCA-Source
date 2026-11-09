@@ -1,0 +1,13 @@
+PASS [JAR integrity] ZIP members CRC
+PASS [Version match] ('2.0.0-alpha.5', '2.0.0-alpha.5')
+PASS [No bundled game libs] Java packages
+PASS [Clothing count] 48 PNGs
+PASS [Trade counts] 20 offers; 5 trade sets
+PASS [JSON syntax / chain id] []
+PASS [CrewRuntime class] expected runtime class
+WARN [Runtime not tested] JAR SHA256 da10c673d1282b70797a5e1c57dfec086566cd7753b2a4cfbf8a366c538a5d8b; static audit cannot prove startup or gameplay
+FAIL [Reproducible build script version] build_offline.sh must produce Alpha5, not Alpha4
+FAIL [No stub-based release] release build must use real Fabric Loom dependencies
+FAIL [Java target matches manifest] manifest requires Java>=25; old script uses -source 21 -target 21
+PASS [ResourceKey.location crash regression] CrewRuntime must not call stale descriptor ResourceKey.location
+Wrote /mnt/data/PiratesMCA_Handoff_v2_testes/docs/RESULTADO_AUDITORIA_ESTATICA.json

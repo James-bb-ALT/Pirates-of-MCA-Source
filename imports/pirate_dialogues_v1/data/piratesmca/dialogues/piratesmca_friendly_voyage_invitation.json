@@ -1,0 +1,39 @@
+{
+  "silent": false,
+  "auto": false,
+  "answers": [
+    {
+      "name": "count_me_in",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_friendly_voyage_invitation.count_me_in.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "not_today",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_friendly_voyage_invitation.not_today.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ask_risk",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_friendly_voyage_invitation.ask_risk.reply"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "pirateatelier:merchant_charcoal_tattered_normal"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "pirateatelier:merchant_charcoal_tattered_normal"
+      }
+    ]
+  }
+}

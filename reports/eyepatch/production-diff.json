@@ -1,0 +1,17 @@
+{
+  "changed_existing": [
+    "dev/arandu/piratesmca/PirateWearables.class",
+    "dev/arandu/piratesmca/mixin/client/TricorneExtractMixin.class",
+    "fabric.mod.json",
+    "assets/piratesmca/lang/en_us.json",
+    "assets/piratesmca/lang/pt_br.json"
+  ],
+  "added": [
+    "assets/piratesmca/items/eyepatch_leather.json",
+    "assets/piratesmca/items/tricorne_eyepatch.json",
+    "assets/piratesmca/models/item/eyepatch_leather.json",
+    "assets/piratesmca/models/item/eyepatch_leather_player.json",
+    "assets/piratesmca/textures/item/eyepatch_leather.png"
+  ],
+  "removed": []
+}

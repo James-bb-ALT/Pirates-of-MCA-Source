@@ -1,0 +1,7 @@
+{
+  "version": "10.1.0-alpha.14",
+  "scope": "new pirate spawn equipment policy",
+  "result": "PASS_EXECUTED_SCENARIOS",
+  "universal_certification": false,
+  "jar_sha256": "5e0f4a24f3a525444d08e245f7386814ce1d16f78967c56783fca56d4cd8f5d8"
+}

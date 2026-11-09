@@ -1,0 +1,95 @@
+Compiled from "ModelFeatureRenderer.java"
+public class net.minecraft.client.renderer.feature.ModelFeatureRenderer extends net.minecraft.client.renderer.feature.RenderTypeFeatureRenderer<net.minecraft.client.renderer.feature.ModelFeatureRenderer$Submit<?>> {
+  public static final net.minecraft.client.renderer.feature.FeatureRendererType<net.minecraft.client.renderer.feature.ModelFeatureRenderer$Submit<?>> TYPE;
+
+  private final com.mojang.blaze3d.vertex.PoseStack poseStack;
+
+  public net.minecraft.client.renderer.feature.ModelFeatureRenderer();
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method net/minecraft/client/renderer/feature/RenderTypeFeatureRenderer."<init>":()V
+         4: aload_0
+         5: new           #7                  // class com/mojang/blaze3d/vertex/PoseStack
+         8: dup
+         9: invokespecial #9                  // Method com/mojang/blaze3d/vertex/PoseStack."<init>":()V
+        12: putfield      #10                 // Field poseStack:Lcom/mojang/blaze3d/vertex/PoseStack;
+        15: return
+
+  protected void buildGroup(net.minecraft.client.renderer.feature.FeatureFrameContext, java.util.List<net.minecraft.client.renderer.feature.ModelFeatureRenderer$Submit<?>>);
+    Code:
+         0: aload_2
+         1: invokeinterface #16,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+         6: astore_3
+         7: aload_3
+         8: invokeinterface #22,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        13: ifeq          36
+        16: aload_3
+        17: invokeinterface #28,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        22: checkcast     #32                 // class net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit
+        25: astore        4
+        27: aload_0
+        28: aload         4
+        30: invokevirtual #34                 // Method prepareModel:(Lnet/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit;)V
+        33: goto          7
+        36: return
+
+  private <S> void prepareModel(net.minecraft.client.renderer.feature.ModelFeatureRenderer$Submit<S>);
+    Code:
+         0: aload_0
+         1: getfield      #10                 // Field poseStack:Lcom/mojang/blaze3d/vertex/PoseStack;
+         4: invokevirtual #38                 // Method com/mojang/blaze3d/vertex/PoseStack.last:()Lcom/mojang/blaze3d/vertex/PoseStack$Pose;
+         7: aload_1
+         8: invokevirtual #42                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.pose:()Lcom/mojang/blaze3d/vertex/PoseStack$Pose;
+        11: invokevirtual #45                 // Method com/mojang/blaze3d/vertex/PoseStack$Pose.set:(Lcom/mojang/blaze3d/vertex/PoseStack$Pose;)V
+        14: aload_0
+        15: aload_1
+        16: invokevirtual #51                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.renderType:()Lnet/minecraft/client/renderer/rendertype/RenderType;
+        19: invokevirtual #55                 // Method getVertexBuilder:(Lnet/minecraft/client/renderer/rendertype/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+        22: astore_2
+        23: aload_1
+        24: invokevirtual #59                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.sheetedDecalPose:()Lcom/mojang/blaze3d/vertex/PoseStack$Pose;
+        27: ifnull        47
+        30: new           #62                 // class com/mojang/blaze3d/vertex/SheetedDecalTextureGenerator
+        33: dup
+        34: aload_2
+        35: aload_1
+        36: invokevirtual #59                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.sheetedDecalPose:()Lcom/mojang/blaze3d/vertex/PoseStack$Pose;
+        39: fconst_1
+        40: invokespecial #64                 // Method com/mojang/blaze3d/vertex/SheetedDecalTextureGenerator."<init>":(Lcom/mojang/blaze3d/vertex/VertexConsumer;Lcom/mojang/blaze3d/vertex/PoseStack$Pose;F)V
+        43: astore_2
+        44: goto          63
+        47: aload_1
+        48: invokevirtual #67                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.sprite:()Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;
+        51: ifnull        63
+        54: aload_1
+        55: invokevirtual #67                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.sprite:()Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;
+        58: aload_2
+        59: invokevirtual #71                 // Method net/minecraft/client/renderer/texture/TextureAtlasSprite.wrap:(Lcom/mojang/blaze3d/vertex/VertexConsumer;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+        62: astore_2
+        63: aload_1
+        64: invokevirtual #77                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.model:()Lnet/minecraft/client/model/Model;
+        67: astore_3
+        68: aload_3
+        69: aload_1
+        70: invokevirtual #81                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.state:()Ljava/lang/Object;
+        73: invokevirtual #84                 // Method net/minecraft/client/model/Model.setupAnim:(Ljava/lang/Object;)V
+        76: aload_3
+        77: aload_0
+        78: getfield      #10                 // Field poseStack:Lcom/mojang/blaze3d/vertex/PoseStack;
+        81: aload_2
+        82: aload_1
+        83: invokevirtual #90                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.lightCoords:()I
+        86: aload_1
+        87: invokevirtual #94                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.overlayCoords:()I
+        90: aload_1
+        91: invokevirtual #97                 // Method net/minecraft/client/renderer/feature/ModelFeatureRenderer$Submit.tintedColor:()I
+        94: invokevirtual #100                // Method net/minecraft/client/model/Model.renderToBuffer:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;III)V
+        97: return
+
+  static {};
+    Code:
+         0: ldc           #104                // String Entity Model
+         2: invokestatic  #106                // Method net/minecraft/client/renderer/feature/FeatureRendererType.create:(Ljava/lang/String;)Lnet/minecraft/client/renderer/feature/FeatureRendererType;
+         5: putstatic     #112                // Field TYPE:Lnet/minecraft/client/renderer/feature/FeatureRendererType;
+         8: return
+}

@@ -1,0 +1,18 @@
+{
+  "text": "ArquivoEditarferamentasVisualizarAjuda\nBlockbench\ninstall_desktop\nBaixar aplicativo\nhome\nNova Aba\nclear\n\nSplash Art 2nd Place by AnzSama & m0NESY\n\nclear\nclear\nSetup rápido\nMapa-chave:\nPadrão (Trackpad)\n \nIdioma:\nPortuguês - Portuguese\n \nTema:\nDark\nLight\nContrast\nmore_horizMais...\nNovo\nGeneral\nModelo Genérico\nimage\nImage\nMinecraft\nBloco/Item Java\nModelo Bedrock\nBedrock Block\nEntidade Modificada\nEntidade OptiFine\nSkin do Minecraft\nInfo\nhelp\nAssistente para Iniciantes\nmenu_book\nBlockbench Wiki\nAbrir modelo\n\nDiscord Server\n\nYou need help with modeling or you want to chat about Blockbench? Join the official Blockbench Discord!\n\nclear",
+  "errors": [],
+  "console": [
+    {
+      "type": "log",
+      "text": "Three.js r129"
+    },
+    {
+      "type": "log",
+      "text": "%cBlockbench 5.2.2 Web (Electron) border: 2px solid #3e90ff; padding: 4px 8px; font-size: 1.2em;"
+    },
+    {
+      "type": "log",
+      "text": "All plugin installations resolved"
+    }
+  ]
+}

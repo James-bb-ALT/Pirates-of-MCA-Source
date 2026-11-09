@@ -1,0 +1,8 @@
+PASS LEDGER-01_FREE_SOLO
+PASS LEDGER-02_TRANSFER_PERSISTS
+FAIL LEDGER-03_NPC_CAPTAIN_EXCLUDED_FROM_REBEL_DENOMINATOR: java.lang.AssertionError: expected 3 of 7 eligible, got 4
+FAIL LEDGER-04_OFFICER_ROLES_MUTUALLY_EXCLUSIVE: java.lang.AssertionError: same NPC simultaneously occupies first_mate and quartermaster
+PASS LEDGER-05_MIGRATE_LEGACY_SOLO_CAPTAIN
+PASS LEDGER-06_ULTIMATUM_60_SECONDS
+PASS LEDGER-07_NO_CROSS_CREW_REASSIGN_BY_PROXIMITY
+Ledger QA: 5 PASS, 2 FAIL. Baseline failures are defects to investigate, not proof of a fix.

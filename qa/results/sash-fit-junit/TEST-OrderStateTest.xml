@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OrderStateTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-04T17:32:01.472Z" hostname="DESKTOP" time="0.017">
+  <properties/>
+  <testcase name="removingOfficerClearsInterimAuthorityImmediately()" classname="OrderStateTest" time="0.001"/>
+  <testcase name="invalidAnchorIsRejected()" classname="OrderStateTest" time="0.002"/>
+  <testcase name="targetAndAnchorSurviveSaveAndDismissClearsThem()" classname="OrderStateTest" time="0.012"/>
+  <testcase name="actingCaptainRemainsAnOfficerAndCannotGrantSecondCaptaincy()" classname="OrderStateTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

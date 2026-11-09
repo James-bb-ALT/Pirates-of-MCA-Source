@@ -1,0 +1,11 @@
+Compiled from "MixinPlayerRenderer.java"
+public abstract class net.conczin.mca.mixin.client.MixinPlayerRenderer extends net.minecraft.client.renderer.entity.LivingEntityRenderer<net.minecraft.world.entity.LivingEntity, net.minecraft.client.renderer.entity.state.AvatarRenderState, net.minecraft.client.model.player.PlayerModel> {
+  protected net.conczin.mca.mixin.client.MixinPlayerRenderer(net.minecraft.client.renderer.entity.EntityRendererProvider$Context, net.minecraft.client.model.player.PlayerModel, float);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: fload_3
+         4: invokespecial #1                  // Method net/minecraft/client/renderer/entity/LivingEntityRenderer."<init>":(Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;Lnet/minecraft/client/model/EntityModel;F)V
+         7: return
+}

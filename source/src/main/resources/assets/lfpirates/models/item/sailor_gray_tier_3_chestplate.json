@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "lfpirates:item/pancerz_neutralny_iiitier_item"
+  }
+}

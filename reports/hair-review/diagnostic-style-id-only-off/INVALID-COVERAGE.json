@@ -1,0 +1,4 @@
+{
+  "hair_variation_result": "FAIL",
+  "reason": "Style IDs changed, rendered layered hair did not; superseded by renderer snapshot assertions."
+}

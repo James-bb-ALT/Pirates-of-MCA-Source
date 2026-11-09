@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "piratesmca-tests",
+  "version": "13.0.0-alpha.19",
+  "name": "Pirates of MCA isolated regression tests",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-gametest": [
+      "dev.arandu.piratesmca.PirateGameTests",
+      "dev.arandu.piratesmca.NativePersistenceGameTests",
+      "dev.arandu.piratesmca.FlagGameTests",
+      "dev.arandu.piratesmca.SpawnIsolationGameTests",
+      "dev.arandu.piratesmca.CoastalStructureGameTests",
+      "dev.arandu.piratesmca.WearableGameTests",
+      "dev.arandu.piratesmca.CreativeTabGameTests",
+      "dev.arandu.piratesmca.EyepatchGameTests",
+      "dev.arandu.piratesmca.SashGameTests",
+      "dev.arandu.piratesmca.OutfitGameTests",
+      "dev.arandu.piratesmca.SpawnEquipmentGameTests",
+      "dev.arandu.piratesmca.AtelierGameTests"
+    ],
+    "fabric-client-gametest": [
+      "dev.arandu.piratesmca.PirateClientGameTests"
+    ]
+  },
+  "mixins": [
+    "piratesmca-tests.mixins.json"
+  ]
+}

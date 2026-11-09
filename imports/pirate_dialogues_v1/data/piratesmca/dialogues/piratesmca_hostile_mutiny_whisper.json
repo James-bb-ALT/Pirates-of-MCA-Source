@@ -1,0 +1,39 @@
+{
+  "silent": false,
+  "auto": false,
+  "answers": [
+    {
+      "name": "ask_proof",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_hostile_mutiny_whisper.ask_proof.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "encourage_mutiny",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_hostile_mutiny_whisper.encourage_mutiny.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stay_out",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_hostile_mutiny_whisper.stay_out.reply"
+          }
+        }
+      ]
+    }
+  ]
+}

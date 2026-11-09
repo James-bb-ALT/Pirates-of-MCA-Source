@@ -1,0 +1,286 @@
+Compiled from "CommonVillagerModel.java"
+public interface net.conczin.mca.client.model.CommonVillagerModel<T> {
+  public abstract net.minecraft.client.model.geom.ModelPart getBreastPart();
+
+  public abstract net.minecraft.client.model.geom.ModelPart getBodyPart();
+
+  public abstract java.lang.Iterable<net.minecraft.client.model.geom.ModelPart> getCommonHeadParts();
+
+  public abstract java.lang.Iterable<net.minecraft.client.model.geom.ModelPart> getCommonBodyParts();
+
+  public abstract java.lang.Iterable<net.minecraft.client.model.geom.ModelPart> getBreastParts();
+
+  public abstract net.conczin.mca.entity.ai.relationship.VillagerDimensions$Mutable getDimensions();
+
+  public abstract float getBreastSize();
+
+  public abstract void setBreastSize(float);
+
+  public default void syncWearParts();
+    Code:
+         0: return
+
+  public default void renderCommon(com.mojang.blaze3d.vertex.PoseStack, com.mojang.blaze3d.vertex.VertexConsumer, int, int, int);
+    Code:
+         0: aload_0
+         1: invokeinterface #1,  1            // InterfaceMethod getDimensions:()Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable;
+         6: invokevirtual #7                  // Method net/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable.getHead:()F
+         9: fstore        6
+        11: aload_1
+        12: invokevirtual #13                 // Method com/mojang/blaze3d/vertex/PoseStack.pushPose:()V
+        15: aload_1
+        16: fload         6
+        18: fload         6
+        20: fload         6
+        22: invokevirtual #19                 // Method com/mojang/blaze3d/vertex/PoseStack.scale:(FFF)V
+        25: aload_0
+        26: invokeinterface #23,  1           // InterfaceMethod getCommonHeadParts:()Ljava/lang/Iterable;
+        31: aload_1
+        32: aload_2
+        33: iload_3
+        34: iload         4
+        36: iload         5
+        38: invokedynamic #27,  0             // InvokeDynamic #0:accept:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;III)Ljava/util/function/Consumer;
+        43: invokeinterface #31,  2           // InterfaceMethod java/lang/Iterable.forEach:(Ljava/util/function/Consumer;)V
+        48: aload_1
+        49: invokevirtual #37                 // Method com/mojang/blaze3d/vertex/PoseStack.popPose:()V
+        52: aload_0
+        53: invokeinterface #40,  1           // InterfaceMethod syncWearParts:()V
+        58: aload_0
+        59: invokeinterface #43,  1           // InterfaceMethod getCommonBodyParts:()Ljava/lang/Iterable;
+        64: aload_1
+        65: aload_2
+        66: iload_3
+        67: iload         4
+        69: iload         5
+        71: invokedynamic #46,  0             // InvokeDynamic #1:accept:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;III)Ljava/util/function/Consumer;
+        76: invokeinterface #31,  2           // InterfaceMethod java/lang/Iterable.forEach:(Ljava/util/function/Consumer;)V
+        81: aload_0
+        82: invokeinterface #47,  1           // InterfaceMethod getBreastPart:()Lnet/minecraft/client/model/geom/ModelPart;
+        87: getfield      #51                 // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        90: ifeq          226
+        93: aload_0
+        94: invokeinterface #57,  1           // InterfaceMethod getBodyPart:()Lnet/minecraft/client/model/geom/ModelPart;
+        99: getfield      #51                 // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       102: ifeq          226
+       105: aload_0
+       106: invokeinterface #60,  1           // InterfaceMethod getBreastSize:()F
+       111: aload_0
+       112: invokeinterface #1,  1            // InterfaceMethod getDimensions:()Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable;
+       117: invokevirtual #63                 // Method net/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable.getBreasts:()F
+       120: fmul
+       121: fstore        7
+       123: fload         7
+       125: fconst_0
+       126: fcmpl
+       127: ifle          226
+       130: aload_1
+       131: invokevirtual #13                 // Method com/mojang/blaze3d/vertex/PoseStack.pushPose:()V
+       134: aload_0
+       135: invokeinterface #57,  1           // InterfaceMethod getBodyPart:()Lnet/minecraft/client/model/geom/ModelPart;
+       140: aload_1
+       141: invokevirtual #66                 // Method net/minecraft/client/model/geom/ModelPart.translateAndRotate:(Lcom/mojang/blaze3d/vertex/PoseStack;)V
+       144: aload_1
+       145: fload         7
+       147: ldc           #70                 // float 0.2f
+       149: fmul
+       150: ldc           #71                 // float 1.05f
+       152: fadd
+       153: fload         7
+       155: ldc           #72                 // float 0.75f
+       157: fmul
+       158: ldc           #72                 // float 0.75f
+       160: fadd
+       161: fload         7
+       163: ldc           #72                 // float 0.75f
+       165: fmul
+       166: ldc           #72                 // float 0.75f
+       168: fadd
+       169: invokevirtual #19                 // Method com/mojang/blaze3d/vertex/PoseStack.scale:(FFF)V
+       172: aload_0
+       173: invokeinterface #73,  1           // InterfaceMethod getBreastParts:()Ljava/lang/Iterable;
+       178: invokeinterface #76,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+       183: astore        8
+       185: aload         8
+       187: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+       192: ifeq          222
+       195: aload         8
+       197: invokeinterface #86,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       202: checkcast     #52                 // class net/minecraft/client/model/geom/ModelPart
+       205: astore        9
+       207: aload         9
+       209: aload_1
+       210: aload_2
+       211: iload_3
+       212: iload         4
+       214: iload         5
+       216: invokevirtual #90                 // Method net/minecraft/client/model/geom/ModelPart.render:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;III)V
+       219: goto          185
+       222: aload_1
+       223: invokevirtual #37                 // Method com/mojang/blaze3d/vertex/PoseStack.popPose:()V
+       226: return
+
+  public default void applyVillagerDimensions(net.conczin.mca.client.render.VillagerVisuals);
+    Code:
+         0: aload_0
+         1: invokeinterface #1,  1            // InterfaceMethod getDimensions:()Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable;
+         6: aload_1
+         7: invokevirtual #94                 // Method net/conczin/mca/client/render/VillagerVisuals.dimensions:()Lnet/conczin/mca/client/render/VillagerVisuals$Dimensions;
+        10: invokevirtual #100                // Method net/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable.set:(Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions;)V
+        13: aload_0
+        14: aload_1
+        15: invokevirtual #104                // Method net/conczin/mca/client/render/VillagerVisuals.breastSize:()F
+        18: invokeinterface #107,  2          // InterfaceMethod setBreastSize:(F)V
+        23: aload_1
+        24: invokevirtual #111                // Method net/conczin/mca/client/render/VillagerVisuals.female:()Z
+        27: istore_2
+        28: aload_0
+        29: invokeinterface #60,  1           // InterfaceMethod getBreastSize:()F
+        34: fstore_3
+        35: iload_2
+        36: ifeq          59
+        39: fload_3
+        40: aload_0
+        41: invokeinterface #1,  1            // InterfaceMethod getDimensions:()Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable;
+        46: invokevirtual #63                 // Method net/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable.getBreasts:()F
+        49: fmul
+        50: fconst_0
+        51: fcmpl
+        52: ifle          59
+        55: iconst_1
+        56: goto          60
+        59: iconst_0
+        60: istore        4
+        62: aload_0
+        63: invokeinterface #47,  1           // InterfaceMethod getBreastPart:()Lnet/minecraft/client/model/geom/ModelPart;
+        68: iload         4
+        70: putfield      #51                 // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+        73: aload_0
+        74: astore        7
+        76: aload         7
+        78: instanceof    #114                // class net/conczin/mca/client/model/PlayerEntityExtendedModel
+        81: ifeq          123
+        84: aload         7
+        86: checkcast     #114                // class net/conczin/mca/client/model/PlayerEntityExtendedModel
+        89: astore        5
+        91: aload         5
+        93: getfield      #116                // Field net/conczin/mca/client/model/PlayerEntityExtendedModel.breastsWear:Lnet/minecraft/client/model/geom/ModelPart;
+        96: aload         5
+        98: getfield      #120                // Field net/conczin/mca/client/model/PlayerEntityExtendedModel.jacket:Lnet/minecraft/client/model/geom/ModelPart;
+       101: getfield      #51                 // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       104: ifeq          116
+       107: iload         4
+       109: ifeq          116
+       112: iconst_1
+       113: goto          117
+       116: iconst_0
+       117: putfield      #51                 // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       120: goto          170
+       123: aload_0
+       124: astore        7
+       126: aload         7
+       128: instanceof    #123                // class net/conczin/mca/client/model/VillagerEntityModelMCA
+       131: ifeq          170
+       134: aload         7
+       136: checkcast     #123                // class net/conczin/mca/client/model/VillagerEntityModelMCA
+       139: astore        6
+       141: aload         6
+       143: getfield      #125                // Field net/conczin/mca/client/model/VillagerEntityModelMCA.breastsWear:Lnet/minecraft/client/model/geom/ModelPart;
+       146: aload         6
+       148: getfield      #126                // Field net/conczin/mca/client/model/VillagerEntityModelMCA.bodyWear:Lnet/minecraft/client/model/geom/ModelPart;
+       151: getfield      #51                 // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       154: ifeq          166
+       157: iload         4
+       159: ifeq          166
+       162: iconst_1
+       163: goto          167
+       166: iconst_0
+       167: putfield      #51                 // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       170: aload_0
+       171: invokeinterface #73,  1           // InterfaceMethod getBreastParts:()Ljava/lang/Iterable;
+       176: invokeinterface #76,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+       181: astore        5
+       183: aload         5
+       185: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+       190: ifeq          266
+       193: aload         5
+       195: invokeinterface #86,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       200: checkcast     #52                 // class net/minecraft/client/model/geom/ModelPart
+       203: astore        6
+       205: aload         6
+       207: fconst_1
+       208: putfield      #129                // Field net/minecraft/client/model/geom/ModelPart.xScale:F
+       211: aload         6
+       213: fconst_1
+       214: putfield      #133                // Field net/minecraft/client/model/geom/ModelPart.yScale:F
+       217: aload         6
+       219: fconst_1
+       220: putfield      #136                // Field net/minecraft/client/model/geom/ModelPart.zScale:F
+       223: aload         6
+       225: ldc           #141                // float 0.9424779f
+       227: fconst_0
+       228: fconst_0
+       229: invokevirtual #142                // Method net/minecraft/client/model/geom/ModelPart.setRotation:(FFF)V
+       232: aload         6
+       234: ldc           #145                // float 0.25f
+       236: ldc2_w        #146                // double 5.0d
+       239: fload_3
+       240: f2d
+       241: ldc2_w        #148                // double 0.5d
+       244: invokestatic  #150                // Method java/lang/Math.pow:(DD)D
+       247: ldc2_w        #154                // double 2.5d
+       250: dmul
+       251: dsub
+       252: d2f
+       253: ldc           #156                // float -1.5f
+       255: fload_3
+       256: ldc           #145                // float 0.25f
+       258: fmul
+       259: fadd
+       260: invokevirtual #157                // Method net/minecraft/client/model/geom/ModelPart.setPos:(FFF)V
+       263: goto          183
+       266: return
+
+  public default void copyCommonAttributes(net.conczin.mca.client.model.CommonVillagerModel<?>);
+    Code:
+         0: aload_1
+         1: invokeinterface #1,  1            // InterfaceMethod getDimensions:()Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable;
+         6: aload_0
+         7: invokeinterface #1,  1            // InterfaceMethod getDimensions:()Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable;
+        12: invokevirtual #100                // Method net/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable.set:(Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions;)V
+        15: aload_1
+        16: aload_0
+        17: invokeinterface #60,  1           // InterfaceMethod getBreastSize:()F
+        22: invokeinterface #107,  2          // InterfaceMethod setBreastSize:(F)V
+        27: return
+
+  public static void copyPartState(net.minecraft.client.model.geom.ModelPart, net.minecraft.client.model.geom.ModelPart);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #160                // Method net/minecraft/client/model/geom/ModelPart.storePose:()Lnet/minecraft/client/model/geom/PartPose;
+         5: invokevirtual #164                // Method net/minecraft/client/model/geom/ModelPart.loadPose:(Lnet/minecraft/client/model/geom/PartPose;)V
+         8: return
+
+  private static void lambda$renderCommon$1(com.mojang.blaze3d.vertex.PoseStack, com.mojang.blaze3d.vertex.VertexConsumer, int, int, int, net.minecraft.client.model.geom.ModelPart);
+    Code:
+         0: aload         5
+         2: aload_0
+         3: aload_1
+         4: iload_2
+         5: iload_3
+         6: iload         4
+         8: invokevirtual #90                 // Method net/minecraft/client/model/geom/ModelPart.render:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;III)V
+        11: return
+
+  private static void lambda$renderCommon$0(com.mojang.blaze3d.vertex.PoseStack, com.mojang.blaze3d.vertex.VertexConsumer, int, int, int, net.minecraft.client.model.geom.ModelPart);
+    Code:
+         0: aload         5
+         2: aload_0
+         3: aload_1
+         4: iload_2
+         5: iload_3
+         6: iload         4
+         8: invokevirtual #90                 // Method net/minecraft/client/model/geom/ModelPart.render:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;III)V
+        11: return
+}

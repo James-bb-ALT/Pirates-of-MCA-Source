@@ -1,0 +1,132 @@
+{
+  "isolated": true,
+  "headless": true,
+  "personal_profile_used": false,
+  "results": [
+    {
+      "version": "5.2.2",
+      "name": "atelier_peg_leg_wood",
+      "format": "free",
+      "cubes": [
+        {
+          "name": "atelier_peg_leg_wood_0",
+          "from": [
+            5.65,
+            0.7499999999999996,
+            5.6000000000000005
+          ],
+          "to": [
+            10.350000000000001,
+            2.0999999999999996,
+            10.4
+          ]
+        },
+        {
+          "name": "atelier_peg_leg_wood_1",
+          "from": [
+            6.6,
+            0.1499999999999998,
+            6.700000000000001
+          ],
+          "to": [
+            9.399999999999999,
+            0.7999999999999998,
+            9.3
+          ]
+        },
+        {
+          "name": "atelier_peg_leg_wood_2",
+          "from": [
+            6.85,
+            -4,
+            6.950000000000001
+          ],
+          "to": [
+            9.149999999999999,
+            0.20000000000000018,
+            9.05
+          ]
+        },
+        {
+          "name": "atelier_peg_leg_wood_3",
+          "from": [
+            6.7,
+            -4.000000000000001,
+            6.799999999999999
+          ],
+          "to": [
+            9.3,
+            -3.5500000000000007,
+            9.2
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "peg_leg_wood.png",
+          "width": 128,
+          "height": 128,
+          "error": 0
+        }
+      ],
+      "webgl": true,
+      "source": "models/blockbench/atelier/atelier_peg_leg_wood.bbmodel",
+      "status": "PASS"
+    }
+  ],
+  "page_errors": [],
+  "post_requests": [
+    {
+      "method": "POST",
+      "url": "https://blckbn.ch/api/event/new_installation",
+      "blocked": true
+    },
+    {
+      "method": "POST",
+      "url": "https://web.blockbench.net/cdn-cgi/rum?",
+      "blocked": true
+    }
+  ],
+  "console": [
+    {
+      "type": "log",
+      "text": "Three.js r129"
+    },
+    {
+      "type": "log",
+      "text": "%cBlockbench 5.2.2 Web (Electron) border: 2px solid #3e90ff; padding: 4px 8px; font-size: 1.2em;"
+    },
+    {
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright"
+    },
+    {
+      "type": "log",
+      "text": "All plugin installations resolved"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xf8408184d00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xf8408184d00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xf8408184d00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xf8408184d00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "release": "9.0.1-alpha.12",
+  "targeted_issue": "SASH-FIT-01",
+  "result": "PASS_REPRODUCED_CASE",
+  "universal_certification": false,
+  "jar_sha256": "b3ed99f80e5c9d2d43eeb8757c6d36a174785db3076819c30909aab1fb5d0d96"
+}

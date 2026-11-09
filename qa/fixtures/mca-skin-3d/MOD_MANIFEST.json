@@ -1,0 +1,63 @@
+{
+  "mods": [
+    {
+      "file": "3d-armor-0.9.4.2-mod.jar",
+      "id": "armor_3d",
+      "version": "0.9.4.2",
+      "sha256": "c2f2cf8fd2d7a276e63af47fc178faf44c7966a567342863fb94b9e1e45edfd4"
+    },
+    {
+      "file": "bettercombat-fabric-3.2.2+26.2.jar",
+      "id": "bettercombat",
+      "version": "3.2.2",
+      "sha256": "cce827992f517b181bc25c4f6c35e2c75818d29fcdbea90c3838704364b04639"
+    },
+    {
+      "file": "cloth-config-26.2.155.jar",
+      "id": "cloth-config",
+      "version": "26.2.155",
+      "sha256": "def4be7639cd66704f7e304d658ea0f6bf490fb4a6eaa2dbf18ec2c3999d6349"
+    },
+    {
+      "file": "emf_compat_better_combat_fabric_26.2_2.1.0.jar",
+      "id": "emf_compat_better_combat",
+      "version": "2.1.0",
+      "sha256": "aa3bd6d9d7c1f71705745bcafb088894720920f4ae9a63b5e5a7b1f7a994097a"
+    },
+    {
+      "file": "emf_compat_core_fabric_26.2_2.3.2.jar",
+      "id": "emf_compat_core",
+      "version": "2.3.2",
+      "sha256": "fe3927e5cec90929c41553d28b882943c57fc61b9fd707321332af088d2f4757"
+    },
+    {
+      "file": "entity_model_features-3.3.11-26.2-fabric.jar",
+      "id": "entity_model_features",
+      "version": "3.3.11",
+      "sha256": "26b13c2ee755932e74f80ecf6baf16a25582568ae7482cf472751abb98e7b14a"
+    },
+    {
+      "file": "entity_texture_features-7.2.5-26.2-fabric.jar",
+      "id": "entity_texture_features",
+      "version": "7.2.5",
+      "sha256": "ac66cf294fbd2b1eb1576bdc2396cb096abcd54d9f8f39ecb1973abbc4e00488"
+    },
+    {
+      "file": "PlayerAnimationLibMerged-1.2.8+mc.26.2.jar",
+      "id": "player_animation_library",
+      "version": "1.2.8+mc.26.2",
+      "sha256": "644aa199c5e905f098ead8b3d857e39a04712201871367129b36b144b12d13c8"
+    },
+    {
+      "file": "skinlayers3d-fabric-1.11.4-mc26.2.jar",
+      "id": "skinlayers3d",
+      "version": "1.11.4",
+      "sha256": "a78a3964e3f6baa87c52cc2dec5d10cca13f3fdca2fd677eb769fcf3eb3684d6"
+    }
+  ],
+  "resource_packs": [
+    "FreshAnimations_v1.11.2_26.1+.zip",
+    "FA+All_Extensions-v1.10.1.zip",
+    "FA+Player-v1.1.zip"
+  ]
+}

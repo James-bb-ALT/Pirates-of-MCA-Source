@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "lfpirates:biala_czacha"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "lfpirates:biala_czacha"
+      }
+    ]
+  }
+}

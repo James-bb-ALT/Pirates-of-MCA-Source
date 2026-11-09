@@ -1,0 +1,91 @@
+{
+  "version": "v4",
+  "skin_count": 20,
+  "skins": [
+    {
+      "name": "captain_civilian",
+      "title": "Captain (Civilian)"
+    },
+    {
+      "name": "deckhand",
+      "title": "Deckhand"
+    },
+    {
+      "name": "deckhand_f",
+      "title": "Deckhand (F)"
+    },
+    {
+      "name": "ships_cook",
+      "title": "Ship's Cook"
+    },
+    {
+      "name": "gunner",
+      "title": "Gunner"
+    },
+    {
+      "name": "boatswain",
+      "title": "Boatswain"
+    },
+    {
+      "name": "harbor_merchant",
+      "title": "Harbor Merchant"
+    },
+    {
+      "name": "smuggler",
+      "title": "Smuggler"
+    },
+    {
+      "name": "rogue_navigator",
+      "title": "Rogue Navigator"
+    },
+    {
+      "name": "tavern_raider",
+      "title": "Tavern Raider"
+    },
+    {
+      "name": "weathered_sailor",
+      "title": "Weathered Sailor"
+    },
+    {
+      "name": "fisherman_turned_pirate",
+      "title": "Fisherman Turned Pirate"
+    },
+    {
+      "name": "the_corsair",
+      "title": "The Corsair"
+    },
+    {
+      "name": "the_cabin_boy",
+      "title": "The Cabin Boy"
+    },
+    {
+      "name": "the_privateer",
+      "title": "The Privateer"
+    },
+    {
+      "name": "the_dock_rat",
+      "title": "The Dock Rat"
+    },
+    {
+      "name": "the_naval_deserter",
+      "title": "The Naval Deserter"
+    },
+    {
+      "name": "the_cursed_sailor",
+      "title": "The Cursed Sailor"
+    },
+    {
+      "name": "captain_armor_skin",
+      "title": "Captain Armor Skin"
+    },
+    {
+      "name": "naval_officer_skin",
+      "title": "Naval Officer Skin"
+    }
+  ],
+  "notes": [
+    "Skins are classic 64x64 player skins.",
+    "They are original clean-room interpretations based on the concept sheet references.",
+    "Automatic MCA villager integration is not included in this resource pack."
+  ]
+}

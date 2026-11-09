@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/corsair_copper_tattered_peg_right_leggings"
+  }
+}

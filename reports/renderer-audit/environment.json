@@ -1,0 +1,17 @@
+{
+  "minecraft": "26.2",
+  "loader": "0.20.1",
+  "java": "25",
+  "mca": "8.1.11+26.2",
+  "emf": "3.3.11",
+  "etf": "7.2.5",
+  "fresh": "1.11.2",
+  "blockbench": "Web loaded; file opening BLOCKED by UI automation",
+  "files": {
+    "mca-fabric-8.1.11+26.2.jar": "6ddc6982da1a35aeb93b9ccaa80083b0ae6d8aabc44b9d4006c45f0ce47f5871",
+    "fish_of_thieves-mc26.2-v26.2.2.0-fabric(3).jar": "f8a7da180423b789d1c1af946cb697c1ce2c0e21d715a972419cc7bb27367634",
+    "entity_model_features-3.3.11-26.2-fabric.jar": "26b13c2ee755932e74f80ecf6baf16a25582568ae7482cf472751abb98e7b14a",
+    "entity_texture_features-7.2.5-26.2-fabric.jar": "ac66cf294fbd2b1eb1576bdc2396cb096abcd54d9f8f39ecb1973abbc4e00488",
+    "FreshAnimations_v1.11.2_26.1+.zip": "8df24af99d185e49612b16f8f7a5bfc637997728a8e9746d3349b1a44f901e05"
+  }
+}

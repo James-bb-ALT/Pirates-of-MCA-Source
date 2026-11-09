@@ -1,0 +1,827 @@
+Compiled from "EquipmentTask.java"
+public class net.conczin.mca.entity.ai.brain.tasks.EquipmentTask extends net.minecraft.world.entity.ai.behavior.Behavior<net.conczin.mca.entity.VillagerEntityMCA> {
+  private static final int COOLDOWN;
+
+  private static final int CHECK_INTERVAL;
+
+  private final java.util.function.Predicate<net.conczin.mca.entity.VillagerEntityMCA> condition;
+
+  private final java.util.function.Function<net.conczin.mca.entity.VillagerEntityMCA, net.conczin.mca.entity.EquipmentSet> equipmentSet;
+
+  private int lastEquipTime;
+
+  private boolean lastArmorWearState;
+
+  private int lastCheckTick;
+
+  private boolean cachedConditionResult;
+
+  private net.conczin.mca.entity.EquipmentSet cachedEquipmentSet;
+
+  public net.conczin.mca.entity.ai.brain.tasks.EquipmentTask(java.util.function.Predicate<net.conczin.mca.entity.VillagerEntityMCA>, java.util.function.Function<net.conczin.mca.entity.VillagerEntityMCA, net.conczin.mca.entity.EquipmentSet>);
+    Code:
+         0: aload_0
+         1: getstatic     #1                  // Field net/conczin/mca/entity/ai/MemoryModuleTypeMCA.WEARS_ARMOR:Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;
+         4: getstatic     #7                  // Field net/minecraft/world/entity/ai/memory/MemoryStatus.REGISTERED:Lnet/minecraft/world/entity/ai/memory/MemoryStatus;
+         7: invokestatic  #13                 // Method com/google/common/collect/ImmutableMap.of:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
+        10: invokespecial #19                 // Method net/minecraft/world/entity/ai/behavior/Behavior."<init>":(Ljava/util/Map;)V
+        13: aload_0
+        14: bipush        -20
+        16: putfield      #27                 // Field lastCheckTick:I
+        19: aload_0
+        20: aload_1
+        21: putfield      #31                 // Field condition:Ljava/util/function/Predicate;
+        24: aload_0
+        25: aload_2
+        26: putfield      #35                 // Field equipmentSet:Ljava/util/function/Function;
+        29: return
+
+  protected boolean checkExtraStartConditions(net.minecraft.server.level.ServerLevel, net.conczin.mca.entity.VillagerEntityMCA);
+    Code:
+         0: aload_0
+         1: getfield      #39                 // Field lastArmorWearState:Z
+         4: aload_2
+         5: invokevirtual #43                 // Method net/conczin/mca/entity/VillagerEntityMCA.getVillagerBrain:()Lnet/conczin/mca/entity/ai/brain/VillagerBrain;
+         8: invokevirtual #49                 // Method net/conczin/mca/entity/ai/brain/VillagerBrain.getArmorWear:()Z
+        11: if_icmpeq     16
+        14: iconst_1
+        15: ireturn
+        16: aload_2
+        17: getfield      #55                 // Field net/conczin/mca/entity/VillagerEntityMCA.tickCount:I
+        20: aload_0
+        21: getfield      #27                 // Field lastCheckTick:I
+        24: isub
+        25: bipush        20
+        27: if_icmplt     84
+        30: aload_0
+        31: aload_2
+        32: getfield      #55                 // Field net/conczin/mca/entity/VillagerEntityMCA.tickCount:I
+        35: putfield      #27                 // Field lastCheckTick:I
+        38: aload_0
+        39: aload_0
+        40: getfield      #31                 // Field condition:Ljava/util/function/Predicate;
+        43: aload_2
+        44: invokeinterface #58,  2           // InterfaceMethod java/util/function/Predicate.test:(Ljava/lang/Object;)Z
+        49: putfield      #64                 // Field cachedConditionResult:Z
+        52: aload_0
+        53: aload_0
+        54: getfield      #64                 // Field cachedConditionResult:Z
+        57: ifeq          80
+        60: aload_2
+        61: aload_0
+        62: getfield      #35                 // Field equipmentSet:Ljava/util/function/Function;
+        65: aload_2
+        66: invokeinterface #67,  2           // InterfaceMethod java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+        71: checkcast     #73                 // class net/conczin/mca/entity/EquipmentSet
+        74: invokestatic  #75                 // Method orientForDominantHand:(Lnet/conczin/mca/entity/VillagerEntityMCA;Lnet/conczin/mca/entity/EquipmentSet;)Lnet/conczin/mca/entity/EquipmentSet;
+        77: goto          81
+        80: aconst_null
+        81: putfield      #79                 // Field cachedEquipmentSet:Lnet/conczin/mca/entity/EquipmentSet;
+        84: aload_0
+        85: getfield      #79                 // Field cachedEquipmentSet:Lnet/conczin/mca/entity/EquipmentSet;
+        88: astore_3
+        89: aload_3
+        90: ifnull        103
+        93: aload_3
+        94: aload_2
+        95: invokestatic  #83                 // Method isNakedCombatSet:(Lnet/conczin/mca/entity/EquipmentSet;Lnet/conczin/mca/entity/VillagerEntityMCA;)Z
+        98: ifeq          103
+       101: iconst_0
+       102: ireturn
+       103: aload_2
+       104: invokestatic  #87                 // Method isPeacefullyGrieving:(Lnet/conczin/mca/entity/VillagerEntityMCA;)Z
+       107: istore        4
+       109: aload_2
+       110: invokevirtual #91                 // Method net/conczin/mca/entity/VillagerEntityMCA.getBrain:()Lnet/minecraft/world/entity/ai/Brain;
+       113: getstatic     #1                  // Field net/conczin/mca/entity/ai/MemoryModuleTypeMCA.WEARS_ARMOR:Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;
+       116: invokevirtual #95                 // Method net/minecraft/world/entity/ai/Brain.getMemoryInternal:(Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)Ljava/util/Optional;
+       119: invokevirtual #101                // Method java/util/Optional.isPresent:()Z
+       122: istore        5
+       124: aload_0
+       125: getfield      #64                 // Field cachedConditionResult:Z
+       128: ifeq          167
+       131: aload_0
+       132: aload_2
+       133: getfield      #55                 // Field net/conczin/mca/entity/VillagerEntityMCA.tickCount:I
+       136: putfield      #106                // Field lastEquipTime:I
+       139: iload         5
+       141: ifeq          161
+       144: aload_3
+       145: ifnull        165
+       148: iload         4
+       150: ifne          165
+       153: aload_2
+       154: aload_3
+       155: invokestatic  #109                // Method isMissingRequestedHandItem:(Lnet/conczin/mca/entity/VillagerEntityMCA;Lnet/conczin/mca/entity/EquipmentSet;)Z
+       158: ifeq          165
+       161: iconst_1
+       162: goto          166
+       165: iconst_0
+       166: ireturn
+       167: aload_2
+       168: getfield      #55                 // Field net/conczin/mca/entity/VillagerEntityMCA.tickCount:I
+       171: aload_0
+       172: getfield      #106                // Field lastEquipTime:I
+       175: isub
+       176: bipush        100
+       178: if_icmple     184
+       181: iload         5
+       183: ireturn
+       184: iconst_0
+       185: ireturn
+
+  private void equipBestArmor(net.conczin.mca.entity.VillagerEntityMCA, net.minecraft.world.entity.EquipmentSlot, net.minecraft.world.item.Item);
+    Code:
+         0: aload_1
+         1: invokevirtual #113                // Method net/conczin/mca/entity/VillagerEntityMCA.getInventory:()Lnet/minecraft/world/SimpleContainer;
+         4: aload_2
+         5: invokestatic  #117                // InterfaceMethod net/conczin/mca/util/InventoryUtils.getBestArmor:(Lnet/minecraft/world/Container;Lnet/minecraft/world/entity/EquipmentSlot;)Ljava/util/Optional;
+         8: aload_3
+         9: ifnonnull     18
+        12: getstatic     #123                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+        15: goto          26
+        18: new           #124                // class net/minecraft/world/item/ItemStack
+        21: dup
+        22: aload_3
+        23: invokespecial #129                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+        26: invokevirtual #132                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+        29: checkcast     #124                // class net/minecraft/world/item/ItemStack
+        32: astore        4
+        34: aload_1
+        35: aload_2
+        36: aload         4
+        38: invokevirtual #135                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+        41: return
+
+  private void equipBestWeapon(net.conczin.mca.entity.VillagerEntityMCA, net.minecraft.world.item.Item);
+    Code:
+         0: aload_1
+         1: invokevirtual #113                // Method net/conczin/mca/entity/VillagerEntityMCA.getInventory:()Lnet/minecraft/world/SimpleContainer;
+         4: invokestatic  #139                // InterfaceMethod net/conczin/mca/util/InventoryUtils.getBestSword:(Lnet/minecraft/world/Container;)Ljava/util/Optional;
+         7: aload_2
+         8: ifnonnull     17
+        11: getstatic     #123                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+        14: goto          25
+        17: new           #124                // class net/minecraft/world/item/ItemStack
+        20: dup
+        21: aload_2
+        22: invokespecial #129                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+        25: invokevirtual #132                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+        28: checkcast     #124                // class net/minecraft/world/item/ItemStack
+        31: astore_3
+        32: aload_1
+        33: aload_1
+        34: invokevirtual #143                // Method net/conczin/mca/entity/VillagerEntityMCA.getDominantSlot:()Lnet/minecraft/world/entity/EquipmentSlot;
+        37: aload_3
+        38: invokevirtual #135                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+        41: return
+
+  private void equipBestRanged(net.conczin.mca.entity.VillagerEntityMCA, net.minecraft.world.item.Item);
+    Code:
+         0: aload_1
+         1: invokevirtual #113                // Method net/conczin/mca/entity/VillagerEntityMCA.getInventory:()Lnet/minecraft/world/SimpleContainer;
+         4: invokestatic  #147                // InterfaceMethod net/conczin/mca/util/InventoryUtils.getBestRanged:(Lnet/minecraft/world/Container;)Ljava/util/Optional;
+         7: aload_2
+         8: ifnonnull     17
+        11: getstatic     #123                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+        14: goto          25
+        17: new           #124                // class net/minecraft/world/item/ItemStack
+        20: dup
+        21: aload_2
+        22: invokespecial #129                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+        25: invokevirtual #132                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+        28: checkcast     #124                // class net/minecraft/world/item/ItemStack
+        31: astore_3
+        32: aload_1
+        33: aload_1
+        34: invokevirtual #143                // Method net/conczin/mca/entity/VillagerEntityMCA.getDominantSlot:()Lnet/minecraft/world/entity/EquipmentSlot;
+        37: aload_3
+        38: invokevirtual #135                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+        41: return
+
+  protected void start(net.minecraft.server.level.ServerLevel, net.conczin.mca.entity.VillagerEntityMCA, long);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: lload_3
+         4: invokespecial #150                // Method net/minecraft/world/entity/ai/behavior/Behavior.start:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)V
+         7: aload_0
+         8: aload_2
+         9: invokevirtual #43                 // Method net/conczin/mca/entity/VillagerEntityMCA.getVillagerBrain:()Lnet/conczin/mca/entity/ai/brain/VillagerBrain;
+        12: invokevirtual #49                 // Method net/conczin/mca/entity/ai/brain/VillagerBrain.getArmorWear:()Z
+        15: putfield      #39                 // Field lastArmorWearState:Z
+        18: aload_0
+        19: getfield      #64                 // Field cachedConditionResult:Z
+        22: istore        5
+        24: aload_0
+        25: getfield      #79                 // Field cachedEquipmentSet:Lnet/conczin/mca/entity/EquipmentSet;
+        28: astore        6
+        30: iload         5
+        32: ifne          45
+        35: aload_2
+        36: invokevirtual #43                 // Method net/conczin/mca/entity/VillagerEntityMCA.getVillagerBrain:()Lnet/conczin/mca/entity/ai/brain/VillagerBrain;
+        39: invokevirtual #49                 // Method net/conczin/mca/entity/ai/brain/VillagerBrain.getArmorWear:()Z
+        42: ifeq          75
+        45: aload         6
+        47: ifnonnull     75
+        50: aload_2
+        51: aload_0
+        52: getfield      #35                 // Field equipmentSet:Ljava/util/function/Function;
+        55: aload_2
+        56: invokeinterface #67,  2           // InterfaceMethod java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+        61: checkcast     #73                 // class net/conczin/mca/entity/EquipmentSet
+        64: invokestatic  #75                 // Method orientForDominantHand:(Lnet/conczin/mca/entity/VillagerEntityMCA;Lnet/conczin/mca/entity/EquipmentSet;)Lnet/conczin/mca/entity/EquipmentSet;
+        67: astore        6
+        69: aload_0
+        70: aload         6
+        72: putfield      #79                 // Field cachedEquipmentSet:Lnet/conczin/mca/entity/EquipmentSet;
+        75: aload         6
+        77: ifnull        90
+        80: aload         6
+        82: aload_2
+        83: invokestatic  #83                 // Method isNakedCombatSet:(Lnet/conczin/mca/entity/EquipmentSet;Lnet/conczin/mca/entity/VillagerEntityMCA;)Z
+        86: ifeq          90
+        89: return
+        90: iload         5
+        92: ifeq          112
+        95: aload_2
+        96: invokevirtual #91                 // Method net/conczin/mca/entity/VillagerEntityMCA.getBrain:()Lnet/minecraft/world/entity/ai/Brain;
+        99: getstatic     #1                  // Field net/conczin/mca/entity/ai/MemoryModuleTypeMCA.WEARS_ARMOR:Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;
+       102: iconst_1
+       103: invokestatic  #154                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       106: invokevirtual #160                // Method net/minecraft/world/entity/ai/Brain.setMemory:(Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;Ljava/lang/Object;)V
+       109: goto          122
+       112: aload_2
+       113: invokevirtual #91                 // Method net/conczin/mca/entity/VillagerEntityMCA.getBrain:()Lnet/minecraft/world/entity/ai/Brain;
+       116: getstatic     #1                  // Field net/conczin/mca/entity/ai/MemoryModuleTypeMCA.WEARS_ARMOR:Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;
+       119: invokevirtual #164                // Method net/minecraft/world/entity/ai/Brain.eraseMemory:(Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)V
+       122: aload_2
+       123: invokestatic  #87                 // Method isPeacefullyGrieving:(Lnet/conczin/mca/entity/VillagerEntityMCA;)Z
+       126: ifne          249
+       129: iload         5
+       131: ifeq          227
+       134: aload         6
+       136: invokevirtual #168                // Method net/conczin/mca/entity/EquipmentSet.getMainHand:()Lnet/minecraft/world/item/Item;
+       139: invokestatic  #172                // Method isRequestedItem:(Lnet/minecraft/world/item/Item;)Z
+       142: ifeq          169
+       145: aload         6
+       147: invokevirtual #168                // Method net/conczin/mca/entity/EquipmentSet.getMainHand:()Lnet/minecraft/world/item/Item;
+       150: instanceof    #176                // class net/minecraft/world/item/ProjectileWeaponItem
+       153: ifeq          169
+       156: aload_0
+       157: aload_2
+       158: aload         6
+       160: invokevirtual #168                // Method net/conczin/mca/entity/EquipmentSet.getMainHand:()Lnet/minecraft/world/item/Item;
+       163: invokevirtual #178                // Method equipBestRanged:(Lnet/conczin/mca/entity/VillagerEntityMCA;Lnet/minecraft/world/item/Item;)V
+       166: goto          204
+       169: aload         6
+       171: invokevirtual #168                // Method net/conczin/mca/entity/EquipmentSet.getMainHand:()Lnet/minecraft/world/item/Item;
+       174: invokestatic  #172                // Method isRequestedItem:(Lnet/minecraft/world/item/Item;)Z
+       177: ifeq          193
+       180: aload_0
+       181: aload_2
+       182: aload         6
+       184: invokevirtual #168                // Method net/conczin/mca/entity/EquipmentSet.getMainHand:()Lnet/minecraft/world/item/Item;
+       187: invokevirtual #182                // Method equipBestWeapon:(Lnet/conczin/mca/entity/VillagerEntityMCA;Lnet/minecraft/world/item/Item;)V
+       190: goto          204
+       193: aload_2
+       194: aload_2
+       195: invokevirtual #143                // Method net/conczin/mca/entity/VillagerEntityMCA.getDominantSlot:()Lnet/minecraft/world/entity/EquipmentSlot;
+       198: getstatic     #123                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+       201: invokevirtual #135                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+       204: aload_2
+       205: aload_2
+       206: invokevirtual #185                // Method net/conczin/mca/entity/VillagerEntityMCA.getOpposingSlot:()Lnet/minecraft/world/entity/EquipmentSlot;
+       209: new           #124                // class net/minecraft/world/item/ItemStack
+       212: dup
+       213: aload         6
+       215: invokevirtual #188                // Method net/conczin/mca/entity/EquipmentSet.getGetOffHand:()Lnet/minecraft/world/item/Item;
+       218: invokespecial #129                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+       221: invokevirtual #135                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+       224: goto          249
+       227: aload_2
+       228: aload_2
+       229: invokevirtual #191                // Method net/conczin/mca/entity/VillagerEntityMCA.getDominantHand:()Lnet/minecraft/world/InteractionHand;
+       232: getstatic     #123                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+       235: invokevirtual #195                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemInHand:(Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;)V
+       238: aload_2
+       239: aload_2
+       240: invokevirtual #199                // Method net/conczin/mca/entity/VillagerEntityMCA.getOpposingHand:()Lnet/minecraft/world/InteractionHand;
+       243: getstatic     #123                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+       246: invokevirtual #195                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemInHand:(Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;)V
+       249: iload         5
+       251: ifne          264
+       254: aload_2
+       255: invokevirtual #43                 // Method net/conczin/mca/entity/VillagerEntityMCA.getVillagerBrain:()Lnet/conczin/mca/entity/ai/brain/VillagerBrain;
+       258: invokevirtual #49                 // Method net/conczin/mca/entity/ai/brain/VillagerBrain.getArmorWear:()Z
+       261: ifeq          319
+       264: aload_0
+       265: aload_2
+       266: getstatic     #202                // Field net/minecraft/world/entity/EquipmentSlot.HEAD:Lnet/minecraft/world/entity/EquipmentSlot;
+       269: aload         6
+       271: invokevirtual #208                // Method net/conczin/mca/entity/EquipmentSet.getHead:()Lnet/minecraft/world/item/Item;
+       274: invokevirtual #211                // Method equipBestArmor:(Lnet/conczin/mca/entity/VillagerEntityMCA;Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/Item;)V
+       277: aload_0
+       278: aload_2
+       279: getstatic     #215                // Field net/minecraft/world/entity/EquipmentSlot.CHEST:Lnet/minecraft/world/entity/EquipmentSlot;
+       282: aload         6
+       284: invokevirtual #218                // Method net/conczin/mca/entity/EquipmentSet.getChest:()Lnet/minecraft/world/item/Item;
+       287: invokevirtual #211                // Method equipBestArmor:(Lnet/conczin/mca/entity/VillagerEntityMCA;Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/Item;)V
+       290: aload_0
+       291: aload_2
+       292: getstatic     #221                // Field net/minecraft/world/entity/EquipmentSlot.LEGS:Lnet/minecraft/world/entity/EquipmentSlot;
+       295: aload         6
+       297: invokevirtual #224                // Method net/conczin/mca/entity/EquipmentSet.getLegs:()Lnet/minecraft/world/item/Item;
+       300: invokevirtual #211                // Method equipBestArmor:(Lnet/conczin/mca/entity/VillagerEntityMCA;Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/Item;)V
+       303: aload_0
+       304: aload_2
+       305: getstatic     #227                // Field net/minecraft/world/entity/EquipmentSlot.FEET:Lnet/minecraft/world/entity/EquipmentSlot;
+       308: aload         6
+       310: invokevirtual #230                // Method net/conczin/mca/entity/EquipmentSet.getFeet:()Lnet/minecraft/world/item/Item;
+       313: invokevirtual #211                // Method equipBestArmor:(Lnet/conczin/mca/entity/VillagerEntityMCA;Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/Item;)V
+       316: goto          359
+       319: aload_2
+       320: getstatic     #202                // Field net/minecraft/world/entity/EquipmentSlot.HEAD:Lnet/minecraft/world/entity/EquipmentSlot;
+       323: getstatic     #123                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+       326: invokevirtual #135                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+       329: aload_2
+       330: getstatic     #215                // Field net/minecraft/world/entity/EquipmentSlot.CHEST:Lnet/minecraft/world/entity/EquipmentSlot;
+       333: getstatic     #123                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+       336: invokevirtual #135                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+       339: aload_2
+       340: getstatic     #221                // Field net/minecraft/world/entity/EquipmentSlot.LEGS:Lnet/minecraft/world/entity/EquipmentSlot;
+       343: getstatic     #123                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+       346: invokevirtual #135                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+       349: aload_2
+       350: getstatic     #227                // Field net/minecraft/world/entity/EquipmentSlot.FEET:Lnet/minecraft/world/entity/EquipmentSlot;
+       353: getstatic     #123                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+       356: invokevirtual #135                // Method net/conczin/mca/entity/VillagerEntityMCA.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+       359: return
+
+  private static boolean isNakedCombatSet(net.conczin.mca.entity.EquipmentSet, net.conczin.mca.entity.VillagerEntityMCA);
+    Code:
+         0: aload_0
+         1: getstatic     #233                // Field net/conczin/mca/entity/EquipmentSet.NAKED:Lnet/conczin/mca/entity/EquipmentSet;
+         4: if_acmpne     27
+         7: aload_1
+         8: invokevirtual #91                 // Method net/conczin/mca/entity/VillagerEntityMCA.getBrain:()Lnet/minecraft/world/entity/ai/Brain;
+        11: getstatic     #236                // Field net/minecraft/world/entity/ai/memory/MemoryModuleType.ATTACK_TARGET:Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;
+        14: invokevirtual #95                 // Method net/minecraft/world/entity/ai/Brain.getMemoryInternal:(Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)Ljava/util/Optional;
+        17: invokevirtual #101                // Method java/util/Optional.isPresent:()Z
+        20: ifeq          27
+        23: iconst_1
+        24: goto          28
+        27: iconst_0
+        28: ireturn
+
+  private static net.conczin.mca.entity.EquipmentSet orientForDominantHand(net.conczin.mca.entity.VillagerEntityMCA, net.conczin.mca.entity.EquipmentSet);
+    Code:
+         0: aload_0
+         1: invokevirtual #191                // Method net/conczin/mca/entity/VillagerEntityMCA.getDominantHand:()Lnet/minecraft/world/InteractionHand;
+         4: getstatic     #241                // Field net/minecraft/world/InteractionHand.OFF_HAND:Lnet/minecraft/world/InteractionHand;
+         7: if_acmpeq     12
+        10: aload_1
+        11: areturn
+        12: aload_1
+        13: getstatic     #247                // Field net/conczin/mca/entity/EquipmentSet.GUARD_0:Lnet/conczin/mca/entity/EquipmentSet;
+        16: if_acmpne     23
+        19: getstatic     #250                // Field net/conczin/mca/entity/EquipmentSet.GUARD_0_LEFT:Lnet/conczin/mca/entity/EquipmentSet;
+        22: areturn
+        23: aload_1
+        24: getstatic     #253                // Field net/conczin/mca/entity/EquipmentSet.ARCHER_0:Lnet/conczin/mca/entity/EquipmentSet;
+        27: if_acmpne     34
+        30: getstatic     #256                // Field net/conczin/mca/entity/EquipmentSet.ARCHER_0_LEFT:Lnet/conczin/mca/entity/EquipmentSet;
+        33: areturn
+        34: aload_1
+        35: getstatic     #259                // Field net/conczin/mca/entity/EquipmentSet.ARCHER_1:Lnet/conczin/mca/entity/EquipmentSet;
+        38: if_acmpne     45
+        41: getstatic     #262                // Field net/conczin/mca/entity/EquipmentSet.ARCHER_1_LEFT:Lnet/conczin/mca/entity/EquipmentSet;
+        44: areturn
+        45: aload_1
+        46: getstatic     #265                // Field net/conczin/mca/entity/EquipmentSet.ARCHER_2:Lnet/conczin/mca/entity/EquipmentSet;
+        49: if_acmpne     56
+        52: getstatic     #268                // Field net/conczin/mca/entity/EquipmentSet.ARCHER_2_LEFT:Lnet/conczin/mca/entity/EquipmentSet;
+        55: areturn
+        56: aload_1
+        57: areturn
+
+  private static boolean isPeacefullyGrieving(net.conczin.mca.entity.VillagerEntityMCA);
+    Code:
+         0: aload_0
+         1: invokevirtual #91                 // Method net/conczin/mca/entity/VillagerEntityMCA.getBrain:()Lnet/minecraft/world/entity/ai/Brain;
+         4: getstatic     #271                // Field net/conczin/mca/entity/ai/ActivitiesMCA.GRIEVE:Lnet/minecraft/world/entity/schedule/Activity;
+         7: invokevirtual #277                // Method net/minecraft/world/entity/ai/Brain.isActive:(Lnet/minecraft/world/entity/schedule/Activity;)Z
+        10: ifeq          43
+        13: aload_0
+        14: invokevirtual #91                 // Method net/conczin/mca/entity/VillagerEntityMCA.getBrain:()Lnet/minecraft/world/entity/ai/Brain;
+        17: getstatic     #236                // Field net/minecraft/world/entity/ai/memory/MemoryModuleType.ATTACK_TARGET:Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;
+        20: invokevirtual #95                 // Method net/minecraft/world/entity/ai/Brain.getMemoryInternal:(Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)Ljava/util/Optional;
+        23: invokevirtual #281                // Method java/util/Optional.isEmpty:()Z
+        26: ifeq          43
+        29: aload_0
+        30: invokevirtual #43                 // Method net/conczin/mca/entity/VillagerEntityMCA.getVillagerBrain:()Lnet/conczin/mca/entity/ai/brain/VillagerBrain;
+        33: invokevirtual #284                // Method net/conczin/mca/entity/ai/brain/VillagerBrain.isPanicking:()Z
+        36: ifne          43
+        39: iconst_1
+        40: goto          44
+        43: iconst_0
+        44: ireturn
+
+  private static boolean isMissingRequestedHandItem(net.conczin.mca.entity.VillagerEntityMCA, net.conczin.mca.entity.EquipmentSet);
+    Code:
+         0: aload_0
+         1: aload_0
+         2: invokevirtual #143                // Method net/conczin/mca/entity/VillagerEntityMCA.getDominantSlot:()Lnet/minecraft/world/entity/EquipmentSlot;
+         5: invokevirtual #287                // Method net/conczin/mca/entity/VillagerEntityMCA.getItemBySlot:(Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack;
+         8: aload_1
+         9: invokevirtual #168                // Method net/conczin/mca/entity/EquipmentSet.getMainHand:()Lnet/minecraft/world/item/Item;
+        12: invokestatic  #291                // Method isMissingRequestedItem:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/Item;)Z
+        15: ifne          42
+        18: aload_1
+        19: invokevirtual #188                // Method net/conczin/mca/entity/EquipmentSet.getGetOffHand:()Lnet/minecraft/world/item/Item;
+        22: invokestatic  #172                // Method isRequestedItem:(Lnet/minecraft/world/item/Item;)Z
+        25: ifeq          46
+        28: aload_0
+        29: aload_0
+        30: invokevirtual #185                // Method net/conczin/mca/entity/VillagerEntityMCA.getOpposingSlot:()Lnet/minecraft/world/entity/EquipmentSlot;
+        33: invokevirtual #287                // Method net/conczin/mca/entity/VillagerEntityMCA.getItemBySlot:(Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack;
+        36: invokevirtual #295                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+        39: ifeq          46
+        42: iconst_1
+        43: goto          47
+        46: iconst_0
+        47: ireturn
+
+  private static boolean isMissingRequestedItem(net.minecraft.world.item.ItemStack, net.minecraft.world.item.Item);
+    Code:
+         0: aload_1
+         1: invokestatic  #172                // Method isRequestedItem:(Lnet/minecraft/world/item/Item;)Z
+         4: ifne          9
+         7: iconst_0
+         8: ireturn
+         9: aload_1
+        10: instanceof    #176                // class net/minecraft/world/item/ProjectileWeaponItem
+        13: ifeq          32
+        16: aload_0
+        17: invokevirtual #296                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+        20: instanceof    #176                // class net/minecraft/world/item/ProjectileWeaponItem
+        23: ifne          30
+        26: iconst_1
+        27: goto          31
+        30: iconst_0
+        31: ireturn
+        32: aload_0
+        33: invokevirtual #295                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+        36: ireturn
+
+  private static boolean isRequestedItem(net.minecraft.world.item.Item);
+    Code:
+         0: aload_0
+         1: ifnull        15
+         4: aload_0
+         5: getstatic     #299                // Field net/minecraft/world/item/Items.AIR:Lnet/minecraft/world/item/Item;
+         8: if_acmpeq     15
+        11: iconst_1
+        12: goto          16
+        15: iconst_0
+        16: ireturn
+
+  protected boolean checkExtraStartConditions(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: checkcast     #44                 // class net/conczin/mca/entity/VillagerEntityMCA
+         6: invokevirtual #305                // Method checkExtraStartConditions:(Lnet/minecraft/server/level/ServerLevel;Lnet/conczin/mca/entity/VillagerEntityMCA;)Z
+         9: ireturn
+
+  protected void start(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: checkcast     #44                 // class net/conczin/mca/entity/VillagerEntityMCA
+         6: lload_3
+         7: invokevirtual #309                // Method start:(Lnet/minecraft/server/level/ServerLevel;Lnet/conczin/mca/entity/VillagerEntityMCA;J)V
+        10: return
+}
+Compiled from "EquipmentSet.java"
+public final class net.conczin.mca.entity.EquipmentSet extends java.lang.Record {
+  private final java.lang.String mainHand;
+
+  private final java.lang.String offHand;
+
+  private final java.lang.String head;
+
+  private final java.lang.String chest;
+
+  private final java.lang.String legs;
+
+  private final java.lang.String feet;
+
+  public static final net.conczin.mca.entity.EquipmentSet NAKED;
+
+  public static final net.conczin.mca.entity.EquipmentSet GUARD_0;
+
+  public static final net.conczin.mca.entity.EquipmentSet GUARD_0_LEFT;
+
+  public static final net.conczin.mca.entity.EquipmentSet GUARD_1;
+
+  public static final net.conczin.mca.entity.EquipmentSet GUARD_2;
+
+  public static final net.conczin.mca.entity.EquipmentSet ARCHER_0;
+
+  public static final net.conczin.mca.entity.EquipmentSet ARCHER_0_LEFT;
+
+  public static final net.conczin.mca.entity.EquipmentSet ARCHER_1;
+
+  public static final net.conczin.mca.entity.EquipmentSet ARCHER_1_LEFT;
+
+  public static final net.conczin.mca.entity.EquipmentSet ARCHER_2;
+
+  public static final net.conczin.mca.entity.EquipmentSet ARCHER_2_LEFT;
+
+  public static final net.conczin.mca.entity.EquipmentSet ELITE;
+
+  public static final net.conczin.mca.entity.EquipmentSet ROYAL;
+
+  public net.conczin.mca.entity.EquipmentSet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #7                  // Field mainHand:Ljava/lang/String;
+         9: aload_0
+        10: aload_2
+        11: putfield      #13                 // Field offHand:Ljava/lang/String;
+        14: aload_0
+        15: aload_3
+        16: putfield      #16                 // Field head:Ljava/lang/String;
+        19: aload_0
+        20: aload         4
+        22: putfield      #19                 // Field chest:Ljava/lang/String;
+        25: aload_0
+        26: aload         5
+        28: putfield      #22                 // Field legs:Ljava/lang/String;
+        31: aload_0
+        32: aload         6
+        34: putfield      #25                 // Field feet:Ljava/lang/String;
+        37: return
+
+  public net.minecraft.world.item.Item getMainHand();
+    Code:
+         0: aload_0
+         1: getfield      #7                  // Field mainHand:Ljava/lang/String;
+         4: invokestatic  #28                 // Method getItem:(Ljava/lang/String;)Lnet/minecraft/world/item/Item;
+         7: areturn
+
+  public net.minecraft.world.item.Item getGetOffHand();
+    Code:
+         0: aload_0
+         1: getfield      #13                 // Field offHand:Ljava/lang/String;
+         4: invokestatic  #28                 // Method getItem:(Ljava/lang/String;)Lnet/minecraft/world/item/Item;
+         7: areturn
+
+  public net.minecraft.world.item.Item getHead();
+    Code:
+         0: aload_0
+         1: getfield      #16                 // Field head:Ljava/lang/String;
+         4: invokestatic  #28                 // Method getItem:(Ljava/lang/String;)Lnet/minecraft/world/item/Item;
+         7: areturn
+
+  public net.minecraft.world.item.Item getChest();
+    Code:
+         0: aload_0
+         1: getfield      #19                 // Field chest:Ljava/lang/String;
+         4: invokestatic  #28                 // Method getItem:(Ljava/lang/String;)Lnet/minecraft/world/item/Item;
+         7: areturn
+
+  public net.minecraft.world.item.Item getLegs();
+    Code:
+         0: aload_0
+         1: getfield      #22                 // Field legs:Ljava/lang/String;
+         4: invokestatic  #28                 // Method getItem:(Ljava/lang/String;)Lnet/minecraft/world/item/Item;
+         7: areturn
+
+  public net.minecraft.world.item.Item getFeet();
+    Code:
+         0: aload_0
+         1: getfield      #25                 // Field feet:Ljava/lang/String;
+         4: invokestatic  #28                 // Method getItem:(Ljava/lang/String;)Lnet/minecraft/world/item/Item;
+         7: areturn
+
+  public static net.minecraft.world.item.Item getItem(java.lang.String);
+    Code:
+         0: aload_0
+         1: ifnull        11
+         4: aload_0
+         5: invokevirtual #32                 // Method java/lang/String.isBlank:()Z
+         8: ifeq          15
+        11: getstatic     #38                 // Field net/minecraft/world/item/Items.AIR:Lnet/minecraft/world/item/Item;
+        14: areturn
+        15: aload_0
+        16: invokestatic  #44                 // Method net/minecraft/resources/Identifier.tryParse:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+        19: astore_1
+        20: aload_1
+        21: ifnonnull     30
+        24: getstatic     #38                 // Field net/minecraft/world/item/Items.AIR:Lnet/minecraft/world/item/Item;
+        27: goto          48
+        30: getstatic     #50                 // Field net/minecraft/core/registries/BuiltInRegistries.ITEM:Lnet/minecraft/core/DefaultedRegistry;
+        33: aload_1
+        34: invokeinterface #56,  2           // InterfaceMethod net/minecraft/core/DefaultedRegistry.getOptional:(Lnet/minecraft/resources/Identifier;)Ljava/util/Optional;
+        39: getstatic     #38                 // Field net/minecraft/world/item/Items.AIR:Lnet/minecraft/world/item/Item;
+        42: invokevirtual #62                 // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+        45: checkcast     #68                 // class net/minecraft/world/item/Item
+        48: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #70,  0             // InvokeDynamic #0:toString:(Lnet/conczin/mca/entity/EquipmentSet;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #74,  0             // InvokeDynamic #0:hashCode:(Lnet/conczin/mca/entity/EquipmentSet;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #78,  0             // InvokeDynamic #0:equals:(Lnet/conczin/mca/entity/EquipmentSet;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public java.lang.String mainHand();
+    Code:
+         0: aload_0
+         1: getfield      #7                  // Field mainHand:Ljava/lang/String;
+         4: areturn
+
+  public java.lang.String offHand();
+    Code:
+         0: aload_0
+         1: getfield      #13                 // Field offHand:Ljava/lang/String;
+         4: areturn
+
+  public java.lang.String head();
+    Code:
+         0: aload_0
+         1: getfield      #16                 // Field head:Ljava/lang/String;
+         4: areturn
+
+  public java.lang.String chest();
+    Code:
+         0: aload_0
+         1: getfield      #19                 // Field chest:Ljava/lang/String;
+         4: areturn
+
+  public java.lang.String legs();
+    Code:
+         0: aload_0
+         1: getfield      #22                 // Field legs:Ljava/lang/String;
+         4: areturn
+
+  public java.lang.String feet();
+    Code:
+         0: aload_0
+         1: getfield      #25                 // Field feet:Ljava/lang/String;
+         4: areturn
+
+  static {};
+    Code:
+         0: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+         3: dup
+         4: ldc           #82                 // String air
+         6: ldc           #82                 // String air
+         8: ldc           #82                 // String air
+        10: ldc           #82                 // String air
+        12: ldc           #82                 // String air
+        14: ldc           #82                 // String air
+        16: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+        19: putstatic     #87                 // Field NAKED:Lnet/conczin/mca/entity/EquipmentSet;
+        22: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+        25: dup
+        26: ldc           #91                 // String iron_sword
+        28: ldc           #82                 // String air
+        30: ldc           #82                 // String air
+        32: ldc           #93                 // String iron_chestplate
+        34: ldc           #95                 // String leather_leggings
+        36: ldc           #97                 // String leather_boots
+        38: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+        41: putstatic     #99                 // Field GUARD_0:Lnet/conczin/mca/entity/EquipmentSet;
+        44: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+        47: dup
+        48: ldc           #82                 // String air
+        50: ldc           #91                 // String iron_sword
+        52: ldc           #82                 // String air
+        54: ldc           #93                 // String iron_chestplate
+        56: ldc           #95                 // String leather_leggings
+        58: ldc           #97                 // String leather_boots
+        60: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+        63: putstatic     #102                // Field GUARD_0_LEFT:Lnet/conczin/mca/entity/EquipmentSet;
+        66: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+        69: dup
+        70: ldc           #91                 // String iron_sword
+        72: ldc           #105                // String shield
+        74: ldc           #107                // String iron_helmet
+        76: ldc           #93                 // String iron_chestplate
+        78: ldc           #95                 // String leather_leggings
+        80: ldc           #109                // String iron_boots
+        82: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+        85: putstatic     #111                // Field GUARD_1:Lnet/conczin/mca/entity/EquipmentSet;
+        88: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+        91: dup
+        92: ldc           #114                // String diamond_sword
+        94: ldc           #105                // String shield
+        96: ldc           #107                // String iron_helmet
+        98: ldc           #93                 // String iron_chestplate
+       100: ldc           #116                // String iron_leggings
+       102: ldc           #109                // String iron_boots
+       104: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       107: putstatic     #118                // Field GUARD_2:Lnet/conczin/mca/entity/EquipmentSet;
+       110: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+       113: dup
+       114: ldc           #121                // String bow
+       116: ldc           #82                 // String air
+       118: ldc           #82                 // String air
+       120: ldc           #123                // String leather_chestplate
+       122: ldc           #82                 // String air
+       124: ldc           #82                 // String air
+       126: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       129: putstatic     #125                // Field ARCHER_0:Lnet/conczin/mca/entity/EquipmentSet;
+       132: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+       135: dup
+       136: ldc           #82                 // String air
+       138: ldc           #121                // String bow
+       140: ldc           #82                 // String air
+       142: ldc           #123                // String leather_chestplate
+       144: ldc           #82                 // String air
+       146: ldc           #82                 // String air
+       148: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       151: putstatic     #128                // Field ARCHER_0_LEFT:Lnet/conczin/mca/entity/EquipmentSet;
+       154: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+       157: dup
+       158: ldc           #121                // String bow
+       160: ldc           #82                 // String air
+       162: ldc           #82                 // String air
+       164: ldc           #93                 // String iron_chestplate
+       166: ldc           #95                 // String leather_leggings
+       168: ldc           #97                 // String leather_boots
+       170: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       173: putstatic     #131                // Field ARCHER_1:Lnet/conczin/mca/entity/EquipmentSet;
+       176: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+       179: dup
+       180: ldc           #82                 // String air
+       182: ldc           #121                // String bow
+       184: ldc           #82                 // String air
+       186: ldc           #93                 // String iron_chestplate
+       188: ldc           #95                 // String leather_leggings
+       190: ldc           #97                 // String leather_boots
+       192: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       195: putstatic     #134                // Field ARCHER_1_LEFT:Lnet/conczin/mca/entity/EquipmentSet;
+       198: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+       201: dup
+       202: ldc           #121                // String bow
+       204: ldc           #82                 // String air
+       206: ldc           #82                 // String air
+       208: ldc           #137                // String diamond_chestplate
+       210: ldc           #95                 // String leather_leggings
+       212: ldc           #109                // String iron_boots
+       214: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       217: putstatic     #139                // Field ARCHER_2:Lnet/conczin/mca/entity/EquipmentSet;
+       220: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+       223: dup
+       224: ldc           #82                 // String air
+       226: ldc           #121                // String bow
+       228: ldc           #82                 // String air
+       230: ldc           #137                // String diamond_chestplate
+       232: ldc           #95                 // String leather_leggings
+       234: ldc           #109                // String iron_boots
+       236: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       239: putstatic     #142                // Field ARCHER_2_LEFT:Lnet/conczin/mca/entity/EquipmentSet;
+       242: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+       245: dup
+       246: ldc           #145                // String netherite_sword
+       248: ldc           #145                // String netherite_sword
+       250: ldc           #147                // String diamond_helmet
+       252: ldc           #149                // String netherite_chestplate
+       254: ldc           #151                // String golden_leggings
+       256: ldc           #153                // String netherite_boots
+       258: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       261: putstatic     #155                // Field ELITE:Lnet/conczin/mca/entity/EquipmentSet;
+       264: new           #8                  // class net/conczin/mca/entity/EquipmentSet
+       267: dup
+       268: ldc           #158                // String trident
+       270: ldc           #160                // String diamond_axe
+       272: ldc           #162                // String golden_helmet
+       274: ldc           #164                // String golden_chestplate
+       276: ldc           #151                // String golden_leggings
+       278: ldc           #166                // String golden_boots
+       280: invokespecial #84                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       283: putstatic     #168                // Field ROYAL:Lnet/conczin/mca/entity/EquipmentSet;
+       286: return
+}

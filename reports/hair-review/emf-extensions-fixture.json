@@ -1,0 +1,120 @@
+{
+  "entries": [
+    {
+      "file": "bettercombat-fabric-3.2.2+26.2.jar",
+      "id": "bettercombat",
+      "version": "3.2.2",
+      "depends": {
+        "minecraft": ">=26.2",
+        "fabricloader": "*",
+        "fabric-api": "*",
+        "cloth-config": "*",
+        "player_animation_library": ">=1.2.5"
+      },
+      "sha256": "cce827992f517b181bc25c4f6c35e2c75818d29fcdbea90c3838704364b04639"
+    },
+    {
+      "file": "cloth-config-26.2.155.jar",
+      "id": "cloth-config",
+      "version": "26.2.155",
+      "depends": {
+        "fabricloader": ">=0.14.0",
+        "minecraft": ">=26.2-"
+      },
+      "sha256": "def4be7639cd66704f7e304d658ea0f6bf490fb4a6eaa2dbf18ec2c3999d6349"
+    },
+    {
+      "file": "emf_compat_better_combat_fabric_26.2_2.1.0.jar",
+      "id": "emf_compat_better_combat",
+      "version": "2.1.0",
+      "depends": {
+        "fabricloader": ">=0.19.2",
+        "fabric-api": "*",
+        "minecraft": "26.2",
+        "bettercombat": ">=3.0.0",
+        "player_animation_library": ">=1.1.5",
+        "entity_model_features": ">=3.3.2",
+        "emf_compat_core": ">=2.3.0"
+      },
+      "sha256": "aa3bd6d9d7c1f71705745bcafb088894720920f4ae9a63b5e5a7b1f7a994097a"
+    },
+    {
+      "file": "emf_compat_core_fabric_26.2_2.3.2.jar",
+      "id": "emf_compat_core",
+      "version": "2.3.2",
+      "depends": {
+        "fabricloader": ">=0.19.3",
+        "fabric-api": "*",
+        "minecraft": "26.2",
+        "entity_model_features": ">=3.3.2"
+      },
+      "sha256": "fe3927e5cec90929c41553d28b882943c57fc61b9fd707321332af088d2f4757"
+    },
+    {
+      "file": "entity_model_features-3.3.11-26.2-fabric.jar",
+      "id": "entity_model_features",
+      "version": "3.3.11",
+      "depends": {
+        "fabricloader": "*",
+        "minecraft": "*",
+        "entity_texture_features": ">=7.2"
+      },
+      "sha256": "26b13c2ee755932e74f80ecf6baf16a25582568ae7482cf472751abb98e7b14a"
+    },
+    {
+      "file": "entity_texture_features-7.2.5-26.2-fabric.jar",
+      "id": "entity_texture_features",
+      "version": "7.2.5",
+      "depends": {
+        "fabricloader": "*",
+        "minecraft": "*"
+      },
+      "sha256": "ac66cf294fbd2b1eb1576bdc2396cb096abcd54d9f8f39ecb1973abbc4e00488"
+    },
+    {
+      "file": "PlayerAnimationLibMerged-1.2.8+mc.26.2.jar",
+      "id": "player_animation_library",
+      "version": "1.2.8+mc.26.2",
+      "depends": {
+        "fabricloader": ">=0.19.3",
+        "minecraft": ">=26.2",
+        "fabric-resource-loader-v1": "*",
+        "fabric-command-api-v2": "*"
+      },
+      "sha256": "644aa199c5e905f098ead8b3d857e39a04712201871367129b36b144b12d13c8"
+    },
+    {
+      "file": "FreshAnimations_v1.11.2_26.1+.zip",
+      "sha256": "8df24af99d185e49612b16f8f7a5bfc637997728a8e9746d3349b1a44f901e05"
+    },
+    {
+      "file": "FA+All_Extensions-v1.10.1.zip",
+      "sha256": "10bcd8cfec9c70694ceaf37ec52e4b69f3a9b2fcab2ba67f202d6cbfcb7a38c9"
+    },
+    {
+      "file": "FA+Player-v1.1.zip",
+      "sha256": "9ee3ae5b2fe5cd980e4041429dc66d88243f5f2420e2814e5361c746ad937f33"
+    }
+  ],
+  "pack_order_low_to_high": [
+    "file/FreshAnimations_v1.11.2_26.1+.zip",
+    "file/FA+All_Extensions-v1.10.1.zip",
+    "file/FA+Player-v1.1.zip"
+  ],
+  "configs": [
+    {
+      "file": "emf_compat.json",
+      "sha256": "840e66ab53723e91c5d48bb2f8d495860a55e24364bace65b06d25a731097643"
+    },
+    {
+      "file": "entity_model_features.json",
+      "sha256": "e0f8ab833d6b4625b6a0566ef2c1b6010368f05003508fc30f96aa5275690cd4"
+    },
+    {
+      "file": "entity_texture_features.json",
+      "sha256": "b796ea17ca7f7e21661d448dd834925d5627bd27894003549332da2ccd549344"
+    }
+  ],
+  "profile_untouched": true,
+  "redistributed": false
+}

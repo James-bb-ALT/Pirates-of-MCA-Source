@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "minecraft:gold_ingot",
+    "count": 3
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 2
+  },
+  "max_uses": 14,
+  "xp": 6,
+  "reputation_discount": 0.05
+}

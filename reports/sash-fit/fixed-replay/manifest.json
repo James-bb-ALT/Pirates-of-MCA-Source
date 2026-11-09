@@ -1,0 +1,27 @@
+{
+  "frames": 20,
+  "scope": "fixed replay only; other images in directory are historical diagnostics",
+  "files": {
+    "0000_HAT-POSE-idle.png": "4034547ca98ecfa879b2b1609220242a2ae0a9175b69988a023176d1894b2a21",
+    "0001_HAT-POSE-head_turn.png": "20a3eeddf5c2a5f06b63ab73f22598089dec65112adb9c152171072e42b6861a",
+    "0002_HAT-POSE-walk.png": "b27c5bc130417e15c16651d66f24bbec4e5b43cd4f3463831e25771f56877ca0",
+    "0003_HAT-POSE-run.png": "701ce152ad89c11cd3916fde5659654f623744e77cfa32a90c8d4d58e4cb5fb1",
+    "0004_HAT-POSE-attack.png": "727739054ddb64edba6e43c5196725a422919489c5ee71792e26a845b9070dd6",
+    "0005_HAT-POSE-hurt.png": "56209897ef575249d9d3ac85bf89c3d25ee68842fb7f0c196d00e0c5dec54b4d",
+    "0006_HAT-POSE-swim.png": "8113a4f3ff61280c77b4e43984c381232773f23447dc314ac1b8980306a25f49",
+    "0007_HAT-FIT-swim-dry.png": "f367bce56596058a446b79c411c0967d893aee015d16fe52533f5ae9dba6dbee",
+    "0008_HAT-POSE-sit.png": "84bfffc58de836ef286d705f30b23cc8a456e9aab9be60548a06228eeb356866",
+    "0009_HAT-POSE-sleep.png": "3b7e4ffaef0bbb8b3ce2acefc464c35f8bae4fe767a5abb2647124398cd7e347",
+    "0010_SASH-0-front.png": "7f3d99f0da24f8e563f5d22c32bcff58443d9e3e651f3b8432e9b27cd2ec3e40",
+    "0011_SASH-0-side.png": "bc29e53c389f7acfcd9f7dc9734dfc9825cfae3a75447fb0e1256c490c58481c",
+    "0012_SASH-0-back.png": "2198e5b0e27eeb91aa72837271cc32e55d8e3cead0764b0cbadf941929bc03b6",
+    "0013_SASH-1-front.png": "49e118dcb56d9cf214bcf78063638f6b5da0185aa36db2b3b729c0a059cc4c0e",
+    "0014_SASH-1-side.png": "b8c40fb34dd89f0e066da2daa33677d41b658f37af20b4ab94326e02d4a182d7",
+    "0015_SASH-1-back.png": "d97257723d7841c9201591586c2259c98d7f103b85012494ad2fe987ce65c093",
+    "0016_SASH-FIT-after-poses-reset-camera--60.6.png": "3d5f881cd9e4a4d11753418bf5d8e1a46e5ce82588894a715962c8ba122738b0",
+    "0017_SASH-FIT-after-poses-reset-camera--60.0.png": "0958ff4e8b5e422b77c3afb9fe6f8b36c16a872419b15a69e52713223fb5c662",
+    "0018_SASH-FIT-after-poses-reset-camera--60.9.png": "d56a782b3be86322b97e9364028f7e2eabfc60803bf94fb9d074804ea51f1d4e",
+    "0019_SASH-FIT-after-poses-reset-camera--59.5.png": "411907547aa37040af8ec32b74a177c8d58cdfa57379730e6aebf26c9c4565af",
+    "execution.log": "5900cfea5502f16a3877f9b5e8e0bd95b90a57dc30bfdaaccedacd0f31824649"
+  }
+}

@@ -1,0 +1,151 @@
+Compiled from "CDataParameter.java"
+public class net.conczin.mca.util.network.datasync.CDataParameter<T> implements net.conczin.mca.util.network.datasync.CParameter<T, T> {
+  private final java.lang.String id;
+
+  private final T defaultValue;
+
+  private final net.minecraft.network.syncher.EntityDataSerializer<T> valueType;
+
+  private final net.conczin.mca.util.network.datasync.CDataParameter$Decoder<T> load;
+
+  private final net.conczin.mca.util.network.datasync.CDataParameter$Encoder<? super T> save;
+
+  protected net.conczin.mca.util.network.datasync.CDataParameter(java.lang.String, net.minecraft.network.syncher.EntityDataSerializer<T>, T, net.conczin.mca.util.network.datasync.CDataParameter$Decoder<T>, net.conczin.mca.util.network.datasync.CDataParameter$Encoder<? super T>);
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #7                  // Field id:Ljava/lang/String;
+         9: aload_0
+        10: aload_3
+        11: putfield      #13                 // Field defaultValue:Ljava/lang/Object;
+        14: aload_0
+        15: aload_2
+        16: putfield      #17                 // Field valueType:Lnet/minecraft/network/syncher/EntityDataSerializer;
+        19: aload_0
+        20: aload         4
+        22: putfield      #21                 // Field load:Lnet/conczin/mca/util/network/datasync/CDataParameter$Decoder;
+        25: aload_0
+        26: aload         5
+        28: putfield      #25                 // Field save:Lnet/conczin/mca/util/network/datasync/CDataParameter$Encoder;
+        31: return
+
+  public T getDefault();
+    Code:
+         0: aload_0
+         1: getfield      #13                 // Field defaultValue:Ljava/lang/Object;
+         4: areturn
+
+  public T get(net.minecraft.network.syncher.EntityDataAccessor<T>, net.minecraft.network.syncher.SynchedEntityData);
+    Code:
+         0: aload_2
+         1: aload_1
+         2: invokevirtual #29                 // Method net/minecraft/network/syncher/SynchedEntityData.get:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+         5: areturn
+
+  public void set(net.minecraft.network.syncher.EntityDataAccessor<T>, net.minecraft.network.syncher.SynchedEntityData, T);
+    Code:
+         0: aload_2
+         1: aload_1
+         2: aload_3
+         3: invokevirtual #35                 // Method net/minecraft/network/syncher/SynchedEntityData.set:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+         6: return
+
+  public T load(net.minecraft.nbt.CompoundTag, net.minecraft.core.RegistryAccess);
+    Code:
+         0: aload_0
+         1: getfield      #21                 // Field load:Lnet/conczin/mca/util/network/datasync/CDataParameter$Decoder;
+         4: aload_1
+         5: aload_0
+         6: getfield      #7                  // Field id:Ljava/lang/String;
+         9: aload_2
+        10: invokeinterface #39,  4           // InterfaceMethod net/conczin/mca/util/network/datasync/CDataParameter$Decoder.apply:(Lnet/minecraft/nbt/CompoundTag;Ljava/lang/String;Lnet/minecraft/core/RegistryAccess;)Ljava/lang/Object;
+        15: areturn
+
+  public void save(net.minecraft.nbt.CompoundTag, T, net.minecraft.core.RegistryAccess);
+    Code:
+         0: aload_0
+         1: getfield      #25                 // Field save:Lnet/conczin/mca/util/network/datasync/CDataParameter$Encoder;
+         4: aload_1
+         5: aload_0
+         6: getfield      #7                  // Field id:Ljava/lang/String;
+         9: aload_2
+        10: aload_3
+        11: invokeinterface #45,  5           // InterfaceMethod net/conczin/mca/util/network/datasync/CDataParameter$Encoder.accept:(Lnet/minecraft/nbt/CompoundTag;Ljava/lang/String;Ljava/lang/Object;Lnet/minecraft/core/RegistryAccess;)V
+        16: return
+
+  public net.minecraft.network.syncher.EntityDataAccessor<T> createParam(net.conczin.mca.util.network.datasync.CDataManager$AccessorFactory<?>);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: getfield      #17                 // Field valueType:Lnet/minecraft/network/syncher/EntityDataSerializer;
+         5: invokeinterface #51,  2           // InterfaceMethod net/conczin/mca/util/network/datasync/CDataManager$AccessorFactory.create:(Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+        10: areturn
+}
+Compiled from "CDataManager.java"
+class net.conczin.mca.util.network.datasync.CDataManager$Entry<E extends net.minecraft.world.entity.Entity, T, TrackedType> {
+  net.conczin.mca.util.network.datasync.CParameter<T, TrackedType> parameter;
+
+  net.minecraft.network.syncher.EntityDataAccessor<TrackedType> data;
+
+  public net.conczin.mca.util.network.datasync.CDataManager$Entry(net.conczin.mca.util.network.datasync.CDataManager$AccessorFactory<E>, net.conczin.mca.util.network.datasync.CParameter<T, TrackedType>);
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_2
+         6: putfield      #7                  // Field parameter:Lnet/conczin/mca/util/network/datasync/CParameter;
+         9: aload_0
+        10: aload_2
+        11: aload_1
+        12: invokeinterface #13,  2           // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.createParam:(Lnet/conczin/mca/util/network/datasync/CDataManager$AccessorFactory;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+        17: putfield      #19                 // Field data:Lnet/minecraft/network/syncher/EntityDataAccessor;
+        20: return
+
+  public void save(E, net.minecraft.nbt.CompoundTag);
+    Code:
+         0: aload_0
+         1: getfield      #7                  // Field parameter:Lnet/conczin/mca/util/network/datasync/CParameter;
+         4: aload_2
+         5: aload_0
+         6: getfield      #7                  // Field parameter:Lnet/conczin/mca/util/network/datasync/CParameter;
+         9: aload_0
+        10: getfield      #19                 // Field data:Lnet/minecraft/network/syncher/EntityDataAccessor;
+        13: aload_1
+        14: invokevirtual #23                 // Method net/minecraft/world/entity/Entity.getEntityData:()Lnet/minecraft/network/syncher/SynchedEntityData;
+        17: invokeinterface #29,  3           // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.get:(Lnet/minecraft/network/syncher/EntityDataAccessor;Lnet/minecraft/network/syncher/SynchedEntityData;)Ljava/lang/Object;
+        22: aload_1
+        23: invokevirtual #33                 // Method net/minecraft/world/entity/Entity.registryAccess:()Lnet/minecraft/core/RegistryAccess;
+        26: invokeinterface #37,  4           // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.save:(Lnet/minecraft/nbt/CompoundTag;Ljava/lang/Object;Lnet/minecraft/core/RegistryAccess;)V
+        31: return
+
+  public void load(E, net.minecraft.nbt.CompoundTag);
+    Code:
+         0: aload_0
+         1: getfield      #7                  // Field parameter:Lnet/conczin/mca/util/network/datasync/CParameter;
+         4: aload_0
+         5: getfield      #19                 // Field data:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         8: aload_1
+         9: invokevirtual #23                 // Method net/minecraft/world/entity/Entity.getEntityData:()Lnet/minecraft/network/syncher/SynchedEntityData;
+        12: aload_0
+        13: getfield      #7                  // Field parameter:Lnet/conczin/mca/util/network/datasync/CParameter;
+        16: aload_2
+        17: aload_1
+        18: invokevirtual #33                 // Method net/minecraft/world/entity/Entity.registryAccess:()Lnet/minecraft/core/RegistryAccess;
+        21: invokeinterface #41,  3           // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.load:(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/core/RegistryAccess;)Ljava/lang/Object;
+        26: invokeinterface #45,  4           // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.set:(Lnet/minecraft/network/syncher/EntityDataAccessor;Lnet/minecraft/network/syncher/SynchedEntityData;Ljava/lang/Object;)V
+        31: return
+
+  public void register(net.minecraft.network.syncher.SynchedEntityData$Builder);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: getfield      #19                 // Field data:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         5: aload_0
+         6: getfield      #7                  // Field parameter:Lnet/conczin/mca/util/network/datasync/CParameter;
+         9: invokeinterface #49,  1           // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.getDefault:()Ljava/lang/Object;
+        14: invokevirtual #53                 // Method net/minecraft/network/syncher/SynchedEntityData$Builder.define:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)Lnet/minecraft/network/syncher/SynchedEntityData$Builder;
+        17: pop
+        18: return
+}

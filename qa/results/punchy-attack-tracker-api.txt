@@ -1,0 +1,315 @@
+Compiled from "AttackActionTracker.java"
+public final class punchy.client.state.AttackActionTracker {
+  private static boolean triggered;
+
+  private static net.minecraft.world.InteractionHand lastHand;
+
+  private static boolean lastCritical;
+
+  private static boolean pendingCritical;
+
+  private static long triggerEpoch;
+
+  private static long inputGesture;
+
+  private static long visualEpoch;
+
+  private static long visualPlaybackId;
+
+  private static net.minecraft.world.InteractionHand visualHand;
+
+  private punchy.client.state.AttackActionTracker();
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+
+  public static void beginInputGesture();
+    Code:
+         0: getstatic     #7                  // Field inputGesture:J
+         3: lconst_1
+         4: ladd
+         5: putstatic     #7                  // Field inputGesture:J
+         8: return
+
+  public static long peekInputGesture();
+    Code:
+         0: getstatic     #7                  // Field inputGesture:J
+         3: lreturn
+
+  public static void recordVisualPlayback(net.minecraft.world.InteractionHand);
+    Code:
+         0: getstatic     #13                 // Field visualEpoch:J
+         3: lconst_1
+         4: ladd
+         5: putstatic     #13                 // Field visualEpoch:J
+         8: aload_0
+         9: putstatic     #16                 // Field visualHand:Lnet/minecraft/world/InteractionHand;
+        12: getstatic     #20                 // Field punchy/client/animation/PunchyAnimationManager.POSE_HANDLER:Lpunchy/client/animation/PoseHandler;
+        15: invokevirtual #26                 // Method punchy/client/animation/PoseHandler.getPlaybackId:()J
+        18: putstatic     #32                 // Field visualPlaybackId:J
+        21: return
+
+  public static long peekVisualEpoch();
+    Code:
+         0: getstatic     #13                 // Field visualEpoch:J
+         3: lreturn
+
+  public static net.minecraft.world.InteractionHand peekVisualHand();
+    Code:
+         0: getstatic     #16                 // Field visualHand:Lnet/minecraft/world/InteractionHand;
+         3: areturn
+
+  public static long peekVisualPlaybackId();
+    Code:
+         0: getstatic     #32                 // Field visualPlaybackId:J
+         3: lreturn
+
+  public static void recordCriticalCandidate(net.minecraft.client.Minecraft);
+    Code:
+         0: aload_0
+         1: ifnull        11
+         4: aload_0
+         5: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+         8: ifnonnull     16
+        11: iconst_0
+        12: putstatic     #41                 // Field pendingCritical:Z
+        15: return
+        16: aload_0
+        17: invokestatic  #45                 // Method isCriticalHit:(Lnet/minecraft/client/Minecraft;)Z
+        20: putstatic     #41                 // Field pendingCritical:Z
+        23: return
+
+  public static void clearPendingCritical();
+    Code:
+         0: iconst_0
+         1: putstatic     #41                 // Field pendingCritical:Z
+         4: return
+
+  public static void recordAttack();
+    Code:
+         0: invokestatic  #49                 // Method punchy/client/gui/MissingAnimationPackWarnings.recordAction:()V
+         3: getstatic     #54                 // Field triggered:Z
+         6: istore_0
+         7: iconst_1
+         8: putstatic     #54                 // Field triggered:Z
+        11: invokestatic  #57                 // Method resolveCriticalAtTrigger:()Z
+        14: ifne          23
+        17: getstatic     #41                 // Field pendingCritical:Z
+        20: ifeq          27
+        23: iconst_1
+        24: goto          28
+        27: iconst_0
+        28: istore_1
+        29: iload_0
+        30: ifne          54
+        33: getstatic     #61                 // Field triggerEpoch:J
+        36: lconst_1
+        37: ladd
+        38: putstatic     #61                 // Field triggerEpoch:J
+        41: getstatic     #64                 // Field net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+        44: putstatic     #69                 // Field lastHand:Lnet/minecraft/world/InteractionHand;
+        47: iload_1
+        48: putstatic     #72                 // Field lastCritical:Z
+        51: goto          62
+        54: iload_1
+        55: ifeq          62
+        58: iconst_1
+        59: putstatic     #72                 // Field lastCritical:Z
+        62: iconst_0
+        63: putstatic     #41                 // Field pendingCritical:Z
+        66: return
+
+  public static void recordAttack(net.minecraft.world.InteractionHand);
+    Code:
+         0: invokestatic  #49                 // Method punchy/client/gui/MissingAnimationPackWarnings.recordAction:()V
+         3: getstatic     #54                 // Field triggered:Z
+         6: istore_1
+         7: iconst_1
+         8: putstatic     #54                 // Field triggered:Z
+        11: invokestatic  #57                 // Method resolveCriticalAtTrigger:()Z
+        14: ifne          23
+        17: getstatic     #41                 // Field pendingCritical:Z
+        20: ifeq          27
+        23: iconst_1
+        24: goto          28
+        27: iconst_0
+        28: istore_2
+        29: aload_0
+        30: ifnull        37
+        33: aload_0
+        34: putstatic     #69                 // Field lastHand:Lnet/minecraft/world/InteractionHand;
+        37: iload_1
+        38: ifne          56
+        41: getstatic     #61                 // Field triggerEpoch:J
+        44: lconst_1
+        45: ladd
+        46: putstatic     #61                 // Field triggerEpoch:J
+        49: iload_2
+        50: putstatic     #72                 // Field lastCritical:Z
+        53: goto          64
+        56: iload_2
+        57: ifeq          64
+        60: iconst_1
+        61: putstatic     #72                 // Field lastCritical:Z
+        64: iconst_0
+        65: putstatic     #41                 // Field pendingCritical:Z
+        68: return
+
+  public static boolean isTriggered();
+    Code:
+         0: getstatic     #54                 // Field triggered:Z
+         3: ireturn
+
+  public static boolean consumeTrigger();
+    Code:
+         0: getstatic     #54                 // Field triggered:Z
+         3: ifne          8
+         6: iconst_0
+         7: ireturn
+         8: iconst_0
+         9: putstatic     #54                 // Field triggered:Z
+        12: iconst_1
+        13: ireturn
+
+  public static net.minecraft.world.InteractionHand peekHand();
+    Code:
+         0: getstatic     #54                 // Field triggered:Z
+         3: ifne          8
+         6: aconst_null
+         7: areturn
+         8: getstatic     #69                 // Field lastHand:Lnet/minecraft/world/InteractionHand;
+        11: areturn
+
+  public static long peekEpoch();
+    Code:
+         0: getstatic     #61                 // Field triggerEpoch:J
+         3: lreturn
+
+  public static net.minecraft.world.InteractionHand peekLastRecordedHand();
+    Code:
+         0: getstatic     #69                 // Field lastHand:Lnet/minecraft/world/InteractionHand;
+         3: areturn
+
+  public static net.minecraft.world.InteractionHand consumeHand();
+    Code:
+         0: getstatic     #54                 // Field triggered:Z
+         3: ifne          8
+         6: aconst_null
+         7: areturn
+         8: iconst_0
+         9: putstatic     #54                 // Field triggered:Z
+        12: getstatic     #69                 // Field lastHand:Lnet/minecraft/world/InteractionHand;
+        15: areturn
+
+  public static boolean consumeCritical();
+    Code:
+         0: getstatic     #72                 // Field lastCritical:Z
+         3: istore_0
+         4: iconst_0
+         5: putstatic     #72                 // Field lastCritical:Z
+         8: iload_0
+         9: ireturn
+
+  public static void clear();
+    Code:
+         0: iconst_0
+         1: putstatic     #54                 // Field triggered:Z
+         4: getstatic     #64                 // Field net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+         7: putstatic     #69                 // Field lastHand:Lnet/minecraft/world/InteractionHand;
+        10: iconst_0
+        11: putstatic     #72                 // Field lastCritical:Z
+        14: iconst_0
+        15: putstatic     #41                 // Field pendingCritical:Z
+        18: ldc2_w        #75                 // long -1l
+        21: putstatic     #32                 // Field visualPlaybackId:J
+        24: return
+
+  private static boolean isCriticalHit(net.minecraft.client.Minecraft);
+    Code:
+         0: aload_0
+         1: ifnull        11
+         4: aload_0
+         5: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+         8: ifnonnull     13
+        11: iconst_0
+        12: ireturn
+        13: aload_0
+        14: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+        17: fconst_1
+        18: invokevirtual #77                 // Method net/minecraft/client/player/LocalPlayer.getAttackStrengthScale:(F)F
+        21: ldc           #83                 // float 0.9f
+        23: fcmpg
+        24: ifge          29
+        27: iconst_0
+        28: ireturn
+        29: aload_0
+        30: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+        33: invokevirtual #84                 // Method net/minecraft/client/player/LocalPlayer.onGround:()Z
+        36: ifeq          41
+        39: iconst_0
+        40: ireturn
+        41: aload_0
+        42: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+        45: getfield      #87                 // Field net/minecraft/client/player/LocalPlayer.fallDistance:D
+        48: dconst_0
+        49: dcmpg
+        50: ifgt          55
+        53: iconst_0
+        54: ireturn
+        55: aload_0
+        56: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+        59: invokevirtual #91                 // Method net/minecraft/client/player/LocalPlayer.isInWater:()Z
+        62: ifne          75
+        65: aload_0
+        66: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+        69: invokevirtual #94                 // Method net/minecraft/client/player/LocalPlayer.isInLava:()Z
+        72: ifeq          77
+        75: iconst_0
+        76: ireturn
+        77: aload_0
+        78: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+        81: invokevirtual #97                 // Method net/minecraft/client/player/LocalPlayer.onClimbable:()Z
+        84: ifeq          89
+        87: iconst_0
+        88: ireturn
+        89: aload_0
+        90: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+        93: invokevirtual #100                // Method net/minecraft/client/player/LocalPlayer.isPassenger:()Z
+        96: ifeq          101
+        99: iconst_0
+       100: ireturn
+       101: aload_0
+       102: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+       105: invokevirtual #103                // Method net/minecraft/client/player/LocalPlayer.isSprinting:()Z
+       108: ifeq          113
+       111: iconst_0
+       112: ireturn
+       113: aload_0
+       114: getfield      #35                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+       117: getstatic     #106                // Field net/minecraft/world/effect/MobEffects.BLINDNESS:Lnet/minecraft/core/Holder;
+       120: invokevirtual #112                // Method net/minecraft/client/player/LocalPlayer.hasEffect:(Lnet/minecraft/core/Holder;)Z
+       123: ifne          130
+       126: iconst_1
+       127: goto          131
+       130: iconst_0
+       131: ireturn
+
+  private static boolean resolveCriticalAtTrigger();
+    Code:
+         0: invokestatic  #116                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+         3: astore_0
+         4: aload_0
+         5: invokestatic  #45                 // Method isCriticalHit:(Lnet/minecraft/client/Minecraft;)Z
+         8: ireturn
+
+  static {};
+    Code:
+         0: getstatic     #64                 // Field net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+         3: putstatic     #69                 // Field lastHand:Lnet/minecraft/world/InteractionHand;
+         6: ldc2_w        #75                 // long -1l
+         9: putstatic     #32                 // Field visualPlaybackId:J
+        12: getstatic     #64                 // Field net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+        15: putstatic     #16                 // Field visualHand:Lnet/minecraft/world/InteractionHand;
+        18: return
+}

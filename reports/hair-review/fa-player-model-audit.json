@@ -1,0 +1,25 @@
+{
+  "source": "FA+Player-v1.1.zip/assets/minecraft/emf/cem/player.jem",
+  "model_parts": [
+    "root",
+    "root",
+    "root",
+    "root",
+    "root",
+    "head",
+    "head",
+    "body",
+    "right_arm",
+    "left_arm",
+    "left_leg",
+    "right_leg",
+    "headwear",
+    "jacket",
+    "left_sleeve",
+    "right_sleeve",
+    "left_pants",
+    "right_pants"
+  ],
+  "animation_blocks": 5,
+  "redistributed_model": false
+}

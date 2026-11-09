@@ -1,0 +1,43 @@
+{
+  "captures": 3413,
+  "parts": [
+    {
+      "file": "piratesmca-11.1.0-alpha.16-skins-01.zip",
+      "images": 140,
+      "bytes": 1824845,
+      "sha256": "cc6ee9c46605233e9908be6459392b0df569f26998660089d0fdab4f9492edda"
+    },
+    {
+      "file": "piratesmca-11.1.0-alpha.16-armor-01.zip",
+      "images": 750,
+      "bytes": 11417902,
+      "sha256": "f27463a29da43a7b25a6f9d0b1e82406a27b43737d2f0cbed87a874e8cbb7007"
+    },
+    {
+      "file": "piratesmca-11.1.0-alpha.16-armor-02.zip",
+      "images": 750,
+      "bytes": 11148301,
+      "sha256": "c816f6524e3372ad850a11a252e76260ee53f959a000bf8006c1e1a67aa08667"
+    },
+    {
+      "file": "piratesmca-11.1.0-alpha.16-armor-03.zip",
+      "images": 750,
+      "bytes": 11540637,
+      "sha256": "ae0f5c938e48b3e50797c8bf4e2bc6259c69007240f5ac7f643dbd586c00615d"
+    },
+    {
+      "file": "piratesmca-11.1.0-alpha.16-armor-04.zip",
+      "images": 750,
+      "bytes": 11697462,
+      "sha256": "f77abc30b00ea0bc8b0af5435976b477f6dd16e13484b95c9e25aec81ff2f3b8"
+    },
+    {
+      "file": "piratesmca-11.1.0-alpha.16-armor-05.zip",
+      "images": 273,
+      "bytes": 4143557,
+      "sha256": "84f8b50a81bcdac94a58b6df5c57d81a1369bedcaa005fe78aab3a8b2954d3fb"
+    }
+  ],
+  "originals": "run/reconstruction-catalogue/screenshots",
+  "note": "JPEG crops of fresh final Minecraft PNGs; source hashes retained. Coverage is not universal visual approval."
+}

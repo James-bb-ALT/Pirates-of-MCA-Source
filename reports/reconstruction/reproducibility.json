@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "after": {
+    "piratesmca-11.1.0-alpha.16-sources.jar": "650868ce4794740f57478a5e81e131b4d066e05f8f5a0c6f03e94c9e87e9b0df",
+    "piratesmca-11.1.0-alpha.16.jar": "af30c6fd7a4920a0fe5a4dbc57a8bcf2def35efcbe225b6257889e246a6205c6"
+  },
+  "scope": "Archive tasks repeated with unchanged compiled classes and resources, not two independent clean compilations",
+  "before": {
+    "piratesmca-11.1.0-alpha.16-sources.jar": "650868ce4794740f57478a5e81e131b4d066e05f8f5a0c6f03e94c9e87e9b0df",
+    "piratesmca-11.1.0-alpha.16.jar": "af30c6fd7a4920a0fe5a4dbc57a8bcf2def35efcbe225b6257889e246a6205c6"
+  }
+}

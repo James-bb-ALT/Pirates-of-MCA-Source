@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "piratesmca:wardrobe_trim"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "piratesmca:wardrobe_trim"
+      }
+    ]
+  }
+}

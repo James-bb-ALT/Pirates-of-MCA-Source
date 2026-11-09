@@ -1,0 +1,306 @@
+[
+  {
+    "skin": "pirateatelier:textures/skins/captain_civilian.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/captain_civilian_body.png",
+    "face": "pirateatelier:textures/skins/layered/captain_civilian_face.png",
+    "blink": "pirateatelier:textures/skins/layered/captain_civilian_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/deckhand.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/deckhand_body.png",
+    "face": "pirateatelier:textures/skins/layered/deckhand_face.png",
+    "blink": "pirateatelier:textures/skins/layered/deckhand_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/deckhand_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/deckhand_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/deckhand_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/deckhand_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/ships_cook.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/ships_cook_body.png",
+    "face": "pirateatelier:textures/skins/layered/ships_cook_face.png",
+    "blink": "pirateatelier:textures/skins/layered/ships_cook_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/gunner.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/gunner_body.png",
+    "face": "pirateatelier:textures/skins/layered/gunner_face.png",
+    "blink": "pirateatelier:textures/skins/layered/gunner_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/boatswain.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/boatswain_body.png",
+    "face": "pirateatelier:textures/skins/layered/boatswain_face.png",
+    "blink": "pirateatelier:textures/skins/layered/boatswain_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/harbor_merchant.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/harbor_merchant_body.png",
+    "face": "pirateatelier:textures/skins/layered/harbor_merchant_face.png",
+    "blink": "pirateatelier:textures/skins/layered/harbor_merchant_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/smuggler.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/smuggler_body.png",
+    "face": "pirateatelier:textures/skins/layered/smuggler_face.png",
+    "blink": "pirateatelier:textures/skins/layered/smuggler_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/rogue_navigator.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/rogue_navigator_body.png",
+    "face": "pirateatelier:textures/skins/layered/rogue_navigator_face.png",
+    "blink": "pirateatelier:textures/skins/layered/rogue_navigator_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/tavern_raider.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/tavern_raider_body.png",
+    "face": "pirateatelier:textures/skins/layered/tavern_raider_face.png",
+    "blink": "pirateatelier:textures/skins/layered/tavern_raider_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/weathered_sailor.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/weathered_sailor_body.png",
+    "face": "pirateatelier:textures/skins/layered/weathered_sailor_face.png",
+    "blink": "pirateatelier:textures/skins/layered/weathered_sailor_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/fisherman_turned_pirate.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/fisherman_turned_pirate_body.png",
+    "face": "pirateatelier:textures/skins/layered/fisherman_turned_pirate_face.png",
+    "blink": "pirateatelier:textures/skins/layered/fisherman_turned_pirate_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_corsair.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/the_corsair_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_corsair_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_corsair_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_cabin_boy.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/the_cabin_boy_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_cabin_boy_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_cabin_boy_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_privateer.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/the_privateer_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_privateer_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_privateer_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_dock_rat.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/the_dock_rat_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_dock_rat_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_dock_rat_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_naval_deserter.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/the_naval_deserter_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_naval_deserter_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_naval_deserter_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_cursed_sailor.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/the_cursed_sailor_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_cursed_sailor_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_cursed_sailor_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/captain_armor_skin.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/captain_armor_skin_body.png",
+    "face": "pirateatelier:textures/skins/layered/captain_armor_skin_face.png",
+    "blink": "pirateatelier:textures/skins/layered/captain_armor_skin_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/naval_officer_skin.png",
+    "gender": "male",
+    "body": "pirateatelier:textures/skins/layered/naval_officer_skin_body.png",
+    "face": "pirateatelier:textures/skins/layered/naval_officer_skin_face.png",
+    "blink": "pirateatelier:textures/skins/layered/naval_officer_skin_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/captain_civilian_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/captain_civilian_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/captain_civilian_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/captain_civilian_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/ships_cook_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/ships_cook_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/ships_cook_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/ships_cook_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/gunner_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/gunner_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/gunner_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/gunner_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/boatswain_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/boatswain_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/boatswain_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/boatswain_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/harbor_merchant_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/harbor_merchant_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/harbor_merchant_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/harbor_merchant_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/smuggler_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/smuggler_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/smuggler_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/smuggler_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/rogue_navigator_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/rogue_navigator_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/rogue_navigator_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/rogue_navigator_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/tavern_raider_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/tavern_raider_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/tavern_raider_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/tavern_raider_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/weathered_sailor_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/weathered_sailor_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/weathered_sailor_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/weathered_sailor_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/fisherman_turned_pirate_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/fisherman_turned_pirate_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/fisherman_turned_pirate_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/fisherman_turned_pirate_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_corsair_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/the_corsair_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_corsair_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_corsair_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_cabin_boy_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/the_cabin_boy_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_cabin_boy_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_cabin_boy_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_privateer_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/the_privateer_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_privateer_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_privateer_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_dock_rat_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/the_dock_rat_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_dock_rat_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_dock_rat_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_naval_deserter_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/the_naval_deserter_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_naval_deserter_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_naval_deserter_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/the_cursed_sailor_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/the_cursed_sailor_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/the_cursed_sailor_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/the_cursed_sailor_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/captain_armor_skin_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/captain_armor_skin_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/captain_armor_skin_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/captain_armor_skin_f_blink.png",
+    "hair": "persisted_mca_layer"
+  },
+  {
+    "skin": "pirateatelier:textures/skins/naval_officer_skin_f.png",
+    "gender": "female",
+    "body": "pirateatelier:textures/skins/layered/naval_officer_skin_f_body.png",
+    "face": "pirateatelier:textures/skins/layered/naval_officer_skin_f_face.png",
+    "blink": "pirateatelier:textures/skins/layered/naval_officer_skin_f_blink.png",
+    "hair": "persisted_mca_layer"
+  }
+]

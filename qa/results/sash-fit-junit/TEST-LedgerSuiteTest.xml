@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LedgerSuiteTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-04T17:32:01.401Z" hostname="DESKTOP" time="0.056">
+  <properties/>
+  <testcase name="suppliedRegressions()" classname="LedgerSuiteTest" time="0.015"/>
+  <testcase name="originalAlphaSuite()" classname="LedgerSuiteTest" time="0.013"/>
+  <testcase name="safetyRegressions()" classname="LedgerSuiteTest" time="0.027"/>
+  <system-out><![CDATA[PASS LEDGER-01_FREE_SOLO
+PASS LEDGER-02_TRANSFER_PERSISTS
+PASS LEDGER-03_NPC_CAPTAIN_EXCLUDED_FROM_REBEL_DENOMINATOR
+PASS LEDGER-04_OFFICER_ROLES_MUTUALLY_EXCLUSIVE
+PASS LEDGER-05_MIGRATE_LEGACY_SOLO_CAPTAIN
+PASS LEDGER-06_ULTIMATUM_60_SECONDS
+PASS LEDGER-07_NO_CROSS_CREW_REASSIGN_BY_PROXIMITY
+Ledger QA: 7 PASS, 0 FAIL. Baseline failures are defects to investigate, not proof of a fix.
+CrewLedger tests OK: mutiny, capitancy, persistence, separation, free-solo migration, transfer
+PASS TC-CREW-07_OFFICER_PROMOTED_CAPTAIN
+PASS TC-CREW-07_CAPTAIN_CANNOT_BE_OFFICER
+PASS TC-CREW-06_TRANSFER_CLEARS_OFFICE
+PASS TC-CREW-11_PLAYER_ONE_CREW
+PASS TC-CREW-11_CAPTAIN_MUST_BELONG
+PASS TC-SOC-03_CONSPIRACY_BEFORE_MAJORITY
+PASS TC-SOC-01_EIGHT_REQUIRE_FOUR
+PASS TC-SOC-02_CAPTAIN_NOT_SUPPORTER
+PASS TC-SOC-06_MURDER_CLEARS_OFFICE
+PASS TC-SAVE-02_ORDER_TIMESTAMPS_ROUNDTRIP
+PASS TC-SAVE-02_UNSUPPORTED_SCHEMA_FAILS_CLOSED
+PASS TC-SOC-09_128_EVENTS_ROUNDTRIP
+Ledger safety: 12 PASS, 0 FAIL
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

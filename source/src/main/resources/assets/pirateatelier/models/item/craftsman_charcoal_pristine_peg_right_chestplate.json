@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/craftsman_charcoal_pristine_peg_right_chestplate"
+  }
+}

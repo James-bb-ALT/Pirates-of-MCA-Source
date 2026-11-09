@@ -1,0 +1,22 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:context_entity_type",
+    "cases": [
+      {
+        "when": [
+          "mca:male_villager",
+          "mca:female_villager"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "piratesmca:item/eyepatch_leather"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "piratesmca:item/eyepatch_leather_player"
+    }
+  }
+}

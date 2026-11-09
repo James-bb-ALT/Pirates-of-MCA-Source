@@ -1,0 +1,39 @@
+{
+  "silent": false,
+  "auto": false,
+  "answers": [
+    {
+      "name": "crew_first",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_gruff_captain_test.crew_first.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "gold_first",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_gruff_captain_test.gold_first.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "glory_first",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_gruff_captain_test.glory_first.reply"
+          }
+        }
+      ]
+    }
+  ]
+}

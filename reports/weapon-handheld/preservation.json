@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "version": "11.1.1-alpha.17",
+  "jar_sha256": "9b0db65b954595990794953bc9a3dcfddead762bbfdb9505ad5c66cf3614002e",
+  "changed_runtime_files": [
+    "assets/lfpirates/items/bone_cutlass.json",
+    "assets/lfpirates/items/iron_cutlass.json",
+    "assets/lfpirates/items/poison_bone_cutlass.json",
+    "assets/lfpirates/models/item/bone_cutlass.json",
+    "assets/lfpirates/models/item/iron_cutlass.json",
+    "assets/lfpirates/models/item/poison_bone_cutlass.json",
+    "assets/pirateatelier/items/bone_falchion.json",
+    "assets/pirateatelier/items/corroded_cutlass.json",
+    "assets/pirateatelier/items/gilded_saber.json",
+    "assets/pirateatelier/items/midnight_saber.json",
+    "assets/pirateatelier/items/naval_cutlass.json",
+    "assets/pirateatelier/items/officer_rapier.json",
+    "assets/pirateatelier/items/venom_saber.json",
+    "assets/pirateatelier/models/item/bone_falchion.json",
+    "assets/pirateatelier/models/item/corroded_cutlass.json",
+    "assets/pirateatelier/models/item/gilded_saber.json",
+    "assets/pirateatelier/models/item/midnight_saber.json",
+    "assets/pirateatelier/models/item/naval_cutlass.json",
+    "assets/pirateatelier/models/item/officer_rapier.json",
+    "assets/pirateatelier/models/item/venom_saber.json",
+    "fabric.mod.json"
+  ],
+  "all_production_classes_unchanged": true,
+  "all_PNGs_unchanged": true,
+  "all_hooks_and_armor_unchanged": true,
+  "combat_profiles_stats_data_unchanged": true
+}

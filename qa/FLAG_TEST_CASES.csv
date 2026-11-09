@@ -1,0 +1,6 @@
+id,contract_ids,scenario,status,evidence
+FLAG-01,TC-BOOT-02;TC-CREW-01,Bloco/receita/diálogo e fundação pelo menu,PASS,FlagGameTests;PirateClientGameTests
+FLAG-02,TC-CREW-01,Consentimento e autoridade; sem roubo ou dupla vinculação,PASS,FlagLedgerTest;FlagGameTests
+FLAG-03,TC-CREW-01,"Recusar interação distante, obstruída ou removida",PASS,FlagGameTests
+FLAG-04,TC-CREW-08,Âncora de RALLY e persistência; escopo servidor/domínio,PASS,FlagLedgerTest;FlagGameTests
+FLAG-05,TC-CREW-06,"Migração v3/v4, backup e reabertura integrada",PASS,NativePersistenceGameTests;PirateClientGameTests

@@ -1,0 +1,18 @@
+{
+  "version": "11.0.0-alpha.15",
+  "source": "imports/pirate_atelier_v5",
+  "contract": "normal Minecraft armor; 3D prostheses; MCA plus extra skins",
+  "counts": {
+    "weapon": 10,
+    "armor": 4349,
+    "accessory": 68,
+    "hook": 12,
+    "peg": 5
+  },
+  "registry": "source/src/main/resources/data/piratesmca/atelier/items.json",
+  "skins": "source/src/main/resources/data/piratesmca/atelier/skins.json",
+  "armor_renderer": "native EquipmentLayerRenderer",
+  "prosthetic_renderer": "PirateLimbsLayer + native upper skin/clothes/armor",
+  "animation_safe_universal": false,
+  "report": "reports/atelier_v5.md"
+}

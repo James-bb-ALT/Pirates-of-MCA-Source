@@ -1,0 +1,15 @@
+{
+  "added": [
+    "data/piratesmca/tags/worldgen/biome/pirate_waters.json",
+    "dev/arandu/piratesmca/CoastalStructureSpawns$Context.class",
+    "dev/arandu/piratesmca/CoastalStructureSpawns.class",
+    "dev/arandu/piratesmca/mixin/CoastalStructureContextMixin.class",
+    "dev/arandu/piratesmca/mixin/CoastalVillagerSpawnMixin.class"
+  ],
+  "changed": [
+    "dev/arandu/piratesmca/PiratesOfMCA.class",
+    "fabric.mod.json",
+    "piratesmca.mixins.json"
+  ],
+  "removed": []
+}

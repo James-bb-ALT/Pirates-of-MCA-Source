@@ -1,0 +1,33 @@
+Compiled from "MixinLivingEntityRenderer.java"
+public class net.conczin.mca.mixin.client.MixinLivingEntityRenderer {
+  public net.conczin.mca.mixin.client.MixinLivingEntityRenderer();
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+
+  private void mca$capturePreviewAnimationState(net.minecraft.world.entity.LivingEntity, net.minecraft.client.renderer.entity.state.LivingEntityRenderState, float, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+         0: aload_2
+         1: invokestatic  #7                  // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.require:(Ljava/lang/Object;)Lnet/conczin/mca/client/render/VillagerStateHolder;
+         4: aload_1
+         5: invokestatic  #13                 // Method net/conczin/mca/client/gui/PreviewEntityAnimation.getActiveState:(Lnet/minecraft/world/entity/LivingEntity;)Lnet/conczin/mca/client/gui/PreviewEntityAnimation$State;
+         8: invokeinterface #19,  2           // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.mca$setPreviewEntityAnimationState:(Lnet/conczin/mca/client/gui/PreviewEntityAnimation$State;)V
+        13: return
+
+  private net.minecraft.client.renderer.rendertype.RenderType mca$hideVanillaPlayerModel(net.minecraft.client.renderer.rendertype.RenderType, net.minecraft.client.renderer.entity.state.LivingEntityRenderState, boolean, boolean, boolean);
+    Code:
+         0: aload_2
+         1: instanceof    #8                  // class net/conczin/mca/client/render/VillagerStateHolder
+         4: ifeq          27
+         7: aload_2
+         8: checkcast     #8                  // class net/conczin/mca/client/render/VillagerStateHolder
+        11: astore        6
+        13: aload         6
+        15: invokeinterface #23,  1           // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.mca$isVillagerRendererActive:()Z
+        20: ifeq          27
+        23: aconst_null
+        24: goto          28
+        27: aload_1
+        28: areturn
+}

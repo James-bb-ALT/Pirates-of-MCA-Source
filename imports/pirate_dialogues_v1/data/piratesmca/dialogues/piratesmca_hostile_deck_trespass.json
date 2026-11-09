@@ -1,0 +1,39 @@
+{
+  "silent": false,
+  "auto": false,
+  "answers": [
+    {
+      "name": "bring_business",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_hostile_deck_trespass.bring_business.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stand_ground",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_hostile_deck_trespass.stand_ground.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "apologize",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_hostile_deck_trespass.apologize.reply"
+          }
+        }
+      ]
+    }
+  ]
+}

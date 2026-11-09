@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EventMemoryTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-04T01:35:33.395Z" hostname="DESKTOP" time="0.08">
+  <properties/>
+  <testcase name="rumorRequiresKnowledgeAndHasReducedCredibility()" classname="EventMemoryTest" time="0.018"/>
+  <testcase name="structuredLogRetainsExactly128StableIds()" classname="EventMemoryTest" time="0.04"/>
+  <testcase name="structuredEventAndConsequencesSurviveReload()" classname="EventMemoryTest" time="0.006"/>
+  <testcase name="provocationRollHappensOnceAcrossReloadAndNeedsARealMotive()" classname="EventMemoryTest" time="0.008"/>
+  <testcase name="fatalHitDoesNotCreateAnotherAssaultAfterDeath()" classname="EventMemoryTest" time="0.002"/>
+  <testcase name="oneResourceCannotCreateInfiniteRivalry()" classname="EventMemoryTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

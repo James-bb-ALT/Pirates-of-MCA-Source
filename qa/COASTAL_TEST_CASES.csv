@@ -1,0 +1,8 @@
+id,contract_ids,scenario,status
+COAST-01,TC-SPAWN-10,"Oceano; duas estruturas, quatro villagers",PASS
+COAST-02,TC-SPAWN-10,"Praia; duas estruturas, quatro villagers",PASS
+COAST-03,TC-SPAWN-10,Bioma de mod via tag comum,PASS
+COAST-04,TC-AI-03,"Planície; zero conversões, escopo spawn",PASS
+COAST-05,TC-SPAWN-10,Ilha tropical Fish,PASS
+COAST-06,TC-SPAWN-10;TC-AI-03,Contexto encerra em exceção; criança comum preservada,PASS
+COAST-07,TC-SPAWN-10,Geração natural por seed e todos os mods,NOT RUN

@@ -1,0 +1,2215 @@
+[
+  {
+    "asset": "lfpirates:biala_czacha",
+    "sha256_geometry_uv": "11582ff0ecbc37cf5fffc1a1255919210a2fb503dfa16f148ba2fd270903079c",
+    "aliases": [
+      "lfpirates:biala_czacha",
+      "lfpirates:brudna_czacha",
+      "lfpirates:czarna_czacha",
+      "lfpirates:diamentowa_czacha",
+      "lfpirates:zlota_czacha"
+    ]
+  },
+  {
+    "asset": "lfpirates:korsarz_iiitier",
+    "sha256_geometry_uv": "17e9df27d576bcccf99cf257e8de491c1d17bcb25ad757b0e2e8fc0b5e81ee09",
+    "aliases": [
+      "lfpirates:korsarz_iiitier",
+      "lfpirates:korsarz_iitier",
+      "lfpirates:korsarz_itier",
+      "lfpirates:kupiec_v1",
+      "lfpirates:kupiec_v2",
+      "lfpirates:kupiec_v3",
+      "lfpirates:marynarka_iiitier",
+      "lfpirates:marynarka_iitier",
+      "lfpirates:marynarka_itier",
+      "lfpirates:marynarkablue_iiitier",
+      "lfpirates:marynarkablue_iitier",
+      "lfpirates:marynarkablue_itier",
+      "lfpirates:pirat_iiitier",
+      "lfpirates:pirat_iitier",
+      "lfpirates:pirat_itier"
+    ]
+  },
+  {
+    "asset": "lfpirates:majtek",
+    "sha256_geometry_uv": "a369c519d462f17b5b30e293ee30429a2949133ab627e758041e77a64471cac9",
+    "aliases": [
+      "lfpirates:majtek",
+      "lfpirates:neutralny_iiitier",
+      "lfpirates:neutralny_iitier",
+      "lfpirates:neutralny_itier",
+      "lfpirates:rybak",
+      "lfpirates:rzemieslnik"
+    ]
+  },
+  {
+    "asset": "lfpirates:nord_iiitier",
+    "sha256_geometry_uv": "1cc6488b0b38b7fc26acfc88fdcd976e7d8076c61f273c9177d2cc1fcef79d9b",
+    "aliases": [
+      "lfpirates:nord_iiitier",
+      "lfpirates:nord_iitier",
+      "lfpirates:nord_itier"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boarding_raider_armor_pristine_normal",
+    "sha256_geometry_uv": "322fe3e699ebde78bb3f7d6eb2b0c658c9a0b00fb61a719c21ee2a395ea045a6",
+    "aliases": [
+      "pirateatelier:boarding_raider_armor_pristine_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boarding_raider_armor_pristine_peg_left",
+    "sha256_geometry_uv": "443dd4381eefd53e0909ae00fb03b833980cacfefe852ea25280f57240113d54",
+    "aliases": [
+      "pirateatelier:boarding_raider_armor_pristine_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boarding_raider_armor_pristine_peg_right",
+    "sha256_geometry_uv": "e31ff55f2ee009775d86e917ada06bade7dc934a26ae9bfd7bc9084e52731133",
+    "aliases": [
+      "pirateatelier:boarding_raider_armor_pristine_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boarding_raider_armor_tattered_normal",
+    "sha256_geometry_uv": "f4d8f07bde99eb77d9be8def450f0c74da66e7513707d063ec2061bf21106053",
+    "aliases": [
+      "pirateatelier:boarding_raider_armor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boarding_raider_armor_tattered_peg_left",
+    "sha256_geometry_uv": "28bf35bfdc9e9c806b1614a1e0e4955976884984aaa4e3c32262b7b52cc82856",
+    "aliases": [
+      "pirateatelier:boarding_raider_armor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boarding_raider_armor_tattered_peg_right",
+    "sha256_geometry_uv": "523dcc9d816e3b5289a98bc20f5426bc9381d5280ef4e04ab9fdf5fef15ce986",
+    "aliases": [
+      "pirateatelier:boarding_raider_armor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boarding_raider_armor_weathered_normal",
+    "sha256_geometry_uv": "d3c6577e07ce7c7cde664b371879ca7ee1e07b250489a6c340b045b0761e1cc9",
+    "aliases": [
+      "pirateatelier:boarding_raider_armor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boarding_raider_armor_weathered_peg_left",
+    "sha256_geometry_uv": "61a74b4297f93d55f7b2b144b991dd218e8f24b9940c0c82278309fad94592d9",
+    "aliases": [
+      "pirateatelier:boarding_raider_armor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boarding_raider_armor_weathered_peg_right",
+    "sha256_geometry_uv": "60a8b6a810742e381bd4ff72fc8d35e563e2abefbd963dd1d1c9c8801315353f",
+    "aliases": [
+      "pirateatelier:boarding_raider_armor_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boatswain_pristine_normal",
+    "sha256_geometry_uv": "4953c308bcdeb407aa7d5a401a0df419ed62c93939b15517c4c98bda5d8876ad",
+    "aliases": [
+      "pirateatelier:boatswain_pristine_normal",
+      "pirateatelier:boatswain_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boatswain_pristine_peg_left",
+    "sha256_geometry_uv": "da8a74ebb6458515e9d0b2d1eacb95a2d3af4f888195176b9639b2fcf169b65d",
+    "aliases": [
+      "pirateatelier:boatswain_pristine_peg_left",
+      "pirateatelier:boatswain_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boatswain_pristine_peg_right",
+    "sha256_geometry_uv": "f4b1d55076c578e92bffd331ebf06365968c00a07fbc39d9a2a0bd813b52582d",
+    "aliases": [
+      "pirateatelier:boatswain_pristine_peg_right",
+      "pirateatelier:boatswain_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boatswain_tattered_normal",
+    "sha256_geometry_uv": "209e675cfa4269ff334e373b482ec0d961bc2296804e281cc26072c70cce90cf",
+    "aliases": [
+      "pirateatelier:boatswain_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boatswain_tattered_peg_left",
+    "sha256_geometry_uv": "3c1f92472247b192ed37d90c0e6c5bcbbbb0f81f4f7965f24f6545c82c61e257",
+    "aliases": [
+      "pirateatelier:boatswain_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:boatswain_tattered_peg_right",
+    "sha256_geometry_uv": "13f7f40e88bfcc93ab1f1d52403a2174a87001aa5fc8f63ab0e64655a1b27de5",
+    "aliases": [
+      "pirateatelier:boatswain_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:captain_armor_pristine_normal",
+    "sha256_geometry_uv": "dc813a59d34ffdf74d78d0ec026eeeb2104e1894ee73616990ee866ab76caa18",
+    "aliases": [
+      "pirateatelier:captain_armor_pristine_normal",
+      "pirateatelier:captain_armor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:captain_armor_pristine_peg_left",
+    "sha256_geometry_uv": "d668f9bed0dfd4ae4b59f81a33c5236a9ca1bab20bd72f675ee4aede29af1896",
+    "aliases": [
+      "pirateatelier:captain_armor_pristine_peg_left",
+      "pirateatelier:captain_armor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:captain_armor_pristine_peg_right",
+    "sha256_geometry_uv": "f7d8d0ff64c48fa8ee4ff9340b80fd913d93af035ac87fd169e8037d58635171",
+    "aliases": [
+      "pirateatelier:captain_armor_pristine_peg_right",
+      "pirateatelier:captain_armor_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:captain_armor_tattered_normal",
+    "sha256_geometry_uv": "173cd137cfed5ab0c2bffd53f85e2b53e30f4c0ed274506d554bc6011e20e45f",
+    "aliases": [
+      "pirateatelier:captain_armor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:captain_armor_tattered_peg_left",
+    "sha256_geometry_uv": "d06125a84e7491944893068d60c69cf4a3c629b00728999e25ec3cae4c7ddf16",
+    "aliases": [
+      "pirateatelier:captain_armor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:captain_armor_tattered_peg_right",
+    "sha256_geometry_uv": "785b5e5f7d48e14156ba7a27f7707cf13fd8730e4ae9599e70a0f867335d695e",
+    "aliases": [
+      "pirateatelier:captain_armor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:civilian_captain_pristine_normal",
+    "sha256_geometry_uv": "bd57623eba73307d7593eeefc38c6b271a43edae6932ad42c2178bb42a5b3a90",
+    "aliases": [
+      "pirateatelier:civilian_captain_pristine_normal",
+      "pirateatelier:civilian_captain_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:civilian_captain_pristine_peg_left",
+    "sha256_geometry_uv": "3b8baf6e008c1e855a432068aeb4fe681e0456753c3f6f6c0aece5d3d8c895da",
+    "aliases": [
+      "pirateatelier:civilian_captain_pristine_peg_left",
+      "pirateatelier:civilian_captain_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:civilian_captain_pristine_peg_right",
+    "sha256_geometry_uv": "7929fb06d8de1922184c351f385bb5148789041488c3657682ca480f1de56d91",
+    "aliases": [
+      "pirateatelier:civilian_captain_pristine_peg_right",
+      "pirateatelier:civilian_captain_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:civilian_captain_tattered_normal",
+    "sha256_geometry_uv": "3bcfc9f341a26c3574d34150bbb52a72dc123020d066adc00b53c94d1ae48e94",
+    "aliases": [
+      "pirateatelier:civilian_captain_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:civilian_captain_tattered_peg_left",
+    "sha256_geometry_uv": "df7a7f0b928690f74df597f5da22fa940ba0cf0a5743b0e7465dfec80124d44b",
+    "aliases": [
+      "pirateatelier:civilian_captain_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:civilian_captain_tattered_peg_right",
+    "sha256_geometry_uv": "7103d8b440711cc6c533c649f238a09e6a7540785f0b9e4e179de3bd270042f4",
+    "aliases": [
+      "pirateatelier:civilian_captain_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:corsair_charcoal_pristine_normal",
+    "sha256_geometry_uv": "3d8d80c20558cb33b33ff10fbc93986f4580c8e8d6655e7b472bfeb49fc8f019",
+    "aliases": [
+      "pirateatelier:corsair_charcoal_pristine_normal",
+      "pirateatelier:corsair_charcoal_weathered_normal",
+      "pirateatelier:corsair_copper_pristine_normal",
+      "pirateatelier:corsair_copper_weathered_normal",
+      "pirateatelier:corsair_crimson_pristine_normal",
+      "pirateatelier:corsair_crimson_weathered_normal",
+      "pirateatelier:corsair_emerald_pristine_normal",
+      "pirateatelier:corsair_emerald_weathered_normal",
+      "pirateatelier:corsair_forest_pristine_normal",
+      "pirateatelier:corsair_forest_weathered_normal",
+      "pirateatelier:corsair_ivory_pristine_normal",
+      "pirateatelier:corsair_ivory_weathered_normal",
+      "pirateatelier:corsair_navy_pristine_normal",
+      "pirateatelier:corsair_navy_weathered_normal",
+      "pirateatelier:corsair_ochre_pristine_normal",
+      "pirateatelier:corsair_ochre_weathered_normal",
+      "pirateatelier:corsair_plum_pristine_normal",
+      "pirateatelier:corsair_plum_weathered_normal",
+      "pirateatelier:corsair_sea_blue_pristine_normal",
+      "pirateatelier:corsair_sea_blue_weathered_normal",
+      "pirateatelier:corsair_teal_pristine_normal",
+      "pirateatelier:corsair_teal_weathered_normal",
+      "pirateatelier:corsair_wine_pristine_normal",
+      "pirateatelier:corsair_wine_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:corsair_charcoal_pristine_peg_left",
+    "sha256_geometry_uv": "89f09a6cd9337231be2c015c7255602feaa2ac08a20018095b9b05def3980204",
+    "aliases": [
+      "pirateatelier:corsair_charcoal_pristine_peg_left",
+      "pirateatelier:corsair_charcoal_weathered_peg_left",
+      "pirateatelier:corsair_copper_pristine_peg_left",
+      "pirateatelier:corsair_copper_weathered_peg_left",
+      "pirateatelier:corsair_crimson_pristine_peg_left",
+      "pirateatelier:corsair_crimson_weathered_peg_left",
+      "pirateatelier:corsair_emerald_pristine_peg_left",
+      "pirateatelier:corsair_emerald_weathered_peg_left",
+      "pirateatelier:corsair_forest_pristine_peg_left",
+      "pirateatelier:corsair_forest_weathered_peg_left",
+      "pirateatelier:corsair_ivory_pristine_peg_left",
+      "pirateatelier:corsair_ivory_weathered_peg_left",
+      "pirateatelier:corsair_navy_pristine_peg_left",
+      "pirateatelier:corsair_navy_weathered_peg_left",
+      "pirateatelier:corsair_ochre_pristine_peg_left",
+      "pirateatelier:corsair_ochre_weathered_peg_left",
+      "pirateatelier:corsair_plum_pristine_peg_left",
+      "pirateatelier:corsair_plum_weathered_peg_left",
+      "pirateatelier:corsair_sea_blue_pristine_peg_left",
+      "pirateatelier:corsair_sea_blue_weathered_peg_left",
+      "pirateatelier:corsair_teal_pristine_peg_left",
+      "pirateatelier:corsair_teal_weathered_peg_left",
+      "pirateatelier:corsair_wine_pristine_peg_left",
+      "pirateatelier:corsair_wine_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:corsair_charcoal_pristine_peg_right",
+    "sha256_geometry_uv": "c0e99c9a627c0c6e0febeb59731c9ec6b79e7207c90af644f25989b18f79b7d4",
+    "aliases": [
+      "pirateatelier:corsair_charcoal_pristine_peg_right",
+      "pirateatelier:corsair_charcoal_weathered_peg_right",
+      "pirateatelier:corsair_copper_pristine_peg_right",
+      "pirateatelier:corsair_copper_weathered_peg_right",
+      "pirateatelier:corsair_crimson_pristine_peg_right",
+      "pirateatelier:corsair_crimson_weathered_peg_right",
+      "pirateatelier:corsair_emerald_pristine_peg_right",
+      "pirateatelier:corsair_emerald_weathered_peg_right",
+      "pirateatelier:corsair_forest_pristine_peg_right",
+      "pirateatelier:corsair_forest_weathered_peg_right",
+      "pirateatelier:corsair_ivory_pristine_peg_right",
+      "pirateatelier:corsair_ivory_weathered_peg_right",
+      "pirateatelier:corsair_navy_pristine_peg_right",
+      "pirateatelier:corsair_navy_weathered_peg_right",
+      "pirateatelier:corsair_ochre_pristine_peg_right",
+      "pirateatelier:corsair_ochre_weathered_peg_right",
+      "pirateatelier:corsair_plum_pristine_peg_right",
+      "pirateatelier:corsair_plum_weathered_peg_right",
+      "pirateatelier:corsair_sea_blue_pristine_peg_right",
+      "pirateatelier:corsair_sea_blue_weathered_peg_right",
+      "pirateatelier:corsair_teal_pristine_peg_right",
+      "pirateatelier:corsair_teal_weathered_peg_right",
+      "pirateatelier:corsair_wine_pristine_peg_right",
+      "pirateatelier:corsair_wine_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:corsair_charcoal_tattered_normal",
+    "sha256_geometry_uv": "e012b14bf3d17045c95ab2aad1ce04a325f12073ae4263f5e0a18902a2a270dc",
+    "aliases": [
+      "pirateatelier:corsair_charcoal_tattered_normal",
+      "pirateatelier:corsair_copper_tattered_normal",
+      "pirateatelier:corsair_crimson_tattered_normal",
+      "pirateatelier:corsair_emerald_tattered_normal",
+      "pirateatelier:corsair_forest_tattered_normal",
+      "pirateatelier:corsair_ivory_tattered_normal",
+      "pirateatelier:corsair_navy_tattered_normal",
+      "pirateatelier:corsair_ochre_tattered_normal",
+      "pirateatelier:corsair_plum_tattered_normal",
+      "pirateatelier:corsair_sea_blue_tattered_normal",
+      "pirateatelier:corsair_teal_tattered_normal",
+      "pirateatelier:corsair_wine_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:corsair_charcoal_tattered_peg_left",
+    "sha256_geometry_uv": "c5ae4a4b816c7cc6aeb9eb4e0e634b43b05b920ae7d0789dabac9d2e94d53619",
+    "aliases": [
+      "pirateatelier:corsair_charcoal_tattered_peg_left",
+      "pirateatelier:corsair_copper_tattered_peg_left",
+      "pirateatelier:corsair_crimson_tattered_peg_left",
+      "pirateatelier:corsair_emerald_tattered_peg_left",
+      "pirateatelier:corsair_forest_tattered_peg_left",
+      "pirateatelier:corsair_ivory_tattered_peg_left",
+      "pirateatelier:corsair_navy_tattered_peg_left",
+      "pirateatelier:corsair_ochre_tattered_peg_left",
+      "pirateatelier:corsair_plum_tattered_peg_left",
+      "pirateatelier:corsair_sea_blue_tattered_peg_left",
+      "pirateatelier:corsair_teal_tattered_peg_left",
+      "pirateatelier:corsair_wine_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:corsair_charcoal_tattered_peg_right",
+    "sha256_geometry_uv": "eabee5849e765c87c0cb5c7d5c58ecce22ad9dab9d3c2422fa8b21eaafb3243c",
+    "aliases": [
+      "pirateatelier:corsair_charcoal_tattered_peg_right",
+      "pirateatelier:corsair_copper_tattered_peg_right",
+      "pirateatelier:corsair_crimson_tattered_peg_right",
+      "pirateatelier:corsair_emerald_tattered_peg_right",
+      "pirateatelier:corsair_forest_tattered_peg_right",
+      "pirateatelier:corsair_ivory_tattered_peg_right",
+      "pirateatelier:corsair_navy_tattered_peg_right",
+      "pirateatelier:corsair_ochre_tattered_peg_right",
+      "pirateatelier:corsair_plum_tattered_peg_right",
+      "pirateatelier:corsair_sea_blue_tattered_peg_right",
+      "pirateatelier:corsair_teal_tattered_peg_right",
+      "pirateatelier:corsair_wine_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:craftsman_charcoal_pristine_normal",
+    "sha256_geometry_uv": "e12d693fb798ff8445f9eb45989ff9ab1a0305738288139f7e6d7322f4437b09",
+    "aliases": [
+      "pirateatelier:craftsman_charcoal_pristine_normal",
+      "pirateatelier:craftsman_charcoal_weathered_normal",
+      "pirateatelier:craftsman_copper_pristine_normal",
+      "pirateatelier:craftsman_copper_weathered_normal",
+      "pirateatelier:craftsman_crimson_pristine_normal",
+      "pirateatelier:craftsman_crimson_weathered_normal",
+      "pirateatelier:craftsman_emerald_pristine_normal",
+      "pirateatelier:craftsman_emerald_weathered_normal",
+      "pirateatelier:craftsman_forest_pristine_normal",
+      "pirateatelier:craftsman_forest_weathered_normal",
+      "pirateatelier:craftsman_ivory_pristine_normal",
+      "pirateatelier:craftsman_ivory_weathered_normal",
+      "pirateatelier:craftsman_navy_pristine_normal",
+      "pirateatelier:craftsman_navy_weathered_normal",
+      "pirateatelier:craftsman_ochre_pristine_normal",
+      "pirateatelier:craftsman_ochre_weathered_normal",
+      "pirateatelier:craftsman_plum_pristine_normal",
+      "pirateatelier:craftsman_plum_weathered_normal",
+      "pirateatelier:craftsman_sea_blue_pristine_normal",
+      "pirateatelier:craftsman_sea_blue_weathered_normal",
+      "pirateatelier:craftsman_teal_pristine_normal",
+      "pirateatelier:craftsman_teal_weathered_normal",
+      "pirateatelier:craftsman_wine_pristine_normal",
+      "pirateatelier:craftsman_wine_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:craftsman_charcoal_pristine_peg_left",
+    "sha256_geometry_uv": "0fc754361659acced1105a454b4988304bcd7fd732c8373a793773cc2ae5d98d",
+    "aliases": [
+      "pirateatelier:craftsman_charcoal_pristine_peg_left",
+      "pirateatelier:craftsman_charcoal_weathered_peg_left",
+      "pirateatelier:craftsman_copper_pristine_peg_left",
+      "pirateatelier:craftsman_copper_weathered_peg_left",
+      "pirateatelier:craftsman_crimson_pristine_peg_left",
+      "pirateatelier:craftsman_crimson_weathered_peg_left",
+      "pirateatelier:craftsman_emerald_pristine_peg_left",
+      "pirateatelier:craftsman_emerald_weathered_peg_left",
+      "pirateatelier:craftsman_forest_pristine_peg_left",
+      "pirateatelier:craftsman_forest_weathered_peg_left",
+      "pirateatelier:craftsman_ivory_pristine_peg_left",
+      "pirateatelier:craftsman_ivory_weathered_peg_left",
+      "pirateatelier:craftsman_navy_pristine_peg_left",
+      "pirateatelier:craftsman_navy_weathered_peg_left",
+      "pirateatelier:craftsman_ochre_pristine_peg_left",
+      "pirateatelier:craftsman_ochre_weathered_peg_left",
+      "pirateatelier:craftsman_plum_pristine_peg_left",
+      "pirateatelier:craftsman_plum_weathered_peg_left",
+      "pirateatelier:craftsman_sea_blue_pristine_peg_left",
+      "pirateatelier:craftsman_sea_blue_weathered_peg_left",
+      "pirateatelier:craftsman_teal_pristine_peg_left",
+      "pirateatelier:craftsman_teal_weathered_peg_left",
+      "pirateatelier:craftsman_wine_pristine_peg_left",
+      "pirateatelier:craftsman_wine_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:craftsman_charcoal_pristine_peg_right",
+    "sha256_geometry_uv": "94d6541c4c5430ed14e13a2c596ad07a007ec7dfe0c1fed3b355ea26170b7602",
+    "aliases": [
+      "pirateatelier:craftsman_charcoal_pristine_peg_right",
+      "pirateatelier:craftsman_charcoal_weathered_peg_right",
+      "pirateatelier:craftsman_copper_pristine_peg_right",
+      "pirateatelier:craftsman_copper_weathered_peg_right",
+      "pirateatelier:craftsman_crimson_pristine_peg_right",
+      "pirateatelier:craftsman_crimson_weathered_peg_right",
+      "pirateatelier:craftsman_emerald_pristine_peg_right",
+      "pirateatelier:craftsman_emerald_weathered_peg_right",
+      "pirateatelier:craftsman_forest_pristine_peg_right",
+      "pirateatelier:craftsman_forest_weathered_peg_right",
+      "pirateatelier:craftsman_ivory_pristine_peg_right",
+      "pirateatelier:craftsman_ivory_weathered_peg_right",
+      "pirateatelier:craftsman_navy_pristine_peg_right",
+      "pirateatelier:craftsman_navy_weathered_peg_right",
+      "pirateatelier:craftsman_ochre_pristine_peg_right",
+      "pirateatelier:craftsman_ochre_weathered_peg_right",
+      "pirateatelier:craftsman_plum_pristine_peg_right",
+      "pirateatelier:craftsman_plum_weathered_peg_right",
+      "pirateatelier:craftsman_sea_blue_pristine_peg_right",
+      "pirateatelier:craftsman_sea_blue_weathered_peg_right",
+      "pirateatelier:craftsman_teal_pristine_peg_right",
+      "pirateatelier:craftsman_teal_weathered_peg_right",
+      "pirateatelier:craftsman_wine_pristine_peg_right",
+      "pirateatelier:craftsman_wine_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:craftsman_charcoal_tattered_normal",
+    "sha256_geometry_uv": "60eb8fe9f19f4166da1612f13059bfe95618188dcc43a747125163c593cea6c2",
+    "aliases": [
+      "pirateatelier:craftsman_charcoal_tattered_normal",
+      "pirateatelier:craftsman_copper_tattered_normal",
+      "pirateatelier:craftsman_crimson_tattered_normal",
+      "pirateatelier:craftsman_emerald_tattered_normal",
+      "pirateatelier:craftsman_forest_tattered_normal",
+      "pirateatelier:craftsman_ivory_tattered_normal",
+      "pirateatelier:craftsman_navy_tattered_normal",
+      "pirateatelier:craftsman_ochre_tattered_normal",
+      "pirateatelier:craftsman_plum_tattered_normal",
+      "pirateatelier:craftsman_sea_blue_tattered_normal",
+      "pirateatelier:craftsman_teal_tattered_normal",
+      "pirateatelier:craftsman_wine_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:craftsman_charcoal_tattered_peg_left",
+    "sha256_geometry_uv": "c3429cd59a763106c7cb0141901f77340c26682456d863bc99127043f1780fad",
+    "aliases": [
+      "pirateatelier:craftsman_charcoal_tattered_peg_left",
+      "pirateatelier:craftsman_copper_tattered_peg_left",
+      "pirateatelier:craftsman_crimson_tattered_peg_left",
+      "pirateatelier:craftsman_emerald_tattered_peg_left",
+      "pirateatelier:craftsman_forest_tattered_peg_left",
+      "pirateatelier:craftsman_ivory_tattered_peg_left",
+      "pirateatelier:craftsman_navy_tattered_peg_left",
+      "pirateatelier:craftsman_ochre_tattered_peg_left",
+      "pirateatelier:craftsman_plum_tattered_peg_left",
+      "pirateatelier:craftsman_sea_blue_tattered_peg_left",
+      "pirateatelier:craftsman_teal_tattered_peg_left",
+      "pirateatelier:craftsman_wine_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:craftsman_charcoal_tattered_peg_right",
+    "sha256_geometry_uv": "05b7ff450d27aeaca3d035cc6cff712ed7ff302007c9b60da29e24cdfd14fd64",
+    "aliases": [
+      "pirateatelier:craftsman_charcoal_tattered_peg_right",
+      "pirateatelier:craftsman_copper_tattered_peg_right",
+      "pirateatelier:craftsman_crimson_tattered_peg_right",
+      "pirateatelier:craftsman_emerald_tattered_peg_right",
+      "pirateatelier:craftsman_forest_tattered_peg_right",
+      "pirateatelier:craftsman_ivory_tattered_peg_right",
+      "pirateatelier:craftsman_navy_tattered_peg_right",
+      "pirateatelier:craftsman_ochre_tattered_peg_right",
+      "pirateatelier:craftsman_plum_tattered_peg_right",
+      "pirateatelier:craftsman_sea_blue_tattered_peg_right",
+      "pirateatelier:craftsman_teal_tattered_peg_right",
+      "pirateatelier:craftsman_wine_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:crew_gunner_pristine_normal",
+    "sha256_geometry_uv": "9e0c46f97d3fffba7d7abc66551747f59b404f84e4139d9160c2e44076290175",
+    "aliases": [
+      "pirateatelier:crew_gunner_pristine_normal",
+      "pirateatelier:crew_gunner_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:crew_gunner_pristine_peg_left",
+    "sha256_geometry_uv": "ab0febefaade91d82a6f298536b096a88d7637a1da42fc3d3ae458a4ea5c9fae",
+    "aliases": [
+      "pirateatelier:crew_gunner_pristine_peg_left",
+      "pirateatelier:crew_gunner_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:crew_gunner_pristine_peg_right",
+    "sha256_geometry_uv": "1e68437c2441b7ac9bab0ba2770c3cd70e38b8bcaf70fc75e0ecb3d5165f6cb1",
+    "aliases": [
+      "pirateatelier:crew_gunner_pristine_peg_right",
+      "pirateatelier:crew_gunner_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:crew_gunner_tattered_normal",
+    "sha256_geometry_uv": "ad61e078280ffccb3f1479e0c15b0c6b50924407797aff2187543df4dd4df481",
+    "aliases": [
+      "pirateatelier:crew_gunner_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:crew_gunner_tattered_peg_left",
+    "sha256_geometry_uv": "adc8c9e6404756459fd6c13e60b326b52ba0b497d05c208041b71777513e4eb5",
+    "aliases": [
+      "pirateatelier:crew_gunner_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:crew_gunner_tattered_peg_right",
+    "sha256_geometry_uv": "f8dab7d6a839e5011ce1aad2a1cfacee8e20c92e5c045bc4171ffccd877bcf25",
+    "aliases": [
+      "pirateatelier:crew_gunner_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cursed_ghost_armor_pristine_normal",
+    "sha256_geometry_uv": "c22e3b48e26204f8852d6c85ec71e2fa1cb5196c3964bb56e61f72aa8cc19946",
+    "aliases": [
+      "pirateatelier:cursed_ghost_armor_pristine_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cursed_ghost_armor_pristine_peg_left",
+    "sha256_geometry_uv": "ecc933efcda4d9eca1eb8fdf2ebd8f4168e3d62ccdb950856b0aaa3059c1d3b4",
+    "aliases": [
+      "pirateatelier:cursed_ghost_armor_pristine_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cursed_ghost_armor_pristine_peg_right",
+    "sha256_geometry_uv": "777d56aec4019e023aedb29bbefc082e4f4be782a66b31e66b417661264a2fb5",
+    "aliases": [
+      "pirateatelier:cursed_ghost_armor_pristine_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cursed_ghost_armor_tattered_normal",
+    "sha256_geometry_uv": "655a9da5f9dcdb0eae799441732b0d0a14aafe7866116f59ef027b3d970eb20f",
+    "aliases": [
+      "pirateatelier:cursed_ghost_armor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cursed_ghost_armor_tattered_peg_left",
+    "sha256_geometry_uv": "b8cfd93114689ea0bc895aec3bb0d8d73bb7e88bf57f4efccf55d3581810801b",
+    "aliases": [
+      "pirateatelier:cursed_ghost_armor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cursed_ghost_armor_tattered_peg_right",
+    "sha256_geometry_uv": "13786a866f39175eada61c016f8c9bab5eea31260bf873bb9e3e2f2a48ce9189",
+    "aliases": [
+      "pirateatelier:cursed_ghost_armor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cursed_ghost_armor_weathered_normal",
+    "sha256_geometry_uv": "defdbdaf35874a22d0f0b96669edeb8a867ca5ef83d71c067e5d2fde2e1cee1f",
+    "aliases": [
+      "pirateatelier:cursed_ghost_armor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cursed_ghost_armor_weathered_peg_left",
+    "sha256_geometry_uv": "eeaed20b702b6fa14b0fcf38b165e7987f6b9da70568b35b74541e61f3dc658f",
+    "aliases": [
+      "pirateatelier:cursed_ghost_armor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cursed_ghost_armor_weathered_peg_right",
+    "sha256_geometry_uv": "3cfa06a9d4e5a2ee4476dd83b1f614733c7f8f5c5820a75516c988cfcccf56cf",
+    "aliases": [
+      "pirateatelier:cursed_ghost_armor_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cutlass_duelist_armor_pristine_normal",
+    "sha256_geometry_uv": "8a207d07e789571e53a125ad6960e13469924a34eac300ea5ec893793c25e1b6",
+    "aliases": [
+      "pirateatelier:cutlass_duelist_armor_pristine_normal",
+      "pirateatelier:cutlass_duelist_armor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cutlass_duelist_armor_pristine_peg_left",
+    "sha256_geometry_uv": "89128dfa8822cd8eebf93fb7548dd66e66b756548aa2db54879a263be5bc3232",
+    "aliases": [
+      "pirateatelier:cutlass_duelist_armor_pristine_peg_left",
+      "pirateatelier:cutlass_duelist_armor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cutlass_duelist_armor_pristine_peg_right",
+    "sha256_geometry_uv": "90c67b5fac96d223b43891be1eecc6da11cdb2b51b07e127de87b8ae7a89bf00",
+    "aliases": [
+      "pirateatelier:cutlass_duelist_armor_pristine_peg_right",
+      "pirateatelier:cutlass_duelist_armor_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cutlass_duelist_armor_tattered_normal",
+    "sha256_geometry_uv": "a1e72d197cbd20e9b065c1e246e490d2ac4ab4227d22b6e9d11208b5c5e76bc7",
+    "aliases": [
+      "pirateatelier:cutlass_duelist_armor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cutlass_duelist_armor_tattered_peg_left",
+    "sha256_geometry_uv": "75230aea2482f1f42406f39051012b3aa401a6db25b9074cacccfe20bc002a98",
+    "aliases": [
+      "pirateatelier:cutlass_duelist_armor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:cutlass_duelist_armor_tattered_peg_right",
+    "sha256_geometry_uv": "218e9618bd7d09d3e4786abc6c841c21a9f8fe56293e1f5323f0f470a4f10a49",
+    "aliases": [
+      "pirateatelier:cutlass_duelist_armor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_charcoal_pristine_normal",
+    "sha256_geometry_uv": "a5a195ec216475f13127ec55273821c8ddfa3578e5f523a3d4ec623d2002dd56",
+    "aliases": [
+      "pirateatelier:deckhand_charcoal_pristine_normal",
+      "pirateatelier:deckhand_charcoal_weathered_normal",
+      "pirateatelier:deckhand_copper_pristine_normal",
+      "pirateatelier:deckhand_copper_weathered_normal",
+      "pirateatelier:deckhand_crimson_pristine_normal",
+      "pirateatelier:deckhand_crimson_weathered_normal",
+      "pirateatelier:deckhand_emerald_pristine_normal",
+      "pirateatelier:deckhand_emerald_weathered_normal",
+      "pirateatelier:deckhand_forest_pristine_normal",
+      "pirateatelier:deckhand_forest_weathered_normal",
+      "pirateatelier:deckhand_ivory_pristine_normal",
+      "pirateatelier:deckhand_ivory_weathered_normal",
+      "pirateatelier:deckhand_navy_pristine_normal",
+      "pirateatelier:deckhand_navy_weathered_normal",
+      "pirateatelier:deckhand_ochre_pristine_normal",
+      "pirateatelier:deckhand_ochre_weathered_normal",
+      "pirateatelier:deckhand_plum_pristine_normal",
+      "pirateatelier:deckhand_plum_weathered_normal",
+      "pirateatelier:deckhand_sea_blue_pristine_normal",
+      "pirateatelier:deckhand_sea_blue_weathered_normal",
+      "pirateatelier:deckhand_teal_pristine_normal",
+      "pirateatelier:deckhand_teal_weathered_normal",
+      "pirateatelier:deckhand_wine_pristine_normal",
+      "pirateatelier:deckhand_wine_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_charcoal_pristine_peg_left",
+    "sha256_geometry_uv": "a4821db368416654081fedf9e9e2533deb09f90afa7cb12d13ff95fbc32e5df4",
+    "aliases": [
+      "pirateatelier:deckhand_charcoal_pristine_peg_left",
+      "pirateatelier:deckhand_charcoal_weathered_peg_left",
+      "pirateatelier:deckhand_copper_pristine_peg_left",
+      "pirateatelier:deckhand_copper_weathered_peg_left",
+      "pirateatelier:deckhand_crimson_pristine_peg_left",
+      "pirateatelier:deckhand_crimson_weathered_peg_left",
+      "pirateatelier:deckhand_emerald_pristine_peg_left",
+      "pirateatelier:deckhand_emerald_weathered_peg_left",
+      "pirateatelier:deckhand_forest_pristine_peg_left",
+      "pirateatelier:deckhand_forest_weathered_peg_left",
+      "pirateatelier:deckhand_ivory_pristine_peg_left",
+      "pirateatelier:deckhand_ivory_weathered_peg_left",
+      "pirateatelier:deckhand_navy_pristine_peg_left",
+      "pirateatelier:deckhand_navy_weathered_peg_left",
+      "pirateatelier:deckhand_ochre_pristine_peg_left",
+      "pirateatelier:deckhand_ochre_weathered_peg_left",
+      "pirateatelier:deckhand_plum_pristine_peg_left",
+      "pirateatelier:deckhand_plum_weathered_peg_left",
+      "pirateatelier:deckhand_sea_blue_pristine_peg_left",
+      "pirateatelier:deckhand_sea_blue_weathered_peg_left",
+      "pirateatelier:deckhand_teal_pristine_peg_left",
+      "pirateatelier:deckhand_teal_weathered_peg_left",
+      "pirateatelier:deckhand_wine_pristine_peg_left",
+      "pirateatelier:deckhand_wine_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_charcoal_pristine_peg_right",
+    "sha256_geometry_uv": "44e7c8b09626a90f2000db38320f75426afa0f29fe78ca9a87be6bb810ffb899",
+    "aliases": [
+      "pirateatelier:deckhand_charcoal_pristine_peg_right",
+      "pirateatelier:deckhand_charcoal_weathered_peg_right",
+      "pirateatelier:deckhand_copper_pristine_peg_right",
+      "pirateatelier:deckhand_copper_weathered_peg_right",
+      "pirateatelier:deckhand_crimson_pristine_peg_right",
+      "pirateatelier:deckhand_crimson_weathered_peg_right",
+      "pirateatelier:deckhand_emerald_pristine_peg_right",
+      "pirateatelier:deckhand_emerald_weathered_peg_right",
+      "pirateatelier:deckhand_forest_pristine_peg_right",
+      "pirateatelier:deckhand_forest_weathered_peg_right",
+      "pirateatelier:deckhand_ivory_pristine_peg_right",
+      "pirateatelier:deckhand_ivory_weathered_peg_right",
+      "pirateatelier:deckhand_navy_pristine_peg_right",
+      "pirateatelier:deckhand_navy_weathered_peg_right",
+      "pirateatelier:deckhand_ochre_pristine_peg_right",
+      "pirateatelier:deckhand_ochre_weathered_peg_right",
+      "pirateatelier:deckhand_plum_pristine_peg_right",
+      "pirateatelier:deckhand_plum_weathered_peg_right",
+      "pirateatelier:deckhand_sea_blue_pristine_peg_right",
+      "pirateatelier:deckhand_sea_blue_weathered_peg_right",
+      "pirateatelier:deckhand_teal_pristine_peg_right",
+      "pirateatelier:deckhand_teal_weathered_peg_right",
+      "pirateatelier:deckhand_wine_pristine_peg_right",
+      "pirateatelier:deckhand_wine_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_charcoal_tattered_normal",
+    "sha256_geometry_uv": "101dff7fb0d4c4862298707310c64a9fcec59a176cf58b331e914bdcd4e0b24d",
+    "aliases": [
+      "pirateatelier:deckhand_charcoal_tattered_normal",
+      "pirateatelier:deckhand_copper_tattered_normal",
+      "pirateatelier:deckhand_crimson_tattered_normal",
+      "pirateatelier:deckhand_emerald_tattered_normal",
+      "pirateatelier:deckhand_forest_tattered_normal",
+      "pirateatelier:deckhand_ivory_tattered_normal",
+      "pirateatelier:deckhand_navy_tattered_normal",
+      "pirateatelier:deckhand_ochre_tattered_normal",
+      "pirateatelier:deckhand_plum_tattered_normal",
+      "pirateatelier:deckhand_sea_blue_tattered_normal",
+      "pirateatelier:deckhand_teal_tattered_normal",
+      "pirateatelier:deckhand_wine_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_charcoal_tattered_peg_left",
+    "sha256_geometry_uv": "8998f05d58d404b05616ffece90a1628f5c7f974d5775088338e9acb33e0dcaa",
+    "aliases": [
+      "pirateatelier:deckhand_charcoal_tattered_peg_left",
+      "pirateatelier:deckhand_copper_tattered_peg_left",
+      "pirateatelier:deckhand_crimson_tattered_peg_left",
+      "pirateatelier:deckhand_emerald_tattered_peg_left",
+      "pirateatelier:deckhand_forest_tattered_peg_left",
+      "pirateatelier:deckhand_ivory_tattered_peg_left",
+      "pirateatelier:deckhand_navy_tattered_peg_left",
+      "pirateatelier:deckhand_ochre_tattered_peg_left",
+      "pirateatelier:deckhand_plum_tattered_peg_left",
+      "pirateatelier:deckhand_sea_blue_tattered_peg_left",
+      "pirateatelier:deckhand_teal_tattered_peg_left",
+      "pirateatelier:deckhand_wine_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_charcoal_tattered_peg_right",
+    "sha256_geometry_uv": "bcbccb0370b86a0267fa9018edbe5e076a6e9940e32b9232d479ec9b46fc610c",
+    "aliases": [
+      "pirateatelier:deckhand_charcoal_tattered_peg_right",
+      "pirateatelier:deckhand_copper_tattered_peg_right",
+      "pirateatelier:deckhand_crimson_tattered_peg_right",
+      "pirateatelier:deckhand_emerald_tattered_peg_right",
+      "pirateatelier:deckhand_forest_tattered_peg_right",
+      "pirateatelier:deckhand_ivory_tattered_peg_right",
+      "pirateatelier:deckhand_navy_tattered_peg_right",
+      "pirateatelier:deckhand_ochre_tattered_peg_right",
+      "pirateatelier:deckhand_plum_tattered_peg_right",
+      "pirateatelier:deckhand_sea_blue_tattered_peg_right",
+      "pirateatelier:deckhand_teal_tattered_peg_right",
+      "pirateatelier:deckhand_wine_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_f_pristine_normal",
+    "sha256_geometry_uv": "1c3a94789096683079ee0220c161ab6c20d862bb4aaee99a3e265d9b90f4aa8f",
+    "aliases": [
+      "pirateatelier:deckhand_f_pristine_normal",
+      "pirateatelier:deckhand_f_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_f_pristine_peg_left",
+    "sha256_geometry_uv": "e349936cce8e2ddd8a1d7e8c6f0a667ad882c0048ea394735ed7024a7c070793",
+    "aliases": [
+      "pirateatelier:deckhand_f_pristine_peg_left",
+      "pirateatelier:deckhand_f_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_f_pristine_peg_right",
+    "sha256_geometry_uv": "468fb7f319d5211c82fd5925613100d6ba4e5f24dfcde109b8ecdd73b747c655",
+    "aliases": [
+      "pirateatelier:deckhand_f_pristine_peg_right",
+      "pirateatelier:deckhand_f_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_f_tattered_normal",
+    "sha256_geometry_uv": "6824344678afe2f4bccd3df1b7fb0e43a80328f519805a4c76aaaaec03a84bd1",
+    "aliases": [
+      "pirateatelier:deckhand_f_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_f_tattered_peg_left",
+    "sha256_geometry_uv": "8578c8f6d9021ea25784197672321e59274b23ad2eb8320cf97793138d796c81",
+    "aliases": [
+      "pirateatelier:deckhand_f_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_f_tattered_peg_right",
+    "sha256_geometry_uv": "2d648e6553ee82f2aef0e0969b52d57f2027693a89941b9c3aa75a0a66fb9b1b",
+    "aliases": [
+      "pirateatelier:deckhand_f_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_pristine_normal",
+    "sha256_geometry_uv": "596779cfbcbad6b6bfb954c55b3e44d21e0eb24b7f1c2354f94d4c9b6fccb497",
+    "aliases": [
+      "pirateatelier:deckhand_pristine_normal",
+      "pirateatelier:deckhand_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_pristine_peg_left",
+    "sha256_geometry_uv": "e8b0a62a28887866d283c8715e319df07f9b84fee4527c8fbbdbec1fc5b19f7a",
+    "aliases": [
+      "pirateatelier:deckhand_pristine_peg_left",
+      "pirateatelier:deckhand_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_pristine_peg_right",
+    "sha256_geometry_uv": "63239c7eb73119909f7fa1492685642b7c901273d0814a2e70c7fa16e788bda9",
+    "aliases": [
+      "pirateatelier:deckhand_pristine_peg_right",
+      "pirateatelier:deckhand_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_tattered_normal",
+    "sha256_geometry_uv": "bd5ce73b10b1b58519c01be6985ef6e227698e8b636a3d5927b3ea9fa790f1cc",
+    "aliases": [
+      "pirateatelier:deckhand_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_tattered_peg_left",
+    "sha256_geometry_uv": "10b74239ec9c9c46724045b1f8edd1f140c55504fc08c923dc1875c50eaceb44",
+    "aliases": [
+      "pirateatelier:deckhand_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:deckhand_tattered_peg_right",
+    "sha256_geometry_uv": "c597b2abc7ad816aa25bd751f319f6cc48190ff7cce51a4d7a0e50f9d8830b2a",
+    "aliases": [
+      "pirateatelier:deckhand_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:first_mate_armor_pristine_normal",
+    "sha256_geometry_uv": "daa811a8c50a1eca1a7374416ff92f60507c1d32f723ed060a1562056038487d",
+    "aliases": [
+      "pirateatelier:first_mate_armor_pristine_normal",
+      "pirateatelier:first_mate_armor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:first_mate_armor_pristine_peg_left",
+    "sha256_geometry_uv": "43a955d4d3b456babb79f8f9c33c8c109054ff506cec5801337367d2e90b7783",
+    "aliases": [
+      "pirateatelier:first_mate_armor_pristine_peg_left",
+      "pirateatelier:first_mate_armor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:first_mate_armor_pristine_peg_right",
+    "sha256_geometry_uv": "57ec18cfad3d7efaeb962a82c88394e35c325a200ed26d9038d2ec2ab96bcca4",
+    "aliases": [
+      "pirateatelier:first_mate_armor_pristine_peg_right",
+      "pirateatelier:first_mate_armor_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:first_mate_armor_tattered_normal",
+    "sha256_geometry_uv": "eccff0387ad052262c1b504758ac75d1bc94dccd127dacd8b255b1dd48e403b9",
+    "aliases": [
+      "pirateatelier:first_mate_armor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:first_mate_armor_tattered_peg_left",
+    "sha256_geometry_uv": "8923d989001f0984bf565afe04f446a439b1dfe8539145ed76a6ef479a320cdd",
+    "aliases": [
+      "pirateatelier:first_mate_armor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:first_mate_armor_tattered_peg_right",
+    "sha256_geometry_uv": "c597036152b3b64033090fd33acb0ff83c7c1e62b89aa0d0103a660816a7f2c9",
+    "aliases": [
+      "pirateatelier:first_mate_armor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_charcoal_pristine_normal",
+    "sha256_geometry_uv": "d9682a94ed67459a21711bcefa0b51a9b2ccd1dda892dbda5726322af78ee630",
+    "aliases": [
+      "pirateatelier:fisherman_charcoal_pristine_normal",
+      "pirateatelier:fisherman_charcoal_weathered_normal",
+      "pirateatelier:fisherman_copper_pristine_normal",
+      "pirateatelier:fisherman_copper_weathered_normal",
+      "pirateatelier:fisherman_crimson_pristine_normal",
+      "pirateatelier:fisherman_crimson_weathered_normal",
+      "pirateatelier:fisherman_emerald_pristine_normal",
+      "pirateatelier:fisherman_emerald_weathered_normal",
+      "pirateatelier:fisherman_forest_pristine_normal",
+      "pirateatelier:fisherman_forest_weathered_normal",
+      "pirateatelier:fisherman_ivory_pristine_normal",
+      "pirateatelier:fisherman_ivory_weathered_normal",
+      "pirateatelier:fisherman_navy_pristine_normal",
+      "pirateatelier:fisherman_navy_weathered_normal",
+      "pirateatelier:fisherman_ochre_pristine_normal",
+      "pirateatelier:fisherman_ochre_weathered_normal",
+      "pirateatelier:fisherman_plum_pristine_normal",
+      "pirateatelier:fisherman_plum_weathered_normal",
+      "pirateatelier:fisherman_sea_blue_pristine_normal",
+      "pirateatelier:fisherman_sea_blue_weathered_normal",
+      "pirateatelier:fisherman_teal_pristine_normal",
+      "pirateatelier:fisherman_teal_weathered_normal",
+      "pirateatelier:fisherman_wine_pristine_normal",
+      "pirateatelier:fisherman_wine_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_charcoal_pristine_peg_left",
+    "sha256_geometry_uv": "294fba04cede89d8270dfb10854f6c416d49b7188cb7d9bd2d1e7beb0e81e3e8",
+    "aliases": [
+      "pirateatelier:fisherman_charcoal_pristine_peg_left",
+      "pirateatelier:fisherman_charcoal_weathered_peg_left",
+      "pirateatelier:fisherman_copper_pristine_peg_left",
+      "pirateatelier:fisherman_copper_weathered_peg_left",
+      "pirateatelier:fisherman_crimson_pristine_peg_left",
+      "pirateatelier:fisherman_crimson_weathered_peg_left",
+      "pirateatelier:fisherman_emerald_pristine_peg_left",
+      "pirateatelier:fisherman_emerald_weathered_peg_left",
+      "pirateatelier:fisherman_forest_pristine_peg_left",
+      "pirateatelier:fisherman_forest_weathered_peg_left",
+      "pirateatelier:fisherman_ivory_pristine_peg_left",
+      "pirateatelier:fisherman_ivory_weathered_peg_left",
+      "pirateatelier:fisherman_navy_pristine_peg_left",
+      "pirateatelier:fisherman_navy_weathered_peg_left",
+      "pirateatelier:fisherman_ochre_pristine_peg_left",
+      "pirateatelier:fisherman_ochre_weathered_peg_left",
+      "pirateatelier:fisherman_plum_pristine_peg_left",
+      "pirateatelier:fisherman_plum_weathered_peg_left",
+      "pirateatelier:fisherman_sea_blue_pristine_peg_left",
+      "pirateatelier:fisherman_sea_blue_weathered_peg_left",
+      "pirateatelier:fisherman_teal_pristine_peg_left",
+      "pirateatelier:fisherman_teal_weathered_peg_left",
+      "pirateatelier:fisherman_wine_pristine_peg_left",
+      "pirateatelier:fisherman_wine_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_charcoal_pristine_peg_right",
+    "sha256_geometry_uv": "1b53cad65c4d98afe90657c6a1fa9209a9cd1cc0c2d3da1b184c2e8cdf05e137",
+    "aliases": [
+      "pirateatelier:fisherman_charcoal_pristine_peg_right",
+      "pirateatelier:fisherman_charcoal_weathered_peg_right",
+      "pirateatelier:fisherman_copper_pristine_peg_right",
+      "pirateatelier:fisherman_copper_weathered_peg_right",
+      "pirateatelier:fisherman_crimson_pristine_peg_right",
+      "pirateatelier:fisherman_crimson_weathered_peg_right",
+      "pirateatelier:fisherman_emerald_pristine_peg_right",
+      "pirateatelier:fisherman_emerald_weathered_peg_right",
+      "pirateatelier:fisherman_forest_pristine_peg_right",
+      "pirateatelier:fisherman_forest_weathered_peg_right",
+      "pirateatelier:fisherman_ivory_pristine_peg_right",
+      "pirateatelier:fisherman_ivory_weathered_peg_right",
+      "pirateatelier:fisherman_navy_pristine_peg_right",
+      "pirateatelier:fisherman_navy_weathered_peg_right",
+      "pirateatelier:fisherman_ochre_pristine_peg_right",
+      "pirateatelier:fisherman_ochre_weathered_peg_right",
+      "pirateatelier:fisherman_plum_pristine_peg_right",
+      "pirateatelier:fisherman_plum_weathered_peg_right",
+      "pirateatelier:fisherman_sea_blue_pristine_peg_right",
+      "pirateatelier:fisherman_sea_blue_weathered_peg_right",
+      "pirateatelier:fisherman_teal_pristine_peg_right",
+      "pirateatelier:fisherman_teal_weathered_peg_right",
+      "pirateatelier:fisherman_wine_pristine_peg_right",
+      "pirateatelier:fisherman_wine_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_charcoal_tattered_normal",
+    "sha256_geometry_uv": "70e3f4d41b17939a11356aa1de27c77627e1e2ce13acedbfe94f3a75875d1d41",
+    "aliases": [
+      "pirateatelier:fisherman_charcoal_tattered_normal",
+      "pirateatelier:fisherman_copper_tattered_normal",
+      "pirateatelier:fisherman_crimson_tattered_normal",
+      "pirateatelier:fisherman_emerald_tattered_normal",
+      "pirateatelier:fisherman_forest_tattered_normal",
+      "pirateatelier:fisherman_ivory_tattered_normal",
+      "pirateatelier:fisherman_navy_tattered_normal",
+      "pirateatelier:fisherman_ochre_tattered_normal",
+      "pirateatelier:fisherman_plum_tattered_normal",
+      "pirateatelier:fisherman_sea_blue_tattered_normal",
+      "pirateatelier:fisherman_teal_tattered_normal",
+      "pirateatelier:fisherman_wine_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_charcoal_tattered_peg_left",
+    "sha256_geometry_uv": "5d9d8e2932a918d982ed935b8d5a438fb1470821c6e9902bd674f72e54e6394f",
+    "aliases": [
+      "pirateatelier:fisherman_charcoal_tattered_peg_left",
+      "pirateatelier:fisherman_copper_tattered_peg_left",
+      "pirateatelier:fisherman_crimson_tattered_peg_left",
+      "pirateatelier:fisherman_emerald_tattered_peg_left",
+      "pirateatelier:fisherman_forest_tattered_peg_left",
+      "pirateatelier:fisherman_ivory_tattered_peg_left",
+      "pirateatelier:fisherman_navy_tattered_peg_left",
+      "pirateatelier:fisherman_ochre_tattered_peg_left",
+      "pirateatelier:fisherman_plum_tattered_peg_left",
+      "pirateatelier:fisherman_sea_blue_tattered_peg_left",
+      "pirateatelier:fisherman_teal_tattered_peg_left",
+      "pirateatelier:fisherman_wine_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_charcoal_tattered_peg_right",
+    "sha256_geometry_uv": "8407a852bb883b250fd69ee81a463a9ba9da47985730ea64726256ad29439588",
+    "aliases": [
+      "pirateatelier:fisherman_charcoal_tattered_peg_right",
+      "pirateatelier:fisherman_copper_tattered_peg_right",
+      "pirateatelier:fisherman_crimson_tattered_peg_right",
+      "pirateatelier:fisherman_emerald_tattered_peg_right",
+      "pirateatelier:fisherman_forest_tattered_peg_right",
+      "pirateatelier:fisherman_ivory_tattered_peg_right",
+      "pirateatelier:fisherman_navy_tattered_peg_right",
+      "pirateatelier:fisherman_ochre_tattered_peg_right",
+      "pirateatelier:fisherman_plum_tattered_peg_right",
+      "pirateatelier:fisherman_sea_blue_tattered_peg_right",
+      "pirateatelier:fisherman_teal_tattered_peg_right",
+      "pirateatelier:fisherman_wine_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_pirate_pristine_normal",
+    "sha256_geometry_uv": "e718a332a1774eb242525f6d961fc426a772475967771fe34d38515dd02c3740",
+    "aliases": [
+      "pirateatelier:fisherman_pirate_pristine_normal",
+      "pirateatelier:fisherman_pirate_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_pirate_pristine_peg_left",
+    "sha256_geometry_uv": "cc940ce4de0935dc49a228c4a8d8e9495a26e10fe44fb0711e08275656eebf56",
+    "aliases": [
+      "pirateatelier:fisherman_pirate_pristine_peg_left",
+      "pirateatelier:fisherman_pirate_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_pirate_pristine_peg_right",
+    "sha256_geometry_uv": "5d20f75b4d0f0c5dcac25ef8aa6287a5176e6d8386756938d010023e68145f0a",
+    "aliases": [
+      "pirateatelier:fisherman_pirate_pristine_peg_right",
+      "pirateatelier:fisherman_pirate_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_pirate_tattered_normal",
+    "sha256_geometry_uv": "bcd155fc85f6be14a6eb5534f3d273e4f16d469ac03fefbdbe492757cf2662b3",
+    "aliases": [
+      "pirateatelier:fisherman_pirate_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_pirate_tattered_peg_left",
+    "sha256_geometry_uv": "376bff0daa7a996023ee5f0b6580506649b4b726c1c7d9400e3a52842c30c0a0",
+    "aliases": [
+      "pirateatelier:fisherman_pirate_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:fisherman_pirate_tattered_peg_right",
+    "sha256_geometry_uv": "ade0fffe7d8194d6765cd257c30d287311ec33d6eaf080bf1461761ec5ae93ca",
+    "aliases": [
+      "pirateatelier:fisherman_pirate_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:gunner_armor_pristine_normal",
+    "sha256_geometry_uv": "ed1825deeb629d1f1e7ac19d29a3e6193783676f853a17bd31b13d95d4d20d01",
+    "aliases": [
+      "pirateatelier:gunner_armor_pristine_normal",
+      "pirateatelier:gunner_armor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:gunner_armor_pristine_peg_left",
+    "sha256_geometry_uv": "4f3723dc1f591b55b39859eeccdd5f5104bcda21261d004dd1de1373549aa2a4",
+    "aliases": [
+      "pirateatelier:gunner_armor_pristine_peg_left",
+      "pirateatelier:gunner_armor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:gunner_armor_pristine_peg_right",
+    "sha256_geometry_uv": "1d8223cbb7b3fe695d2b93e9bd3e1f8ba00ae2e6dc2d27af1a280184a6769813",
+    "aliases": [
+      "pirateatelier:gunner_armor_pristine_peg_right",
+      "pirateatelier:gunner_armor_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:gunner_armor_tattered_normal",
+    "sha256_geometry_uv": "9d8de1f2e760e25a167c5095afc59653a87eb324e6a5046770aeaef96aca8c12",
+    "aliases": [
+      "pirateatelier:gunner_armor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:gunner_armor_tattered_peg_left",
+    "sha256_geometry_uv": "947855cc6226496460340e1da8fdc99c63f1fd128b86105af6a64b3db52fde6a",
+    "aliases": [
+      "pirateatelier:gunner_armor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:gunner_armor_tattered_peg_right",
+    "sha256_geometry_uv": "7c03ffa60f1b955b7da637819f9eb90dbadaa4864a8e2403a82f795381a59c71",
+    "aliases": [
+      "pirateatelier:gunner_armor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:harbor_merchant_pristine_normal",
+    "sha256_geometry_uv": "ff7a71f2bdfd7c33ad2c5e87729a5842d1d8f4525e35687f07e97e5c1967c83d",
+    "aliases": [
+      "pirateatelier:harbor_merchant_pristine_normal",
+      "pirateatelier:harbor_merchant_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:harbor_merchant_pristine_peg_left",
+    "sha256_geometry_uv": "84528bb4c1ee5582be7667b6c8d06da926111a28004e82860c7339b10dd0c199",
+    "aliases": [
+      "pirateatelier:harbor_merchant_pristine_peg_left",
+      "pirateatelier:harbor_merchant_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:harbor_merchant_pristine_peg_right",
+    "sha256_geometry_uv": "0b0ee074aec7788685a099950ab6861f9ce1a00281d7abaecad8750286352c94",
+    "aliases": [
+      "pirateatelier:harbor_merchant_pristine_peg_right",
+      "pirateatelier:harbor_merchant_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:harbor_merchant_tattered_normal",
+    "sha256_geometry_uv": "e9c8520a4003dd9ab9ca9955163ca687dd6ae9a08e48695f005dbd90346725c6",
+    "aliases": [
+      "pirateatelier:harbor_merchant_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:harbor_merchant_tattered_peg_left",
+    "sha256_geometry_uv": "900a97068c065e76d4edb1687416e47dc9c0a73356092b417790b2091d82920c",
+    "aliases": [
+      "pirateatelier:harbor_merchant_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:harbor_merchant_tattered_peg_right",
+    "sha256_geometry_uv": "9879bb6d92d875640455ba0e4e4d93123a6d17663eb7470b070ff084494be584",
+    "aliases": [
+      "pirateatelier:harbor_merchant_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:heavy_bruiser_armor_pristine_normal",
+    "sha256_geometry_uv": "1a1bcc83d22b32296517db8e3df5e32e0dc0926fc6c1865a6d31529be6beba0f",
+    "aliases": [
+      "pirateatelier:heavy_bruiser_armor_pristine_normal",
+      "pirateatelier:heavy_bruiser_armor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:heavy_bruiser_armor_pristine_peg_left",
+    "sha256_geometry_uv": "1db208d309b26ca027b45e486372d4b3ce9bf64887a86ac0fc9e2015f8fef041",
+    "aliases": [
+      "pirateatelier:heavy_bruiser_armor_pristine_peg_left",
+      "pirateatelier:heavy_bruiser_armor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:heavy_bruiser_armor_pristine_peg_right",
+    "sha256_geometry_uv": "1cec2e0dd53e42c84f8d8274c55d02a64f52a9714dec6ad3944613c1ec19a401",
+    "aliases": [
+      "pirateatelier:heavy_bruiser_armor_pristine_peg_right",
+      "pirateatelier:heavy_bruiser_armor_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:heavy_bruiser_armor_tattered_normal",
+    "sha256_geometry_uv": "f2b48fa9b4e515df40fd89409112b1ae5e71c94733317ecba00d43a4668694f1",
+    "aliases": [
+      "pirateatelier:heavy_bruiser_armor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:heavy_bruiser_armor_tattered_peg_left",
+    "sha256_geometry_uv": "c9dc23b0c34939310e996069387ea41a77d65d4a4848f8a83d09c53b80b27dda",
+    "aliases": [
+      "pirateatelier:heavy_bruiser_armor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:heavy_bruiser_armor_tattered_peg_right",
+    "sha256_geometry_uv": "2b25e25ddcc8d6ea3c4d09996dc4e25eae7f68fd4a60c05a2072ade9fefcfbb8",
+    "aliases": [
+      "pirateatelier:heavy_bruiser_armor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:merchant_charcoal_pristine_normal",
+    "sha256_geometry_uv": "46a0af2dc45e20655b78acbaf8d28d8b2e30fd31006dfec518efbb7600dcd382",
+    "aliases": [
+      "pirateatelier:merchant_charcoal_pristine_normal",
+      "pirateatelier:merchant_charcoal_weathered_normal",
+      "pirateatelier:merchant_copper_pristine_normal",
+      "pirateatelier:merchant_copper_weathered_normal",
+      "pirateatelier:merchant_crimson_pristine_normal",
+      "pirateatelier:merchant_crimson_weathered_normal",
+      "pirateatelier:merchant_emerald_pristine_normal",
+      "pirateatelier:merchant_emerald_weathered_normal",
+      "pirateatelier:merchant_forest_pristine_normal",
+      "pirateatelier:merchant_forest_weathered_normal",
+      "pirateatelier:merchant_ivory_pristine_normal",
+      "pirateatelier:merchant_ivory_weathered_normal",
+      "pirateatelier:merchant_navy_pristine_normal",
+      "pirateatelier:merchant_navy_weathered_normal",
+      "pirateatelier:merchant_ochre_pristine_normal",
+      "pirateatelier:merchant_ochre_weathered_normal",
+      "pirateatelier:merchant_plum_pristine_normal",
+      "pirateatelier:merchant_plum_weathered_normal",
+      "pirateatelier:merchant_sea_blue_pristine_normal",
+      "pirateatelier:merchant_sea_blue_weathered_normal",
+      "pirateatelier:merchant_teal_pristine_normal",
+      "pirateatelier:merchant_teal_weathered_normal",
+      "pirateatelier:merchant_wine_pristine_normal",
+      "pirateatelier:merchant_wine_weathered_normal",
+      "pirateatelier:pirate_charcoal_pristine_normal",
+      "pirateatelier:pirate_charcoal_weathered_normal",
+      "pirateatelier:pirate_copper_pristine_normal",
+      "pirateatelier:pirate_copper_weathered_normal",
+      "pirateatelier:pirate_crimson_pristine_normal",
+      "pirateatelier:pirate_crimson_weathered_normal",
+      "pirateatelier:pirate_emerald_pristine_normal",
+      "pirateatelier:pirate_emerald_weathered_normal",
+      "pirateatelier:pirate_forest_pristine_normal",
+      "pirateatelier:pirate_forest_weathered_normal",
+      "pirateatelier:pirate_ivory_pristine_normal",
+      "pirateatelier:pirate_ivory_weathered_normal",
+      "pirateatelier:pirate_navy_pristine_normal",
+      "pirateatelier:pirate_navy_weathered_normal",
+      "pirateatelier:pirate_ochre_pristine_normal",
+      "pirateatelier:pirate_ochre_weathered_normal",
+      "pirateatelier:pirate_plum_pristine_normal",
+      "pirateatelier:pirate_plum_weathered_normal",
+      "pirateatelier:pirate_sea_blue_pristine_normal",
+      "pirateatelier:pirate_sea_blue_weathered_normal",
+      "pirateatelier:pirate_teal_pristine_normal",
+      "pirateatelier:pirate_teal_weathered_normal",
+      "pirateatelier:pirate_wine_pristine_normal",
+      "pirateatelier:pirate_wine_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:merchant_charcoal_pristine_peg_left",
+    "sha256_geometry_uv": "7abccf7cc58f2d8edcea72778b4dc8cc2670c035f2acf8b125078f21a78f9171",
+    "aliases": [
+      "pirateatelier:merchant_charcoal_pristine_peg_left",
+      "pirateatelier:merchant_charcoal_weathered_peg_left",
+      "pirateatelier:merchant_copper_pristine_peg_left",
+      "pirateatelier:merchant_copper_weathered_peg_left",
+      "pirateatelier:merchant_crimson_pristine_peg_left",
+      "pirateatelier:merchant_crimson_weathered_peg_left",
+      "pirateatelier:merchant_emerald_pristine_peg_left",
+      "pirateatelier:merchant_emerald_weathered_peg_left",
+      "pirateatelier:merchant_forest_pristine_peg_left",
+      "pirateatelier:merchant_forest_weathered_peg_left",
+      "pirateatelier:merchant_ivory_pristine_peg_left",
+      "pirateatelier:merchant_ivory_weathered_peg_left",
+      "pirateatelier:merchant_navy_pristine_peg_left",
+      "pirateatelier:merchant_navy_weathered_peg_left",
+      "pirateatelier:merchant_ochre_pristine_peg_left",
+      "pirateatelier:merchant_ochre_weathered_peg_left",
+      "pirateatelier:merchant_plum_pristine_peg_left",
+      "pirateatelier:merchant_plum_weathered_peg_left",
+      "pirateatelier:merchant_sea_blue_pristine_peg_left",
+      "pirateatelier:merchant_sea_blue_weathered_peg_left",
+      "pirateatelier:merchant_teal_pristine_peg_left",
+      "pirateatelier:merchant_teal_weathered_peg_left",
+      "pirateatelier:merchant_wine_pristine_peg_left",
+      "pirateatelier:merchant_wine_weathered_peg_left",
+      "pirateatelier:pirate_charcoal_pristine_peg_left",
+      "pirateatelier:pirate_charcoal_weathered_peg_left",
+      "pirateatelier:pirate_copper_pristine_peg_left",
+      "pirateatelier:pirate_copper_weathered_peg_left",
+      "pirateatelier:pirate_crimson_pristine_peg_left",
+      "pirateatelier:pirate_crimson_weathered_peg_left",
+      "pirateatelier:pirate_emerald_pristine_peg_left",
+      "pirateatelier:pirate_emerald_weathered_peg_left",
+      "pirateatelier:pirate_forest_pristine_peg_left",
+      "pirateatelier:pirate_forest_weathered_peg_left",
+      "pirateatelier:pirate_ivory_pristine_peg_left",
+      "pirateatelier:pirate_ivory_weathered_peg_left",
+      "pirateatelier:pirate_navy_pristine_peg_left",
+      "pirateatelier:pirate_navy_weathered_peg_left",
+      "pirateatelier:pirate_ochre_pristine_peg_left",
+      "pirateatelier:pirate_ochre_weathered_peg_left",
+      "pirateatelier:pirate_plum_pristine_peg_left",
+      "pirateatelier:pirate_plum_weathered_peg_left",
+      "pirateatelier:pirate_sea_blue_pristine_peg_left",
+      "pirateatelier:pirate_sea_blue_weathered_peg_left",
+      "pirateatelier:pirate_teal_pristine_peg_left",
+      "pirateatelier:pirate_teal_weathered_peg_left",
+      "pirateatelier:pirate_wine_pristine_peg_left",
+      "pirateatelier:pirate_wine_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:merchant_charcoal_pristine_peg_right",
+    "sha256_geometry_uv": "a28a159eb92d3b915321791cd4880db612698fa481d46bdad656ebf0038c58d5",
+    "aliases": [
+      "pirateatelier:merchant_charcoal_pristine_peg_right",
+      "pirateatelier:merchant_charcoal_weathered_peg_right",
+      "pirateatelier:merchant_copper_pristine_peg_right",
+      "pirateatelier:merchant_copper_weathered_peg_right",
+      "pirateatelier:merchant_crimson_pristine_peg_right",
+      "pirateatelier:merchant_crimson_weathered_peg_right",
+      "pirateatelier:merchant_emerald_pristine_peg_right",
+      "pirateatelier:merchant_emerald_weathered_peg_right",
+      "pirateatelier:merchant_forest_pristine_peg_right",
+      "pirateatelier:merchant_forest_weathered_peg_right",
+      "pirateatelier:merchant_ivory_pristine_peg_right",
+      "pirateatelier:merchant_ivory_weathered_peg_right",
+      "pirateatelier:merchant_navy_pristine_peg_right",
+      "pirateatelier:merchant_navy_weathered_peg_right",
+      "pirateatelier:merchant_ochre_pristine_peg_right",
+      "pirateatelier:merchant_ochre_weathered_peg_right",
+      "pirateatelier:merchant_plum_pristine_peg_right",
+      "pirateatelier:merchant_plum_weathered_peg_right",
+      "pirateatelier:merchant_sea_blue_pristine_peg_right",
+      "pirateatelier:merchant_sea_blue_weathered_peg_right",
+      "pirateatelier:merchant_teal_pristine_peg_right",
+      "pirateatelier:merchant_teal_weathered_peg_right",
+      "pirateatelier:merchant_wine_pristine_peg_right",
+      "pirateatelier:merchant_wine_weathered_peg_right",
+      "pirateatelier:pirate_charcoal_pristine_peg_right",
+      "pirateatelier:pirate_charcoal_weathered_peg_right",
+      "pirateatelier:pirate_copper_pristine_peg_right",
+      "pirateatelier:pirate_copper_weathered_peg_right",
+      "pirateatelier:pirate_crimson_pristine_peg_right",
+      "pirateatelier:pirate_crimson_weathered_peg_right",
+      "pirateatelier:pirate_emerald_pristine_peg_right",
+      "pirateatelier:pirate_emerald_weathered_peg_right",
+      "pirateatelier:pirate_forest_pristine_peg_right",
+      "pirateatelier:pirate_forest_weathered_peg_right",
+      "pirateatelier:pirate_ivory_pristine_peg_right",
+      "pirateatelier:pirate_ivory_weathered_peg_right",
+      "pirateatelier:pirate_navy_pristine_peg_right",
+      "pirateatelier:pirate_navy_weathered_peg_right",
+      "pirateatelier:pirate_ochre_pristine_peg_right",
+      "pirateatelier:pirate_ochre_weathered_peg_right",
+      "pirateatelier:pirate_plum_pristine_peg_right",
+      "pirateatelier:pirate_plum_weathered_peg_right",
+      "pirateatelier:pirate_sea_blue_pristine_peg_right",
+      "pirateatelier:pirate_sea_blue_weathered_peg_right",
+      "pirateatelier:pirate_teal_pristine_peg_right",
+      "pirateatelier:pirate_teal_weathered_peg_right",
+      "pirateatelier:pirate_wine_pristine_peg_right",
+      "pirateatelier:pirate_wine_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:merchant_charcoal_tattered_normal",
+    "sha256_geometry_uv": "d887711577be3c6ec0126bd83dbe7046c9af26116d99ca833ff27f6df627e09f",
+    "aliases": [
+      "pirateatelier:merchant_charcoal_tattered_normal",
+      "pirateatelier:merchant_copper_tattered_normal",
+      "pirateatelier:merchant_crimson_tattered_normal",
+      "pirateatelier:merchant_emerald_tattered_normal",
+      "pirateatelier:merchant_forest_tattered_normal",
+      "pirateatelier:merchant_ivory_tattered_normal",
+      "pirateatelier:merchant_navy_tattered_normal",
+      "pirateatelier:merchant_ochre_tattered_normal",
+      "pirateatelier:merchant_plum_tattered_normal",
+      "pirateatelier:merchant_sea_blue_tattered_normal",
+      "pirateatelier:merchant_teal_tattered_normal",
+      "pirateatelier:merchant_wine_tattered_normal",
+      "pirateatelier:pirate_charcoal_tattered_normal",
+      "pirateatelier:pirate_copper_tattered_normal",
+      "pirateatelier:pirate_crimson_tattered_normal",
+      "pirateatelier:pirate_emerald_tattered_normal",
+      "pirateatelier:pirate_forest_tattered_normal",
+      "pirateatelier:pirate_ivory_tattered_normal",
+      "pirateatelier:pirate_navy_tattered_normal",
+      "pirateatelier:pirate_ochre_tattered_normal",
+      "pirateatelier:pirate_plum_tattered_normal",
+      "pirateatelier:pirate_sea_blue_tattered_normal",
+      "pirateatelier:pirate_teal_tattered_normal",
+      "pirateatelier:pirate_wine_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:merchant_charcoal_tattered_peg_left",
+    "sha256_geometry_uv": "01ffeb2bba58cc64ad282b3f6d46b5317de28acb273c3558f355e0b7adb8d779",
+    "aliases": [
+      "pirateatelier:merchant_charcoal_tattered_peg_left",
+      "pirateatelier:merchant_copper_tattered_peg_left",
+      "pirateatelier:merchant_crimson_tattered_peg_left",
+      "pirateatelier:merchant_emerald_tattered_peg_left",
+      "pirateatelier:merchant_forest_tattered_peg_left",
+      "pirateatelier:merchant_ivory_tattered_peg_left",
+      "pirateatelier:merchant_navy_tattered_peg_left",
+      "pirateatelier:merchant_ochre_tattered_peg_left",
+      "pirateatelier:merchant_plum_tattered_peg_left",
+      "pirateatelier:merchant_sea_blue_tattered_peg_left",
+      "pirateatelier:merchant_teal_tattered_peg_left",
+      "pirateatelier:merchant_wine_tattered_peg_left",
+      "pirateatelier:pirate_charcoal_tattered_peg_left",
+      "pirateatelier:pirate_copper_tattered_peg_left",
+      "pirateatelier:pirate_crimson_tattered_peg_left",
+      "pirateatelier:pirate_emerald_tattered_peg_left",
+      "pirateatelier:pirate_forest_tattered_peg_left",
+      "pirateatelier:pirate_ivory_tattered_peg_left",
+      "pirateatelier:pirate_navy_tattered_peg_left",
+      "pirateatelier:pirate_ochre_tattered_peg_left",
+      "pirateatelier:pirate_plum_tattered_peg_left",
+      "pirateatelier:pirate_sea_blue_tattered_peg_left",
+      "pirateatelier:pirate_teal_tattered_peg_left",
+      "pirateatelier:pirate_wine_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:merchant_charcoal_tattered_peg_right",
+    "sha256_geometry_uv": "274cb6c4946fe67d3b45e755097452e22b4b96b97a7cb34d498c0cf5e9e56294",
+    "aliases": [
+      "pirateatelier:merchant_charcoal_tattered_peg_right",
+      "pirateatelier:merchant_copper_tattered_peg_right",
+      "pirateatelier:merchant_crimson_tattered_peg_right",
+      "pirateatelier:merchant_emerald_tattered_peg_right",
+      "pirateatelier:merchant_forest_tattered_peg_right",
+      "pirateatelier:merchant_ivory_tattered_peg_right",
+      "pirateatelier:merchant_navy_tattered_peg_right",
+      "pirateatelier:merchant_ochre_tattered_peg_right",
+      "pirateatelier:merchant_plum_tattered_peg_right",
+      "pirateatelier:merchant_sea_blue_tattered_peg_right",
+      "pirateatelier:merchant_teal_tattered_peg_right",
+      "pirateatelier:merchant_wine_tattered_peg_right",
+      "pirateatelier:pirate_charcoal_tattered_peg_right",
+      "pirateatelier:pirate_copper_tattered_peg_right",
+      "pirateatelier:pirate_crimson_tattered_peg_right",
+      "pirateatelier:pirate_emerald_tattered_peg_right",
+      "pirateatelier:pirate_forest_tattered_peg_right",
+      "pirateatelier:pirate_ivory_tattered_peg_right",
+      "pirateatelier:pirate_navy_tattered_peg_right",
+      "pirateatelier:pirate_ochre_tattered_peg_right",
+      "pirateatelier:pirate_plum_tattered_peg_right",
+      "pirateatelier:pirate_sea_blue_tattered_peg_right",
+      "pirateatelier:pirate_teal_tattered_peg_right",
+      "pirateatelier:pirate_wine_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:naval_officer_armor_pristine_normal",
+    "sha256_geometry_uv": "f88da47b6571649f12ec4ea49879728ce2d901a219cb9d5dd9c19000b6c0a3ef",
+    "aliases": [
+      "pirateatelier:naval_officer_armor_pristine_normal",
+      "pirateatelier:naval_officer_armor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:naval_officer_armor_pristine_peg_left",
+    "sha256_geometry_uv": "07a1638b0bdc3e049edaf2ab6938b9fb77a81a4d5936bb15f867e5764142cd11",
+    "aliases": [
+      "pirateatelier:naval_officer_armor_pristine_peg_left",
+      "pirateatelier:naval_officer_armor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:naval_officer_armor_pristine_peg_right",
+    "sha256_geometry_uv": "c252c6f8f4d2f92b42ad38db29661caadd7a1366f3bfaf3645c2e8974fa04deb",
+    "aliases": [
+      "pirateatelier:naval_officer_armor_pristine_peg_right",
+      "pirateatelier:naval_officer_armor_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:naval_officer_armor_tattered_normal",
+    "sha256_geometry_uv": "8b1059f96fba0f943279d83f1b9a23754828c71ad8dde92863b78cc050eb356d",
+    "aliases": [
+      "pirateatelier:naval_officer_armor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:naval_officer_armor_tattered_peg_left",
+    "sha256_geometry_uv": "5c28f23e4e9416cb2a8be9a23572ff531ee12913d72fc87892f307f0396b6b0b",
+    "aliases": [
+      "pirateatelier:naval_officer_armor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:naval_officer_armor_tattered_peg_right",
+    "sha256_geometry_uv": "a478520d8f72f982b74474476d4c592f2d45933b3a70c1b9b139c35df39a13aa",
+    "aliases": [
+      "pirateatelier:naval_officer_armor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:nordic_charcoal_pristine_normal",
+    "sha256_geometry_uv": "e397dfc7b651d1f56a2e569c8344ce32e87857f4f2ce36c20c03cc701af17174",
+    "aliases": [
+      "pirateatelier:nordic_charcoal_pristine_normal",
+      "pirateatelier:nordic_charcoal_weathered_normal",
+      "pirateatelier:nordic_copper_pristine_normal",
+      "pirateatelier:nordic_copper_weathered_normal",
+      "pirateatelier:nordic_crimson_pristine_normal",
+      "pirateatelier:nordic_crimson_weathered_normal",
+      "pirateatelier:nordic_emerald_pristine_normal",
+      "pirateatelier:nordic_emerald_weathered_normal",
+      "pirateatelier:nordic_forest_pristine_normal",
+      "pirateatelier:nordic_forest_weathered_normal",
+      "pirateatelier:nordic_ivory_pristine_normal",
+      "pirateatelier:nordic_ivory_weathered_normal",
+      "pirateatelier:nordic_navy_pristine_normal",
+      "pirateatelier:nordic_navy_weathered_normal",
+      "pirateatelier:nordic_ochre_pristine_normal",
+      "pirateatelier:nordic_ochre_weathered_normal",
+      "pirateatelier:nordic_plum_pristine_normal",
+      "pirateatelier:nordic_plum_weathered_normal",
+      "pirateatelier:nordic_sea_blue_pristine_normal",
+      "pirateatelier:nordic_sea_blue_weathered_normal",
+      "pirateatelier:nordic_teal_pristine_normal",
+      "pirateatelier:nordic_teal_weathered_normal",
+      "pirateatelier:nordic_wine_pristine_normal",
+      "pirateatelier:nordic_wine_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:nordic_charcoal_pristine_peg_left",
+    "sha256_geometry_uv": "9533833f9e1d2737bcf770bbd5825f4715dedcf289d6041f016ff0c7070e7af8",
+    "aliases": [
+      "pirateatelier:nordic_charcoal_pristine_peg_left",
+      "pirateatelier:nordic_charcoal_weathered_peg_left",
+      "pirateatelier:nordic_copper_pristine_peg_left",
+      "pirateatelier:nordic_copper_weathered_peg_left",
+      "pirateatelier:nordic_crimson_pristine_peg_left",
+      "pirateatelier:nordic_crimson_weathered_peg_left",
+      "pirateatelier:nordic_emerald_pristine_peg_left",
+      "pirateatelier:nordic_emerald_weathered_peg_left",
+      "pirateatelier:nordic_forest_pristine_peg_left",
+      "pirateatelier:nordic_forest_weathered_peg_left",
+      "pirateatelier:nordic_ivory_pristine_peg_left",
+      "pirateatelier:nordic_ivory_weathered_peg_left",
+      "pirateatelier:nordic_navy_pristine_peg_left",
+      "pirateatelier:nordic_navy_weathered_peg_left",
+      "pirateatelier:nordic_ochre_pristine_peg_left",
+      "pirateatelier:nordic_ochre_weathered_peg_left",
+      "pirateatelier:nordic_plum_pristine_peg_left",
+      "pirateatelier:nordic_plum_weathered_peg_left",
+      "pirateatelier:nordic_sea_blue_pristine_peg_left",
+      "pirateatelier:nordic_sea_blue_weathered_peg_left",
+      "pirateatelier:nordic_teal_pristine_peg_left",
+      "pirateatelier:nordic_teal_weathered_peg_left",
+      "pirateatelier:nordic_wine_pristine_peg_left",
+      "pirateatelier:nordic_wine_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:nordic_charcoal_pristine_peg_right",
+    "sha256_geometry_uv": "aed85d527836ed0dd315982f6443a1031fb8f602dc6735c69afd2c7ab39217e7",
+    "aliases": [
+      "pirateatelier:nordic_charcoal_pristine_peg_right",
+      "pirateatelier:nordic_charcoal_weathered_peg_right",
+      "pirateatelier:nordic_copper_pristine_peg_right",
+      "pirateatelier:nordic_copper_weathered_peg_right",
+      "pirateatelier:nordic_crimson_pristine_peg_right",
+      "pirateatelier:nordic_crimson_weathered_peg_right",
+      "pirateatelier:nordic_emerald_pristine_peg_right",
+      "pirateatelier:nordic_emerald_weathered_peg_right",
+      "pirateatelier:nordic_forest_pristine_peg_right",
+      "pirateatelier:nordic_forest_weathered_peg_right",
+      "pirateatelier:nordic_ivory_pristine_peg_right",
+      "pirateatelier:nordic_ivory_weathered_peg_right",
+      "pirateatelier:nordic_navy_pristine_peg_right",
+      "pirateatelier:nordic_navy_weathered_peg_right",
+      "pirateatelier:nordic_ochre_pristine_peg_right",
+      "pirateatelier:nordic_ochre_weathered_peg_right",
+      "pirateatelier:nordic_plum_pristine_peg_right",
+      "pirateatelier:nordic_plum_weathered_peg_right",
+      "pirateatelier:nordic_sea_blue_pristine_peg_right",
+      "pirateatelier:nordic_sea_blue_weathered_peg_right",
+      "pirateatelier:nordic_teal_pristine_peg_right",
+      "pirateatelier:nordic_teal_weathered_peg_right",
+      "pirateatelier:nordic_wine_pristine_peg_right",
+      "pirateatelier:nordic_wine_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:nordic_charcoal_tattered_normal",
+    "sha256_geometry_uv": "22554a697b01b15d726d85c892691485cf827bcdb770771e0372223e0931888b",
+    "aliases": [
+      "pirateatelier:nordic_charcoal_tattered_normal",
+      "pirateatelier:nordic_copper_tattered_normal",
+      "pirateatelier:nordic_crimson_tattered_normal",
+      "pirateatelier:nordic_emerald_tattered_normal",
+      "pirateatelier:nordic_forest_tattered_normal",
+      "pirateatelier:nordic_ivory_tattered_normal",
+      "pirateatelier:nordic_navy_tattered_normal",
+      "pirateatelier:nordic_ochre_tattered_normal",
+      "pirateatelier:nordic_plum_tattered_normal",
+      "pirateatelier:nordic_sea_blue_tattered_normal",
+      "pirateatelier:nordic_teal_tattered_normal",
+      "pirateatelier:nordic_wine_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:nordic_charcoal_tattered_peg_left",
+    "sha256_geometry_uv": "cc0afd3e3013b989c44fff0ad00f29541d43bb7999434a498bb0e3d6137d907a",
+    "aliases": [
+      "pirateatelier:nordic_charcoal_tattered_peg_left",
+      "pirateatelier:nordic_copper_tattered_peg_left",
+      "pirateatelier:nordic_crimson_tattered_peg_left",
+      "pirateatelier:nordic_emerald_tattered_peg_left",
+      "pirateatelier:nordic_forest_tattered_peg_left",
+      "pirateatelier:nordic_ivory_tattered_peg_left",
+      "pirateatelier:nordic_navy_tattered_peg_left",
+      "pirateatelier:nordic_ochre_tattered_peg_left",
+      "pirateatelier:nordic_plum_tattered_peg_left",
+      "pirateatelier:nordic_sea_blue_tattered_peg_left",
+      "pirateatelier:nordic_teal_tattered_peg_left",
+      "pirateatelier:nordic_wine_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:nordic_charcoal_tattered_peg_right",
+    "sha256_geometry_uv": "7b0cdf3784955359605489df2cb36bdb65221c55ee5b4b1aac713e79a44c15e1",
+    "aliases": [
+      "pirateatelier:nordic_charcoal_tattered_peg_right",
+      "pirateatelier:nordic_copper_tattered_peg_right",
+      "pirateatelier:nordic_crimson_tattered_peg_right",
+      "pirateatelier:nordic_emerald_tattered_peg_right",
+      "pirateatelier:nordic_forest_tattered_peg_right",
+      "pirateatelier:nordic_ivory_tattered_peg_right",
+      "pirateatelier:nordic_navy_tattered_peg_right",
+      "pirateatelier:nordic_ochre_tattered_peg_right",
+      "pirateatelier:nordic_plum_tattered_peg_right",
+      "pirateatelier:nordic_sea_blue_tattered_peg_right",
+      "pirateatelier:nordic_teal_tattered_peg_right",
+      "pirateatelier:nordic_wine_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:quartermaster_armor_pristine_normal",
+    "sha256_geometry_uv": "eeb1bb04334e750dc199c03c892d64dd51930110a6d3e60569bbbf84b8212027",
+    "aliases": [
+      "pirateatelier:quartermaster_armor_pristine_normal",
+      "pirateatelier:quartermaster_armor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:quartermaster_armor_pristine_peg_left",
+    "sha256_geometry_uv": "043908ca602e87eca079de2757ada65b2bd3b1926ecb2979cf53cce0dbc0b37c",
+    "aliases": [
+      "pirateatelier:quartermaster_armor_pristine_peg_left",
+      "pirateatelier:quartermaster_armor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:quartermaster_armor_pristine_peg_right",
+    "sha256_geometry_uv": "4366f214c5066309eff19bc928b6f9f102af44766b92437b0aafc1865ce88d1e",
+    "aliases": [
+      "pirateatelier:quartermaster_armor_pristine_peg_right",
+      "pirateatelier:quartermaster_armor_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:quartermaster_armor_tattered_normal",
+    "sha256_geometry_uv": "c0aecf40705777fd56cbedf20673b9f7bec40e00ca5f95fb12b7436a870b65cb",
+    "aliases": [
+      "pirateatelier:quartermaster_armor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:quartermaster_armor_tattered_peg_left",
+    "sha256_geometry_uv": "5784cb4ce49d374bfeca89af7785636edc8fc22d651c2b20fd95516520fcbe37",
+    "aliases": [
+      "pirateatelier:quartermaster_armor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:quartermaster_armor_tattered_peg_right",
+    "sha256_geometry_uv": "a408af8ceed2b504f2300f929c33bbac530d994b2002c3b53a3f5afe8c815a82",
+    "aliases": [
+      "pirateatelier:quartermaster_armor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:rogue_navigator_pristine_normal",
+    "sha256_geometry_uv": "c1346bd37aeaba5cad8424921d5477de7968245938d3e6b2fbda5905a80fbb1b",
+    "aliases": [
+      "pirateatelier:rogue_navigator_pristine_normal",
+      "pirateatelier:rogue_navigator_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:rogue_navigator_pristine_peg_left",
+    "sha256_geometry_uv": "2ba4fa32b8cd307def16735e2c2a1287f336abe961970489fe0cb9bacdbe4d94",
+    "aliases": [
+      "pirateatelier:rogue_navigator_pristine_peg_left",
+      "pirateatelier:rogue_navigator_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:rogue_navigator_pristine_peg_right",
+    "sha256_geometry_uv": "e4db19791e9c2c5847a9e184b061d05c6e933f80cbbd019333dcd5957e04e605",
+    "aliases": [
+      "pirateatelier:rogue_navigator_pristine_peg_right",
+      "pirateatelier:rogue_navigator_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:rogue_navigator_tattered_normal",
+    "sha256_geometry_uv": "196a886b5eb877ee83875a07e2060d1caae6e4508192aab6e0b579d172f6cd8e",
+    "aliases": [
+      "pirateatelier:rogue_navigator_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:rogue_navigator_tattered_peg_left",
+    "sha256_geometry_uv": "69039a9c174087a1c7ca20a20cf6d69b2e771f0332af00e612ef7c6d68557582",
+    "aliases": [
+      "pirateatelier:rogue_navigator_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:rogue_navigator_tattered_peg_right",
+    "sha256_geometry_uv": "f208e70caebf2c8c6ecc45f41873df237f8ddf8172e04c3735c685d3598d76a3",
+    "aliases": [
+      "pirateatelier:rogue_navigator_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:sailor_charcoal_pristine_normal",
+    "sha256_geometry_uv": "728c3de53a48810ec426599ca2813a714939ced411461fd8c8796ae9e69b2541",
+    "aliases": [
+      "pirateatelier:sailor_charcoal_pristine_normal",
+      "pirateatelier:sailor_charcoal_weathered_normal",
+      "pirateatelier:sailor_copper_pristine_normal",
+      "pirateatelier:sailor_copper_weathered_normal",
+      "pirateatelier:sailor_crimson_pristine_normal",
+      "pirateatelier:sailor_crimson_weathered_normal",
+      "pirateatelier:sailor_emerald_pristine_normal",
+      "pirateatelier:sailor_emerald_weathered_normal",
+      "pirateatelier:sailor_forest_pristine_normal",
+      "pirateatelier:sailor_forest_weathered_normal",
+      "pirateatelier:sailor_ivory_pristine_normal",
+      "pirateatelier:sailor_ivory_weathered_normal",
+      "pirateatelier:sailor_navy_pristine_normal",
+      "pirateatelier:sailor_navy_weathered_normal",
+      "pirateatelier:sailor_ochre_pristine_normal",
+      "pirateatelier:sailor_ochre_weathered_normal",
+      "pirateatelier:sailor_plum_pristine_normal",
+      "pirateatelier:sailor_plum_weathered_normal",
+      "pirateatelier:sailor_sea_blue_pristine_normal",
+      "pirateatelier:sailor_sea_blue_weathered_normal",
+      "pirateatelier:sailor_teal_pristine_normal",
+      "pirateatelier:sailor_teal_weathered_normal",
+      "pirateatelier:sailor_wine_pristine_normal",
+      "pirateatelier:sailor_wine_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:sailor_charcoal_pristine_peg_left",
+    "sha256_geometry_uv": "d3f812111eafc4febaa89523236cd929501950fa5f221ea6d7007196b011bafd",
+    "aliases": [
+      "pirateatelier:sailor_charcoal_pristine_peg_left",
+      "pirateatelier:sailor_charcoal_weathered_peg_left",
+      "pirateatelier:sailor_copper_pristine_peg_left",
+      "pirateatelier:sailor_copper_weathered_peg_left",
+      "pirateatelier:sailor_crimson_pristine_peg_left",
+      "pirateatelier:sailor_crimson_weathered_peg_left",
+      "pirateatelier:sailor_emerald_pristine_peg_left",
+      "pirateatelier:sailor_emerald_weathered_peg_left",
+      "pirateatelier:sailor_forest_pristine_peg_left",
+      "pirateatelier:sailor_forest_weathered_peg_left",
+      "pirateatelier:sailor_ivory_pristine_peg_left",
+      "pirateatelier:sailor_ivory_weathered_peg_left",
+      "pirateatelier:sailor_navy_pristine_peg_left",
+      "pirateatelier:sailor_navy_weathered_peg_left",
+      "pirateatelier:sailor_ochre_pristine_peg_left",
+      "pirateatelier:sailor_ochre_weathered_peg_left",
+      "pirateatelier:sailor_plum_pristine_peg_left",
+      "pirateatelier:sailor_plum_weathered_peg_left",
+      "pirateatelier:sailor_sea_blue_pristine_peg_left",
+      "pirateatelier:sailor_sea_blue_weathered_peg_left",
+      "pirateatelier:sailor_teal_pristine_peg_left",
+      "pirateatelier:sailor_teal_weathered_peg_left",
+      "pirateatelier:sailor_wine_pristine_peg_left",
+      "pirateatelier:sailor_wine_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:sailor_charcoal_pristine_peg_right",
+    "sha256_geometry_uv": "8ca0643a6e37216c55e150cf57810a98fc67927b46412e6cc2a8c14c6389c106",
+    "aliases": [
+      "pirateatelier:sailor_charcoal_pristine_peg_right",
+      "pirateatelier:sailor_charcoal_weathered_peg_right",
+      "pirateatelier:sailor_copper_pristine_peg_right",
+      "pirateatelier:sailor_copper_weathered_peg_right",
+      "pirateatelier:sailor_crimson_pristine_peg_right",
+      "pirateatelier:sailor_crimson_weathered_peg_right",
+      "pirateatelier:sailor_emerald_pristine_peg_right",
+      "pirateatelier:sailor_emerald_weathered_peg_right",
+      "pirateatelier:sailor_forest_pristine_peg_right",
+      "pirateatelier:sailor_forest_weathered_peg_right",
+      "pirateatelier:sailor_ivory_pristine_peg_right",
+      "pirateatelier:sailor_ivory_weathered_peg_right",
+      "pirateatelier:sailor_navy_pristine_peg_right",
+      "pirateatelier:sailor_navy_weathered_peg_right",
+      "pirateatelier:sailor_ochre_pristine_peg_right",
+      "pirateatelier:sailor_ochre_weathered_peg_right",
+      "pirateatelier:sailor_plum_pristine_peg_right",
+      "pirateatelier:sailor_plum_weathered_peg_right",
+      "pirateatelier:sailor_sea_blue_pristine_peg_right",
+      "pirateatelier:sailor_sea_blue_weathered_peg_right",
+      "pirateatelier:sailor_teal_pristine_peg_right",
+      "pirateatelier:sailor_teal_weathered_peg_right",
+      "pirateatelier:sailor_wine_pristine_peg_right",
+      "pirateatelier:sailor_wine_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:sailor_charcoal_tattered_normal",
+    "sha256_geometry_uv": "887375c216ee7277fbc30a5da1123010f9f3dd5b9f0047c8c124fbf39dc58d29",
+    "aliases": [
+      "pirateatelier:sailor_charcoal_tattered_normal",
+      "pirateatelier:sailor_copper_tattered_normal",
+      "pirateatelier:sailor_crimson_tattered_normal",
+      "pirateatelier:sailor_emerald_tattered_normal",
+      "pirateatelier:sailor_forest_tattered_normal",
+      "pirateatelier:sailor_ivory_tattered_normal",
+      "pirateatelier:sailor_navy_tattered_normal",
+      "pirateatelier:sailor_ochre_tattered_normal",
+      "pirateatelier:sailor_plum_tattered_normal",
+      "pirateatelier:sailor_sea_blue_tattered_normal",
+      "pirateatelier:sailor_teal_tattered_normal",
+      "pirateatelier:sailor_wine_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:sailor_charcoal_tattered_peg_left",
+    "sha256_geometry_uv": "c462d201f1a7679dfe1e9c3e0e63d2eea89e05e9ee6b33accf5d10213d0fa8f0",
+    "aliases": [
+      "pirateatelier:sailor_charcoal_tattered_peg_left",
+      "pirateatelier:sailor_copper_tattered_peg_left",
+      "pirateatelier:sailor_crimson_tattered_peg_left",
+      "pirateatelier:sailor_emerald_tattered_peg_left",
+      "pirateatelier:sailor_forest_tattered_peg_left",
+      "pirateatelier:sailor_ivory_tattered_peg_left",
+      "pirateatelier:sailor_navy_tattered_peg_left",
+      "pirateatelier:sailor_ochre_tattered_peg_left",
+      "pirateatelier:sailor_plum_tattered_peg_left",
+      "pirateatelier:sailor_sea_blue_tattered_peg_left",
+      "pirateatelier:sailor_teal_tattered_peg_left",
+      "pirateatelier:sailor_wine_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:sailor_charcoal_tattered_peg_right",
+    "sha256_geometry_uv": "2088530d568877d68b5aec3b31f968c16acadafcf56f3dd3d84a8d134ba03d00",
+    "aliases": [
+      "pirateatelier:sailor_charcoal_tattered_peg_right",
+      "pirateatelier:sailor_copper_tattered_peg_right",
+      "pirateatelier:sailor_crimson_tattered_peg_right",
+      "pirateatelier:sailor_emerald_tattered_peg_right",
+      "pirateatelier:sailor_forest_tattered_peg_right",
+      "pirateatelier:sailor_ivory_tattered_peg_right",
+      "pirateatelier:sailor_navy_tattered_peg_right",
+      "pirateatelier:sailor_ochre_tattered_peg_right",
+      "pirateatelier:sailor_plum_tattered_peg_right",
+      "pirateatelier:sailor_sea_blue_tattered_peg_right",
+      "pirateatelier:sailor_teal_tattered_peg_right",
+      "pirateatelier:sailor_wine_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:ships_cook_pristine_normal",
+    "sha256_geometry_uv": "b0d20dee2bd988d000471b141b00f95be8d0e5532fdca9cd8996030e839e0d00",
+    "aliases": [
+      "pirateatelier:ships_cook_pristine_normal",
+      "pirateatelier:ships_cook_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:ships_cook_pristine_peg_left",
+    "sha256_geometry_uv": "5cd86d568b2c74232902839c8bb8b544505a86e8f42d7f3fc56068eaa45a8bd0",
+    "aliases": [
+      "pirateatelier:ships_cook_pristine_peg_left",
+      "pirateatelier:ships_cook_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:ships_cook_pristine_peg_right",
+    "sha256_geometry_uv": "63bb0ac912e2735acfc88e8467e79c6d9435ab139463c082b55155201382b57a",
+    "aliases": [
+      "pirateatelier:ships_cook_pristine_peg_right",
+      "pirateatelier:ships_cook_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:ships_cook_tattered_normal",
+    "sha256_geometry_uv": "fdf0472ac42f1da72ca418819a7573273b42020ed38a26debb4d411f130e0e75",
+    "aliases": [
+      "pirateatelier:ships_cook_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:ships_cook_tattered_peg_left",
+    "sha256_geometry_uv": "50269621b82245662eb09f7d0ee4b1d2ba4223d9f15e803543a6b9381204c5ce",
+    "aliases": [
+      "pirateatelier:ships_cook_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:ships_cook_tattered_peg_right",
+    "sha256_geometry_uv": "9c9ab9ac123cb8c8f19b33df7b67b687d4dabbfae9d5504ddf4bb0f7d2fa4524",
+    "aliases": [
+      "pirateatelier:ships_cook_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:smuggler_pristine_normal",
+    "sha256_geometry_uv": "7ecdfcb5f21515aca0c0791b59cdfb83adc4cbea17d4ce1b458b5349d68d391d",
+    "aliases": [
+      "pirateatelier:smuggler_pristine_normal",
+      "pirateatelier:smuggler_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:smuggler_pristine_peg_left",
+    "sha256_geometry_uv": "3319c6cf1a287247beb14db39fde3c351c1625d3944cf25f8f0cc844af76c877",
+    "aliases": [
+      "pirateatelier:smuggler_pristine_peg_left",
+      "pirateatelier:smuggler_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:smuggler_pristine_peg_right",
+    "sha256_geometry_uv": "c34868269397de6c63263ae7b03169ba5c2a6e6a571f3f2ef72448df32087dde",
+    "aliases": [
+      "pirateatelier:smuggler_pristine_peg_right",
+      "pirateatelier:smuggler_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:smuggler_tattered_normal",
+    "sha256_geometry_uv": "907191a9dc602217bc81fcdbad462a48e8014826fd624ca70ca2c1a46ed6a5d8",
+    "aliases": [
+      "pirateatelier:smuggler_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:smuggler_tattered_peg_left",
+    "sha256_geometry_uv": "4904ca1f767466d9e6423f3a1235183a4193d3873a47b4d10d4fcfba229eb67b",
+    "aliases": [
+      "pirateatelier:smuggler_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:smuggler_tattered_peg_right",
+    "sha256_geometry_uv": "30a2403d96cb83ad9b3be2b349f567e02af842b921141931d4032f46e38dc305",
+    "aliases": [
+      "pirateatelier:smuggler_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:tavern_raider_pristine_normal",
+    "sha256_geometry_uv": "c4a7ef4baa050ae66647b9b2546298ffd9603270ed3294f431c0c89178a80be1",
+    "aliases": [
+      "pirateatelier:tavern_raider_pristine_normal",
+      "pirateatelier:tavern_raider_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:tavern_raider_pristine_peg_left",
+    "sha256_geometry_uv": "b2d24064b10f89b035a80a529706c26eb50204b6000d2ddbd3b04da6979953d4",
+    "aliases": [
+      "pirateatelier:tavern_raider_pristine_peg_left",
+      "pirateatelier:tavern_raider_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:tavern_raider_pristine_peg_right",
+    "sha256_geometry_uv": "4c2936241f0ad02fe1d84cce2684d48f6d43cba6e5b2b2a23f4919c47cd69d99",
+    "aliases": [
+      "pirateatelier:tavern_raider_pristine_peg_right",
+      "pirateatelier:tavern_raider_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:tavern_raider_tattered_normal",
+    "sha256_geometry_uv": "bd441d9ba397c073d58639c26b0a72921941dc2892a69bce9ef4ac3013913c42",
+    "aliases": [
+      "pirateatelier:tavern_raider_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:tavern_raider_tattered_peg_left",
+    "sha256_geometry_uv": "5d32132d8f0dfb799a1a1c2360eaa9102863895a9f2df0da906a8445475adfe3",
+    "aliases": [
+      "pirateatelier:tavern_raider_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:tavern_raider_tattered_peg_right",
+    "sha256_geometry_uv": "1c1d84c9f5920d9b07caff1976a0bfe3cbda9ed9a8c7841f7dd9a40fd9b59ded",
+    "aliases": [
+      "pirateatelier:tavern_raider_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:treasure_keeper_armor_pristine_normal",
+    "sha256_geometry_uv": "fc4191c77a552a3a57f83e1374553527f9f981ae8a33b1b9cbe9c78cd87caf84",
+    "aliases": [
+      "pirateatelier:treasure_keeper_armor_pristine_normal",
+      "pirateatelier:treasure_keeper_armor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:treasure_keeper_armor_pristine_peg_left",
+    "sha256_geometry_uv": "d3eb687a281b4ef8d4b864ea15816b8e9aa21b3065b42f690cd6214f05498718",
+    "aliases": [
+      "pirateatelier:treasure_keeper_armor_pristine_peg_left",
+      "pirateatelier:treasure_keeper_armor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:treasure_keeper_armor_pristine_peg_right",
+    "sha256_geometry_uv": "206cc4d804aa5b01c7a262c2d9d732c3ef8f9ede40c9edda9a5ee83089686296",
+    "aliases": [
+      "pirateatelier:treasure_keeper_armor_pristine_peg_right",
+      "pirateatelier:treasure_keeper_armor_weathered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:treasure_keeper_armor_tattered_normal",
+    "sha256_geometry_uv": "9c31fc44ed8033f1ac459246de22e4781647eaa315103f2d294d11d90f827e59",
+    "aliases": [
+      "pirateatelier:treasure_keeper_armor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:treasure_keeper_armor_tattered_peg_left",
+    "sha256_geometry_uv": "b38bd8c453072e1f0428e27ada29fcae43a9c488cc8387f7d96e92b892b5a010",
+    "aliases": [
+      "pirateatelier:treasure_keeper_armor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:treasure_keeper_armor_tattered_peg_right",
+    "sha256_geometry_uv": "3a64548f6cefb7c00ec4b606c79e1a649ab9840671f3975d280c947559fbbe43",
+    "aliases": [
+      "pirateatelier:treasure_keeper_armor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:weathered_sailor_pristine_normal",
+    "sha256_geometry_uv": "5936ff0eaed6db30a018468d0620de1034cb52e082cb5afa6ad889357ddc86ff",
+    "aliases": [
+      "pirateatelier:weathered_sailor_pristine_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:weathered_sailor_pristine_peg_left",
+    "sha256_geometry_uv": "ad2ad8a3ffb1fd0c91fd9775a8f25e2e239946b216a7082370adba791dadefbf",
+    "aliases": [
+      "pirateatelier:weathered_sailor_pristine_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:weathered_sailor_pristine_peg_right",
+    "sha256_geometry_uv": "749c3d66aa92f78f91659ea076a35a1e8bdddb9f572a9ca809ebbdcb6a358b7c",
+    "aliases": [
+      "pirateatelier:weathered_sailor_pristine_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:weathered_sailor_tattered_normal",
+    "sha256_geometry_uv": "e9fc45b8548ea2d9e6882571faa64957e85b88045010854d276081a42b9be35a",
+    "aliases": [
+      "pirateatelier:weathered_sailor_tattered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:weathered_sailor_tattered_peg_left",
+    "sha256_geometry_uv": "03dc0f2d681f406f76a4d88ec43a50945a7a4cf8754295c8562a65e475d35bdf",
+    "aliases": [
+      "pirateatelier:weathered_sailor_tattered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:weathered_sailor_tattered_peg_right",
+    "sha256_geometry_uv": "9a57c1b9054e437c173763ef53ea2e46f1e9f6cbbebfdc5a271765d1964aeaa5",
+    "aliases": [
+      "pirateatelier:weathered_sailor_tattered_peg_right"
+    ]
+  },
+  {
+    "asset": "pirateatelier:weathered_sailor_weathered_normal",
+    "sha256_geometry_uv": "7d2b73119a4270694a068823ee4cde0c645a8a671728b5cddf278ac141a75a93",
+    "aliases": [
+      "pirateatelier:weathered_sailor_weathered_normal"
+    ]
+  },
+  {
+    "asset": "pirateatelier:weathered_sailor_weathered_peg_left",
+    "sha256_geometry_uv": "f300dea47b2495fb4ddbf61d735b78d1dea42d2ef6b1e6684e06a0ea21cf8063",
+    "aliases": [
+      "pirateatelier:weathered_sailor_weathered_peg_left"
+    ]
+  },
+  {
+    "asset": "pirateatelier:weathered_sailor_weathered_peg_right",
+    "sha256_geometry_uv": "f38e6795981859c99acceff85cb7018a1369c6dbdd1d84ea3ceb1403a7418a0f",
+    "aliases": [
+      "pirateatelier:weathered_sailor_weathered_peg_right"
+    ]
+  }
+]

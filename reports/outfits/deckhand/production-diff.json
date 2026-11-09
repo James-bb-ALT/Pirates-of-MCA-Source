@@ -1,0 +1,20 @@
+{
+  "changed": [
+    "assets/piratesmca/lang/en_us.json",
+    "assets/piratesmca/lang/pt_br.json",
+    "dev/arandu/piratesmca/PirateBehavior.class",
+    "dev/arandu/piratesmca/PirateCommands.class",
+    "dev/arandu/piratesmca/PiratesOfMCA.class",
+    "fabric.mod.json"
+  ],
+  "added": [
+    "assets/piratesmca/items/deckhand_outfit.json",
+    "assets/piratesmca/models/item/deckhand_outfit.json",
+    "assets/piratesmca/outfits/",
+    "assets/piratesmca/outfits/deckhand.png",
+    "assets/piratesmca/textures/item/deckhand_outfit.png",
+    "data/piratesmca/skins/clothing/outfits.json",
+    "dev/arandu/piratesmca/PirateOutfits.class"
+  ],
+  "removed": []
+}

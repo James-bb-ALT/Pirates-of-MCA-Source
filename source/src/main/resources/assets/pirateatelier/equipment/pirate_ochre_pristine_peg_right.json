@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "pirateatelier:pirate_ochre_pristine_peg_right"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "pirateatelier:pirate_ochre_pristine_peg_right"
+      }
+    ]
+  }
+}

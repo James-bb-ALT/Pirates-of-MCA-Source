@@ -1,0 +1,934 @@
+{
+  "source_zip": "LetsForgePirates_1.21.1_Extracao_Completa(1).zip",
+  "source_item_texture_paths": [
+    "textures/item/biala_czacha_item.png",
+    "textures/item/bonesaber.png",
+    "textures/item/brudna_czacha_item.png",
+    "textures/item/buty_korsarz_iiitier_item.png",
+    "textures/item/buty_korsarz_iitier_item.png",
+    "textures/item/buty_korsarz_itier.png",
+    "textures/item/buty_kupiec_v1_item.png",
+    "textures/item/buty_kupiec_v2_item.png",
+    "textures/item/buty_kupiec_v3_item.png",
+    "textures/item/buty_majtek_item.png",
+    "textures/item/buty_marynarka_iiitier_item.png",
+    "textures/item/buty_marynarka_iitier_item.png",
+    "textures/item/buty_marynarka_itier_item.png",
+    "textures/item/buty_marynarkablue_iiitier_item.png",
+    "textures/item/buty_marynarkablue_iitier_item.png",
+    "textures/item/buty_marynarkablue_itier_item.png",
+    "textures/item/buty_neutralny_iiitier_item.png",
+    "textures/item/buty_neutralny_iitier_item.png",
+    "textures/item/buty_neutralny_itier_item.png",
+    "textures/item/buty_nord_iiitier_item.png",
+    "textures/item/buty_nord_iitier_item.png",
+    "textures/item/buty_nord_itier_item.png",
+    "textures/item/buty_pirat_iiitier_item.png",
+    "textures/item/buty_pirat_iitier_item.png",
+    "textures/item/buty_pirat_itier_item.png",
+    "textures/item/buty_rybak_item.png",
+    "textures/item/buty_rzemieslnik_item.png",
+    "textures/item/chusta_korsarz_itier_item.png",
+    "textures/item/chusta_majtek_item.png",
+    "textures/item/chusta_nord_itier_item.png",
+    "textures/item/chusta_pirat_itier_item.png",
+    "textures/item/czapa_rzemieslnik_item.png",
+    "textures/item/czapka_rybak_item.png",
+    "textures/item/czarna_czacha_item.png",
+    "textures/item/diamentowa_czacha_item.png",
+    "textures/item/eyepatch.png",
+    "textures/item/hook_icon.png",
+    "textures/item/ironsaber.png",
+    "textures/item/kapelusz_korsarz_iiitier_item.png",
+    "textures/item/kapelusz_korsarz_iitier_item.png",
+    "textures/item/kapelusz_kupiec_v1_item.png",
+    "textures/item/kapelusz_kupiec_v2_item.png",
+    "textures/item/kapelusz_kupiec_v3_item.png",
+    "textures/item/kapelusz_marynarka_iiitier_item.png",
+    "textures/item/kapelusz_marynarka_iitier_item.png",
+    "textures/item/kapelusz_marynarka_itier_item.png",
+    "textures/item/kapelusz_marynarkablue_iiitier_item.png",
+    "textures/item/kapelusz_marynarkablue_iitier_item.png",
+    "textures/item/kapelusz_marynarkablue_itier_item.png",
+    "textures/item/kapelusz_neutralny_iiitier_item.png",
+    "textures/item/kapelusz_neutralny_iitier_item.png",
+    "textures/item/kapelusz_neutralny_itier_item.png",
+    "textures/item/kapelusz_nord_iiitier_item.png",
+    "textures/item/kapelusz_nord_iitier_item.png",
+    "textures/item/kapelusz_pirat_iiitier_item.png",
+    "textures/item/kapelusz_pirat_iitier_item.png",
+    "textures/item/pancerz_korsarz_iiitier_item.png",
+    "textures/item/pancerz_korsarz_iitier_item.png",
+    "textures/item/pancerz_korsarz_itier_item.png",
+    "textures/item/pancerz_kupiec_v1_item.png",
+    "textures/item/pancerz_kupiec_v2_item.png",
+    "textures/item/pancerz_kupiec_v3_item.png",
+    "textures/item/pancerz_majtek_item.png",
+    "textures/item/pancerz_marynarka_iiitier_item.png",
+    "textures/item/pancerz_marynarka_iitier_item.png",
+    "textures/item/pancerz_marynarka_itier_item.png",
+    "textures/item/pancerz_marynarkablue_iiitier_item.png",
+    "textures/item/pancerz_marynarkablue_iitier_item.png",
+    "textures/item/pancerz_marynarkablue_itier_item.png",
+    "textures/item/pancerz_neutralny_iiitier_item.png",
+    "textures/item/pancerz_neutralny_iitier_item.png",
+    "textures/item/pancerz_neutralny_itier_item.png",
+    "textures/item/pancerz_nord_iiitier_item.png",
+    "textures/item/pancerz_nord_iitier_item.png",
+    "textures/item/pancerz_nord_itier_item.png",
+    "textures/item/pancerz_pirat_iiitier_item.png",
+    "textures/item/pancerz_pirat_iitier_item.png",
+    "textures/item/pancerz_pirat_itier_item.png",
+    "textures/item/pancerz_rybak_item.png",
+    "textures/item/pancerz_rzemieslnik_item.png",
+    "textures/item/poisonbonesaber.png",
+    "textures/item/sk3fra.png",
+    "textures/item/spodnie_korsarz_iiitier_item.png",
+    "textures/item/spodnie_korsarz_iitier_item.png",
+    "textures/item/spodnie_korsarz_itier_item.png",
+    "textures/item/spodnie_kupiec_v1_item.png",
+    "textures/item/spodnie_kupiec_v2_item.png",
+    "textures/item/spodnie_kupiec_v3_item.png",
+    "textures/item/spodnie_majtek_item.png",
+    "textures/item/spodnie_marynarka_iiitier_item.png",
+    "textures/item/spodnie_marynarka_iitier_item.png",
+    "textures/item/spodnie_marynarka_itier_item.png",
+    "textures/item/spodnie_marynarkablue_iiitier_item.png",
+    "textures/item/spodnie_marynarkablue_iitier_item.png",
+    "textures/item/spodnie_marynarkablue_itier_item.png",
+    "textures/item/spodnie_neutralny_iiitier_item.png",
+    "textures/item/spodnie_neutralny_iitier_item.png",
+    "textures/item/spodnie_neutralny_itier_item.png",
+    "textures/item/spodnie_nord_iitier_item.png",
+    "textures/item/spodnie_nord_itier_item.png",
+    "textures/item/spodnie_nord_pirat_iiitier_item.png",
+    "textures/item/spodnie_pirat_iiitier_item.png",
+    "textures/item/spodnie_pirat_iitier_item.png",
+    "textures/item/spodnie_pirat_itier_item.png",
+    "textures/item/spodnie_rybak_item.png",
+    "textures/item/spodnie_rzemieslnik_item.png",
+    "textures/item/zlota_czacha_item.png"
+  ],
+  "source_armor_texture_paths": [
+    "textures/models/armor/biala_czacha__layer_1.png",
+    "textures/models/armor/biala_czacha__layer_2.png",
+    "textures/models/armor/brudna_czacha__layer_1.png",
+    "textures/models/armor/brudna_czacha__layer_2.png",
+    "textures/models/armor/czarna_czacha__layer_1.png",
+    "textures/models/armor/czarna_czacha__layer_2.png",
+    "textures/models/armor/diamentowa_czacha__layer_1.png",
+    "textures/models/armor/diamentowa_czacha__layer_2.png",
+    "textures/models/armor/korsarz_iiitier__layer_1.png",
+    "textures/models/armor/korsarz_iiitier__layer_2.png",
+    "textures/models/armor/korsarz_iitier__layer_1.png",
+    "textures/models/armor/korsarz_iitier__layer_2.png",
+    "textures/models/armor/korsarz_itier__layer_1.png",
+    "textures/models/armor/korsarz_itier__layer_2.png",
+    "textures/models/armor/kupiec_v1__layer_1.png",
+    "textures/models/armor/kupiec_v1__layer_2.png",
+    "textures/models/armor/kupiec_v2__layer_1.png",
+    "textures/models/armor/kupiec_v2__layer_2.png",
+    "textures/models/armor/kupiec_v3__layer_1.png",
+    "textures/models/armor/kupiec_v3__layer_2.png",
+    "textures/models/armor/majtek__layer_1.png",
+    "textures/models/armor/majtek__layer_2.png",
+    "textures/models/armor/marynarka_iiitier__layer_1.png",
+    "textures/models/armor/marynarka_iiitier__layer_2.png",
+    "textures/models/armor/marynarka_iitier__layer_1.png",
+    "textures/models/armor/marynarka_iitier__layer_2.png",
+    "textures/models/armor/marynarka_itier__layer_1.png",
+    "textures/models/armor/marynarka_itier__layer_2.png",
+    "textures/models/armor/marynarkablue_iiitier__layer_1.png",
+    "textures/models/armor/marynarkablue_iiitier__layer_2.png",
+    "textures/models/armor/marynarkablue_iitier__layer_1.png",
+    "textures/models/armor/marynarkablue_iitier__layer_2.png",
+    "textures/models/armor/marynarkablue_itier__layer_1.png",
+    "textures/models/armor/marynarkablue_itier__layer_2.png",
+    "textures/models/armor/neutralny_iiitier__layer_1.png",
+    "textures/models/armor/neutralny_iiitier__layer_2.png",
+    "textures/models/armor/neutralny_iitier__layer_1.png",
+    "textures/models/armor/neutralny_iitier__layer_2.png",
+    "textures/models/armor/neutralny_itier__layer_1.png",
+    "textures/models/armor/neutralny_itier__layer_2.png",
+    "textures/models/armor/nord_iiitier__layer_1.png",
+    "textures/models/armor/nord_iiitier__layer_2.png",
+    "textures/models/armor/nord_iitier__layer_1.png",
+    "textures/models/armor/nord_iitier__layer_2.png",
+    "textures/models/armor/nord_itier__layer_1.png",
+    "textures/models/armor/nord_itier__layer_2.png",
+    "textures/models/armor/pirat_iiitier__layer_1.png",
+    "textures/models/armor/pirat_iiitier__layer_2.png",
+    "textures/models/armor/pirat_iitier__layer_1.png",
+    "textures/models/armor/pirat_iitier__layer_2.png",
+    "textures/models/armor/pirat_itier__layer_1.png",
+    "textures/models/armor/pirat_itier__layer_2.png",
+    "textures/models/armor/rybak__layer_1.png",
+    "textures/models/armor/rybak__layer_2.png",
+    "textures/models/armor/rzemieslnik__layer_1.png",
+    "textures/models/armor/rzemieslnik__layer_2.png",
+    "textures/models/armor/zlota_czacha__layer_1.png",
+    "textures/models/armor/zlota_czacha__layer_2.png"
+  ],
+  "source_item_model_ids": [
+    "barrel_bomb",
+    "bone_cutlass",
+    "corsair_tier_1_boots",
+    "corsair_tier_1_chestplate",
+    "corsair_tier_1_helmet",
+    "corsair_tier_1_leggings",
+    "corsair_tier_2_boots",
+    "corsair_tier_2_chestplate",
+    "corsair_tier_2_helmet",
+    "corsair_tier_2_leggings",
+    "corsair_tier_3_boots",
+    "corsair_tier_3_chestplate",
+    "corsair_tier_3_helmet",
+    "corsair_tier_3_leggings",
+    "craftsman_boots",
+    "craftsman_chestplate",
+    "craftsman_helmet",
+    "craftsman_leggings",
+    "deckhand_boots",
+    "deckhand_chestplate",
+    "deckhand_helmet",
+    "deckhand_leggings",
+    "fisherman_boots",
+    "fisherman_chestplate",
+    "fisherman_helmet",
+    "fisherman_leggings",
+    "hook",
+    "iron_cutlass",
+    "merchant_1_boots",
+    "merchant_1_chestplate",
+    "merchant_1_helmet",
+    "merchant_1_leggings",
+    "merchant_2_boots",
+    "merchant_2_chestplate",
+    "merchant_2_helmet",
+    "merchant_2_leggings",
+    "merchant_3_boots",
+    "merchant_3_chestplate",
+    "merchant_3_helmet",
+    "merchant_3_leggings",
+    "pirate_tier_1_boots",
+    "pirate_tier_1_chestplate",
+    "pirate_tier_1_helmet",
+    "pirate_tier_1_leggings",
+    "pirate_tier_2_boots",
+    "pirate_tier_2_chestplate",
+    "pirate_tier_2_helmet",
+    "pirate_tier_2_leggings",
+    "pirate_tier_3_boots",
+    "pirate_tier_3_chestplate",
+    "pirate_tier_3_helmet",
+    "pirate_tier_3_leggings",
+    "poison_bone_cutlass",
+    "sailor_blue_tier_1_boots",
+    "sailor_blue_tier_1_chestplate",
+    "sailor_blue_tier_1_helmet",
+    "sailor_blue_tier_1_leggings",
+    "sailor_blue_tier_2_boots",
+    "sailor_blue_tier_2_chestplate",
+    "sailor_blue_tier_2_helmet",
+    "sailor_blue_tier_2_leggings",
+    "sailor_blue_tier_3_boots",
+    "sailor_blue_tier_3_chestplate",
+    "sailor_blue_tier_3_helmet",
+    "sailor_blue_tier_3_leggings",
+    "sailor_gray_tier_1_boots",
+    "sailor_gray_tier_1_chestplate",
+    "sailor_gray_tier_1_helmet",
+    "sailor_gray_tier_1_leggings",
+    "sailor_gray_tier_2_boots",
+    "sailor_gray_tier_2_chestplate",
+    "sailor_gray_tier_2_helmet",
+    "sailor_gray_tier_2_leggings",
+    "sailor_gray_tier_3_boots",
+    "sailor_gray_tier_3_chestplate",
+    "sailor_gray_tier_3_helmet",
+    "sailor_gray_tier_3_leggings",
+    "sailor_nordic_tier_1_boots",
+    "sailor_nordic_tier_1_chestplate",
+    "sailor_nordic_tier_1_helmet",
+    "sailor_nordic_tier_1_leggings",
+    "sailor_nordic_tier_2_boots",
+    "sailor_nordic_tier_2_chestplate",
+    "sailor_nordic_tier_2_helmet",
+    "sailor_nordic_tier_2_leggings",
+    "sailor_nordic_tier_3_boots",
+    "sailor_nordic_tier_3_chestplate",
+    "sailor_nordic_tier_3_helmet",
+    "sailor_nordic_tier_3_leggings",
+    "sailor_red_tier_1_boots",
+    "sailor_red_tier_1_chestplate",
+    "sailor_red_tier_1_helmet",
+    "sailor_red_tier_1_leggings",
+    "sailor_red_tier_2_boots",
+    "sailor_red_tier_2_chestplate",
+    "sailor_red_tier_2_helmet",
+    "sailor_red_tier_2_leggings",
+    "sailor_red_tier_3_boots",
+    "sailor_red_tier_3_chestplate",
+    "sailor_red_tier_3_helmet",
+    "sailor_red_tier_3_leggings",
+    "ship_in_bottle",
+    "skull_1_helmet",
+    "skull_2_helmet",
+    "skull_3_helmet",
+    "skull_4_helmet",
+    "skull_5_helmet",
+    "tannedleather"
+  ],
+  "authored_item_profiles": {
+    "biala_czacha_item": {
+      "part": "skull",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "bonesaber": {
+      "part": "cutlass",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "brudna_czacha_item": {
+      "part": "skull",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "buty_korsarz_iiitier_item": {
+      "part": "boots",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 3
+    },
+    "buty_korsarz_iitier_item": {
+      "part": "boots",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 2
+    },
+    "buty_korsarz_itier": {
+      "part": "boots",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 1
+    },
+    "buty_kupiec_v1_item": {
+      "part": "boots",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 1
+    },
+    "buty_kupiec_v2_item": {
+      "part": "boots",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 2
+    },
+    "buty_kupiec_v3_item": {
+      "part": "boots",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 3
+    },
+    "buty_majtek_item": {
+      "part": "boots",
+      "style": "deckhand",
+      "palette": "ochre",
+      "tier": 1
+    },
+    "buty_marynarka_iiitier_item": {
+      "part": "boots",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 3
+    },
+    "buty_marynarka_iitier_item": {
+      "part": "boots",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 2
+    },
+    "buty_marynarka_itier_item": {
+      "part": "boots",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 1
+    },
+    "buty_marynarkablue_iiitier_item": {
+      "part": "boots",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 3
+    },
+    "buty_marynarkablue_iitier_item": {
+      "part": "boots",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 2
+    },
+    "buty_marynarkablue_itier_item": {
+      "part": "boots",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 1
+    },
+    "buty_neutralny_iiitier_item": {
+      "part": "boots",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 3
+    },
+    "buty_neutralny_iitier_item": {
+      "part": "boots",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 2
+    },
+    "buty_neutralny_itier_item": {
+      "part": "boots",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 1
+    },
+    "buty_nord_iiitier_item": {
+      "part": "boots",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 3
+    },
+    "buty_nord_iitier_item": {
+      "part": "boots",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 2
+    },
+    "buty_nord_itier_item": {
+      "part": "boots",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 1
+    },
+    "buty_pirat_iiitier_item": {
+      "part": "boots",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 3
+    },
+    "buty_pirat_iitier_item": {
+      "part": "boots",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 2
+    },
+    "buty_pirat_itier_item": {
+      "part": "boots",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "buty_rybak_item": {
+      "part": "boots",
+      "style": "fisherman",
+      "palette": "sea_blue",
+      "tier": 1
+    },
+    "buty_rzemieslnik_item": {
+      "part": "boots",
+      "style": "craftsman",
+      "palette": "copper",
+      "tier": 1
+    },
+    "chusta_korsarz_itier_item": {
+      "part": "helmet",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 1
+    },
+    "chusta_majtek_item": {
+      "part": "helmet",
+      "style": "deckhand",
+      "palette": "ochre",
+      "tier": 1
+    },
+    "chusta_nord_itier_item": {
+      "part": "helmet",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 1
+    },
+    "chusta_pirat_itier_item": {
+      "part": "helmet",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "czapa_rzemieslnik_item": {
+      "part": "helmet",
+      "style": "craftsman",
+      "palette": "copper",
+      "tier": 1
+    },
+    "czapka_rybak_item": {
+      "part": "helmet",
+      "style": "fisherman",
+      "palette": "sea_blue",
+      "tier": 1
+    },
+    "czarna_czacha_item": {
+      "part": "skull",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "diamentowa_czacha_item": {
+      "part": "skull",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "eyepatch": {
+      "part": "eyepatch",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "hook_icon": {
+      "part": "hook",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "ironsaber": {
+      "part": "cutlass",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "kapelusz_korsarz_iiitier_item": {
+      "part": "helmet",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 3
+    },
+    "kapelusz_korsarz_iitier_item": {
+      "part": "helmet",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 2
+    },
+    "kapelusz_kupiec_v1_item": {
+      "part": "helmet",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 1
+    },
+    "kapelusz_kupiec_v2_item": {
+      "part": "helmet",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 2
+    },
+    "kapelusz_kupiec_v3_item": {
+      "part": "helmet",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 3
+    },
+    "kapelusz_marynarka_iiitier_item": {
+      "part": "helmet",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 3
+    },
+    "kapelusz_marynarka_iitier_item": {
+      "part": "helmet",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 2
+    },
+    "kapelusz_marynarka_itier_item": {
+      "part": "helmet",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 1
+    },
+    "kapelusz_marynarkablue_iiitier_item": {
+      "part": "helmet",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 3
+    },
+    "kapelusz_marynarkablue_iitier_item": {
+      "part": "helmet",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 2
+    },
+    "kapelusz_marynarkablue_itier_item": {
+      "part": "helmet",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 1
+    },
+    "kapelusz_neutralny_iiitier_item": {
+      "part": "helmet",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 3
+    },
+    "kapelusz_neutralny_iitier_item": {
+      "part": "helmet",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 2
+    },
+    "kapelusz_neutralny_itier_item": {
+      "part": "helmet",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 1
+    },
+    "kapelusz_nord_iiitier_item": {
+      "part": "helmet",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 3
+    },
+    "kapelusz_nord_iitier_item": {
+      "part": "helmet",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 2
+    },
+    "kapelusz_pirat_iiitier_item": {
+      "part": "helmet",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 3
+    },
+    "kapelusz_pirat_iitier_item": {
+      "part": "helmet",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 2
+    },
+    "pancerz_korsarz_iiitier_item": {
+      "part": "chest",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 3
+    },
+    "pancerz_korsarz_iitier_item": {
+      "part": "chest",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 2
+    },
+    "pancerz_korsarz_itier_item": {
+      "part": "chest",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 1
+    },
+    "pancerz_kupiec_v1_item": {
+      "part": "chest",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 1
+    },
+    "pancerz_kupiec_v2_item": {
+      "part": "chest",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 2
+    },
+    "pancerz_kupiec_v3_item": {
+      "part": "chest",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 3
+    },
+    "pancerz_majtek_item": {
+      "part": "chest",
+      "style": "deckhand",
+      "palette": "ochre",
+      "tier": 1
+    },
+    "pancerz_marynarka_iiitier_item": {
+      "part": "chest",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 3
+    },
+    "pancerz_marynarka_iitier_item": {
+      "part": "chest",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 2
+    },
+    "pancerz_marynarka_itier_item": {
+      "part": "chest",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 1
+    },
+    "pancerz_marynarkablue_iiitier_item": {
+      "part": "chest",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 3
+    },
+    "pancerz_marynarkablue_iitier_item": {
+      "part": "chest",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 2
+    },
+    "pancerz_marynarkablue_itier_item": {
+      "part": "chest",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 1
+    },
+    "pancerz_neutralny_iiitier_item": {
+      "part": "chest",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 3
+    },
+    "pancerz_neutralny_iitier_item": {
+      "part": "chest",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 2
+    },
+    "pancerz_neutralny_itier_item": {
+      "part": "chest",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 1
+    },
+    "pancerz_nord_iiitier_item": {
+      "part": "chest",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 3
+    },
+    "pancerz_nord_iitier_item": {
+      "part": "chest",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 2
+    },
+    "pancerz_nord_itier_item": {
+      "part": "chest",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 1
+    },
+    "pancerz_pirat_iiitier_item": {
+      "part": "chest",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 3
+    },
+    "pancerz_pirat_iitier_item": {
+      "part": "chest",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 2
+    },
+    "pancerz_pirat_itier_item": {
+      "part": "chest",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "pancerz_rybak_item": {
+      "part": "chest",
+      "style": "fisherman",
+      "palette": "sea_blue",
+      "tier": 1
+    },
+    "pancerz_rzemieslnik_item": {
+      "part": "chest",
+      "style": "craftsman",
+      "palette": "copper",
+      "tier": 1
+    },
+    "poisonbonesaber": {
+      "part": "cutlass",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "sk3fra": {
+      "part": "leather",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "spodnie_korsarz_iiitier_item": {
+      "part": "leggings",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 3
+    },
+    "spodnie_korsarz_iitier_item": {
+      "part": "leggings",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 2
+    },
+    "spodnie_korsarz_itier_item": {
+      "part": "leggings",
+      "style": "corsair",
+      "palette": "forest",
+      "tier": 1
+    },
+    "spodnie_kupiec_v1_item": {
+      "part": "leggings",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 1
+    },
+    "spodnie_kupiec_v2_item": {
+      "part": "leggings",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 2
+    },
+    "spodnie_kupiec_v3_item": {
+      "part": "leggings",
+      "style": "merchant",
+      "palette": "wine",
+      "tier": 3
+    },
+    "spodnie_majtek_item": {
+      "part": "leggings",
+      "style": "deckhand",
+      "palette": "ochre",
+      "tier": 1
+    },
+    "spodnie_marynarka_iiitier_item": {
+      "part": "leggings",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 3
+    },
+    "spodnie_marynarka_iitier_item": {
+      "part": "leggings",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 2
+    },
+    "spodnie_marynarka_itier_item": {
+      "part": "leggings",
+      "style": "sailor",
+      "palette": "crimson",
+      "tier": 1
+    },
+    "spodnie_marynarkablue_iiitier_item": {
+      "part": "leggings",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 3
+    },
+    "spodnie_marynarkablue_iitier_item": {
+      "part": "leggings",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 2
+    },
+    "spodnie_marynarkablue_itier_item": {
+      "part": "leggings",
+      "style": "sailor",
+      "palette": "sea_blue",
+      "tier": 1
+    },
+    "spodnie_neutralny_iiitier_item": {
+      "part": "leggings",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 3
+    },
+    "spodnie_neutralny_iitier_item": {
+      "part": "leggings",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 2
+    },
+    "spodnie_neutralny_itier_item": {
+      "part": "leggings",
+      "style": "sailor",
+      "palette": "ash",
+      "tier": 1
+    },
+    "spodnie_nord_iitier_item": {
+      "part": "leggings",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 2
+    },
+    "spodnie_nord_itier_item": {
+      "part": "leggings",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 1
+    },
+    "spodnie_nord_pirat_iiitier_item": {
+      "part": "leggings",
+      "style": "nordic",
+      "palette": "navy",
+      "tier": 3
+    },
+    "spodnie_pirat_iiitier_item": {
+      "part": "leggings",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 3
+    },
+    "spodnie_pirat_iitier_item": {
+      "part": "leggings",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 2
+    },
+    "spodnie_pirat_itier_item": {
+      "part": "leggings",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    },
+    "spodnie_rybak_item": {
+      "part": "leggings",
+      "style": "fisherman",
+      "palette": "sea_blue",
+      "tier": 1
+    },
+    "spodnie_rzemieslnik_item": {
+      "part": "leggings",
+      "style": "craftsman",
+      "palette": "copper",
+      "tier": 1
+    },
+    "zlota_czacha_item": {
+      "part": "skull",
+      "style": "pirate",
+      "palette": "charcoal",
+      "tier": 1
+    }
+  },
+  "counts": {
+    "item_textures": 107,
+    "armor_textures": 58,
+    "armor_sets": 29,
+    "outfit_variants": 864
+  },
+  "source_pixels_copied": 0,
+  "source_models_copied": 0
+}

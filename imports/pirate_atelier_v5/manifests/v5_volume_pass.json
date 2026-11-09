@@ -1,0 +1,10 @@
+{
+  "version": "v5",
+  "type": "volume_texture_pass",
+  "enhanced_pngs": 9999,
+  "notes": [
+    "Batch enhancement focused on perceived volume and material detail.",
+    "Geometry and UV layout preserved from v4.",
+    "Includes stronger contrast for armor, items, accessories and skins."
+  ]
+}

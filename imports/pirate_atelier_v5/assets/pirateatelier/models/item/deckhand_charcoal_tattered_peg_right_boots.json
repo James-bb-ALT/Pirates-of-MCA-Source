@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/deckhand_charcoal_tattered_peg_right_boots"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "lfpirates:bone_cutlass",
+    "lfpirates:iron_cutlass",
+    "lfpirates:poison_bone_cutlass",
+    "pirateatelier:bone_falchion",
+    "pirateatelier:corroded_cutlass",
+    "pirateatelier:gilded_saber",
+    "pirateatelier:midnight_saber",
+    "pirateatelier:naval_cutlass",
+    "pirateatelier:officer_rapier",
+    "pirateatelier:venom_saber"
+  ]
+}

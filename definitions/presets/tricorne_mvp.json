@@ -1,0 +1,12 @@
+{
+  "id": "piratesmca:tricorne_mvp",
+  "equipment": {
+    "head": "piratesmca:tricorne_classic"
+  },
+  "spawn_tag": "pmca_preset_tricorne_classic",
+  "requires": [
+    "adult",
+    "pirate"
+  ],
+  "replace_existing_equipment": false
+}

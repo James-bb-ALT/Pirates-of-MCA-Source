@@ -1,0 +1,17 @@
+﻿gate,result,screenshots_logged,jar_sha256,reused_candidate,log,log_sha256,visual_approval
+full-final-on,PASS_EXECUTION,2175,9a3df4c9365a34725129bfc77c16e36a85002ed1bef6227cf2214cf398fa1305,True,reports/visual-fix-full-final-on.log,e976d63bc6fe92a487b4eabe893d9fabd829bada28e64356bf33a36db958b5d7,SEPARATE_REVIEW_REQUIRED
+full-final-off,PASS_EXECUTION,2175,5d7993ce89fe5b8a27d750c334891a31cb0cdef46d30aca7b3dc7fdb120f309b,True,reports/visual-fix-full-final-off.log,efb7b3324f5024d90309f921d1bd49ead76608ab878ad9d5a7db4e4aea650871,SEPARATE_REVIEW_REQUIRED
+weapons-on,PASS_EXECUTION,664,5d7993ce89fe5b8a27d750c334891a31cb0cdef46d30aca7b3dc7fdb120f309b,True,reports/visual-fix-weapons-on.log,f95bfe600e6ca681c46ebaf89d69cd5daad7dfba5e2382ebb3433c80ef4ef050,SEPARATE_REVIEW_REQUIRED
+weapons-off,PASS_EXECUTION,664,5d7993ce89fe5b8a27d750c334891a31cb0cdef46d30aca7b3dc7fdb120f309b,True,reports/visual-fix-weapons-off.log,70d726db36b62cd0161b8049df581959899048007493516de0abd8dab44ce765,SEPARATE_REVIEW_REQUIRED
+prototypes-on,RUNNING_OR_INCOMPLETE,0,6bf985d7804a6126a024033db7f2aaaf36d1ad4c30aaeafbcb2a82a9ad87898a,False,reports/visual-fix-prototypes-on.log,eee18629f9321cc52f5b4c75c0c21a2a40e5d8bfdec4dfcf6b8ac1f506f1a093,SEPARATE_REVIEW_REQUIRED
+prototypes-off,BLOCKED_OTHER_JAR,440,5d7993ce89fe5b8a27d750c334891a31cb0cdef46d30aca7b3dc7fdb120f309b,False,reports/visual-fix-prototypes-off.log,e78043a787ade3f1bc595daabe237c65485d4ec7ce0b643e5cbd5d11742f4d1d,SEPARATE_REVIEW_REQUIRED
+variants-on,RUNNING_OR_INCOMPLETE,0,5d7993ce89fe5b8a27d750c334891a31cb0cdef46d30aca7b3dc7fdb120f309b,False,reports/visual-fix-variants-on.log,a030f014ab014a17a836de897d3850d8d810d39d9a506177899228b337aa8d4b,SEPARATE_REVIEW_REQUIRED
+heads-on,NOT_RUN,0,,False,reports/visual-fix-heads-on.log,,SEPARATE_REVIEW_REQUIRED
+heads-off,NOT_RUN,0,,False,reports/visual-fix-heads-off.log,,SEPARATE_REVIEW_REQUIRED
+avatar-slim-on,NOT_RUN,0,,False,reports/visual-fix-avatar-slim-on.log,,SEPARATE_REVIEW_REQUIRED
+avatar-slim-off,NOT_RUN,0,,False,reports/visual-fix-avatar-slim-off.log,,SEPARATE_REVIEW_REQUIRED
+probe-comparison-on,NOT_RUN,0,,False,reports/visual-fix-probe-comparison-on.log,,SEPARATE_REVIEW_REQUIRED
+persistence,NOT_RUN,0,,False,reports/visual-fix-persistence.log,,SEPARATE_REVIEW_REQUIRED
+persistence-reopen,NOT_RUN,0,,False,reports/visual-fix-persistence-reopen.log,,SEPARATE_REVIEW_REQUIRED
+server-gametests,NOT_RUN,0,,False,reports/visual-fix-server-gametests.log,,SEPARATE_REVIEW_REQUIRED
+build-regressions,NOT_RUN,0,,False,reports/visual-fix-build-regressions.log,,SEPARATE_REVIEW_REQUIRED

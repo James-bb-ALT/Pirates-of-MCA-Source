@@ -1,0 +1,1783 @@
+Compiled from "VillagerLike.java"
+public interface net.conczin.mca.entity.VillagerLike<E extends net.minecraft.world.entity.Entity & net.conczin.mca.entity.VillagerLike<E>> extends net.conczin.mca.util.network.datasync.CTrackedEntity<E>, net.minecraft.world.entity.npc.villager.VillagerDataHolder, net.conczin.mca.entity.Infectable, net.conczin.mca.entity.ai.Messenger {
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.String> CLOTHES;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.Boolean> CLOTHING_LOCKED;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.String> SKIN;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.String> HAIR;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.String> HAIR_STYLE;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.String> HAIR_BASE;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.String> HAIR_BANGS;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.String> HAIR_BACK;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.String> HAIR_FRONT;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.String> HAIR_EXTRA;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.Integer> SKIN_COLOR;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.Integer> HAIR_COLOR;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.Integer> EYE_COLOR;
+
+  public static final net.conczin.mca.util.network.datasync.CDataParameter<java.lang.Integer> EYE_COLOR_LEFT;
+
+  public static final net.conczin.mca.util.network.datasync.CEnumParameter<net.conczin.mca.entity.ai.relationship.AgeState> AGE_STATE;
+
+  public static final net.minecraft.resources.Identifier SPEED_ID;
+
+  public static final net.minecraft.resources.Identifier DAMAGE_ID;
+
+  public static <E extends net.minecraft.world.entity.Entity> net.conczin.mca.util.network.datasync.CDataManager$Builder<E> createTrackedData(net.conczin.mca.util.network.datasync.CDataManager$Builder<E>);
+    Code:
+         0: aload_0
+         1: bipush        15
+         3: anewarray     #1                  // class net/conczin/mca/util/network/datasync/CParameter
+         6: dup
+         7: iconst_0
+         8: getstatic     #3                  // Field CLOTHES:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        11: aastore
+        12: dup
+        13: iconst_1
+        14: getstatic     #9                  // Field SKIN:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        17: aastore
+        18: dup
+        19: iconst_2
+        20: getstatic     #12                 // Field HAIR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        23: aastore
+        24: dup
+        25: iconst_3
+        26: getstatic     #15                 // Field HAIR_STYLE:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        29: aastore
+        30: dup
+        31: iconst_4
+        32: getstatic     #18                 // Field HAIR_BASE:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        35: aastore
+        36: dup
+        37: iconst_5
+        38: getstatic     #21                 // Field HAIR_BANGS:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        41: aastore
+        42: dup
+        43: bipush        6
+        45: getstatic     #24                 // Field HAIR_BACK:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        48: aastore
+        49: dup
+        50: bipush        7
+        52: getstatic     #27                 // Field HAIR_FRONT:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        55: aastore
+        56: dup
+        57: bipush        8
+        59: getstatic     #30                 // Field HAIR_EXTRA:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        62: aastore
+        63: dup
+        64: bipush        9
+        66: getstatic     #33                 // Field SKIN_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        69: aastore
+        70: dup
+        71: bipush        10
+        73: getstatic     #36                 // Field HAIR_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        76: aastore
+        77: dup
+        78: bipush        11
+        80: getstatic     #39                 // Field EYE_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        83: aastore
+        84: dup
+        85: bipush        12
+        87: getstatic     #42                 // Field EYE_COLOR_LEFT:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        90: aastore
+        91: dup
+        92: bipush        13
+        94: getstatic     #45                 // Field AGE_STATE:Lnet/conczin/mca/util/network/datasync/CEnumParameter;
+        97: aastore
+        98: dup
+        99: bipush        14
+       101: getstatic     #49                 // Field CLOTHING_LOCKED:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       104: aastore
+       105: invokevirtual #52                 // Method net/conczin/mca/util/network/datasync/CDataManager$Builder.addAll:([Lnet/conczin/mca/util/network/datasync/CParameter;)Lnet/conczin/mca/util/network/datasync/CDataManager$Builder;
+       108: invokedynamic #58,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+       113: invokevirtual #62                 // Method net/conczin/mca/util/network/datasync/CDataManager$Builder.add:(Ljava/util/function/Function;)Lnet/conczin/mca/util/network/datasync/CDataManager$Builder;
+       116: invokedynamic #66,  0             // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+       121: invokevirtual #62                 // Method net/conczin/mca/util/network/datasync/CDataManager$Builder.add:(Ljava/util/function/Function;)Lnet/conczin/mca/util/network/datasync/CDataManager$Builder;
+       124: invokedynamic #67,  0             // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+       129: invokevirtual #62                 // Method net/conczin/mca/util/network/datasync/CDataManager$Builder.add:(Ljava/util/function/Function;)Lnet/conczin/mca/util/network/datasync/CDataManager$Builder;
+       132: areturn
+
+  public static net.conczin.mca.entity.VillagerLike<?> toVillager(net.conczin.mca.server.world.data.PlayerSaveData);
+    Code:
+         0: aload_0
+         1: invokevirtual #68                 // Method net/conczin/mca/server/world/data/PlayerSaveData.getEntityData:()Lnet/minecraft/nbt/CompoundTag;
+         4: astore_1
+         5: getstatic     #74                 // Field net/conczin/mca/registry/EntitiesMCA.MALE_VILLAGER:Lnet/minecraft/world/entity/EntityType;
+         8: aload_0
+         9: invokevirtual #80                 // Method net/conczin/mca/server/world/data/PlayerSaveData.getWorld:()Lnet/minecraft/server/level/ServerLevel;
+        12: getstatic     #84                 // Field net/minecraft/world/entity/EntitySpawnReason.LOAD:Lnet/minecraft/world/entity/EntitySpawnReason;
+        15: invokevirtual #90                 // Method net/minecraft/world/entity/EntityType.create:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/EntitySpawnReason;)Lnet/minecraft/world/entity/Entity;
+        18: checkcast     #96                 // class net/conczin/mca/entity/VillagerEntityMCA
+        21: astore_2
+        22: aload_2
+        23: ifnonnull     28
+        26: aconst_null
+        27: areturn
+        28: aload_2
+        29: aload_1
+        30: invokevirtual #98                 // Method net/conczin/mca/entity/VillagerEntityMCA.readAdditionalSaveDataForEditor:(Lnet/minecraft/nbt/CompoundTag;)V
+        33: aload_2
+        34: areturn
+
+  public static net.conczin.mca.entity.VillagerLike<?> toVillager(net.minecraft.world.entity.Entity);
+    Code:
+         0: aload_0
+         1: instanceof    #4                  // class net/conczin/mca/entity/VillagerLike
+         4: ifeq          12
+         7: aload_0
+         8: checkcast     #4                  // class net/conczin/mca/entity/VillagerLike
+        11: areturn
+        12: aload_0
+        13: instanceof    #102                // class net/minecraft/server/level/ServerPlayer
+        16: ifeq          32
+        19: aload_0
+        20: checkcast     #102                // class net/minecraft/server/level/ServerPlayer
+        23: astore_1
+        24: aload_1
+        25: invokestatic  #104                // Method net/conczin/mca/server/world/data/PlayerSaveData.get:(Lnet/minecraft/server/level/ServerPlayer;)Lnet/conczin/mca/server/world/data/PlayerSaveData;
+        28: invokestatic  #108                // InterfaceMethod toVillager:(Lnet/conczin/mca/server/world/data/PlayerSaveData;)Lnet/conczin/mca/entity/VillagerLike;
+        31: areturn
+        32: aconst_null
+        33: areturn
+
+  public abstract net.conczin.mca.entity.ai.Genetics getGenetics();
+
+  public abstract net.conczin.mca.entity.ai.Traits getTraits();
+
+  public default void onTraitChanged(net.conczin.mca.entity.ai.Traits$Trait, boolean);
+    Code:
+         0: return
+
+  public default void onTraitsLoaded();
+    Code:
+         0: return
+
+  public abstract net.conczin.mca.entity.ai.brain.VillagerBrain<?> getVillagerBrain();
+
+  public abstract net.conczin.mca.entity.interaction.EntityCommandHandler<?> getInteractions();
+
+  public default void initialize(net.minecraft.world.entity.EntitySpawnReason);
+    Code:
+         0: aload_1
+         1: getstatic     #112                // Field net/minecraft/world/entity/EntitySpawnReason.CONVERSION:Lnet/minecraft/world/entity/EntitySpawnReason;
+         4: if_acmpeq     48
+         7: aload_1
+         8: getstatic     #115                // Field net/minecraft/world/entity/EntitySpawnReason.BREEDING:Lnet/minecraft/world/entity/EntitySpawnReason;
+        11: if_acmpeq     32
+        14: aload_0
+        15: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        20: invokevirtual #122                // Method net/conczin/mca/entity/ai/Genetics.randomize:()V
+        23: aload_0
+        24: invokeinterface #128,  1          // InterfaceMethod getTraits:()Lnet/conczin/mca/entity/ai/Traits;
+        29: invokevirtual #132                // Method net/conczin/mca/entity/ai/Traits.randomize:()V
+        32: aload_0
+        33: iconst_0
+        34: invokeinterface #135,  2          // InterfaceMethod initializeSkin:(Z)V
+        39: aload_0
+        40: invokeinterface #139,  1          // InterfaceMethod getVillagerBrain:()Lnet/conczin/mca/entity/ai/brain/VillagerBrain;
+        45: invokevirtual #143                // Method net/conczin/mca/entity/ai/brain/VillagerBrain.randomize:()V
+        48: aload_0
+        49: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        54: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        57: getstatic     #150                // Field net/conczin/mca/entity/ai/relationship/Gender.UNASSIGNED:Lnet/conczin/mca/entity/ai/relationship/Gender;
+        60: if_acmpne     75
+        63: aload_0
+        64: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        69: invokestatic  #156                // Method net/conczin/mca/entity/ai/relationship/Gender.getRandom:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        72: invokevirtual #159                // Method net/conczin/mca/entity/ai/Genetics.setGender:(Lnet/conczin/mca/entity/ai/relationship/Gender;)V
+        75: aload_0
+        76: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        81: invokevirtual #167                // Method net/minecraft/world/entity/Mob.getCustomName:()Lnet/minecraft/network/chat/Component;
+        84: ifnonnull     117
+        87: aload_0
+        88: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        93: aload_0
+        94: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        99: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+       102: aload_0
+       103: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+       108: invokestatic  #173                // Method net/conczin/mca/resources/Names.pickCitizenName:(Lnet/conczin/mca/entity/ai/relationship/Gender;Lnet/minecraft/world/entity/Entity;)Ljava/lang/String;
+       111: invokestatic  #179                // InterfaceMethod net/minecraft/network/chat/Component.literal:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       114: invokevirtual #185                // Method net/minecraft/world/entity/Mob.setCustomName:(Lnet/minecraft/network/chat/Component;)V
+       117: aload_0
+       118: invokeinterface #189,  1          // InterfaceMethod validateClothes:()V
+       123: aload_0
+       124: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+       129: invokevirtual #192                // Method net/minecraft/world/entity/Mob.refreshDimensions:()V
+       132: return
+
+  public default boolean isSpeechImpaired();
+    Code:
+         0: aload_0
+         1: invokeinterface #195,  1          // InterfaceMethod getInfectionProgress:()F
+         6: ldc           #201                // float 0.6f
+         8: fcmpl
+         9: ifle          16
+        12: iconst_1
+        13: goto          17
+        16: iconst_0
+        17: ireturn
+
+  public default boolean isToYoungToSpeak();
+    Code:
+         0: aload_0
+         1: invokeinterface #202,  1          // InterfaceMethod getAgeState:()Lnet/conczin/mca/entity/ai/relationship/AgeState;
+         6: getstatic     #206                // Field net/conczin/mca/entity/ai/relationship/AgeState.BABY:Lnet/conczin/mca/entity/ai/relationship/AgeState;
+         9: if_acmpne     16
+        12: iconst_1
+        13: goto          17
+        16: iconst_0
+        17: ireturn
+
+  public default void setName(java.lang.String);
+    Code:
+         0: aload_0
+         1: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+         6: invokevirtual #212                // Method net/minecraft/world/entity/Mob.level:()Lnet/minecraft/world/level/Level;
+         9: invokevirtual #216                // Method net/minecraft/world/level/Level.isClientSide:()Z
+        12: ifne          33
+        15: aload_0
+        16: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        21: invokestatic  #222                // InterfaceMethod net/conczin/mca/entity/ai/relationship/EntityRelationship.of:(Lnet/minecraft/world/entity/Entity;)Ljava/util/Optional;
+        24: aload_1
+        25: invokedynamic #228,  0            // InvokeDynamic #3:accept:(Ljava/lang/String;)Ljava/util/function/Consumer;
+        30: invokevirtual #232                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+        33: return
+
+  public default java.util.Set<net.conczin.mca.entity.ai.relationship.Gender> getAttractedGenderSet(net.conczin.mca.entity.VillagerLike<?>);
+    Code:
+         0: aload_1
+         1: invokeinterface #128,  1          // InterfaceMethod getTraits:()Lnet/conczin/mca/entity/ai/Traits;
+         6: getstatic     #238                // Field net/conczin/mca/entity/ai/Traits.BISEXUAL:Lnet/conczin/mca/entity/ai/Traits$Trait;
+         9: invokevirtual #242                // Method net/conczin/mca/entity/ai/Traits.hasTrait:(Lnet/conczin/mca/entity/ai/Traits$Trait;)Z
+        12: ifeq          28
+        15: getstatic     #246                // Field net/conczin/mca/entity/ai/relationship/Gender.MALE:Lnet/conczin/mca/entity/ai/relationship/Gender;
+        18: getstatic     #249                // Field net/conczin/mca/entity/ai/relationship/Gender.FEMALE:Lnet/conczin/mca/entity/ai/relationship/Gender;
+        21: getstatic     #252                // Field net/conczin/mca/entity/ai/relationship/Gender.NEUTRAL:Lnet/conczin/mca/entity/ai/relationship/Gender;
+        24: invokestatic  #255                // InterfaceMethod java/util/Set.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
+        27: areturn
+        28: aload_1
+        29: invokeinterface #128,  1          // InterfaceMethod getTraits:()Lnet/conczin/mca/entity/ai/Traits;
+        34: getstatic     #260                // Field net/conczin/mca/entity/ai/Traits.HOMOSEXUAL:Lnet/conczin/mca/entity/ai/Traits$Trait;
+        37: invokevirtual #242                // Method net/conczin/mca/entity/ai/Traits.hasTrait:(Lnet/conczin/mca/entity/ai/Traits$Trait;)Z
+        40: ifeq          59
+        43: aload_1
+        44: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        49: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        52: getstatic     #252                // Field net/conczin/mca/entity/ai/relationship/Gender.NEUTRAL:Lnet/conczin/mca/entity/ai/relationship/Gender;
+        55: invokestatic  #263                // InterfaceMethod java/util/Set.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
+        58: areturn
+        59: aload_1
+        60: invokeinterface #128,  1          // InterfaceMethod getTraits:()Lnet/conczin/mca/entity/ai/Traits;
+        65: getstatic     #266                // Field net/conczin/mca/entity/ai/Traits.ASEXUAL:Lnet/conczin/mca/entity/ai/Traits$Trait;
+        68: invokevirtual #242                // Method net/conczin/mca/entity/ai/Traits.hasTrait:(Lnet/conczin/mca/entity/ai/Traits$Trait;)Z
+        71: ifeq          81
+        74: getstatic     #252                // Field net/conczin/mca/entity/ai/relationship/Gender.NEUTRAL:Lnet/conczin/mca/entity/ai/relationship/Gender;
+        77: invokestatic  #269                // InterfaceMethod java/util/Set.of:(Ljava/lang/Object;)Ljava/util/Set;
+        80: areturn
+        81: aload_1
+        82: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        87: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        90: invokevirtual #272                // Method net/conczin/mca/entity/ai/relationship/Gender.opposite:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        93: getstatic     #252                // Field net/conczin/mca/entity/ai/relationship/Gender.NEUTRAL:Lnet/conczin/mca/entity/ai/relationship/Gender;
+        96: invokestatic  #263                // InterfaceMethod java/util/Set.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
+        99: areturn
+
+  public default boolean canBeAttractedTo(net.conczin.mca.entity.VillagerLike<?>);
+    Code:
+         0: aload_1
+         1: ifnull        56
+         4: aload_0
+         5: aload_0
+         6: invokeinterface #275,  2          // InterfaceMethod getAttractedGenderSet:(Lnet/conczin/mca/entity/VillagerLike;)Ljava/util/Set;
+        11: aload_1
+        12: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        17: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        20: invokeinterface #279,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+        25: ifeq          56
+        28: aload_0
+        29: aload_1
+        30: invokeinterface #275,  2          // InterfaceMethod getAttractedGenderSet:(Lnet/conczin/mca/entity/VillagerLike;)Ljava/util/Set;
+        35: aload_0
+        36: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        41: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        44: invokeinterface #279,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+        49: ifeq          56
+        52: iconst_1
+        53: goto          57
+        56: iconst_0
+        57: ireturn
+
+  public default boolean canBeAttractedTo(net.conczin.mca.server.world.data.PlayerSaveData);
+    Code:
+         0: invokestatic  #283                // Method net/conczin/mca/Config.getInstance:()Lnet/conczin/mca/Config;
+         3: getfield      #289                // Field net/conczin/mca/Config.enableGenderCheckForPlayers:Z
+         6: ifeq          22
+         9: aload_0
+        10: aload_1
+        11: invokestatic  #108                // InterfaceMethod toVillager:(Lnet/conczin/mca/server/world/data/PlayerSaveData;)Lnet/conczin/mca/entity/VillagerLike;
+        14: invokeinterface #293,  2          // InterfaceMethod canBeAttractedTo:(Lnet/conczin/mca/entity/VillagerLike;)Z
+        19: ifeq          26
+        22: iconst_1
+        23: goto          27
+        26: iconst_0
+        27: ireturn
+
+  public default net.minecraft.world.InteractionHand getDominantHand();
+    Code:
+         0: getstatic     #297                // Field net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+         3: areturn
+
+  public default net.minecraft.world.InteractionHand getOpposingHand();
+    Code:
+         0: getstatic     #303                // Field net/minecraft/world/InteractionHand.OFF_HAND:Lnet/minecraft/world/InteractionHand;
+         3: areturn
+
+  public default net.minecraft.world.entity.EquipmentSlot getDominantSlot();
+    Code:
+         0: aload_0
+         1: invokeinterface #306,  1          // InterfaceMethod getDominantHand:()Lnet/minecraft/world/InteractionHand;
+         6: getstatic     #297                // Field net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+         9: if_acmpne     18
+        12: getstatic     #310                // Field net/minecraft/world/entity/EquipmentSlot.MAINHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+        15: goto          21
+        18: getstatic     #316                // Field net/minecraft/world/entity/EquipmentSlot.OFFHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+        21: areturn
+
+  public default net.minecraft.world.entity.EquipmentSlot getOpposingSlot();
+    Code:
+         0: aload_0
+         1: invokeinterface #319,  1          // InterfaceMethod getOpposingHand:()Lnet/minecraft/world/InteractionHand;
+         6: getstatic     #297                // Field net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+         9: if_acmpne     18
+        12: getstatic     #310                // Field net/minecraft/world/entity/EquipmentSlot.MAINHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+        15: goto          21
+        18: getstatic     #316                // Field net/minecraft/world/entity/EquipmentSlot.OFFHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+        21: areturn
+
+  public default net.minecraft.resources.Identifier getProfessionId();
+    Code:
+         0: ldc_w         #322                // String none
+         3: invokestatic  #324                // Method net/conczin/mca/MCA.locate:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+         6: areturn
+
+  public default java.lang.String getProfessionName();
+    Code:
+         0: aload_0
+         1: invokeinterface #330,  1          // InterfaceMethod getProfessionId:()Lnet/minecraft/resources/Identifier;
+         6: invokevirtual #334                // Method net/minecraft/resources/Identifier.getNamespace:()Ljava/lang/String;
+         9: ldc_w         #340                // String minecraft
+        12: invokevirtual #342                // Method java/lang/String.equalsIgnoreCase:(Ljava/lang/String;)Z
+        15: ifeq          54
+        18: aload_0
+        19: invokeinterface #330,  1          // InterfaceMethod getProfessionId:()Lnet/minecraft/resources/Identifier;
+        24: invokevirtual #348                // Method net/minecraft/resources/Identifier.getPath:()Ljava/lang/String;
+        27: ldc_w         #322                // String none
+        30: invokevirtual #351                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        33: ifeq          42
+        36: ldc_w         #354                // String mca.none
+        39: goto          63
+        42: aload_0
+        43: invokeinterface #330,  1          // InterfaceMethod getProfessionId:()Lnet/minecraft/resources/Identifier;
+        48: invokevirtual #348                // Method net/minecraft/resources/Identifier.getPath:()Ljava/lang/String;
+        51: goto          63
+        54: aload_0
+        55: invokeinterface #330,  1          // InterfaceMethod getProfessionId:()Lnet/minecraft/resources/Identifier;
+        60: invokevirtual #356                // Method net/minecraft/resources/Identifier.toString:()Ljava/lang/String;
+        63: ldc_w         #359                // String :
+        66: ldc_w         #361                // String .
+        69: invokevirtual #363                // Method java/lang/String.replace:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+        72: astore_1
+        73: aload_1
+        74: invokestatic  #367                // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+        77: ifeq          86
+        80: ldc_w         #354                // String mca.none
+        83: goto          87
+        86: aload_1
+        87: areturn
+
+  public default net.minecraft.network.chat.MutableComponent getProfessionText();
+    Code:
+         0: aload_0
+         1: invokeinterface #370,  1          // InterfaceMethod getProfessionName:()Ljava/lang/String;
+         6: invokedynamic #373,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+        11: invokestatic  #377                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+        14: areturn
+
+  public default boolean isProfessionImportant();
+    Code:
+         0: iconst_0
+         1: ireturn
+
+  public default boolean requiresHome();
+    Code:
+         0: iconst_0
+         1: ireturn
+
+  public default boolean canTradeWithProfession();
+    Code:
+         0: iconst_0
+         1: ireturn
+
+  public default java.lang.String getClothes();
+    Code:
+         0: aload_0
+         1: getstatic     #3                  // Field CLOTHES:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #343                // class java/lang/String
+        12: areturn
+
+  public default void setClothes(net.minecraft.resources.Identifier);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #356                // Method net/minecraft/resources/Identifier.toString:()Ljava/lang/String;
+         5: invokeinterface #384,  2          // InterfaceMethod setClothes:(Ljava/lang/String;)V
+        10: return
+
+  public default void setClothes(java.lang.String);
+    Code:
+         0: aload_0
+         1: getstatic     #3                  // Field CLOTHES:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: aload_1
+         5: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        10: return
+
+  public default boolean isClothingLocked();
+    Code:
+         0: aload_0
+         1: getstatic     #49                 // Field CLOTHING_LOCKED:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #392                // class java/lang/Boolean
+        12: invokevirtual #394                // Method java/lang/Boolean.booleanValue:()Z
+        15: ireturn
+
+  public default void setClothingLocked(boolean);
+    Code:
+         0: aload_0
+         1: getstatic     #49                 // Field CLOTHING_LOCKED:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: iload_1
+         5: invokestatic  #397                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+         8: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        13: return
+
+  public default java.lang.String getSkin();
+    Code:
+         0: aload_0
+         1: getstatic     #9                  // Field SKIN:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #343                // class java/lang/String
+        12: areturn
+
+  public default void setSkin(java.lang.String);
+    Code:
+         0: aload_0
+         1: getstatic     #9                  // Field SKIN:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: aload_1
+         5: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        10: return
+
+  public default java.lang.String getHair();
+    Code:
+         0: aload_0
+         1: getstatic     #12                 // Field HAIR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #343                // class java/lang/String
+        12: areturn
+
+  public default void setHair(net.minecraft.resources.Identifier);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #356                // Method net/minecraft/resources/Identifier.toString:()Ljava/lang/String;
+         5: invokeinterface #401,  2          // InterfaceMethod setHair:(Ljava/lang/String;)V
+        10: return
+
+  public default void setHair(java.lang.String);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #404,  2          // InterfaceMethod setHairStyleId:(Ljava/lang/String;)V
+         7: return
+
+  public default java.lang.String getHairStyleId();
+    Code:
+         0: aload_0
+         1: getstatic     #15                 // Field HAIR_STYLE:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #343                // class java/lang/String
+        12: astore_1
+        13: aload_1
+        14: invokestatic  #367                // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+        17: ifeq          35
+        20: aload_0
+        21: getstatic     #12                 // Field HAIR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        24: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+        29: checkcast     #343                // class java/lang/String
+        32: goto          36
+        35: aload_1
+        36: areturn
+
+  public default void setHairStyleId(java.lang.String);
+    Code:
+         0: aload_0
+         1: getstatic     #15                 // Field HAIR_STYLE:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: aload_1
+         5: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        10: aload_0
+        11: getstatic     #12                 // Field HAIR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        14: ldc_w         #407                // String
+        17: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        22: return
+
+  public default java.lang.String getHairBase();
+    Code:
+         0: aload_0
+         1: getstatic     #18                 // Field HAIR_BASE:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #343                // class java/lang/String
+        12: areturn
+
+  public default java.lang.String getHairBangs();
+    Code:
+         0: aload_0
+         1: getstatic     #21                 // Field HAIR_BANGS:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #343                // class java/lang/String
+        12: areturn
+
+  public default java.lang.String getHairBack();
+    Code:
+         0: aload_0
+         1: getstatic     #24                 // Field HAIR_BACK:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #343                // class java/lang/String
+        12: areturn
+
+  public default java.lang.String getHairFront();
+    Code:
+         0: aload_0
+         1: getstatic     #27                 // Field HAIR_FRONT:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #343                // class java/lang/String
+        12: areturn
+
+  public default java.lang.String getHairExtra();
+    Code:
+         0: aload_0
+         1: getstatic     #30                 // Field HAIR_EXTRA:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #343                // class java/lang/String
+        12: areturn
+
+  public default java.lang.String getLayeredHair(net.conczin.mca.resources.data.skin.LayeredHair$Category);
+    Code:
+         0: getstatic     #409                // Field net/conczin/mca/entity/VillagerLike$1.$SwitchMap$net$conczin$mca$resources$data$skin$LayeredHair$Category:[I
+         3: aload_1
+         4: invokevirtual #415                // Method net/conczin/mca/resources/data/skin/LayeredHair$Category.ordinal:()I
+         7: iaload
+         8: tableswitch   { // 1 to 5
+                       1: 54
+                       2: 63
+                       3: 72
+                       4: 81
+                       5: 90
+                 default: 44
+            }
+        44: new           #421                // class java/lang/MatchException
+        47: dup
+        48: aconst_null
+        49: aconst_null
+        50: invokespecial #423                // Method java/lang/MatchException."<init>":(Ljava/lang/String;Ljava/lang/Throwable;)V
+        53: athrow
+        54: aload_0
+        55: invokeinterface #427,  1          // InterfaceMethod getHairBase:()Ljava/lang/String;
+        60: goto          96
+        63: aload_0
+        64: invokeinterface #430,  1          // InterfaceMethod getHairBangs:()Ljava/lang/String;
+        69: goto          96
+        72: aload_0
+        73: invokeinterface #433,  1          // InterfaceMethod getHairBack:()Ljava/lang/String;
+        78: goto          96
+        81: aload_0
+        82: invokeinterface #436,  1          // InterfaceMethod getHairFront:()Ljava/lang/String;
+        87: goto          96
+        90: aload_0
+        91: invokeinterface #439,  1          // InterfaceMethod getHairExtra:()Ljava/lang/String;
+        96: areturn
+
+  public default void setLayeredHair(net.conczin.mca.resources.data.skin.LayeredHair$Category, java.lang.String);
+    Code:
+         0: getstatic     #409                // Field net/conczin/mca/entity/VillagerLike$1.$SwitchMap$net$conczin$mca$resources$data$skin$LayeredHair$Category:[I
+         3: aload_1
+         4: invokevirtual #415                // Method net/conczin/mca/resources/data/skin/LayeredHair$Category.ordinal:()I
+         7: iaload
+         8: tableswitch   { // 1 to 5
+                       1: 44
+                       2: 57
+                       3: 70
+                       4: 83
+                       5: 96
+                 default: 106
+            }
+        44: aload_0
+        45: getstatic     #18                 // Field HAIR_BASE:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        48: aload_2
+        49: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        54: goto          106
+        57: aload_0
+        58: getstatic     #21                 // Field HAIR_BANGS:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        61: aload_2
+        62: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        67: goto          106
+        70: aload_0
+        71: getstatic     #24                 // Field HAIR_BACK:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        74: aload_2
+        75: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        80: goto          106
+        83: aload_0
+        84: getstatic     #27                 // Field HAIR_FRONT:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        87: aload_2
+        88: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        93: goto          106
+        96: aload_0
+        97: getstatic     #30                 // Field HAIR_EXTRA:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       100: aload_2
+       101: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+       106: return
+
+  public default void clearLayeredHair();
+    Code:
+         0: invokestatic  #442                // Method net/conczin/mca/resources/data/skin/LayeredHair$Category.values:()[Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;
+         3: astore_1
+         4: aload_1
+         5: arraylength
+         6: istore_2
+         7: iconst_0
+         8: istore_3
+         9: iload_3
+        10: iload_2
+        11: if_icmpge     36
+        14: aload_1
+        15: iload_3
+        16: aaload
+        17: astore        4
+        19: aload_0
+        20: aload         4
+        22: ldc_w         #407                // String
+        25: invokeinterface #446,  3          // InterfaceMethod setLayeredHair:(Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;Ljava/lang/String;)V
+        30: iinc          3, 1
+        33: goto          9
+        36: return
+
+  public default void setHairStyle(net.conczin.mca.resources.data.skin.HairStyle);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #450                // Method net/conczin/mca/resources/data/skin/HairStyle.getIdentifier:()Ljava/lang/String;
+         5: invokeinterface #404,  2          // InterfaceMethod setHairStyleId:(Ljava/lang/String;)V
+        10: invokestatic  #442                // Method net/conczin/mca/resources/data/skin/LayeredHair$Category.values:()[Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;
+        13: astore_2
+        14: aload_2
+        15: arraylength
+        16: istore_3
+        17: iconst_0
+        18: istore        4
+        20: iload         4
+        22: iload_3
+        23: if_icmpge     52
+        26: aload_2
+        27: iload         4
+        29: aaload
+        30: astore        5
+        32: aload_0
+        33: aload         5
+        35: aload_1
+        36: aload         5
+        38: invokevirtual #455                // Method net/conczin/mca/resources/data/skin/HairStyle.layer:(Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Ljava/lang/String;
+        41: invokeinterface #446,  3          // InterfaceMethod setLayeredHair:(Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;Ljava/lang/String;)V
+        46: iinc          4, 1
+        49: goto          20
+        52: return
+
+  public default void setHairDye(int);
+    Code:
+         0: aload_0
+         1: getstatic     #36                 // Field HAIR_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: iload_1
+         5: invokestatic  #459                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         8: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        13: return
+
+  public default void setSkinDye(int);
+    Code:
+         0: aload_0
+         1: getstatic     #33                 // Field SKIN_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: iload_1
+         5: invokestatic  #459                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         8: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        13: return
+
+  public default void clearSkinDye();
+    Code:
+         0: aload_0
+         1: ldc_w         #464                // int -16777216
+         4: invokeinterface #465,  2          // InterfaceMethod setSkinDye:(I)V
+         9: return
+
+  public default int getSkinDye();
+    Code:
+         0: aload_0
+         1: getstatic     #33                 // Field SKIN_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #460                // class java/lang/Integer
+        12: invokevirtual #469                // Method java/lang/Integer.intValue:()I
+        15: ireturn
+
+  public default void clearHairDye();
+    Code:
+         0: aload_0
+         1: ldc_w         #464                // int -16777216
+         4: invokeinterface #472,  2          // InterfaceMethod setHairDye:(I)V
+         9: return
+
+  public default int getHairDye();
+    Code:
+         0: aload_0
+         1: getstatic     #36                 // Field HAIR_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #460                // class java/lang/Integer
+        12: invokevirtual #469                // Method java/lang/Integer.intValue:()I
+        15: ireturn
+
+  public default void setEyeDye(int);
+    Code:
+         0: aload_0
+         1: getstatic     #39                 // Field EYE_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: iload_1
+         5: invokestatic  #459                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         8: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        13: return
+
+  public default void clearEyeDye();
+    Code:
+         0: aload_0
+         1: iconst_m1
+         2: invokeinterface #475,  2          // InterfaceMethod setEyeDye:(I)V
+         7: return
+
+  public default int getEyeDye();
+    Code:
+         0: aload_0
+         1: getstatic     #39                 // Field EYE_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #460                // class java/lang/Integer
+        12: invokevirtual #469                // Method java/lang/Integer.intValue:()I
+        15: ireturn
+
+  public default void setEyeLeftDye(int);
+    Code:
+         0: aload_0
+         1: getstatic     #42                 // Field EYE_COLOR_LEFT:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: iload_1
+         5: invokestatic  #459                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         8: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        13: return
+
+  public default void clearEyeLeftDye();
+    Code:
+         0: aload_0
+         1: iconst_m1
+         2: invokeinterface #478,  2          // InterfaceMethod setEyeLeftDye:(I)V
+         7: return
+
+  public default int getEyeLeftDye();
+    Code:
+         0: aload_0
+         1: getstatic     #42                 // Field EYE_COLOR_LEFT:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #460                // class java/lang/Integer
+        12: invokevirtual #469                // Method java/lang/Integer.intValue:()I
+        15: ireturn
+
+  public default void setHairDye(net.minecraft.world.item.DyeColor);
+    Code:
+         0: aload_1
+         1: invokevirtual #481                // Method net/minecraft/world/item/DyeColor.getTextureDiffuseColor:()I
+         4: istore_2
+         5: aload_0
+         6: invokeinterface #486,  1          // InterfaceMethod getHairDye:()I
+        11: istore_3
+        12: iload_3
+        13: ifle          25
+        16: ldc_w         #489                // float 0.5f
+        19: iload_2
+        20: iload_3
+        21: invokestatic  #490                // Method net/minecraft/util/ARGB.srgbLerp:(FII)I
+        24: istore_2
+        25: aload_0
+        26: iload_2
+        27: invokeinterface #472,  2          // InterfaceMethod setHairDye:(I)V
+        32: return
+
+  public default net.conczin.mca.entity.ai.relationship.AgeState getAgeState();
+    Code:
+         0: aload_0
+         1: getstatic     #45                 // Field AGE_STATE:Lnet/conczin/mca/util/network/datasync/CEnumParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #207                // class net/conczin/mca/entity/ai/relationship/AgeState
+        12: areturn
+
+  public default net.conczin.mca.entity.ai.relationship.VillagerDimensions getVillagerDimensions();
+    Code:
+         0: aload_0
+         1: invokeinterface #202,  1          // InterfaceMethod getAgeState:()Lnet/conczin/mca/entity/ai/relationship/AgeState;
+         6: areturn
+
+  public default void updateAttributes();
+    Code:
+         0: fconst_1
+         1: fstore_1
+         2: aload_0
+         3: invokeinterface #128,  1          // InterfaceMethod getTraits:()Lnet/conczin/mca/entity/ai/Traits;
+         8: getstatic     #496                // Field net/conczin/mca/entity/ai/Traits.ATHLETIC:Lnet/conczin/mca/entity/ai/Traits$Trait;
+        11: invokevirtual #242                // Method net/conczin/mca/entity/ai/Traits.hasTrait:(Lnet/conczin/mca/entity/ai/Traits$Trait;)Z
+        14: ifeq          23
+        17: fload_1
+        18: ldc_w         #499                // float 1.1f
+        21: fmul
+        22: fstore_1
+        23: fload_1
+        24: ldc_w         #500                // float 0.9f
+        27: aload_0
+        28: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        33: getstatic     #501                // Field net/conczin/mca/entity/ai/Genetics.WIDTH:Lnet/conczin/mca/entity/ai/Genetics$GeneType;
+        36: invokevirtual #505                // Method net/conczin/mca/entity/ai/Genetics.getGene:(Lnet/conczin/mca/entity/ai/Genetics$GeneType;)F
+        39: ldc_w         #509                // float 0.2f
+        42: fmul
+        43: fadd
+        44: fdiv
+        45: fstore_1
+        46: fload_1
+        47: ldc_w         #500                // float 0.9f
+        50: aload_0
+        51: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        56: getstatic     #510                // Field net/conczin/mca/entity/ai/Genetics.SIZE:Lnet/conczin/mca/entity/ai/Genetics$GeneType;
+        59: invokevirtual #505                // Method net/conczin/mca/entity/ai/Genetics.getGene:(Lnet/conczin/mca/entity/ai/Genetics$GeneType;)F
+        62: ldc_w         #509                // float 0.2f
+        65: fmul
+        66: fadd
+        67: fmul
+        68: fstore_1
+        69: fload_1
+        70: aload_0
+        71: invokeinterface #202,  1          // InterfaceMethod getAgeState:()Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        76: invokevirtual #513                // Method net/conczin/mca/entity/ai/relationship/AgeState.getSpeed:()F
+        79: fmul
+        80: fstore_1
+        81: aload_0
+        82: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        87: getstatic     #516                // Field net/minecraft/world/entity/ai/attributes/Attributes.MOVEMENT_SPEED:Lnet/minecraft/core/Holder;
+        90: invokevirtual #522                // Method net/minecraft/world/entity/Mob.getAttribute:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+        93: astore_2
+        94: aload_2
+        95: ifnull        129
+        98: aload_2
+        99: getstatic     #526                // Field SPEED_ID:Lnet/minecraft/resources/Identifier;
+       102: invokevirtual #530                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.removeModifier:(Lnet/minecraft/resources/Identifier;)Z
+       105: pop
+       106: new           #536                // class net/minecraft/world/entity/ai/attributes/AttributeModifier
+       109: dup
+       110: getstatic     #526                // Field SPEED_ID:Lnet/minecraft/resources/Identifier;
+       113: fload_1
+       114: fconst_1
+       115: fsub
+       116: f2d
+       117: getstatic     #538                // Field net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation.ADD_MULTIPLIED_BASE:Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;
+       120: invokespecial #544                // Method net/minecraft/world/entity/ai/attributes/AttributeModifier."<init>":(Lnet/minecraft/resources/Identifier;DLnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)V
+       123: astore_3
+       124: aload_2
+       125: aload_3
+       126: invokevirtual #547                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.addTransientModifier:(Lnet/minecraft/world/entity/ai/attributes/AttributeModifier;)V
+       129: fconst_1
+       130: fstore_3
+       131: aload_0
+       132: invokeinterface #128,  1          // InterfaceMethod getTraits:()Lnet/conczin/mca/entity/ai/Traits;
+       137: getstatic     #551                // Field net/conczin/mca/entity/ai/Traits.WEAK:Lnet/conczin/mca/entity/ai/Traits$Trait;
+       140: invokevirtual #242                // Method net/conczin/mca/entity/ai/Traits.hasTrait:(Lnet/conczin/mca/entity/ai/Traits$Trait;)Z
+       143: ifeq          152
+       146: fload_3
+       147: ldc_w         #554                // float 0.75f
+       150: fmul
+       151: fstore_3
+       152: aload_0
+       153: invokeinterface #128,  1          // InterfaceMethod getTraits:()Lnet/conczin/mca/entity/ai/Traits;
+       158: getstatic     #555                // Field net/conczin/mca/entity/ai/Traits.TOUGH:Lnet/conczin/mca/entity/ai/Traits$Trait;
+       161: invokevirtual #242                // Method net/conczin/mca/entity/ai/Traits.hasTrait:(Lnet/conczin/mca/entity/ai/Traits$Trait;)Z
+       164: ifeq          173
+       167: fload_3
+       168: ldc_w         #558                // float 1.5f
+       171: fmul
+       172: fstore_3
+       173: aload_0
+       174: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+       179: getstatic     #559                // Field net/minecraft/world/entity/ai/attributes/Attributes.ATTACK_DAMAGE:Lnet/minecraft/core/Holder;
+       182: invokevirtual #522                // Method net/minecraft/world/entity/Mob.getAttribute:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+       185: astore        4
+       187: aload         4
+       189: ifnull        227
+       192: aload         4
+       194: getstatic     #562                // Field DAMAGE_ID:Lnet/minecraft/resources/Identifier;
+       197: invokevirtual #530                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.removeModifier:(Lnet/minecraft/resources/Identifier;)Z
+       200: pop
+       201: new           #536                // class net/minecraft/world/entity/ai/attributes/AttributeModifier
+       204: dup
+       205: getstatic     #562                // Field DAMAGE_ID:Lnet/minecraft/resources/Identifier;
+       208: fload_3
+       209: fconst_1
+       210: fsub
+       211: f2d
+       212: getstatic     #538                // Field net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation.ADD_MULTIPLIED_BASE:Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;
+       215: invokespecial #544                // Method net/minecraft/world/entity/ai/attributes/AttributeModifier."<init>":(Lnet/minecraft/resources/Identifier;DLnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)V
+       218: astore        5
+       220: aload         4
+       222: aload         5
+       224: invokevirtual #547                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.addTransientModifier:(Lnet/minecraft/world/entity/ai/attributes/AttributeModifier;)V
+       227: return
+
+  public default boolean setAgeState(net.conczin.mca.entity.ai.relationship.AgeState);
+    Code:
+         0: aload_0
+         1: invokeinterface #202,  1          // InterfaceMethod getAgeState:()Lnet/conczin/mca/entity/ai/relationship/AgeState;
+         6: astore_2
+         7: aload_1
+         8: aload_2
+         9: if_acmpne     14
+        12: iconst_0
+        13: ireturn
+        14: aload_0
+        15: getstatic     #45                 // Field AGE_STATE:Lnet/conczin/mca/util/network/datasync/CEnumParameter;
+        18: aload_1
+        19: invokeinterface #388,  3          // InterfaceMethod setTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        24: aload_0
+        25: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        30: invokevirtual #192                // Method net/minecraft/world/entity/Mob.refreshDimensions:()V
+        33: aload_0
+        34: invokeinterface #565,  1          // InterfaceMethod updateAttributes:()V
+        39: aload_2
+        40: getstatic     #568                // Field net/conczin/mca/entity/ai/relationship/AgeState.UNASSIGNED:Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        43: if_acmpeq     50
+        46: iconst_1
+        47: goto          51
+        50: iconst_0
+        51: ireturn
+
+  public default float getHorizontalScaleFactor();
+    Code:
+         0: aload_0
+         1: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+         6: ifnull        18
+         9: invokestatic  #283                // Method net/conczin/mca/Config.getInstance:()Lnet/conczin/mca/Config;
+        12: getfield      #570                // Field net/conczin/mca/Config.useSquidwardModels:Z
+        15: ifeq          38
+        18: aload_0
+        19: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        24: invokevirtual #573                // Method net/minecraft/world/entity/Mob.isBaby:()Z
+        27: ifeq          36
+        30: ldc_w         #489                // float 0.5f
+        33: goto          37
+        36: fconst_1
+        37: freturn
+        38: ldc_w         #576                // float 0.999f
+        41: aload_0
+        42: invokeinterface #577,  1          // InterfaceMethod getRawHorizontalScaleFactor:()F
+        47: invokestatic  #580                // Method java/lang/Math.min:(FF)F
+        50: freturn
+
+  public default float getRawHorizontalScaleFactor();
+    Code:
+         0: aload_0
+         1: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+         6: invokevirtual #586                // Method net/conczin/mca/entity/ai/Genetics.getHorizontalScaleFactor:()F
+         9: aload_0
+        10: invokeinterface #128,  1          // InterfaceMethod getTraits:()Lnet/conczin/mca/entity/ai/Traits;
+        15: invokevirtual #589                // Method net/conczin/mca/entity/ai/Traits.getHorizontalScaleFactor:()F
+        18: fmul
+        19: aload_0
+        20: invokeinterface #590,  1          // InterfaceMethod getVillagerDimensions:()Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions;
+        25: invokeinterface #594,  1          // InterfaceMethod net/conczin/mca/entity/ai/relationship/VillagerDimensions.getWidth:()F
+        30: fmul
+        31: aload_0
+        32: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        37: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        40: invokevirtual #599                // Method net/conczin/mca/entity/ai/relationship/Gender.getHorizontalScaleFactor:()F
+        43: fmul
+        44: freturn
+
+  public default float getVerticalScaleFactor();
+    Code:
+         0: ldc_w         #576                // float 0.999f
+         3: aload_0
+         4: invokeinterface #600,  1          // InterfaceMethod getRawVerticalScaleFactor:()F
+         9: invokestatic  #580                // Method java/lang/Math.min:(FF)F
+        12: freturn
+
+  public default float getRawVerticalScaleFactor();
+    Code:
+         0: aload_0
+         1: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+         6: ifnull        18
+         9: invokestatic  #283                // Method net/conczin/mca/Config.getInstance:()Lnet/conczin/mca/Config;
+        12: getfield      #570                // Field net/conczin/mca/Config.useSquidwardModels:Z
+        15: ifeq          38
+        18: aload_0
+        19: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        24: invokevirtual #573                // Method net/minecraft/world/entity/Mob.isBaby:()Z
+        27: ifeq          36
+        30: ldc_w         #489                // float 0.5f
+        33: goto          37
+        36: fconst_1
+        37: freturn
+        38: aload_0
+        39: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        44: invokevirtual #603                // Method net/conczin/mca/entity/ai/Genetics.getVerticalScaleFactor:()F
+        47: aload_0
+        48: invokeinterface #128,  1          // InterfaceMethod getTraits:()Lnet/conczin/mca/entity/ai/Traits;
+        53: invokevirtual #606                // Method net/conczin/mca/entity/ai/Traits.getVerticalScaleFactor:()F
+        56: fmul
+        57: aload_0
+        58: invokeinterface #590,  1          // InterfaceMethod getVillagerDimensions:()Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions;
+        63: invokeinterface #607,  1          // InterfaceMethod net/conczin/mca/entity/ai/relationship/VillagerDimensions.getHeight:()F
+        68: fmul
+        69: aload_0
+        70: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        75: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        78: invokevirtual #610                // Method net/conczin/mca/entity/ai/relationship/Gender.getScaleFactor:()F
+        81: fmul
+        82: freturn
+
+  public default net.conczin.mca.entity.ai.DialogueType getDialogueType(net.minecraft.world.entity.player.Player);
+    Code:
+         0: aload_1
+         1: invokevirtual #613                // Method net/minecraft/world/entity/player/Player.level:()Lnet/minecraft/world/level/Level;
+         4: invokevirtual #216                // Method net/minecraft/world/level/Level.isClientSide:()Z
+         7: ifne          138
+        10: aload_0
+        11: invokeinterface #202,  1          // InterfaceMethod getAgeState:()Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        16: invokestatic  #616                // Method net/conczin/mca/entity/ai/DialogueType.fromAge:(Lnet/conczin/mca/entity/ai/relationship/AgeState;)Lnet/conczin/mca/entity/ai/DialogueType;
+        19: astore_2
+        20: aload_1
+        21: invokevirtual #613                // Method net/minecraft/world/entity/player/Player.level:()Lnet/minecraft/world/level/Level;
+        24: invokevirtual #216                // Method net/minecraft/world/level/Level.isClientSide:()Z
+        27: ifne          124
+        30: aload_0
+        31: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        36: invokestatic  #222                // InterfaceMethod net/conczin/mca/entity/ai/relationship/EntityRelationship.of:(Lnet/minecraft/world/entity/Entity;)Ljava/util/Optional;
+        39: astore_3
+        40: aload_3
+        41: invokevirtual #622                // Method java/util/Optional.isPresent:()Z
+        44: ifeq          124
+        47: aload_3
+        48: invokevirtual #625                // Method java/util/Optional.get:()Ljava/lang/Object;
+        51: checkcast     #223                // class net/conczin/mca/entity/ai/relationship/EntityRelationship
+        54: invokeinterface #628,  1          // InterfaceMethod net/conczin/mca/entity/ai/relationship/EntityRelationship.getFamilyEntry:()Lnet/conczin/mca/server/world/data/FamilyTreeNode;
+        59: astore        4
+        61: aload_3
+        62: invokevirtual #625                // Method java/util/Optional.get:()Ljava/lang/Object;
+        65: checkcast     #223                // class net/conczin/mca/entity/ai/relationship/EntityRelationship
+        68: aload_1
+        69: invokevirtual #632                // Method net/minecraft/world/entity/player/Player.getUUID:()Ljava/util/UUID;
+        72: invokeinterface #636,  2          // InterfaceMethod net/conczin/mca/entity/ai/relationship/EntityRelationship.isMarriedTo:(Ljava/util/UUID;)Z
+        77: ifeq          84
+        80: getstatic     #640                // Field net/conczin/mca/entity/ai/DialogueType.SPOUSE:Lnet/conczin/mca/entity/ai/DialogueType;
+        83: areturn
+        84: aload_3
+        85: invokevirtual #625                // Method java/util/Optional.get:()Ljava/lang/Object;
+        88: checkcast     #223                // class net/conczin/mca/entity/ai/relationship/EntityRelationship
+        91: aload_1
+        92: invokevirtual #632                // Method net/minecraft/world/entity/player/Player.getUUID:()Ljava/util/UUID;
+        95: invokeinterface #644,  2          // InterfaceMethod net/conczin/mca/entity/ai/relationship/EntityRelationship.isEngagedWith:(Ljava/util/UUID;)Z
+       100: ifeq          107
+       103: getstatic     #647                // Field net/conczin/mca/entity/ai/DialogueType.ENGAGED:Lnet/conczin/mca/entity/ai/DialogueType;
+       106: areturn
+       107: aload         4
+       109: aload_1
+       110: invokevirtual #632                // Method net/minecraft/world/entity/player/Player.getUUID:()Ljava/util/UUID;
+       113: invokevirtual #650                // Method net/conczin/mca/server/world/data/FamilyTreeNode.isParent:(Ljava/util/UUID;)Z
+       116: ifeq          124
+       119: aload_2
+       120: invokevirtual #655                // Method net/conczin/mca/entity/ai/DialogueType.toChild:()Lnet/conczin/mca/entity/ai/DialogueType;
+       123: areturn
+       124: aload_0
+       125: invokeinterface #139,  1          // InterfaceMethod getVillagerBrain:()Lnet/conczin/mca/entity/ai/brain/VillagerBrain;
+       130: aload_1
+       131: invokevirtual #659                // Method net/conczin/mca/entity/ai/brain/VillagerBrain.getMemoriesForPlayer:(Lnet/minecraft/world/entity/player/Player;)Lnet/conczin/mca/entity/ai/Memories;
+       134: aload_2
+       135: invokevirtual #663                // Method net/conczin/mca/entity/ai/Memories.setDialogueType:(Lnet/conczin/mca/entity/ai/DialogueType;)V
+       138: aload_0
+       139: invokeinterface #139,  1          // InterfaceMethod getVillagerBrain:()Lnet/conczin/mca/entity/ai/brain/VillagerBrain;
+       144: aload_1
+       145: invokevirtual #659                // Method net/conczin/mca/entity/ai/brain/VillagerBrain.getMemoriesForPlayer:(Lnet/minecraft/world/entity/player/Player;)Lnet/conczin/mca/entity/ai/Memories;
+       148: invokevirtual #669                // Method net/conczin/mca/entity/ai/Memories.getDialogueType:()Lnet/conczin/mca/entity/ai/DialogueType;
+       151: areturn
+
+  public default void initializeSkin(boolean);
+    Code:
+         0: aload_0
+         1: invokeinterface #672,  1          // InterfaceMethod randomizeSkin:()V
+         6: aload_0
+         7: invokeinterface #675,  1          // InterfaceMethod randomizeClothes:()V
+        12: aload_0
+        13: invokeinterface #678,  1          // InterfaceMethod randomizeHair:()V
+        18: iload_1
+        19: ifne          130
+        22: aload_0
+        23: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        28: astore_2
+        29: aload_2
+        30: invokevirtual #681                // Method net/minecraft/world/entity/Mob.getRandom:()Lnet/minecraft/util/RandomSource;
+        33: invokeinterface #684,  1          // InterfaceMethod net/minecraft/util/RandomSource.nextFloat:()F
+        38: invokestatic  #283                // Method net/conczin/mca/Config.getInstance:()Lnet/conczin/mca/Config;
+        41: getfield      #689                // Field net/conczin/mca/Config.coloredHairChance:F
+        44: fcmpg
+        45: ifge          130
+        48: aload_2
+        49: invokevirtual #681                // Method net/minecraft/world/entity/Mob.getRandom:()Lnet/minecraft/util/RandomSource;
+        52: bipush        25
+        54: invokeinterface #693,  2          // InterfaceMethod net/minecraft/util/RandomSource.nextInt:(I)I
+        59: istore_3
+        60: invokestatic  #697                // Method net/minecraft/world/item/DyeColor.values:()[Lnet/minecraft/world/item/DyeColor;
+        63: arraylength
+        64: istore        4
+        66: iload_3
+        67: iload         4
+        69: irem
+        70: istore        5
+        72: iload_3
+        73: iconst_1
+        74: iadd
+        75: iload         4
+        77: irem
+        78: istore        6
+        80: aload_2
+        81: invokevirtual #681                // Method net/minecraft/world/entity/Mob.getRandom:()Lnet/minecraft/util/RandomSource;
+        84: invokeinterface #684,  1          // InterfaceMethod net/minecraft/util/RandomSource.nextFloat:()F
+        89: fstore        7
+        91: iload         5
+        93: invokestatic  #700                // Method net/minecraft/world/item/DyeColor.byId:(I)Lnet/minecraft/world/item/DyeColor;
+        96: invokevirtual #481                // Method net/minecraft/world/item/DyeColor.getTextureDiffuseColor:()I
+        99: istore        8
+       101: iload         6
+       103: invokestatic  #700                // Method net/minecraft/world/item/DyeColor.byId:(I)Lnet/minecraft/world/item/DyeColor;
+       106: invokevirtual #481                // Method net/minecraft/world/item/DyeColor.getTextureDiffuseColor:()I
+       109: istore        9
+       111: fload         7
+       113: iload         8
+       115: iload         9
+       117: invokestatic  #490                // Method net/minecraft/util/ARGB.srgbLerp:(FII)I
+       120: istore        10
+       122: aload_0
+       123: iload         10
+       125: invokeinterface #472,  2          // InterfaceMethod setHairDye:(I)V
+       130: return
+
+  public default void randomizeClothes();
+    Code:
+         0: aload_0
+         1: invokeinterface #704,  1          // InterfaceMethod isClothingLocked:()Z
+         6: ifeq          10
+         9: return
+        10: aload_0
+        11: invokeinterface #707,  1          // InterfaceMethod forceRandomizeClothes:()V
+        16: return
+
+  public default void forceRandomizeClothes();
+    Code:
+         0: aload_0
+         1: invokestatic  #710                // Method net/conczin/mca/resources/ClothingList.getInstance:()Lnet/conczin/mca/resources/ClothingList;
+         4: aload_0
+         5: invokevirtual #715                // Method net/conczin/mca/resources/ClothingList.getPool:(Lnet/conczin/mca/entity/VillagerLike;)Lnet/conczin/mca/resources/WeightedPool;
+         8: invokevirtual #719                // Method net/conczin/mca/resources/WeightedPool.pickOne:()Ljava/lang/Object;
+        11: checkcast     #343                // class java/lang/String
+        14: invokeinterface #384,  2          // InterfaceMethod setClothes:(Ljava/lang/String;)V
+        19: return
+
+  public default void randomizeSkin();
+    Code:
+         0: invokestatic  #724                // Method net/conczin/mca/resources/BodySkinList.getInstance:()Lnet/conczin/mca/resources/BodySkinList;
+         3: astore_1
+         4: aload_1
+         5: ifnonnull     18
+         8: aload_0
+         9: ldc_w         #407                // String
+        12: invokeinterface #729,  2          // InterfaceMethod setSkin:(Ljava/lang/String;)V
+        17: return
+        18: aload_0
+        19: aload_1
+        20: aload_0
+        21: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        26: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        29: invokevirtual #732                // Method net/conczin/mca/resources/BodySkinList.getPool:(Lnet/conczin/mca/entity/ai/relationship/Gender;)Lnet/conczin/mca/resources/WeightedPool;
+        32: invokevirtual #719                // Method net/conczin/mca/resources/WeightedPool.pickOne:()Ljava/lang/Object;
+        35: checkcast     #343                // class java/lang/String
+        38: invokeinterface #729,  2          // InterfaceMethod setSkin:(Ljava/lang/String;)V
+        43: return
+
+  public default void randomizeHair();
+    Code:
+         0: invokestatic  #735                // Method net/conczin/mca/resources/HairStyleList.getInstance:()Lnet/conczin/mca/resources/HairStyleList;
+         3: astore_1
+         4: aload_0
+         5: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        10: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        13: astore_2
+        14: aload_1
+        15: ifnull        36
+        18: aload_1
+        19: aload_2
+        20: invokevirtual #740                // Method net/conczin/mca/resources/HairStyleList.pick:(Lnet/conczin/mca/entity/ai/relationship/Gender;)Lnet/conczin/mca/resources/data/skin/HairStyle;
+        23: astore_3
+        24: aload_3
+        25: ifnull        36
+        28: aload_0
+        29: aload_3
+        30: invokeinterface #744,  2          // InterfaceMethod setHairStyle:(Lnet/conczin/mca/resources/data/skin/HairStyle;)V
+        35: return
+        36: aload_0
+        37: invokeinterface #748,  1          // InterfaceMethod clearLayeredHair:()V
+        42: aload_0
+        43: ldc_w         #407                // String
+        46: invokeinterface #404,  2          // InterfaceMethod setHairStyleId:(Ljava/lang/String;)V
+        51: return
+
+  public default void validateClothes();
+    Code:
+         0: aload_0
+         1: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+         6: invokevirtual #212                // Method net/minecraft/world/entity/Mob.level:()Lnet/minecraft/world/level/Level;
+         9: invokevirtual #216                // Method net/minecraft/world/level/Level.isClientSide:()Z
+        12: ifne          225
+        15: aload_0
+        16: invokeinterface #751,  1          // InterfaceMethod migrateLegacyHairStyle:()V
+        21: aload_0
+        22: invokeinterface #754,  1          // InterfaceMethod getSkin:()Ljava/lang/String;
+        27: invokestatic  #367                // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+        30: ifne          68
+        33: aload_0
+        34: invokeinterface #754,  1          // InterfaceMethod getSkin:()Ljava/lang/String;
+        39: invokestatic  #757                // Method net/conczin/mca/resources/SkinVisualIds.isBodySkin:(Ljava/lang/String;)Z
+        42: ifne          68
+        45: getstatic     #762                // Field net/conczin/mca/MCA.LOGGER:Lorg/apache/logging/log4j/Logger;
+        48: ldc_w         #766                // String Villagers skin {} does not exist!
+        51: aload_0
+        52: invokeinterface #754,  1          // InterfaceMethod getSkin:()Ljava/lang/String;
+        57: invokeinterface #768,  3          // InterfaceMethod org/apache/logging/log4j/Logger.info:(Ljava/lang/String;Ljava/lang/Object;)V
+        62: aload_0
+        63: invokeinterface #672,  1          // InterfaceMethod randomizeSkin:()V
+        68: aload_0
+        69: invokeinterface #774,  1          // InterfaceMethod getClothes:()Ljava/lang/String;
+        74: invokestatic  #777                // Method net/conczin/mca/resources/SkinVisualIds.isClothing:(Ljava/lang/String;)Z
+        77: ifne          103
+        80: getstatic     #762                // Field net/conczin/mca/MCA.LOGGER:Lorg/apache/logging/log4j/Logger;
+        83: ldc_w         #780                // String Villagers clothing {} does not exist!
+        86: aload_0
+        87: invokeinterface #774,  1          // InterfaceMethod getClothes:()Ljava/lang/String;
+        92: invokeinterface #768,  3          // InterfaceMethod org/apache/logging/log4j/Logger.info:(Ljava/lang/String;Ljava/lang/Object;)V
+        97: aload_0
+        98: invokeinterface #707,  1          // InterfaceMethod forceRandomizeClothes:()V
+       103: aload_0
+       104: invokeinterface #782,  1          // InterfaceMethod getHairStyleId:()Ljava/lang/String;
+       109: invokestatic  #367                // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+       112: ifne          150
+       115: aload_0
+       116: invokeinterface #782,  1          // InterfaceMethod getHairStyleId:()Ljava/lang/String;
+       121: invokestatic  #785                // Method net/conczin/mca/resources/SkinVisualIds.isHairStyle:(Ljava/lang/String;)Z
+       124: ifne          150
+       127: getstatic     #762                // Field net/conczin/mca/MCA.LOGGER:Lorg/apache/logging/log4j/Logger;
+       130: ldc_w         #788                // String Villagers hair style {} does not exist!
+       133: aload_0
+       134: invokeinterface #782,  1          // InterfaceMethod getHairStyleId:()Ljava/lang/String;
+       139: invokeinterface #768,  3          // InterfaceMethod org/apache/logging/log4j/Logger.info:(Ljava/lang/String;Ljava/lang/Object;)V
+       144: aload_0
+       145: invokeinterface #678,  1          // InterfaceMethod randomizeHair:()V
+       150: invokestatic  #442                // Method net/conczin/mca/resources/data/skin/LayeredHair$Category.values:()[Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;
+       153: astore_1
+       154: aload_1
+       155: arraylength
+       156: istore_2
+       157: iconst_0
+       158: istore_3
+       159: iload_3
+       160: iload_2
+       161: if_icmpge     225
+       164: aload_1
+       165: iload_3
+       166: aaload
+       167: astore        4
+       169: aload_0
+       170: aload         4
+       172: invokeinterface #790,  2          // InterfaceMethod getLayeredHair:(Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Ljava/lang/String;
+       177: astore        5
+       179: aload         5
+       181: invokestatic  #367                // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+       184: ifne          219
+       187: aload         5
+       189: aload         4
+       191: invokestatic  #793                // Method net/conczin/mca/resources/SkinVisualIds.isHairLayer:(Ljava/lang/String;Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Z
+       194: ifne          219
+       197: getstatic     #762                // Field net/conczin/mca/MCA.LOGGER:Lorg/apache/logging/log4j/Logger;
+       200: ldc_w         #797                // String Villagers layered hair {} does not exist!
+       203: aload         5
+       205: invokeinterface #768,  3          // InterfaceMethod org/apache/logging/log4j/Logger.info:(Ljava/lang/String;Ljava/lang/Object;)V
+       210: aload_0
+       211: invokeinterface #678,  1          // InterfaceMethod randomizeHair:()V
+       216: goto          225
+       219: iinc          3, 1
+       222: goto          159
+       225: return
+
+  public default void migrateLegacyHairStyle();
+    Code:
+         0: aload_0
+         1: getstatic     #12                 // Field HAIR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         4: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+         9: checkcast     #343                // class java/lang/String
+        12: astore_1
+        13: aload_0
+        14: getstatic     #15                 // Field HAIR_STYLE:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        17: invokeinterface #380,  2          // InterfaceMethod getTrackedValue:(Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+        22: checkcast     #343                // class java/lang/String
+        25: invokestatic  #367                // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+        28: ifeq          85
+        31: aload_1
+        32: invokestatic  #367                // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+        35: ifne          85
+        38: invokestatic  #735                // Method net/conczin/mca/resources/HairStyleList.getInstance:()Lnet/conczin/mca/resources/HairStyleList;
+        41: astore_2
+        42: aload_2
+        43: ifnonnull     50
+        46: aconst_null
+        47: goto          55
+        50: aload_2
+        51: aload_1
+        52: invokevirtual #799                // Method net/conczin/mca/resources/HairStyleList.get:(Ljava/lang/String;)Lnet/conczin/mca/resources/data/skin/HairStyle;
+        55: astore_3
+        56: aload_0
+        57: aload_3
+        58: ifnonnull     78
+        61: aload_1
+        62: aload_0
+        63: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+        68: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        71: fconst_1
+        72: invokestatic  #802                // Method net/conczin/mca/resources/data/skin/HairStyle.singleLayer:(Ljava/lang/String;Lnet/conczin/mca/entity/ai/relationship/Gender;F)Lnet/conczin/mca/resources/data/skin/HairStyle;
+        75: goto          79
+        78: aload_3
+        79: invokeinterface #744,  2          // InterfaceMethod setHairStyle:(Lnet/conczin/mca/resources/data/skin/HairStyle;)V
+        84: return
+        85: aload_0
+        86: invokeinterface #782,  1          // InterfaceMethod getHairStyleId:()Ljava/lang/String;
+        91: astore_2
+        92: aload_2
+        93: invokestatic  #367                // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+        96: ifne          169
+        99: aload_0
+       100: invokeinterface #806,  1          // InterfaceMethod hasLayeredHair:()Z
+       105: ifne          169
+       108: invokestatic  #735                // Method net/conczin/mca/resources/HairStyleList.getInstance:()Lnet/conczin/mca/resources/HairStyleList;
+       111: astore_3
+       112: aload_3
+       113: ifnonnull     120
+       116: aconst_null
+       117: goto          125
+       120: aload_3
+       121: aload_2
+       122: invokevirtual #799                // Method net/conczin/mca/resources/HairStyleList.get:(Ljava/lang/String;)Lnet/conczin/mca/resources/data/skin/HairStyle;
+       125: astore        4
+       127: aload         4
+       129: ifnonnull     139
+       132: aload_2
+       133: invokestatic  #809                // Method net/conczin/mca/util/ImmersiveLibraryIds.isValid:(Ljava/lang/String;)Z
+       136: ifeq          169
+       139: aload_0
+       140: aload         4
+       142: ifnonnull     162
+       145: aload_2
+       146: aload_0
+       147: invokeinterface #118,  1          // InterfaceMethod getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+       152: invokevirtual #146                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+       155: fconst_1
+       156: invokestatic  #802                // Method net/conczin/mca/resources/data/skin/HairStyle.singleLayer:(Ljava/lang/String;Lnet/conczin/mca/entity/ai/relationship/Gender;F)Lnet/conczin/mca/resources/data/skin/HairStyle;
+       159: goto          164
+       162: aload         4
+       164: invokeinterface #744,  2          // InterfaceMethod setHairStyle:(Lnet/conczin/mca/resources/data/skin/HairStyle;)V
+       169: return
+
+  private boolean hasLayeredHair();
+    Code:
+         0: invokestatic  #442                // Method net/conczin/mca/resources/data/skin/LayeredHair$Category.values:()[Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;
+         3: astore_1
+         4: aload_1
+         5: arraylength
+         6: istore_2
+         7: iconst_0
+         8: istore_3
+         9: iload_3
+        10: iload_2
+        11: if_icmpge     41
+        14: aload_1
+        15: iload_3
+        16: aaload
+        17: astore        4
+        19: aload_0
+        20: aload         4
+        22: invokeinterface #790,  2          // InterfaceMethod getLayeredHair:(Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Ljava/lang/String;
+        27: invokestatic  #367                // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+        30: ifne          35
+        33: iconst_1
+        34: ireturn
+        35: iinc          3, 1
+        38: goto          9
+        41: iconst_0
+        42: ireturn
+
+  public default net.minecraft.nbt.CompoundTag toNbtForConversion();
+    Code:
+         0: new           #814                // class net/minecraft/nbt/CompoundTag
+         3: dup
+         4: invokespecial #816                // Method net/minecraft/nbt/CompoundTag."<init>":()V
+         7: astore_1
+         8: aload_0
+         9: invokeinterface #818,  1          // InterfaceMethod getTypeDataManager:()Lnet/conczin/mca/util/network/datasync/CDataManager;
+        14: aload_0
+        15: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        20: aload_1
+        21: invokevirtual #822                // Method net/conczin/mca/util/network/datasync/CDataManager.save:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/nbt/CompoundTag;)V
+        24: aload_0
+        25: aload_1
+        26: invokeinterface #828,  2          // InterfaceMethod writeAdditionalConversionData:(Lnet/minecraft/nbt/CompoundTag;)V
+        31: aload_1
+        32: areturn
+
+  public default void readNbtForConversion(net.minecraft.nbt.CompoundTag);
+    Code:
+         0: aload_0
+         1: invokeinterface #818,  1          // InterfaceMethod getTypeDataManager:()Lnet/conczin/mca/util/network/datasync/CDataManager;
+         6: aload_0
+         7: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        12: aload_1
+        13: invokevirtual #831                // Method net/conczin/mca/util/network/datasync/CDataManager.load:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/nbt/CompoundTag;)V
+        16: aload_0
+        17: aload_1
+        18: invokeinterface #834,  2          // InterfaceMethod readAdditionalConversionData:(Lnet/minecraft/nbt/CompoundTag;)V
+        23: aload_0
+        24: invokeinterface #837,  1          // InterfaceMethod onTraitsLoaded:()V
+        29: return
+
+  public default void writeAdditionalConversionData(net.minecraft.nbt.CompoundTag);
+    Code:
+         0: return
+
+  public default void readAdditionalConversionData(net.minecraft.nbt.CompoundTag);
+    Code:
+         0: return
+
+  public abstract void readAdditionalSaveDataForEditor(net.minecraft.nbt.CompoundTag);
+
+  public default void syncFromEditor(net.minecraft.nbt.CompoundTag);
+    Code:
+         0: aload_0
+         1: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+         6: astore_2
+         7: aload_0
+         8: aload_1
+         9: invokeinterface #840,  2          // InterfaceMethod readAdditionalSaveDataForEditor:(Lnet/minecraft/nbt/CompoundTag;)V
+        14: aload_2
+        15: invokevirtual #841                // Method net/minecraft/world/entity/Mob.registryAccess:()Lnet/minecraft/core/RegistryAccess;
+        18: aload_1
+        19: invokestatic  #845                // InterfaceMethod parseCustomName:(Lnet/minecraft/core/HolderLookup$Provider;Lnet/minecraft/nbt/CompoundTag;)Ljava/util/Optional;
+        22: aload_2
+        23: dup
+        24: invokestatic  #849                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+        27: pop
+        28: invokedynamic #855,  0            // InvokeDynamic #5:accept:(Lnet/minecraft/world/entity/Mob;)Ljava/util/function/Consumer;
+        33: invokevirtual #232                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+        36: return
+
+  public default void copyVillagerAttributesFrom(net.conczin.mca.entity.VillagerLike<?>);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #858,  1          // InterfaceMethod toNbtForConversion:()Lnet/minecraft/nbt/CompoundTag;
+         7: invokeinterface #861,  2          // InterfaceMethod readNbtForConversion:(Lnet/minecraft/nbt/CompoundTag;)V
+        12: aload_0
+        13: aload_1
+        14: invokeinterface #864,  1          // InterfaceMethod getVillagerData:()Lnet/minecraft/world/entity/npc/villager/VillagerData;
+        19: invokeinterface #868,  2          // InterfaceMethod setVillagerData:(Lnet/minecraft/world/entity/npc/villager/VillagerData;)V
+        24: return
+
+  public default boolean isHostile();
+    Code:
+         0: iconst_0
+         1: ireturn
+
+  public default net.conczin.mca.entity.VillagerLike$PlayerModel getPlayerModel();
+    Code:
+         0: getstatic     #872                // Field net/conczin/mca/entity/VillagerLike$PlayerModel.VILLAGER:Lnet/conczin/mca/entity/VillagerLike$PlayerModel;
+         3: areturn
+
+  public abstract boolean isBurned();
+
+  public default void spawnBurntParticles();
+    Code:
+         0: aload_0
+         1: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+         6: invokevirtual #681                // Method net/minecraft/world/entity/Mob.getRandom:()Lnet/minecraft/util/RandomSource;
+         9: astore_1
+        10: aload_1
+        11: iconst_4
+        12: invokeinterface #693,  2          // InterfaceMethod net/minecraft/util/RandomSource.nextInt:(I)I
+        17: ifne          106
+        20: aload_1
+        21: invokeinterface #878,  1          // InterfaceMethod net/minecraft/util/RandomSource.nextGaussian:()D
+        26: ldc2_w        #882                // double 0.02d
+        29: dmul
+        30: dstore_2
+        31: aload_1
+        32: invokeinterface #878,  1          // InterfaceMethod net/minecraft/util/RandomSource.nextGaussian:()D
+        37: ldc2_w        #882                // double 0.02d
+        40: dmul
+        41: dstore        4
+        43: aload_1
+        44: invokeinterface #878,  1          // InterfaceMethod net/minecraft/util/RandomSource.nextGaussian:()D
+        49: ldc2_w        #882                // double 0.02d
+        52: dmul
+        53: dstore        6
+        55: aload_0
+        56: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        61: invokevirtual #212                // Method net/minecraft/world/entity/Mob.level:()Lnet/minecraft/world/level/Level;
+        64: getstatic     #884                // Field net/minecraft/core/particles/ParticleTypes.SMOKE:Lnet/minecraft/core/particles/SimpleParticleType;
+        67: aload_0
+        68: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        73: dconst_1
+        74: invokevirtual #890                // Method net/minecraft/world/entity/Mob.getRandomX:(D)D
+        77: aload_0
+        78: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        83: invokevirtual #894                // Method net/minecraft/world/entity/Mob.getRandomY:()D
+        86: dconst_1
+        87: dadd
+        88: aload_0
+        89: invokeinterface #163,  1          // InterfaceMethod asEntity:()Lnet/minecraft/world/entity/Mob;
+        94: dconst_1
+        95: invokevirtual #897                // Method net/minecraft/world/entity/Mob.getRandomZ:(D)D
+        98: dload_2
+        99: dload         4
+       101: dload         6
+       103: invokevirtual #900                // Method net/minecraft/world/level/Level.addParticle:(Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
+       106: return
+
+  public static java.util.Optional<net.minecraft.network.chat.Component> parseCustomName(net.minecraft.core.HolderLookup$Provider, net.minecraft.nbt.CompoundTag);
+    Code:
+         0: aload_1
+         1: ldc_w         #904                // String CustomName
+         4: invokevirtual #906                // Method net/minecraft/nbt/CompoundTag.get:(Ljava/lang/String;)Lnet/minecraft/nbt/Tag;
+         7: astore_2
+         8: aload_2
+         9: ifnonnull     16
+        12: invokestatic  #909                // Method java/util/Optional.empty:()Ljava/util/Optional;
+        15: areturn
+        16: getstatic     #913                // Field net/minecraft/network/chat/ComponentSerialization.CODEC:Lcom/mojang/serialization/Codec;
+        19: aload_0
+        20: getstatic     #919                // Field net/minecraft/nbt/NbtOps.INSTANCE:Lnet/minecraft/nbt/NbtOps;
+        23: invokeinterface #925,  2          // InterfaceMethod net/minecraft/core/HolderLookup$Provider.createSerializationContext:(Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/resources/RegistryOps;
+        28: aload_2
+        29: invokeinterface #931,  3          // InterfaceMethod com/mojang/serialization/Codec.parse:(Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+        34: invokeinterface #937,  1          // InterfaceMethod com/mojang/serialization/DataResult.result:()Ljava/util/Optional;
+        39: astore_3
+        40: aload_3
+        41: invokevirtual #622                // Method java/util/Optional.isPresent:()Z
+        44: ifeq          57
+        47: aload_3
+        48: invokedynamic #942,  0            // InvokeDynamic #6:apply:()Ljava/util/function/Function;
+        53: invokevirtual #943                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+        56: areturn
+        57: aload_1
+        58: ldc_w         #904                // String CustomName
+        61: invokevirtual #947                // Method net/minecraft/nbt/CompoundTag.getString:(Ljava/lang/String;)Ljava/util/Optional;
+        64: astore        4
+        66: aload         4
+        68: invokevirtual #951                // Method java/util/Optional.isEmpty:()Z
+        71: ifne          88
+        74: aload         4
+        76: invokevirtual #625                // Method java/util/Optional.get:()Ljava/lang/Object;
+        79: checkcast     #343                // class java/lang/String
+        82: invokestatic  #367                // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+        85: ifeq          92
+        88: invokestatic  #909                // Method java/util/Optional.empty:()Ljava/util/Optional;
+        91: areturn
+        92: aload         4
+        94: invokevirtual #625                // Method java/util/Optional.get:()Ljava/lang/Object;
+        97: checkcast     #343                // class java/lang/String
+       100: astore        5
+       102: getstatic     #913                // Field net/minecraft/network/chat/ComponentSerialization.CODEC:Lcom/mojang/serialization/Codec;
+       105: aload_0
+       106: getstatic     #954                // Field com/mojang/serialization/JsonOps.INSTANCE:Lcom/mojang/serialization/JsonOps;
+       109: invokeinterface #925,  2          // InterfaceMethod net/minecraft/core/HolderLookup$Provider.createSerializationContext:(Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/resources/RegistryOps;
+       114: aload         5
+       116: invokestatic  #959                // Method net/minecraft/util/GsonHelper.parse:(Ljava/lang/String;)Lcom/google/gson/JsonObject;
+       119: invokeinterface #931,  3          // InterfaceMethod com/mojang/serialization/Codec.parse:(Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+       124: invokeinterface #937,  1          // InterfaceMethod com/mojang/serialization/DataResult.result:()Ljava/util/Optional;
+       129: aload         5
+       131: invokedynamic #964,  0            // InvokeDynamic #7:get:(Ljava/lang/String;)Ljava/util/function/Supplier;
+       136: invokevirtual #967                // Method java/util/Optional.or:(Ljava/util/function/Supplier;)Ljava/util/Optional;
+       139: invokedynamic #942,  0            // InvokeDynamic #6:apply:()Ljava/util/function/Function;
+       144: invokevirtual #943                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+       147: areturn
+       148: astore        6
+       150: getstatic     #762                // Field net/conczin/mca/MCA.LOGGER:Lorg/apache/logging/log4j/Logger;
+       153: ldc_w         #973                // String Failed to parse entity custom name {}
+       156: aload         5
+       158: aload         6
+       160: invokeinterface #975,  4          // InterfaceMethod org/apache/logging/log4j/Logger.warn:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+       165: aload         5
+       167: invokestatic  #179                // InterfaceMethod net/minecraft/network/chat/Component.literal:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       170: invokestatic  #979                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+       173: invokedynamic #982,  0            // InvokeDynamic #8:apply:()Ljava/util/function/Function;
+       178: invokevirtual #943                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+       181: areturn
+      Exception table:
+         from    to  target type
+           102   147   148   Class java/lang/Exception
+
+  public static net.minecraft.network.chat.Component cleanCustomName(net.minecraft.network.chat.Component);
+    Code:
+         0: aload_0
+         1: ifnonnull     6
+         4: aconst_null
+         5: areturn
+         6: aload_0
+         7: invokeinterface #983,  1          // InterfaceMethod net/minecraft/network/chat/Component.getString:()Ljava/lang/String;
+        12: astore_1
+        13: aload_1
+        14: ldc_w         #985                // String \"
+        17: invokevirtual #987                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+        20: ifeq          65
+        23: aload_1
+        24: ldc_w         #985                // String \"
+        27: invokevirtual #990                // Method java/lang/String.endsWith:(Ljava/lang/String;)Z
+        30: ifeq          65
+        33: aload_1
+        34: invokevirtual #993                // Method java/lang/String.length:()I
+        37: iconst_2
+        38: if_icmplt     65
+        41: aload_1
+        42: iconst_1
+        43: aload_1
+        44: invokevirtual #993                // Method java/lang/String.length:()I
+        47: iconst_1
+        48: isub
+        49: invokevirtual #996                // Method java/lang/String.substring:(II)Ljava/lang/String;
+        52: invokestatic  #179                // InterfaceMethod net/minecraft/network/chat/Component.literal:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+        55: aload_0
+        56: invokeinterface #1000,  1         // InterfaceMethod net/minecraft/network/chat/Component.getStyle:()Lnet/minecraft/network/chat/Style;
+        61: invokevirtual #1004               // Method net/minecraft/network/chat/MutableComponent.setStyle:(Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/MutableComponent;
+        64: areturn
+        65: aload_0
+        66: areturn
+
+  private static java.util.Optional lambda$parseCustomName$0(java.lang.String);
+    Code:
+         0: aload_0
+         1: invokestatic  #179                // InterfaceMethod net/minecraft/network/chat/Component.literal:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+         4: invokestatic  #979                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+         7: areturn
+
+  private static void lambda$setName$0(java.lang.String, net.conczin.mca.entity.ai.relationship.EntityRelationship);
+    Code:
+         0: aload_1
+         1: invokeinterface #628,  1          // InterfaceMethod net/conczin/mca/entity/ai/relationship/EntityRelationship.getFamilyEntry:()Lnet/conczin/mca/server/world/data/FamilyTreeNode;
+         6: aload_0
+         7: invokevirtual #1010               // Method net/conczin/mca/server/world/data/FamilyTreeNode.setName:(Ljava/lang/String;)V
+        10: return
+
+  static {};
+    Code:
+         0: ldc_w         #1013               // String Clothes
+         3: ldc_w         #407                // String
+         6: invokestatic  #1015               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Ljava/lang/String;)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+         9: putstatic     #3                  // Field CLOTHES:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        12: ldc_w         #1018               // String ClothingLocked
+        15: iconst_0
+        16: invokestatic  #1020               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Z)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        19: putstatic     #49                 // Field CLOTHING_LOCKED:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        22: ldc_w         #1023               // String Skin
+        25: ldc_w         #407                // String
+        28: invokestatic  #1015               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Ljava/lang/String;)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        31: putstatic     #9                  // Field SKIN:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        34: ldc_w         #1025               // String Hair
+        37: ldc_w         #407                // String
+        40: invokestatic  #1015               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Ljava/lang/String;)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        43: putstatic     #12                 // Field HAIR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        46: ldc_w         #1027               // String HairStyle
+        49: ldc_w         #407                // String
+        52: invokestatic  #1015               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Ljava/lang/String;)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        55: putstatic     #15                 // Field HAIR_STYLE:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        58: ldc_w         #1029               // String HairBase
+        61: ldc_w         #407                // String
+        64: invokestatic  #1015               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Ljava/lang/String;)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        67: putstatic     #18                 // Field HAIR_BASE:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        70: ldc_w         #1031               // String HairBangs
+        73: ldc_w         #407                // String
+        76: invokestatic  #1015               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Ljava/lang/String;)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        79: putstatic     #21                 // Field HAIR_BANGS:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        82: ldc_w         #1033               // String HairBack
+        85: ldc_w         #407                // String
+        88: invokestatic  #1015               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Ljava/lang/String;)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        91: putstatic     #24                 // Field HAIR_BACK:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+        94: ldc_w         #1035               // String HairFront
+        97: ldc_w         #407                // String
+       100: invokestatic  #1015               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Ljava/lang/String;)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       103: putstatic     #27                 // Field HAIR_FRONT:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       106: ldc_w         #1037               // String HairExtra
+       109: ldc_w         #407                // String
+       112: invokestatic  #1015               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Ljava/lang/String;)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       115: putstatic     #30                 // Field HAIR_EXTRA:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       118: ldc_w         #1039               // String SkinColor
+       121: ldc_w         #464                // int -16777216
+       124: invokestatic  #1041               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;I)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       127: putstatic     #33                 // Field SKIN_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       130: ldc_w         #1044               // String HairColor
+       133: ldc_w         #464                // int -16777216
+       136: invokestatic  #1041               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;I)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       139: putstatic     #36                 // Field HAIR_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       142: ldc_w         #1046               // String EyeColor
+       145: iconst_m1
+       146: invokestatic  #1041               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;I)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       149: putstatic     #39                 // Field EYE_COLOR:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       152: ldc_w         #1048               // String EyeColorLeft
+       155: iconst_m1
+       156: invokestatic  #1041               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;I)Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       159: putstatic     #42                 // Field EYE_COLOR_LEFT:Lnet/conczin/mca/util/network/datasync/CDataParameter;
+       162: ldc_w         #1050               // String AgeState
+       165: getstatic     #568                // Field net/conczin/mca/entity/ai/relationship/AgeState.UNASSIGNED:Lnet/conczin/mca/entity/ai/relationship/AgeState;
+       168: invokestatic  #1052               // InterfaceMethod net/conczin/mca/util/network/datasync/CParameter.create:(Ljava/lang/String;Ljava/lang/Enum;)Lnet/conczin/mca/util/network/datasync/CEnumParameter;
+       171: putstatic     #45                 // Field AGE_STATE:Lnet/conczin/mca/util/network/datasync/CEnumParameter;
+       174: ldc_w         #1055               // String trait_speed
+       177: invokestatic  #324                // Method net/conczin/mca/MCA.locate:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+       180: putstatic     #526                // Field SPEED_ID:Lnet/minecraft/resources/Identifier;
+       183: ldc_w         #1057               // String trait_damage
+       186: invokestatic  #324                // Method net/conczin/mca/MCA.locate:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+       189: putstatic     #562                // Field DAMAGE_ID:Lnet/minecraft/resources/Identifier;
+       192: return
+}

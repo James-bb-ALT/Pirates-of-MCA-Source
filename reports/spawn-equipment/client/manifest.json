@@ -1,0 +1,11 @@
+{
+  "version": "10.1.0-alpha.14",
+  "frames": 4,
+  "files": {
+    "0000_SPAWN-EQ-front.png": "bb0359915b5c06a0b277a163d3e0c5ee54d442ce0412e1006fbb6c5986370117",
+    "0001_SPAWN-EQ-side.png": "065dccc1547e79ebd4f436888d970cee91a3a25c4c439d52cb42fb5137b450d8",
+    "0002_SPAWN-EQ-back.png": "2873edc207cd66b881fd1f1916818748430f7df01e6c255fd795917fb9352037",
+    "0003_SPAWN-EQ-reopen.png": "527225073b8ee20dd0b0c612124f0d9b9a95d2a79e3bf2efdd32c744043bf11b",
+    "execution.log": "6614994c0b231e081a3511be5a1d8e9316bbbd172fc042ff6b1673d1b7e41abb"
+  }
+}

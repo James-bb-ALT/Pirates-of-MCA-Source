@@ -1,0 +1,39 @@
+{
+  "silent": false,
+  "auto": false,
+  "answers": [
+    {
+      "name": "track_it",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_gruff_missing_crate.track_it.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "blame_crew",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_gruff_missing_crate.blame_crew.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "not_my_problem",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_gruff_missing_crate.not_my_problem.reply"
+          }
+        }
+      ]
+    }
+  ]
+}

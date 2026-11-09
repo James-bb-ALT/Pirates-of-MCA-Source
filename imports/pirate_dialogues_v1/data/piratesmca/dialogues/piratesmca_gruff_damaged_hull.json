@@ -1,0 +1,39 @@
+{
+  "silent": false,
+  "auto": false,
+  "answers": [
+    {
+      "name": "bring_planks",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_gruff_damaged_hull.bring_planks.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ask_time",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_gruff_damaged_hull.ask_time.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ignore",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_gruff_damaged_hull.ignore.reply"
+          }
+        }
+      ]
+    }
+  ]
+}

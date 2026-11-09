@@ -1,0 +1,9 @@
+{
+  "id": "piratesmca:deckhand",
+  "clothing_id": "piratesmca:outfits/deckhand.png",
+  "texture": "textures/outfits/deckhand.png",
+  "runtime_texture": "assets/piratesmca/outfits/deckhand.png",
+  "renderer": "MCA ClothingLayer",
+  "gender": "neutral",
+  "random_pool": false
+}

@@ -1,0 +1,161 @@
+Compiled from "EMFBipedPose.java"
+public class traben.entity_model_features.models.animation.state.EMFBipedPose {
+  private final traben.entity_model_features.models.animation.state.EMFBipedPose$PosePart head;
+
+  private final traben.entity_model_features.models.animation.state.EMFBipedPose$PosePart body;
+
+  private final traben.entity_model_features.models.animation.state.EMFBipedPose$PosePart leftArm;
+
+  private final traben.entity_model_features.models.animation.state.EMFBipedPose$PosePart rightArm;
+
+  private final traben.entity_model_features.models.animation.state.EMFBipedPose$PosePart leftLeg;
+
+  private final traben.entity_model_features.models.animation.state.EMFBipedPose$PosePart rightLeg;
+
+  private final traben.entity_model_features.models.animation.state.EMFBipedPose$PosePart root;
+
+  public boolean applyToSubmit;
+
+  public traben.entity_model_features.models.animation.state.EMFBipedPose(net.minecraft.client.model.HumanoidModel<?>);
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_0
+         6: putfield      #7                  // Field applyToSubmit:Z
+         9: aload_0
+        10: new           #13                 // class traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart
+        13: dup
+        14: aload_1
+        15: getfield      #15                 // Field net/minecraft/client/model/HumanoidModel.head:Lnet/minecraft/client/model/geom/ModelPart;
+        18: invokespecial #21                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        21: putfield      #24                 // Field head:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+        24: aload_0
+        25: new           #13                 // class traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart
+        28: dup
+        29: aload_1
+        30: getfield      #27                 // Field net/minecraft/client/model/HumanoidModel.body:Lnet/minecraft/client/model/geom/ModelPart;
+        33: invokespecial #21                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        36: putfield      #30                 // Field body:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+        39: aload_0
+        40: new           #13                 // class traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart
+        43: dup
+        44: aload_1
+        45: getfield      #32                 // Field net/minecraft/client/model/HumanoidModel.leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+        48: invokespecial #21                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        51: putfield      #35                 // Field leftArm:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+        54: aload_0
+        55: new           #13                 // class traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart
+        58: dup
+        59: aload_1
+        60: getfield      #37                 // Field net/minecraft/client/model/HumanoidModel.rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+        63: invokespecial #21                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        66: putfield      #40                 // Field rightArm:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+        69: aload_0
+        70: new           #13                 // class traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart
+        73: dup
+        74: aload_1
+        75: getfield      #42                 // Field net/minecraft/client/model/HumanoidModel.leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        78: invokespecial #21                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        81: putfield      #45                 // Field leftLeg:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+        84: aload_0
+        85: new           #13                 // class traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart
+        88: dup
+        89: aload_1
+        90: getfield      #47                 // Field net/minecraft/client/model/HumanoidModel.rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        93: invokespecial #21                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        96: putfield      #50                 // Field rightLeg:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+        99: aload_0
+       100: new           #13                 // class traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart
+       103: dup
+       104: aload_1
+       105: invokevirtual #52                 // Method net/minecraft/client/model/HumanoidModel.root:()Lnet/minecraft/client/model/geom/ModelPart;
+       108: invokespecial #21                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+       111: putfield      #56                 // Field root:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+       114: return
+
+  public void applyTo(net.minecraft.client.model.HumanoidModel<?>);
+    Code:
+         0: iconst_0
+         1: istore_2
+         2: getstatic     #58                 // Field traben/entity_model_features/models/animation/state/EMFState.animationHooks:Ljava/util/List;
+         5: invokeinterface #64,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        10: astore_3
+        11: aload_3
+        12: invokeinterface #70,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        17: ifeq          59
+        20: aload_3
+        21: invokeinterface #76,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        26: checkcast     #80                 // class traben/entity_model_features/EMFAnimationApi$EMFAnimationHook
+        29: astore        4
+        31: aload         4
+        33: aload_0
+        34: aload_1
+        35: iload_2
+        36: invokevirtual #82                 // Method traben/entity_model_features/EMFAnimationApi$EMFAnimationHook.onBipedPoseCopyStart:(Ltraben/entity_model_features/models/animation/state/EMFBipedPose;Lnet/minecraft/client/model/HumanoidModel;Z)Z
+        39: ifne          46
+        42: iconst_1
+        43: goto          47
+        46: iconst_0
+        47: istore        5
+        49: iload         5
+        51: ifeq          56
+        54: iconst_1
+        55: istore_2
+        56: goto          11
+        59: iload_2
+        60: ifne          140
+        63: aload_0
+        64: getfield      #24                 // Field head:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+        67: aload_1
+        68: getfield      #15                 // Field net/minecraft/client/model/HumanoidModel.head:Lnet/minecraft/client/model/geom/ModelPart;
+        71: invokevirtual #86                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart.applyTo:(Lnet/minecraft/client/model/geom/ModelPart;)V
+        74: aload_0
+        75: getfield      #30                 // Field body:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+        78: aload_1
+        79: getfield      #27                 // Field net/minecraft/client/model/HumanoidModel.body:Lnet/minecraft/client/model/geom/ModelPart;
+        82: invokevirtual #86                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart.applyTo:(Lnet/minecraft/client/model/geom/ModelPart;)V
+        85: aload_0
+        86: getfield      #35                 // Field leftArm:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+        89: aload_1
+        90: getfield      #32                 // Field net/minecraft/client/model/HumanoidModel.leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+        93: invokevirtual #86                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart.applyTo:(Lnet/minecraft/client/model/geom/ModelPart;)V
+        96: aload_0
+        97: getfield      #40                 // Field rightArm:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+       100: aload_1
+       101: getfield      #37                 // Field net/minecraft/client/model/HumanoidModel.rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+       104: invokevirtual #86                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart.applyTo:(Lnet/minecraft/client/model/geom/ModelPart;)V
+       107: aload_0
+       108: getfield      #45                 // Field leftLeg:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+       111: aload_1
+       112: getfield      #42                 // Field net/minecraft/client/model/HumanoidModel.leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+       115: invokevirtual #86                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart.applyTo:(Lnet/minecraft/client/model/geom/ModelPart;)V
+       118: aload_0
+       119: getfield      #50                 // Field rightLeg:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+       122: aload_1
+       123: getfield      #47                 // Field net/minecraft/client/model/HumanoidModel.rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+       126: invokevirtual #86                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart.applyTo:(Lnet/minecraft/client/model/geom/ModelPart;)V
+       129: aload_0
+       130: getfield      #56                 // Field root:Ltraben/entity_model_features/models/animation/state/EMFBipedPose$PosePart;
+       133: aload_1
+       134: invokevirtual #52                 // Method net/minecraft/client/model/HumanoidModel.root:()Lnet/minecraft/client/model/geom/ModelPart;
+       137: invokevirtual #86                 // Method traben/entity_model_features/models/animation/state/EMFBipedPose$PosePart.applyTo:(Lnet/minecraft/client/model/geom/ModelPart;)V
+       140: iload_2
+       141: istore_3
+       142: getstatic     #58                 // Field traben/entity_model_features/models/animation/state/EMFState.animationHooks:Ljava/util/List;
+       145: aload_0
+       146: aload_1
+       147: iload_3
+       148: invokedynamic #89,  0             // InvokeDynamic #0:accept:(Ltraben/entity_model_features/models/animation/state/EMFBipedPose;Lnet/minecraft/client/model/HumanoidModel;Z)Ljava/util/function/Consumer;
+       153: invokeinterface #93,  2           // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+       158: return
+
+  private void lambda$applyTo$0(net.minecraft.client.model.HumanoidModel, boolean, traben.entity_model_features.EMFAnimationApi$EMFAnimationHook);
+    Code:
+         0: aload_3
+         1: aload_0
+         2: aload_1
+         3: iload_2
+         4: invokevirtual #97                 // Method traben/entity_model_features/EMFAnimationApi$EMFAnimationHook.onBipedPoseCopyEnd:(Ltraben/entity_model_features/models/animation/state/EMFBipedPose;Lnet/minecraft/client/model/HumanoidModel;Z)V
+         7: return
+}

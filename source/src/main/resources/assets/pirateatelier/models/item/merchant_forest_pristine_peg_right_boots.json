@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/merchant_forest_pristine_peg_right_boots"
+  }
+}

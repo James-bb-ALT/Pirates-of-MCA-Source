@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/fisherman_navy_weathered_normal_helmet"
+  }
+}

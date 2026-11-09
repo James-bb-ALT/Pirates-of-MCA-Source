@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "piratesmca-tests",
+  "version": "4.0.0-alpha.7",
+  "name": "Pirates of MCA isolated regression tests",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-gametest": ["dev.arandu.piratesmca.PirateGameTests", "dev.arandu.piratesmca.NativePersistenceGameTests", "dev.arandu.piratesmca.FlagGameTests", "dev.arandu.piratesmca.SpawnIsolationGameTests"],
+    "fabric-client-gametest": ["dev.arandu.piratesmca.PirateClientGameTests"]
+  }
+}

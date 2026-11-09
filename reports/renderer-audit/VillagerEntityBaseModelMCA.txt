@@ -1,0 +1,437 @@
+Compiled from "VillagerEntityBaseModelMCA.java"
+public class net.conczin.mca.client.model.VillagerEntityBaseModelMCA extends net.minecraft.client.model.HumanoidModel<net.conczin.mca.client.render.VillagerRenderState> implements net.conczin.mca.client.model.CommonVillagerModel<net.conczin.mca.client.render.VillagerRenderState> {
+  protected static final java.lang.String BREASTS;
+
+  public final net.minecraft.client.model.geom.ModelPart breasts;
+
+  final net.conczin.mca.entity.ai.relationship.VillagerDimensions$Mutable dimensions;
+
+  float breastSize;
+
+  private boolean receivesDeferredAnimationPose;
+
+  public net.conczin.mca.client.model.VillagerEntityBaseModelMCA(net.minecraft.client.model.geom.ModelPart);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokespecial #1                  // Method net/minecraft/client/model/HumanoidModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+         5: aload_0
+         6: new           #7                  // class net/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable
+         9: dup
+        10: getstatic     #9                  // Field net/conczin/mca/entity/ai/relationship/AgeState.ADULT:Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        13: invokespecial #15                 // Method net/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable."<init>":(Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions;)V
+        16: putfield      #18                 // Field dimensions:Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable;
+        19: aload_0
+        20: aload_1
+        21: ldc           #24                 // String breasts
+        23: invokestatic  #26                 // Method getChildOrEmpty:(Lnet/minecraft/client/model/geom/ModelPart;Ljava/lang/String;)Lnet/minecraft/client/model/geom/ModelPart;
+        26: putfield      #30                 // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+        29: return
+
+  static net.minecraft.client.model.geom.ModelPart getChildOrEmpty(net.minecraft.client.model.geom.ModelPart, java.lang.String);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #33                 // Method net/minecraft/client/model/geom/ModelPart.hasChild:(Ljava/lang/String;)Z
+         5: ifeq          16
+         8: aload_0
+         9: aload_1
+        10: invokevirtual #39                 // Method net/minecraft/client/model/geom/ModelPart.getChild:(Ljava/lang/String;)Lnet/minecraft/client/model/geom/ModelPart;
+        13: goto          29
+        16: new           #34                 // class net/minecraft/client/model/geom/ModelPart
+        19: dup
+        20: invokestatic  #43                 // InterfaceMethod java/util/List.of:()Ljava/util/List;
+        23: invokestatic  #49                 // InterfaceMethod java/util/Map.of:()Ljava/util/Map;
+        26: invokespecial #54                 // Method net/minecraft/client/model/geom/ModelPart."<init>":(Ljava/util/List;Ljava/util/Map;)V
+        29: areturn
+
+  public static net.minecraft.client.model.geom.builders.MeshDefinition getModelData(net.minecraft.client.model.geom.builders.CubeDeformation);
+    Code:
+         0: aload_0
+         1: fconst_0
+         2: invokestatic  #57                 // Method net/minecraft/client/model/HumanoidModel.createMesh:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;F)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+         5: astore_1
+         6: aload_1
+         7: invokevirtual #61                 // Method net/minecraft/client/model/geom/builders/MeshDefinition.getRoot:()Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        10: astore_2
+        11: aload_2
+        12: ldc           #24                 // String breasts
+        14: aload_0
+        15: iconst_0
+        16: invokestatic  #67                 // Method newBreasts:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;I)Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+        19: getstatic     #71                 // Field net/minecraft/client/model/geom/PartPose.ZERO:Lnet/minecraft/client/model/geom/PartPose;
+        22: invokevirtual #77                 // Method net/minecraft/client/model/geom/builders/PartDefinition.addOrReplaceChild:(Ljava/lang/String;Lnet/minecraft/client/model/geom/builders/CubeListBuilder;Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/builders/PartDefinition;
+        25: pop
+        26: aload_1
+        27: areturn
+
+  protected static net.minecraft.client.model.geom.builders.CubeListBuilder newBreasts(net.minecraft.client.model.geom.builders.CubeDeformation, int);
+    Code:
+         0: invokestatic  #83                 // Method net/minecraft/client/model/geom/builders/CubeListBuilder.create:()Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+         3: astore_2
+         4: invokestatic  #89                 // Method net/conczin/mca/Config.getInstance:()Lnet/conczin/mca/Config;
+         7: getfield      #95                 // Field net/conczin/mca/Config.enableBoobs:Z
+        10: ifeq          40
+        13: aload_2
+        14: bipush        18
+        16: bipush        21
+        18: iload_1
+        19: iadd
+        20: invokevirtual #99                 // Method net/minecraft/client/model/geom/builders/CubeListBuilder.texOffs:(II)Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+        23: ldc           #103                // float -3.25f
+        25: ldc           #104                // float -1.25f
+        27: ldc           #105                // float -1.5f
+        29: ldc           #106                // float 6.0f
+        31: ldc           #107                // float 3.0f
+        33: ldc           #107                // float 3.0f
+        35: aload_0
+        36: invokevirtual #108                // Method net/minecraft/client/model/geom/builders/CubeListBuilder.addBox:(FFFFFFLnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/CubeListBuilder;
+        39: pop
+        40: aload_2
+        41: areturn
+
+  public void setupAnim(net.conczin.mca.client.render.VillagerRenderState);
+    Code:
+         0: aload_1
+         1: getfield      #112                // Field net/conczin/mca/client/render/VillagerRenderState.walkAnimationPos:F
+         4: fstore_2
+         5: aload_1
+         6: getfield      #118                // Field net/conczin/mca/client/render/VillagerRenderState.walkAnimationSpeed:F
+         9: fstore_3
+        10: aload_1
+        11: getfield      #121                // Field net/conczin/mca/client/render/VillagerRenderState.yRot:F
+        14: fstore        4
+        16: aload_1
+        17: getfield      #124                // Field net/conczin/mca/client/render/VillagerRenderState.isPassenger:Z
+        20: istore        5
+        22: aload_1
+        23: invokestatic  #127                // Method net/conczin/mca/client/render/VillagerVisuals.require:(Ljava/lang/Object;)Lnet/conczin/mca/client/render/VillagerVisuals;
+        26: astore        6
+        28: aload         6
+        30: invokevirtual #133                // Method net/conczin/mca/client/render/VillagerVisuals.baby:()Z
+        33: istore        7
+        35: iload         7
+        37: ifeq          45
+        40: aload_1
+        41: iconst_1
+        42: putfield      #124                // Field net/conczin/mca/client/render/VillagerRenderState.isPassenger:Z
+        45: iload         7
+        47: ifeq          114
+        50: iload         5
+        52: ifne          114
+        55: aload_1
+        56: aload         6
+        58: invokevirtual #137                // Method net/conczin/mca/client/render/VillagerVisuals.tickCount:()I
+        61: i2f
+        62: ldc           #141                // float 12.0f
+        64: fdiv
+        65: f2d
+        66: invokestatic  #142                // Method java/lang/Math.sin:(D)D
+        69: d2f
+        70: putfield      #118                // Field net/conczin/mca/client/render/VillagerRenderState.walkAnimationSpeed:F
+        73: aload_1
+        74: aload         6
+        76: invokevirtual #137                // Method net/conczin/mca/client/render/VillagerVisuals.tickCount:()I
+        79: i2f
+        80: ldc           #148                // float 9.0f
+        82: fdiv
+        83: f2d
+        84: invokestatic  #149                // Method java/lang/Math.cos:(D)D
+        87: d2f
+        88: ldc           #107                // float 3.0f
+        90: fmul
+        91: putfield      #112                // Field net/conczin/mca/client/render/VillagerRenderState.walkAnimationPos:F
+        94: aload_1
+        95: fload         4
+        97: aload         6
+        99: invokevirtual #137                // Method net/conczin/mca/client/render/VillagerVisuals.tickCount:()I
+       102: i2f
+       103: fconst_2
+       104: fdiv
+       105: f2d
+       106: invokestatic  #142                // Method java/lang/Math.sin:(D)D
+       109: d2f
+       110: fadd
+       111: putfield      #121                // Field net/conczin/mca/client/render/VillagerRenderState.yRot:F
+       114: aload_1
+       115: getfield      #152                // Field net/conczin/mca/client/render/VillagerRenderState.isBaby:Z
+       118: ifeq          132
+       121: aload_1
+       122: dup
+       123: getfield      #112                // Field net/conczin/mca/client/render/VillagerRenderState.walkAnimationPos:F
+       126: ldc           #107                // float 3.0f
+       128: fdiv
+       129: putfield      #112                // Field net/conczin/mca/client/render/VillagerRenderState.walkAnimationPos:F
+       132: aload_1
+       133: dup
+       134: getfield      #112                // Field net/conczin/mca/client/render/VillagerRenderState.walkAnimationPos:F
+       137: ldc           #155                // float 0.2f
+       139: aload         6
+       141: invokevirtual #156                // Method net/conczin/mca/client/render/VillagerVisuals.rawVerticalScaleFactor:()F
+       144: fadd
+       145: fdiv
+       146: putfield      #112                // Field net/conczin/mca/client/render/VillagerRenderState.walkAnimationPos:F
+       149: aload_0
+       150: aload_1
+       151: invokespecial #160                // Method net/minecraft/client/model/HumanoidModel.setupAnim:(Lnet/minecraft/client/renderer/entity/state/HumanoidRenderState;)V
+       154: aload_1
+       155: fload_2
+       156: putfield      #112                // Field net/conczin/mca/client/render/VillagerRenderState.walkAnimationPos:F
+       159: aload_1
+       160: fload_3
+       161: putfield      #118                // Field net/conczin/mca/client/render/VillagerRenderState.walkAnimationSpeed:F
+       164: aload_1
+       165: fload         4
+       167: putfield      #121                // Field net/conczin/mca/client/render/VillagerRenderState.yRot:F
+       170: aload_1
+       171: iload         5
+       173: putfield      #124                // Field net/conczin/mca/client/render/VillagerRenderState.isPassenger:Z
+       176: aload_1
+       177: getfield      #164                // Field net/conczin/mca/client/render/VillagerRenderState.panicAnimationProgress:F
+       180: fstore        8
+       182: fload         8
+       184: fconst_0
+       185: fcmpl
+       186: ifle          340
+       189: ldc           #167                // float 0.017453292f
+       191: fstore        9
+       193: aload_1
+       194: getfield      #168                // Field net/conczin/mca/client/render/VillagerRenderState.ageInTicks:F
+       197: ldc           #171                // float 5.0f
+       199: fdiv
+       200: f2d
+       201: invokestatic  #142                // Method java/lang/Math.sin:(D)D
+       204: d2f
+       205: ldc           #172                // float 30.0f
+       207: fmul
+       208: ldc           #173                // float 180.0f
+       210: fsub
+       211: aload_1
+       212: getfield      #168                // Field net/conczin/mca/client/render/VillagerRenderState.ageInTicks:F
+       215: ldc           #107                // float 3.0f
+       217: fdiv
+       218: f2d
+       219: invokestatic  #142                // Method java/lang/Math.sin:(D)D
+       222: d2f
+       223: ldc           #107                // float 3.0f
+       225: fmul
+       226: fadd
+       227: fload         9
+       229: fmul
+       230: fstore        10
+       232: aload_1
+       233: getfield      #168                // Field net/conczin/mca/client/render/VillagerRenderState.ageInTicks:F
+       236: fconst_2
+       237: fdiv
+       238: f2d
+       239: invokestatic  #142                // Method java/lang/Math.sin:(D)D
+       242: d2f
+       243: ldc           #141                // float 12.0f
+       245: fmul
+       246: ldc           #174                // float 17.0f
+       248: fsub
+       249: fload         9
+       251: fmul
+       252: fstore        11
+       254: aload_0
+       255: getfield      #175                // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+       258: fload         8
+       260: aload_0
+       261: getfield      #175                // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+       264: getfield      #178                // Field net/minecraft/client/model/geom/ModelPart.xRot:F
+       267: fload         10
+       269: invokestatic  #181                // Method net/minecraft/util/Mth.lerp:(FFF)F
+       272: putfield      #178                // Field net/minecraft/client/model/geom/ModelPart.xRot:F
+       275: aload_0
+       276: getfield      #175                // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+       279: fload         8
+       281: aload_0
+       282: getfield      #175                // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+       285: getfield      #187                // Field net/minecraft/client/model/geom/ModelPart.zRot:F
+       288: fload         11
+       290: fneg
+       291: invokestatic  #181                // Method net/minecraft/util/Mth.lerp:(FFF)F
+       294: putfield      #187                // Field net/minecraft/client/model/geom/ModelPart.zRot:F
+       297: aload_0
+       298: getfield      #190                // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+       301: fload         8
+       303: aload_0
+       304: getfield      #190                // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+       307: getfield      #178                // Field net/minecraft/client/model/geom/ModelPart.xRot:F
+       310: fload         10
+       312: fneg
+       313: invokestatic  #181                // Method net/minecraft/util/Mth.lerp:(FFF)F
+       316: putfield      #178                // Field net/minecraft/client/model/geom/ModelPart.xRot:F
+       319: aload_0
+       320: getfield      #190                // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+       323: fload         8
+       325: aload_0
+       326: getfield      #190                // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+       329: getfield      #187                // Field net/minecraft/client/model/geom/ModelPart.zRot:F
+       332: fload         11
+       334: invokestatic  #181                // Method net/minecraft/util/Mth.lerp:(FFF)F
+       337: putfield      #187                // Field net/minecraft/client/model/geom/ModelPart.zRot:F
+       340: aload_0
+       341: aload         6
+       343: invokevirtual #193                // Method applyVillagerDimensions:(Lnet/conczin/mca/client/render/VillagerVisuals;)V
+       346: aload_0
+       347: getfield      #197                // Field receivesDeferredAnimationPose:Z
+       350: ifeq          387
+       353: aload_1
+       354: instanceof    #200                // class net/conczin/mca/client/render/VillagerStateHolder
+       357: ifeq          387
+       360: aload_1
+       361: checkcast     #200                // class net/conczin/mca/client/render/VillagerStateHolder
+       364: astore        9
+       366: aload         9
+       368: invokeinterface #202,  1          // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.mca$getHumanoidModelPose:()Lnet/conczin/mca/client/render/HumanoidModelPose;
+       373: ifnull        387
+       376: aload         9
+       378: invokeinterface #202,  1          // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.mca$getHumanoidModelPose:()Lnet/conczin/mca/client/render/HumanoidModelPose;
+       383: aload_0
+       384: invokevirtual #206                // Method net/conczin/mca/client/render/HumanoidModelPose.applyTo:(Lnet/minecraft/client/model/HumanoidModel;)V
+       387: return
+
+  public net.conczin.mca.client.model.VillagerEntityBaseModelMCA receiveDeferredAnimationPose();
+    Code:
+         0: aload_0
+         1: iconst_1
+         2: putfield      #197                // Field receivesDeferredAnimationPose:Z
+         5: aload_0
+         6: areturn
+
+  public void copyPropertiesTo(net.minecraft.client.model.HumanoidModel<?>);
+    Code:
+         0: aload_1
+         1: instanceof    #19                 // class net/conczin/mca/client/model/VillagerEntityBaseModelMCA
+         4: ifeq          119
+         7: aload_1
+         8: checkcast     #19                 // class net/conczin/mca/client/model/VillagerEntityBaseModelMCA
+        11: astore_2
+        12: aload_2
+        13: getfield      #212                // Field head:Lnet/minecraft/client/model/geom/ModelPart;
+        16: aload_0
+        17: getfield      #212                // Field head:Lnet/minecraft/client/model/geom/ModelPart;
+        20: invokestatic  #215                // InterfaceMethod net/conczin/mca/client/model/CommonVillagerModel.copyPartState:(Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;)V
+        23: aload_2
+        24: getfield      #221                // Field hat:Lnet/minecraft/client/model/geom/ModelPart;
+        27: aload_0
+        28: getfield      #221                // Field hat:Lnet/minecraft/client/model/geom/ModelPart;
+        31: invokestatic  #215                // InterfaceMethod net/conczin/mca/client/model/CommonVillagerModel.copyPartState:(Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;)V
+        34: aload_2
+        35: getfield      #224                // Field body:Lnet/minecraft/client/model/geom/ModelPart;
+        38: aload_0
+        39: getfield      #224                // Field body:Lnet/minecraft/client/model/geom/ModelPart;
+        42: invokestatic  #215                // InterfaceMethod net/conczin/mca/client/model/CommonVillagerModel.copyPartState:(Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;)V
+        45: aload_2
+        46: getfield      #175                // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+        49: aload_0
+        50: getfield      #175                // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+        53: invokestatic  #215                // InterfaceMethod net/conczin/mca/client/model/CommonVillagerModel.copyPartState:(Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;)V
+        56: aload_2
+        57: getfield      #190                // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+        60: aload_0
+        61: getfield      #190                // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+        64: invokestatic  #215                // InterfaceMethod net/conczin/mca/client/model/CommonVillagerModel.copyPartState:(Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;)V
+        67: aload_2
+        68: getfield      #227                // Field leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        71: aload_0
+        72: getfield      #227                // Field leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        75: invokestatic  #215                // InterfaceMethod net/conczin/mca/client/model/CommonVillagerModel.copyPartState:(Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;)V
+        78: aload_2
+        79: getfield      #230                // Field rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        82: aload_0
+        83: getfield      #230                // Field rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        86: invokestatic  #215                // InterfaceMethod net/conczin/mca/client/model/CommonVillagerModel.copyPartState:(Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;)V
+        89: aload_0
+        90: aload_2
+        91: invokevirtual #233                // Method copyCommonAttributes:(Lnet/conczin/mca/client/model/CommonVillagerModel;)V
+        94: aload_2
+        95: getfield      #30                 // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+        98: aload_0
+        99: getfield      #30                 // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+       102: getfield      #237                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       105: putfield      #237                // Field net/minecraft/client/model/geom/ModelPart.visible:Z
+       108: aload_2
+       109: getfield      #30                 // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+       112: aload_0
+       113: getfield      #30                 // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+       116: invokestatic  #215                // InterfaceMethod net/conczin/mca/client/model/CommonVillagerModel.copyPartState:(Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/client/model/geom/ModelPart;)V
+       119: return
+
+  public net.minecraft.client.model.geom.ModelPart getBreastPart();
+    Code:
+         0: aload_0
+         1: getfield      #30                 // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+         4: areturn
+
+  public net.minecraft.client.model.geom.ModelPart getBodyPart();
+    Code:
+         0: aload_0
+         1: getfield      #224                // Field body:Lnet/minecraft/client/model/geom/ModelPart;
+         4: areturn
+
+  public java.lang.Iterable<net.minecraft.client.model.geom.ModelPart> getCommonHeadParts();
+    Code:
+         0: aload_0
+         1: getfield      #212                // Field head:Lnet/minecraft/client/model/geom/ModelPart;
+         4: invokestatic  #240                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+         7: areturn
+
+  public java.lang.Iterable<net.minecraft.client.model.geom.ModelPart> getCommonBodyParts();
+    Code:
+         0: aload_0
+         1: getfield      #224                // Field body:Lnet/minecraft/client/model/geom/ModelPart;
+         4: aload_0
+         5: getfield      #190                // Field rightArm:Lnet/minecraft/client/model/geom/ModelPart;
+         8: aload_0
+         9: getfield      #175                // Field leftArm:Lnet/minecraft/client/model/geom/ModelPart;
+        12: aload_0
+        13: getfield      #230                // Field rightLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        16: aload_0
+        17: getfield      #227                // Field leftLeg:Lnet/minecraft/client/model/geom/ModelPart;
+        20: invokestatic  #245                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+        23: areturn
+
+  public java.lang.Iterable<net.minecraft.client.model.geom.ModelPart> getBreastParts();
+    Code:
+         0: aload_0
+         1: getfield      #30                 // Field breasts:Lnet/minecraft/client/model/geom/ModelPart;
+         4: invokestatic  #240                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+         7: areturn
+
+  public net.conczin.mca.entity.ai.relationship.VillagerDimensions$Mutable getDimensions();
+    Code:
+         0: aload_0
+         1: getfield      #18                 // Field dimensions:Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions$Mutable;
+         4: areturn
+
+  public float getBreastSize();
+    Code:
+         0: aload_0
+         1: getfield      #248                // Field breastSize:F
+         4: freturn
+
+  public void setBreastSize(float);
+    Code:
+         0: aload_0
+         1: fload_1
+         2: putfield      #248                // Field breastSize:F
+         5: return
+
+  public void setupAnim(net.minecraft.client.renderer.entity.state.HumanoidRenderState);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #113                // class net/conczin/mca/client/render/VillagerRenderState
+         5: invokevirtual #251                // Method setupAnim:(Lnet/conczin/mca/client/render/VillagerRenderState;)V
+         8: return
+
+  public void setupAnim(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #113                // class net/conczin/mca/client/render/VillagerRenderState
+         5: invokevirtual #251                // Method setupAnim:(Lnet/conczin/mca/client/render/VillagerRenderState;)V
+         8: return
+}

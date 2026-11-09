@@ -1,0 +1,9 @@
+[
+  {
+    "id": "piratesmca:outfits/deckhand.png",
+    "profession": "piratesmca:pirate",
+    "gender": 3,
+    "exclude": true,
+    "chance": 1.0
+  }
+]

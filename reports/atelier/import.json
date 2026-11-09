@@ -1,0 +1,14 @@
+{
+  "source_sha256": "6b76d19769c80860ff1dadcc47208c5fa5e9eb05b61479ffd2862cd4f0588939",
+  "counts": {
+    "weapon": 10,
+    "armor": 4349,
+    "accessory": 68,
+    "hook": 12,
+    "peg": 5
+  },
+  "items": 4444,
+  "skins": 20,
+  "equipment_assets": 1091,
+  "recipes": 0
+}

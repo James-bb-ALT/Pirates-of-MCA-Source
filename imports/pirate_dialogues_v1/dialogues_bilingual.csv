@@ -1,0 +1,280 @@
+﻿id,speaker,temperament,context,outcome,en_us,pt_br
+friendly.greeting.01,pirate,friendly,greeting,,"Ahoy! Care for a story, or just a seat by the fire?","Opa, marujo! Quer uma história ou só um lugar perto da fogueira?"
+friendly.greeting.02,pirate,friendly,greeting,,"Easy there, friend. Our flag looks scarier than our cook.","Calma, amigo. Nossa bandeira assusta mais que a comida do cozinheiro."
+friendly.greeting.03,pirate,friendly,greeting,,"A new face on deck! Welcome, provided you don't steal my hammock.","Rosto novo a bordo! Pode chegar, desde que não roube minha rede."
+friendly.greeting.04,pirate,friendly,greeting,,Good to see dry boots. Mine haven't been dry in three voyages.,Bom ver umas botas secas. As minhas não secam há três viagens.
+friendly.greeting.05,pirate,friendly,greeting,,Come closer! The captain only bites before breakfast.,Chegue mais! O capitão só morde antes do café da manhã.
+friendly.greeting.06,pirate,friendly,greeting,,"Ahoy, traveler! You look like someone who knows a good shortcut.","Ei, viajante! Você tem cara de quem conhece um bom atalho."
+friendly.smalltalk.01,pirate,friendly,smalltalk,,We name every storm. Makes it easier to complain about them later.,A gente dá nome a cada tempestade. Fica mais fácil reclamar delas depois.
+friendly.smalltalk.02,pirate,friendly,smalltalk,,I learned to read from a waterlogged treasure map. Half the words were fish.,Aprendi a ler com um mapa do tesouro encharcado. Metade das palavras virou peixe.
+friendly.smalltalk.03,pirate,friendly,smalltalk,,There's a villager who sends me letters. Never learned how to answer without a ship.,Tem uma pessoa na vila que me manda cartas. Nunca aprendi a responder sem ter um navio.
+friendly.smalltalk.04,pirate,friendly,smalltalk,,A good crew shares stories. A great crew knows which stories are lies.,Uma boa tripulação compartilha histórias. Uma ótima sabe quais são mentira.
+friendly.smalltalk.05,pirate,friendly,smalltalk,,Sometimes I miss solid ground. Then I remember how expensive a house is.,Às vezes sinto falta de terra firme. Aí lembro quanto custa uma casa.
+friendly.smalltalk.06,pirate,friendly,smalltalk,,My first voyage was three days long. I was seasick for four.,Minha primeira viagem durou três dias. Passei quatro enjoado.
+friendly.sea.01,pirate,friendly,sea,,"The sea has no roads, but it remembers every keel.","O mar não tem estradas, mas se lembra de cada quilha."
+friendly.sea.02,pirate,friendly,sea,,"Never sail by the stars alone. Watch the birds, the wind, and the color of the water.","Nunca navegue só pelas estrelas. Observe os pássaros, o vento e a cor da água."
+friendly.sea.03,pirate,friendly,sea,,I once watched dolphins guide us out of a reef. Best pilots I ever hired.,Uma vez vi golfinhos nos tirarem de um recife. Os melhores pilotos que já contratei.
+friendly.sea.04,pirate,friendly,sea,,"When the waves glow at night, I stay awake just to watch.","Quando as ondas brilham de noite, fico acordado só para ver."
+friendly.sea.05,pirate,friendly,sea,,"I like a calm harbor, but a horizon with no end is hard to resist.","Gosto de um porto tranquilo, mas é difícil resistir a um horizonte sem fim."
+friendly.sea.06,pirate,friendly,sea,,"If you hear the hull sing, check the wind before you check for ghosts.","Se ouvir o casco cantar, confira o vento antes de procurar fantasmas."
+friendly.treasure.01,pirate,friendly,treasure,,"Gold's fine, but the real prize is a map nobody has finished.","Ouro é bom, mas o prêmio de verdade é um mapa que ninguém terminou."
+friendly.treasure.02,pirate,friendly,treasure,,I buried a chest once. Forgot where. Might have been my laundry.,Uma vez enterrei um baú. Esqueci onde. Talvez fosse minha roupa suja.
+friendly.treasure.03,pirate,friendly,treasure,,Every good treasure hunt starts with a bad drawing.,Toda boa caça ao tesouro começa com um desenho ruim.
+friendly.treasure.04,pirate,friendly,treasure,,Keep the emeralds. I want the compass that points somewhere impossible.,Fique com as esmeraldas. Quero a bússola que aponta para um lugar impossível.
+friendly.treasure.05,pirate,friendly,treasure,,"If we find treasure together, we split it before anyone gets clever.","Se encontrarmos um tesouro juntos, dividimos antes que alguém queira dar uma de esperto."
+friendly.treasure.06,pirate,friendly,treasure,,The best chest I opened was full of letters. Someone had loved that sailor.,O melhor baú que abri estava cheio de cartas. Alguém amava muito aquele marinheiro.
+friendly.trade.01,pirate,friendly,trade,,"I've got rope, fish, and a spoon I swear is enchanted. Interested?","Tenho corda, peixe e uma colher que juro ser encantada. Interessa?"
+friendly.trade.02,pirate,friendly,trade,,"Fair trade first, haggling second. That's how you keep your fingers.","Negócio justo primeiro, pechincha depois. Assim você continua com todos os dedos."
+friendly.trade.03,pirate,friendly,trade,,A barrel of apples is worth more than diamonds halfway through a voyage.,Um barril de maçãs vale mais que diamantes no meio de uma viagem.
+friendly.trade.04,pirate,friendly,trade,,I'll pay extra for a decent map. The last one sent us into a swamp.,Pago mais por um mapa decente. O último nos mandou direto para um pântano.
+friendly.trade.05,pirate,friendly,trade,,Got any bread? The ship's biscuits could patch a stone wall.,Tem pão? Os biscoitos do navio serviriam para remendar uma parede de pedra.
+friendly.trade.06,pirate,friendly,trade,,No cheating from my side of the counter. The captain counts every coin.,Sem trapaça deste lado do balcão. O capitão conta cada moeda.
+friendly.captain.01,pirate,friendly,captain,,"Our captain listens to everyone. Doesn't always agree, but listens.","Nosso capitão escuta todo mundo. Nem sempre concorda, mas escuta."
+friendly.captain.02,pirate,friendly,captain,,"A captain earns a chair at the table, not a crown over the crew.","Um capitão conquista um lugar à mesa, não uma coroa sobre a tripulação."
+friendly.captain.03,pirate,friendly,captain,,I've seen captains who could steer through thunder and couldn't say sorry.,"Já vi capitães que navegavam entre trovões, mas não sabiam pedir desculpa."
+friendly.captain.04,pirate,friendly,captain,,"When the captain makes a mistake, we remind them. Quietly. Usually.","Quando o capitão erra, a gente lembra. Discretamente. Na maioria das vezes."
+friendly.captain.05,pirate,friendly,captain,,The bravest order our captain gave was 'turn back for the missing sailor.',A ordem mais corajosa do nosso capitão foi 'voltar para buscar o marinheiro perdido'.
+friendly.captain.06,pirate,friendly,captain,,"If you command a ship, learn everyone's name before you learn the cannons.","Se for comandar um navio, aprenda o nome de todos antes de aprender a usar os canhões."
+friendly.crew.01,pirate,friendly,crew,,"No one eats alone on this ship, unless they've stolen the dessert.","Ninguém come sozinho neste navio, a não ser que tenha roubado a sobremesa."
+friendly.crew.02,pirate,friendly,crew,,Our lookout is afraid of heights. Still spots trouble before the rest of us.,"Nossa vigia tem medo de altura. Mesmo assim, enxerga perigo antes de todo mundo."
+friendly.crew.03,pirate,friendly,crew,,We argue like siblings and row like one creature when trouble comes.,A gente briga feito irmão e rema como um só quando o perigo aparece.
+friendly.crew.04,pirate,friendly,crew,,"There's always room for another pair of hands, if they pull their weight.","Sempre cabe mais um par de mãos, desde que ajude de verdade."
+friendly.crew.05,pirate,friendly,crew,,"I trust the cook with my life. Not with a recipe, mind you.","Confio minha vida ao cozinheiro. Minha receita, nem pensar."
+friendly.crew.06,pirate,friendly,crew,,"On deck, we share the work before we share the loot.","No convés, dividimos o trabalho antes de dividir o saque."
+friendly.loyalty.01,pirate,friendly,loyalty,,Loyalty is coming back for the last person in the water.,Lealdade é voltar para buscar a última pessoa na água.
+friendly.loyalty.02,pirate,friendly,loyalty,,A promise made on deck weighs more than a chest of gold.,Uma promessa feita no convés pesa mais que um baú de ouro.
+friendly.loyalty.03,pirate,friendly,loyalty,,"If you help one of us, the rest will remember.","Se ajudar um dos nossos, o resto vai lembrar."
+friendly.loyalty.04,pirate,friendly,loyalty,,You don't have to like every crewmate to stand beside them.,Não precisa gostar de cada companheiro para ficar ao lado deles.
+friendly.loyalty.05,pirate,friendly,loyalty,,A flag means nothing if nobody beneath it looks after you.,Uma bandeira não significa nada se ninguém debaixo dela cuida de você.
+friendly.loyalty.06,pirate,friendly,loyalty,,I've sailed with thieves who kept their word better than kings.,Já naveguei com ladrões que cumpriam a palavra melhor que reis.
+friendly.rumor.01,pirate,friendly,rumor,,Word is there's a wreck beyond the kelp forest. Nothing but bubbles at dawn.,Dizem que tem um naufrágio além da floresta de algas. Só bolhas ao amanhecer.
+friendly.rumor.02,pirate,friendly,rumor,,They say the old lighthouse lights itself when a storm is coming.,Dizem que o farol antigo acende sozinho quando vem tempestade.
+friendly.rumor.03,pirate,friendly,rumor,,Someone found a golden bell in a drowned ruin. Now every sailor wants one.,Alguém achou um sino de ouro numa ruína submersa. Agora todo marinheiro quer um.
+friendly.rumor.04,pirate,friendly,rumor,,Heard a merchant bought a pirate flag to scare off actual pirates. Clever fool.,Ouvi que um mercador comprou uma bandeira pirata para assustar piratas de verdade. Gênio e idiota.
+friendly.rumor.05,pirate,friendly,rumor,,A strange current has been carrying empty boats into the bay.,Uma corrente estranha anda trazendo barcos vazios para a baía.
+friendly.rumor.06,pirate,friendly,rumor,,"Don't repeat it, but our navigator is following a map drawn by a child.","Não espalhe, mas nosso navegador está seguindo um mapa desenhado por uma criança."
+friendly.danger.01,pirate,friendly,danger,,Storm coming. Help me tie this down before the deck turns into a river.,Vem tempestade. Me ajuda a amarrar isso antes que o convés vire um rio.
+friendly.danger.02,pirate,friendly,danger,,Stay behind the rail! I've got the rope; you grab the ladder.,Fique atrás do corrimão! Eu seguro a corda; você pega a escada.
+friendly.danger.03,pirate,friendly,danger,,Those sails on the horizon aren't friendly. Keep your head low.,Aquelas velas no horizonte não são amigáveis. Abaixe a cabeça.
+friendly.danger.04,pirate,friendly,danger,,"If fighting starts, find cover. Heroics can wait until we're all alive.","Se a luta começar, procure abrigo. Heroísmo pode esperar até estarmos vivos."
+friendly.danger.05,pirate,friendly,danger,,"There's a leak below deck. Bring planks, not questions.","Tem um vazamento abaixo do convés. Traga tábuas, não perguntas."
+friendly.danger.06,pirate,friendly,danger,,Hold on to something. The sea's about to rearrange this whole ship.,Segure em alguma coisa. O mar está prestes a reorganizar o navio inteiro.
+friendly.gift.01,pirate,friendly,gift,,For me? Then you get the first cup of cocoa when we reach shore.,Para mim? Então você ganha a primeira caneca de chocolate quando chegarmos à costa.
+friendly.gift.02,pirate,friendly,gift,,"This is worth more than you think. Thank you, truly.","Isso vale mais do que você imagina. Valeu, de verdade."
+friendly.gift.03,pirate,friendly,gift,,I'll keep it tucked away where the sea can't reach it.,Vou guardar bem onde o mar não consiga alcançar.
+friendly.gift.04,pirate,friendly,gift,,"You remembered! Now I owe you a favor, and I don't forget those.","Você lembrou! Agora te devo um favor, e eu não esqueço disso."
+friendly.gift.05,pirate,friendly,gift,,You didn't need to bring anything. But I'm glad you did.,Não precisava trazer nada. Mas fico feliz que trouxe.
+friendly.gift.06,pirate,friendly,gift,,A gift without a bargain attached? That's rare in these waters.,Um presente sem uma negociação por trás? Isso é raro por aqui.
+friendly.farewell.01,pirate,friendly,farewell,,"Fair winds, friend. Leave a lantern on if you want us back.","Bons ventos, amigo. Deixe uma lanterna acesa se quiser que a gente volte."
+friendly.farewell.02,pirate,friendly,farewell,,Until the tide brings us together again!,Até a maré juntar nossos caminhos de novo!
+friendly.farewell.03,pirate,friendly,farewell,,Keep your boots dry and your compass honest.,Mantenha as botas secas e a bússola honesta.
+friendly.farewell.04,pirate,friendly,farewell,,"If you hear someone singing badly at sea, that's probably us.","Se ouvir alguém cantando mal no mar, provavelmente somos nós."
+friendly.farewell.05,pirate,friendly,farewell,,May your next harbor have warm food and no tax collector.,Que seu próximo porto tenha comida quente e nenhum cobrador de impostos.
+friendly.farewell.06,pirate,friendly,farewell,,Take care! I'll save you a place near the fire.,Se cuida! Vou guardar um lugar para você perto da fogueira.
+gruff.greeting.01,pirate,gruff,greeting,,State your business. Then get out of the doorway.,Diga logo o que quer. E saia da frente da porta.
+gruff.greeting.02,pirate,gruff,greeting,,You're late. For what? Doesn't matter. You're late.,Está atrasado. Para quê? Não importa. Está atrasado.
+gruff.greeting.03,pirate,gruff,greeting,,Hmph. Another landwalker asking about the sea.,Hmpf. Mais um terrestre querendo saber do mar.
+gruff.greeting.04,pirate,gruff,greeting,,"If you've come to stare, at least bring supplies.","Se veio ficar olhando, ao menos traga suprimentos."
+gruff.greeting.05,pirate,gruff,greeting,,Speak up. The wind took half my hearing and all my patience.,Fale mais alto. O vento levou metade da minha audição e toda a minha paciência.
+gruff.greeting.06,pirate,gruff,greeting,,Don't step on that rope. That's the only warning you're getting.,Não pise nessa corda. É o único aviso que vai receber.
+gruff.smalltalk.01,pirate,gruff,smalltalk,,Had a quiet morning. Then everyone started talking.,Tive uma manhã tranquila. Aí todo mundo começou a falar.
+gruff.smalltalk.02,pirate,gruff,smalltalk,,I hate seagulls. Loud thieves with wings.,Odeio gaivotas. Ladrões barulhentos com asas.
+gruff.smalltalk.03,pirate,gruff,smalltalk,,The cook burned the stew again. I ate two bowls to make a point.,O cozinheiro queimou o ensopado de novo. Comi duas tigelas só de teimosia.
+gruff.smalltalk.04,pirate,gruff,smalltalk,,Sleep is a luxury. A dry blanket's a miracle.,Dormir é luxo. Um cobertor seco é milagre.
+gruff.smalltalk.05,pirate,gruff,smalltalk,,I don't tell stories. I give warnings with an inconvenient amount of detail.,Não conto histórias. Dou avisos com detalhes demais.
+gruff.smalltalk.06,pirate,gruff,smalltalk,,That scar? Rope burn. The other one? Also rope burn. Stop asking.,Essa cicatriz? Queimadura de corda. A outra? Também. Pare de perguntar.
+gruff.sea.01,pirate,gruff,sea,,The ocean doesn't care how brave you feel. Remember that.,O oceano não se importa com sua coragem. Lembre disso.
+gruff.sea.02,pirate,gruff,sea,,A calm sea makes fools think they're captains.,Mar calmo faz idiota se achar capitão.
+gruff.sea.03,pirate,gruff,sea,,The tide has more discipline than half this crew.,A maré tem mais disciplina que metade desta tripulação.
+gruff.sea.04,pirate,gruff,sea,,"If the water goes still all at once, start worrying.","Se a água ficar parada de repente, comece a se preocupar."
+gruff.sea.05,pirate,gruff,sea,,I trust a creaking mast more than a smiling merchant.,Confio mais num mastro rangendo que num mercador sorridente.
+gruff.sea.06,pirate,gruff,sea,,Waves don't negotiate. Keep your footing.,Ondas não negociam. Firme os pés.
+gruff.treasure.01,pirate,gruff,treasure,,"If your map says X, check who drew the X before digging.","Se o mapa marca um X, descubra quem desenhou o X antes de cavar."
+gruff.treasure.02,pirate,gruff,treasure,,"I've seen men kill over an empty chest. Idiots, all of them.",Já vi gente matar por um baú vazio. Um bando de idiotas.
+gruff.treasure.03,pirate,gruff,treasure,,Gold sinks just as fast as stone. Don't forget it.,Ouro afunda tão rápido quanto pedra. Não esqueça.
+gruff.treasure.04,pirate,gruff,treasure,,Treasure isn't treasure until you make it home with it.,Tesouro só vira tesouro quando você volta para casa com ele.
+gruff.treasure.05,pirate,gruff,treasure,,Keep your shovel sharp and your expectations low.,Mantenha a pá afiada e as expectativas baixas.
+gruff.treasure.06,pirate,gruff,treasure,,I once dug up a chest full of rotten potatoes. Still ate better that week.,"Uma vez desenterrei um baú cheio de batatas podres. Ainda assim, comi melhor naquela semana."
+gruff.trade.01,pirate,gruff,trade,,Price is on the barrel. I don't do poetry or discounts.,O preço está no barril. Não faço poesia nem desconto.
+gruff.trade.02,pirate,gruff,trade,,Your emeralds are good. Your bargaining isn't.,"Suas esmeraldas prestam. Sua pechincha, não."
+gruff.trade.03,pirate,gruff,trade,,Show me the goods before you tell me they're rare.,Mostre a mercadoria antes de dizer que é rara.
+gruff.trade.04,pirate,gruff,trade,,"If it's wet, broken, or cursed, the price goes down.","Se estiver molhado, quebrado ou amaldiçoado, o preço cai."
+gruff.trade.05,pirate,gruff,trade,,I can fix your gear. I can't fix your judgment.,"Posso consertar seu equipamento. Seu bom senso, não."
+gruff.trade.06,pirate,gruff,trade,,Try that price again and I'll charge you for wasting daylight.,Repita esse preço e vou cobrar pelo tempo que você me fez perder.
+gruff.captain.01,pirate,gruff,captain,,A captain who shouts all day has nothing worth saying.,Capitão que grita o dia inteiro não tem nada que preste para dizer.
+gruff.captain.02,pirate,gruff,captain,,I follow orders that keep the crew breathing. The others get questions.,Sigo ordens que mantêm a tripulação viva. As outras recebem perguntas.
+gruff.captain.03,pirate,gruff,captain,,The wheel doesn't make someone a leader. Responsibility does.,Segurar o leme não faz ninguém líder. Responsabilidade faz.
+gruff.captain.04,pirate,gruff,captain,,"If the captain wants respect, they can start by earning it.","Se o capitão quer respeito, pode começar merecendo."
+gruff.captain.05,pirate,gruff,captain,,I served under three captains. Buried one. Fired another.,Servi a três capitães. Enterrei um. Demiti outro.
+gruff.captain.06,pirate,gruff,captain,,"When I say the hull needs repairs, that's not an invitation to debate.","Quando digo que o casco precisa de reparo, não estou abrindo uma votação."
+gruff.crew.01,pirate,gruff,crew,,They're fools. They're my fools. There's a difference.,São idiotas. Mas são meus idiotas. Tem diferença.
+gruff.crew.02,pirate,gruff,crew,,We work together because drowning separately is stupid.,Trabalhamos juntos porque se afogar sozinho é burrice.
+gruff.crew.03,pirate,gruff,crew,,"The deckhand talks too much. Still, nobody touches them on my watch.","O marinheiro fala demais. Mesmo assim, ninguém encosta nele no meu turno."
+gruff.crew.04,pirate,gruff,crew,,Pull your weight and nobody cares where you came from.,Faça sua parte e ninguém liga de onde você veio.
+gruff.crew.05,pirate,gruff,crew,,First rule of this crew: don't leave your mess for the next shift.,Primeira regra da tripulação: não deixe sua bagunça para o próximo turno.
+gruff.crew.06,pirate,gruff,crew,,"If you borrow my knife, return it clean. Preferably immediately.","Se pegar minha faca emprestada, devolva limpa. De preferência, agora."
+gruff.loyalty.01,pirate,gruff,loyalty,,I don't hand out trust. I keep track of who earns it.,Não distribuo confiança. Presto atenção em quem merece.
+gruff.loyalty.02,pirate,gruff,loyalty,,A deserter can keep their life. They won't keep my respect.,"Um desertor pode ficar com a própria vida. Meu respeito, não."
+gruff.loyalty.03,pirate,gruff,loyalty,,You don't need a speech to stand by a crewmate. Just stand there.,Não precisa de discurso para apoiar um companheiro. Só fique ao lado.
+gruff.loyalty.04,pirate,gruff,loyalty,,Betray us once and you'll spend years proving it was a mistake.,Traia a gente uma vez e vai passar anos provando que foi um erro.
+gruff.loyalty.05,pirate,gruff,loyalty,,I'd rather sail with an honest coward than a boastful traitor.,Prefiro navegar com um covarde honesto que com um traidor valentão.
+gruff.loyalty.06,pirate,gruff,loyalty,,Someone has to watch the rear. I always volunteer last.,Alguém tem que cuidar da retaguarda. Eu sempre sou o último a me oferecer.
+gruff.rumor.01,pirate,gruff,rumor,,Heard about the ghost ship? Good. Now stop chasing it.,Ouviu falar do navio fantasma? Ótimo. Agora pare de procurar por ele.
+gruff.rumor.02,pirate,gruff,rumor,,Someone's skimming coins from the shares. I know. They know I know.,Alguém está tirando moedas da divisão. Eu sei. A pessoa sabe que eu sei.
+gruff.rumor.03,pirate,gruff,rumor,,There's a reef north of here that eats anchors. Mark it on your map.,Tem um recife ao norte daqui que engole âncoras. Marque no seu mapa.
+gruff.rumor.04,pirate,gruff,rumor,,They call it a cursed harbor. I call it bad maintenance.,Chamam de porto amaldiçoado. Eu chamo de falta de manutenção.
+gruff.rumor.05,pirate,gruff,rumor,,A fishing boat vanished without a storm. That's the part I don't like.,Um barco de pesca sumiu sem nenhuma tempestade. Essa é a parte de que não gosto.
+gruff.rumor.06,pirate,gruff,rumor,,Rumors get sailors killed faster than swords. Check your sources.,Boatos matam marinheiros mais rápido que espadas. Confira a fonte.
+gruff.danger.01,pirate,gruff,danger,,Quit gawking and move those crates!,Pare de olhar e mova essas caixas!
+gruff.danger.02,pirate,gruff,danger,,"If you freeze in a fight, get behind me. Don't pretend you can swing.","Se travar numa luta, fique atrás de mim. Não finja que sabe bater."
+gruff.danger.03,pirate,gruff,danger,,Eyes on the horizon. I don't repeat warnings.,Olhos no horizonte. Não repito aviso.
+gruff.danger.04,pirate,gruff,danger,,"That knot comes loose, we're all swimming. Tie it properly.","Se esse nó soltar, vamos todos nadar. Amarre direito."
+gruff.danger.05,pirate,gruff,danger,,The next wave will hit hard. Bend your knees.,A próxima onda vai bater forte. Dobre os joelhos.
+gruff.danger.06,pirate,gruff,danger,,Save the shouting for when something actually catches fire.,Guarde os gritos para quando alguma coisa pegar fogo de verdade.
+gruff.gift.01,pirate,gruff,gift,,Hmph. Useful. Thanks. Don't make a ceremony of it.,Hmpf. Útil. Valeu. Não faça cerimônia.
+gruff.gift.02,pirate,gruff,gift,,I didn't ask for anything. Still... I'll put it to good use.,Não pedi nada. Mesmo assim... vou fazer bom uso.
+gruff.gift.03,pirate,gruff,gift,,This'll last longer than the last thing they gave me.,Isso vai durar mais que a última coisa que me deram.
+gruff.gift.04,pirate,gruff,gift,,You've got a decent eye for supplies. I'll give you that.,Você sabe escolher suprimentos. Isso eu admito.
+gruff.gift.05,pirate,gruff,gift,,Keep the fancy wrapping. I prefer things that work.,Pode ficar com o embrulho bonito. Prefiro coisas que funcionam.
+gruff.gift.06,pirate,gruff,gift,,Thanks. That's all you're getting out of me.,Obrigado. Não espere mais palavras que isso.
+gruff.farewell.01,pirate,gruff,farewell,,Watch your footing on the pier. It's rotten.,Cuidado onde pisa no píer. Está podre.
+gruff.farewell.02,pirate,gruff,farewell,,Don't die doing something stupid. I'm tired of digging graves.,Não morra fazendo besteira. Cansei de cavar túmulos.
+gruff.farewell.03,pirate,gruff,farewell,,"If you're coming back, bring nails. We're out.","Se for voltar, traga pregos. Acabaram."
+gruff.farewell.04,pirate,gruff,farewell,,Get moving before the tide turns.,Ande logo antes que a maré vire.
+gruff.farewell.05,pirate,gruff,farewell,,Keep your blade clean and your mouth shut.,Mantenha a lâmina limpa e a boca fechada.
+gruff.farewell.06,pirate,gruff,farewell,,You did all right today. Don't let it go to your head.,Você não foi mal hoje. Não deixe isso subir à cabeça.
+hostile.greeting.01,pirate,hostile,greeting,,"You're on the wrong deck, stranger. Explain why you're still standing here.","Está no convés errado, forasteiro. Explique por que ainda está aqui."
+hostile.greeting.02,pirate,hostile,greeting,,I don't remember inviting you aboard.,Não me lembro de ter convidado você a bordo.
+hostile.greeting.03,pirate,hostile,greeting,,One step closer and I'll assume you came looking for a fight.,Mais um passo e vou entender que veio procurar briga.
+hostile.greeting.04,pirate,hostile,greeting,,Speak quickly. My patience went overboard years ago.,Fale rápido. Minha paciência caiu no mar há anos.
+hostile.greeting.05,pirate,hostile,greeting,,Look at that. Another fool who mistakes a pirate flag for a welcome sign.,Olha só. Outro idiota que confunde bandeira pirata com placa de boas-vindas.
+hostile.greeting.06,pirate,hostile,greeting,,You have three breaths to tell me your business. Use them wisely.,Você tem três respirações para dizer o que quer. Use bem.
+hostile.smalltalk.01,pirate,hostile,smalltalk,,I don't care where you're from. I care what you brought.,Não me importa de onde veio. Me importa o que trouxe.
+hostile.smalltalk.02,pirate,hostile,smalltalk,,People smile before they betray you. I prefer they skip the smile.,As pessoas sorriem antes de trair. Prefiro que pulem o sorriso.
+hostile.smalltalk.03,pirate,hostile,smalltalk,,I sleep with one eye open. The other watches the door.,Durmo com um olho aberto. O outro vigia a porta.
+hostile.smalltalk.04,pirate,hostile,smalltalk,,"If the crew likes you, that's their mistake to make.","Se a tripulação gosta de você, o erro é deles."
+hostile.smalltalk.05,pirate,hostile,smalltalk,,Quiet is the only conversation I enjoy.,Silêncio é a única conversa de que gosto.
+hostile.smalltalk.06,pirate,hostile,smalltalk,,There's no honor in hesitation. Only openings for the enemy.,Hesitar não tem honra nenhuma. Só dá abertura para o inimigo.
+hostile.sea.01,pirate,hostile,sea,,The sea swallows the weak. I don't plan on joining them.,O mar engole os fracos. Não pretendo me juntar a eles.
+hostile.sea.02,pirate,hostile,sea,,Every wave is a warning. Only idiots wait for the second one.,Cada onda é um aviso. Só idiota espera o segundo.
+hostile.sea.03,pirate,hostile,sea,,I've watched a ship disappear in seconds. Yours wouldn't last longer.,Já vi um navio sumir em segundos. O seu não duraria mais.
+hostile.sea.04,pirate,hostile,sea,,The deep keeps what it takes. Stop asking about the missing.,As profundezas ficam com o que levam. Pare de perguntar pelos desaparecidos.
+hostile.sea.05,pirate,hostile,sea,,"On land, you can run. Out there, the horizon gives you nowhere to hide.","Em terra, dá para correr. Lá fora, o horizonte não dá onde se esconder."
+hostile.sea.06,pirate,hostile,sea,,A storm doesn't frighten me. A silent lookout does.,"Tempestade não me assusta. Vigia em silêncio, sim."
+hostile.treasure.01,pirate,hostile,treasure,,"You touch my share, and our agreement is finished.",Encoste na minha parte e nosso acordo acaba.
+hostile.treasure.02,pirate,hostile,treasure,,A map in your hands is a map I could take. Remember that.,Um mapa na sua mão é um mapa que eu poderia tomar. Lembre disso.
+hostile.treasure.03,pirate,hostile,treasure,,Keep staring at my chest and I'll start counting your fingers.,Continue olhando meu baú e vou começar a contar seus dedos.
+hostile.treasure.04,pirate,hostile,treasure,,I didn't cross half an ocean to split the prize with a stranger.,Não cruzei meio oceano para dividir o prêmio com um desconhecido.
+hostile.treasure.05,pirate,hostile,treasure,,"Every treasure has a guardian. Today, that's me.","Todo tesouro tem guardião. Hoje, sou eu."
+hostile.treasure.06,pirate,hostile,treasure,,"If there's a trap, you can be the one to test it.","Se houver armadilha, você pode ser o primeiro a testar."
+hostile.trade.01,pirate,hostile,trade,,Name a fair price. You won't get a second attempt.,Diga um preço justo. Não vai ter segunda chance.
+hostile.trade.02,pirate,hostile,trade,,"I'm buying supplies, not your excuses.","Estou comprando suprimentos, não desculpas."
+hostile.trade.03,pirate,hostile,trade,,Try cheating me and we stop being business partners.,Tente me enganar e deixamos de ser parceiros de negócio.
+hostile.trade.04,pirate,hostile,trade,,Your goods look suspiciously like something we lost.,Suas mercadorias parecem muito com algo que perdemos.
+hostile.trade.05,pirate,hostile,trade,,I don't haggle. I decide whether your offer is worth hearing.,Não pechincho. Eu decido se vale a pena ouvir sua oferta.
+hostile.trade.06,pirate,hostile,trade,,Count the emeralds twice. I will.,Conte as esmeraldas duas vezes. Eu vou contar.
+hostile.captain.01,pirate,hostile,captain,,The captain gives orders. I decide how much respect they deserve.,O capitão dá ordens. Eu decido quanto respeito merece.
+hostile.captain.02,pirate,hostile,captain,,Weak captains invite mutiny and then act surprised.,Capitães fracos convidam ao motim e depois ficam surpresos.
+hostile.captain.03,pirate,hostile,captain,,I'd follow a fearless captain into fire. A foolish one can go alone.,Eu seguiria um capitão destemido até o fogo. Um tolo pode ir sozinho.
+hostile.captain.04,pirate,hostile,captain,,Every captain has a last order. Some just don't know when they'll give it.,Todo capitão tem uma última ordem. Alguns só não sabem quando vão dá-la.
+hostile.captain.05,pirate,hostile,captain,,I don't want the wheel. I want the fool holding it to stop trembling.,Não quero o leme. Quero que o idiota segurando pare de tremer.
+hostile.captain.06,pirate,hostile,captain,,A captain's title won't protect them from the crew's judgment.,O título de capitão não protege ninguém do julgamento da tripulação.
+hostile.crew.01,pirate,hostile,crew,,The crew respects strength. Everything else is decoration.,A tripulação respeita força. O resto é enfeite.
+hostile.crew.02,pirate,hostile,crew,,I don't need friends aboard. I need people who follow through.,Não preciso de amigos a bordo. Preciso de gente que cumpra o combinado.
+hostile.crew.03,pirate,hostile,crew,,The next sailor who steals my ration answers to me.,O próximo marinheiro que roubar minha ração vai se entender comigo.
+hostile.crew.04,pirate,hostile,crew,,Keep your distance from my bunk and we'll avoid trouble.,Fique longe da minha rede e evitamos problemas.
+hostile.crew.05,pirate,hostile,crew,,"If someone can't hold their end of a rope, they can hold a bucket.","Se alguém não consegue segurar uma corda, pode segurar um balde."
+hostile.crew.06,pirate,hostile,crew,,We sail under one flag. Don't mistake that for friendship.,Navegamos sob uma bandeira só. Não confunda isso com amizade.
+hostile.loyalty.01,pirate,hostile,loyalty,,Betray this crew and no harbor will feel far enough away.,Traia esta tripulação e nenhum porto vai parecer distante o bastante.
+hostile.loyalty.02,pirate,hostile,loyalty,,I trust deeds. Words are what traitors practice.,Confio em atos. Palavras são o que traidores ensaiam.
+hostile.loyalty.03,pirate,hostile,loyalty,,A broken oath is louder than a cannon. Everyone hears it.,Um juramento quebrado faz mais barulho que canhão. Todo mundo ouve.
+hostile.loyalty.04,pirate,hostile,loyalty,,"If I save you, you owe me the truth. Not a thank-you.","Se eu salvar você, vai me dever a verdade. Não um agradecimento."
+hostile.loyalty.05,pirate,hostile,loyalty,,I remember every face that ran when the fighting started.,Lembro do rosto de cada um que fugiu quando a luta começou.
+hostile.loyalty.06,pirate,hostile,loyalty,,You want my loyalty? Give me a reason that survives a bad day.,Quer minha lealdade? Me dê um motivo que resista a um dia ruim.
+hostile.rumor.01,pirate,hostile,rumor,,"There's talk of mutiny. I want names, not whispers.","Falam de motim. Quero nomes, não cochichos."
+hostile.rumor.02,pirate,hostile,rumor,,A merchant's been selling our routes. I plan to ask them some questions.,Um mercador anda vendendo nossas rotas. Pretendo fazer umas perguntas.
+hostile.rumor.03,pirate,hostile,rumor,,The captain's treasure room was opened last night. Nobody admits it.,A sala do tesouro do capitão foi aberta ontem à noite. Ninguém admite.
+hostile.rumor.04,pirate,hostile,rumor,,Rumor says a rival crew is coming. Good. Saves us the journey.,Dizem que uma tripulação rival está vindo. Ótimo. Economiza viagem.
+hostile.rumor.05,pirate,hostile,rumor,,Somebody's been marking our hull at night. That's no sailor's joke.,Alguém anda marcando nosso casco à noite. Isso não é brincadeira de marinheiro.
+hostile.rumor.06,pirate,hostile,rumor,,"If you've heard a name tied to betrayal, speak now.","Se ouviu algum nome ligado à traição, fale agora."
+hostile.danger.01,pirate,hostile,danger,,Draw your blade or get out of my path!,Puxe sua espada ou saia da minha frente!
+hostile.danger.02,pirate,hostile,danger,,I warned them once. There won't be another warning.,Avisei uma vez. Não vai haver outro aviso.
+hostile.danger.03,pirate,hostile,danger,,Keep your head down unless you're ready to fight.,"Abaixe a cabeça, a menos que esteja pronto para lutar."
+hostile.danger.04,pirate,hostile,danger,,We have enemies to port. Good. I was getting bored.,Inimigos a bombordo. Ótimo. Já estava entediado.
+hostile.danger.05,pirate,hostile,danger,,"If you panic, don't drag the rest of us down with you.","Se entrar em pânico, não arraste o resto da gente junto."
+hostile.danger.06,pirate,hostile,danger,,That ship crossed the line. Now we show them why it was there.,Aquele navio passou dos limites. Agora vamos mostrar por que existiam.
+hostile.gift.01,pirate,hostile,gift,,What do you want in return? Nobody gives me anything for free.,O que quer em troca? Ninguém me dá nada de graça.
+hostile.gift.02,pirate,hostile,gift,,Don't think one gift buys you my trust.,Não ache que um presente compra minha confiança.
+hostile.gift.03,pirate,hostile,gift,,Useful. You might have a purpose aboard after all.,"Útil. Talvez você tenha alguma serventia a bordo, afinal."
+hostile.gift.04,pirate,hostile,gift,,I'll take it. That doesn't mean we're friends.,Vou aceitar. Isso não significa que somos amigos.
+hostile.gift.05,pirate,hostile,gift,,"If this is a trick, you'll regret wasting my time.","Se isso for um truque, vai se arrepender de perder meu tempo."
+hostile.gift.06,pirate,hostile,gift,,At least you know the difference between a gift and an insult.,Pelo menos sabe a diferença entre presente e insulto.
+hostile.farewell.01,pirate,hostile,farewell,,Leave. And don't make me say it twice.,Vá embora. E não me faça repetir.
+hostile.farewell.02,pirate,hostile,farewell,,The pier's behind you. Use it while I'm feeling generous.,O píer está atrás de você. Aproveite enquanto estou generoso.
+hostile.farewell.03,pirate,hostile,farewell,,"Next time, ask permission before stepping onto my deck.","Da próxima vez, peça permissão antes de pisar no meu convés."
+hostile.farewell.04,pirate,hostile,farewell,,Keep out of our waters unless you have business worth my time.,"Fique longe das nossas águas, a não ser que tenha algo que valha meu tempo."
+hostile.farewell.05,pirate,hostile,farewell,,"If we meet under another flag, expect a different welcome.","Se nos encontrarmos sob outra bandeira, espere outra recepção."
+hostile.farewell.06,pirate,hostile,farewell,,You've survived this conversation. Don't mistake that for an invitation.,Você sobreviveu a esta conversa. Não confunda isso com um convite.
+piratesmca_friendly_voyage_invitation.prompt,pirate,friendly,scene:voyage_invitation,,We sail at dawn for an island no chart agrees on. Want to join the adventure?,Partimos ao amanhecer para uma ilha que nenhum mapa descreve igual. Quer vir nessa aventura?
+piratesmca_friendly_voyage_invitation.count_me_in.choice,player,friendly,scene:voyage_invitation,positive,Count me in. What should I bring?,Pode contar comigo. O que devo levar?
+piratesmca_friendly_voyage_invitation.count_me_in.reply,pirate,friendly,scene:voyage_invitation,positive,"A good blade, spare food, and something to sing badly. Welcome aboard!","Uma boa espada, comida extra e uma canção desafinada. Pode embarcar!"
+piratesmca_friendly_voyage_invitation.not_today.choice,player,friendly,scene:voyage_invitation,neutral,Not this time.,"Dessa vez, não."
+piratesmca_friendly_voyage_invitation.not_today.reply,pirate,friendly,scene:voyage_invitation,neutral,No hard feelings. The sea will still be there when you change your mind.,Sem ressentimentos. O mar vai continuar lá quando você mudar de ideia.
+piratesmca_friendly_voyage_invitation.ask_risk.choice,player,friendly,scene:voyage_invitation,neutral,Is the voyage dangerous?,A viagem é perigosa?
+piratesmca_friendly_voyage_invitation.ask_risk.reply,pirate,friendly,scene:voyage_invitation,neutral,Probably. But I never leave without enough lifeboats for everyone.,Provavelmente. Mas nunca parto sem botes suficientes para todo mundo.
+piratesmca_friendly_lost_sailor.prompt,pirate,friendly,scene:lost_sailor,,One of our sailors hasn't returned from the reef. I'm trying not to fear the worst.,Um dos nossos marinheiros não voltou do recife. Estou tentando não pensar no pior.
+piratesmca_friendly_lost_sailor.offer_help.choice,player,friendly,scene:lost_sailor,positive,I'll help look for them.,Vou ajudar a procurar.
+piratesmca_friendly_lost_sailor.offer_help.reply,pirate,friendly,scene:lost_sailor,positive,Thank you. I'll remember who came when the sea took one of ours.,Valeu. Vou lembrar de quem apareceu quando o mar levou um dos nossos.
+piratesmca_friendly_lost_sailor.ask_details.choice,player,friendly,scene:lost_sailor,neutral,Where were they last seen?,Onde viram essa pessoa pela última vez?
+piratesmca_friendly_lost_sailor.ask_details.reply,pirate,friendly,scene:lost_sailor,neutral,"Near the broken mast, east of the kelp. Take a boat and watch the current.","Perto do mastro quebrado, a leste das algas. Leve um barco e cuidado com a corrente."
+piratesmca_friendly_lost_sailor.decline.choice,player,friendly,scene:lost_sailor,neutral,I can't help right now.,Não posso ajudar agora.
+piratesmca_friendly_lost_sailor.decline.reply,pirate,friendly,scene:lost_sailor,neutral,"I understand. Just keep an eye on the shore, will you?","Entendo. Só fique de olho na praia, pode ser?"
+piratesmca_friendly_share_the_find.prompt,pirate,friendly,scene:share_the_find,,"I found an old compass in a wreck. It points somewhere, but not north.","Achei uma bússola antiga num naufrágio. Ela aponta para algum lugar, mas não para o norte."
+piratesmca_friendly_share_the_find.investigate.choice,player,friendly,scene:share_the_find,positive,Let's see where it leads.,Vamos ver aonde ela leva.
+piratesmca_friendly_share_the_find.investigate.reply,pirate,friendly,scene:share_the_find,positive,That's the spirit! I'll bring the map; you bring the courage.,Esse é o espírito! Eu levo o mapa; você leva a coragem.
+piratesmca_friendly_share_the_find.sell_it.choice,player,friendly,scene:share_the_find,neutral,You could sell it for emeralds.,Daria para vender por esmeraldas.
+piratesmca_friendly_share_the_find.sell_it.reply,pirate,friendly,scene:share_the_find,neutral,Maybe. But some things are worth more as mysteries.,Talvez. Mas alguns mistérios valem mais do que dinheiro.
+piratesmca_friendly_share_the_find.keep_safe.choice,player,friendly,scene:share_the_find,neutral,Keep it somewhere safe.,Guarde num lugar seguro.
+piratesmca_friendly_share_the_find.keep_safe.reply,pirate,friendly,scene:share_the_find,neutral,Good call. I'll hide it where even the cook won't find it.,Boa ideia. Vou esconder onde nem o cozinheiro consiga encontrar.
+piratesmca_gruff_missing_crate.prompt,pirate,gruff,scene:missing_crate,,We're missing a crate of supplies. Everybody claims they saw nothing.,Sumiu uma caixa de suprimentos. Todo mundo diz que não viu nada.
+piratesmca_gruff_missing_crate.track_it.choice,player,gruff,scene:missing_crate,positive,I'll look for tracks.,Vou procurar rastros.
+piratesmca_gruff_missing_crate.track_it.reply,pirate,gruff,scene:missing_crate,positive,"Finally, someone with a working head. Start by the dock.",Finalmente alguém com a cabeça funcionando. Comece pelo cais.
+piratesmca_gruff_missing_crate.blame_crew.choice,player,gruff,scene:missing_crate,negative,Maybe your crew took it.,Talvez sua tripulação tenha pegado.
+piratesmca_gruff_missing_crate.blame_crew.reply,pirate,gruff,scene:missing_crate,negative,Maybe. And maybe you ought to bring evidence before accusations.,Talvez. E talvez seja melhor trazer provas antes de acusar.
+piratesmca_gruff_missing_crate.not_my_problem.choice,player,gruff,scene:missing_crate,negative,That's not my problem.,Isso não é problema meu.
+piratesmca_gruff_missing_crate.not_my_problem.reply,pirate,gruff,scene:missing_crate,negative,Fine. Then stop blocking the people who intend to solve it.,Ótimo. Então pare de atrapalhar quem pretende resolver.
+piratesmca_gruff_captain_test.prompt,pirate,gruff,scene:captain_test,,So you want to command a crew? Tell me what comes first.,Então quer comandar uma tripulação? Me diga o que vem primeiro.
+piratesmca_gruff_captain_test.crew_first.choice,player,gruff,scene:captain_test,positive,Keeping everyone alive.,Manter todo mundo vivo.
+piratesmca_gruff_captain_test.crew_first.reply,pirate,gruff,scene:captain_test,positive,Good answer. A captain who forgets that can steer an empty ship.,Boa resposta. Capitão que esquece disso acaba comandando navio vazio.
+piratesmca_gruff_captain_test.gold_first.choice,player,gruff,scene:captain_test,negative,Finding treasure.,Encontrar tesouro.
+piratesmca_gruff_captain_test.gold_first.reply,pirate,gruff,scene:captain_test,negative,And who carries your gold if the crew ends up on the seabed?,E quem carrega seu ouro se a tripulação parar no fundo do mar?
+piratesmca_gruff_captain_test.glory_first.choice,player,gruff,scene:captain_test,neutral,Earning respect.,Conquistar respeito.
+piratesmca_gruff_captain_test.glory_first.reply,pirate,gruff,scene:captain_test,neutral,Respect is earned by the work. Don't put the reward before the job.,Respeito se ganha com trabalho. Não coloque a recompensa antes do serviço.
+piratesmca_gruff_damaged_hull.prompt,pirate,gruff,scene:damaged_hull,,"There's a crack in the hull. I need hands, not opinions.","Tem uma rachadura no casco. Preciso de braços, não de opiniões."
+piratesmca_gruff_damaged_hull.bring_planks.choice,player,gruff,scene:damaged_hull,positive,I'll bring planks.,Vou trazer tábuas.
+piratesmca_gruff_damaged_hull.bring_planks.reply,pirate,gruff,scene:damaged_hull,positive,Good. Dry ones. And a hammer that isn't made of promises.,Certo. Tábuas secas. E um martelo que não seja feito de promessas.
+piratesmca_gruff_damaged_hull.ask_time.choice,player,gruff,scene:damaged_hull,neutral,How long until we sink?,Quanto tempo até afundarmos?
+piratesmca_gruff_damaged_hull.ask_time.reply,pirate,gruff,scene:damaged_hull,neutral,Longer if you stop asking and start hauling.,"Mais tempo, se parar de perguntar e começar a carregar."
+piratesmca_gruff_damaged_hull.ignore.choice,player,gruff,scene:damaged_hull,negative,It can wait until tomorrow.,Pode esperar até amanhã.
+piratesmca_gruff_damaged_hull.ignore.reply,pirate,gruff,scene:damaged_hull,negative,Then you can explain to the sea why it should wait with us.,Então explique ao mar por que ele deveria esperar com a gente.
+piratesmca_hostile_deck_trespass.prompt,pirate,hostile,scene:deck_trespass,,You're standing where you don't belong. Give me one reason not to throw you off.,Você está onde não deveria. Me dê um motivo para não te jogar para fora.
+piratesmca_hostile_deck_trespass.bring_business.choice,player,hostile,scene:deck_trespass,neutral,I have business with your captain.,Tenho assuntos para tratar com seu capitão.
+piratesmca_hostile_deck_trespass.bring_business.reply,pirate,hostile,scene:deck_trespass,neutral,Then say that first. Hands where I can see them.,Então comece por aí. Mãos onde eu possa vê-las.
+piratesmca_hostile_deck_trespass.stand_ground.choice,player,hostile,scene:deck_trespass,negative,I'm not afraid of you.,Não tenho medo de você.
+piratesmca_hostile_deck_trespass.stand_ground.reply,pirate,hostile,scene:deck_trespass,negative,Fear was never the requirement. Good judgment was.,"Medo nunca foi requisito. Bom senso, sim."
+piratesmca_hostile_deck_trespass.apologize.choice,player,hostile,scene:deck_trespass,neutral,My mistake. I will leave.,Foi um engano. Vou embora.
+piratesmca_hostile_deck_trespass.apologize.reply,pirate,hostile,scene:deck_trespass,neutral,Smart choice. Keep walking.,Escolha inteligente. Continue andando.
+piratesmca_hostile_mutiny_whisper.prompt,pirate,hostile,scene:mutiny_whisper,,Someone aboard is plotting against the captain. I don't tolerate cowards hiding behind whispers.,Alguém a bordo está conspirando contra o capitão. Não tolero covardes escondidos em cochichos.
+piratesmca_hostile_mutiny_whisper.ask_proof.choice,player,hostile,scene:mutiny_whisper,neutral,Do you have proof?,Você tem provas?
+piratesmca_hostile_mutiny_whisper.ask_proof.reply,pirate,hostile,scene:mutiny_whisper,neutral,Not yet. That's why I'm watching who flinches when I ask.,Ainda não. É por isso que observo quem se assusta quando pergunto.
+piratesmca_hostile_mutiny_whisper.encourage_mutiny.choice,player,hostile,scene:mutiny_whisper,negative,Perhaps the captain deserves it.,Talvez o capitão mereça.
+piratesmca_hostile_mutiny_whisper.encourage_mutiny.reply,pirate,hostile,scene:mutiny_whisper,negative,"Maybe. But if you're stirring a mutiny, own your words.","Talvez. Mas se está incentivando um motim, assuma suas palavras."
+piratesmca_hostile_mutiny_whisper.stay_out.choice,player,hostile,scene:mutiny_whisper,neutral,I'm staying out of it.,Não vou me envolver.
+piratesmca_hostile_mutiny_whisper.stay_out.reply,pirate,hostile,scene:mutiny_whisper,neutral,Then keep your distance. This won't end with a friendly vote.,Então mantenha distância. Isso não vai terminar com uma votação amigável.
+piratesmca_hostile_rival_flag.prompt,pirate,hostile,scene:rival_flag,,"I know that flag. Their crew took something from us, and I have not forgotten.","Conheço aquela bandeira. Aquela tripulação tomou algo nosso, e eu não esqueci."
+piratesmca_hostile_rival_flag.offer_diplomacy.choice,player,hostile,scene:rival_flag,neutral,Maybe we can settle this without a fight.,Talvez dê para resolver sem luta.
+piratesmca_hostile_rival_flag.offer_diplomacy.reply,pirate,hostile,scene:rival_flag,neutral,Try. But don't promise them anything that belongs to my crew.,Tente. Mas não prometa nada que pertença à minha tripulação.
+piratesmca_hostile_rival_flag.fight_together.choice,player,hostile,scene:rival_flag,positive,Then we face them together.,Então vamos enfrentar eles juntos.
+piratesmca_hostile_rival_flag.fight_together.reply,pirate,hostile,scene:rival_flag,positive,"Fine. Stay at my side, and do not break formation.",Certo. Fique ao meu lado e não quebre a formação.
+piratesmca_hostile_rival_flag.walk_away.choice,player,hostile,scene:rival_flag,negative,"That's your quarrel, not mine.","Essa briga é sua, não minha."
+piratesmca_hostile_rival_flag.walk_away.reply,pirate,hostile,scene:rival_flag,negative,Then get off this deck before you become part of it.,Então saia deste convés antes de virar parte dela.

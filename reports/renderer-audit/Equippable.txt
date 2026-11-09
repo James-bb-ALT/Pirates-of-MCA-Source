@@ -1,0 +1,522 @@
+Compiled from "Equippable.java"
+public final class net.minecraft.world.item.equipment.Equippable extends java.lang.Record {
+  private final net.minecraft.world.entity.EquipmentSlot slot;
+
+  private final net.minecraft.core.Holder<net.minecraft.sounds.SoundEvent> equipSound;
+
+  private final java.util.Optional<net.minecraft.resources.ResourceKey<net.minecraft.world.item.equipment.EquipmentAsset>> assetId;
+
+  private final java.util.Optional<net.minecraft.resources.Identifier> cameraOverlay;
+
+  private final java.util.Optional<net.minecraft.core.HolderSet<net.minecraft.world.entity.EntityType<?>>> allowedEntities;
+
+  private final boolean dispensable;
+
+  private final boolean swappable;
+
+  private final boolean damageOnHurt;
+
+  private final boolean equipOnInteract;
+
+  private final boolean canBeSheared;
+
+  private final net.minecraft.core.Holder<net.minecraft.sounds.SoundEvent> shearingSound;
+
+  public static final com.mojang.serialization.Codec<net.minecraft.world.item.equipment.Equippable> CODEC;
+
+  public static final net.minecraft.network.codec.StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf, net.minecraft.world.item.equipment.Equippable> STREAM_CODEC;
+
+  public net.minecraft.world.item.equipment.Equippable(net.minecraft.world.entity.EquipmentSlot, net.minecraft.core.Holder<net.minecraft.sounds.SoundEvent>, java.util.Optional<net.minecraft.resources.ResourceKey<net.minecraft.world.item.equipment.EquipmentAsset>>, java.util.Optional<net.minecraft.resources.Identifier>, java.util.Optional<net.minecraft.core.HolderSet<net.minecraft.world.entity.EntityType<?>>>, boolean, boolean, boolean, boolean, boolean, net.minecraft.core.Holder<net.minecraft.sounds.SoundEvent>);
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #7                  // Field slot:Lnet/minecraft/world/entity/EquipmentSlot;
+         9: aload_0
+        10: aload_2
+        11: putfield      #13                 // Field equipSound:Lnet/minecraft/core/Holder;
+        14: aload_0
+        15: aload_3
+        16: putfield      #17                 // Field assetId:Ljava/util/Optional;
+        19: aload_0
+        20: aload         4
+        22: putfield      #21                 // Field cameraOverlay:Ljava/util/Optional;
+        25: aload_0
+        26: aload         5
+        28: putfield      #24                 // Field allowedEntities:Ljava/util/Optional;
+        31: aload_0
+        32: iload         6
+        34: putfield      #27                 // Field dispensable:Z
+        37: aload_0
+        38: iload         7
+        40: putfield      #31                 // Field swappable:Z
+        43: aload_0
+        44: iload         8
+        46: putfield      #34                 // Field damageOnHurt:Z
+        49: aload_0
+        50: iload         9
+        52: putfield      #37                 // Field equipOnInteract:Z
+        55: aload_0
+        56: iload         10
+        58: putfield      #40                 // Field canBeSheared:Z
+        61: aload_0
+        62: aload         11
+        64: putfield      #43                 // Field shearingSound:Lnet/minecraft/core/Holder;
+        67: return
+
+  public static net.minecraft.world.item.equipment.Equippable llamaSwag(net.minecraft.world.item.DyeColor);
+    Code:
+         0: getstatic     #46                 // Field net/minecraft/world/entity/EquipmentSlot.BODY:Lnet/minecraft/world/entity/EquipmentSlot;
+         3: invokestatic  #51                 // Method builder:(Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+         6: getstatic     #55                 // Field net/minecraft/sounds/SoundEvents.LLAMA_SWAG:Lnet/minecraft/core/Holder$Reference;
+         9: invokevirtual #61                 // Method net/minecraft/world/item/equipment/Equippable$Builder.setEquipSound:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        12: getstatic     #67                 // Field net/minecraft/world/item/equipment/EquipmentAssets.CARPETS:Ljava/util/Map;
+        15: aload_0
+        16: invokeinterface #73,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        21: checkcast     #79                 // class net/minecraft/resources/ResourceKey
+        24: invokevirtual #81                 // Method net/minecraft/world/item/equipment/Equippable$Builder.setAsset:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        27: iconst_2
+        28: anewarray     #85                 // class net/minecraft/world/entity/EntityType
+        31: dup
+        32: iconst_0
+        33: getstatic     #87                 // Field net/minecraft/world/entity/EntityTypes.LLAMA:Lnet/minecraft/world/entity/EntityType;
+        36: aastore
+        37: dup
+        38: iconst_1
+        39: getstatic     #93                 // Field net/minecraft/world/entity/EntityTypes.TRADER_LLAMA:Lnet/minecraft/world/entity/EntityType;
+        42: aastore
+        43: invokevirtual #96                 // Method net/minecraft/world/item/equipment/Equippable$Builder.setAllowedEntities:([Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        46: iconst_1
+        47: invokevirtual #100                // Method net/minecraft/world/item/equipment/Equippable$Builder.setCanBeSheared:(Z)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        50: getstatic     #104                // Field net/minecraft/sounds/SoundEvents.LLAMA_CARPET_UNEQUIP:Lnet/minecraft/core/Holder$Reference;
+        53: invokevirtual #107                // Method net/minecraft/world/item/equipment/Equippable$Builder.setShearingSound:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        56: invokevirtual #110                // Method net/minecraft/world/item/equipment/Equippable$Builder.build:()Lnet/minecraft/world/item/equipment/Equippable;
+        59: areturn
+
+  public static net.minecraft.world.item.equipment.Equippable saddle();
+    Code:
+         0: getstatic     #114                // Field net/minecraft/core/registries/BuiltInRegistries.ENTITY_TYPE:Lnet/minecraft/core/DefaultedRegistry;
+         3: invokestatic  #120                // Method net/minecraft/core/registries/BuiltInRegistries.acquireBootstrapRegistrationLookup:(Lnet/minecraft/core/Registry;)Lnet/minecraft/core/HolderGetter;
+         6: astore_0
+         7: getstatic     #124                // Field net/minecraft/world/entity/EquipmentSlot.SADDLE:Lnet/minecraft/world/entity/EquipmentSlot;
+        10: invokestatic  #51                 // Method builder:(Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        13: getstatic     #127                // Field net/minecraft/sounds/SoundEvents.HORSE_SADDLE:Lnet/minecraft/core/Holder$Reference;
+        16: invokevirtual #61                 // Method net/minecraft/world/item/equipment/Equippable$Builder.setEquipSound:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        19: getstatic     #130                // Field net/minecraft/world/item/equipment/EquipmentAssets.SADDLE:Lnet/minecraft/resources/ResourceKey;
+        22: invokevirtual #81                 // Method net/minecraft/world/item/equipment/Equippable$Builder.setAsset:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        25: aload_0
+        26: getstatic     #133                // Field net/minecraft/tags/EntityTypeTags.CAN_EQUIP_SADDLE:Lnet/minecraft/tags/TagKey;
+        29: invokeinterface #139,  2          // InterfaceMethod net/minecraft/core/HolderGetter.getOrThrow:(Lnet/minecraft/tags/TagKey;)Lnet/minecraft/core/HolderSet$Named;
+        34: invokevirtual #145                // Method net/minecraft/world/item/equipment/Equippable$Builder.setAllowedEntities:(Lnet/minecraft/core/HolderSet;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        37: iconst_1
+        38: invokevirtual #148                // Method net/minecraft/world/item/equipment/Equippable$Builder.setEquipOnInteract:(Z)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        41: iconst_1
+        42: invokevirtual #100                // Method net/minecraft/world/item/equipment/Equippable$Builder.setCanBeSheared:(Z)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        45: getstatic     #151                // Field net/minecraft/sounds/SoundEvents.SADDLE_UNEQUIP:Lnet/minecraft/core/Holder$Reference;
+        48: invokevirtual #107                // Method net/minecraft/world/item/equipment/Equippable$Builder.setShearingSound:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        51: invokevirtual #110                // Method net/minecraft/world/item/equipment/Equippable$Builder.build:()Lnet/minecraft/world/item/equipment/Equippable;
+        54: areturn
+
+  public static net.minecraft.world.item.equipment.Equippable harness(net.minecraft.world.item.DyeColor);
+    Code:
+         0: getstatic     #114                // Field net/minecraft/core/registries/BuiltInRegistries.ENTITY_TYPE:Lnet/minecraft/core/DefaultedRegistry;
+         3: invokestatic  #120                // Method net/minecraft/core/registries/BuiltInRegistries.acquireBootstrapRegistrationLookup:(Lnet/minecraft/core/Registry;)Lnet/minecraft/core/HolderGetter;
+         6: astore_1
+         7: getstatic     #46                 // Field net/minecraft/world/entity/EquipmentSlot.BODY:Lnet/minecraft/world/entity/EquipmentSlot;
+        10: invokestatic  #51                 // Method builder:(Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        13: getstatic     #154                // Field net/minecraft/sounds/SoundEvents.HARNESS_EQUIP:Lnet/minecraft/core/Holder$Reference;
+        16: invokevirtual #61                 // Method net/minecraft/world/item/equipment/Equippable$Builder.setEquipSound:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        19: getstatic     #157                // Field net/minecraft/world/item/equipment/EquipmentAssets.HARNESSES:Ljava/util/Map;
+        22: aload_0
+        23: invokeinterface #73,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        28: checkcast     #79                 // class net/minecraft/resources/ResourceKey
+        31: invokevirtual #81                 // Method net/minecraft/world/item/equipment/Equippable$Builder.setAsset:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        34: aload_1
+        35: getstatic     #160                // Field net/minecraft/tags/EntityTypeTags.CAN_EQUIP_HARNESS:Lnet/minecraft/tags/TagKey;
+        38: invokeinterface #139,  2          // InterfaceMethod net/minecraft/core/HolderGetter.getOrThrow:(Lnet/minecraft/tags/TagKey;)Lnet/minecraft/core/HolderSet$Named;
+        43: invokevirtual #145                // Method net/minecraft/world/item/equipment/Equippable$Builder.setAllowedEntities:(Lnet/minecraft/core/HolderSet;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        46: iconst_1
+        47: invokevirtual #148                // Method net/minecraft/world/item/equipment/Equippable$Builder.setEquipOnInteract:(Z)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        50: iconst_1
+        51: invokevirtual #100                // Method net/minecraft/world/item/equipment/Equippable$Builder.setCanBeSheared:(Z)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        54: getstatic     #163                // Field net/minecraft/core/registries/BuiltInRegistries.SOUND_EVENT:Lnet/minecraft/core/Registry;
+        57: getstatic     #167                // Field net/minecraft/sounds/SoundEvents.HARNESS_UNEQUIP:Lnet/minecraft/sounds/SoundEvent;
+        60: invokeinterface #171,  2          // InterfaceMethod net/minecraft/core/Registry.wrapAsHolder:(Ljava/lang/Object;)Lnet/minecraft/core/Holder;
+        65: invokevirtual #107                // Method net/minecraft/world/item/equipment/Equippable$Builder.setShearingSound:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+        68: invokevirtual #110                // Method net/minecraft/world/item/equipment/Equippable$Builder.build:()Lnet/minecraft/world/item/equipment/Equippable;
+        71: areturn
+
+  public static net.minecraft.world.item.equipment.Equippable$Builder builder(net.minecraft.world.entity.EquipmentSlot);
+    Code:
+         0: new           #62                 // class net/minecraft/world/item/equipment/Equippable$Builder
+         3: dup
+         4: aload_0
+         5: invokespecial #177                // Method net/minecraft/world/item/equipment/Equippable$Builder."<init>":(Lnet/minecraft/world/entity/EquipmentSlot;)V
+         8: areturn
+
+  public net.minecraft.world.InteractionResult swapWithEquipmentSlot(net.minecraft.world.item.ItemStack, net.minecraft.world.entity.player.Player);
+    Code:
+         0: aload_2
+         1: aload_0
+         2: getfield      #7                  // Field slot:Lnet/minecraft/world/entity/EquipmentSlot;
+         5: invokevirtual #180                // Method net/minecraft/world/entity/player/Player.canUseSlot:(Lnet/minecraft/world/entity/EquipmentSlot;)Z
+         8: ifeq          22
+        11: aload_0
+        12: aload_2
+        13: invokevirtual #186                // Method net/minecraft/world/entity/player/Player.typeHolder:()Lnet/minecraft/core/Holder;
+        16: invokevirtual #190                // Method canBeEquippedBy:(Lnet/minecraft/core/Holder;)Z
+        19: ifne          26
+        22: getstatic     #194                // Field net/minecraft/world/InteractionResult.PASS:Lnet/minecraft/world/InteractionResult$Pass;
+        25: areturn
+        26: aload_2
+        27: aload_0
+        28: getfield      #7                  // Field slot:Lnet/minecraft/world/entity/EquipmentSlot;
+        31: invokevirtual #200                // Method net/minecraft/world/entity/player/Player.getItemBySlot:(Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack;
+        34: astore_3
+        35: aload_3
+        36: getstatic     #204                // Field net/minecraft/world/item/enchantment/EnchantmentEffectComponents.PREVENT_ARMOR_CHANGE:Lnet/minecraft/core/component/DataComponentType;
+        39: invokestatic  #210                // Method net/minecraft/world/item/enchantment/EnchantmentHelper.has:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/core/component/DataComponentType;)Z
+        42: ifeq          52
+        45: aload_2
+        46: invokevirtual #216                // Method net/minecraft/world/entity/player/Player.isCreative:()Z
+        49: ifeq          60
+        52: aload_1
+        53: aload_3
+        54: invokestatic  #220                // Method net/minecraft/world/item/ItemStack.isSameItemSameComponents:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
+        57: ifeq          64
+        60: getstatic     #226                // Field net/minecraft/world/InteractionResult.FAIL:Lnet/minecraft/world/InteractionResult$Fail;
+        63: areturn
+        64: aload_2
+        65: invokevirtual #230                // Method net/minecraft/world/entity/player/Player.level:()Lnet/minecraft/world/level/Level;
+        68: invokevirtual #234                // Method net/minecraft/world/level/Level.isClientSide:()Z
+        71: ifne          88
+        74: aload_2
+        75: getstatic     #239                // Field net/minecraft/stats/Stats.ITEM_USED:Lnet/minecraft/stats/StatType;
+        78: aload_1
+        79: invokevirtual #245                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+        82: invokevirtual #249                // Method net/minecraft/stats/StatType.get:(Ljava/lang/Object;)Lnet/minecraft/stats/Stat;
+        85: invokevirtual #254                // Method net/minecraft/world/entity/player/Player.awardStat:(Lnet/minecraft/stats/Stat;)V
+        88: aload_1
+        89: invokevirtual #258                // Method net/minecraft/world/item/ItemStack.getCount:()I
+        92: iconst_1
+        93: if_icmpgt     152
+        96: aload_3
+        97: invokevirtual #262                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+       100: ifeq          107
+       103: aload_1
+       104: goto          111
+       107: aload_3
+       108: invokevirtual #265                // Method net/minecraft/world/item/ItemStack.copyAndClear:()Lnet/minecraft/world/item/ItemStack;
+       111: astore        4
+       113: aload_2
+       114: invokevirtual #216                // Method net/minecraft/world/entity/player/Player.isCreative:()Z
+       117: ifeq          127
+       120: aload_1
+       121: invokevirtual #269                // Method net/minecraft/world/item/ItemStack.copy:()Lnet/minecraft/world/item/ItemStack;
+       124: goto          131
+       127: aload_1
+       128: invokevirtual #265                // Method net/minecraft/world/item/ItemStack.copyAndClear:()Lnet/minecraft/world/item/ItemStack;
+       131: astore        5
+       133: aload_2
+       134: aload_0
+       135: getfield      #7                  // Field slot:Lnet/minecraft/world/entity/EquipmentSlot;
+       138: aload         5
+       140: invokevirtual #272                // Method net/minecraft/world/entity/player/Player.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+       143: getstatic     #276                // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult$Success;
+       146: aload         4
+       148: invokevirtual #280                // Method net/minecraft/world/InteractionResult$Success.heldItemTransformedTo:(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/InteractionResult$Success;
+       151: areturn
+       152: aload_3
+       153: invokevirtual #265                // Method net/minecraft/world/item/ItemStack.copyAndClear:()Lnet/minecraft/world/item/ItemStack;
+       156: astore        4
+       158: aload_1
+       159: iconst_1
+       160: aload_2
+       161: invokevirtual #286                // Method net/minecraft/world/item/ItemStack.consumeAndReturn:(ILnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;
+       164: astore        5
+       166: aload_2
+       167: aload_0
+       168: getfield      #7                  // Field slot:Lnet/minecraft/world/entity/EquipmentSlot;
+       171: aload         5
+       173: invokevirtual #272                // Method net/minecraft/world/entity/player/Player.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+       176: aload_2
+       177: invokevirtual #290                // Method net/minecraft/world/entity/player/Player.getInventory:()Lnet/minecraft/world/entity/player/Inventory;
+       180: aload         4
+       182: invokevirtual #294                // Method net/minecraft/world/entity/player/Inventory.add:(Lnet/minecraft/world/item/ItemStack;)Z
+       185: ifne          196
+       188: aload_2
+       189: aload         4
+       191: iconst_0
+       192: invokevirtual #300                // Method net/minecraft/world/entity/player/Player.drop:(Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/world/entity/item/ItemEntity;
+       195: pop
+       196: getstatic     #276                // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult$Success;
+       199: aload_1
+       200: invokevirtual #280                // Method net/minecraft/world/InteractionResult$Success.heldItemTransformedTo:(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/InteractionResult$Success;
+       203: areturn
+
+  public net.minecraft.world.InteractionResult equipOnTarget(net.minecraft.world.entity.player.Player, net.minecraft.world.entity.LivingEntity, net.minecraft.world.item.ItemStack);
+    Code:
+         0: aload_2
+         1: aload_3
+         2: aload_0
+         3: getfield      #7                  // Field slot:Lnet/minecraft/world/entity/EquipmentSlot;
+         6: invokevirtual #304                // Method net/minecraft/world/entity/LivingEntity.isEquippableInSlot:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/EquipmentSlot;)Z
+         9: ifeq          30
+        12: aload_2
+        13: aload_0
+        14: getfield      #7                  // Field slot:Lnet/minecraft/world/entity/EquipmentSlot;
+        17: invokevirtual #310                // Method net/minecraft/world/entity/LivingEntity.hasItemInSlot:(Lnet/minecraft/world/entity/EquipmentSlot;)Z
+        20: ifne          30
+        23: aload_2
+        24: invokevirtual #313                // Method net/minecraft/world/entity/LivingEntity.isAlive:()Z
+        27: ifne          34
+        30: getstatic     #194                // Field net/minecraft/world/InteractionResult.PASS:Lnet/minecraft/world/InteractionResult$Pass;
+        33: areturn
+        34: aload_1
+        35: invokevirtual #230                // Method net/minecraft/world/entity/player/Player.level:()Lnet/minecraft/world/level/Level;
+        38: invokevirtual #234                // Method net/minecraft/world/level/Level.isClientSide:()Z
+        41: ifne          79
+        44: aload_2
+        45: aload_0
+        46: getfield      #7                  // Field slot:Lnet/minecraft/world/entity/EquipmentSlot;
+        49: aload_3
+        50: iconst_1
+        51: invokevirtual #316                // Method net/minecraft/world/item/ItemStack.split:(I)Lnet/minecraft/world/item/ItemStack;
+        54: invokevirtual #320                // Method net/minecraft/world/entity/LivingEntity.setItemSlot:(Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
+        57: aload_2
+        58: instanceof    #321                // class net/minecraft/world/entity/Mob
+        61: ifeq          79
+        64: aload_2
+        65: checkcast     #321                // class net/minecraft/world/entity/Mob
+        68: astore        4
+        70: aload         4
+        72: aload_0
+        73: getfield      #7                  // Field slot:Lnet/minecraft/world/entity/EquipmentSlot;
+        76: invokevirtual #323                // Method net/minecraft/world/entity/Mob.setGuaranteedDrop:(Lnet/minecraft/world/entity/EquipmentSlot;)V
+        79: getstatic     #276                // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult$Success;
+        82: areturn
+
+  public boolean canBeEquippedBy(net.minecraft.core.Holder<net.minecraft.world.entity.EntityType<?>>);
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field allowedEntities:Ljava/util/Optional;
+         4: invokevirtual #326                // Method java/util/Optional.isEmpty:()Z
+         7: ifne          29
+        10: aload_0
+        11: getfield      #24                 // Field allowedEntities:Ljava/util/Optional;
+        14: invokevirtual #329                // Method java/util/Optional.get:()Ljava/lang/Object;
+        17: checkcast     #332                // class net/minecraft/core/HolderSet
+        20: aload_1
+        21: invokeinterface #334,  2          // InterfaceMethod net/minecraft/core/HolderSet.contains:(Lnet/minecraft/core/Holder;)Z
+        26: ifeq          33
+        29: iconst_1
+        30: goto          34
+        33: iconst_0
+        34: ireturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #337,  0            // InvokeDynamic #0:toString:(Lnet/minecraft/world/item/equipment/Equippable;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #341,  0            // InvokeDynamic #0:hashCode:(Lnet/minecraft/world/item/equipment/Equippable;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #345,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/world/item/equipment/Equippable;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.world.entity.EquipmentSlot slot();
+    Code:
+         0: aload_0
+         1: getfield      #7                  // Field slot:Lnet/minecraft/world/entity/EquipmentSlot;
+         4: areturn
+
+  public net.minecraft.core.Holder<net.minecraft.sounds.SoundEvent> equipSound();
+    Code:
+         0: aload_0
+         1: getfield      #13                 // Field equipSound:Lnet/minecraft/core/Holder;
+         4: areturn
+
+  public java.util.Optional<net.minecraft.resources.ResourceKey<net.minecraft.world.item.equipment.EquipmentAsset>> assetId();
+    Code:
+         0: aload_0
+         1: getfield      #17                 // Field assetId:Ljava/util/Optional;
+         4: areturn
+
+  public java.util.Optional<net.minecraft.resources.Identifier> cameraOverlay();
+    Code:
+         0: aload_0
+         1: getfield      #21                 // Field cameraOverlay:Ljava/util/Optional;
+         4: areturn
+
+  public java.util.Optional<net.minecraft.core.HolderSet<net.minecraft.world.entity.EntityType<?>>> allowedEntities();
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field allowedEntities:Ljava/util/Optional;
+         4: areturn
+
+  public boolean dispensable();
+    Code:
+         0: aload_0
+         1: getfield      #27                 // Field dispensable:Z
+         4: ireturn
+
+  public boolean swappable();
+    Code:
+         0: aload_0
+         1: getfield      #31                 // Field swappable:Z
+         4: ireturn
+
+  public boolean damageOnHurt();
+    Code:
+         0: aload_0
+         1: getfield      #34                 // Field damageOnHurt:Z
+         4: ireturn
+
+  public boolean equipOnInteract();
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field equipOnInteract:Z
+         4: ireturn
+
+  public boolean canBeSheared();
+    Code:
+         0: aload_0
+         1: getfield      #40                 // Field canBeSheared:Z
+         4: ireturn
+
+  public net.minecraft.core.Holder<net.minecraft.sounds.SoundEvent> shearingSound();
+    Code:
+         0: aload_0
+         1: getfield      #43                 // Field shearingSound:Lnet/minecraft/core/Holder;
+         4: areturn
+
+  private static com.mojang.datafixers.kinds.App lambda$static$0(com.mojang.serialization.codecs.RecordCodecBuilder$Instance);
+    Code:
+         0: aload_0
+         1: getstatic     #349                // Field net/minecraft/world/entity/EquipmentSlot.CODEC:Lnet/minecraft/util/StringRepresentable$EnumCodec;
+         4: ldc_w         #353                // String slot
+         7: invokevirtual #354                // Method net/minecraft/util/StringRepresentable$EnumCodec.fieldOf:(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+        10: invokedynamic #360,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+        15: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+        18: getstatic     #370                // Field net/minecraft/sounds/SoundEvent.CODEC:Lcom/mojang/serialization/Codec;
+        21: ldc_w         #375                // String equip_sound
+        24: getstatic     #377                // Field net/minecraft/sounds/SoundEvents.ARMOR_EQUIP_GENERIC:Lnet/minecraft/core/Holder;
+        27: invokeinterface #380,  3          // InterfaceMethod com/mojang/serialization/Codec.optionalFieldOf:(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;
+        32: invokedynamic #386,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+        37: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+        40: getstatic     #387                // Field net/minecraft/world/item/equipment/EquipmentAssets.ROOT_ID:Lnet/minecraft/resources/ResourceKey;
+        43: invokestatic  #390                // Method net/minecraft/resources/ResourceKey.codec:(Lnet/minecraft/resources/ResourceKey;)Lcom/mojang/serialization/Codec;
+        46: ldc_w         #394                // String asset_id
+        49: invokeinterface #396,  2          // InterfaceMethod com/mojang/serialization/Codec.optionalFieldOf:(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+        54: invokedynamic #398,  0            // InvokeDynamic #3:apply:()Ljava/util/function/Function;
+        59: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+        62: getstatic     #399                // Field net/minecraft/resources/Identifier.CODEC:Lcom/mojang/serialization/Codec;
+        65: ldc_w         #402                // String camera_overlay
+        68: invokeinterface #396,  2          // InterfaceMethod com/mojang/serialization/Codec.optionalFieldOf:(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+        73: invokedynamic #404,  0            // InvokeDynamic #4:apply:()Ljava/util/function/Function;
+        78: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+        81: getstatic     #405                // Field net/minecraft/core/registries/Registries.ENTITY_TYPE:Lnet/minecraft/resources/ResourceKey;
+        84: invokestatic  #409                // Method net/minecraft/core/RegistryCodecs.homogeneousList:(Lnet/minecraft/resources/ResourceKey;)Lcom/mojang/serialization/Codec;
+        87: ldc_w         #414                // String allowed_entities
+        90: invokeinterface #396,  2          // InterfaceMethod com/mojang/serialization/Codec.optionalFieldOf:(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+        95: invokedynamic #416,  0            // InvokeDynamic #5:apply:()Ljava/util/function/Function;
+       100: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+       103: getstatic     #417                // Field com/mojang/serialization/Codec.BOOL:Lcom/mojang/serialization/codecs/PrimitiveCodec;
+       106: ldc_w         #421                // String dispensable
+       109: iconst_1
+       110: invokestatic  #422                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       113: invokeinterface #428,  3          // InterfaceMethod com/mojang/serialization/codecs/PrimitiveCodec.optionalFieldOf:(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;
+       118: invokedynamic #431,  0            // InvokeDynamic #6:apply:()Ljava/util/function/Function;
+       123: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+       126: getstatic     #417                // Field com/mojang/serialization/Codec.BOOL:Lcom/mojang/serialization/codecs/PrimitiveCodec;
+       129: ldc_w         #432                // String swappable
+       132: iconst_1
+       133: invokestatic  #422                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       136: invokeinterface #428,  3          // InterfaceMethod com/mojang/serialization/codecs/PrimitiveCodec.optionalFieldOf:(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;
+       141: invokedynamic #433,  0            // InvokeDynamic #7:apply:()Ljava/util/function/Function;
+       146: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+       149: getstatic     #417                // Field com/mojang/serialization/Codec.BOOL:Lcom/mojang/serialization/codecs/PrimitiveCodec;
+       152: ldc_w         #434                // String damage_on_hurt
+       155: iconst_1
+       156: invokestatic  #422                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       159: invokeinterface #428,  3          // InterfaceMethod com/mojang/serialization/codecs/PrimitiveCodec.optionalFieldOf:(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;
+       164: invokedynamic #436,  0            // InvokeDynamic #8:apply:()Ljava/util/function/Function;
+       169: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+       172: getstatic     #417                // Field com/mojang/serialization/Codec.BOOL:Lcom/mojang/serialization/codecs/PrimitiveCodec;
+       175: ldc_w         #437                // String equip_on_interact
+       178: iconst_0
+       179: invokestatic  #422                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       182: invokeinterface #428,  3          // InterfaceMethod com/mojang/serialization/codecs/PrimitiveCodec.optionalFieldOf:(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;
+       187: invokedynamic #439,  0            // InvokeDynamic #9:apply:()Ljava/util/function/Function;
+       192: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+       195: getstatic     #417                // Field com/mojang/serialization/Codec.BOOL:Lcom/mojang/serialization/codecs/PrimitiveCodec;
+       198: ldc_w         #440                // String can_be_sheared
+       201: iconst_0
+       202: invokestatic  #422                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       205: invokeinterface #428,  3          // InterfaceMethod com/mojang/serialization/codecs/PrimitiveCodec.optionalFieldOf:(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;
+       210: invokedynamic #442,  0            // InvokeDynamic #10:apply:()Ljava/util/function/Function;
+       215: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+       218: getstatic     #370                // Field net/minecraft/sounds/SoundEvent.CODEC:Lcom/mojang/serialization/Codec;
+       221: ldc_w         #443                // String shearing_sound
+       224: getstatic     #163                // Field net/minecraft/core/registries/BuiltInRegistries.SOUND_EVENT:Lnet/minecraft/core/Registry;
+       227: getstatic     #445                // Field net/minecraft/sounds/SoundEvents.SHEARS_SNIP:Lnet/minecraft/sounds/SoundEvent;
+       230: invokeinterface #171,  2          // InterfaceMethod net/minecraft/core/Registry.wrapAsHolder:(Ljava/lang/Object;)Lnet/minecraft/core/Holder;
+       235: invokeinterface #380,  3          // InterfaceMethod com/mojang/serialization/Codec.optionalFieldOf:(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;
+       240: invokedynamic #448,  0            // InvokeDynamic #11:apply:()Ljava/util/function/Function;
+       245: invokevirtual #364                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+       248: invokevirtual #449                // Method com/mojang/serialization/codecs/RecordCodecBuilder$Instance.group:(Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lcom/mojang/datafixers/Products$P11;
+       251: aload_0
+       252: invokedynamic #455,  0            // InvokeDynamic #12:apply:()Lcom/mojang/datafixers/util/Function11;
+       257: invokevirtual #458                // Method com/mojang/datafixers/Products$P11.apply:(Lcom/mojang/datafixers/kinds/Applicative;Lcom/mojang/datafixers/util/Function11;)Lcom/mojang/datafixers/kinds/App;
+       260: areturn
+
+  static {};
+    Code:
+         0: invokedynamic #463,  0            // InvokeDynamic #13:apply:()Ljava/util/function/Function;
+         5: invokestatic  #464                // Method com/mojang/serialization/codecs/RecordCodecBuilder.create:(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;
+         8: putstatic     #470                // Field CODEC:Lcom/mojang/serialization/Codec;
+        11: getstatic     #471                // Field net/minecraft/world/entity/EquipmentSlot.STREAM_CODEC:Lnet/minecraft/network/codec/StreamCodec;
+        14: invokedynamic #360,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+        19: getstatic     #475                // Field net/minecraft/sounds/SoundEvent.STREAM_CODEC:Lnet/minecraft/network/codec/StreamCodec;
+        22: invokedynamic #386,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+        27: getstatic     #387                // Field net/minecraft/world/item/equipment/EquipmentAssets.ROOT_ID:Lnet/minecraft/resources/ResourceKey;
+        30: invokestatic  #476                // Method net/minecraft/resources/ResourceKey.streamCodec:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/network/codec/StreamCodec;
+        33: invokedynamic #480,  0            // InvokeDynamic #14:apply:()Lnet/minecraft/network/codec/StreamCodec$CodecOperation;
+        38: invokeinterface #483,  2          // InterfaceMethod net/minecraft/network/codec/StreamCodec.apply:(Lnet/minecraft/network/codec/StreamCodec$CodecOperation;)Lnet/minecraft/network/codec/StreamCodec;
+        43: invokedynamic #398,  0            // InvokeDynamic #3:apply:()Ljava/util/function/Function;
+        48: getstatic     #488                // Field net/minecraft/resources/Identifier.STREAM_CODEC:Lnet/minecraft/network/codec/StreamCodec;
+        51: invokedynamic #480,  0            // InvokeDynamic #14:apply:()Lnet/minecraft/network/codec/StreamCodec$CodecOperation;
+        56: invokeinterface #483,  2          // InterfaceMethod net/minecraft/network/codec/StreamCodec.apply:(Lnet/minecraft/network/codec/StreamCodec$CodecOperation;)Lnet/minecraft/network/codec/StreamCodec;
+        61: invokedynamic #404,  0            // InvokeDynamic #4:apply:()Ljava/util/function/Function;
+        66: getstatic     #405                // Field net/minecraft/core/registries/Registries.ENTITY_TYPE:Lnet/minecraft/resources/ResourceKey;
+        69: invokestatic  #489                // InterfaceMethod net/minecraft/network/codec/ByteBufCodecs.holderSet:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/network/codec/StreamCodec;
+        72: invokedynamic #480,  0            // InvokeDynamic #14:apply:()Lnet/minecraft/network/codec/StreamCodec$CodecOperation;
+        77: invokeinterface #483,  2          // InterfaceMethod net/minecraft/network/codec/StreamCodec.apply:(Lnet/minecraft/network/codec/StreamCodec$CodecOperation;)Lnet/minecraft/network/codec/StreamCodec;
+        82: invokedynamic #416,  0            // InvokeDynamic #5:apply:()Ljava/util/function/Function;
+        87: getstatic     #494                // Field net/minecraft/network/codec/ByteBufCodecs.BOOL:Lnet/minecraft/network/codec/StreamCodec;
+        90: invokedynamic #431,  0            // InvokeDynamic #6:apply:()Ljava/util/function/Function;
+        95: getstatic     #494                // Field net/minecraft/network/codec/ByteBufCodecs.BOOL:Lnet/minecraft/network/codec/StreamCodec;
+        98: invokedynamic #433,  0            // InvokeDynamic #7:apply:()Ljava/util/function/Function;
+       103: getstatic     #494                // Field net/minecraft/network/codec/ByteBufCodecs.BOOL:Lnet/minecraft/network/codec/StreamCodec;
+       106: invokedynamic #436,  0            // InvokeDynamic #8:apply:()Ljava/util/function/Function;
+       111: getstatic     #494                // Field net/minecraft/network/codec/ByteBufCodecs.BOOL:Lnet/minecraft/network/codec/StreamCodec;
+       114: invokedynamic #439,  0            // InvokeDynamic #9:apply:()Ljava/util/function/Function;
+       119: getstatic     #494                // Field net/minecraft/network/codec/ByteBufCodecs.BOOL:Lnet/minecraft/network/codec/StreamCodec;
+       122: invokedynamic #442,  0            // InvokeDynamic #10:apply:()Ljava/util/function/Function;
+       127: getstatic     #475                // Field net/minecraft/sounds/SoundEvent.STREAM_CODEC:Lnet/minecraft/network/codec/StreamCodec;
+       130: invokedynamic #448,  0            // InvokeDynamic #11:apply:()Ljava/util/function/Function;
+       135: invokedynamic #455,  0            // InvokeDynamic #12:apply:()Lcom/mojang/datafixers/util/Function11;
+       140: invokestatic  #496                // InterfaceMethod net/minecraft/network/codec/StreamCodec.composite:(Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lnet/minecraft/network/codec/StreamCodec;Ljava/util/function/Function;Lcom/mojang/datafixers/util/Function11;)Lnet/minecraft/network/codec/StreamCodec;
+       143: putstatic     #500                // Field STREAM_CODEC:Lnet/minecraft/network/codec/StreamCodec;
+       146: return
+}

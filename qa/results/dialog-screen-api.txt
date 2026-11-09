@@ -1,0 +1,597 @@
+Compiled from "DialogScreen.java"
+public abstract class net.minecraft.client.gui.screens.dialog.DialogScreen<T extends net.minecraft.server.dialog.Dialog> extends net.minecraft.client.gui.screens.Screen {
+  public static final net.minecraft.network.chat.Component DISCONNECT;
+
+  private static final int WARNING_BUTTON_SIZE;
+
+  private static final net.minecraft.client.gui.components.WidgetSprites WARNING_BUTTON_SPRITES;
+
+  private final T dialog;
+
+  private final net.minecraft.client.gui.layouts.HeaderAndFooterLayout layout;
+
+  private final net.minecraft.client.gui.screens.Screen previousScreen;
+
+  private net.minecraft.client.gui.components.ScrollableLayout bodyScroll;
+
+  private net.minecraft.client.gui.components.Button warningButton;
+
+  private final net.minecraft.client.gui.screens.dialog.DialogConnectionAccess connectionAccess;
+
+  private java.util.function.Supplier<java.util.Optional<net.minecraft.network.chat.ClickEvent>> onClose;
+
+  public net.minecraft.client.gui.screens.dialog.DialogScreen(net.minecraft.client.gui.screens.Screen, T, net.minecraft.client.gui.screens.dialog.DialogConnectionAccess);
+    Code:
+         0: aload_0
+         1: aload_2
+         2: invokeinterface #65,  1           // InterfaceMethod net/minecraft/server/dialog/Dialog.common:()Lnet/minecraft/server/dialog/CommonDialogData;
+         7: invokevirtual #71                 // Method net/minecraft/server/dialog/CommonDialogData.title:()Lnet/minecraft/network/chat/Component;
+        10: invokespecial #74                 // Method net/minecraft/client/gui/screens/Screen."<init>":(Lnet/minecraft/network/chat/Component;)V
+        13: aload_0
+        14: new           #76                 // class net/minecraft/client/gui/layouts/HeaderAndFooterLayout
+        17: dup
+        18: aload_0
+        19: invokespecial #79                 // Method net/minecraft/client/gui/layouts/HeaderAndFooterLayout."<init>":(Lnet/minecraft/client/gui/screens/Screen;)V
+        22: putfield      #81                 // Field layout:Lnet/minecraft/client/gui/layouts/HeaderAndFooterLayout;
+        25: aload_0
+        26: getstatic     #86                 // Field net/minecraft/client/gui/screens/dialog/DialogControlSet.EMPTY_ACTION:Ljava/util/function/Supplier;
+        29: putfield      #88                 // Field onClose:Ljava/util/function/Supplier;
+        32: aload_0
+        33: aload_2
+        34: putfield      #90                 // Field dialog:Lnet/minecraft/server/dialog/Dialog;
+        37: aload_0
+        38: aload_1
+        39: putfield      #92                 // Field previousScreen:Lnet/minecraft/client/gui/screens/Screen;
+        42: aload_0
+        43: aload_3
+        44: putfield      #94                 // Field connectionAccess:Lnet/minecraft/client/gui/screens/dialog/DialogConnectionAccess;
+        47: return
+
+  protected final void init();
+    Code:
+         0: aload_0
+         1: invokespecial #101                // Method net/minecraft/client/gui/screens/Screen.init:()V
+         4: aload_0
+         5: aload_0
+         6: invokevirtual #105                // Method createWarningButton:()Lnet/minecraft/client/gui/components/Button;
+         9: putfield      #107                // Field warningButton:Lnet/minecraft/client/gui/components/Button;
+        12: aload_0
+        13: getfield      #107                // Field warningButton:Lnet/minecraft/client/gui/components/Button;
+        16: bipush        -10
+        18: invokevirtual #111                // Method net/minecraft/client/gui/components/Button.setTabOrderGroup:(I)V
+        21: new           #83                 // class net/minecraft/client/gui/screens/dialog/DialogControlSet
+        24: dup
+        25: aload_0
+        26: invokespecial #114                // Method net/minecraft/client/gui/screens/dialog/DialogControlSet."<init>":(Lnet/minecraft/client/gui/screens/dialog/DialogScreen;)V
+        29: astore_1
+        30: invokestatic  #120                // Method net/minecraft/client/gui/layouts/LinearLayout.vertical:()Lnet/minecraft/client/gui/layouts/LinearLayout;
+        33: bipush        10
+        35: invokevirtual #124                // Method net/minecraft/client/gui/layouts/LinearLayout.spacing:(I)Lnet/minecraft/client/gui/layouts/LinearLayout;
+        38: astore_2
+        39: aload_2
+        40: invokevirtual #128                // Method net/minecraft/client/gui/layouts/LinearLayout.defaultCellSetting:()Lnet/minecraft/client/gui/layouts/LayoutSettings;
+        43: invokeinterface #133,  1          // InterfaceMethod net/minecraft/client/gui/layouts/LayoutSettings.alignHorizontallyCenter:()Lnet/minecraft/client/gui/layouts/LayoutSettings;
+        48: pop
+        49: aload_0
+        50: getfield      #81                 // Field layout:Lnet/minecraft/client/gui/layouts/HeaderAndFooterLayout;
+        53: aload_0
+        54: invokevirtual #137                // Method createTitleWithWarningButton:()Lnet/minecraft/client/gui/layouts/LayoutElement;
+        57: invokevirtual #141                // Method net/minecraft/client/gui/layouts/HeaderAndFooterLayout.addToHeader:(Lnet/minecraft/client/gui/layouts/LayoutElement;)Lnet/minecraft/client/gui/layouts/LayoutElement;
+        60: pop
+        61: aload_0
+        62: getfield      #90                 // Field dialog:Lnet/minecraft/server/dialog/Dialog;
+        65: invokeinterface #65,  1           // InterfaceMethod net/minecraft/server/dialog/Dialog.common:()Lnet/minecraft/server/dialog/CommonDialogData;
+        70: invokevirtual #145                // Method net/minecraft/server/dialog/CommonDialogData.body:()Ljava/util/List;
+        73: invokeinterface #151,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        78: astore_3
+        79: aload_3
+        80: invokeinterface #157,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        85: ifeq          122
+        88: aload_3
+        89: invokeinterface #161,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        94: checkcast     #163                // class net/minecraft/server/dialog/body/DialogBody
+        97: astore        4
+        99: aload_0
+       100: aload         4
+       102: invokestatic  #169                // Method net/minecraft/client/gui/screens/dialog/body/DialogBodyHandlers.createBodyElement:(Lnet/minecraft/client/gui/screens/dialog/DialogScreen;Lnet/minecraft/server/dialog/body/DialogBody;)Lnet/minecraft/client/gui/layouts/LayoutElement;
+       105: astore        5
+       107: aload         5
+       109: ifnull        119
+       112: aload_2
+       113: aload         5
+       115: invokevirtual #172                // Method net/minecraft/client/gui/layouts/LinearLayout.addChild:(Lnet/minecraft/client/gui/layouts/LayoutElement;)Lnet/minecraft/client/gui/layouts/LayoutElement;
+       118: pop
+       119: goto          79
+       122: aload_0
+       123: getfield      #90                 // Field dialog:Lnet/minecraft/server/dialog/Dialog;
+       126: invokeinterface #65,  1           // InterfaceMethod net/minecraft/server/dialog/Dialog.common:()Lnet/minecraft/server/dialog/CommonDialogData;
+       131: invokevirtual #175                // Method net/minecraft/server/dialog/CommonDialogData.inputs:()Ljava/util/List;
+       134: invokeinterface #151,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       139: astore_3
+       140: aload_3
+       141: invokeinterface #157,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+       146: ifeq          180
+       149: aload_3
+       150: invokeinterface #161,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       155: checkcast     #177                // class net/minecraft/server/dialog/Input
+       158: astore        4
+       160: aload_1
+       161: aload         4
+       163: aload_2
+       164: dup
+       165: invokestatic  #183                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+       168: pop
+       169: invokedynamic #199,  0            // InvokeDynamic #0:accept:(Lnet/minecraft/client/gui/layouts/LinearLayout;)Ljava/util/function/Consumer;
+       174: invokevirtual #203                // Method net/minecraft/client/gui/screens/dialog/DialogControlSet.addInput:(Lnet/minecraft/server/dialog/Input;Ljava/util/function/Consumer;)V
+       177: goto          140
+       180: aload_0
+       181: aload_2
+       182: aload_1
+       183: aload_0
+       184: getfield      #90                 // Field dialog:Lnet/minecraft/server/dialog/Dialog;
+       187: aload_0
+       188: getfield      #94                 // Field connectionAccess:Lnet/minecraft/client/gui/screens/dialog/DialogConnectionAccess;
+       191: invokevirtual #207                // Method populateBodyElements:(Lnet/minecraft/client/gui/layouts/LinearLayout;Lnet/minecraft/client/gui/screens/dialog/DialogControlSet;Lnet/minecraft/server/dialog/Dialog;Lnet/minecraft/client/gui/screens/dialog/DialogConnectionAccess;)V
+       194: aload_0
+       195: new           #209                // class net/minecraft/client/gui/components/ScrollableLayout
+       198: dup
+       199: aload_0
+       200: getfield      #213                // Field minecraft:Lnet/minecraft/client/Minecraft;
+       203: aload_2
+       204: aload_0
+       205: getfield      #81                 // Field layout:Lnet/minecraft/client/gui/layouts/HeaderAndFooterLayout;
+       208: invokevirtual #217                // Method net/minecraft/client/gui/layouts/HeaderAndFooterLayout.getContentHeight:()I
+       211: invokespecial #220                // Method net/minecraft/client/gui/components/ScrollableLayout."<init>":(Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/layouts/Layout;I)V
+       214: putfield      #222                // Field bodyScroll:Lnet/minecraft/client/gui/components/ScrollableLayout;
+       217: aload_0
+       218: getfield      #81                 // Field layout:Lnet/minecraft/client/gui/layouts/HeaderAndFooterLayout;
+       221: aload_0
+       222: getfield      #222                // Field bodyScroll:Lnet/minecraft/client/gui/components/ScrollableLayout;
+       225: invokevirtual #225                // Method net/minecraft/client/gui/layouts/HeaderAndFooterLayout.addToContents:(Lnet/minecraft/client/gui/layouts/LayoutElement;)Lnet/minecraft/client/gui/layouts/LayoutElement;
+       228: pop
+       229: aload_0
+       230: aload_0
+       231: getfield      #81                 // Field layout:Lnet/minecraft/client/gui/layouts/HeaderAndFooterLayout;
+       234: aload_1
+       235: aload_0
+       236: getfield      #90                 // Field dialog:Lnet/minecraft/server/dialog/Dialog;
+       239: aload_0
+       240: getfield      #94                 // Field connectionAccess:Lnet/minecraft/client/gui/screens/dialog/DialogConnectionAccess;
+       243: invokevirtual #229                // Method updateHeaderAndFooter:(Lnet/minecraft/client/gui/layouts/HeaderAndFooterLayout;Lnet/minecraft/client/gui/screens/dialog/DialogControlSet;Lnet/minecraft/server/dialog/Dialog;Lnet/minecraft/client/gui/screens/dialog/DialogConnectionAccess;)V
+       246: aload_0
+       247: aload_1
+       248: aload_0
+       249: getfield      #90                 // Field dialog:Lnet/minecraft/server/dialog/Dialog;
+       252: invokeinterface #233,  1          // InterfaceMethod net/minecraft/server/dialog/Dialog.onCancel:()Ljava/util/Optional;
+       257: invokevirtual #237                // Method net/minecraft/client/gui/screens/dialog/DialogControlSet.bindAction:(Ljava/util/Optional;)Ljava/util/function/Supplier;
+       260: putfield      #88                 // Field onClose:Ljava/util/function/Supplier;
+       263: aload_0
+       264: getfield      #81                 // Field layout:Lnet/minecraft/client/gui/layouts/HeaderAndFooterLayout;
+       267: aload_0
+       268: invokedynamic #246,  0            // InvokeDynamic #1:accept:(Lnet/minecraft/client/gui/screens/dialog/DialogScreen;)Ljava/util/function/Consumer;
+       273: invokevirtual #250                // Method net/minecraft/client/gui/layouts/HeaderAndFooterLayout.visitWidgets:(Ljava/util/function/Consumer;)V
+       276: aload_0
+       277: aload_0
+       278: getfield      #107                // Field warningButton:Lnet/minecraft/client/gui/components/Button;
+       281: invokevirtual #254                // Method addRenderableWidget:(Lnet/minecraft/client/gui/components/events/GuiEventListener;)Lnet/minecraft/client/gui/components/events/GuiEventListener;
+       284: pop
+       285: aload_0
+       286: invokevirtual #257                // Method repositionElements:()V
+       289: return
+
+  protected void populateBodyElements(net.minecraft.client.gui.layouts.LinearLayout, net.minecraft.client.gui.screens.dialog.DialogControlSet, T, net.minecraft.client.gui.screens.dialog.DialogConnectionAccess);
+    Code:
+         0: return
+
+  protected void updateHeaderAndFooter(net.minecraft.client.gui.layouts.HeaderAndFooterLayout, net.minecraft.client.gui.screens.dialog.DialogControlSet, T, net.minecraft.client.gui.screens.dialog.DialogConnectionAccess);
+    Code:
+         0: return
+
+  protected void repositionElements();
+    Code:
+         0: aload_0
+         1: getfield      #222                // Field bodyScroll:Lnet/minecraft/client/gui/components/ScrollableLayout;
+         4: invokevirtual #271                // Method net/minecraft/client/gui/components/ScrollableLayout.arrangeElements:()V
+         7: aload_0
+         8: getfield      #222                // Field bodyScroll:Lnet/minecraft/client/gui/components/ScrollableLayout;
+        11: aload_0
+        12: getfield      #81                 // Field layout:Lnet/minecraft/client/gui/layouts/HeaderAndFooterLayout;
+        15: invokevirtual #217                // Method net/minecraft/client/gui/layouts/HeaderAndFooterLayout.getContentHeight:()I
+        18: invokevirtual #274                // Method net/minecraft/client/gui/components/ScrollableLayout.setMaxHeight:(I)V
+        21: aload_0
+        22: getfield      #81                 // Field layout:Lnet/minecraft/client/gui/layouts/HeaderAndFooterLayout;
+        25: invokevirtual #275                // Method net/minecraft/client/gui/layouts/HeaderAndFooterLayout.arrangeElements:()V
+        28: aload_0
+        29: invokevirtual #278                // Method makeSureWarningButtonIsInBounds:()V
+        32: return
+
+  protected net.minecraft.client.gui.layouts.LayoutElement createTitleWithWarningButton();
+    Code:
+         0: invokestatic  #281                // Method net/minecraft/client/gui/layouts/LinearLayout.horizontal:()Lnet/minecraft/client/gui/layouts/LinearLayout;
+         3: bipush        10
+         5: invokevirtual #124                // Method net/minecraft/client/gui/layouts/LinearLayout.spacing:(I)Lnet/minecraft/client/gui/layouts/LinearLayout;
+         8: astore_1
+         9: aload_1
+        10: invokevirtual #128                // Method net/minecraft/client/gui/layouts/LinearLayout.defaultCellSetting:()Lnet/minecraft/client/gui/layouts/LayoutSettings;
+        13: invokeinterface #133,  1          // InterfaceMethod net/minecraft/client/gui/layouts/LayoutSettings.alignHorizontallyCenter:()Lnet/minecraft/client/gui/layouts/LayoutSettings;
+        18: invokeinterface #284,  1          // InterfaceMethod net/minecraft/client/gui/layouts/LayoutSettings.alignVerticallyMiddle:()Lnet/minecraft/client/gui/layouts/LayoutSettings;
+        23: pop
+        24: aload_1
+        25: new           #286                // class net/minecraft/client/gui/components/StringWidget
+        28: dup
+        29: aload_0
+        30: getfield      #288                // Field title:Lnet/minecraft/network/chat/Component;
+        33: aload_0
+        34: getfield      #292                // Field font:Lnet/minecraft/client/gui/Font;
+        37: invokespecial #295                // Method net/minecraft/client/gui/components/StringWidget."<init>":(Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/Font;)V
+        40: invokevirtual #172                // Method net/minecraft/client/gui/layouts/LinearLayout.addChild:(Lnet/minecraft/client/gui/layouts/LayoutElement;)Lnet/minecraft/client/gui/layouts/LayoutElement;
+        43: pop
+        44: aload_1
+        45: aload_0
+        46: getfield      #107                // Field warningButton:Lnet/minecraft/client/gui/components/Button;
+        49: invokevirtual #172                // Method net/minecraft/client/gui/layouts/LinearLayout.addChild:(Lnet/minecraft/client/gui/layouts/LayoutElement;)Lnet/minecraft/client/gui/layouts/LayoutElement;
+        52: pop
+        53: aload_1
+        54: areturn
+
+  protected void makeSureWarningButtonIsInBounds();
+    Code:
+         0: aload_0
+         1: getfield      #107                // Field warningButton:Lnet/minecraft/client/gui/components/Button;
+         4: invokevirtual #298                // Method net/minecraft/client/gui/components/Button.getX:()I
+         7: istore_1
+         8: aload_0
+         9: getfield      #107                // Field warningButton:Lnet/minecraft/client/gui/components/Button;
+        12: invokevirtual #301                // Method net/minecraft/client/gui/components/Button.getY:()I
+        15: istore_2
+        16: iload_1
+        17: iflt          46
+        20: iload_2
+        21: iflt          46
+        24: iload_1
+        25: aload_0
+        26: getfield      #304                // Field width:I
+        29: bipush        20
+        31: isub
+        32: if_icmpgt     46
+        35: iload_2
+        36: aload_0
+        37: getfield      #307                // Field height:I
+        40: bipush        20
+        42: isub
+        43: if_icmple     79
+        46: aload_0
+        47: getfield      #107                // Field warningButton:Lnet/minecraft/client/gui/components/Button;
+        50: iconst_0
+        51: aload_0
+        52: getfield      #304                // Field width:I
+        55: bipush        40
+        57: isub
+        58: invokestatic  #313                // Method java/lang/Math.max:(II)I
+        61: invokevirtual #316                // Method net/minecraft/client/gui/components/Button.setX:(I)V
+        64: aload_0
+        65: getfield      #107                // Field warningButton:Lnet/minecraft/client/gui/components/Button;
+        68: iconst_5
+        69: aload_0
+        70: getfield      #307                // Field height:I
+        73: invokestatic  #319                // Method java/lang/Math.min:(II)I
+        76: invokevirtual #322                // Method net/minecraft/client/gui/components/Button.setY:(I)V
+        79: return
+
+  private net.minecraft.client.gui.components.Button createWarningButton();
+    Code:
+         0: new           #326                // class net/minecraft/client/gui/components/ImageButton
+         3: dup
+         4: iconst_0
+         5: iconst_0
+         6: bipush        20
+         8: bipush        20
+        10: getstatic     #328                // Field WARNING_BUTTON_SPRITES:Lnet/minecraft/client/gui/components/WidgetSprites;
+        13: aload_0
+        14: invokedynamic #338,  0            // InvokeDynamic #2:onPress:(Lnet/minecraft/client/gui/screens/dialog/DialogScreen;)Lnet/minecraft/client/gui/components/Button$OnPress;
+        19: ldc_w         #340                // String menu.custom_screen_info.button_narration
+        22: invokestatic  #346                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+        25: invokespecial #349                // Method net/minecraft/client/gui/components/ImageButton."<init>":(IIIILnet/minecraft/client/gui/components/WidgetSprites;Lnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/network/chat/Component;)V
+        28: astore_1
+        29: aload_1
+        30: ldc_w         #351                // String menu.custom_screen_info.tooltip
+        33: invokestatic  #346                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+        36: invokestatic  #357                // Method net/minecraft/client/gui/components/Tooltip.create:(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/client/gui/components/Tooltip;
+        39: invokevirtual #361                // Method net/minecraft/client/gui/components/ImageButton.setTooltip:(Lnet/minecraft/client/gui/components/Tooltip;)V
+        42: aload_1
+        43: areturn
+
+  public boolean isPauseScreen();
+    Code:
+         0: aload_0
+         1: getfield      #90                 // Field dialog:Lnet/minecraft/server/dialog/Dialog;
+         4: invokeinterface #65,  1           // InterfaceMethod net/minecraft/server/dialog/Dialog.common:()Lnet/minecraft/server/dialog/CommonDialogData;
+         9: invokevirtual #367                // Method net/minecraft/server/dialog/CommonDialogData.pause:()Z
+        12: ireturn
+
+  public boolean shouldCloseOnEsc();
+    Code:
+         0: aload_0
+         1: getfield      #90                 // Field dialog:Lnet/minecraft/server/dialog/Dialog;
+         4: invokeinterface #65,  1           // InterfaceMethod net/minecraft/server/dialog/Dialog.common:()Lnet/minecraft/server/dialog/CommonDialogData;
+         9: invokevirtual #371                // Method net/minecraft/server/dialog/CommonDialogData.canCloseWithEscape:()Z
+        12: ireturn
+
+  public void onClose();
+    Code:
+         0: aload_0
+         1: aload_0
+         2: getfield      #88                 // Field onClose:Ljava/util/function/Supplier;
+         5: invokeinterface #376,  1          // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+        10: checkcast     #378                // class java/util/Optional
+        13: getstatic     #384                // Field net/minecraft/server/dialog/DialogAction.CLOSE:Lnet/minecraft/server/dialog/DialogAction;
+        16: invokevirtual #388                // Method runAction:(Ljava/util/Optional;Lnet/minecraft/server/dialog/DialogAction;)V
+        19: return
+
+  public void runAction(java.util.Optional<net.minecraft.network.chat.ClickEvent>);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_0
+         3: getfield      #90                 // Field dialog:Lnet/minecraft/server/dialog/Dialog;
+         6: invokeinterface #65,  1           // InterfaceMethod net/minecraft/server/dialog/Dialog.common:()Lnet/minecraft/server/dialog/CommonDialogData;
+        11: invokevirtual #395                // Method net/minecraft/server/dialog/CommonDialogData.afterAction:()Lnet/minecraft/server/dialog/DialogAction;
+        14: invokevirtual #388                // Method runAction:(Ljava/util/Optional;Lnet/minecraft/server/dialog/DialogAction;)V
+        17: return
+
+  public void runAction(java.util.Optional<net.minecraft.network.chat.ClickEvent>, net.minecraft.server.dialog.DialogAction);
+    Code:
+         0: getstatic     #402                // Field net/minecraft/client/gui/screens/dialog/DialogScreen$1.$SwitchMap$net$minecraft$server$dialog$DialogAction:[I
+         3: aload_2
+         4: invokevirtual #405                // Method net/minecraft/server/dialog/DialogAction.ordinal:()I
+         7: iaload
+         8: tableswitch   { // 1 to 3
+                       1: 46
+                       2: 50
+                       3: 57
+                 default: 36
+            }
+        36: new           #407                // class java/lang/MatchException
+        39: dup
+        40: aconst_null
+        41: aconst_null
+        42: invokespecial #410                // Method java/lang/MatchException."<init>":(Ljava/lang/String;Ljava/lang/Throwable;)V
+        45: athrow
+        46: aload_0
+        47: goto          68
+        50: aload_0
+        51: getfield      #92                 // Field previousScreen:Lnet/minecraft/client/gui/screens/Screen;
+        54: goto          68
+        57: new           #412                // class net/minecraft/client/gui/screens/dialog/WaitingForResponseScreen
+        60: dup
+        61: aload_0
+        62: getfield      #92                 // Field previousScreen:Lnet/minecraft/client/gui/screens/Screen;
+        65: invokespecial #413                // Method net/minecraft/client/gui/screens/dialog/WaitingForResponseScreen."<init>":(Lnet/minecraft/client/gui/screens/Screen;)V
+        68: astore_3
+        69: aload_1
+        70: invokevirtual #416                // Method java/util/Optional.isPresent:()Z
+        73: ifeq          91
+        76: aload_0
+        77: aload_1
+        78: invokevirtual #417                // Method java/util/Optional.get:()Ljava/lang/Object;
+        81: checkcast     #19                 // class net/minecraft/network/chat/ClickEvent
+        84: aload_3
+        85: invokevirtual #421                // Method handleDialogClickEvent:(Lnet/minecraft/network/chat/ClickEvent;Lnet/minecraft/client/gui/screens/Screen;)V
+        88: goto          102
+        91: aload_0
+        92: getfield      #213                // Field minecraft:Lnet/minecraft/client/Minecraft;
+        95: getfield      #427                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+        98: aload_3
+        99: invokevirtual #432                // Method net/minecraft/client/gui/Gui.setScreen:(Lnet/minecraft/client/gui/screens/Screen;)V
+       102: return
+
+  private void handleDialogClickEvent(net.minecraft.network.chat.ClickEvent, net.minecraft.client.gui.screens.Screen);
+    Code:
+         0: aload_1
+         1: dup
+         2: invokestatic  #183                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+         5: pop
+         6: astore_3
+         7: iconst_0
+         8: istore        4
+        10: aload_3
+        11: iload         4
+        13: invokedynamic #447,  0            // InvokeDynamic #3:typeSwitch:(Lnet/minecraft/network/chat/ClickEvent;I)I
+        18: tableswitch   { // 0 to 2
+                       0: 44
+                       1: 79
+                       2: 103
+                 default: 142
+            }
+        44: aload_3
+        45: checkcast     #17                 // class net/minecraft/network/chat/ClickEvent$RunCommand
+        48: astore        5
+        50: aload         5
+        52: invokevirtual #451                // Method net/minecraft/network/chat/ClickEvent$RunCommand.command:()Ljava/lang/String;
+        55: astore        7
+        57: aload         7
+        59: astore        6
+        61: aload_0
+        62: getfield      #94                 // Field connectionAccess:Lnet/minecraft/client/gui/screens/dialog/DialogConnectionAccess;
+        65: aload         6
+        67: invokestatic  #457                // Method net/minecraft/commands/Commands.trimOptionalPrefix:(Ljava/lang/String;)Ljava/lang/String;
+        70: aload_2
+        71: invokeinterface #463,  3          // InterfaceMethod net/minecraft/client/gui/screens/dialog/DialogConnectionAccess.runCommand:(Ljava/lang/String;Lnet/minecraft/client/gui/screens/Screen;)V
+        76: goto          151
+        79: aload_3
+        80: checkcast     #22                 // class net/minecraft/network/chat/ClickEvent$ShowDialog
+        83: astore        7
+        85: aload_0
+        86: getfield      #94                 // Field connectionAccess:Lnet/minecraft/client/gui/screens/dialog/DialogConnectionAccess;
+        89: aload         7
+        91: invokevirtual #466                // Method net/minecraft/network/chat/ClickEvent$ShowDialog.dialog:()Lnet/minecraft/core/Holder;
+        94: aload_2
+        95: invokeinterface #470,  3          // InterfaceMethod net/minecraft/client/gui/screens/dialog/DialogConnectionAccess.openDialog:(Lnet/minecraft/core/Holder;Lnet/minecraft/client/gui/screens/Screen;)V
+       100: goto          151
+       103: aload_3
+       104: checkcast     #25                 // class net/minecraft/network/chat/ClickEvent$Custom
+       107: astore        8
+       109: aload_0
+       110: getfield      #94                 // Field connectionAccess:Lnet/minecraft/client/gui/screens/dialog/DialogConnectionAccess;
+       113: aload         8
+       115: invokevirtual #474                // Method net/minecraft/network/chat/ClickEvent$Custom.id:()Lnet/minecraft/resources/Identifier;
+       118: aload         8
+       120: invokevirtual #477                // Method net/minecraft/network/chat/ClickEvent$Custom.payload:()Ljava/util/Optional;
+       123: invokeinterface #481,  3          // InterfaceMethod net/minecraft/client/gui/screens/dialog/DialogConnectionAccess.sendCustomAction:(Lnet/minecraft/resources/Identifier;Ljava/util/Optional;)V
+       128: aload_0
+       129: getfield      #213                // Field minecraft:Lnet/minecraft/client/Minecraft;
+       132: getfield      #427                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+       135: aload_2
+       136: invokevirtual #432                // Method net/minecraft/client/gui/Gui.setScreen:(Lnet/minecraft/client/gui/screens/Screen;)V
+       139: goto          151
+       142: aload_1
+       143: aload_0
+       144: getfield      #213                // Field minecraft:Lnet/minecraft/client/Minecraft;
+       147: aload_2
+       148: invokestatic  #485                // Method defaultHandleClickEvent:(Lnet/minecraft/network/chat/ClickEvent;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/Screen;)V
+       151: goto          168
+       154: astore_3
+       155: new           #407                // class java/lang/MatchException
+       158: dup
+       159: aload_3
+       160: invokevirtual #488                // Method java/lang/Throwable.toString:()Ljava/lang/String;
+       163: aload_3
+       164: invokespecial #410                // Method java/lang/MatchException."<init>":(Ljava/lang/String;Ljava/lang/Throwable;)V
+       167: athrow
+       168: return
+      Exception table:
+         from    to  target type
+            52    55   154   Class java/lang/Throwable
+
+  public net.minecraft.client.gui.screens.Screen previousScreen();
+    Code:
+         0: aload_0
+         1: getfield      #92                 // Field previousScreen:Lnet/minecraft/client/gui/screens/Screen;
+         4: areturn
+
+  protected static net.minecraft.client.gui.layouts.LayoutElement packControlsIntoColumns(java.util.List<? extends net.minecraft.client.gui.layouts.LayoutElement>, int);
+    Code:
+         0: new           #501                // class net/minecraft/client/gui/layouts/GridLayout
+         3: dup
+         4: invokespecial #503                // Method net/minecraft/client/gui/layouts/GridLayout."<init>":()V
+         7: astore_2
+         8: aload_2
+         9: invokevirtual #504                // Method net/minecraft/client/gui/layouts/GridLayout.defaultCellSetting:()Lnet/minecraft/client/gui/layouts/LayoutSettings;
+        12: invokeinterface #133,  1          // InterfaceMethod net/minecraft/client/gui/layouts/LayoutSettings.alignHorizontallyCenter:()Lnet/minecraft/client/gui/layouts/LayoutSettings;
+        17: pop
+        18: aload_2
+        19: iconst_2
+        20: invokevirtual #508                // Method net/minecraft/client/gui/layouts/GridLayout.columnSpacing:(I)Lnet/minecraft/client/gui/layouts/GridLayout;
+        23: iconst_2
+        24: invokevirtual #511                // Method net/minecraft/client/gui/layouts/GridLayout.rowSpacing:(I)Lnet/minecraft/client/gui/layouts/GridLayout;
+        27: pop
+        28: aload_0
+        29: invokeinterface #514,  1          // InterfaceMethod java/util/List.size:()I
+        34: istore_3
+        35: iload_3
+        36: iload_1
+        37: idiv
+        38: istore        4
+        40: iload         4
+        42: iload_1
+        43: imul
+        44: istore        5
+        46: iconst_0
+        47: istore        6
+        49: iload         6
+        51: iload         5
+        53: if_icmpge     86
+        56: aload_2
+        57: aload_0
+        58: iload         6
+        60: invokeinterface #517,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+        65: checkcast     #519                // class net/minecraft/client/gui/layouts/LayoutElement
+        68: iload         6
+        70: iload_1
+        71: idiv
+        72: iload         6
+        74: iload_1
+        75: irem
+        76: invokevirtual #522                // Method net/minecraft/client/gui/layouts/GridLayout.addChild:(Lnet/minecraft/client/gui/layouts/LayoutElement;II)Lnet/minecraft/client/gui/layouts/LayoutElement;
+        79: pop
+        80: iinc          6, 1
+        83: goto          49
+        86: iload_3
+        87: iload         5
+        89: if_icmpeq     157
+        92: invokestatic  #281                // Method net/minecraft/client/gui/layouts/LinearLayout.horizontal:()Lnet/minecraft/client/gui/layouts/LinearLayout;
+        95: iconst_2
+        96: invokevirtual #124                // Method net/minecraft/client/gui/layouts/LinearLayout.spacing:(I)Lnet/minecraft/client/gui/layouts/LinearLayout;
+        99: astore        6
+       101: aload         6
+       103: invokevirtual #128                // Method net/minecraft/client/gui/layouts/LinearLayout.defaultCellSetting:()Lnet/minecraft/client/gui/layouts/LayoutSettings;
+       106: invokeinterface #133,  1          // InterfaceMethod net/minecraft/client/gui/layouts/LayoutSettings.alignHorizontallyCenter:()Lnet/minecraft/client/gui/layouts/LayoutSettings;
+       111: pop
+       112: iload         5
+       114: istore        7
+       116: iload         7
+       118: iload_3
+       119: if_icmpge     145
+       122: aload         6
+       124: aload_0
+       125: iload         7
+       127: invokeinterface #517,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+       132: checkcast     #519                // class net/minecraft/client/gui/layouts/LayoutElement
+       135: invokevirtual #172                // Method net/minecraft/client/gui/layouts/LinearLayout.addChild:(Lnet/minecraft/client/gui/layouts/LayoutElement;)Lnet/minecraft/client/gui/layouts/LayoutElement;
+       138: pop
+       139: iinc          7, 1
+       142: goto          116
+       145: aload_2
+       146: aload         6
+       148: iload         4
+       150: iconst_0
+       151: iconst_1
+       152: iload_1
+       153: invokevirtual #525                // Method net/minecraft/client/gui/layouts/GridLayout.addChild:(Lnet/minecraft/client/gui/layouts/LayoutElement;IIII)Lnet/minecraft/client/gui/layouts/LayoutElement;
+       156: pop
+       157: aload_2
+       158: areturn
+
+  private void lambda$createWarningButton$0(net.minecraft.client.gui.components.Button);
+    Code:
+         0: aload_0
+         1: getfield      #213                // Field minecraft:Lnet/minecraft/client/Minecraft;
+         4: getfield      #427                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+         7: aload_0
+         8: getfield      #213                // Field minecraft:Lnet/minecraft/client/Minecraft;
+        11: aload_0
+        12: getfield      #94                 // Field connectionAccess:Lnet/minecraft/client/gui/screens/dialog/DialogConnectionAccess;
+        15: aload_0
+        16: invokestatic  #537                // Method net/minecraft/client/gui/screens/dialog/DialogScreen$WarningScreen.create:(Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/dialog/DialogConnectionAccess;Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/screens/Screen;
+        19: invokevirtual #432                // Method net/minecraft/client/gui/Gui.setScreen:(Lnet/minecraft/client/gui/screens/Screen;)V
+        22: return
+
+  private void lambda$init$0(net.minecraft.client.gui.components.AbstractWidget);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: getfield      #107                // Field warningButton:Lnet/minecraft/client/gui/components/Button;
+         5: if_acmpeq     14
+         8: aload_0
+         9: aload_1
+        10: invokevirtual #254                // Method addRenderableWidget:(Lnet/minecraft/client/gui/components/events/GuiEventListener;)Lnet/minecraft/client/gui/components/events/GuiEventListener;
+        13: pop
+        14: return
+
+  static {};
+    Code:
+         0: ldc_w         #542                // String menu.custom_screen_info.disconnect
+         3: invokestatic  #346                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+         6: putstatic     #544                // Field DISCONNECT:Lnet/minecraft/network/chat/Component;
+         9: new           #546                // class net/minecraft/client/gui/components/WidgetSprites
+        12: dup
+        13: ldc_w         #548                // String dialog/warning_button
+        16: invokestatic  #554                // Method net/minecraft/resources/Identifier.withDefaultNamespace:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+        19: ldc_w         #556                // String dialog/warning_button_disabled
+        22: invokestatic  #554                // Method net/minecraft/resources/Identifier.withDefaultNamespace:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+        25: ldc_w         #558                // String dialog/warning_button_highlighted
+        28: invokestatic  #554                // Method net/minecraft/resources/Identifier.withDefaultNamespace:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+        31: invokespecial #561                // Method net/minecraft/client/gui/components/WidgetSprites."<init>":(Lnet/minecraft/resources/Identifier;Lnet/minecraft/resources/Identifier;Lnet/minecraft/resources/Identifier;)V
+        34: putstatic     #328                // Field WARNING_BUTTON_SPRITES:Lnet/minecraft/client/gui/components/WidgetSprites;
+        37: return
+}

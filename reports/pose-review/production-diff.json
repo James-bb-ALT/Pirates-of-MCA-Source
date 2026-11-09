@@ -1,0 +1,7 @@
+{
+  "before": "6.0.0-alpha.9",
+  "after": "6.0.1-alpha.9",
+  "changed_entries": [
+    "fabric.mod.json"
+  ]
+}

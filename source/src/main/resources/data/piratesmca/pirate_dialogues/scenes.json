@@ -1,0 +1,258 @@
+{
+  "formatVersion": 1,
+  "modId": "piratesmca",
+  "scenes": [
+    {
+      "id": "piratesmca_friendly_voyage_invitation",
+      "temperament": "friendly",
+      "pirateOnly": true,
+      "promptTranslationKey": "dialogue.piratesmca_friendly_voyage_invitation",
+      "options": [
+        {
+          "id": "count_me_in",
+          "choiceTranslationKey": "dialogue.piratesmca_friendly_voyage_invitation.count_me_in",
+          "replyTranslationKey": "dialogue.piratesmca_friendly_voyage_invitation.count_me_in.reply",
+          "outcome": "positive"
+        },
+        {
+          "id": "not_today",
+          "choiceTranslationKey": "dialogue.piratesmca_friendly_voyage_invitation.not_today",
+          "replyTranslationKey": "dialogue.piratesmca_friendly_voyage_invitation.not_today.reply",
+          "outcome": "neutral"
+        },
+        {
+          "id": "ask_risk",
+          "choiceTranslationKey": "dialogue.piratesmca_friendly_voyage_invitation.ask_risk",
+          "replyTranslationKey": "dialogue.piratesmca_friendly_voyage_invitation.ask_risk.reply",
+          "outcome": "neutral"
+        }
+      ],
+      "mcaDialogueFile": "data/piratesmca/dialogues/piratesmca_friendly_voyage_invitation.json",
+      "requiresJavaGate": true
+    },
+    {
+      "id": "piratesmca_friendly_lost_sailor",
+      "temperament": "friendly",
+      "pirateOnly": true,
+      "promptTranslationKey": "dialogue.piratesmca_friendly_lost_sailor",
+      "options": [
+        {
+          "id": "offer_help",
+          "choiceTranslationKey": "dialogue.piratesmca_friendly_lost_sailor.offer_help",
+          "replyTranslationKey": "dialogue.piratesmca_friendly_lost_sailor.offer_help.reply",
+          "outcome": "positive"
+        },
+        {
+          "id": "ask_details",
+          "choiceTranslationKey": "dialogue.piratesmca_friendly_lost_sailor.ask_details",
+          "replyTranslationKey": "dialogue.piratesmca_friendly_lost_sailor.ask_details.reply",
+          "outcome": "neutral"
+        },
+        {
+          "id": "decline",
+          "choiceTranslationKey": "dialogue.piratesmca_friendly_lost_sailor.decline",
+          "replyTranslationKey": "dialogue.piratesmca_friendly_lost_sailor.decline.reply",
+          "outcome": "neutral"
+        }
+      ],
+      "mcaDialogueFile": "data/piratesmca/dialogues/piratesmca_friendly_lost_sailor.json",
+      "requiresJavaGate": true
+    },
+    {
+      "id": "piratesmca_friendly_share_the_find",
+      "temperament": "friendly",
+      "pirateOnly": true,
+      "promptTranslationKey": "dialogue.piratesmca_friendly_share_the_find",
+      "options": [
+        {
+          "id": "investigate",
+          "choiceTranslationKey": "dialogue.piratesmca_friendly_share_the_find.investigate",
+          "replyTranslationKey": "dialogue.piratesmca_friendly_share_the_find.investigate.reply",
+          "outcome": "positive"
+        },
+        {
+          "id": "sell_it",
+          "choiceTranslationKey": "dialogue.piratesmca_friendly_share_the_find.sell_it",
+          "replyTranslationKey": "dialogue.piratesmca_friendly_share_the_find.sell_it.reply",
+          "outcome": "neutral"
+        },
+        {
+          "id": "keep_safe",
+          "choiceTranslationKey": "dialogue.piratesmca_friendly_share_the_find.keep_safe",
+          "replyTranslationKey": "dialogue.piratesmca_friendly_share_the_find.keep_safe.reply",
+          "outcome": "neutral"
+        }
+      ],
+      "mcaDialogueFile": "data/piratesmca/dialogues/piratesmca_friendly_share_the_find.json",
+      "requiresJavaGate": true
+    },
+    {
+      "id": "piratesmca_gruff_missing_crate",
+      "temperament": "gruff",
+      "pirateOnly": true,
+      "promptTranslationKey": "dialogue.piratesmca_gruff_missing_crate",
+      "options": [
+        {
+          "id": "track_it",
+          "choiceTranslationKey": "dialogue.piratesmca_gruff_missing_crate.track_it",
+          "replyTranslationKey": "dialogue.piratesmca_gruff_missing_crate.track_it.reply",
+          "outcome": "positive"
+        },
+        {
+          "id": "blame_crew",
+          "choiceTranslationKey": "dialogue.piratesmca_gruff_missing_crate.blame_crew",
+          "replyTranslationKey": "dialogue.piratesmca_gruff_missing_crate.blame_crew.reply",
+          "outcome": "negative"
+        },
+        {
+          "id": "not_my_problem",
+          "choiceTranslationKey": "dialogue.piratesmca_gruff_missing_crate.not_my_problem",
+          "replyTranslationKey": "dialogue.piratesmca_gruff_missing_crate.not_my_problem.reply",
+          "outcome": "negative"
+        }
+      ],
+      "mcaDialogueFile": "data/piratesmca/dialogues/piratesmca_gruff_missing_crate.json",
+      "requiresJavaGate": true
+    },
+    {
+      "id": "piratesmca_gruff_captain_test",
+      "temperament": "gruff",
+      "pirateOnly": true,
+      "promptTranslationKey": "dialogue.piratesmca_gruff_captain_test",
+      "options": [
+        {
+          "id": "crew_first",
+          "choiceTranslationKey": "dialogue.piratesmca_gruff_captain_test.crew_first",
+          "replyTranslationKey": "dialogue.piratesmca_gruff_captain_test.crew_first.reply",
+          "outcome": "positive"
+        },
+        {
+          "id": "gold_first",
+          "choiceTranslationKey": "dialogue.piratesmca_gruff_captain_test.gold_first",
+          "replyTranslationKey": "dialogue.piratesmca_gruff_captain_test.gold_first.reply",
+          "outcome": "negative"
+        },
+        {
+          "id": "glory_first",
+          "choiceTranslationKey": "dialogue.piratesmca_gruff_captain_test.glory_first",
+          "replyTranslationKey": "dialogue.piratesmca_gruff_captain_test.glory_first.reply",
+          "outcome": "neutral"
+        }
+      ],
+      "mcaDialogueFile": "data/piratesmca/dialogues/piratesmca_gruff_captain_test.json",
+      "requiresJavaGate": true
+    },
+    {
+      "id": "piratesmca_gruff_damaged_hull",
+      "temperament": "gruff",
+      "pirateOnly": true,
+      "promptTranslationKey": "dialogue.piratesmca_gruff_damaged_hull",
+      "options": [
+        {
+          "id": "bring_planks",
+          "choiceTranslationKey": "dialogue.piratesmca_gruff_damaged_hull.bring_planks",
+          "replyTranslationKey": "dialogue.piratesmca_gruff_damaged_hull.bring_planks.reply",
+          "outcome": "positive"
+        },
+        {
+          "id": "ask_time",
+          "choiceTranslationKey": "dialogue.piratesmca_gruff_damaged_hull.ask_time",
+          "replyTranslationKey": "dialogue.piratesmca_gruff_damaged_hull.ask_time.reply",
+          "outcome": "neutral"
+        },
+        {
+          "id": "ignore",
+          "choiceTranslationKey": "dialogue.piratesmca_gruff_damaged_hull.ignore",
+          "replyTranslationKey": "dialogue.piratesmca_gruff_damaged_hull.ignore.reply",
+          "outcome": "negative"
+        }
+      ],
+      "mcaDialogueFile": "data/piratesmca/dialogues/piratesmca_gruff_damaged_hull.json",
+      "requiresJavaGate": true
+    },
+    {
+      "id": "piratesmca_hostile_deck_trespass",
+      "temperament": "hostile",
+      "pirateOnly": true,
+      "promptTranslationKey": "dialogue.piratesmca_hostile_deck_trespass",
+      "options": [
+        {
+          "id": "bring_business",
+          "choiceTranslationKey": "dialogue.piratesmca_hostile_deck_trespass.bring_business",
+          "replyTranslationKey": "dialogue.piratesmca_hostile_deck_trespass.bring_business.reply",
+          "outcome": "neutral"
+        },
+        {
+          "id": "stand_ground",
+          "choiceTranslationKey": "dialogue.piratesmca_hostile_deck_trespass.stand_ground",
+          "replyTranslationKey": "dialogue.piratesmca_hostile_deck_trespass.stand_ground.reply",
+          "outcome": "negative"
+        },
+        {
+          "id": "apologize",
+          "choiceTranslationKey": "dialogue.piratesmca_hostile_deck_trespass.apologize",
+          "replyTranslationKey": "dialogue.piratesmca_hostile_deck_trespass.apologize.reply",
+          "outcome": "neutral"
+        }
+      ],
+      "mcaDialogueFile": "data/piratesmca/dialogues/piratesmca_hostile_deck_trespass.json",
+      "requiresJavaGate": true
+    },
+    {
+      "id": "piratesmca_hostile_mutiny_whisper",
+      "temperament": "hostile",
+      "pirateOnly": true,
+      "promptTranslationKey": "dialogue.piratesmca_hostile_mutiny_whisper",
+      "options": [
+        {
+          "id": "ask_proof",
+          "choiceTranslationKey": "dialogue.piratesmca_hostile_mutiny_whisper.ask_proof",
+          "replyTranslationKey": "dialogue.piratesmca_hostile_mutiny_whisper.ask_proof.reply",
+          "outcome": "neutral"
+        },
+        {
+          "id": "encourage_mutiny",
+          "choiceTranslationKey": "dialogue.piratesmca_hostile_mutiny_whisper.encourage_mutiny",
+          "replyTranslationKey": "dialogue.piratesmca_hostile_mutiny_whisper.encourage_mutiny.reply",
+          "outcome": "negative"
+        },
+        {
+          "id": "stay_out",
+          "choiceTranslationKey": "dialogue.piratesmca_hostile_mutiny_whisper.stay_out",
+          "replyTranslationKey": "dialogue.piratesmca_hostile_mutiny_whisper.stay_out.reply",
+          "outcome": "neutral"
+        }
+      ],
+      "mcaDialogueFile": "data/piratesmca/dialogues/piratesmca_hostile_mutiny_whisper.json",
+      "requiresJavaGate": true
+    },
+    {
+      "id": "piratesmca_hostile_rival_flag",
+      "temperament": "hostile",
+      "pirateOnly": true,
+      "promptTranslationKey": "dialogue.piratesmca_hostile_rival_flag",
+      "options": [
+        {
+          "id": "offer_diplomacy",
+          "choiceTranslationKey": "dialogue.piratesmca_hostile_rival_flag.offer_diplomacy",
+          "replyTranslationKey": "dialogue.piratesmca_hostile_rival_flag.offer_diplomacy.reply",
+          "outcome": "neutral"
+        },
+        {
+          "id": "fight_together",
+          "choiceTranslationKey": "dialogue.piratesmca_hostile_rival_flag.fight_together",
+          "replyTranslationKey": "dialogue.piratesmca_hostile_rival_flag.fight_together.reply",
+          "outcome": "positive"
+        },
+        {
+          "id": "walk_away",
+          "choiceTranslationKey": "dialogue.piratesmca_hostile_rival_flag.walk_away",
+          "replyTranslationKey": "dialogue.piratesmca_hostile_rival_flag.walk_away.reply",
+          "outcome": "negative"
+        }
+      ],
+      "mcaDialogueFile": "data/piratesmca/dialogues/piratesmca_hostile_rival_flag.json",
+      "requiresJavaGate": true
+    }
+  ]
+}

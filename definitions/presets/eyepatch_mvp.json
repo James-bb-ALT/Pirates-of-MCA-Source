@@ -1,0 +1,9 @@
+{
+  "id": "piratesmca:eyepatch_mvp",
+  "logical_slots": {"head": "piratesmca:tricorne_classic", "face": "piratesmca:eyepatch_leather"},
+  "equipment": {"head": "piratesmca:tricorne_eyepatch"},
+  "spawn_tags": ["pmca_preset_tricorne_classic", "pmca_preset_eyepatch_leather"],
+  "requires": ["adult", "pirate"],
+  "replace_existing_equipment": false,
+  "notes": "Two cosmetic logical slots map to one native HEAD loadout. Not a generic accessory inventory or armor system."
+}

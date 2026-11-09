@@ -1,0 +1,130 @@
+Compiled from "WeightedPool.java"
+public class net.conczin.mca.resources.WeightedPool<T> {
+  protected final java.util.List<net.conczin.mca.resources.WeightedPool$Entry<T>> entries;
+
+  private final T defaultValue;
+
+  public net.conczin.mca.resources.WeightedPool(T);
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #7                  // class java/util/ArrayList
+         8: dup
+         9: invokespecial #9                  // Method java/util/ArrayList."<init>":()V
+        12: putfield      #10                 // Field entries:Ljava/util/List;
+        15: aload_0
+        16: aload_1
+        17: putfield      #16                 // Field defaultValue:Ljava/lang/Object;
+        20: return
+
+  public T pickOne();
+    Code:
+         0: aload_0
+         1: getfield      #10                 // Field entries:Ljava/util/List;
+         4: invokeinterface #20,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+         9: invokedynamic #26,  0             // InvokeDynamic #0:applyAsDouble:()Ljava/util/function/ToDoubleFunction;
+        14: invokeinterface #30,  2           // InterfaceMethod java/util/stream/Stream.mapToDouble:(Ljava/util/function/ToDoubleFunction;)Ljava/util/stream/DoubleStream;
+        19: invokeinterface #36,  1           // InterfaceMethod java/util/stream/DoubleStream.sum:()D
+        24: invokestatic  #42                 // Method net/conczin/mca/resources/API.getRng:()Lnet/minecraft/util/RandomSource;
+        27: invokeinterface #48,  1           // InterfaceMethod net/minecraft/util/RandomSource.nextDouble:()D
+        32: dmul
+        33: dstore_1
+        34: aload_0
+        35: getfield      #10                 // Field entries:Ljava/util/List;
+        38: invokeinterface #53,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        43: astore_3
+        44: aload_3
+        45: invokeinterface #57,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        50: ifeq          88
+        53: aload_3
+        54: invokeinterface #63,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        59: checkcast     #67                 // class net/conczin/mca/resources/WeightedPool$Entry
+        62: astore        4
+        64: dload_1
+        65: aload         4
+        67: getfield      #69                 // Field net/conczin/mca/resources/WeightedPool$Entry.weight:F
+        70: f2d
+        71: dsub
+        72: dstore_1
+        73: dload_1
+        74: dconst_0
+        75: dcmpg
+        76: ifgt          85
+        79: aload         4
+        81: getfield      #73                 // Field net/conczin/mca/resources/WeightedPool$Entry.value:Ljava/lang/Object;
+        84: areturn
+        85: goto          44
+        88: aload_0
+        89: getfield      #16                 // Field defaultValue:Ljava/lang/Object;
+        92: areturn
+
+  public T pickNext(T, int);
+    Code:
+         0: aload_0
+         1: getfield      #10                 // Field entries:Ljava/util/List;
+         4: invokeinterface #76,  1           // InterfaceMethod java/util/List.isEmpty:()Z
+         9: ifeq          17
+        12: aload_0
+        13: getfield      #16                 // Field defaultValue:Ljava/lang/Object;
+        16: areturn
+        17: iconst_0
+        18: istore_3
+        19: iload_3
+        20: aload_0
+        21: getfield      #10                 // Field entries:Ljava/util/List;
+        24: invokeinterface #79,  1           // InterfaceMethod java/util/List.size:()I
+        29: if_icmpge     92
+        32: aload_0
+        33: getfield      #10                 // Field entries:Ljava/util/List;
+        36: iload_3
+        37: invokeinterface #83,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+        42: checkcast     #67                 // class net/conczin/mca/resources/WeightedPool$Entry
+        45: getfield      #73                 // Field net/conczin/mca/resources/WeightedPool$Entry.value:Ljava/lang/Object;
+        48: aload_1
+        49: invokevirtual #87                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+        52: ifeq          86
+        55: aload_0
+        56: getfield      #10                 // Field entries:Ljava/util/List;
+        59: iload_3
+        60: iload_2
+        61: iadd
+        62: aload_0
+        63: getfield      #10                 // Field entries:Ljava/util/List;
+        66: invokeinterface #79,  1           // InterfaceMethod java/util/List.size:()I
+        71: invokestatic  #91                 // Method java/lang/Math.floorMod:(II)I
+        74: invokeinterface #83,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+        79: checkcast     #67                 // class net/conczin/mca/resources/WeightedPool$Entry
+        82: getfield      #73                 // Field net/conczin/mca/resources/WeightedPool$Entry.value:Ljava/lang/Object;
+        85: areturn
+        86: iinc          3, 1
+        89: goto          19
+        92: aload_0
+        93: getfield      #10                 // Field entries:Ljava/util/List;
+        96: iload_2
+        97: ifge          114
+       100: aload_0
+       101: getfield      #10                 // Field entries:Ljava/util/List;
+       104: invokeinterface #79,  1           // InterfaceMethod java/util/List.size:()I
+       109: iconst_1
+       110: isub
+       111: goto          115
+       114: iconst_0
+       115: invokeinterface #83,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+       120: checkcast     #67                 // class net/conczin/mca/resources/WeightedPool$Entry
+       123: getfield      #73                 // Field net/conczin/mca/resources/WeightedPool$Entry.value:Ljava/lang/Object;
+       126: areturn
+
+  public java.util.List<net.conczin.mca.resources.WeightedPool$Entry<T>> getEntries();
+    Code:
+         0: aload_0
+         1: getfield      #10                 // Field entries:Ljava/util/List;
+         4: areturn
+
+  private static double lambda$pickOne$0(net.conczin.mca.resources.WeightedPool$Entry);
+    Code:
+         0: aload_0
+         1: getfield      #69                 // Field net/conczin/mca/resources/WeightedPool$Entry.weight:F
+         4: f2d
+         5: dreturn
+}

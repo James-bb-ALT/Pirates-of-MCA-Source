@@ -1,0 +1,18 @@
+{
+  "before": "6.0.2-alpha.9",
+  "after": "7.0.0-alpha.10",
+  "changed": [
+    "dev/arandu/piratesmca/PiratesOfMCA.class",
+    "fabric.mod.json",
+    "piratesmca.mixins.json",
+    "assets/piratesmca/lang/en_us.json",
+    "assets/piratesmca/lang/pt_br.json"
+  ],
+  "added": [
+    "assets/piratesmca/items/female_pirate_spawn_egg.json",
+    "assets/piratesmca/items/male_pirate_spawn_egg.json",
+    "dev/arandu/piratesmca/PirateCreativeTab.class",
+    "dev/arandu/piratesmca/mixin/PirateSpawnEggMixin.class"
+  ],
+  "removed": []
+}

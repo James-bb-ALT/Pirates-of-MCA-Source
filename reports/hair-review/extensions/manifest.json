@@ -1,0 +1,30 @@
+{
+  "frames": 22,
+  "legacy_hair_textures": 8,
+  "controlled_fixture": true,
+  "files": {
+    "0000_HAT-POSE-idle.png": "4d50fdb5c62669411bf28e7ba991d5e3c31c363445f2f53cd0e4269d0a4aef30",
+    "0001_HAT-POSE-head_turn.png": "50cea5b52ee1ae056f8eb1049df964d55df1bc54eb48590edc60bb563ee97a24",
+    "0002_HAT-POSE-walk.png": "bfdbfc849b30da1409f53ddf7cd0f79f6fd2f6873d764d0a4d8b820665b145d8",
+    "0003_HAT-POSE-run.png": "15d519c8e13fd37c12f3d98d8b0a241bca81717ef9c130ed9b148979cab2cfe4",
+    "0004_HAT-POSE-attack.png": "4af6670c3d197ec0334076c8242af9aad066a0ce2f8b3fbc6c4bf23ca01c70fe",
+    "0005_HAT-POSE-hurt.png": "6923fe3188b5deb10aaba7c946c83628aa2a7903de93f9c4e03792bdc555b404",
+    "0006_HAT-POSE-swim.png": "d9d35cc09780b5e2970376b787f01022d38ebcd19bd24ea39b463998f21bd42e",
+    "0007_HAT-FIT-swim-dry.png": "bb9c23abe394f229542073da51722016c1c3e99ba5a39c342a24c856613c32f5",
+    "0008_HAT-POSE-sit.png": "f5627620dca50b26451e66a01ca02bd6dd79d7e366e0dfe3e182d4ae28e9a3a3",
+    "0009_HAT-POSE-sleep.png": "859c79784535eae1312474c12ba8c8857f946dbdaaf871016edc6929393979bf",
+    "0010_HAT-HAIR-0-front.png": "21c9050317fa5719e9ac83c5f1735c8a56c02741228371aaabff0446cd4d14b1",
+    "0011_HAT-HAIR-0-profile.png": "50433d3b54c7ae4a57872b936359a681461838ab6063125664a8581f10d6bfe5",
+    "0012_HAT-HAIR-0-back.png": "0febd716d3b3ef4c903d8fb2c8fd2f0f53397047c6525edc942b567a7715658c",
+    "0013_HAT-HAIR-10-front.png": "75b36ad81cae82e12bc4ed0e3c60332c4d73b20b0f317fb1c8f0dc4f1304fb55",
+    "0014_HAT-HAIR-10-profile.png": "cf051d200afbefd6b7c28f3c447999b3af244e36e1866a6c479cb840bd1994de",
+    "0015_HAT-HAIR-10-back.png": "d2b3b8f14581e78bd7da1dc8b9d3b64e8b75f920c7b97f99314c5d39018386d9",
+    "0016_HAT-HAIR-20-front.png": "868b37baaaa39303ef096591a32cdbc67dc7be91e7917c15f5aba9f0e925d352",
+    "0017_HAT-HAIR-20-profile.png": "7e571aada38170f4580f4f67c524b2e8ef08654c3ae6f0eadc876add65991707",
+    "0018_HAT-HAIR-20-back.png": "237ea27e54df98303783a2ab8a9b968460628724895884ee9ab87b54319f640d",
+    "0019_HAT-HAIR-39-front.png": "dd9114bca091f8d931451c5ee25d24e50686bdb2a4633e7c5e25e46de473aa0b",
+    "0020_HAT-HAIR-39-profile.png": "b33000f65b45a8805e30cc95bc1b1ed45da7ecf74bd78095a659c7982bc8c654",
+    "0021_HAT-HAIR-39-back.png": "5b91979dc03c9da54dbf067fa6d3520dbe04f9bb79982fbb11748d0200485a36",
+    "execution.log": "bfbcf4d17874578de1ad49155cf01aa0cdcc51fb21c90284182ed3e7a233c1a2"
+  }
+}

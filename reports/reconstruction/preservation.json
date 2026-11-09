@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "jar_sha256": "af30c6fd7a4920a0fe5a4dbc57a8bcf2def35efcbe225b6257889e246a6205c6",
+  "unchanged_tested_backend_entries": 131,
+  "tested_candidate_sha256": "18e790c3ded24113aa5c6551416220d9947b104f11fee556103119275758db3c",
+  "old_runtime_files_removed": [],
+  "original_PNGs_changed": [],
+  "foreign_classes_stubs_development_CEM": []
+}

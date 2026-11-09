@@ -1,0 +1,296 @@
+[
+  {
+    "path": "animatica-0.6.3+26.2.jar",
+    "id": "animatica",
+    "version": "0.6.3+26.2",
+    "sha256": "6724b477f35b32b7bc878d73b7d56e6ab89b042cb863ed322c2bb9aa664bfc88"
+  },
+  {
+    "path": "bbe-fabric-1.3.8-beta.1+mc26.2.jar",
+    "id": "betterblockentities",
+    "version": "1.3.8-beta.1+mc26.2",
+    "sha256": "03252c944c314c767e759850199817b013788e4d09113834a15d09d91d669f5f"
+  },
+  {
+    "path": "BetterGrassify-1.8.7+fabric.26.2.jar",
+    "id": "bettergrass",
+    "version": "1.8.7+fabric.26.2",
+    "sha256": "823e14c7b41c0656d66948eb9e00cced829cdfac19a92d64f4b830df05a2ddf9"
+  },
+  {
+    "path": "bettermounthud-1.3.1.jar",
+    "id": "bettermounthud",
+    "version": "1.3.1",
+    "sha256": "3d4f56c46e61e86ecd5f411809a01af7c40b25aead6791b716befcf33e1e3336"
+  },
+  {
+    "path": "cape-provider-5.5.1.jar",
+    "id": "cape-provider",
+    "version": "5.5.1",
+    "sha256": "fa4a2f890aef5ded71999460171e50e75ee902314bc6b824d055f277da39d68a"
+  },
+  {
+    "path": "cloth-config-26.2.155.jar",
+    "id": "cloth-config",
+    "version": "26.2.155",
+    "sha256": "def4be7639cd66704f7e304d658ea0f6bf490fb4a6eaa2dbf18ec2c3999d6349"
+  },
+  {
+    "path": "ConfigManager-fabric-26.1_26.2-1.1.3.jar",
+    "id": "config_manager",
+    "version": "1.1.3",
+    "sha256": "59fd62349541d3bccbf5634163015cf335bd272da9b1729649dd2fdb3809bb25"
+  },
+  {
+    "path": "continuity-3.0.1+26.2.jar",
+    "id": "continuity",
+    "version": "3.0.1+26.2",
+    "sha256": "2094a52b98e247f664ef2ecdbb41d7dcad7779cc7a8fb87f0ed8a4f8196c0446"
+  },
+  {
+    "path": "controlify-3.5.3+mc26.2-universal.jar",
+    "id": "controlify",
+    "version": "3.5.3+mc26.2",
+    "sha256": "9715da24f6a13bb34e5d358f72eb6bb1f68c6a9e792b350c294d81a93f819a63"
+  },
+  {
+    "path": "CrashAssistant-fabric-26.2-26.3-1.11.14.jar",
+    "id": "crash_assistant",
+    "version": "1.11.14",
+    "sha256": "dd76ebfebbcc3d9457c7b7a37509ef5aeb0d69edc323060a8fc7c31b8d6f97dd"
+  },
+  {
+    "path": "cwb-4.1.0+26.2.jar",
+    "id": "cwb",
+    "version": "4.1.0+26.2",
+    "sha256": "3123c15a5840e2bc5f44a5cc1b4785f75e96bdb903fd5dc901d10e08e53faaaa"
+  },
+  {
+    "path": "debugify-26.2.0.1.jar",
+    "id": "debugify",
+    "version": "26.2.0.1",
+    "sha256": "60967c6beb1336d37db707e284697de68dbaecf6713a6d7de02549c7c2519943"
+  },
+  {
+    "path": "dynamic-fps-3.11.9+minecraft-26.2.0-fabric.jar",
+    "id": "dynamic_fps",
+    "version": "3.11.9",
+    "sha256": "a2c4865320e41deb2e462c4999804106d620c15089d61cbcb0d6505959a4a47b"
+  },
+  {
+    "path": "e4mc-fabric-6.2.3-modern.jar",
+    "id": "e4mc",
+    "version": "6.2.3+modern",
+    "sha256": "50125e336c383688403e2fb24c5d88af82cd4b64288359ea5323288afe258f95"
+  },
+  {
+    "path": "entity_model_features-3.3.11-26.2-fabric.jar",
+    "id": "entity_model_features",
+    "version": "3.3.11",
+    "sha256": "26b13c2ee755932e74f80ecf6baf16a25582568ae7482cf472751abb98e7b14a"
+  },
+  {
+    "path": "entity_texture_features-7.2.5-26.2-fabric.jar",
+    "id": "entity_texture_features",
+    "version": "7.2.5",
+    "sha256": "ac66cf294fbd2b1eb1576bdc2396cb096abcd54d9f8f39ecb1973abbc4e00488"
+  },
+  {
+    "path": "entityculling-fabric-1.11.3-mc26.2.jar",
+    "id": "entityculling",
+    "version": "1.11.3",
+    "sha256": "8f977af47b8d0531da81d1801fbe6bfcaa2f1f585a6ea4dccf9885da42e6cf89"
+  },
+  {
+    "path": "fabric-api-0.161.0+26.2.jar",
+    "id": "fabric-api",
+    "version": "0.161.0+26.2",
+    "sha256": "e5b858ceb13290c274e31cb888ff5a1a40cb91067e7ffab0b5b775aec51e216a"
+  },
+  {
+    "path": "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar",
+    "id": "fabric-language-kotlin",
+    "version": "1.14.2+kotlin.2.4.21",
+    "sha256": "fbdbf5286ab9d65fedb49e6e01c15e338ae303eb7b9d8c7423d0a9bcfe526ef9"
+  },
+  {
+    "path": "fastquit-3.1.5+mc26.2.jar",
+    "id": "fastquit",
+    "version": "3.1.5+mc26.2",
+    "sha256": "f18490dfd6c52f9abf4cbf06e0228269425acb42a8b75dd29cd26c574aac47a4"
+  },
+  {
+    "path": "ferritecore-9.0.0-fabric.jar",
+    "id": "ferritecore",
+    "version": "9.0.0",
+    "sha256": "213966c72ed967acc7392beb28a866fba301ff56b9976c2e7801c2db7de6bf22"
+  },
+  {
+    "path": "ForgeConfigAPIPort-v26.2.1-mc26.2.x-Fabric.jar",
+    "id": "forgeconfigapiport",
+    "version": "26.2.1",
+    "sha256": "1b4b17fc4150481447201152604688c74726d6631c9a626dd21f2c5e2b3df1ac"
+  },
+  {
+    "path": "ImmediatelyFast-Fabric-1.16.5+26.2.jar",
+    "id": "immediatelyfast",
+    "version": "1.16.5+26.2",
+    "sha256": "85cd8d19bc97b9f2af339897f84ac26af16ab31baa0602689edcfa19dfc1b3e9"
+  },
+  {
+    "path": "iris-fabric-1.11.4+mc26.2.jar",
+    "id": "iris",
+    "version": "1.11.4+mc26.2",
+    "sha256": "f1f7ab57c974d193ba33aa285864a0ded949216f402116fceaf4dc7739b4dd7c"
+  },
+  {
+    "path": "Ixeris-4.6.8+26.2-fabric.jar",
+    "id": "ixeris",
+    "version": "4.6.8+26.2-fabric",
+    "sha256": "ec279346c6926ace1792a4ae83b7702ae56ef72856fe486965c70e524c747af6"
+  },
+  {
+    "path": "lambdynamiclights-4.12.4+26.2.jar",
+    "id": "lambdynlights",
+    "version": "4.12.4+26.2",
+    "sha256": "fdb3971cd628e7da0a9ca222c2ad501cf2f59df1b73e7f04cbc7e03194689a52"
+  },
+  {
+    "path": "language-reload-1.7.8+26.2.jar",
+    "id": "languagereload",
+    "version": "1.7.8+26.2",
+    "sha256": "ae62d909be1a526499a7caa1ee208caf30d89747cc761abc8679a070753875c4"
+  },
+  {
+    "path": "lithium-fabric-0.25.3+mc26.2.jar",
+    "id": "lithium",
+    "version": "0.25.3+mc26.2",
+    "sha256": "fdde92e238e8075f89ad7f701f2a3d5854af88ba9a67657184a4407b104ac563"
+  },
+  {
+    "path": "main-menu-credits-1.4.0+26.2-universal.jar",
+    "id": "main_menu_credits",
+    "version": "1.4.0+26.2",
+    "sha256": "56964c1535bd9ae883637d6afa96b8afc30dc5df120de3fed5d0d4a2ad1e92f7"
+  },
+  {
+    "path": "mixintrace-1.0-26.1-universal.jar",
+    "id": "mixintrace",
+    "version": "1.0",
+    "sha256": "63aa32aebc9bc83585a52559370aaa0274cf5994d3e4aefd705eabe76146d2fa"
+  },
+  {
+    "path": "modernfix-5.27.19-build.2.jar",
+    "id": "modernfix",
+    "version": "5.27.19-build.2",
+    "sha256": "1bb69de32ca83f27f945e238ae4781795e42d6b5576ca5e6ee18b147fb02a2fd"
+  },
+  {
+    "path": "modmenu-20.0.3.jar",
+    "id": "modmenu",
+    "version": "20.0.3",
+    "sha256": "00865605007fbf26d4712b40ccdd55b1cdebad79a9ccfcc1ff635ed522f5bb27"
+  },
+  {
+    "path": "morechathistory-2.0.0.jar",
+    "id": "morechathistory",
+    "version": "2.0.0",
+    "sha256": "5a98a8c5b5ab9f6e34393ea62ba462e17c696d4319fdeeaf98f516e11afc3587"
+  },
+  {
+    "path": "moreculling-fabric-26.2-1.8.1.jar",
+    "id": "moreculling",
+    "version": "1.8.1",
+    "sha256": "ea04505496e4d35a8c94199884b6fafa69057efe50f2096d2988c11163d49122"
+  },
+  {
+    "path": "NoChatReports-FABRIC-26.2-v2.20.2.jar",
+    "id": "nochatreports",
+    "version": "26.2-v2.20.2",
+    "sha256": "93c761e9fb7d76269a0d5b9807e19db164b3a2fd0b8ebd0550fe94f832cf396f"
+  },
+  {
+    "path": "optigui-2.3.0-beta.10+26.2.jar",
+    "id": "optigui",
+    "version": "2.3.0-beta.10+26.2",
+    "sha256": "72a870f8cb7cb7689965f4483be676508daeb187775c4c2a1a7b6c3419ae4659"
+  },
+  {
+    "path": "paginatedadvancements-2.8.0+26.2.jar",
+    "id": "paginatedadvancements",
+    "version": "2.8.0+26.2",
+    "sha256": "cdc5b78a08b7317266de54647ba5dbb9f3f3eae81f77d5a87b16123325aefb49"
+  },
+  {
+    "path": "placeholder-api-3.1.0-beta.1+26.2.jar",
+    "id": "placeholder-api",
+    "version": "3.1.0-beta.1+26.2",
+    "sha256": "c2ca2b5c397a0c198a32e7af68d2d0a011bc2c7baeae5cffd3996efd65c5069e"
+  },
+  {
+    "path": "polytone-26.2-6.8.6-fabric.jar",
+    "id": "polytone",
+    "version": "26.2-6.8.6",
+    "sha256": "6336efeba8520cdaf4a40503229de46acd70d97abe11cd919ad8aac78e38c461"
+  },
+  {
+    "path": "puzzle-fabric-2.3.1+26.2.jar",
+    "id": "puzzle",
+    "version": "2.3.1",
+    "sha256": "e2d95285872c4761b796515019958d8febcc0db8ccf8c96fe1d2e3421229c437"
+  },
+  {
+    "path": "reeses-sodium-options-fabric-2.2.4+mc26.2.jar",
+    "id": "reeses-sodium-options",
+    "version": "2.2.4+mc26.2",
+    "sha256": "b590be708faf191b9ffd30c601a63f6bdd31cc6d41d7cce462d520f858ff4058"
+  },
+  {
+    "path": "renice-shot-1.2.1+mc26.2.jar",
+    "id": "renice-shot",
+    "version": "1.2.1+mc26.2",
+    "sha256": "b4d645a2968952ccaf6a25f36e0673f73e6225e3acc210908706ea84c6668dc4"
+  },
+  {
+    "path": "rrls-5.2.8+mc.26.2.jar",
+    "id": "rrls",
+    "version": "5.2.8+mc.26.2",
+    "sha256": "7ea7aa83fa6b3bd7be0f520092e7daeaaeb6c366e33524fbb53eeea820622e62"
+  },
+  {
+    "path": "skyboxify-3.4+26.2-fabric.jar",
+    "id": "skyboxify",
+    "version": "3.4",
+    "sha256": "09b8e54fce2ce801ece623e8fe785f5981e129ee3403ad5654fbbe1625f40bbe"
+  },
+  {
+    "path": "sodium-extra-fabric-0.9.4+mc26.2.jar",
+    "id": "sodium-extra",
+    "version": "0.9.4+mc26.2",
+    "sha256": "26f744b0966d2ee84cc767aaea8ab106ed778d0f2a4130b4ce320332a55b483c"
+  },
+  {
+    "path": "sodium-fabric-0.9.2+mc26.2.jar",
+    "id": "sodium",
+    "version": "0.9.2+mc26.2",
+    "sha256": "16a5e91db49750f8c046ecca3b8f2af5a28ea6f9b6581b42f123ca8fda20864f"
+  },
+  {
+    "path": "sodium-shadowy-path-blocks-fabric-7.0.0.jar",
+    "id": "sspb",
+    "version": "7.0.0",
+    "sha256": "6c4733f6ad65519203e30491e7872fb53431754a4a891ade9db951e07885339f"
+  },
+  {
+    "path": "yet_another_config_lib_v3-3.9.7+26.2-fabric.jar",
+    "id": "yet_another_config_lib_v3",
+    "version": "3.9.7+26.2-fabric",
+    "sha256": "69ab51b2475332d1d26ef4f3b3a2b7e5c47dfc904a76730462f83a9c38780e39"
+  },
+  {
+    "path": "zoomify-2.17.0+mc26.2-universal.jar",
+    "id": "zoomify",
+    "version": "2.17.0+mc26.2",
+    "sha256": "485fb81d433002ec31eaa21720d6b7371fedbfb841e3f3bed3e8631dd80109d7"
+  }
+]

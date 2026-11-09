@@ -1,0 +1,184 @@
+{
+  "isolated": true,
+  "headless": true,
+  "personal_profile_used": false,
+  "results": [
+    {
+      "version": "5.2.2",
+      "name": "sash_red",
+      "format": "java_block",
+      "cubes": [
+        {
+          "name": "front_band",
+          "from": [
+            3.35,
+            -3.6,
+            10.25
+          ],
+          "to": [
+            12.65,
+            -0.6,
+            10.65
+          ]
+        },
+        {
+          "name": "back_band",
+          "from": [
+            3.35,
+            -3.6,
+            5.35
+          ],
+          "to": [
+            12.65,
+            -0.6,
+            5.75
+          ]
+        },
+        {
+          "name": "left_band",
+          "from": [
+            3.35,
+            -3.6,
+            5.75
+          ],
+          "to": [
+            3.75,
+            -0.6,
+            10.25
+          ]
+        },
+        {
+          "name": "right_band",
+          "from": [
+            12.25,
+            -3.6,
+            5.75
+          ],
+          "to": [
+            12.65,
+            -0.6,
+            10.25
+          ]
+        },
+        {
+          "name": "knot_base",
+          "from": [
+            11.1,
+            -3.15,
+            10.65
+          ],
+          "to": [
+            13.5,
+            -1.1,
+            11.4
+          ]
+        },
+        {
+          "name": "knot_fold",
+          "from": [
+            11.6,
+            -2.9,
+            11.4
+          ],
+          "to": [
+            13.1,
+            -1.35,
+            11.8
+          ]
+        },
+        {
+          "name": "front_upper_seam",
+          "from": [
+            3.4,
+            -1,
+            10.65
+          ],
+          "to": [
+            12.6,
+            -0.8,
+            10.75
+          ]
+        },
+        {
+          "name": "back_lower_seam",
+          "from": [
+            3.4,
+            -3.4,
+            5.25
+          ],
+          "to": [
+            12.6,
+            -3.2,
+            5.35
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "sash_red.png",
+          "width": 64,
+          "height": 64,
+          "error": 0
+        }
+      ],
+      "webgl": true,
+      "source": "models/blockbench/torso/sash_red.bbmodel",
+      "status": "PASS"
+    }
+  ],
+  "page_errors": [],
+  "post_requests": [
+    {
+      "method": "POST",
+      "url": "https://blckbn.ch/api/event/new_installation",
+      "blocked": true
+    },
+    {
+      "method": "POST",
+      "url": "https://web.blockbench.net/cdn-cgi/rum?",
+      "blocked": true
+    }
+  ],
+  "console": [
+    {
+      "type": "log",
+      "text": "Three.js r129"
+    },
+    {
+      "type": "log",
+      "text": "%cBlockbench 5.2.2 Web (Electron) border: 2px solid #3e90ff; padding: 4px 8px; font-size: 1.2em;"
+    },
+    {
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright"
+    },
+    {
+      "type": "log",
+      "text": "All plugin installations resolved"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x329c0432d400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x329c0432d400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x329c0432d400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x329c0432d400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ]
+}

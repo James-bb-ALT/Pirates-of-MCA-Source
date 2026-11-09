@@ -1,0 +1,230 @@
+[
+  {
+    "name": "captain_civilian",
+    "title": "Captain (Civilian)",
+    "id": "pirateatelier:textures/skins/captain_civilian.png",
+    "gender": "male"
+  },
+  {
+    "name": "deckhand",
+    "title": "Deckhand",
+    "id": "pirateatelier:textures/skins/deckhand.png",
+    "gender": "male"
+  },
+  {
+    "name": "deckhand_f",
+    "title": "Deckhand (F)",
+    "id": "pirateatelier:textures/skins/deckhand_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "ships_cook",
+    "title": "Ship's Cook",
+    "id": "pirateatelier:textures/skins/ships_cook.png",
+    "gender": "male"
+  },
+  {
+    "name": "gunner",
+    "title": "Gunner",
+    "id": "pirateatelier:textures/skins/gunner.png",
+    "gender": "male"
+  },
+  {
+    "name": "boatswain",
+    "title": "Boatswain",
+    "id": "pirateatelier:textures/skins/boatswain.png",
+    "gender": "male"
+  },
+  {
+    "name": "harbor_merchant",
+    "title": "Harbor Merchant",
+    "id": "pirateatelier:textures/skins/harbor_merchant.png",
+    "gender": "male"
+  },
+  {
+    "name": "smuggler",
+    "title": "Smuggler",
+    "id": "pirateatelier:textures/skins/smuggler.png",
+    "gender": "male"
+  },
+  {
+    "name": "rogue_navigator",
+    "title": "Rogue Navigator",
+    "id": "pirateatelier:textures/skins/rogue_navigator.png",
+    "gender": "male"
+  },
+  {
+    "name": "tavern_raider",
+    "title": "Tavern Raider",
+    "id": "pirateatelier:textures/skins/tavern_raider.png",
+    "gender": "male"
+  },
+  {
+    "name": "weathered_sailor",
+    "title": "Weathered Sailor",
+    "id": "pirateatelier:textures/skins/weathered_sailor.png",
+    "gender": "male"
+  },
+  {
+    "name": "fisherman_turned_pirate",
+    "title": "Fisherman Turned Pirate",
+    "id": "pirateatelier:textures/skins/fisherman_turned_pirate.png",
+    "gender": "male"
+  },
+  {
+    "name": "the_corsair",
+    "title": "The Corsair",
+    "id": "pirateatelier:textures/skins/the_corsair.png",
+    "gender": "male"
+  },
+  {
+    "name": "the_cabin_boy",
+    "title": "The Cabin Boy",
+    "id": "pirateatelier:textures/skins/the_cabin_boy.png",
+    "gender": "male"
+  },
+  {
+    "name": "the_privateer",
+    "title": "The Privateer",
+    "id": "pirateatelier:textures/skins/the_privateer.png",
+    "gender": "male"
+  },
+  {
+    "name": "the_dock_rat",
+    "title": "The Dock Rat",
+    "id": "pirateatelier:textures/skins/the_dock_rat.png",
+    "gender": "male"
+  },
+  {
+    "name": "the_naval_deserter",
+    "title": "The Naval Deserter",
+    "id": "pirateatelier:textures/skins/the_naval_deserter.png",
+    "gender": "male"
+  },
+  {
+    "name": "the_cursed_sailor",
+    "title": "The Cursed Sailor",
+    "id": "pirateatelier:textures/skins/the_cursed_sailor.png",
+    "gender": "male"
+  },
+  {
+    "name": "captain_armor_skin",
+    "title": "Captain Armor Skin",
+    "id": "pirateatelier:textures/skins/captain_armor_skin.png",
+    "gender": "male"
+  },
+  {
+    "name": "naval_officer_skin",
+    "title": "Naval Officer Skin",
+    "id": "pirateatelier:textures/skins/naval_officer_skin.png",
+    "gender": "male"
+  },
+  {
+    "name": "captain_civilian_f",
+    "title": "Captain (Civilian) (Female)",
+    "id": "pirateatelier:textures/skins/captain_civilian_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "ships_cook_f",
+    "title": "Ship's Cook (Female)",
+    "id": "pirateatelier:textures/skins/ships_cook_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "gunner_f",
+    "title": "Gunner (Female)",
+    "id": "pirateatelier:textures/skins/gunner_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "boatswain_f",
+    "title": "Boatswain (Female)",
+    "id": "pirateatelier:textures/skins/boatswain_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "harbor_merchant_f",
+    "title": "Harbor Merchant (Female)",
+    "id": "pirateatelier:textures/skins/harbor_merchant_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "smuggler_f",
+    "title": "Smuggler (Female)",
+    "id": "pirateatelier:textures/skins/smuggler_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "rogue_navigator_f",
+    "title": "Rogue Navigator (Female)",
+    "id": "pirateatelier:textures/skins/rogue_navigator_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "tavern_raider_f",
+    "title": "Tavern Raider (Female)",
+    "id": "pirateatelier:textures/skins/tavern_raider_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "weathered_sailor_f",
+    "title": "Weathered Sailor (Female)",
+    "id": "pirateatelier:textures/skins/weathered_sailor_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "fisherman_turned_pirate_f",
+    "title": "Fisherman Turned Pirate (Female)",
+    "id": "pirateatelier:textures/skins/fisherman_turned_pirate_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "the_corsair_f",
+    "title": "The Corsair (Female)",
+    "id": "pirateatelier:textures/skins/the_corsair_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "the_cabin_boy_f",
+    "title": "The Cabin Boy (Female)",
+    "id": "pirateatelier:textures/skins/the_cabin_boy_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "the_privateer_f",
+    "title": "The Privateer (Female)",
+    "id": "pirateatelier:textures/skins/the_privateer_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "the_dock_rat_f",
+    "title": "The Dock Rat (Female)",
+    "id": "pirateatelier:textures/skins/the_dock_rat_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "the_naval_deserter_f",
+    "title": "The Naval Deserter (Female)",
+    "id": "pirateatelier:textures/skins/the_naval_deserter_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "the_cursed_sailor_f",
+    "title": "The Cursed Sailor (Female)",
+    "id": "pirateatelier:textures/skins/the_cursed_sailor_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "captain_armor_skin_f",
+    "title": "Captain Armor Skin (Female)",
+    "id": "pirateatelier:textures/skins/captain_armor_skin_f.png",
+    "gender": "female"
+  },
+  {
+    "name": "naval_officer_skin_f",
+    "title": "Naval Officer Skin (Female)",
+    "id": "pirateatelier:textures/skins/naval_officer_skin_f.png",
+    "gender": "female"
+  }
+]

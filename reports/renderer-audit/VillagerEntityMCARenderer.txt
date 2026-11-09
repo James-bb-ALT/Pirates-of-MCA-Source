@@ -1,0 +1,93 @@
+Compiled from "VillagerEntityMCARenderer.java"
+public class net.conczin.mca.client.render.VillagerEntityMCARenderer extends net.conczin.mca.client.render.VillagerLikeEntityMCARenderer<net.conczin.mca.entity.VillagerEntityMCA> {
+  public net.conczin.mca.client.render.VillagerEntityMCARenderer(net.minecraft.client.renderer.entity.EntityRendererProvider$Context);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_1
+         3: invokestatic  #1                  // Method createAnimationModel:(Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;)Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+         6: invokevirtual #7                  // Method net/conczin/mca/client/model/VillagerEntityModelMCA.hideWears:()Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+         9: invokespecial #13                 // Method net/conczin/mca/client/render/VillagerLikeEntityMCARenderer."<init>":(Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;Lnet/conczin/mca/client/model/VillagerEntityModelMCA;)V
+        12: aload_0
+        13: getfield      #19                 // Field layers:Ljava/util/List;
+        16: iconst_0
+        17: new           #23                 // class net/conczin/mca/client/render/layer/SkinLayer
+        20: dup
+        21: aload_0
+        22: getstatic     #25                 // Field net/minecraft/client/model/geom/builders/CubeDeformation.NONE:Lnet/minecraft/client/model/geom/builders/CubeDeformation;
+        25: invokestatic  #31                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA.bodyData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+        28: invokestatic  #35                 // Method createVisibleModel:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+        31: invokevirtual #7                  // Method net/conczin/mca/client/model/VillagerEntityModelMCA.hideWears:()Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+        34: invokespecial #39                 // Method net/conczin/mca/client/render/layer/SkinLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;)V
+        37: invokeinterface #42,  3           // InterfaceMethod java/util/List.add:(ILjava/lang/Object;)V
+        42: aload_0
+        43: new           #48                 // class net/conczin/mca/client/render/layer/FaceLayer
+        46: dup
+        47: aload_0
+        48: new           #26                 // class net/minecraft/client/model/geom/builders/CubeDeformation
+        51: dup
+        52: ldc           #50                 // float 0.01f
+        54: invokespecial #51                 // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+        57: invokestatic  #31                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA.bodyData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+        60: invokestatic  #35                 // Method createVisibleModel:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+        63: invokevirtual #7                  // Method net/conczin/mca/client/model/VillagerEntityModelMCA.hideWears:()Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+        66: ldc           #54                 // String normal
+        68: invokespecial #56                 // Method net/conczin/mca/client/render/layer/FaceLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;Ljava/lang/String;)V
+        71: invokevirtual #59                 // Method addLayer:(Lnet/minecraft/client/renderer/entity/layers/RenderLayer;)Z
+        74: pop
+        75: aload_0
+        76: new           #63                 // class net/conczin/mca/client/render/layer/ClothingLayer
+        79: dup
+        80: aload_0
+        81: new           #26                 // class net/minecraft/client/model/geom/builders/CubeDeformation
+        84: dup
+        85: ldc           #65                 // float 0.0625f
+        87: invokespecial #51                 // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+        90: invokestatic  #31                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA.bodyData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+        93: invokestatic  #35                 // Method createVisibleModel:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+        96: ldc           #54                 // String normal
+        98: invokespecial #66                 // Method net/conczin/mca/client/render/layer/ClothingLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;Ljava/lang/String;)V
+       101: invokevirtual #59                 // Method addLayer:(Lnet/minecraft/client/renderer/entity/layers/RenderLayer;)Z
+       104: pop
+       105: aload_0
+       106: new           #67                 // class net/conczin/mca/client/render/layer/HairLayer
+       109: dup
+       110: aload_0
+       111: new           #26                 // class net/minecraft/client/model/geom/builders/CubeDeformation
+       114: dup
+       115: ldc           #69                 // float 0.125f
+       117: invokespecial #51                 // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+       120: invokestatic  #70                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA.hairData:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+       123: invokestatic  #35                 // Method createVisibleModel:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/conczin/mca/client/model/VillagerEntityModelMCA;
+       126: invokespecial #73                 // Method net/conczin/mca/client/render/layer/HairLayer."<init>":(Lnet/minecraft/client/renderer/entity/RenderLayerParent;Lnet/minecraft/client/model/HumanoidModel;)V
+       129: invokevirtual #59                 // Method addLayer:(Lnet/minecraft/client/renderer/entity/layers/RenderLayer;)Z
+       132: pop
+       133: return
+
+  private static net.conczin.mca.client.model.VillagerEntityModelMCA createAnimationModel(net.minecraft.client.renderer.entity.EntityRendererProvider$Context);
+    Code:
+         0: new           #8                  // class net/conczin/mca/client/model/VillagerEntityModelMCA
+         3: dup
+         4: aload_0
+         5: getstatic     #74                 // Field net/minecraft/client/model/geom/ModelLayers.PLAYER:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+         8: invokevirtual #80                 // Method net/minecraft/client/renderer/entity/EntityRendererProvider$Context.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+        11: invokespecial #86                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        14: areturn
+
+  private static net.conczin.mca.client.model.VillagerEntityModelMCA createVisibleModel(net.minecraft.client.model.geom.builders.MeshDefinition);
+    Code:
+         0: new           #8                  // class net/conczin/mca/client/model/VillagerEntityModelMCA
+         3: dup
+         4: aload_0
+         5: bipush        64
+         7: bipush        64
+         9: invokestatic  #89                 // Method net/minecraft/client/model/geom/builders/LayerDefinition.create:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;II)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+        12: invokevirtual #95                 // Method net/minecraft/client/model/geom/builders/LayerDefinition.bakeRoot:()Lnet/minecraft/client/model/geom/ModelPart;
+        15: invokespecial #86                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+        18: astore_1
+        19: aload_1
+        20: invokevirtual #99                 // Method net/conczin/mca/client/model/VillagerEntityModelMCA.receiveDeferredAnimationPose:()Lnet/conczin/mca/client/model/VillagerEntityBaseModelMCA;
+        23: pop
+        24: aload_1
+        25: areturn
+}

@@ -1,0 +1,22 @@
+Compiled from "MixinLivingEntityRenderer.java"
+public class net.conczin.mca.fabric.mixin.client.MixinLivingEntityRenderer<T extends net.minecraft.world.entity.LivingEntity> {
+  public net.conczin.mca.fabric.mixin.client.MixinLivingEntityRenderer();
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+
+  private void mca$injectExtractRenderState(T, net.minecraft.client.renderer.entity.state.LivingEntityRenderState, float, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+         0: aload_1
+         1: aload_2
+         2: invokestatic  #7                  // Method net/conczin/mca/client/render/VillagerRenderStateHooks.extract:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)V
+         5: return
+
+  private void mca$injectScaledBounds(T, net.minecraft.client.renderer.entity.state.LivingEntityRenderState, float, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+         0: aload_1
+         1: aload_2
+         2: invokestatic  #13                 // Method net/conczin/mca/client/render/VillagerRenderStateHooks.extractScaledBounds:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)V
+         5: return
+}

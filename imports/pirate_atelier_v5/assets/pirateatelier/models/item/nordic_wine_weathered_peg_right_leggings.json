@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/nordic_wine_weathered_peg_right_leggings"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pirateatelier:item/nordic_copper_weathered_normal_chestplate"
+  }
+}

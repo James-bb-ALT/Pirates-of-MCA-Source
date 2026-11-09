@@ -1,0 +1,25 @@
+{
+  "version": "9.0.0-alpha.12",
+  "frames": 18,
+  "files": {
+    "0000_HAT-POSE-idle.png": "494c61412a86bd61a401e6d39c4640b23a8f2ba5fdee548c1d6d17bc36e7478c",
+    "0001_HAT-POSE-head_turn.png": "25ce6e12e3dae49e885513be45026896cd3f4218adc63e6dd9ce22f1b3f8013c",
+    "0002_HAT-POSE-walk.png": "728ea9d6200cdd974c68c386858b76f87c6a2fb1746f4ebbc06e23e6cbee2ee0",
+    "0003_HAT-POSE-run.png": "2cbe08f73deff82b031af85001227535c587bc507026a3f2b676b08141fd2b81",
+    "0004_HAT-POSE-attack.png": "b7cd0d3e631b2a43bedcf5902d17554e4d36609c447e0422c86099c040a35570",
+    "0005_HAT-POSE-hurt.png": "9f87d27f6c02820c9f5a1a0a5c514454ae5aaaf5adab1b78a2241f44e9684cf0",
+    "0006_HAT-POSE-swim.png": "14595708f017323ad3cd7b498593189c8e8c4d4f6cbebb6926f5d5d5664c91bd",
+    "0007_HAT-FIT-swim-dry.png": "73fd5eaefa859a584fc91ed1ddfa86657c3d794c7812798ecc6bec2b80ef22a3",
+    "0008_HAT-POSE-sit.png": "b4c9b8a176355ea251e52a286400cb0efcca7cb60eaba4a8b677b75dba383898",
+    "0009_HAT-POSE-sleep.png": "e13e7992ef7a69c47bf6193dc6b0be96197cd6bf2f69fef83355f80379929b7f",
+    "0010_SASH-0-front.png": "0920c2af0ecc1b30f9fd6cceea8267cc4ff1ecfb41c71a21d594232fbdbd2162",
+    "0011_SASH-0-side.png": "99a0b4d8a15cd06d3bd6374d4a4c5013f71e5dc2c67b724268555e8e5d37f0d3",
+    "0012_SASH-0-back.png": "012a597f9ab93e42beae5d051765690b8c7030e08d7970087b429ed23b6cb621",
+    "0013_SASH-1-front.png": "8458b381693fe9b059ee3245829039d892d12185331ba16bf4a1ff2e58eb857b",
+    "0014_SASH-1-side.png": "4a70aefc9eaf59c0bdb2522a63f92090f84aa786a71528196b185fb5d525302f",
+    "0015_SASH-1-back.png": "920911b509ef0dd2056efeb3f8e165508c0c5872a08edf2f7d2213a0b9783a41",
+    "0016_EYE-after-chunk-reload.png": "a2f0fea46ad2945f0b81321463aa93f078b36aae9c5f39cffd0ceb0e01527cf3",
+    "0017_EYE-after-reopen.png": "52548e29c6dfc3d71cf0f1b6e96cc3db5de4aeeea319768452e14f9eece31443",
+    "execution.log": "c93587d8bf0ad676909dcf9f3035884b52621a960ee07be414e43119a84cce90"
+  }
+}

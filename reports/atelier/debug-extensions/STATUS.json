@@ -1,0 +1,6 @@
+{
+  "automation": "PASS",
+  "visual": "FAIL_MAGENTA_ATTACHMENT",
+  "cause": "attachment material outside item atlas; missing particle binding",
+  "jar_sha256": "25286599162202e92ae85d878ac56c67ceb2efbe3aa66011d2950847d1f4c31a"
+}

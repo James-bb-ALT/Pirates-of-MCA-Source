@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MutinyLifecycleTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-04T15:09:48.293Z" hostname="DESKTOP" time="0.019">
+  <properties/>
+  <testcase name="persuasionRequiresKnownCauseAndRespectsCooldownAcrossReload()" classname="MutinyLifecycleTest" time="0.007"/>
+  <testcase name="voluntaryDeparturePreservesCaptainUniquenessAndSafeExitUntilNewAttack()" classname="MutinyLifecycleTest" time="0.007"/>
+  <testcase name="failedMutinyHasResolutionAftermathAndCooldown()" classname="MutinyLifecycleTest" time="0.001"/>
+  <testcase name="discontentPrecedesConspiracy()" classname="MutinyLifecycleTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

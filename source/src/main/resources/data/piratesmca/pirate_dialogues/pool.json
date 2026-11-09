@@ -1,0 +1,1965 @@
+{
+  "formatVersion": 1,
+  "modId": "piratesmca",
+  "locales": [
+    "en_us",
+    "pt_br"
+  ],
+  "important": "CUSTOM CATALOG: requires Pirates of MCA integration. Not a native MCA datapack type.",
+  "selectionRules": {
+    "mustBePirate": true,
+    "temperamentPriority": [
+      "piratesmcaTemperament",
+      "mappedMcaPersonality",
+      "fallback"
+    ],
+    "fallbackTemperament": "gruff",
+    "avoidImmediateRepeats": 4
+  },
+  "lines": [
+    {
+      "id": "friendly.greeting.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.greeting.01"
+    },
+    {
+      "id": "friendly.greeting.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.greeting.02"
+    },
+    {
+      "id": "friendly.greeting.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.greeting.03"
+    },
+    {
+      "id": "friendly.greeting.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.greeting.04"
+    },
+    {
+      "id": "friendly.greeting.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.greeting.05"
+    },
+    {
+      "id": "friendly.greeting.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.greeting.06"
+    },
+    {
+      "id": "friendly.smalltalk.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.smalltalk.01"
+    },
+    {
+      "id": "friendly.smalltalk.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.smalltalk.02"
+    },
+    {
+      "id": "friendly.smalltalk.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.smalltalk.03"
+    },
+    {
+      "id": "friendly.smalltalk.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.smalltalk.04"
+    },
+    {
+      "id": "friendly.smalltalk.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.smalltalk.05"
+    },
+    {
+      "id": "friendly.smalltalk.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.smalltalk.06"
+    },
+    {
+      "id": "friendly.sea.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.sea.01"
+    },
+    {
+      "id": "friendly.sea.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.sea.02"
+    },
+    {
+      "id": "friendly.sea.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.sea.03"
+    },
+    {
+      "id": "friendly.sea.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.sea.04"
+    },
+    {
+      "id": "friendly.sea.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.sea.05"
+    },
+    {
+      "id": "friendly.sea.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.sea.06"
+    },
+    {
+      "id": "friendly.treasure.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.treasure.01"
+    },
+    {
+      "id": "friendly.treasure.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.treasure.02"
+    },
+    {
+      "id": "friendly.treasure.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.treasure.03"
+    },
+    {
+      "id": "friendly.treasure.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.treasure.04"
+    },
+    {
+      "id": "friendly.treasure.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.treasure.05"
+    },
+    {
+      "id": "friendly.treasure.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.treasure.06"
+    },
+    {
+      "id": "friendly.trade.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.trade.01"
+    },
+    {
+      "id": "friendly.trade.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.trade.02"
+    },
+    {
+      "id": "friendly.trade.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.trade.03"
+    },
+    {
+      "id": "friendly.trade.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.trade.04"
+    },
+    {
+      "id": "friendly.trade.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.trade.05"
+    },
+    {
+      "id": "friendly.trade.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.trade.06"
+    },
+    {
+      "id": "friendly.captain.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.captain.01"
+    },
+    {
+      "id": "friendly.captain.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.captain.02"
+    },
+    {
+      "id": "friendly.captain.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.captain.03"
+    },
+    {
+      "id": "friendly.captain.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.captain.04"
+    },
+    {
+      "id": "friendly.captain.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.captain.05"
+    },
+    {
+      "id": "friendly.captain.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.captain.06"
+    },
+    {
+      "id": "friendly.crew.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.crew.01"
+    },
+    {
+      "id": "friendly.crew.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.crew.02"
+    },
+    {
+      "id": "friendly.crew.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.crew.03"
+    },
+    {
+      "id": "friendly.crew.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.crew.04"
+    },
+    {
+      "id": "friendly.crew.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.crew.05"
+    },
+    {
+      "id": "friendly.crew.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.crew.06"
+    },
+    {
+      "id": "friendly.loyalty.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.loyalty.01"
+    },
+    {
+      "id": "friendly.loyalty.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.loyalty.02"
+    },
+    {
+      "id": "friendly.loyalty.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.loyalty.03"
+    },
+    {
+      "id": "friendly.loyalty.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.loyalty.04"
+    },
+    {
+      "id": "friendly.loyalty.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.loyalty.05"
+    },
+    {
+      "id": "friendly.loyalty.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.loyalty.06"
+    },
+    {
+      "id": "friendly.rumor.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.rumor.01"
+    },
+    {
+      "id": "friendly.rumor.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.rumor.02"
+    },
+    {
+      "id": "friendly.rumor.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.rumor.03"
+    },
+    {
+      "id": "friendly.rumor.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.rumor.04"
+    },
+    {
+      "id": "friendly.rumor.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.rumor.05"
+    },
+    {
+      "id": "friendly.rumor.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.rumor.06"
+    },
+    {
+      "id": "friendly.danger.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.danger.01"
+    },
+    {
+      "id": "friendly.danger.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.danger.02"
+    },
+    {
+      "id": "friendly.danger.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.danger.03"
+    },
+    {
+      "id": "friendly.danger.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.danger.04"
+    },
+    {
+      "id": "friendly.danger.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.danger.05"
+    },
+    {
+      "id": "friendly.danger.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.danger.06"
+    },
+    {
+      "id": "friendly.gift.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.gift.01"
+    },
+    {
+      "id": "friendly.gift.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.gift.02"
+    },
+    {
+      "id": "friendly.gift.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.gift.03"
+    },
+    {
+      "id": "friendly.gift.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.gift.04"
+    },
+    {
+      "id": "friendly.gift.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.gift.05"
+    },
+    {
+      "id": "friendly.gift.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.gift.06"
+    },
+    {
+      "id": "friendly.farewell.01",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.farewell.01"
+    },
+    {
+      "id": "friendly.farewell.02",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.farewell.02"
+    },
+    {
+      "id": "friendly.farewell.03",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.farewell.03"
+    },
+    {
+      "id": "friendly.farewell.04",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.farewell.04"
+    },
+    {
+      "id": "friendly.farewell.05",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.farewell.05"
+    },
+    {
+      "id": "friendly.farewell.06",
+      "pirateOnly": true,
+      "temperament": "friendly",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.friendly.farewell.06"
+    },
+    {
+      "id": "gruff.greeting.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.greeting.01"
+    },
+    {
+      "id": "gruff.greeting.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.greeting.02"
+    },
+    {
+      "id": "gruff.greeting.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.greeting.03"
+    },
+    {
+      "id": "gruff.greeting.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.greeting.04"
+    },
+    {
+      "id": "gruff.greeting.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.greeting.05"
+    },
+    {
+      "id": "gruff.greeting.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.greeting.06"
+    },
+    {
+      "id": "gruff.smalltalk.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.smalltalk.01"
+    },
+    {
+      "id": "gruff.smalltalk.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.smalltalk.02"
+    },
+    {
+      "id": "gruff.smalltalk.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.smalltalk.03"
+    },
+    {
+      "id": "gruff.smalltalk.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.smalltalk.04"
+    },
+    {
+      "id": "gruff.smalltalk.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.smalltalk.05"
+    },
+    {
+      "id": "gruff.smalltalk.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.smalltalk.06"
+    },
+    {
+      "id": "gruff.sea.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.sea.01"
+    },
+    {
+      "id": "gruff.sea.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.sea.02"
+    },
+    {
+      "id": "gruff.sea.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.sea.03"
+    },
+    {
+      "id": "gruff.sea.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.sea.04"
+    },
+    {
+      "id": "gruff.sea.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.sea.05"
+    },
+    {
+      "id": "gruff.sea.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.sea.06"
+    },
+    {
+      "id": "gruff.treasure.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.treasure.01"
+    },
+    {
+      "id": "gruff.treasure.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.treasure.02"
+    },
+    {
+      "id": "gruff.treasure.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.treasure.03"
+    },
+    {
+      "id": "gruff.treasure.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.treasure.04"
+    },
+    {
+      "id": "gruff.treasure.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.treasure.05"
+    },
+    {
+      "id": "gruff.treasure.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.treasure.06"
+    },
+    {
+      "id": "gruff.trade.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.trade.01"
+    },
+    {
+      "id": "gruff.trade.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.trade.02"
+    },
+    {
+      "id": "gruff.trade.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.trade.03"
+    },
+    {
+      "id": "gruff.trade.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.trade.04"
+    },
+    {
+      "id": "gruff.trade.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.trade.05"
+    },
+    {
+      "id": "gruff.trade.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.trade.06"
+    },
+    {
+      "id": "gruff.captain.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.captain.01"
+    },
+    {
+      "id": "gruff.captain.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.captain.02"
+    },
+    {
+      "id": "gruff.captain.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.captain.03"
+    },
+    {
+      "id": "gruff.captain.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.captain.04"
+    },
+    {
+      "id": "gruff.captain.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.captain.05"
+    },
+    {
+      "id": "gruff.captain.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.captain.06"
+    },
+    {
+      "id": "gruff.crew.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.crew.01"
+    },
+    {
+      "id": "gruff.crew.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.crew.02"
+    },
+    {
+      "id": "gruff.crew.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.crew.03"
+    },
+    {
+      "id": "gruff.crew.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.crew.04"
+    },
+    {
+      "id": "gruff.crew.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.crew.05"
+    },
+    {
+      "id": "gruff.crew.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.crew.06"
+    },
+    {
+      "id": "gruff.loyalty.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.loyalty.01"
+    },
+    {
+      "id": "gruff.loyalty.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.loyalty.02"
+    },
+    {
+      "id": "gruff.loyalty.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.loyalty.03"
+    },
+    {
+      "id": "gruff.loyalty.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.loyalty.04"
+    },
+    {
+      "id": "gruff.loyalty.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.loyalty.05"
+    },
+    {
+      "id": "gruff.loyalty.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.loyalty.06"
+    },
+    {
+      "id": "gruff.rumor.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.rumor.01"
+    },
+    {
+      "id": "gruff.rumor.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.rumor.02"
+    },
+    {
+      "id": "gruff.rumor.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.rumor.03"
+    },
+    {
+      "id": "gruff.rumor.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.rumor.04"
+    },
+    {
+      "id": "gruff.rumor.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.rumor.05"
+    },
+    {
+      "id": "gruff.rumor.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.rumor.06"
+    },
+    {
+      "id": "gruff.danger.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.danger.01"
+    },
+    {
+      "id": "gruff.danger.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.danger.02"
+    },
+    {
+      "id": "gruff.danger.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.danger.03"
+    },
+    {
+      "id": "gruff.danger.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.danger.04"
+    },
+    {
+      "id": "gruff.danger.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.danger.05"
+    },
+    {
+      "id": "gruff.danger.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.danger.06"
+    },
+    {
+      "id": "gruff.gift.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.gift.01"
+    },
+    {
+      "id": "gruff.gift.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.gift.02"
+    },
+    {
+      "id": "gruff.gift.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.gift.03"
+    },
+    {
+      "id": "gruff.gift.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.gift.04"
+    },
+    {
+      "id": "gruff.gift.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.gift.05"
+    },
+    {
+      "id": "gruff.gift.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.gift.06"
+    },
+    {
+      "id": "gruff.farewell.01",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.farewell.01"
+    },
+    {
+      "id": "gruff.farewell.02",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.farewell.02"
+    },
+    {
+      "id": "gruff.farewell.03",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.farewell.03"
+    },
+    {
+      "id": "gruff.farewell.04",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.farewell.04"
+    },
+    {
+      "id": "gruff.farewell.05",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.farewell.05"
+    },
+    {
+      "id": "gruff.farewell.06",
+      "pirateOnly": true,
+      "temperament": "gruff",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.gruff.farewell.06"
+    },
+    {
+      "id": "hostile.greeting.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.greeting.01"
+    },
+    {
+      "id": "hostile.greeting.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.greeting.02"
+    },
+    {
+      "id": "hostile.greeting.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.greeting.03"
+    },
+    {
+      "id": "hostile.greeting.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.greeting.04"
+    },
+    {
+      "id": "hostile.greeting.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.greeting.05"
+    },
+    {
+      "id": "hostile.greeting.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "greeting",
+      "trigger": "interact",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.greeting.06"
+    },
+    {
+      "id": "hostile.smalltalk.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.smalltalk.01"
+    },
+    {
+      "id": "hostile.smalltalk.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.smalltalk.02"
+    },
+    {
+      "id": "hostile.smalltalk.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.smalltalk.03"
+    },
+    {
+      "id": "hostile.smalltalk.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.smalltalk.04"
+    },
+    {
+      "id": "hostile.smalltalk.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.smalltalk.05"
+    },
+    {
+      "id": "hostile.smalltalk.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "smalltalk",
+      "trigger": "chat",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.smalltalk.06"
+    },
+    {
+      "id": "hostile.sea.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.sea.01"
+    },
+    {
+      "id": "hostile.sea.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.sea.02"
+    },
+    {
+      "id": "hostile.sea.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.sea.03"
+    },
+    {
+      "id": "hostile.sea.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.sea.04"
+    },
+    {
+      "id": "hostile.sea.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.sea.05"
+    },
+    {
+      "id": "hostile.sea.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "sea",
+      "trigger": "chat_sea",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.sea.06"
+    },
+    {
+      "id": "hostile.treasure.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.treasure.01"
+    },
+    {
+      "id": "hostile.treasure.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.treasure.02"
+    },
+    {
+      "id": "hostile.treasure.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.treasure.03"
+    },
+    {
+      "id": "hostile.treasure.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.treasure.04"
+    },
+    {
+      "id": "hostile.treasure.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.treasure.05"
+    },
+    {
+      "id": "hostile.treasure.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "treasure",
+      "trigger": "chat_treasure",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.treasure.06"
+    },
+    {
+      "id": "hostile.trade.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.trade.01"
+    },
+    {
+      "id": "hostile.trade.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.trade.02"
+    },
+    {
+      "id": "hostile.trade.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.trade.03"
+    },
+    {
+      "id": "hostile.trade.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.trade.04"
+    },
+    {
+      "id": "hostile.trade.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.trade.05"
+    },
+    {
+      "id": "hostile.trade.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "trade",
+      "trigger": "trade",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.trade.06"
+    },
+    {
+      "id": "hostile.captain.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.captain.01"
+    },
+    {
+      "id": "hostile.captain.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.captain.02"
+    },
+    {
+      "id": "hostile.captain.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.captain.03"
+    },
+    {
+      "id": "hostile.captain.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.captain.04"
+    },
+    {
+      "id": "hostile.captain.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.captain.05"
+    },
+    {
+      "id": "hostile.captain.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "captain",
+      "trigger": "captain_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.captain.06"
+    },
+    {
+      "id": "hostile.crew.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.crew.01"
+    },
+    {
+      "id": "hostile.crew.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.crew.02"
+    },
+    {
+      "id": "hostile.crew.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.crew.03"
+    },
+    {
+      "id": "hostile.crew.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.crew.04"
+    },
+    {
+      "id": "hostile.crew.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.crew.05"
+    },
+    {
+      "id": "hostile.crew.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "crew",
+      "trigger": "crew_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.crew.06"
+    },
+    {
+      "id": "hostile.loyalty.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.loyalty.01"
+    },
+    {
+      "id": "hostile.loyalty.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.loyalty.02"
+    },
+    {
+      "id": "hostile.loyalty.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.loyalty.03"
+    },
+    {
+      "id": "hostile.loyalty.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.loyalty.04"
+    },
+    {
+      "id": "hostile.loyalty.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.loyalty.05"
+    },
+    {
+      "id": "hostile.loyalty.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "loyalty",
+      "trigger": "loyalty_mention",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.loyalty.06"
+    },
+    {
+      "id": "hostile.rumor.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.rumor.01"
+    },
+    {
+      "id": "hostile.rumor.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.rumor.02"
+    },
+    {
+      "id": "hostile.rumor.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.rumor.03"
+    },
+    {
+      "id": "hostile.rumor.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.rumor.04"
+    },
+    {
+      "id": "hostile.rumor.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.rumor.05"
+    },
+    {
+      "id": "hostile.rumor.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "rumor",
+      "trigger": "rumor",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.rumor.06"
+    },
+    {
+      "id": "hostile.danger.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.danger.01"
+    },
+    {
+      "id": "hostile.danger.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.danger.02"
+    },
+    {
+      "id": "hostile.danger.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.danger.03"
+    },
+    {
+      "id": "hostile.danger.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.danger.04"
+    },
+    {
+      "id": "hostile.danger.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.danger.05"
+    },
+    {
+      "id": "hostile.danger.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "danger",
+      "trigger": "danger",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.danger.06"
+    },
+    {
+      "id": "hostile.gift.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.gift.01"
+    },
+    {
+      "id": "hostile.gift.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.gift.02"
+    },
+    {
+      "id": "hostile.gift.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.gift.03"
+    },
+    {
+      "id": "hostile.gift.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.gift.04"
+    },
+    {
+      "id": "hostile.gift.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.gift.05"
+    },
+    {
+      "id": "hostile.gift.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "gift",
+      "trigger": "gift",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.gift.06"
+    },
+    {
+      "id": "hostile.farewell.01",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.farewell.01"
+    },
+    {
+      "id": "hostile.farewell.02",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.farewell.02"
+    },
+    {
+      "id": "hostile.farewell.03",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.farewell.03"
+    },
+    {
+      "id": "hostile.farewell.04",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.farewell.04"
+    },
+    {
+      "id": "hostile.farewell.05",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.farewell.05"
+    },
+    {
+      "id": "hostile.farewell.06",
+      "pirateOnly": true,
+      "temperament": "hostile",
+      "context": "farewell",
+      "trigger": "farewell",
+      "weight": 1,
+      "translationKey": "piratesmca.dialogue.hostile.farewell.06"
+    }
+  ]
+}

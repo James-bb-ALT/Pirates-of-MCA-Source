@@ -1,0 +1,49 @@
+{
+  "version": "11.1.0-alpha.16",
+  "jar_sha256": "af30c6fd7a4920a0fe5a4dbc57a8bcf2def35efcbe225b6257889e246a6205c6",
+  "ab": [
+    {
+      "mode": "fa-wide-on",
+      "status": "PASS_EXECUTED_FIXTURES",
+      "log": "reconstruction-ab-wide-on-retry.log",
+      "jar_sha256": "af30c6fd7a4920a0fe5a4dbc57a8bcf2def35efcbe225b6257889e246a6205c6",
+      "npc_poses": 16,
+      "player_poses": 9
+    },
+    {
+      "mode": "fa-wide-off",
+      "status": "PASS_EXECUTED_FIXTURES",
+      "log": "reconstruction-ab-fa-wide-off.log",
+      "jar_sha256": "af30c6fd7a4920a0fe5a4dbc57a8bcf2def35efcbe225b6257889e246a6205c6",
+      "npc_poses": 16,
+      "player_poses": 9
+    },
+    {
+      "mode": "fa-slim-on",
+      "status": "PASS_EXECUTED_FIXTURES",
+      "log": "reconstruction-ab-fa-slim-on.log",
+      "jar_sha256": "af30c6fd7a4920a0fe5a4dbc57a8bcf2def35efcbe225b6257889e246a6205c6",
+      "npc_poses": 16,
+      "player_poses": 9
+    },
+    {
+      "mode": "fa-slim-off",
+      "status": "PASS_EXECUTED_FIXTURES",
+      "log": "reconstruction-ab-fa-slim-off.log",
+      "jar_sha256": "af30c6fd7a4920a0fe5a4dbc57a8bcf2def35efcbe225b6257889e246a6205c6",
+      "npc_poses": 16,
+      "player_poses": 9
+    }
+  ],
+  "junit_tests": 35,
+  "existing_python_tests": 9,
+  "catalogue_captures": 3413,
+  "resolved_armor_pieces": 4349,
+  "resolved_skins": 20,
+  "backend_reuse": {
+    "unchanged_entries": 131,
+    "tested_jar_sha256": "18e790c3ded24113aa5c6551416220d9947b104f11fee556103119275758db3c",
+    "note": "78 GameTests ran on this earlier candidate. Final client-only delta verified byte-for-byte against its backend."
+  },
+  "universal_visual_approval": false
+}

@@ -1,0 +1,639 @@
+{
+  "isolated": true,
+  "headless": true,
+  "personal_profile_used": false,
+  "results": [
+    {
+      "version": "5.2.2",
+      "name": "fisherman_teal_pristine_peg_left",
+      "format": "free",
+      "cubes": [
+        {
+          "name": "helmet__head__0",
+          "from": [
+            -4.75,
+            30.2,
+            -4.7
+          ],
+          "to": [
+            4.75,
+            32.5,
+            4.7
+          ]
+        },
+        {
+          "name": "helmet__head__1",
+          "from": [
+            -4.8,
+            29.75,
+            -4.7
+          ],
+          "to": [
+            4.8,
+            30.6,
+            4.7
+          ]
+        },
+        {
+          "name": "helmet__head__2",
+          "from": [
+            3.9,
+            25.6,
+            -3.7
+          ],
+          "to": [
+            6.3,
+            31.3,
+            -2.4
+          ]
+        },
+        {
+          "name": "helmet__head__3",
+          "from": [
+            4.2,
+            27.1,
+            -3
+          ],
+          "to": [
+            6.9,
+            28.1,
+            -2
+          ]
+        },
+        {
+          "name": "chestplate__body__0",
+          "from": [
+            -4.6,
+            11.6,
+            -2.65
+          ],
+          "to": [
+            4.6,
+            24,
+            2.65
+          ]
+        },
+        {
+          "name": "chestplate__body__1",
+          "from": [
+            -4.8,
+            22.6,
+            -2.7499999999999996
+          ],
+          "to": [
+            4.8,
+            24.1,
+            2.85
+          ]
+        },
+        {
+          "name": "chestplate__body__2",
+          "from": [
+            -3.7,
+            13.4,
+            2.45
+          ],
+          "to": [
+            -1.5,
+            23,
+            3.2
+          ]
+        },
+        {
+          "name": "chestplate__body__3",
+          "from": [
+            1.5,
+            13.4,
+            2.45
+          ],
+          "to": [
+            3.7,
+            23,
+            3.2
+          ]
+        },
+        {
+          "name": "chestplate__body__4",
+          "from": [
+            -0.25,
+            13.4,
+            2.69
+          ],
+          "to": [
+            0.4,
+            22,
+            3.34
+          ]
+        },
+        {
+          "name": "chestplate__body__5",
+          "from": [
+            -0.8,
+            19.95,
+            2.8499999999999996
+          ],
+          "to": [
+            0,
+            20.8,
+            3.55
+          ]
+        },
+        {
+          "name": "chestplate__body__6",
+          "from": [
+            -0.8,
+            17.049999999999997,
+            2.8499999999999996
+          ],
+          "to": [
+            0,
+            17.9,
+            3.55
+          ]
+        },
+        {
+          "name": "chestplate__body__7",
+          "from": [
+            -0.8,
+            14.15,
+            2.8499999999999996
+          ],
+          "to": [
+            0,
+            15,
+            3.55
+          ]
+        },
+        {
+          "name": "chestplate__body__8",
+          "from": [
+            -4.8,
+            12.5,
+            -2.6999999999999997
+          ],
+          "to": [
+            4.8,
+            13.6,
+            3.1
+          ]
+        },
+        {
+          "name": "chestplate__body__9",
+          "from": [
+            -1.1,
+            12.129999999999999,
+            2.9
+          ],
+          "to": [
+            1.1,
+            13.78,
+            3.8
+          ]
+        },
+        {
+          "name": "chestplate__body__10",
+          "from": [
+            -2,
+            12.6,
+            2.95
+          ],
+          "to": [
+            -1.35,
+            18,
+            3.5
+          ]
+        },
+        {
+          "name": "chestplate__body__11",
+          "from": [
+            0,
+            12.6,
+            2.95
+          ],
+          "to": [
+            0.65,
+            18,
+            3.5
+          ]
+        },
+        {
+          "name": "chestplate__body__12",
+          "from": [
+            2,
+            12.6,
+            2.95
+          ],
+          "to": [
+            2.65,
+            18,
+            3.5
+          ]
+        },
+        {
+          "name": "chestplate__right_arm__0",
+          "from": [
+            -8.45,
+            12.3,
+            -2.45
+          ],
+          "to": [
+            -3.549999999999999,
+            24.1,
+            2.45
+          ]
+        },
+        {
+          "name": "chestplate__right_arm__1",
+          "from": [
+            -8.8,
+            21.049999999999997,
+            -2.85
+          ],
+          "to": [
+            -3.200000000000001,
+            24.65,
+            2.85
+          ]
+        },
+        {
+          "name": "chestplate__right_arm__2",
+          "from": [
+            -8.72,
+            11.45,
+            -2.65
+          ],
+          "to": [
+            -3.2700000000000005,
+            13.1,
+            2.6
+          ]
+        },
+        {
+          "name": "chestplate__left_arm__0",
+          "from": [
+            3.55,
+            12.3,
+            -2.45
+          ],
+          "to": [
+            8.45,
+            24.1,
+            2.45
+          ]
+        },
+        {
+          "name": "chestplate__left_arm__1",
+          "from": [
+            3.2,
+            21.049999999999997,
+            -2.85
+          ],
+          "to": [
+            8.8,
+            24.65,
+            2.85
+          ]
+        },
+        {
+          "name": "chestplate__left_arm__2",
+          "from": [
+            3.28,
+            11.45,
+            -2.65
+          ],
+          "to": [
+            8.73,
+            13.1,
+            2.6
+          ]
+        },
+        {
+          "name": "leggings__body__0",
+          "from": [
+            -4.35,
+            11.9,
+            -2.4
+          ],
+          "to": [
+            4.35,
+            14.8,
+            2.4
+          ]
+        },
+        {
+          "name": "leggings__body__1",
+          "from": [
+            -4.55,
+            13.2,
+            -2.7
+          ],
+          "to": [
+            4.55,
+            14,
+            2.7
+          ]
+        },
+        {
+          "name": "leggings__body__2",
+          "from": [
+            -0.75,
+            12.899999999999999,
+            2.1
+          ],
+          "to": [
+            0.75,
+            14.2,
+            3.1
+          ]
+        },
+        {
+          "name": "leggings__right_leg__0",
+          "from": [
+            -4.3,
+            3.1999999999999993,
+            -2.35
+          ],
+          "to": [
+            0.2999999999999998,
+            12,
+            2.35
+          ]
+        },
+        {
+          "name": "leggings__right_leg__1",
+          "from": [
+            -4.4,
+            10.3,
+            -2.5
+          ],
+          "to": [
+            0.39999999999999947,
+            10.9,
+            2.5
+          ]
+        },
+        {
+          "name": "leggings__right_leg__2",
+          "from": [
+            -4.42,
+            2.7,
+            -2.5
+          ],
+          "to": [
+            0.4299999999999997,
+            4.7,
+            2.5
+          ]
+        },
+        {
+          "name": "leggings__right_leg__3",
+          "from": [
+            -4.3,
+            2.3999999999999995,
+            -2.45
+          ],
+          "to": [
+            0.2999999999999998,
+            3.0999999999999996,
+            2.45
+          ]
+        },
+        {
+          "name": "leggings__left_leg__0",
+          "from": [
+            -0.2999999999999998,
+            5.7,
+            -2.35
+          ],
+          "to": [
+            4.3,
+            12,
+            2.35
+          ]
+        },
+        {
+          "name": "leggings__left_leg__1",
+          "from": [
+            -0.3999999999999999,
+            10.3,
+            -2.5
+          ],
+          "to": [
+            4.4,
+            10.9,
+            2.5
+          ]
+        },
+        {
+          "name": "leggings__left_leg__peg_2",
+          "from": [
+            -0.25,
+            4.178719999999999,
+            -2.45
+          ],
+          "to": [
+            4.25,
+            5.74,
+            2.45
+          ]
+        },
+        {
+          "name": "leggings__left_leg__peg_3",
+          "from": [
+            0.8500000000000001,
+            2.938880000000001,
+            -1.2500000000000002
+          ],
+          "to": [
+            3.15,
+            4.270560000000001,
+            0.95
+          ]
+        },
+        {
+          "name": "leggings__left_leg__peg_4",
+          "from": [
+            1.05,
+            0,
+            -0.8699999999999999
+          ],
+          "to": [
+            2.95,
+            3.3521600000000014,
+            0.78
+          ]
+        },
+        {
+          "name": "leggings__left_leg__peg_5",
+          "from": [
+            1.25,
+            0.5510400000000004,
+            -0.8
+          ],
+          "to": [
+            2.75,
+            1.69904,
+            0.8
+          ]
+        },
+        {
+          "name": "boots__right_leg__0",
+          "from": [
+            -4.42,
+            0.2999999999999998,
+            -2.43
+          ],
+          "to": [
+            0.41999999999999993,
+            5.3,
+            2.43
+          ]
+        },
+        {
+          "name": "boots__right_leg__1",
+          "from": [
+            -4.48,
+            3.7,
+            -2.52
+          ],
+          "to": [
+            0.47999999999999954,
+            5,
+            2.48
+          ]
+        },
+        {
+          "name": "boots__right_leg__2",
+          "from": [
+            -4.529999999999999,
+            0.10000000000000075,
+            -3.05
+          ],
+          "to": [
+            0.5200000000000005,
+            1.8000000000000007,
+            3.25
+          ]
+        },
+        {
+          "name": "boots__right_leg__3",
+          "from": [
+            -4.55,
+            1.75,
+            -2.9
+          ],
+          "to": [
+            0.5499999999999998,
+            2.5,
+            2.9
+          ]
+        },
+        {
+          "name": "boots__right_leg__4",
+          "from": [
+            -2.65,
+            3.4000000000000004,
+            2.17
+          ],
+          "to": [
+            -1.3499999999999999,
+            4.4,
+            2.72
+          ]
+        },
+        {
+          "name": "boots__left_leg__peg_0",
+          "from": [
+            1,
+            1.8827200000000008,
+            -1
+          ],
+          "to": [
+            3,
+            2.801120000000001,
+            1
+          ]
+        },
+        {
+          "name": "boots__left_leg__peg_1",
+          "from": [
+            0.8500000000000001,
+            1.5153600000000012,
+            -1.1999999999999997
+          ],
+          "to": [
+            3.15,
+            1.9745600000000003,
+            1.1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "fisherman_teal_pristine_peg_left.png",
+          "width": 128,
+          "height": 128,
+          "error": 0
+        }
+      ],
+      "webgl": true,
+      "source": "models/blockbench/wardrobe/pirateatelier/fisherman_teal_pristine_peg_left.bbmodel",
+      "status": "PASS"
+    }
+  ],
+  "page_errors": [],
+  "post_requests": [
+    {
+      "method": "POST",
+      "url": "https://blckbn.ch/api/event/new_installation",
+      "blocked": true
+    },
+    {
+      "method": "POST",
+      "url": "https://web.blockbench.net/cdn-cgi/rum?",
+      "blocked": true
+    }
+  ],
+  "console": [
+    {
+      "type": "log",
+      "text": "Three.js r129"
+    },
+    {
+      "type": "log",
+      "text": "%cBlockbench 5.2.2 Web (Electron) border: 2px solid #3e90ff; padding: 4px 8px; font-size: 1.2em;"
+    },
+    {
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright"
+    },
+    {
+      "type": "log",
+      "text": "All plugin installations resolved"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xb6c033d9500]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xb6c033d9500]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xb6c033d9500]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xb6c033d9500]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ]
+}

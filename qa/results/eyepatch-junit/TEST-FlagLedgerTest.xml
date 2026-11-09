@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FlagLedgerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-04T14:35:12.794Z" hostname="DESKTOP" time="0.014">
+  <properties/>
+  <testcase name="volunteeringRequiresConsentAndLivingAdultFreeMember()" classname="FlagLedgerTest" time="0.002"/>
+  <testcase name="twoCrewsCannotClaimTheSameFlagAndCorruptDuplicatesFailClosed()" classname="FlagLedgerTest" time="0.008"/>
+  <testcase name="onlyDefinitivePlayerCaptainCanBindFlag()" classname="FlagLedgerTest" time="0.002"/>
+  <testcase name="bindingAndRelocationPreserveCrewAcrossLoad()" classname="FlagLedgerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

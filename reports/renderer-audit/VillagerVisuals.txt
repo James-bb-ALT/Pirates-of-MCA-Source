@@ -1,0 +1,942 @@
+Compiled from "VillagerVisuals.java"
+public final class net.conczin.mca.client.render.VillagerVisuals extends java.lang.Record {
+  private final java.lang.String genderDataName;
+
+  private final boolean female;
+
+  private final boolean baby;
+
+  private final float breastSize;
+
+  private final net.conczin.mca.client.render.VillagerVisuals$Dimensions dimensions;
+
+  private final float rawHorizontalScaleFactor;
+
+  private final float rawVerticalScaleFactor;
+
+  private final boolean burned;
+
+  private final boolean albinism;
+
+  private final boolean rainbowHair;
+
+  private final boolean rainbowEyes;
+
+  private final boolean heterochromia;
+
+  private final float skinGene;
+
+  private final float melaninGene;
+
+  private final float hemoglobinGene;
+
+  private final float faceGene;
+
+  private final float eumelaninGene;
+
+  private final float pheomelaninGene;
+
+  private final float eyeBrightnessGene;
+
+  private final java.lang.String skin;
+
+  private final java.lang.String hairBase;
+
+  private final java.lang.String hairBangs;
+
+  private final java.lang.String hairBack;
+
+  private final java.lang.String hairFront;
+
+  private final java.lang.String hairExtra;
+
+  private final int skinDye;
+
+  private final int hairDye;
+
+  private final int eyeDye;
+
+  private final int eyeLeftDye;
+
+  private final java.lang.String clothes;
+
+  private final float infectionProgress;
+
+  private final int tickCount;
+
+  private final int entityId;
+
+  private final boolean sleeping;
+
+  private final boolean deadOrDying;
+
+  private static final int MIN_BLINK_INTERVAL_A;
+
+  private static final int MIN_BLINK_INTERVAL_B;
+
+  private static final int BLINK_INTERVAL_VARIANCE;
+
+  private static final int MIN_BLINK_DURATION;
+
+  private static final int BLINK_DURATION_VARIANCE;
+
+  private static final int NATURAL_DYE;
+
+  private static final int ALBINISM_EYE_COLOR;
+
+  private static final int BLUE_EYE_COLOR;
+
+  private static final int GREEN_EYE_COLOR;
+
+  private static final int HAZEL_EYE_COLOR;
+
+  private static final int BROWN_EYE_COLOR;
+
+  public net.conczin.mca.client.render.VillagerVisuals(java.lang.String, boolean, boolean, float, net.conczin.mca.client.render.VillagerVisuals$Dimensions, float, float, boolean, boolean, boolean, boolean, boolean, float, float, float, float, float, float, float, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, int, int, java.lang.String, float, int, int, boolean, boolean);
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #7                  // Field genderDataName:Ljava/lang/String;
+         9: aload_0
+        10: iload_2
+        11: putfield      #13                 // Field female:Z
+        14: aload_0
+        15: iload_3
+        16: putfield      #17                 // Field baby:Z
+        19: aload_0
+        20: fload         4
+        22: putfield      #20                 // Field breastSize:F
+        25: aload_0
+        26: aload         5
+        28: putfield      #24                 // Field dimensions:Lnet/conczin/mca/client/render/VillagerVisuals$Dimensions;
+        31: aload_0
+        32: fload         6
+        34: putfield      #28                 // Field rawHorizontalScaleFactor:F
+        37: aload_0
+        38: fload         7
+        40: putfield      #31                 // Field rawVerticalScaleFactor:F
+        43: aload_0
+        44: iload         8
+        46: putfield      #34                 // Field burned:Z
+        49: aload_0
+        50: iload         9
+        52: putfield      #37                 // Field albinism:Z
+        55: aload_0
+        56: iload         10
+        58: putfield      #40                 // Field rainbowHair:Z
+        61: aload_0
+        62: iload         11
+        64: putfield      #43                 // Field rainbowEyes:Z
+        67: aload_0
+        68: iload         12
+        70: putfield      #46                 // Field heterochromia:Z
+        73: aload_0
+        74: fload         13
+        76: putfield      #49                 // Field skinGene:F
+        79: aload_0
+        80: fload         14
+        82: putfield      #52                 // Field melaninGene:F
+        85: aload_0
+        86: fload         15
+        88: putfield      #55                 // Field hemoglobinGene:F
+        91: aload_0
+        92: fload         16
+        94: putfield      #58                 // Field faceGene:F
+        97: aload_0
+        98: fload         17
+       100: putfield      #61                 // Field eumelaninGene:F
+       103: aload_0
+       104: fload         18
+       106: putfield      #64                 // Field pheomelaninGene:F
+       109: aload_0
+       110: fload         19
+       112: putfield      #67                 // Field eyeBrightnessGene:F
+       115: aload_0
+       116: aload         20
+       118: putfield      #70                 // Field skin:Ljava/lang/String;
+       121: aload_0
+       122: aload         21
+       124: putfield      #73                 // Field hairBase:Ljava/lang/String;
+       127: aload_0
+       128: aload         22
+       130: putfield      #76                 // Field hairBangs:Ljava/lang/String;
+       133: aload_0
+       134: aload         23
+       136: putfield      #79                 // Field hairBack:Ljava/lang/String;
+       139: aload_0
+       140: aload         24
+       142: putfield      #82                 // Field hairFront:Ljava/lang/String;
+       145: aload_0
+       146: aload         25
+       148: putfield      #85                 // Field hairExtra:Ljava/lang/String;
+       151: aload_0
+       152: iload         26
+       154: putfield      #88                 // Field skinDye:I
+       157: aload_0
+       158: iload         27
+       160: putfield      #92                 // Field hairDye:I
+       163: aload_0
+       164: iload         28
+       166: putfield      #95                 // Field eyeDye:I
+       169: aload_0
+       170: iload         29
+       172: putfield      #98                 // Field eyeLeftDye:I
+       175: aload_0
+       176: aload         30
+       178: putfield      #101                // Field clothes:Ljava/lang/String;
+       181: aload_0
+       182: fload         31
+       184: putfield      #104                // Field infectionProgress:F
+       187: aload_0
+       188: iload         32
+       190: putfield      #107                // Field tickCount:I
+       193: aload_0
+       194: iload         33
+       196: putfield      #110                // Field entityId:I
+       199: aload_0
+       200: iload         34
+       202: putfield      #113                // Field sleeping:Z
+       205: aload_0
+       206: iload         35
+       208: putfield      #116                // Field deadOrDying:Z
+       211: return
+
+  public static net.conczin.mca.client.render.VillagerVisuals require(java.lang.Object);
+    Code:
+         0: aload_0
+         1: invokestatic  #119                // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.require:(Ljava/lang/Object;)Lnet/conczin/mca/client/render/VillagerStateHolder;
+         4: invokeinterface #125,  1          // InterfaceMethod net/conczin/mca/client/render/VillagerStateHolder.mca$getVisuals:()Lnet/conczin/mca/client/render/VillagerVisuals;
+         9: astore_1
+        10: aload_1
+        11: ifnonnull     24
+        14: new           #129                // class java/lang/IllegalStateException
+        17: dup
+        18: ldc           #131                // String No villager visuals available for render state
+        20: invokespecial #133                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+        23: athrow
+        24: aload_1
+        25: areturn
+
+  public static net.conczin.mca.client.render.VillagerVisuals capture(net.conczin.mca.entity.VillagerLike<?>);
+    Code:
+         0: aload_0
+         1: aload_0
+         2: invokeinterface #136,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.asEntity:()Lnet/minecraft/world/entity/Mob;
+         7: invokestatic  #142                // Method capture:(Lnet/conczin/mca/entity/VillagerLike;Lnet/minecraft/world/entity/LivingEntity;)Lnet/conczin/mca/client/render/VillagerVisuals;
+        10: areturn
+
+  public static net.conczin.mca.client.render.VillagerVisuals capture(net.conczin.mca.entity.VillagerLike<?>, net.minecraft.world.entity.LivingEntity);
+    Code:
+         0: aload_0
+         1: invokeinterface #146,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getGenetics:()Lnet/conczin/mca/entity/ai/Genetics;
+         6: astore_2
+         7: aload_0
+         8: invokeinterface #150,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getTraits:()Lnet/conczin/mca/entity/ai/Traits;
+        13: astore_3
+        14: aload_0
+        15: invokeinterface #136,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.asEntity:()Lnet/minecraft/world/entity/Mob;
+        20: astore        4
+        22: aload_2
+        23: invokevirtual #154                // Method net/conczin/mca/entity/ai/Genetics.getGender:()Lnet/conczin/mca/entity/ai/relationship/Gender;
+        26: astore        5
+        28: aload_0
+        29: invokeinterface #160,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getAgeState:()Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        34: astore        6
+        36: aload         6
+        38: getstatic     #164                // Field net/conczin/mca/entity/ai/relationship/AgeState.UNASSIGNED:Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        41: if_acmpne     58
+        44: aload         4
+        46: invokevirtual #170                // Method net/minecraft/world/entity/LivingEntity.isBaby:()Z
+        49: ifeq          58
+        52: getstatic     #176                // Field net/conczin/mca/entity/ai/relationship/AgeState.TODDLER:Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        55: goto          64
+        58: aload_0
+        59: invokeinterface #179,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getVillagerDimensions:()Lnet/conczin/mca/entity/ai/relationship/VillagerDimensions;
+        64: astore        7
+        66: aload_2
+        67: invokevirtual #183                // Method net/conczin/mca/entity/ai/Genetics.getHorizontalScaleFactor:()F
+        70: aload_3
+        71: invokevirtual #187                // Method net/conczin/mca/entity/ai/Traits.getHorizontalScaleFactor:()F
+        74: fmul
+        75: aload         7
+        77: invokeinterface #190,  1          // InterfaceMethod net/conczin/mca/entity/ai/relationship/VillagerDimensions.getWidth:()F
+        82: fmul
+        83: aload         5
+        85: invokevirtual #195                // Method net/conczin/mca/entity/ai/relationship/Gender.getHorizontalScaleFactor:()F
+        88: fmul
+        89: fstore        8
+        91: aload_2
+        92: invokevirtual #198                // Method net/conczin/mca/entity/ai/Genetics.getVerticalScaleFactor:()F
+        95: aload_3
+        96: invokevirtual #201                // Method net/conczin/mca/entity/ai/Traits.getVerticalScaleFactor:()F
+        99: fmul
+       100: aload         7
+       102: invokeinterface #202,  1          // InterfaceMethod net/conczin/mca/entity/ai/relationship/VillagerDimensions.getHeight:()F
+       107: fmul
+       108: aload         5
+       110: invokevirtual #205                // Method net/conczin/mca/entity/ai/relationship/Gender.getScaleFactor:()F
+       113: fmul
+       114: fstore        9
+       116: new           #8                  // class net/conczin/mca/client/render/VillagerVisuals
+       119: dup
+       120: aload         5
+       122: invokevirtual #208                // Method net/conczin/mca/entity/ai/relationship/Gender.getDataName:()Ljava/lang/String;
+       125: aload         5
+       127: getstatic     #212                // Field net/conczin/mca/entity/ai/relationship/Gender.FEMALE:Lnet/conczin/mca/entity/ai/relationship/Gender;
+       130: if_acmpne     137
+       133: iconst_1
+       134: goto          138
+       137: iconst_0
+       138: aload         6
+       140: getstatic     #216                // Field net/conczin/mca/entity/ai/relationship/AgeState.BABY:Lnet/conczin/mca/entity/ai/relationship/AgeState;
+       143: if_acmpne     150
+       146: iconst_1
+       147: goto          151
+       150: iconst_0
+       151: aload_2
+       152: invokevirtual #219                // Method net/conczin/mca/entity/ai/Genetics.getBreastSize:()F
+       155: new           #222                // class net/conczin/mca/client/render/VillagerVisuals$Dimensions
+       158: dup
+       159: aload         7
+       161: invokeinterface #190,  1          // InterfaceMethod net/conczin/mca/entity/ai/relationship/VillagerDimensions.getWidth:()F
+       166: aload         7
+       168: invokeinterface #202,  1          // InterfaceMethod net/conczin/mca/entity/ai/relationship/VillagerDimensions.getHeight:()F
+       173: aload         7
+       175: invokeinterface #224,  1          // InterfaceMethod net/conczin/mca/entity/ai/relationship/VillagerDimensions.getBreasts:()F
+       180: aload         7
+       182: invokeinterface #227,  1          // InterfaceMethod net/conczin/mca/entity/ai/relationship/VillagerDimensions.getHead:()F
+       187: invokespecial #230                // Method net/conczin/mca/client/render/VillagerVisuals$Dimensions."<init>":(FFFF)V
+       190: fload         8
+       192: fload         9
+       194: aload_0
+       195: invokeinterface #233,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.isBurned:()Z
+       200: aload_3
+       201: getstatic     #236                // Field net/conczin/mca/entity/ai/Traits.ALBINISM:Lnet/conczin/mca/entity/ai/Traits$Trait;
+       204: invokevirtual #240                // Method net/conczin/mca/entity/ai/Traits.hasTrait:(Lnet/conczin/mca/entity/ai/Traits$Trait;)Z
+       207: aload_3
+       208: getstatic     #244                // Field net/conczin/mca/entity/ai/Traits.RAINBOW:Lnet/conczin/mca/entity/ai/Traits$Trait;
+       211: invokevirtual #240                // Method net/conczin/mca/entity/ai/Traits.hasTrait:(Lnet/conczin/mca/entity/ai/Traits$Trait;)Z
+       214: aload_3
+       215: getstatic     #247                // Field net/conczin/mca/entity/ai/Traits.RAINBOW_EYES:Lnet/conczin/mca/entity/ai/Traits$Trait;
+       218: invokevirtual #240                // Method net/conczin/mca/entity/ai/Traits.hasTrait:(Lnet/conczin/mca/entity/ai/Traits$Trait;)Z
+       221: aload_3
+       222: getstatic     #250                // Field net/conczin/mca/entity/ai/Traits.HETEROCHROMIA:Lnet/conczin/mca/entity/ai/Traits$Trait;
+       225: invokevirtual #240                // Method net/conczin/mca/entity/ai/Traits.hasTrait:(Lnet/conczin/mca/entity/ai/Traits$Trait;)Z
+       228: aload_2
+       229: getstatic     #253                // Field net/conczin/mca/entity/ai/Genetics.SKIN:Lnet/conczin/mca/entity/ai/Genetics$GeneType;
+       232: invokevirtual #257                // Method net/conczin/mca/entity/ai/Genetics.getGene:(Lnet/conczin/mca/entity/ai/Genetics$GeneType;)F
+       235: aload_2
+       236: getstatic     #261                // Field net/conczin/mca/entity/ai/Genetics.MELANIN:Lnet/conczin/mca/entity/ai/Genetics$GeneType;
+       239: invokevirtual #257                // Method net/conczin/mca/entity/ai/Genetics.getGene:(Lnet/conczin/mca/entity/ai/Genetics$GeneType;)F
+       242: aload_2
+       243: getstatic     #264                // Field net/conczin/mca/entity/ai/Genetics.HEMOGLOBIN:Lnet/conczin/mca/entity/ai/Genetics$GeneType;
+       246: invokevirtual #257                // Method net/conczin/mca/entity/ai/Genetics.getGene:(Lnet/conczin/mca/entity/ai/Genetics$GeneType;)F
+       249: aload_2
+       250: getstatic     #267                // Field net/conczin/mca/entity/ai/Genetics.FACE:Lnet/conczin/mca/entity/ai/Genetics$GeneType;
+       253: invokevirtual #257                // Method net/conczin/mca/entity/ai/Genetics.getGene:(Lnet/conczin/mca/entity/ai/Genetics$GeneType;)F
+       256: aload_2
+       257: getstatic     #270                // Field net/conczin/mca/entity/ai/Genetics.EUMELANIN:Lnet/conczin/mca/entity/ai/Genetics$GeneType;
+       260: invokevirtual #257                // Method net/conczin/mca/entity/ai/Genetics.getGene:(Lnet/conczin/mca/entity/ai/Genetics$GeneType;)F
+       263: aload_2
+       264: getstatic     #273                // Field net/conczin/mca/entity/ai/Genetics.PHEOMELANIN:Lnet/conczin/mca/entity/ai/Genetics$GeneType;
+       267: invokevirtual #257                // Method net/conczin/mca/entity/ai/Genetics.getGene:(Lnet/conczin/mca/entity/ai/Genetics$GeneType;)F
+       270: aload_2
+       271: getstatic     #276                // Field net/conczin/mca/entity/ai/Genetics.EYE_BRIGHTNESS:Lnet/conczin/mca/entity/ai/Genetics$GeneType;
+       274: invokevirtual #257                // Method net/conczin/mca/entity/ai/Genetics.getGene:(Lnet/conczin/mca/entity/ai/Genetics$GeneType;)F
+       277: aload_0
+       278: invokeinterface #279,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getSkin:()Ljava/lang/String;
+       283: aload_0
+       284: getstatic     #282                // Field net/conczin/mca/resources/data/skin/LayeredHair$Category.BASE:Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;
+       287: invokestatic  #288                // Method getHairLayer:(Lnet/conczin/mca/entity/VillagerLike;Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Ljava/lang/String;
+       290: aload_0
+       291: getstatic     #292                // Field net/conczin/mca/resources/data/skin/LayeredHair$Category.BANGS:Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;
+       294: invokestatic  #288                // Method getHairLayer:(Lnet/conczin/mca/entity/VillagerLike;Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Ljava/lang/String;
+       297: aload_0
+       298: getstatic     #295                // Field net/conczin/mca/resources/data/skin/LayeredHair$Category.BACK:Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;
+       301: invokestatic  #288                // Method getHairLayer:(Lnet/conczin/mca/entity/VillagerLike;Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Ljava/lang/String;
+       304: aload_0
+       305: getstatic     #298                // Field net/conczin/mca/resources/data/skin/LayeredHair$Category.FRONT:Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;
+       308: invokestatic  #288                // Method getHairLayer:(Lnet/conczin/mca/entity/VillagerLike;Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Ljava/lang/String;
+       311: aload_0
+       312: getstatic     #301                // Field net/conczin/mca/resources/data/skin/LayeredHair$Category.EXTRA:Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;
+       315: invokestatic  #288                // Method getHairLayer:(Lnet/conczin/mca/entity/VillagerLike;Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Ljava/lang/String;
+       318: aload_0
+       319: invokeinterface #304,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getSkinDye:()I
+       324: aload_0
+       325: invokeinterface #308,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getHairDye:()I
+       330: aload_0
+       331: invokeinterface #311,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getEyeDye:()I
+       336: aload_0
+       337: invokeinterface #314,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getEyeLeftDye:()I
+       342: aload_0
+       343: invokeinterface #317,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getClothes:()Ljava/lang/String;
+       348: aload_0
+       349: invokeinterface #320,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getInfectionProgress:()F
+       354: aload_1
+       355: invokestatic  #323                // Method animationTickCount:(Lnet/minecraft/world/entity/LivingEntity;)I
+       358: aload_1
+       359: invokevirtual #327                // Method net/minecraft/world/entity/LivingEntity.getId:()I
+       362: aload_1
+       363: invokevirtual #330                // Method net/minecraft/world/entity/LivingEntity.isSleeping:()Z
+       366: aload_1
+       367: invokevirtual #333                // Method net/minecraft/world/entity/LivingEntity.isDeadOrDying:()Z
+       370: invokespecial #336                // Method "<init>":(Ljava/lang/String;ZZFLnet/conczin/mca/client/render/VillagerVisuals$Dimensions;FFZZZZZFFFFFFFLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIILjava/lang/String;FIIZZ)V
+       373: areturn
+
+  private static java.lang.String getHairLayer(net.conczin.mca.entity.VillagerLike<?>, net.conczin.mca.resources.data.skin.LayeredHair$Category);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #339,  2          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getLayeredHair:(Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Ljava/lang/String;
+         7: astore_2
+         8: aload_2
+         9: invokestatic  #343                // Method isBlank:(Ljava/lang/String;)Z
+        12: ifne          17
+        15: aload_2
+        16: areturn
+        17: aload_1
+        18: getstatic     #282                // Field net/conczin/mca/resources/data/skin/LayeredHair$Category.BASE:Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;
+        21: if_acmpne     31
+        24: aload_0
+        25: invokeinterface #347,  1          // InterfaceMethod net/conczin/mca/entity/VillagerLike.getHairStyleId:()Ljava/lang/String;
+        30: areturn
+        31: ldc_w         #350                // String
+        34: areturn
+
+  private static int animationTickCount(net.minecraft.world.entity.LivingEntity);
+    Code:
+         0: aload_0
+         1: getfield      #352                // Field net/minecraft/world/entity/LivingEntity.tickCount:I
+         4: ifle          15
+         7: aload_0
+         8: getfield      #352                // Field net/minecraft/world/entity/LivingEntity.tickCount:I
+        11: i2l
+        12: goto          22
+        15: aload_0
+        16: invokevirtual #353                // Method net/minecraft/world/entity/LivingEntity.level:()Lnet/minecraft/world/level/Level;
+        19: invokevirtual #357                // Method net/minecraft/world/level/Level.getGameTime:()J
+        22: lstore_1
+        23: aload_0
+        24: invokevirtual #327                // Method net/minecraft/world/entity/LivingEntity.getId:()I
+        27: i2l
+        28: lload_1
+        29: ladd
+        30: l2i
+        31: ireturn
+
+  public boolean isBlinking();
+    Code:
+         0: aload_0
+         1: getfield      #113                // Field sleeping:Z
+         4: ifne          14
+         7: aload_0
+         8: getfield      #116                // Field deadOrDying:Z
+        11: ifeq          16
+        14: iconst_1
+        15: ireturn
+        16: aload_0
+        17: getfield      #107                // Field tickCount:I
+        20: iconst_2
+        21: idiv
+        22: aload_0
+        23: getfield      #55                 // Field hemoglobinGene:F
+        26: ldc_w         #363                // float 65536.0f
+        29: fmul
+        30: f2i
+        31: iadd
+        32: istore_1
+        33: aload_0
+        34: iload_1
+        35: bipush        50
+        37: sipush        7855
+        40: invokevirtual #364                // Method isInBlinkWindow:(III)Z
+        43: ifne          59
+        46: aload_0
+        47: iload_1
+        48: bipush        57
+        50: sipush        22449
+        53: invokevirtual #364                // Method isInBlinkWindow:(III)Z
+        56: ifeq          63
+        59: iconst_1
+        60: goto          64
+        63: iconst_0
+        64: ireturn
+
+  private boolean isInBlinkWindow(int, int, int);
+    Code:
+         0: iload_2
+         1: aload_0
+         2: iload_3
+         3: bipush        81
+         5: invokevirtual #368                // Method randomBlinkValue:(II)I
+         8: iadd
+         9: istore        4
+        11: aload_0
+        12: iload_3
+        13: sipush        13401
+        16: ixor
+        17: iload         4
+        19: invokevirtual #368                // Method randomBlinkValue:(II)I
+        22: istore        5
+        24: iload_1
+        25: iload         5
+        27: iadd
+        28: istore        6
+        30: iload         6
+        32: iload         4
+        34: invokestatic  #372                // Method java/lang/Math.floorDiv:(II)I
+        37: istore        7
+        39: iconst_1
+        40: aload_0
+        41: iload_3
+        42: iload         7
+        44: ixor
+        45: iconst_5
+        46: invokevirtual #368                // Method randomBlinkValue:(II)I
+        49: iadd
+        50: istore        8
+        52: iload         6
+        54: iload         4
+        56: invokestatic  #377                // Method java/lang/Math.floorMod:(II)I
+        59: iload         8
+        61: if_icmpge     68
+        64: iconst_1
+        65: goto          69
+        68: iconst_0
+        69: ireturn
+
+  private int randomBlinkValue(int, int);
+    Code:
+         0: aload_0
+         1: getfield      #110                // Field entityId:I
+         4: ldc_w         #380                // int 73244475
+         7: imul
+         8: iload_1
+         9: iadd
+        10: istore_3
+        11: iload_3
+        12: aload_0
+        13: getfield      #55                 // Field hemoglobinGene:F
+        16: ldc_w         #363                // float 65536.0f
+        19: fmul
+        20: f2i
+        21: ixor
+        22: istore_3
+        23: iload_3
+        24: iload_3
+        25: bipush        16
+        27: iushr
+        28: ixor
+        29: istore_3
+        30: iload_3
+        31: ldc_w         #380                // int 73244475
+        34: imul
+        35: istore_3
+        36: iload_3
+        37: iload_3
+        38: bipush        16
+        40: iushr
+        41: ixor
+        42: istore_3
+        43: iload_3
+        44: iload_2
+        45: invokestatic  #377                // Method java/lang/Math.floorMod:(II)I
+        48: ireturn
+
+  public java.lang.String layeredHair(net.conczin.mca.resources.data.skin.LayeredHair$Category);
+    Code:
+         0: getstatic     #381                // Field net/conczin/mca/client/render/VillagerVisuals$1.$SwitchMap$net$conczin$mca$resources$data$skin$LayeredHair$Category:[I
+         3: aload_1
+         4: invokevirtual #387                // Method net/conczin/mca/resources/data/skin/LayeredHair$Category.ordinal:()I
+         7: iaload
+         8: tableswitch   { // 1 to 5
+                       1: 54
+                       2: 61
+                       3: 68
+                       4: 75
+                       5: 82
+                 default: 44
+            }
+        44: new           #390                // class java/lang/MatchException
+        47: dup
+        48: aconst_null
+        49: aconst_null
+        50: invokespecial #392                // Method java/lang/MatchException."<init>":(Ljava/lang/String;Ljava/lang/Throwable;)V
+        53: athrow
+        54: aload_0
+        55: getfield      #73                 // Field hairBase:Ljava/lang/String;
+        58: goto          86
+        61: aload_0
+        62: getfield      #76                 // Field hairBangs:Ljava/lang/String;
+        65: goto          86
+        68: aload_0
+        69: getfield      #79                 // Field hairBack:Ljava/lang/String;
+        72: goto          86
+        75: aload_0
+        76: getfield      #82                 // Field hairFront:Ljava/lang/String;
+        79: goto          86
+        82: aload_0
+        83: getfield      #85                 // Field hairExtra:Ljava/lang/String;
+        86: areturn
+
+  public int eyeColor(float, boolean);
+    Code:
+         0: aload_0
+         1: getfield      #43                 // Field rainbowEyes:Z
+         4: ifeq          47
+         7: iload_2
+         8: ifeq          26
+        11: aload_0
+        12: getfield      #46                 // Field heterochromia:Z
+        15: ifeq          26
+        18: getstatic     #395                // Field net/conczin/mca/client/render/RainbowColor.CYCLE_DURATION:I
+        21: iconst_2
+        22: idiv
+        23: goto          27
+        26: iconst_0
+        27: istore        4
+        29: aload_0
+        30: getfield      #107                // Field tickCount:I
+        33: i2f
+        34: fload_1
+        35: fadd
+        36: iload         4
+        38: i2f
+        39: fadd
+        40: invokestatic  #400                // Method net/conczin/mca/client/render/RainbowColor.sheep:(F)I
+        43: istore_3
+        44: goto          53
+        47: aload_0
+        48: iload_2
+        49: invokevirtual #404                // Method staticEyeColor:(Z)I
+        52: istore_3
+        53: iload_3
+        54: aload_0
+        55: getfield      #67                 // Field eyeBrightnessGene:F
+        58: invokestatic  #408                // Method net/conczin/mca/client/resources/EyeTextureLayers.applyBrightness:(IF)I
+        61: ireturn
+
+  public int staticEyeColor(boolean);
+    Code:
+         0: iload_1
+         1: ifeq          18
+         4: aload_0
+         5: getfield      #46                 // Field heterochromia:Z
+         8: ifeq          18
+        11: aload_0
+        12: getfield      #98                 // Field eyeLeftDye:I
+        15: goto          22
+        18: aload_0
+        19: getfield      #95                 // Field eyeDye:I
+        22: istore_2
+        23: iload_2
+        24: iconst_m1
+        25: if_icmpeq     32
+        28: iload_2
+        29: goto          52
+        32: aload_0
+        33: iload_1
+        34: ifeq          48
+        37: aload_0
+        38: getfield      #46                 // Field heterochromia:Z
+        41: ifeq          48
+        44: iconst_1
+        45: goto          49
+        48: iconst_0
+        49: invokevirtual #414                // Method geneticEyeColor:(Z)I
+        52: ireturn
+
+  private int geneticEyeColor(boolean);
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field albinism:Z
+         4: ifeq          11
+         7: ldc_w         #417                // int -1531744
+        10: ireturn
+        11: aload_0
+        12: getfield      #58                 // Field faceGene:F
+        15: iload_1
+        16: ifeq          25
+        19: ldc_w         #418                // float 0.43f
+        22: goto          26
+        25: fconst_0
+        26: fadd
+        27: invokestatic  #419                // Method net/minecraft/util/Mth.frac:(F)F
+        30: fstore_2
+        31: fload_2
+        32: ldc_w         #425                // float 0.35f
+        35: fcmpg
+        36: ifge          54
+        39: fload_2
+        40: ldc_w         #425                // float 0.35f
+        43: fdiv
+        44: ldc_w         #426                // int -11173978
+        47: ldc_w         #427                // int -10778794
+        50: invokestatic  #428                // Method net/minecraft/util/ARGB.srgbLerp:(FII)I
+        53: ireturn
+        54: fload_2
+        55: ldc_w         #434                // float 0.7f
+        58: fcmpg
+        59: ifge          81
+        62: fload_2
+        63: ldc_w         #425                // float 0.35f
+        66: fsub
+        67: ldc_w         #425                // float 0.35f
+        70: fdiv
+        71: ldc_w         #427                // int -10778794
+        74: ldc_w         #435                // int -7706059
+        77: invokestatic  #428                // Method net/minecraft/util/ARGB.srgbLerp:(FII)I
+        80: ireturn
+        81: fload_2
+        82: ldc_w         #434                // float 0.7f
+        85: fsub
+        86: ldc_w         #436                // float 0.3f
+        89: fdiv
+        90: ldc_w         #435                // int -7706059
+        93: ldc_w         #437                // int -11916520
+        96: invokestatic  #428                // Method net/minecraft/util/ARGB.srgbLerp:(FII)I
+        99: ireturn
+
+  private static boolean isBlank(java.lang.String);
+    Code:
+         0: aload_0
+         1: ifnull        11
+         4: aload_0
+         5: invokevirtual #438                // Method java/lang/String.isBlank:()Z
+         8: ifeq          15
+        11: iconst_1
+        12: goto          16
+        15: iconst_0
+        16: ireturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #442,  0            // InvokeDynamic #0:toString:(Lnet/conczin/mca/client/render/VillagerVisuals;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #446,  0            // InvokeDynamic #0:hashCode:(Lnet/conczin/mca/client/render/VillagerVisuals;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #450,  0            // InvokeDynamic #0:equals:(Lnet/conczin/mca/client/render/VillagerVisuals;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public java.lang.String genderDataName();
+    Code:
+         0: aload_0
+         1: getfield      #7                  // Field genderDataName:Ljava/lang/String;
+         4: areturn
+
+  public boolean female();
+    Code:
+         0: aload_0
+         1: getfield      #13                 // Field female:Z
+         4: ireturn
+
+  public boolean baby();
+    Code:
+         0: aload_0
+         1: getfield      #17                 // Field baby:Z
+         4: ireturn
+
+  public float breastSize();
+    Code:
+         0: aload_0
+         1: getfield      #20                 // Field breastSize:F
+         4: freturn
+
+  public net.conczin.mca.client.render.VillagerVisuals$Dimensions dimensions();
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field dimensions:Lnet/conczin/mca/client/render/VillagerVisuals$Dimensions;
+         4: areturn
+
+  public float rawHorizontalScaleFactor();
+    Code:
+         0: aload_0
+         1: getfield      #28                 // Field rawHorizontalScaleFactor:F
+         4: freturn
+
+  public float rawVerticalScaleFactor();
+    Code:
+         0: aload_0
+         1: getfield      #31                 // Field rawVerticalScaleFactor:F
+         4: freturn
+
+  public boolean burned();
+    Code:
+         0: aload_0
+         1: getfield      #34                 // Field burned:Z
+         4: ireturn
+
+  public boolean albinism();
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field albinism:Z
+         4: ireturn
+
+  public boolean rainbowHair();
+    Code:
+         0: aload_0
+         1: getfield      #40                 // Field rainbowHair:Z
+         4: ireturn
+
+  public boolean rainbowEyes();
+    Code:
+         0: aload_0
+         1: getfield      #43                 // Field rainbowEyes:Z
+         4: ireturn
+
+  public boolean heterochromia();
+    Code:
+         0: aload_0
+         1: getfield      #46                 // Field heterochromia:Z
+         4: ireturn
+
+  public float skinGene();
+    Code:
+         0: aload_0
+         1: getfield      #49                 // Field skinGene:F
+         4: freturn
+
+  public float melaninGene();
+    Code:
+         0: aload_0
+         1: getfield      #52                 // Field melaninGene:F
+         4: freturn
+
+  public float hemoglobinGene();
+    Code:
+         0: aload_0
+         1: getfield      #55                 // Field hemoglobinGene:F
+         4: freturn
+
+  public float faceGene();
+    Code:
+         0: aload_0
+         1: getfield      #58                 // Field faceGene:F
+         4: freturn
+
+  public float eumelaninGene();
+    Code:
+         0: aload_0
+         1: getfield      #61                 // Field eumelaninGene:F
+         4: freturn
+
+  public float pheomelaninGene();
+    Code:
+         0: aload_0
+         1: getfield      #64                 // Field pheomelaninGene:F
+         4: freturn
+
+  public float eyeBrightnessGene();
+    Code:
+         0: aload_0
+         1: getfield      #67                 // Field eyeBrightnessGene:F
+         4: freturn
+
+  public java.lang.String skin();
+    Code:
+         0: aload_0
+         1: getfield      #70                 // Field skin:Ljava/lang/String;
+         4: areturn
+
+  public java.lang.String hairBase();
+    Code:
+         0: aload_0
+         1: getfield      #73                 // Field hairBase:Ljava/lang/String;
+         4: areturn
+
+  public java.lang.String hairBangs();
+    Code:
+         0: aload_0
+         1: getfield      #76                 // Field hairBangs:Ljava/lang/String;
+         4: areturn
+
+  public java.lang.String hairBack();
+    Code:
+         0: aload_0
+         1: getfield      #79                 // Field hairBack:Ljava/lang/String;
+         4: areturn
+
+  public java.lang.String hairFront();
+    Code:
+         0: aload_0
+         1: getfield      #82                 // Field hairFront:Ljava/lang/String;
+         4: areturn
+
+  public java.lang.String hairExtra();
+    Code:
+         0: aload_0
+         1: getfield      #85                 // Field hairExtra:Ljava/lang/String;
+         4: areturn
+
+  public int skinDye();
+    Code:
+         0: aload_0
+         1: getfield      #88                 // Field skinDye:I
+         4: ireturn
+
+  public int hairDye();
+    Code:
+         0: aload_0
+         1: getfield      #92                 // Field hairDye:I
+         4: ireturn
+
+  public int eyeDye();
+    Code:
+         0: aload_0
+         1: getfield      #95                 // Field eyeDye:I
+         4: ireturn
+
+  public int eyeLeftDye();
+    Code:
+         0: aload_0
+         1: getfield      #98                 // Field eyeLeftDye:I
+         4: ireturn
+
+  public java.lang.String clothes();
+    Code:
+         0: aload_0
+         1: getfield      #101                // Field clothes:Ljava/lang/String;
+         4: areturn
+
+  public float infectionProgress();
+    Code:
+         0: aload_0
+         1: getfield      #104                // Field infectionProgress:F
+         4: freturn
+
+  public int tickCount();
+    Code:
+         0: aload_0
+         1: getfield      #107                // Field tickCount:I
+         4: ireturn
+
+  public int entityId();
+    Code:
+         0: aload_0
+         1: getfield      #110                // Field entityId:I
+         4: ireturn
+
+  public boolean sleeping();
+    Code:
+         0: aload_0
+         1: getfield      #113                // Field sleeping:Z
+         4: ireturn
+
+  public boolean deadOrDying();
+    Code:
+         0: aload_0
+         1: getfield      #116                // Field deadOrDying:Z
+         4: ireturn
+}

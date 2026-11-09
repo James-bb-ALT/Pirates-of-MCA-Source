@@ -1,0 +1,940 @@
+Compiled from "SkinExporter.java"
+public class net.conczin.mca.client.resources.SkinExporter {
+  public static final net.minecraft.resources.Identifier BLINK_FACE;
+
+  public net.conczin.mca.client.resources.SkinExporter();
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+
+  public static boolean export(net.conczin.mca.entity.VillagerEntityMCA);
+    Code:
+         0: aload_0
+         1: aconst_null
+         2: invokestatic  #7                  // Method export:(Lnet/conczin/mca/entity/VillagerEntityMCA;Ljava/lang/String;)Z
+         5: ireturn
+
+  public static boolean export(net.conczin.mca.entity.VillagerEntityMCA, java.lang.String);
+    Code:
+         0: aload_0
+         1: invokestatic  #13                 // Method net/conczin/mca/client/render/VillagerVisuals.capture:(Lnet/conczin/mca/entity/VillagerLike;)Lnet/conczin/mca/client/render/VillagerVisuals;
+         4: astore_2
+         5: new           #19                 // class com/mojang/blaze3d/platform/NativeImage
+         8: dup
+         9: bipush        64
+        11: bipush        64
+        13: iconst_1
+        14: invokespecial #21                 // Method com/mojang/blaze3d/platform/NativeImage."<init>":(IIZ)V
+        17: astore_3
+        18: aload_2
+        19: invokestatic  #24                 // Method getSkin:(Lnet/conczin/mca/client/render/VillagerVisuals;)Lnet/minecraft/resources/Identifier;
+        22: astore        4
+        24: aload_2
+        25: invokestatic  #28                 // Method getSkinColor:(Lnet/conczin/mca/client/render/VillagerVisuals;)I
+        28: istore        5
+        30: aload_3
+        31: aload         4
+        33: iload         5
+        35: invokestatic  #32                 // Method composite:(Lcom/mojang/blaze3d/platform/NativeImage;Lnet/minecraft/resources/Identifier;I)V
+        38: aload_2
+        39: invokestatic  #36                 // Method getFace:(Lnet/conczin/mca/client/render/VillagerVisuals;)Lnet/minecraft/resources/Identifier;
+        42: astore        6
+        44: aload_3
+        45: aload         6
+        47: aload_2
+        48: invokestatic  #39                 // Method compositeFace:(Lcom/mojang/blaze3d/platform/NativeImage;Lnet/minecraft/resources/Identifier;Lnet/conczin/mca/client/render/VillagerVisuals;)V
+        51: aload_2
+        52: invokestatic  #43                 // Method getClothes:(Lnet/conczin/mca/client/render/VillagerVisuals;)Lnet/minecraft/resources/Identifier;
+        55: astore        7
+        57: aload_3
+        58: aload         7
+        60: iconst_m1
+        61: invokestatic  #32                 // Method composite:(Lcom/mojang/blaze3d/platform/NativeImage;Lnet/minecraft/resources/Identifier;I)V
+        64: aload_2
+        65: invokestatic  #46                 // Method getHairColor:(Lnet/conczin/mca/client/render/VillagerVisuals;)I
+        68: istore        8
+        70: getstatic     #49                 // Field net/conczin/mca/resources/data/skin/LayeredHair$Category.RENDER_ORDER:Ljava/util/List;
+        73: invokeinterface #55,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        78: astore        9
+        80: aload         9
+        82: invokeinterface #61,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        87: ifeq          132
+        90: aload         9
+        92: invokeinterface #67,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        97: checkcast     #50                 // class net/conczin/mca/resources/data/skin/LayeredHair$Category
+       100: astore        10
+       102: aload_2
+       103: aload         10
+       105: invokevirtual #71                 // Method net/conczin/mca/client/render/VillagerVisuals.layeredHair:(Lnet/conczin/mca/resources/data/skin/LayeredHair$Category;)Ljava/lang/String;
+       108: astore        11
+       110: aload         11
+       112: invokestatic  #75                 // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+       115: ifne          129
+       118: aload_3
+       119: aload         11
+       121: invokestatic  #81                 // Method getLibraryOrResourceIdentifier:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+       124: iload         8
+       126: invokestatic  #32                 // Method composite:(Lcom/mojang/blaze3d/platform/NativeImage;Lnet/minecraft/resources/Identifier;I)V
+       129: goto          80
+       132: invokestatic  #85                 // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       135: getfield      #91                 // Field net/minecraft/client/Minecraft.gameDirectory:Ljava/io/File;
+       138: invokevirtual #95                 // Method java/io/File.toPath:()Ljava/nio/file/Path;
+       141: ldc           #101                // String mca/exported_skins
+       143: invokeinterface #103,  2          // InterfaceMethod java/nio/file/Path.resolve:(Ljava/lang/String;)Ljava/nio/file/Path;
+       148: astore        9
+       150: aload         9
+       152: iconst_0
+       153: anewarray     #109                // class java/nio/file/attribute/FileAttribute
+       156: invokestatic  #111                // Method java/nio/file/Files.createDirectories:(Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/file/Path;
+       159: pop
+       160: aload         9
+       162: aload_1
+       163: invokestatic  #117                // Method getAvailableExportFile:(Ljava/nio/file/Path;Ljava/lang/String;)Ljava/nio/file/Path;
+       166: astore        10
+       168: aload_3
+       169: aload         10
+       171: invokevirtual #121                // Method com/mojang/blaze3d/platform/NativeImage.writeToFile:(Ljava/nio/file/Path;)V
+       174: invokestatic  #85                 // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       177: getfield      #125                // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+       180: astore        11
+       182: aload         11
+       184: ifnull        283
+       187: ldc           #129                // String chat.mca.skin_export_success
+       189: iconst_1
+       190: anewarray     #2                  // class java/lang/Object
+       193: dup
+       194: iconst_0
+       195: aload         10
+       197: invokeinterface #131,  1          // InterfaceMethod java/nio/file/Path.getFileName:()Ljava/nio/file/Path;
+       202: invokestatic  #134                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       205: invokedynamic #140,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       210: aastore
+       211: invokestatic  #144                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+       214: invokedynamic #150,  0            // InvokeDynamic #1:apply:()Ljava/util/function/UnaryOperator;
+       219: invokevirtual #154                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Ljava/util/function/UnaryOperator;)Lnet/minecraft/network/chat/MutableComponent;
+       222: ldc           #160                // String
+       224: invokestatic  #162                // InterfaceMethod net/minecraft/network/chat/Component.literal:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       227: invokevirtual #166                // Method net/minecraft/network/chat/MutableComponent.append:(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent;
+       230: ldc           #170                // String chat.mca.open_image
+       232: invokestatic  #172                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       235: aload         10
+       237: invokedynamic #174,  0            // InvokeDynamic #2:apply:(Ljava/nio/file/Path;)Ljava/util/function/UnaryOperator;
+       242: invokevirtual #154                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Ljava/util/function/UnaryOperator;)Lnet/minecraft/network/chat/MutableComponent;
+       245: invokevirtual #166                // Method net/minecraft/network/chat/MutableComponent.append:(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent;
+       248: ldc           #160                // String
+       250: invokestatic  #162                // InterfaceMethod net/minecraft/network/chat/Component.literal:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       253: invokevirtual #166                // Method net/minecraft/network/chat/MutableComponent.append:(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent;
+       256: ldc           #177                // String chat.mca.open_folder
+       258: invokestatic  #172                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       261: aload         9
+       263: invokedynamic #179,  0            // InvokeDynamic #3:apply:(Ljava/nio/file/Path;)Ljava/util/function/UnaryOperator;
+       268: invokevirtual #154                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Ljava/util/function/UnaryOperator;)Lnet/minecraft/network/chat/MutableComponent;
+       271: invokevirtual #166                // Method net/minecraft/network/chat/MutableComponent.append:(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent;
+       274: astore        12
+       276: aload         11
+       278: aload         12
+       280: invokevirtual #180                // Method net/minecraft/client/player/LocalPlayer.sendSystemMessage:(Lnet/minecraft/network/chat/Component;)V
+       283: aload_3
+       284: invokevirtual #186                // Method com/mojang/blaze3d/platform/NativeImage.close:()V
+       287: goto          311
+       290: astore        4
+       292: aload_3
+       293: invokevirtual #186                // Method com/mojang/blaze3d/platform/NativeImage.close:()V
+       296: goto          308
+       299: astore        5
+       301: aload         4
+       303: aload         5
+       305: invokevirtual #191                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       308: aload         4
+       310: athrow
+       311: goto          365
+       314: astore_2
+       315: getstatic     #197                // Field net/conczin/mca/MCA.LOGGER:Lorg/apache/logging/log4j/Logger;
+       318: ldc           #201                // String Failed to export villager skin
+       320: aload_2
+       321: invokeinterface #203,  3          // InterfaceMethod org/apache/logging/log4j/Logger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+       326: invokestatic  #85                 // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       329: getfield      #125                // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+       332: astore_3
+       333: aload_3
+       334: ifnull        363
+       337: aload_3
+       338: ldc           #209                // String chat.mca.skin_export_failure
+       340: iconst_1
+       341: anewarray     #2                  // class java/lang/Object
+       344: dup
+       345: iconst_0
+       346: aload_2
+       347: invokevirtual #211                // Method java/lang/Exception.getMessage:()Ljava/lang/String;
+       350: aastore
+       351: invokestatic  #144                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+       354: getstatic     #215                // Field net/minecraft/ChatFormatting.RED:Lnet/minecraft/ChatFormatting;
+       357: invokevirtual #221                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+       360: invokevirtual #180                // Method net/minecraft/client/player/LocalPlayer.sendSystemMessage:(Lnet/minecraft/network/chat/Component;)V
+       363: iconst_0
+       364: ireturn
+       365: iconst_1
+       366: ireturn
+      Exception table:
+         from    to  target type
+            18   283   290   Class java/lang/Throwable
+           292   296   299   Class java/lang/Throwable
+             0   311   314   Class java/lang/Exception
+
+  private static java.nio.file.Path getAvailableExportFile(java.nio.file.Path, java.lang.String) throws java.io.IOException;
+    Code:
+         0: aload_1
+         1: invokestatic  #75                 // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+         4: ifeq          13
+         7: ldc           #224                // String Exported_Skin
+         9: astore_2
+        10: goto          27
+        13: aload_1
+        14: ldc           #226                // String [^a-zA-Z0-9_\\-]
+        16: ldc           #228                // String _
+        18: invokevirtual #230                // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        21: invokedynamic #234,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+        26: astore_2
+        27: aload_0
+        28: invokestatic  #235                // Method java/nio/file/Files.list:(Ljava/nio/file/Path;)Ljava/util/stream/Stream;
+        31: astore        4
+        33: aload         4
+        35: invokedynamic #239,  0            // InvokeDynamic #5:apply:()Ljava/util/function/Function;
+        40: invokeinterface #242,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+        45: invokestatic  #248                // Method java/util/stream/Collectors.toSet:()Ljava/util/stream/Collector;
+        48: invokeinterface #254,  2          // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+        53: checkcast     #258                // class java/util/Set
+        56: astore_3
+        57: aload         4
+        59: ifnull        101
+        62: aload         4
+        64: invokeinterface #260,  1          // InterfaceMethod java/util/stream/Stream.close:()V
+        69: goto          101
+        72: astore        5
+        74: aload         4
+        76: ifnull        98
+        79: aload         4
+        81: invokeinterface #260,  1          // InterfaceMethod java/util/stream/Stream.close:()V
+        86: goto          98
+        89: astore        6
+        91: aload         5
+        93: aload         6
+        95: invokevirtual #191                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+        98: aload         5
+       100: athrow
+       101: aload_2
+       102: invokedynamic #261,  0            // InvokeDynamic #6:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       107: astore        4
+       109: iconst_2
+       110: istore        5
+       112: aload_3
+       113: aload         4
+       115: invokeinterface #262,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+       120: ifeq          139
+       123: aload_2
+       124: iload         5
+       126: invokedynamic #266,  0            // InvokeDynamic #7:makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+       131: astore        4
+       133: iinc          5, 1
+       136: goto          112
+       139: aload_0
+       140: aload         4
+       142: invokeinterface #103,  2          // InterfaceMethod java/nio/file/Path.resolve:(Ljava/lang/String;)Ljava/nio/file/Path;
+       147: areturn
+      Exception table:
+         from    to  target type
+            33    57    72   Class java/lang/Throwable
+            79    86    89   Class java/lang/Throwable
+
+  public static net.minecraft.resources.Identifier getSkin(net.conczin.mca.client.render.VillagerVisuals);
+    Code:
+         0: aload_0
+         1: invokevirtual #269                // Method net/conczin/mca/client/render/VillagerVisuals.skin:()Ljava/lang/String;
+         4: invokestatic  #75                 // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+         7: ifne          18
+        10: aload_0
+        11: invokevirtual #269                // Method net/conczin/mca/client/render/VillagerVisuals.skin:()Ljava/lang/String;
+        14: invokestatic  #272                // Method net/minecraft/resources/Identifier.parse:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+        17: areturn
+        18: ldc_w         #277                // float 4.0f
+        21: fconst_0
+        22: aload_0
+        23: invokevirtual #278                // Method net/conczin/mca/client/render/VillagerVisuals.skinGene:()F
+        26: ldc_w         #282                // float 5.0f
+        29: fmul
+        30: invokestatic  #283                // Method java/lang/Math.max:(FF)F
+        33: invokestatic  #289                // Method java/lang/Math.min:(FF)F
+        36: f2i
+        37: istore_1
+        38: ldc_w         #292                // String mca
+        41: aload_0
+        42: invokevirtual #294                // Method net/conczin/mca/client/render/VillagerVisuals.genderDataName:()Ljava/lang/String;
+        45: iload_1
+        46: invokedynamic #297,  0            // InvokeDynamic #8:makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+        51: invokestatic  #298                // Method net/minecraft/resources/Identifier.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+        54: areturn
+
+  public static int getSkinColor(net.conczin.mca.client.render.VillagerVisuals);
+    Code:
+         0: aload_0
+         1: invokevirtual #302                // Method net/conczin/mca/client/render/VillagerVisuals.skinDye:()I
+         4: istore_1
+         5: iload_1
+         6: ldc_w         #306                // int -16777216
+         9: if_icmpeq     14
+        12: iload_1
+        13: ireturn
+        14: aload_0
+        15: invokevirtual #307                // Method net/conczin/mca/client/render/VillagerVisuals.albinism:()Z
+        18: ifeq          27
+        21: ldc_w         #310                // float 0.1f
+        24: goto          28
+        27: fconst_1
+        28: fstore_2
+        29: getstatic     #311                // Field net/conczin/mca/client/resources/ColorPalette.SKIN:Lnet/conczin/mca/client/resources/ColorPalette;
+        32: aload_0
+        33: invokevirtual #317                // Method net/conczin/mca/client/render/VillagerVisuals.melaninGene:()F
+        36: fload_2
+        37: fmul
+        38: aload_0
+        39: invokevirtual #320                // Method net/conczin/mca/client/render/VillagerVisuals.hemoglobinGene:()F
+        42: fload_2
+        43: fmul
+        44: aload_0
+        45: invokevirtual #323                // Method net/conczin/mca/client/render/VillagerVisuals.infectionProgress:()F
+        48: invokevirtual #326                // Method net/conczin/mca/client/resources/ColorPalette.getColor:(FFF)I
+        51: ireturn
+
+  public static net.minecraft.resources.Identifier getFace(net.conczin.mca.client.render.VillagerVisuals);
+    Code:
+         0: invokestatic  #330                // Method net/conczin/mca/resources/FaceList.getInstance:()Lnet/conczin/mca/resources/FaceList;
+         3: astore_1
+         4: aload_1
+         5: ifnonnull     14
+         8: getstatic     #335                // Field BLINK_FACE:Lnet/minecraft/resources/Identifier;
+        11: goto          25
+        14: aload_1
+        15: ldc_w         #339                // String normal
+        18: aload_0
+        19: invokevirtual #341                // Method net/conczin/mca/client/render/VillagerVisuals.faceGene:()F
+        22: invokevirtual #344                // Method net/conczin/mca/resources/FaceList.pick:(Ljava/lang/String;F)Lnet/minecraft/resources/Identifier;
+        25: areturn
+
+  public static net.minecraft.resources.Identifier getClothes(net.conczin.mca.client.render.VillagerVisuals);
+    Code:
+         0: aload_0
+         1: ldc_w         #339                // String normal
+         4: invokestatic  #348                // Method getClothes:(Lnet/conczin/mca/client/render/VillagerVisuals;Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+         7: areturn
+
+  public static net.minecraft.resources.Identifier getClothes(net.conczin.mca.client.render.VillagerVisuals, java.lang.String);
+    Code:
+         0: aload_0
+         1: invokevirtual #351                // Method net/conczin/mca/client/render/VillagerVisuals.clothes:()Ljava/lang/String;
+         4: astore_2
+         5: aload_2
+         6: invokestatic  #75                 // Method net/conczin/mca/MCA.isBlankString:(Ljava/lang/String;)Z
+         9: ifeq          14
+        12: aconst_null
+        13: areturn
+        14: aload_0
+        15: invokevirtual #354                // Method net/conczin/mca/client/render/VillagerVisuals.burned:()Z
+        18: ifeq          27
+        21: ldc_w         #357                // String burnt
+        24: goto          28
+        27: aload_1
+        28: astore_3
+        29: aload_2
+        30: invokestatic  #359                // Method net/conczin/mca/util/ImmersiveLibraryIds.contentId:(Ljava/lang/String;)Ljava/util/OptionalInt;
+        33: astore        4
+        35: aload         4
+        37: invokevirtual #365                // Method java/util/OptionalInt.isPresent:()Z
+        40: ifeq          52
+        43: aload         4
+        45: invokevirtual #370                // Method java/util/OptionalInt.getAsInt:()I
+        48: invokestatic  #373                // Method net/conczin/mca/client/gui/immersive_library/SkinCache.getTextureIdentifier:(I)Lnet/minecraft/resources/Identifier;
+        51: areturn
+        52: aload_2
+        53: invokestatic  #272                // Method net/minecraft/resources/Identifier.parse:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+        56: astore        5
+        58: aload         5
+        60: invokevirtual #379                // Method net/minecraft/resources/Identifier.getNamespace:()Ljava/lang/String;
+        63: aload         5
+        65: invokevirtual #382                // Method net/minecraft/resources/Identifier.getPath:()Ljava/lang/String;
+        68: ldc_w         #339                // String normal
+        71: aload_3
+        72: invokevirtual #385                // Method java/lang/String.replace:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+        75: invokestatic  #298                // Method net/minecraft/resources/Identifier.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+        78: astore        6
+        80: invokestatic  #85                 // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+        83: invokevirtual #389                // Method net/minecraft/client/Minecraft.getResourceManager:()Lnet/minecraft/server/packs/resources/ResourceManager;
+        86: aload         6
+        88: invokeinterface #393,  2          // InterfaceMethod net/minecraft/server/packs/resources/ResourceManager.getResource:(Lnet/minecraft/resources/Identifier;)Ljava/util/Optional;
+        93: invokevirtual #399                // Method java/util/Optional.isPresent:()Z
+        96: ifeq          102
+        99: aload         6
+       101: areturn
+       102: aload         5
+       104: areturn
+
+  public static int getHairColor(net.conczin.mca.client.render.VillagerVisuals);
+    Code:
+         0: aload_0
+         1: invokevirtual #402                // Method net/conczin/mca/client/render/VillagerVisuals.rainbowHair:()Z
+         4: ifeq          16
+         7: aload_0
+         8: invokevirtual #405                // Method net/conczin/mca/client/render/VillagerVisuals.tickCount:()I
+        11: i2f
+        12: invokestatic  #408                // Method net/conczin/mca/client/render/RainbowColor.sheep:(F)I
+        15: ireturn
+        16: aload_0
+        17: invokevirtual #414                // Method net/conczin/mca/client/render/VillagerVisuals.hairDye:()I
+        20: istore_1
+        21: iload_1
+        22: ldc_w         #306                // int -16777216
+        25: if_icmpeq     30
+        28: iload_1
+        29: ireturn
+        30: aload_0
+        31: invokevirtual #307                // Method net/conczin/mca/client/render/VillagerVisuals.albinism:()Z
+        34: ifeq          43
+        37: ldc_w         #310                // float 0.1f
+        40: goto          44
+        43: fconst_1
+        44: fstore_2
+        45: getstatic     #417                // Field net/conczin/mca/client/resources/ColorPalette.HAIR:Lnet/conczin/mca/client/resources/ColorPalette;
+        48: aload_0
+        49: invokevirtual #420                // Method net/conczin/mca/client/render/VillagerVisuals.eumelaninGene:()F
+        52: fload_2
+        53: fmul
+        54: aload_0
+        55: invokevirtual #423                // Method net/conczin/mca/client/render/VillagerVisuals.pheomelaninGene:()F
+        58: fload_2
+        59: fmul
+        60: fconst_0
+        61: invokevirtual #326                // Method net/conczin/mca/client/resources/ColorPalette.getColor:(FFF)I
+        64: ireturn
+
+  public static com.mojang.blaze3d.platform.NativeImage loadTexture(net.minecraft.resources.Identifier);
+    Code:
+         0: aload_0
+         1: invokevirtual #379                // Method net/minecraft/resources/Identifier.getNamespace:()Ljava/lang/String;
+         4: ldc_w         #426                // String immersive_library
+         7: invokevirtual #428                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        10: ifeq          89
+        13: aload_0
+        14: invokevirtual #382                // Method net/minecraft/resources/Identifier.getPath:()Ljava/lang/String;
+        17: invokestatic  #431                // Method java/lang/Integer.parseInt:(Ljava/lang/String;)I
+        20: istore_1
+        21: new           #96                 // class java/io/File
+        24: dup
+        25: iload_1
+        26: invokedynamic #437,  0            // InvokeDynamic #9:makeConcatWithConstants:(I)Ljava/lang/String;
+        31: invokespecial #440                // Method java/io/File."<init>":(Ljava/lang/String;)V
+        34: astore_2
+        35: aload_2
+        36: invokevirtual #443                // Method java/io/File.exists:()Z
+        39: ifeq          85
+        42: new           #446                // class java/io/FileInputStream
+        45: dup
+        46: aload_2
+        47: invokespecial #448                // Method java/io/FileInputStream."<init>":(Ljava/io/File;)V
+        50: astore_3
+        51: aload_3
+        52: invokestatic  #451                // Method com/mojang/blaze3d/platform/NativeImage.read:(Ljava/io/InputStream;)Lcom/mojang/blaze3d/platform/NativeImage;
+        55: astore        4
+        57: aload_3
+        58: invokevirtual #455                // Method java/io/InputStream.close:()V
+        61: aload         4
+        63: areturn
+        64: astore        4
+        66: aload_3
+        67: invokevirtual #455                // Method java/io/InputStream.close:()V
+        70: goto          82
+        73: astore        5
+        75: aload         4
+        77: aload         5
+        79: invokevirtual #191                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+        82: aload         4
+        84: athrow
+        85: goto          89
+        88: astore_1
+        89: invokestatic  #85                 // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+        92: invokevirtual #389                // Method net/minecraft/client/Minecraft.getResourceManager:()Lnet/minecraft/server/packs/resources/ResourceManager;
+        95: aload_0
+        96: invokeinterface #393,  2          // InterfaceMethod net/minecraft/server/packs/resources/ResourceManager.getResource:(Lnet/minecraft/resources/Identifier;)Ljava/util/Optional;
+       101: astore_1
+       102: aload_1
+       103: invokevirtual #399                // Method java/util/Optional.isPresent:()Z
+       106: ifeq          157
+       109: aload_1
+       110: invokevirtual #458                // Method java/util/Optional.get:()Ljava/lang/Object;
+       113: checkcast     #461                // class net/minecraft/server/packs/resources/Resource
+       116: invokevirtual #463                // Method net/minecraft/server/packs/resources/Resource.open:()Ljava/io/InputStream;
+       119: astore_2
+       120: aload_2
+       121: invokestatic  #451                // Method com/mojang/blaze3d/platform/NativeImage.read:(Ljava/io/InputStream;)Lcom/mojang/blaze3d/platform/NativeImage;
+       124: astore_3
+       125: aload_2
+       126: ifnull        133
+       129: aload_2
+       130: invokevirtual #455                // Method java/io/InputStream.close:()V
+       133: aload_3
+       134: areturn
+       135: astore_3
+       136: aload_2
+       137: ifnull        155
+       140: aload_2
+       141: invokevirtual #455                // Method java/io/InputStream.close:()V
+       144: goto          155
+       147: astore        4
+       149: aload_3
+       150: aload         4
+       152: invokevirtual #191                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       155: aload_3
+       156: athrow
+       157: goto          161
+       160: astore_1
+       161: aconst_null
+       162: areturn
+      Exception table:
+         from    to  target type
+            51    57    64   Class java/lang/Throwable
+            66    70    73   Class java/lang/Throwable
+            13    61    88   Class java/lang/Exception
+            64    85    88   Class java/lang/Exception
+           120   125   135   Class java/lang/Throwable
+           140   144   147   Class java/lang/Throwable
+            89   133   160   Class java/lang/Exception
+           135   157   160   Class java/lang/Exception
+
+  public static net.minecraft.resources.Identifier getLibraryOrResourceIdentifier(java.lang.String);
+    Code:
+         0: aload_0
+         1: invokestatic  #359                // Method net/conczin/mca/util/ImmersiveLibraryIds.contentId:(Ljava/lang/String;)Ljava/util/OptionalInt;
+         4: astore_1
+         5: aload_1
+         6: invokevirtual #365                // Method java/util/OptionalInt.isPresent:()Z
+         9: ifeq          20
+        12: aload_1
+        13: invokevirtual #370                // Method java/util/OptionalInt.getAsInt:()I
+        16: invokestatic  #373                // Method net/conczin/mca/client/gui/immersive_library/SkinCache.getTextureIdentifier:(I)Lnet/minecraft/resources/Identifier;
+        19: areturn
+        20: aload_0
+        21: invokestatic  #272                // Method net/minecraft/resources/Identifier.parse:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+        24: areturn
+
+  public static void compositeFace(com.mojang.blaze3d.platform.NativeImage, net.minecraft.resources.Identifier, net.conczin.mca.client.render.VillagerVisuals);
+    Code:
+         0: aload_1
+         1: invokestatic  #467                // Method loadTexture:(Lnet/minecraft/resources/Identifier;)Lcom/mojang/blaze3d/platform/NativeImage;
+         4: astore_3
+         5: aload_3
+         6: ifnonnull     10
+         9: return
+        10: aload_3
+        11: invokestatic  #471                // Method net/conczin/mca/client/resources/EyeTextureLayers.findBounds:(Lcom/mojang/blaze3d/platform/NativeImage;)Lnet/conczin/mca/client/resources/EyeTextureLayers$Bounds;
+        14: astore        4
+        16: aload         4
+        18: invokevirtual #477                // Method net/conczin/mca/client/resources/EyeTextureLayers$Bounds.minX:()I
+        21: aload         4
+        23: invokevirtual #482                // Method net/conczin/mca/client/resources/EyeTextureLayers$Bounds.width:()I
+        26: iconst_2
+        27: idiv
+        28: iadd
+        29: istore        5
+        31: aload_0
+        32: aload_3
+        33: getstatic     #485                // Field net/conczin/mca/client/resources/EyeTextureLayers$Layer.SCLERA:Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;
+        36: getstatic     #491                // Field net/conczin/mca/client/resources/EyeTextureLayers$Side.FULL:Lnet/conczin/mca/client/resources/EyeTextureLayers$Side;
+        39: iload         5
+        41: iconst_m1
+        42: invokestatic  #497                // Method compositeEyeLayer:(Lcom/mojang/blaze3d/platform/NativeImage;Lcom/mojang/blaze3d/platform/NativeImage;Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;Lnet/conczin/mca/client/resources/EyeTextureLayers$Side;II)V
+        45: aload_0
+        46: aload_3
+        47: getstatic     #501                // Field net/conczin/mca/client/resources/EyeTextureLayers$Layer.DETAILS:Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;
+        50: getstatic     #491                // Field net/conczin/mca/client/resources/EyeTextureLayers$Side.FULL:Lnet/conczin/mca/client/resources/EyeTextureLayers$Side;
+        53: iload         5
+        55: ldc_w         #504                // int -8355712
+        58: invokestatic  #497                // Method compositeEyeLayer:(Lcom/mojang/blaze3d/platform/NativeImage;Lcom/mojang/blaze3d/platform/NativeImage;Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;Lnet/conczin/mca/client/resources/EyeTextureLayers$Side;II)V
+        61: aload_2
+        62: invokevirtual #505                // Method net/conczin/mca/client/render/VillagerVisuals.heterochromia:()Z
+        65: ifeq          107
+        68: aload_0
+        69: aload_3
+        70: getstatic     #508                // Field net/conczin/mca/client/resources/EyeTextureLayers$Layer.IRIS:Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;
+        73: getstatic     #511                // Field net/conczin/mca/client/resources/EyeTextureLayers$Side.LEFT:Lnet/conczin/mca/client/resources/EyeTextureLayers$Side;
+        76: iload         5
+        78: aload_2
+        79: iconst_1
+        80: invokestatic  #514                // Method getEyeColor:(Lnet/conczin/mca/client/render/VillagerVisuals;Z)I
+        83: invokestatic  #497                // Method compositeEyeLayer:(Lcom/mojang/blaze3d/platform/NativeImage;Lcom/mojang/blaze3d/platform/NativeImage;Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;Lnet/conczin/mca/client/resources/EyeTextureLayers$Side;II)V
+        86: aload_0
+        87: aload_3
+        88: getstatic     #508                // Field net/conczin/mca/client/resources/EyeTextureLayers$Layer.IRIS:Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;
+        91: getstatic     #518                // Field net/conczin/mca/client/resources/EyeTextureLayers$Side.RIGHT:Lnet/conczin/mca/client/resources/EyeTextureLayers$Side;
+        94: iload         5
+        96: aload_2
+        97: iconst_0
+        98: invokestatic  #514                // Method getEyeColor:(Lnet/conczin/mca/client/render/VillagerVisuals;Z)I
+       101: invokestatic  #497                // Method compositeEyeLayer:(Lcom/mojang/blaze3d/platform/NativeImage;Lcom/mojang/blaze3d/platform/NativeImage;Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;Lnet/conczin/mca/client/resources/EyeTextureLayers$Side;II)V
+       104: goto          125
+       107: aload_0
+       108: aload_3
+       109: getstatic     #508                // Field net/conczin/mca/client/resources/EyeTextureLayers$Layer.IRIS:Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;
+       112: getstatic     #491                // Field net/conczin/mca/client/resources/EyeTextureLayers$Side.FULL:Lnet/conczin/mca/client/resources/EyeTextureLayers$Side;
+       115: iload         5
+       117: aload_2
+       118: iconst_0
+       119: invokestatic  #514                // Method getEyeColor:(Lnet/conczin/mca/client/render/VillagerVisuals;Z)I
+       122: invokestatic  #497                // Method compositeEyeLayer:(Lcom/mojang/blaze3d/platform/NativeImage;Lcom/mojang/blaze3d/platform/NativeImage;Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;Lnet/conczin/mca/client/resources/EyeTextureLayers$Side;II)V
+       125: aload_3
+       126: invokevirtual #186                // Method com/mojang/blaze3d/platform/NativeImage.close:()V
+       129: goto          141
+       132: astore        6
+       134: aload_3
+       135: invokevirtual #186                // Method com/mojang/blaze3d/platform/NativeImage.close:()V
+       138: aload         6
+       140: athrow
+       141: return
+      Exception table:
+         from    to  target type
+            10   125   132   any
+           132   134   132   any
+
+  public static int getEyeColor(net.conczin.mca.client.render.VillagerVisuals, boolean);
+    Code:
+         0: aload_0
+         1: fconst_0
+         2: iload_1
+         3: invokevirtual #521                // Method net/conczin/mca/client/render/VillagerVisuals.eyeColor:(FZ)I
+         6: ireturn
+
+  public static void compositeEyeLayer(com.mojang.blaze3d.platform.NativeImage, com.mojang.blaze3d.platform.NativeImage, net.conczin.mca.client.resources.EyeTextureLayers$Layer, net.conczin.mca.client.resources.EyeTextureLayers$Side, int, int);
+    Code:
+         0: aload_0
+         1: invokevirtual #525                // Method com/mojang/blaze3d/platform/NativeImage.getWidth:()I
+         4: aload_1
+         5: invokevirtual #525                // Method com/mojang/blaze3d/platform/NativeImage.getWidth:()I
+         8: invokestatic  #528                // Method java/lang/Math.min:(II)I
+        11: istore        6
+        13: aload_0
+        14: invokevirtual #531                // Method com/mojang/blaze3d/platform/NativeImage.getHeight:()I
+        17: aload_1
+        18: invokevirtual #531                // Method com/mojang/blaze3d/platform/NativeImage.getHeight:()I
+        21: invokestatic  #528                // Method java/lang/Math.min:(II)I
+        24: istore        7
+        26: iconst_0
+        27: istore        8
+        29: iload         8
+        31: iload         6
+        33: if_icmpge     128
+        36: iload         8
+        38: iload         4
+        40: aload_3
+        41: invokestatic  #534                // Method net/conczin/mca/client/resources/EyeTextureLayers.isInSide:(IILnet/conczin/mca/client/resources/EyeTextureLayers$Side;)Z
+        44: ifne          50
+        47: goto          122
+        50: iconst_0
+        51: istore        9
+        53: iload         9
+        55: iload         7
+        57: if_icmpge     122
+        60: aload_1
+        61: iload         8
+        63: iload         9
+        65: invokevirtual #538                // Method com/mojang/blaze3d/platform/NativeImage.getPixel:(II)I
+        68: istore        10
+        70: iload         10
+        72: invokestatic  #541                // Method net/minecraft/util/ARGB.alpha:(I)I
+        75: istore        11
+        77: aload_2
+        78: iload         11
+        80: iload         10
+        82: invokestatic  #547                // Method net/minecraft/util/ARGB.red:(I)I
+        85: iload         10
+        87: invokestatic  #550                // Method net/minecraft/util/ARGB.green:(I)I
+        90: iload         10
+        92: invokestatic  #553                // Method net/minecraft/util/ARGB.blue:(I)I
+        95: invokestatic  #556                // Method net/conczin/mca/client/resources/EyeTextureLayers.isPixelForLayer:(Lnet/conczin/mca/client/resources/EyeTextureLayers$Layer;IIII)Z
+        98: ifne          104
+       101: goto          116
+       104: aload_0
+       105: iload         8
+       107: iload         9
+       109: iload         10
+       111: iload         5
+       113: invokestatic  #560                // Method compositePixel:(Lcom/mojang/blaze3d/platform/NativeImage;IIII)V
+       116: iinc          9, 1
+       119: goto          53
+       122: iinc          8, 1
+       125: goto          29
+       128: return
+
+  public static void composite(com.mojang.blaze3d.platform.NativeImage, net.minecraft.resources.Identifier, int);
+    Code:
+         0: aload_1
+         1: ifnonnull     5
+         4: return
+         5: aload_1
+         6: invokestatic  #467                // Method loadTexture:(Lnet/minecraft/resources/Identifier;)Lcom/mojang/blaze3d/platform/NativeImage;
+         9: astore_3
+        10: aload_3
+        11: ifnonnull     15
+        14: return
+        15: aload_0
+        16: invokevirtual #525                // Method com/mojang/blaze3d/platform/NativeImage.getWidth:()I
+        19: aload_3
+        20: invokevirtual #525                // Method com/mojang/blaze3d/platform/NativeImage.getWidth:()I
+        23: invokestatic  #528                // Method java/lang/Math.min:(II)I
+        26: istore        4
+        28: aload_0
+        29: invokevirtual #531                // Method com/mojang/blaze3d/platform/NativeImage.getHeight:()I
+        32: aload_3
+        33: invokevirtual #531                // Method com/mojang/blaze3d/platform/NativeImage.getHeight:()I
+        36: invokestatic  #528                // Method java/lang/Math.min:(II)I
+        39: istore        5
+        41: iconst_0
+        42: istore        6
+        44: iload         6
+        46: iload         4
+        48: if_icmpge     94
+        51: iconst_0
+        52: istore        7
+        54: iload         7
+        56: iload         5
+        58: if_icmpge     88
+        61: aload_3
+        62: iload         6
+        64: iload         7
+        66: invokevirtual #538                // Method com/mojang/blaze3d/platform/NativeImage.getPixel:(II)I
+        69: istore        8
+        71: aload_0
+        72: iload         6
+        74: iload         7
+        76: iload         8
+        78: iload_2
+        79: invokestatic  #560                // Method compositePixel:(Lcom/mojang/blaze3d/platform/NativeImage;IIII)V
+        82: iinc          7, 1
+        85: goto          54
+        88: iinc          6, 1
+        91: goto          44
+        94: aload_3
+        95: invokevirtual #186                // Method com/mojang/blaze3d/platform/NativeImage.close:()V
+        98: goto          110
+       101: astore        9
+       103: aload_3
+       104: invokevirtual #186                // Method com/mojang/blaze3d/platform/NativeImage.close:()V
+       107: aload         9
+       109: athrow
+       110: return
+      Exception table:
+         from    to  target type
+            15    94   101   any
+           101   103   101   any
+
+  public static void compositePixel(com.mojang.blaze3d.platform.NativeImage, int, int, int, int);
+    Code:
+         0: iload         4
+         2: invokestatic  #547                // Method net/minecraft/util/ARGB.red:(I)I
+         5: istore        5
+         7: iload         4
+         9: invokestatic  #550                // Method net/minecraft/util/ARGB.green:(I)I
+        12: istore        6
+        14: iload         4
+        16: invokestatic  #553                // Method net/minecraft/util/ARGB.blue:(I)I
+        19: istore        7
+        21: iload         4
+        23: invokestatic  #541                // Method net/minecraft/util/ARGB.alpha:(I)I
+        26: istore        8
+        28: iload_3
+        29: invokestatic  #541                // Method net/minecraft/util/ARGB.alpha:(I)I
+        32: istore        9
+        34: iload         9
+        36: ifne          40
+        39: return
+        40: iload_3
+        41: invokestatic  #547                // Method net/minecraft/util/ARGB.red:(I)I
+        44: iload         5
+        46: imul
+        47: sipush        255
+        50: idiv
+        51: istore        10
+        53: iload_3
+        54: invokestatic  #550                // Method net/minecraft/util/ARGB.green:(I)I
+        57: iload         6
+        59: imul
+        60: sipush        255
+        63: idiv
+        64: istore        11
+        66: iload_3
+        67: invokestatic  #553                // Method net/minecraft/util/ARGB.blue:(I)I
+        70: iload         7
+        72: imul
+        73: sipush        255
+        76: idiv
+        77: istore        12
+        79: iload         9
+        81: iload         8
+        83: imul
+        84: sipush        255
+        87: idiv
+        88: istore        13
+        90: iload         13
+        92: ifne          96
+        95: return
+        96: iload         13
+        98: sipush        255
+       101: if_icmpne     125
+       104: aload_0
+       105: iload_1
+       106: iload_2
+       107: sipush        255
+       110: iload         10
+       112: iload         11
+       114: iload         12
+       116: invokestatic  #564                // Method net/minecraft/util/ARGB.color:(IIII)I
+       119: invokevirtual #568                // Method com/mojang/blaze3d/platform/NativeImage.setPixel:(III)V
+       122: goto          282
+       125: aload_0
+       126: iload_1
+       127: iload_2
+       128: invokevirtual #538                // Method com/mojang/blaze3d/platform/NativeImage.getPixel:(II)I
+       131: istore        14
+       133: iload         14
+       135: invokestatic  #541                // Method net/minecraft/util/ARGB.alpha:(I)I
+       138: istore        15
+       140: iload         14
+       142: invokestatic  #547                // Method net/minecraft/util/ARGB.red:(I)I
+       145: istore        16
+       147: iload         14
+       149: invokestatic  #550                // Method net/minecraft/util/ARGB.green:(I)I
+       152: istore        17
+       154: iload         14
+       156: invokestatic  #553                // Method net/minecraft/util/ARGB.blue:(I)I
+       159: istore        18
+       161: iload         13
+       163: iload         15
+       165: sipush        255
+       168: iload         13
+       170: isub
+       171: imul
+       172: sipush        255
+       175: idiv
+       176: iadd
+       177: istore        19
+       179: iload         19
+       181: ifle          282
+       184: iload         10
+       186: iload         13
+       188: imul
+       189: iload         16
+       191: iload         15
+       193: imul
+       194: sipush        255
+       197: iload         13
+       199: isub
+       200: imul
+       201: sipush        255
+       204: idiv
+       205: iadd
+       206: iload         19
+       208: idiv
+       209: istore        20
+       211: iload         11
+       213: iload         13
+       215: imul
+       216: iload         17
+       218: iload         15
+       220: imul
+       221: sipush        255
+       224: iload         13
+       226: isub
+       227: imul
+       228: sipush        255
+       231: idiv
+       232: iadd
+       233: iload         19
+       235: idiv
+       236: istore        21
+       238: iload         12
+       240: iload         13
+       242: imul
+       243: iload         18
+       245: iload         15
+       247: imul
+       248: sipush        255
+       251: iload         13
+       253: isub
+       254: imul
+       255: sipush        255
+       258: idiv
+       259: iadd
+       260: iload         19
+       262: idiv
+       263: istore        22
+       265: aload_0
+       266: iload_1
+       267: iload_2
+       268: iload         19
+       270: iload         20
+       272: iload         21
+       274: iload         22
+       276: invokestatic  #564                // Method net/minecraft/util/ARGB.color:(IIII)I
+       279: invokevirtual #568                // Method com/mojang/blaze3d/platform/NativeImage.setPixel:(III)V
+       282: return
+
+  private static java.lang.String lambda$getAvailableExportFile$0(java.nio.file.Path);
+    Code:
+         0: aload_0
+         1: invokeinterface #131,  1          // InterfaceMethod java/nio/file/Path.getFileName:()Ljava/nio/file/Path;
+         6: invokeinterface #572,  1          // InterfaceMethod java/nio/file/Path.toString:()Ljava/lang/String;
+        11: areturn
+
+  private static net.minecraft.network.chat.Style lambda$export$2(java.nio.file.Path, net.minecraft.network.chat.Style);
+    Code:
+         0: aload_1
+         1: getstatic     #575                // Field net/minecraft/ChatFormatting.GOLD:Lnet/minecraft/ChatFormatting;
+         4: invokevirtual #578                // Method net/minecraft/network/chat/Style.withColor:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/Style;
+         7: iconst_1
+         8: invokestatic  #584                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        11: invokevirtual #589                // Method net/minecraft/network/chat/Style.withUnderlined:(Ljava/lang/Boolean;)Lnet/minecraft/network/chat/Style;
+        14: new           #593                // class net/minecraft/network/chat/ClickEvent$OpenFile
+        17: dup
+        18: aload_0
+        19: invokeinterface #595,  1          // InterfaceMethod java/nio/file/Path.toFile:()Ljava/io/File;
+        24: invokespecial #599                // Method net/minecraft/network/chat/ClickEvent$OpenFile."<init>":(Ljava/io/File;)V
+        27: invokevirtual #600                // Method net/minecraft/network/chat/Style.withClickEvent:(Lnet/minecraft/network/chat/ClickEvent;)Lnet/minecraft/network/chat/Style;
+        30: areturn
+
+  private static net.minecraft.network.chat.Style lambda$export$1(java.nio.file.Path, net.minecraft.network.chat.Style);
+    Code:
+         0: aload_1
+         1: getstatic     #604                // Field net/minecraft/ChatFormatting.GREEN:Lnet/minecraft/ChatFormatting;
+         4: invokevirtual #578                // Method net/minecraft/network/chat/Style.withColor:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/Style;
+         7: iconst_1
+         8: invokestatic  #584                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        11: invokevirtual #589                // Method net/minecraft/network/chat/Style.withUnderlined:(Ljava/lang/Boolean;)Lnet/minecraft/network/chat/Style;
+        14: new           #593                // class net/minecraft/network/chat/ClickEvent$OpenFile
+        17: dup
+        18: aload_0
+        19: invokeinterface #595,  1          // InterfaceMethod java/nio/file/Path.toFile:()Ljava/io/File;
+        24: invokespecial #599                // Method net/minecraft/network/chat/ClickEvent$OpenFile."<init>":(Ljava/io/File;)V
+        27: invokevirtual #600                // Method net/minecraft/network/chat/Style.withClickEvent:(Lnet/minecraft/network/chat/ClickEvent;)Lnet/minecraft/network/chat/Style;
+        30: areturn
+
+  private static net.minecraft.network.chat.Style lambda$export$0(net.minecraft.network.chat.Style);
+    Code:
+         0: aload_0
+         1: getstatic     #604                // Field net/minecraft/ChatFormatting.GREEN:Lnet/minecraft/ChatFormatting;
+         4: invokevirtual #578                // Method net/minecraft/network/chat/Style.withColor:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/Style;
+         7: areturn
+
+  static {};
+    Code:
+         0: ldc_w         #607                // String skins/face/normal/blink.png
+         3: invokestatic  #609                // Method net/conczin/mca/MCA.locate:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+         6: putstatic     #335                // Field BLINK_FACE:Lnet/minecraft/resources/Identifier;
+         9: return
+}

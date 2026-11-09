@@ -1,0 +1,66 @@
+Compiled from "MixinEntity.java"
+abstract class net.conczin.mca.mixin.MixinEntity {
+  net.conczin.mca.mixin.MixinEntity();
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+
+  private boolean mca$allowCarriedVillagersToRidePlayers(net.minecraft.world.entity.EntityType<?>, net.minecraft.world.entity.Entity, boolean, boolean);
+    Code:
+         0: iload_3
+         1: ifeq          62
+         4: aload_2
+         5: instanceof    #7                  // class net/minecraft/world/entity/player/Player
+         8: ifeq          62
+        11: aload_0
+        12: astore        6
+        14: aload         6
+        16: instanceof    #9                  // class net/conczin/mca/entity/VillagerEntityMCA
+        19: ifeq          62
+        22: aload         6
+        24: checkcast     #9                  // class net/conczin/mca/entity/VillagerEntityMCA
+        27: astore        5
+        29: aload         5
+        31: invokevirtual #11                 // Method net/conczin/mca/entity/VillagerEntityMCA.getAgeState:()Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        34: astore        6
+        36: aload         6
+        38: getstatic     #15                 // Field net/conczin/mca/entity/ai/relationship/AgeState.BABY:Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        41: if_acmpeq     60
+        44: aload         6
+        46: getstatic     #21                 // Field net/conczin/mca/entity/ai/relationship/AgeState.TODDLER:Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        49: if_acmpeq     60
+        52: aload         6
+        54: getstatic     #24                 // Field net/conczin/mca/entity/ai/relationship/AgeState.CHILD:Lnet/conczin/mca/entity/ai/relationship/AgeState;
+        57: if_acmpne     62
+        60: iconst_1
+        61: ireturn
+        62: aload_1
+        63: invokevirtual #27                 // Method net/minecraft/world/entity/EntityType.canSerialize:()Z
+        66: ireturn
+}
+Compiled from "CTrackedEntity.java"
+public interface net.conczin.mca.util.network.datasync.CTrackedEntity<T extends net.minecraft.world.entity.Entity> {
+  public abstract net.conczin.mca.util.network.datasync.CDataManager<T> getTypeDataManager();
+
+  public default <P, TrackedP> void setTrackedValue(net.conczin.mca.util.network.datasync.CParameter<P, TrackedP>, P);
+    Code:
+         0: aload_0
+         1: invokeinterface #1,  1            // InterfaceMethod getTypeDataManager:()Lnet/conczin/mca/util/network/datasync/CDataManager;
+         6: aload_0
+         7: checkcast     #7                  // class net/minecraft/world/entity/Entity
+        10: aload_1
+        11: aload_2
+        12: invokevirtual #9                  // Method net/conczin/mca/util/network/datasync/CDataManager.set:(Lnet/minecraft/world/entity/Entity;Lnet/conczin/mca/util/network/datasync/CParameter;Ljava/lang/Object;)V
+        15: return
+
+  public default <P, TrackedP> P getTrackedValue(net.conczin.mca.util.network.datasync.CParameter<P, TrackedP>);
+    Code:
+         0: aload_0
+         1: invokeinterface #1,  1            // InterfaceMethod getTypeDataManager:()Lnet/conczin/mca/util/network/datasync/CDataManager;
+         6: aload_0
+         7: checkcast     #7                  // class net/minecraft/world/entity/Entity
+        10: aload_1
+        11: invokevirtual #15                 // Method net/conczin/mca/util/network/datasync/CDataManager.get:(Lnet/minecraft/world/entity/Entity;Lnet/conczin/mca/util/network/datasync/CParameter;)Ljava/lang/Object;
+        14: areturn
+}

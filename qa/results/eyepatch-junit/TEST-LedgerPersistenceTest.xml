@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LedgerPersistenceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-04T14:35:12.808Z" hostname="DESKTOP" time="0.052">
+  <properties/>
+  <testcase name="malformedWitnessIdCannotBeDroppedAndPermitDuplicateConsequences()" classname="LedgerPersistenceTest" time="0.001"/>
+  <testcase name="missingNpcCaptainCannotBecomeASilentVacancy()" classname="LedgerPersistenceTest" time="0.003"/>
+  <testcase name="alpha5DuplicateOfficesAreRepairedAndOriginalBackedUp()" classname="LedgerPersistenceTest" time="0.021"/>
+  <testcase name="orphanMemberCannotBeDiscardedDuringNextSave()" classname="LedgerPersistenceTest" time="0.004"/>
+  <testcase name="malformedCaptainUuidCannotBecomeAValidVacancy()" classname="LedgerPersistenceTest" time="0.002"/>
+  <testcase name="failedWritePreservesPreviousSnapshotAndCanBeRetried()" classname="LedgerPersistenceTest" time="0.015"/>
+  <testcase name="corruptRosterCannotSilentlyOverwriteWorldState()" classname="LedgerPersistenceTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

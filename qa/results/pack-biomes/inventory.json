@@ -1,0 +1,4753 @@
+{
+  "profile": "C:\\Users\\victo\\AppData\\Roaming\\ModrinthApp\\profiles\\Fabulously Optimized",
+  "active_jar_count": 344,
+  "mods": [
+    {
+      "id": "armor_3d",
+      "version": "0.9.4.2",
+      "file": "3d-armor-0.9.4.2-mod.jar"
+    },
+    {
+      "id": "ctov",
+      "version": "4.1.0",
+      "file": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "abyssaldepths",
+      "version": "0.0.7-stage7-renderstate-hotfix1",
+      "file": "AbyssalDepths_Fabric_26.2_Fase7_RenderState_HOTFIX1.jar"
+    },
+    {
+      "id": "adorn",
+      "version": "9.0.0+26.2",
+      "file": "Adorn-9.0.0+26.2-fabric.jar"
+    },
+    {
+      "id": "aitk",
+      "version": "1.2.2",
+      "file": "aitk-1.2.2-fabric+26.2.jar"
+    },
+    {
+      "id": "alexsmobs",
+      "version": "2.2.4",
+      "file": "alexsmobs-2.2.4-fabric+26.2.jar"
+    },
+    {
+      "id": "almanac",
+      "version": "1.26.9.1",
+      "file": "almanac-fabric-26.2-1.26.9.1.jar"
+    },
+    {
+      "id": "always_eat",
+      "version": "3.0.0",
+      "file": "always_eat-3.0.0.jar"
+    },
+    {
+      "id": "ambientsounds",
+      "version": "6.3.6",
+      "file": "AmbientSounds_FABRIC_v6.3.6_mc26.2.jar"
+    },
+    {
+      "id": "animal_feeding_trough",
+      "version": "1.2.1+26.2",
+      "file": "animal_feeding_trough-1.2.1+26.2.jar"
+    },
+    {
+      "id": "animalgarden_narwhal",
+      "version": "1.0.1",
+      "file": "animalgarden-narwhal-1.0.1-fabric-26.2-0.152.2.jar"
+    },
+    {
+      "id": "animalgarden_bullshark",
+      "version": "1.1.1",
+      "file": "animalgarden_bullshark-1.1.1-fabric-26.1.1-0.145.4.jar"
+    },
+    {
+      "id": "animalweights",
+      "version": "1.2.2",
+      "file": "animalweights-26.2-Fabric-1.2.2.jar"
+    },
+    {
+      "id": "animatica",
+      "version": "0.6.3+26.2",
+      "file": "animatica-0.6.3+26.2.jar"
+    },
+    {
+      "id": "anvilrestoration",
+      "version": "2.6",
+      "file": "anvilrestoration-26.2.0-2.6.jar"
+    },
+    {
+      "id": "aquarius_libs",
+      "version": "1.2.0",
+      "file": "aquarius_libs-1.2.0-fabric-26.2-0.152.1.jar"
+    },
+    {
+      "id": "mc2_interactivefoliage",
+      "version": "2.2.1+aquatic-wave.4-fix3-mobs-event",
+      "file": "AquaticChain_WaveV4_Fix3_MobEvent_MC26.2.jar"
+    },
+    {
+      "id": "archers",
+      "version": "3.1.3.003+26.2",
+      "file": "archers-fabric-3.1.3.003+26.2.jar"
+    },
+    {
+      "id": "architectury",
+      "version": "21.1.12",
+      "file": "architectury-fabric-21.1.12.jar"
+    },
+    {
+      "id": "armor_model_api",
+      "version": "1.1.2+26.2",
+      "file": "armor_model_api-fabric-1.1.2+26.2.jar"
+    },
+    {
+      "id": "armory_rpgs",
+      "version": "1.5.3.003+26.2",
+      "file": "armory-fabric-1.5.3.003+26.2.jar"
+    },
+    {
+      "id": "arsenal",
+      "version": "1.5.1+26.2",
+      "file": "arsenal-fabric-1.5.1+26.2.jar"
+    },
+    {
+      "id": "atmospherics",
+      "version": "2.6.6",
+      "file": "atmospherics-2.6.6-mc-26.2.jar"
+    },
+    {
+      "id": "badpackets",
+      "version": "0.12.2",
+      "file": "badpackets-fabric-0.12.2.jar"
+    },
+    {
+      "id": "balm",
+      "version": "26.2.0.9",
+      "file": "balm-fabric-26.2-26.2.0.9.jar"
+    },
+    {
+      "id": "betterblockentities",
+      "version": "1.3.8-beta.1+mc26.2",
+      "file": "bbe-fabric-1.3.8-beta.1+mc26.2.jar"
+    },
+    {
+      "id": "bclib",
+      "version": "26.201.5",
+      "file": "bclib-26.201.5.jar"
+    },
+    {
+      "id": "beautify",
+      "version": "3.6.0",
+      "file": "beautify-3.6.0-fabric+26.2.jar"
+    },
+    {
+      "id": "beekeeperhut",
+      "version": "3.0.4",
+      "file": "beekeeperhut-fabric-3.0.4+mc26.2.jar"
+    },
+    {
+      "id": "betternether",
+      "version": "26.201.5",
+      "file": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "mr_better_trees",
+      "version": "1.9.3",
+      "file": "better-trees-1.9.3.jar"
+    },
+    {
+      "id": "better_climbing",
+      "version": "6",
+      "file": "better_climbing-fabric-6.jar"
+    },
+    {
+      "id": "better_end_sky",
+      "version": "0.3.1+26.2",
+      "file": "better_end_sky-0.3.1+26.2.jar"
+    },
+    {
+      "id": "bettercombat",
+      "version": "3.2.2",
+      "file": "bettercombat-fabric-3.2.2+26.2.jar"
+    },
+    {
+      "id": "betterdays",
+      "version": "4.1.1.7",
+      "file": "betterdays-26.2-fabric-4.1.1.7-FABRIC.jar"
+    },
+    {
+      "id": "bettermounthud",
+      "version": "1.3.1",
+      "file": "bettermounthud-1.3.1.jar"
+    },
+    {
+      "id": "bettersmoke",
+      "version": "0.1.2+26.2",
+      "file": "bettersmoke-0.1.2+26.2.jar"
+    },
+    {
+      "id": "betterthanmending",
+      "version": "2.3.0",
+      "file": "BetterThanMending-2.3.0-merged.jar"
+    },
+    {
+      "id": "bettertridents",
+      "version": "26.2.0",
+      "file": "BetterTridents-v26.2.0-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "bigwater",
+      "version": "1.2.0-fabric+mc26.2",
+      "file": "bigwater-1.2.0-fabric+mc26.2.jar"
+    },
+    {
+      "id": "biolith",
+      "version": "3.7.0-beta.1",
+      "file": "biolith-fabric-3.7.0-beta.1.jar"
+    },
+    {
+      "id": "mr_blaze_attackanimation",
+      "version": "1.0.1",
+      "file": "blaze-attack-animation-1.0.1.jar"
+    },
+    {
+      "id": "blockrunner",
+      "version": "26.2.0",
+      "file": "BlockRunner-v26.2.0-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "boids",
+      "version": "2.0.0+26.3",
+      "file": "boids-2.0.0+26.3.jar"
+    },
+    {
+      "id": "bookshelf",
+      "version": "26.2.0.4",
+      "file": "Bookshelf-fabric-MC26.2-26.2.0.4.jar"
+    },
+    {
+      "id": "bowinfinityfix",
+      "version": "3.3.0",
+      "file": "BowInfinityFix-26.2-fabric-3.3.0.jar"
+    },
+    {
+      "id": "brainierbees",
+      "version": "1.10.2",
+      "file": "brainierbees-1.10.2.jar"
+    },
+    {
+      "id": "breakfree",
+      "version": "1.5.1",
+      "file": "breakfree-1.5.1.jar"
+    },
+    {
+      "id": "bundleapi",
+      "version": "4.0.0+26.2",
+      "file": "bundle-api-fabric-4.0.0+26.2.jar"
+    },
+    {
+      "id": "butterbee",
+      "version": "1.0.8",
+      "file": "ButterBee-1.0.8.jar"
+    },
+    {
+      "id": "cameraoverhaul",
+      "version": "2.1.2-fabric+mc.26.2",
+      "file": "CameraOverhaul-v2.1.2-fabric+mc[26.2].jar"
+    },
+    {
+      "id": "cats_dont_care",
+      "version": "1.0.1+26.2+fabric",
+      "file": "cats-dont-care-1.0.1+26.2+fabric.jar"
+    },
+    {
+      "id": "caves_canyons",
+      "version": "3.4.3",
+      "file": "caves_canyons-3.4.3.jar"
+    },
+    {
+      "id": "cavespiderspawn",
+      "version": "1.5",
+      "file": "cavespiderspawn-26.2.0-1.5.jar"
+    },
+    {
+      "id": "chatanimation",
+      "version": "1.3.5",
+      "file": "chatanimation-fabric-1.3.5+mc26.2.jar"
+    },
+    {
+      "id": "cicada",
+      "version": "0.15.2+26.2",
+      "file": "cicada-lib-0.15.3+26.2.jar"
+    },
+    {
+      "id": "cinderscapes",
+      "version": "6.1.0-alpha.2",
+      "file": "cinderscapes-6.1.0-alpha.2.jar"
+    },
+    {
+      "id": "clickthrough",
+      "version": "3.6.4+26.1.2",
+      "file": "clickthrough-plus-3.6.5+26.1.2-fabric.jar"
+    },
+    {
+      "id": "climaterivers",
+      "version": "26.2.1",
+      "file": "ClimateRivers-v26.2.1-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "cloth-config",
+      "version": "26.2.155",
+      "file": "cloth-config-26.2.155.jar"
+    },
+    {
+      "id": "clumps",
+      "version": "26.2.1",
+      "file": "Clumps-fabric-26.2-26.2.1.jar"
+    },
+    {
+      "id": "cobweb",
+      "version": "1.4.0",
+      "file": "cobweb-fabric-26.2-1.4.0.jar"
+    },
+    {
+      "id": "codxlib",
+      "version": "1.6.1",
+      "file": "codxlib-1.6.1-fabric+26.2.jar"
+    },
+    {
+      "id": "collective",
+      "version": "8.67",
+      "file": "collective-26.2.0-8.67.jar"
+    },
+    {
+      "id": "combat_roll",
+      "version": "3.0.1+26.2",
+      "file": "combat_roll-fabric-3.0.1+26.2.jar"
+    },
+    {
+      "id": "comforts",
+      "version": "16.0.0+26.2",
+      "file": "comforts-fabric-16.0.0+26.2.jar"
+    },
+    {
+      "id": "config_manager",
+      "version": "1.1.3",
+      "file": "ConfigManager-fabric-26.1_26.2-1.1.3.jar"
+    },
+    {
+      "id": "connectedglass",
+      "version": "1.1.14",
+      "file": "connectedglass-1.1.14-fabric-mc26.2.jar"
+    },
+    {
+      "id": "connectiblechains",
+      "version": "2.4.4+26.2",
+      "file": "connectiblechains-2.4.4+26.2-fabric.jar"
+    },
+    {
+      "id": "continents",
+      "version": "1.1.14",
+      "file": "Continents_26.2_v1.1.14.jar"
+    },
+    {
+      "id": "continuity",
+      "version": "3.0.1+26.2",
+      "file": "continuity-3.0.1+26.2.jar"
+    },
+    {
+      "id": "copper_fire",
+      "version": "1.1.1",
+      "file": "copper-fire-fabric-26.2-1.1.1.jar"
+    },
+    {
+      "id": "copperhopper",
+      "version": "0.24.1+26.2",
+      "file": "copperhopper-fabric-0.24.1+26.2.jar"
+    },
+    {
+      "id": "craftableenchantedgoldenapple",
+      "version": "26.2-0.1",
+      "file": "CraftableEnchantedGoldenApple-26.2-0.1.jar"
+    },
+    {
+      "id": "crampedness",
+      "version": "1.2.0",
+      "file": "crampedness-26.2-fabric-1.2.0.jar"
+    },
+    {
+      "id": "crash_assistant",
+      "version": "1.11.14",
+      "file": "CrashAssistant-fabric-26.2-26.3-1.11.14.jar"
+    },
+    {
+      "id": "crawl",
+      "version": "0.15.0",
+      "file": "crawl-mc26.2-fabric-0.15.0.jar"
+    },
+    {
+      "id": "creativecore",
+      "version": "2.14.16",
+      "file": "CreativeCore_FABRIC_v2.14.16_mc26.2.jar"
+    },
+    {
+      "id": "critical_strike",
+      "version": "1.0.6+26.2",
+      "file": "critical_strike-fabric-1.0.6+26.2.jar"
+    },
+    {
+      "id": "cropsloverain",
+      "version": "3.2.2",
+      "file": "cropsloverain-3.2.2.jar"
+    },
+    {
+      "id": "cryingportals",
+      "version": "3.0",
+      "file": "cryingportals-26.2.0-3.0.jar"
+    },
+    {
+      "id": "cwb",
+      "version": "4.1.0+26.2",
+      "file": "cwb-4.1.0+26.2.jar"
+    },
+    {
+      "id": "darksmelting",
+      "version": "1.2.0",
+      "file": "darksmelting-fabric-26.1-1.2.0.jar"
+    },
+    {
+      "id": "debugify",
+      "version": "26.2.0.1",
+      "file": "debugify-26.2.0.1.jar"
+    },
+    {
+      "id": "deeper_oceans",
+      "version": "2.0.1",
+      "file": "deeper-oceans-2.0.1-fabric-26.2.jar"
+    },
+    {
+      "id": "delightlib",
+      "version": "26.06.23-26.2-fabric",
+      "file": "delightlib-26.06.23-26.2-fabric.jar"
+    },
+    {
+      "id": "diagonalfences",
+      "version": "26.2.0",
+      "file": "DiagonalFences-v26.2.0-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "diagonalwalls",
+      "version": "26.2.0",
+      "file": "DiagonalWalls-v26.2.0-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "diagonalwindows",
+      "version": "26.2.0",
+      "file": "DiagonalWindows-v26.2.0-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "direbats",
+      "version": "4.0.0+26.2",
+      "file": "direbats-4.0.0+26.2.jar"
+    },
+    {
+      "id": "dismountentity",
+      "version": "3.8",
+      "file": "dismountentity-26.2.0-3.8.jar"
+    },
+    {
+      "id": "distractingtrims",
+      "version": "26.2.0.2",
+      "file": "DistractingTrims-fabric-MC26.2-26.2.0.2.jar"
+    },
+    {
+      "id": "diversity",
+      "version": "2.5.5",
+      "file": "diversity-fabric-26.2-2.5.5.jar"
+    },
+    {
+      "id": "do_a_barrel_roll",
+      "version": "3.8.4",
+      "file": "do_a_barrel_roll-fabric-3.8.4+26.2.jar"
+    },
+    {
+      "id": "doors-closed",
+      "version": "1.0.1+26.1.2",
+      "file": "doors-closed-1.0.1+26.1.2.jar"
+    },
+    {
+      "id": "doubledoors",
+      "version": "7.5",
+      "file": "doubledoors-26.2.0-7.5.jar"
+    },
+    {
+      "id": "waterdripsound",
+      "version": "0.6.3",
+      "file": "Drip Sounds-0.6.3+26.2-Fabric.jar"
+    },
+    {
+      "id": "mr_dungeons_andtavernsancientcityoverhaul",
+      "version": "3.4",
+      "file": "dungeons-and-taverns-ancient-city-overhaul-3.4.jar"
+    },
+    {
+      "id": "mr_dungeons_andtavernsdeserttempleoverhaul",
+      "version": "1-v2.1",
+      "file": "dungeons-and-taverns-desert-temple-overhaul-v2.1.jar"
+    },
+    {
+      "id": "mr_dungeons_andtavernsjungletempleoverhaul",
+      "version": "1-v2.1",
+      "file": "dungeons-and-taverns-jungle-temple-overhaul-v2.1.jar"
+    },
+    {
+      "id": "mr_dungeons_andtavernsnetherfortressoverhaul",
+      "version": "1-v3.1",
+      "file": "dungeons-and-taverns-nether-fortress-overhaul-v3.1.jar"
+    },
+    {
+      "id": "mr_dungeons_andtavernspillageroutpostoverhaul",
+      "version": "1-v3.3",
+      "file": "dungeons-and-taverns-pillager-outpost-overhaul-v3.3.jar"
+    },
+    {
+      "id": "mr_dungeons_andtavernsstrongholdoverhaul",
+      "version": "1-v2.4.0",
+      "file": "dungeons-and-taverns-stronghold-overhaul-v2.4.0.jar"
+    },
+    {
+      "id": "mr_dungeons_andtavernsswamphutoverhaul",
+      "version": "1-v2.3",
+      "file": "dungeons-and-taverns-swamp-hut-overhaul-v2.3.jar"
+    },
+    {
+      "id": "mr_dungeons_andtavernswoodlandmansionoverhaul",
+      "version": "2.1",
+      "file": "dungeons-and-taverns-woodland-mansion-overhaul-2.1.jar"
+    },
+    {
+      "id": "dynamic_fps",
+      "version": "3.11.9",
+      "file": "dynamic-fps-3.11.9+minecraft-26.2.0-fabric.jar"
+    },
+    {
+      "id": "e4mc",
+      "version": "6.2.3+modern",
+      "file": "e4mc-fabric-6.2.3-modern.jar"
+    },
+    {
+      "id": "earth-and-water",
+      "version": "1.0.6",
+      "file": "earth-and-water-1.0.6-26.2-hotfix.jar"
+    },
+    {
+      "id": "easyelytratakeoff",
+      "version": "5.0",
+      "file": "easyelytratakeoff-26.2.0-5.0.jar"
+    },
+    {
+      "id": "ecologics",
+      "version": "2.6.4",
+      "file": "Ecologics-NeoFab-26.2-2.6.4.jar"
+    },
+    {
+      "id": "mr_edf_remastered",
+      "version": "5.0.2",
+      "file": "edf-remastered-5.0.2.jar"
+    },
+    {
+      "id": "elementalenchantments",
+      "version": "2.8.1",
+      "file": "elementalenchantments-2.8.1.jar"
+    },
+    {
+      "id": "emf_compat_better_combat",
+      "version": "2.1.0",
+      "file": "emf_compat_better_combat_fabric_26.2_2.1.0.jar"
+    },
+    {
+      "id": "emf_compat_core",
+      "version": "2.3.2",
+      "file": "emf_compat_core_fabric_26.2_2.3.2.jar"
+    },
+    {
+      "id": "enchanted_fishing_line",
+      "version": "1.0.0",
+      "file": "enchanted_fishing_line-1.0.0-fabric-26.2.jar"
+    },
+    {
+      "id": "enchantinginfuser",
+      "version": "26.2.0",
+      "file": "EnchantingInfuser-v26.2.0-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "enchantment-effects",
+      "version": "1.1.0+26.2",
+      "file": "enchantment-effects-1.1.0+26.2.jar"
+    },
+    {
+      "id": "enchant-outline",
+      "version": "3.3",
+      "file": "enchantment-glint-outline-26.2-3.3.jar"
+    },
+    {
+      "id": "endrem",
+      "version": "6.2.1",
+      "file": "endrem-fabric-26.2-6.2.1.jar"
+    },
+    {
+      "id": "entityculling",
+      "version": "1.11.3",
+      "file": "entityculling-fabric-1.11.3-mc26.2.jar"
+    },
+    {
+      "id": "explosiveenhancement",
+      "version": "1.4.2-26.2",
+      "file": "explosive-enhancement-1.4.2-26.2.jar"
+    },
+    {
+      "id": "fabric-api",
+      "version": "0.161.0+26.2",
+      "file": "fabric-api-0.161.0+26.2.jar"
+    },
+    {
+      "id": "fabric-language-kotlin",
+      "version": "1.14.2+kotlin.2.4.21",
+      "file": "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar"
+    },
+    {
+      "id": "faewulf_lib",
+      "version": "1.4.0",
+      "file": "faewulf_lib-fabric-26.2-1.4.0.jar"
+    },
+    {
+      "id": "fallingleaves",
+      "version": "2.0.7",
+      "file": "fallingleaves-2.0.7+26.1.jar"
+    },
+    {
+      "id": "fallthroughslime",
+      "version": "3.6",
+      "file": "fallthroughslime-26.2.0-3.6.jar"
+    },
+    {
+      "id": "fantasy_armor",
+      "version": "1.3-26.2",
+      "file": "fantasy-armor-1.3-26.2-fabric.jar"
+    },
+    {
+      "id": "fantasy_weapons",
+      "version": "1.0-26.2",
+      "file": "fantasy-weapons-1.0-26.2-fabric.jar"
+    },
+    {
+      "id": "farmersdelight",
+      "version": "26.2-3.6.30+refabricated",
+      "file": "FarmersDelight-26.2-3.6.30+refabricated.jar"
+    },
+    {
+      "id": "fastquit",
+      "version": "3.1.5+mc26.2",
+      "file": "fastquit-3.1.5+mc26.2.jar"
+    },
+    {
+      "id": "ferritecore",
+      "version": "9.0.0",
+      "file": "ferritecore-9.0.0-fabric.jar"
+    },
+    {
+      "id": "fishofthieves",
+      "version": "26.2.2.0",
+      "file": "fish_of_thieves-mc26.2-v26.2.2.0-fabric.jar"
+    },
+    {
+      "id": "fishontheline",
+      "version": "3.6",
+      "file": "fishontheline-26.2.0-3.6.jar"
+    },
+    {
+      "id": "fleeinganimals",
+      "version": "9.0.0",
+      "file": "fleeinganimals-9.0.0.jar"
+    },
+    {
+      "id": "flowerymooblooms",
+      "version": "3.0.3",
+      "file": "flowerymooblooms-fabric-3.0.3+mc26.2.jar"
+    },
+    {
+      "id": "footprintparticle",
+      "version": "0.7.1",
+      "file": "footprintparticle-0.7.1+26.1-neobric.jar"
+    },
+    {
+      "id": "forgeconfigapiport",
+      "version": "26.2.1",
+      "file": "ForgeConfigAPIPort-v26.2.1-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "friendlyfire",
+      "version": "26.2.0.1",
+      "file": "FriendlyFire-fabric-MC26.2-26.2.0.1.jar"
+    },
+    {
+      "id": "friendsandfoes",
+      "version": "5.0.4",
+      "file": "friendsandfoes-fabric-5.0.4+mc26.2.jar"
+    },
+    {
+      "id": "frozenlib",
+      "version": "3.0.3",
+      "file": "FrozenLib-3.0.3-mc26.2-fabric.jar"
+    },
+    {
+      "id": "fusion",
+      "version": "1.3.16",
+      "file": "fusion-1.3.16-fabric-mc26.2.jar"
+    },
+    {
+      "id": "fwa",
+      "version": "1.3.4",
+      "file": "fwa+26.2-1.3.4.jar"
+    },
+    {
+      "id": "fzzy_config",
+      "version": "0.7.7+26.2",
+      "file": "fzzy_config-0.7.7+26.2.jar"
+    },
+    {
+      "id": "gazebo",
+      "version": "2.2.0+26.2",
+      "file": "gazebo-fabric-2.2.0+26.2.jar"
+    },
+    {
+      "id": "geckolib",
+      "version": "5.5.5",
+      "file": "geckolib-fabric-26.2-5.5.5.jar"
+    },
+    {
+      "id": "glitchcore",
+      "version": "26.2.0.0.0",
+      "file": "GlitchCore-fabric-26.2-26.2.0.0.0.jar"
+    },
+    {
+      "id": "mr_glowing_glowsquids",
+      "version": "3",
+      "file": "glowing-glow-squids-3.jar"
+    },
+    {
+      "id": "glowing-torchflower",
+      "version": "1.4.1",
+      "file": "glowing-torchflower-fabric-mc26.2-1.4.1.jar"
+    },
+    {
+      "id": "golem_spawn_animation",
+      "version": "1.0.0",
+      "file": "golem-spawn-animation-FABRIC-26.2-1.0.0.jar"
+    },
+    {
+      "id": "grabbymobs",
+      "version": "1.8",
+      "file": "grabbymobs-26.2.0-1.8.jar"
+    },
+    {
+      "id": "graveyard",
+      "version": "4.0.0+mc26.2",
+      "file": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "mr_gravity_enchantment",
+      "version": "1-v1.0.0",
+      "file": "gravity-enchantment-v1.0.0.jar"
+    },
+    {
+      "id": "guardvillagers",
+      "version": "2.1.3-26.2",
+      "file": "guardvillagers-2.1.3-26.2.jar"
+    },
+    {
+      "id": "hopobettermineshaft",
+      "version": "1.3.7",
+      "file": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopobetterruinedportal",
+      "version": "1.5.1",
+      "file": "HopoBetterRuinedPortals-[26.2]-1.5.1.jar"
+    },
+    {
+      "id": "hopobetterunderwaterruins",
+      "version": "1.2.8",
+      "file": "HopoBetterUnderwaterRuins-[26.2]-1.2.8.jar"
+    },
+    {
+      "id": "mr_ibca",
+      "version": "1.0",
+      "file": "ibca-1.0.jar"
+    },
+    {
+      "id": "icys-better-horses",
+      "version": "2.1.8",
+      "file": "icys-better-horses-2.1.8-fab-26.2.jar"
+    },
+    {
+      "id": "immediatelyfast",
+      "version": "1.16.5+26.2",
+      "file": "ImmediatelyFast-Fabric-1.16.5+26.2.jar"
+    },
+    {
+      "id": "immersive_paintings",
+      "version": "0.8.0",
+      "file": "immersive_paintings-fabric-26.2-0.8.0.jar"
+    },
+    {
+      "id": "ivp",
+      "version": "1.2.0",
+      "file": "improved-village-placement-1.2.0-fabric-26.2.jar"
+    },
+    {
+      "id": "incendium",
+      "version": "5.5.1",
+      "file": "Incendium_26.2_v5.5.1.jar"
+    },
+    {
+      "id": "infusion_table",
+      "version": "1.2.3+26.2",
+      "file": "infusion_table-fabric-1.2.3+26.2.jar"
+    },
+    {
+      "id": "ingeniumapi",
+      "version": "1.0.2",
+      "file": "ingeniumapi-1.0.2-FABRIC-MC-26.X.jar"
+    },
+    {
+      "id": "interactivestuff",
+      "version": "0.7.0",
+      "file": "interactivestuff-0.7.0-26.2.jar"
+    },
+    {
+      "id": "inventorymanagement",
+      "version": "2.0.2+26.2",
+      "file": "inventorymanagement-fabric-2.0.2+26.2.jar"
+    },
+    {
+      "id": "invmove",
+      "version": "0.9.6",
+      "file": "InvMove-0.9.6+26.2-Fabric.jar"
+    },
+    {
+      "id": "iris",
+      "version": "1.11.2+mc26.2",
+      "file": "iris-fabric-1.11.2+mc26.2.jar"
+    },
+    {
+      "id": "ixeris",
+      "version": "4.6.8+26.2-fabric",
+      "file": "Ixeris-4.6.8+26.2-fabric.jar"
+    },
+    {
+      "id": "jewelry",
+      "version": "2.5.1+26.2",
+      "file": "jewelry-fabric-2.5.1+26.2.jar"
+    },
+    {
+      "id": "keepmysoiltilled",
+      "version": "2.7",
+      "file": "keepmysoiltilled-26.2.0-2.7.jar"
+    },
+    {
+      "id": "mr_ks_biomes",
+      "version": "26.2",
+      "file": "ks-biomes-26.2.jar"
+    },
+    {
+      "id": "languagereload",
+      "version": "1.7.8+26.2",
+      "file": "language-reload-1.7.8+26.2.jar"
+    },
+    {
+      "id": "lazy_ai_pixelindiedev",
+      "version": "1.7.2",
+      "file": "lazy-ai-1.7.2.jar"
+    },
+    {
+      "id": "leadphysics",
+      "version": "1.0.0",
+      "file": "LeadPhysics-1.0.0.jar"
+    },
+    {
+      "id": "leafmealone",
+      "version": "1.2.0",
+      "file": "leafmealone-1.2.0.jar"
+    },
+    {
+      "id": "letmedespawn",
+      "version": "1.26.9.1",
+      "file": "letmedespawn-fabric-26.2-1.26.9.1.jar"
+    },
+    {
+      "id": "libjf",
+      "version": "26.2.2",
+      "file": "libjf-26.2.2.jar"
+    },
+    {
+      "id": "lithium",
+      "version": "0.25.3+mc26.2",
+      "file": "lithium-fabric-0.25.3+mc26.2.jar"
+    },
+    {
+      "id": "lithostitched",
+      "version": "1.8.0",
+      "file": "lithostitched-1.8.0-fabric-26.2.jar"
+    },
+    {
+      "id": "livinghorizon",
+      "version": "0.15.0",
+      "file": "livinghorizon-0.15.0-mc26.2.jar"
+    },
+    {
+      "id": "lootr",
+      "version": "1.24.41.124",
+      "file": "lootr-fabric-26.2-1.24.41.124.jar"
+    },
+    {
+      "id": "low_fire_reborn",
+      "version": "1.0.12",
+      "file": "low-fire-reborn-1.0.12.jar"
+    },
+    {
+      "id": "lunaslimes",
+      "version": "1.10",
+      "file": "LunaSlimes-1.10-mc26.2-fabric.jar"
+    },
+    {
+      "id": "magicmoon",
+      "version": "1.1.0",
+      "file": "magicmoon-fabric-mc26.2-1.1.0.jar"
+    },
+    {
+      "id": "mca",
+      "version": "8.1.11+26.2",
+      "file": "mca-fabric-8.1.11+26.2.jar"
+    },
+    {
+      "id": "midnightlib",
+      "version": "1.10.0",
+      "file": "midnightlib-fabric-1.10.0+26.2.jar"
+    },
+    {
+      "id": "mixintrace",
+      "version": "1.0",
+      "file": "mixintrace-1.0-26.1-universal.jar"
+    },
+    {
+      "id": "modernfix",
+      "version": "5.27.19-build.2",
+      "file": "modernfix-5.27.19-build.2.jar"
+    },
+    {
+      "id": "modmenu",
+      "version": "20.0.3",
+      "file": "modmenu-20.0.3.jar"
+    },
+    {
+      "id": "modonomicon",
+      "version": "2.5.0",
+      "file": "modonomicon-26.2-fabric-2.5.0.jar"
+    },
+    {
+      "id": "mmv",
+      "version": "2.2.0",
+      "file": "MoogsMissingVillages-universal-1.21-2.2.0.jar"
+    },
+    {
+      "id": "mns",
+      "version": "3.1.1",
+      "file": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "moogs_structures",
+      "version": "3.4.2+fabric",
+      "file": "MoogsStructureLib-fabric-26.2-3.4.2.jar"
+    },
+    {
+      "id": "more_armor_trims",
+      "version": "1.5.4-26.2",
+      "file": "more-armor-trims-1.5.4-26.2.jar"
+    },
+    {
+      "id": "moremobs",
+      "version": "1.5.11+mod",
+      "file": "more_mobs-v1.5.11-mc1.14-26.3.9-mod.jar"
+    },
+    {
+      "id": "morechathistory",
+      "version": "2.0.0",
+      "file": "morechathistory-2.0.0.jar"
+    },
+    {
+      "id": "moreculling",
+      "version": "1.8.1",
+      "file": "moreculling-fabric-26.2-1.8.1.jar"
+    },
+    {
+      "id": "moredelight",
+      "version": "26.06.23-26.2-fabric",
+      "file": "moredelight-26.06.23-26.2-fabric.jar"
+    },
+    {
+      "id": "mousetweaks",
+      "version": "2.31",
+      "file": "MouseTweaks-fabric-mc26.2-2.31.jar"
+    },
+    {
+      "id": "mru",
+      "version": "1.0.45+26.2",
+      "file": "mru-1.0.45+26.2-fabric.jar"
+    },
+    {
+      "id": "multimine",
+      "version": "1.0.0+26.2-fabric",
+      "file": "multimine-1.0.0+26.2-fabric.jar"
+    },
+    {
+      "id": "mutantmonsters",
+      "version": "26.2.2",
+      "file": "MutantMonsters-v26.2.2-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "mynethersdelight",
+      "version": "3.0.0-1.10.4-beta.1",
+      "file": "mynethersdelight-3.0.0-1.10.4-beta.1-fabric+26.2.jar"
+    },
+    {
+      "id": "naturally_trimmed",
+      "version": "3.6.1",
+      "file": "naturally_trimmed-3.6.1+26.1-fabric.jar"
+    },
+    {
+      "id": "nethermap",
+      "version": "4.3.0+26.1",
+      "file": "nethermap-4.3.0+26.1.jar"
+    },
+    {
+      "id": "no-resource-pack-warnings",
+      "version": "1.5.0",
+      "file": "no-resource-pack-warnings-1.5.0.jar"
+    },
+    {
+      "id": "no_sneaking_over_magma",
+      "version": "1.7.0+MC26.2.x",
+      "file": "no_sneaking_over_magma-1.7.0+MC26.2.x.jar"
+    },
+    {
+      "id": "nochatreports",
+      "version": "26.2-v2.20.2",
+      "file": "NoChatReports-FABRIC-26.2-v2.20.2.jar"
+    },
+    {
+      "id": "notenoughanimations",
+      "version": "1.12.7",
+      "file": "notenoughanimations-fabric-1.12.7-mc26.2.jar"
+    },
+    {
+      "id": "nullscape",
+      "version": "1.2.20",
+      "file": "Nullscape_26.2_v1.2.20.jar"
+    },
+    {
+      "id": "optigui",
+      "version": "2.3.0-beta.10+26.2",
+      "file": "optigui-2.3.0-beta.10+26.2.jar"
+    },
+    {
+      "id": "owo",
+      "version": "0.13.1+26.2",
+      "file": "owo-lib-0.13.1+26.2.jar"
+    },
+    {
+      "id": "packed_packs",
+      "version": "2.3.1+26.2",
+      "file": "packed_packs-fabric-2.3.1+26.2.jar"
+    },
+    {
+      "id": "paginatedadvancements",
+      "version": "2.8.0+26.2",
+      "file": "paginatedadvancements-2.8.0+26.2.jar"
+    },
+    {
+      "id": "paladins",
+      "version": "3.1.3.003+26.2",
+      "file": "paladins-fabric-3.1.3.003+26.2.jar"
+    },
+    {
+      "id": "mr_pale_gardenremastered",
+      "version": "1-v1.4.0",
+      "file": "pale-garden-remastered-v1.4.0.jar"
+    },
+    {
+      "id": "particle_core",
+      "version": "0.3.3+fix1+26.2",
+      "file": "particle_core-0.3.3+fix1+26.2.jar"
+    },
+    {
+      "id": "particlerain",
+      "version": "4.0.2",
+      "file": "particlerain-4.0.2+26.2-fabric.jar"
+    },
+    {
+      "id": "physicsmod",
+      "version": "3.2.4",
+      "file": "physics-mod-3.2.4-mc-26.2-fabric.jar"
+    },
+    {
+      "id": "pickupnotifications",
+      "version": "3.0.1+26.2",
+      "file": "pickupnotifications-fabric-3.0.1+26.2.jar"
+    },
+    {
+      "id": "piratesmca",
+      "version": "3.0.0-alpha.6",
+      "file": "piratesmca-3.0.0-alpha.6.jar"
+    },
+    {
+      "id": "placeholder-api",
+      "version": "3.1.0-beta.1+26.2",
+      "file": "placeholder-api-3.1.0-beta.1+26.2.jar"
+    },
+    {
+      "id": "player_animation_library",
+      "version": "1.2.8+mc.26.2",
+      "file": "PlayerAnimationLibMerged-1.2.8+mc.26.2.jar"
+    },
+    {
+      "id": "polytone",
+      "version": "26.2-6.8.6",
+      "file": "polytone-26.2-6.8.6-fabric.jar"
+    },
+    {
+      "id": "presencefootsteps",
+      "version": "1.13.3+26.2",
+      "file": "PresenceFootsteps-1.13.3+26.2.jar"
+    },
+    {
+      "id": "prickle",
+      "version": "26.2.0.3",
+      "file": "PrickleMC-fabric-MC26.2-26.2.0.3.jar"
+    },
+    {
+      "id": "prometheus",
+      "version": "1.2.5",
+      "file": "prometheus-fabric-26.2-1.2.5.jar"
+    },
+    {
+      "id": "puffish_biome_dither",
+      "version": "1.0.0",
+      "file": "puffish_biome_dither-1.0.0-26.2-fabric.jar"
+    },
+    {
+      "id": "puffish_skills",
+      "version": "0.19.2",
+      "file": "puffish_skills-0.19.2-26.2-fabric.jar"
+    },
+    {
+      "id": "punchy",
+      "version": "3.1a",
+      "file": "punchy-3.1a-fabric-26.2.jar"
+    },
+    {
+      "id": "puzzle",
+      "version": "2.3.1",
+      "file": "puzzle-fabric-2.3.1+26.2.jar"
+    },
+    {
+      "id": "puzzleslib",
+      "version": "26.2.5",
+      "file": "puzzleslib-v26.2.5-mc26.2.x+fabric.jar"
+    },
+    {
+      "id": "ranged_weapon_api",
+      "version": "4.0.0+26.2",
+      "file": "ranged_weapon_api-fabric-4.0.0+26.2.jar"
+    },
+    {
+      "id": "rawlands",
+      "version": "1.5.0",
+      "file": "rawlands-1.5.0-26.2.jar"
+    },
+    {
+      "id": "reacharound",
+      "version": "1.4.2",
+      "file": "reacharound+26.2-1.4.2.jar"
+    },
+    {
+      "id": "realisticbees",
+      "version": "4.4",
+      "file": "realisticbees-26.2.0-4.4.jar"
+    },
+    {
+      "id": "reeses-sodium-options",
+      "version": "2.2.3+mc26.2",
+      "file": "reeses-sodium-options-fabric-2.2.3+mc26.2.jar"
+    },
+    {
+      "id": "reliable_gliders",
+      "version": "2.1.0+26.2",
+      "file": "reliable_gliders-2.1.0+26.2-fabric.jar"
+    },
+    {
+      "id": "relics_rpgs",
+      "version": "1.4.1+26.2",
+      "file": "relics-fabric-1.4.1+26.2.jar"
+    },
+    {
+      "id": "replantingcrops",
+      "version": "5.7",
+      "file": "replantingcrops-26.2.0-5.7.jar"
+    },
+    {
+      "id": "repurposed_structures",
+      "version": "7.7.6+26.2-fabric",
+      "file": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures_friends_and_foes_compat",
+      "version": "10",
+      "file": "repurposed_structures_friends_and_foes_compat_v10.jar"
+    },
+    {
+      "id": "resourcefulconfig",
+      "version": "5.0.1",
+      "file": "ResourcefulConfig-5.0.1.jar"
+    },
+    {
+      "id": "resourcefullib",
+      "version": "5.0.4",
+      "file": "ResourcefulLib-5.0.4.jar"
+    },
+    {
+      "id": "respackopts",
+      "version": "26.2.2",
+      "file": "respackopts-26.2.2.jar"
+    },
+    {
+      "id": "rogues",
+      "version": "3.1.3.003+26.2",
+      "file": "rogues-fabric-3.1.3.003+26.2.jar"
+    },
+    {
+      "id": "rottenfleshtoleather",
+      "version": "1.7.8",
+      "file": "rottenfleshtoleather Fabric 26.2-1.7.8.jar"
+    },
+    {
+      "id": "rrls",
+      "version": "5.2.8+mc.26.2",
+      "file": "rrls-5.2.8+mc.26.2.jar"
+    },
+    {
+      "id": "runes",
+      "version": "1.3.2+26.2",
+      "file": "runes-fabric-1.3.2+26.2.jar"
+    },
+    {
+      "id": "magicdrive",
+      "version": "1.0.5+26.2",
+      "file": "sailsandairships-1.0.5+26.2.jar"
+    },
+    {
+      "id": "sarosstickyleaves",
+      "version": "1.0.2",
+      "file": "Saros-Sticky-Leaves-Fabric-26.2-1.0.2.jar"
+    },
+    {
+      "id": "scaffoldingdropsnearby",
+      "version": "3.6",
+      "file": "scaffoldingdropsnearby-26.2.0-3.6.jar"
+    },
+    {
+      "id": "seamlesssleep",
+      "version": "2.6.2",
+      "file": "seamlesssleep-fabric-26.2-2.6.2.jar"
+    },
+    {
+      "id": "seasonhud",
+      "version": "2.0.11",
+      "file": "seasonhud-fabric-26.2-2.0.11.jar"
+    },
+    {
+      "id": "sereneseasons",
+      "version": "26.1.2.0.6",
+      "file": "SereneSeasons-fabric-26.2-26.1.2.0.6.jar"
+    },
+    {
+      "id": "shippy-ships",
+      "version": "1.0.25.3",
+      "file": "shippy-ships-1.0.25.3-FABRIC-MC-26.2.jar"
+    },
+    {
+      "id": "shogi",
+      "version": "26.2.0.8",
+      "file": "shogi-fabric-26.2-26.2.0.8.jar"
+    },
+    {
+      "id": "shouldersurfing",
+      "version": "5.3.0",
+      "file": "ShoulderSurfing-Fabric-26.2-5.3.0.jar"
+    },
+    {
+      "id": "simpleblood",
+      "version": "1.2.1+26.2",
+      "file": "simpleblood-fabric-1.2.1+26.2.jar"
+    },
+    {
+      "id": "simply-no-shading",
+      "version": "8.0.0-alpha.5+mc26.2",
+      "file": "simply-no-shading-8.0.0-alpha.5+mc26.2.jar"
+    },
+    {
+      "id": "sit",
+      "version": "1.5.1",
+      "file": "sit-fabric-26.1.1-1.5.1.jar"
+    },
+    {
+      "id": "skeletonaifix",
+      "version": "26.2.0",
+      "file": "SkeletonAIFix-v26.2.0-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "skeletonhorsespawn",
+      "version": "4.5",
+      "file": "skeletonhorsespawn-26.2.0-4.5.jar"
+    },
+    {
+      "id": "skill_tree_rpgs",
+      "version": "1.6.2+26.2",
+      "file": "skill_tree-fabric-1.6.2+26.2.jar"
+    },
+    {
+      "id": "skinlayers3d",
+      "version": "1.11.4",
+      "file": "skinlayers3d-fabric-1.11.4-mc26.2.jar"
+    },
+    {
+      "id": "skyboxify",
+      "version": "3.4",
+      "file": "skyboxify-3.4+26.2-fabric.jar"
+    },
+    {
+      "id": "smeltingtouch",
+      "version": "1.4.1+26.2",
+      "file": "SmeltingTouch-fabric-1.4.1+26.2.jar"
+    },
+    {
+      "id": "smoothgui",
+      "version": "2.1.0",
+      "file": "smoothgui-fabric-2.1.0+mc26.2.jar"
+    },
+    {
+      "id": "smoothswapping",
+      "version": "0.9.10",
+      "file": "smoothswapping-0.9.10-26.2-fabric.jar"
+    },
+    {
+      "id": "sniffers_sniff_delights",
+      "version": "1.3",
+      "file": "sniffers_sniff_delights-fabric-26.1-26.2-1.3.jar"
+    },
+    {
+      "id": "snow",
+      "version": "3.0.1",
+      "file": "snow-3.0.1+26.2-fabric.jar"
+    },
+    {
+      "id": "snuffles",
+      "version": "1.8.0+26.2",
+      "file": "snuffles-1.8.0+26.2.jar"
+    },
+    {
+      "id": "sodium-extra",
+      "version": "0.9.4+mc26.2",
+      "file": "sodium-extra-fabric-0.9.4+mc26.2.jar"
+    },
+    {
+      "id": "sodium",
+      "version": "0.9.1+mc26.2",
+      "file": "sodium-fabric-0.9.1+mc26.2.jar"
+    },
+    {
+      "id": "sspb",
+      "version": "7.0.0",
+      "file": "sodium-shadowy-path-blocks-fabric-7.0.0.jar"
+    },
+    {
+      "id": "softimprints",
+      "version": "2.8.0",
+      "file": "softimprints-fabric-26.2-2.8.0.jar"
+    },
+    {
+      "id": "sootychimneys",
+      "version": "1.3.5",
+      "file": "sootychimneys-fabric-26.2-1.3.5.jar"
+    },
+    {
+      "id": "soul_fire_d",
+      "version": "6.1.0",
+      "file": "soul-fire-d-fabric-26.2-6.1.0.jar"
+    },
+    {
+      "id": "sound_physics_remastered",
+      "version": "1.5.2+26.2",
+      "file": "sound-physics-remastered-fabric-1.5.2+26.2.jar"
+    },
+    {
+      "id": "sounds",
+      "version": "2.5.1+edge",
+      "file": "sounds-2.5.1+edge+26.2-fabric.jar"
+    },
+    {
+      "id": "spark",
+      "version": "1.10.187",
+      "file": "spark-1.10.187-fabric.jar"
+    },
+    {
+      "id": "mr_spawn_animationscompats",
+      "version": "18.0",
+      "file": "spawn-animations-compats-18.0.jar"
+    },
+    {
+      "id": "spawnanimations",
+      "version": "1.11.6+mod",
+      "file": "spawnanimations-v1.11.6-mc1.17-26.3.9-mod.jar"
+    },
+    {
+      "id": "spell_engine",
+      "version": "1.10.9+26.2",
+      "file": "spell_engine-fabric-1.10.9+26.2.jar"
+    },
+    {
+      "id": "spell_power",
+      "version": "1.6.2+26.2",
+      "file": "spell_power-fabric-1.6.2+26.2.jar"
+    },
+    {
+      "id": "spider-overhaul",
+      "version": "0.1.0-Fabric-v26.2",
+      "file": "SpiderOverhaul-0.1.0-Fabric-v26.2.jar"
+    },
+    {
+      "id": "spideroverhaul_freshlegs_fix",
+      "version": "1.1.0",
+      "file": "SpiderOverhaul_FreshLegs_FIX_26.2_v1.1.jar"
+    },
+    {
+      "id": "squidnoglitch",
+      "version": "26.2.1",
+      "file": "squidnoglitch-mc26.2-v26.2.1-fabric.jar"
+    },
+    {
+      "id": "stackrefill",
+      "version": "6.2",
+      "file": "stackrefill-26.2.0-6.2.jar"
+    },
+    {
+      "id": "stormiespiders",
+      "version": "3.3.1",
+      "file": "stormiespiders-fabric-26.2-3.3.1.jar"
+    },
+    {
+      "id": "strawberrylib",
+      "version": "26.2-r5",
+      "file": "strawberrylib-fabric-26.2-r5.jar"
+    },
+    {
+      "id": "streamsreflowing",
+      "version": "2.16.2",
+      "file": "StreamsReflowing-26.2-fabric-2.16.2.jar"
+    },
+    {
+      "id": "stretchy-leash",
+      "version": "3.0.0+26.1.2",
+      "file": "stretchy-leash-3.0.0+26.1.2.jar"
+    },
+    {
+      "id": "structory",
+      "version": "1.3.17",
+      "file": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structure_pool_api",
+      "version": "1.3.0+26.2",
+      "file": "structure_pool_api-fabric-1.3.0+26.2.jar"
+    },
+    {
+      "id": "subtle_effects",
+      "version": "1.15.1",
+      "file": "SubtleEffects-fabric-26.2-1.15.1.jar"
+    },
+    {
+      "id": "supermartijn642corelib",
+      "version": "1.1.26+a",
+      "file": "supermartijn642corelib-1.1.26a-fabric-mc26.2.jar"
+    },
+    {
+      "id": "sway",
+      "version": "2.4.5",
+      "file": "sway-2.4.5-fabric+26.2.jar"
+    },
+    {
+      "id": "takesapillage",
+      "version": "1.0.13",
+      "file": "takesapillage-fabric-1.0.13+mc26.2.jar"
+    },
+    {
+      "id": "taxfreelevels",
+      "version": "1.5.4",
+      "file": "TaxFreeLevels-1.5.4-fabric-26.1.jar"
+    },
+    {
+      "id": "tectonic",
+      "version": "3.0.28",
+      "file": "tectonic-3.0.28-fabric-26.2.jar"
+    },
+    {
+      "id": "terrablender",
+      "version": "26.2.0.0.2",
+      "file": "TerraBlender-fabric-26.2-26.2.0.0.2.jar"
+    },
+    {
+      "id": "terralith",
+      "version": "2.6.4",
+      "file": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "mr_tidal_towns",
+      "version": "2.0",
+      "file": "tidal-towns-2.0.jar"
+    },
+    {
+      "id": "tightfire",
+      "version": "1.0-SNAPSHOT",
+      "file": "tightfire-26.2-1.0-SNAPSHOT.jar"
+    },
+    {
+      "id": "mr_timber_strike",
+      "version": "4.2",
+      "file": "timber-strike-4.2.jar"
+    },
+    {
+      "id": "tinyskeletons",
+      "version": "26.2.1",
+      "file": "TinySkeletons-v26.2.1-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "toomanypaintings",
+      "version": "26.09.15-26.1-fabric",
+      "file": "toomanypaintings-26.09.15-26.1-fabric.jar"
+    },
+    {
+      "id": "tradingpost",
+      "version": "26.2.0",
+      "file": "TradingPost-v26.2.0-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "tramplenomore",
+      "version": "26.2.0.1",
+      "file": "TrampleNoMore-fabric-MC26.2-26.2.0.1.jar"
+    },
+    {
+      "id": "trinkets_updated",
+      "version": "4.1.1+26.2",
+      "file": "trinkets-4.1.1+26.2.jar"
+    },
+    {
+      "id": "underlay",
+      "version": "1.0.5-hotfix.1",
+      "file": "underlay-1.0.5-hotfix.1-fabric-mc26.2.jar"
+    },
+    {
+      "id": "universalbonemeal",
+      "version": "26.2.0",
+      "file": "UniversalBoneMeal-v26.2.0-mc26.2.x-Fabric.jar"
+    },
+    {
+      "id": "universalenchants",
+      "version": "26.2.2",
+      "file": "universalenchants-v26.2.2-mc26.2.x+fabric.jar"
+    },
+    {
+      "id": "variantsandventures",
+      "version": "1.0.29",
+      "file": "variantsandventures-fabric-1.0.29+mc26.2.jar"
+    },
+    {
+      "id": "villagertradingplus",
+      "version": "1.1.0+mc26.2",
+      "file": "villagertradingplus-fabric-mc26.2-1.1.0.jar"
+    },
+    {
+      "id": "villagesandpillages",
+      "version": "2.0.0",
+      "file": "villagesandpillages-fabric-2.0.0+mc26.2.jar"
+    },
+    {
+      "id": "visuality",
+      "version": "0.7.15+26.3",
+      "file": "visuality-0.7.15+26.3.jar"
+    },
+    {
+      "id": "voxyworldgenv2",
+      "version": "2.4.3",
+      "file": "Voxy World Gen V2-fabric-26.2-2.4.3.jar"
+    },
+    {
+      "id": "voxy",
+      "version": "0.2.19-beta",
+      "file": "voxy-0.2.19-beta.jar"
+    },
+    {
+      "id": "wakes",
+      "version": "0.7.1+26.2",
+      "file": "wakes-0.7.1+26.2.jar"
+    },
+    {
+      "id": "waystones",
+      "version": "26.2.0.12",
+      "file": "waystones-fabric-26.2-26.2.0.12.jar"
+    },
+    {
+      "id": "wilderwild",
+      "version": "4.3.3",
+      "file": "WilderWild-4.3.3-mc26.2-fabric.jar"
+    },
+    {
+      "id": "windy",
+      "version": "1.1.1+26.1",
+      "file": "Windy-1.1.1+26.1.jar"
+    },
+    {
+      "id": "wither_spawn_animation",
+      "version": "1.0.0",
+      "file": "wither-spawn-animation-FABRIC-26.2-1.0.0.jar"
+    },
+    {
+      "id": "wizards",
+      "version": "3.1.3.003+26.2",
+      "file": "wizards-fabric-3.1.3.003+26.2.jar"
+    },
+    {
+      "id": "wover",
+      "version": "26.201.5",
+      "file": "worldweaver-26.201.5.jar"
+    },
+    {
+      "id": "wthit",
+      "version": "20.0.0",
+      "file": "wthit-26.2-fabric-20.0.0.jar"
+    },
+    {
+      "id": "wunderlib",
+      "version": "26.201.2",
+      "file": "wunderlib-26.201.2.jar"
+    },
+    {
+      "id": "xaerominimap",
+      "version": "26.6.2",
+      "file": "xaerominimap-fabric-26.2-26.6.2.jar"
+    },
+    {
+      "id": "xaeroplus",
+      "version": "2.37.2",
+      "file": "XaeroPlus-2.37.2+fabric-26.2-WM1.47.2-MM26.6.2.jar"
+    },
+    {
+      "id": "xaeroworldmap",
+      "version": "1.47.2",
+      "file": "xaeroworldmap-fabric-26.2-1.47.2.jar"
+    },
+    {
+      "id": "yet_another_config_lib_v3",
+      "version": "3.9.7+26.2-fabric",
+      "file": "yet_another_config_lib_v3-3.9.7+26.2-fabric.jar"
+    },
+    {
+      "id": "yosbr",
+      "version": "0.1.2",
+      "file": "yosbr-0.1.2.jar"
+    },
+    {
+      "id": "zombiehorsespawn",
+      "version": "5.6",
+      "file": "zombiehorsespawn-26.2.0-5.6.jar"
+    },
+    {
+      "id": "zoomify",
+      "version": "2.17.0+mc26.2",
+      "file": "zoomify-2.17.0+mc26.2-universal.jar"
+    }
+  ],
+  "biome_definitions": {
+    "minecraft:badlands": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:bamboo_jungle": "minecraft-merged.jar",
+    "minecraft:basalt_deltas": "Incendium_26.2_v5.5.1.jar",
+    "minecraft:birch_forest": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:crimson_forest": "Incendium_26.2_v5.5.1.jar",
+    "minecraft:beach": "minecraft-merged.jar",
+    "minecraft:deep_cold_ocean": "minecraft-merged.jar",
+    "minecraft:cold_ocean": "minecraft-merged.jar",
+    "minecraft:deep_dark": "minecraft-merged.jar",
+    "minecraft:deep_ocean": "minecraft-merged.jar",
+    "minecraft:cherry_grove": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:end_barrens": "Nullscape_26.2_v1.2.20.jar",
+    "minecraft:deep_lukewarm_ocean": "minecraft-merged.jar",
+    "minecraft:end_highlands": "Nullscape_26.2_v1.2.20.jar",
+    "minecraft:deep_frozen_ocean": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:dark_forest": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:flower_forest": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:desert": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:end_midlands": "Nullscape_26.2_v1.2.20.jar",
+    "minecraft:dripstone_caves": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:jungle": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:eroded_badlands": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:forest": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:frozen_river": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:frozen_ocean": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:frozen_peaks": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:grove": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:ice_spikes": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:jagged_peaks": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:lukewarm_ocean": "minecraft-merged.jar",
+    "minecraft:lush_caves": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:ocean": "minecraft-merged.jar",
+    "minecraft:mushroom_fields": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:mangrove_swamp": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:meadow": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:nether_wastes": "Incendium_26.2_v5.5.1.jar",
+    "minecraft:old_growth_birch_forest": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:old_growth_pine_taiga": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:pale_garden": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:old_growth_spruce_taiga": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:plains": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:small_end_islands": "Nullscape_26.2_v1.2.20.jar",
+    "minecraft:snowy_plains": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:stony_peaks": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:the_end": "Nullscape_26.2_v1.2.20.jar",
+    "minecraft:sunflower_plains": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:taiga": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:river": "minecraft-merged.jar",
+    "minecraft:savanna_plateau": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:snowy_beach": "minecraft-merged.jar",
+    "minecraft:savanna": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:snowy_slopes": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:warm_ocean": "minecraft-merged.jar",
+    "minecraft:snowy_taiga": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:sparse_jungle": "minecraft-merged.jar",
+    "minecraft:windswept_gravelly_hills": "minecraft-merged.jar",
+    "minecraft:wooded_badlands": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:windswept_forest": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:stony_shore": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:the_void": "minecraft-merged.jar",
+    "minecraft:swamp": "Terralith_26.2_v2.6.4.jar",
+    "minecraft:warped_forest": "Incendium_26.2_v5.5.1.jar",
+    "minecraft:sulfur_caves": "minecraft-merged.jar",
+    "minecraft:windswept_hills": "minecraft-merged.jar",
+    "minecraft:soul_sand_valley": "Incendium_26.2_v5.5.1.jar",
+    "minecraft:windswept_savanna": "minecraft-merged.jar",
+    "betterend:amber_land": "better-end-26.201.5.jar",
+    "betterend:blossoming_spires": "better-end-26.201.5.jar",
+    "betterend:chorus_forest": "better-end-26.201.5.jar",
+    "betterend:crystal_mountains": "better-end-26.201.5.jar",
+    "betterend:dragon_graveyards": "better-end-26.201.5.jar",
+    "betterend:dry_shrubland": "better-end-26.201.5.jar",
+    "betterend:dust_wastelands": "better-end-26.201.5.jar",
+    "betterend:empty_aurora_cave": "better-end-26.201.5.jar",
+    "betterend:empty_end_cave": "better-end-26.201.5.jar",
+    "betterend:empty_smaragdant_cave": "better-end-26.201.5.jar",
+    "betterend:flower_islets": "better-end-26.201.5.jar",
+    "betterend:foggy_mushroomland": "better-end-26.201.5.jar",
+    "betterend:glowing_grasslands": "better-end-26.201.5.jar",
+    "betterend:ice_starfield": "better-end-26.201.5.jar",
+    "betterend:jade_cave": "better-end-26.201.5.jar",
+    "betterend:lantern_woods": "better-end-26.201.5.jar",
+    "betterend:lush_aurora_cave": "better-end-26.201.5.jar",
+    "betterend:lush_smaragdant_cave": "better-end-26.201.5.jar",
+    "betterend:megalake": "better-end-26.201.5.jar",
+    "betterend:megalake_grove": "better-end-26.201.5.jar",
+    "betterend:neon_oasis": "better-end-26.201.5.jar",
+    "betterend:painted_mountains": "better-end-26.201.5.jar",
+    "betterend:shadow_forest": "better-end-26.201.5.jar",
+    "betterend:sulphur_springs": "better-end-26.201.5.jar",
+    "betterend:umbra_valley": "better-end-26.201.5.jar",
+    "betterend:umbrella_jungle": "better-end-26.201.5.jar",
+    "betterend:waterfall_ponds": "better-end-26.201.5.jar",
+    "betternether:bone_reef": "better-nether-26.201.5.jar",
+    "betternether:crimson_glowing_woods": "better-nether-26.201.5.jar",
+    "betternether:crimson_pinewood": "better-nether-26.201.5.jar",
+    "betternether:flooded_deltas": "better-nether-26.201.5.jar",
+    "betternether:gloomwood": "better-nether-26.201.5.jar",
+    "betternether:gravel_desert": "better-nether-26.201.5.jar",
+    "betternether:magma_land": "better-nether-26.201.5.jar",
+    "betternether:nether_grasslands": "better-nether-26.201.5.jar",
+    "betternether:nether_jungle": "better-nether-26.201.5.jar",
+    "betternether:nether_mushroom_forest": "better-nether-26.201.5.jar",
+    "betternether:nether_mushroom_forest_edge": "better-nether-26.201.5.jar",
+    "betternether:nether_swampland": "better-nether-26.201.5.jar",
+    "betternether:nether_swampland_terraces": "better-nether-26.201.5.jar",
+    "betternether:old_fungiwoods": "better-nether-26.201.5.jar",
+    "betternether:old_swampland": "better-nether-26.201.5.jar",
+    "betternether:old_warped_woods": "better-nether-26.201.5.jar",
+    "betternether:poor_nether_grasslands": "better-nether-26.201.5.jar",
+    "betternether:soul_plain": "better-nether-26.201.5.jar",
+    "betternether:sulfuric_bone_reef": "better-nether-26.201.5.jar",
+    "betternether:upside_down_forest": "better-nether-26.201.5.jar",
+    "betternether:upside_down_forest_cleared": "better-nether-26.201.5.jar",
+    "betternether:wart_forest": "better-nether-26.201.5.jar",
+    "betternether:wart_forest_edge": "better-nether-26.201.5.jar",
+    "cinderscapes:ashy_shoals": "cinderscapes-6.1.0-alpha.2.jar",
+    "cinderscapes:blackstone_shales": "cinderscapes-6.1.0-alpha.2.jar",
+    "cinderscapes:luminous_grove": "cinderscapes-6.1.0-alpha.2.jar",
+    "cinderscapes:quartz_cavern": "cinderscapes-6.1.0-alpha.2.jar",
+    "climaterivers:cold_river": "ClimateRivers-v26.2.1-mc26.2.x-Fabric.jar",
+    "climaterivers:lukewarm_river": "ClimateRivers-v26.2.1-mc26.2.x-Fabric.jar",
+    "climaterivers:warm_river": "ClimateRivers-v26.2.1-mc26.2.x-Fabric.jar",
+    "fishofthieves:tropical_island": "fish_of_thieves-mc26.2-v26.2.2.0-fabric.jar",
+    "incendium:inverted_forest": "Incendium_26.2_v5.5.1.jar",
+    "incendium:volcanic_deltas": "Incendium_26.2_v5.5.1.jar",
+    "incendium:infernal_dunes": "Incendium_26.2_v5.5.1.jar",
+    "incendium:weeping_valley": "Incendium_26.2_v5.5.1.jar",
+    "incendium:toxic_heap": "Incendium_26.2_v5.5.1.jar",
+    "incendium:withered_forest": "Incendium_26.2_v5.5.1.jar",
+    "incendium:ash_barrens": "Incendium_26.2_v5.5.1.jar",
+    "incendium:quartz_flats": "Incendium_26.2_v5.5.1.jar",
+    "ksbiome:burning_dark": "ks-biomes-26.2.jar",
+    "ksbiome:calcite_cliff": "ks-biomes-26.2.jar",
+    "ksbiome:coral_graveyard": "ks-biomes-26.2.jar",
+    "ksbiome:deeper_cold_ocean": "ks-biomes-26.2.jar",
+    "ksbiome:frozen_dark": "ks-biomes-26.2.jar",
+    "ksbiome:fungal_cavern": "ks-biomes-26.2.jar",
+    "ksbiome:prismarine_forest": "ks-biomes-26.2.jar",
+    "nullscape:void_barrens": "Nullscape_26.2_v1.2.20.jar",
+    "nullscape:shadowlands": "Nullscape_26.2_v1.2.20.jar",
+    "nullscape:crystal_peaks": "Nullscape_26.2_v1.2.20.jar",
+    "rawlands:abyssal_trenches": "rawlands-1.5.0-26.2.jar",
+    "rawlands:alpine_forest": "rawlands-1.5.0-26.2.jar",
+    "rawlands:alps": "rawlands-1.5.0-26.2.jar",
+    "rawlands:amber_steppe": "rawlands-1.5.0-26.2.jar",
+    "rawlands:azalea_forest": "rawlands-1.5.0-26.2.jar",
+    "rawlands:coral_forest": "rawlands-1.5.0-26.2.jar",
+    "rawlands:dead_forest": "rawlands-1.5.0-26.2.jar",
+    "rawlands:dune_sea": "rawlands-1.5.0-26.2.jar",
+    "rawlands:fjords": "rawlands-1.5.0-26.2.jar",
+    "rawlands:flooded_delta": "rawlands-1.5.0-26.2.jar",
+    "rawlands:fungi_forest": "rawlands-1.5.0-26.2.jar",
+    "rawlands:glacial_flats": "rawlands-1.5.0-26.2.jar",
+    "rawlands:gravel_flats": "rawlands-1.5.0-26.2.jar",
+    "rawlands:mediterranean_scrubland": "rawlands-1.5.0-26.2.jar",
+    "rawlands:mist_coast": "rawlands-1.5.0-26.2.jar",
+    "rawlands:monsoon_forest": "rawlands-1.5.0-26.2.jar",
+    "rawlands:mosswood_forest": "rawlands-1.5.0-26.2.jar",
+    "rawlands:prairie": "rawlands-1.5.0-26.2.jar",
+    "rawlands:rocky_fields": "rawlands-1.5.0-26.2.jar",
+    "rawlands:rocky_shrubland": "rawlands-1.5.0-26.2.jar",
+    "rawlands:salt_flat": "rawlands-1.5.0-26.2.jar",
+    "rawlands:sequoia_forest": "rawlands-1.5.0-26.2.jar",
+    "rawlands:shrubland": "rawlands-1.5.0-26.2.jar",
+    "rawlands:subalpine_meadow": "rawlands-1.5.0-26.2.jar",
+    "rawlands:temperate_rainforest": "rawlands-1.5.0-26.2.jar",
+    "streamsreflowing:stream": "StreamsReflowing-26.2-fabric-2.16.2.jar",
+    "terrablender:deferred_placeholder": "TerraBlender-fabric-26.2-26.2.0.0.2.jar",
+    "terralith:alpha_islands": "Terralith_26.2_v2.6.4.jar",
+    "terralith:alpha_islands_winter": "Terralith_26.2_v2.6.4.jar",
+    "terralith:alpine_grove": "Terralith_26.2_v2.6.4.jar",
+    "terralith:alpine_highlands": "Terralith_26.2_v2.6.4.jar",
+    "terralith:amethyst_canyon": "Terralith_26.2_v2.6.4.jar",
+    "terralith:amethyst_rainforest": "Terralith_26.2_v2.6.4.jar",
+    "terralith:ancient_sands": "Terralith_26.2_v2.6.4.jar",
+    "terralith:arid_highlands": "Terralith_26.2_v2.6.4.jar",
+    "terralith:ashen_savanna": "Terralith_26.2_v2.6.4.jar",
+    "terralith:basalt_cliffs": "Terralith_26.2_v2.6.4.jar",
+    "terralith:birch_taiga": "Terralith_26.2_v2.6.4.jar",
+    "terralith:blooming_plateau": "Terralith_26.2_v2.6.4.jar",
+    "terralith:blooming_valley": "Terralith_26.2_v2.6.4.jar",
+    "terralith:brushland": "Terralith_26.2_v2.6.4.jar",
+    "terralith:bryce_canyon": "Terralith_26.2_v2.6.4.jar",
+    "terralith:caldera": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/andesite_caves": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/deep_caves": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/diorite_caves": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/frostfire_caves": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/fungal_caves": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/granite_caves": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/infested_caves": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/mantle_caves": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/thermal_caves": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/tuff_caves": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cave/underground_jungle": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cloud_forest": "Terralith_26.2_v2.6.4.jar",
+    "terralith:cold_shrubland": "Terralith_26.2_v2.6.4.jar",
+    "terralith:deep_warm_ocean": "Terralith_26.2_v2.6.4.jar",
+    "terralith:desert_canyon": "Terralith_26.2_v2.6.4.jar",
+    "terralith:desert_oasis": "Terralith_26.2_v2.6.4.jar",
+    "terralith:desert_spires": "Terralith_26.2_v2.6.4.jar",
+    "terralith:emerald_peaks": "Terralith_26.2_v2.6.4.jar",
+    "terralith:forested_highlands": "Terralith_26.2_v2.6.4.jar",
+    "terralith:fractured_savanna": "Terralith_26.2_v2.6.4.jar",
+    "terralith:frozen_cliffs": "Terralith_26.2_v2.6.4.jar",
+    "terralith:glacial_chasm": "Terralith_26.2_v2.6.4.jar",
+    "terralith:granite_cliffs": "Terralith_26.2_v2.6.4.jar",
+    "terralith:gravel_beach": "Terralith_26.2_v2.6.4.jar",
+    "terralith:gravel_desert": "Terralith_26.2_v2.6.4.jar",
+    "terralith:haze_mountain": "Terralith_26.2_v2.6.4.jar",
+    "terralith:highlands": "Terralith_26.2_v2.6.4.jar",
+    "terralith:hot_shrubland": "Terralith_26.2_v2.6.4.jar",
+    "terralith:ice_marsh": "Terralith_26.2_v2.6.4.jar",
+    "terralith:jungle_mountains": "Terralith_26.2_v2.6.4.jar",
+    "terralith:lavender_forest": "Terralith_26.2_v2.6.4.jar",
+    "terralith:lavender_valley": "Terralith_26.2_v2.6.4.jar",
+    "terralith:lush_desert": "Terralith_26.2_v2.6.4.jar",
+    "terralith:lush_valley": "Terralith_26.2_v2.6.4.jar",
+    "terralith:mirage_isles": "Terralith_26.2_v2.6.4.jar",
+    "terralith:moonlight_grove": "Terralith_26.2_v2.6.4.jar",
+    "terralith:moonlight_valley": "Terralith_26.2_v2.6.4.jar",
+    "terralith:orchid_swamp": "Terralith_26.2_v2.6.4.jar",
+    "terralith:painted_mountains": "Terralith_26.2_v2.6.4.jar",
+    "terralith:red_oasis": "Terralith_26.2_v2.6.4.jar",
+    "terralith:rocky_jungle": "Terralith_26.2_v2.6.4.jar",
+    "terralith:rocky_mountains": "Terralith_26.2_v2.6.4.jar",
+    "terralith:rocky_shrubland": "Terralith_26.2_v2.6.4.jar",
+    "terralith:sakura_grove": "Terralith_26.2_v2.6.4.jar",
+    "terralith:sakura_valley": "Terralith_26.2_v2.6.4.jar",
+    "terralith:sandstone_valley": "Terralith_26.2_v2.6.4.jar",
+    "terralith:savanna_badlands": "Terralith_26.2_v2.6.4.jar",
+    "terralith:savanna_slopes": "Terralith_26.2_v2.6.4.jar",
+    "terralith:scarlet_mountains": "Terralith_26.2_v2.6.4.jar",
+    "terralith:shield": "Terralith_26.2_v2.6.4.jar",
+    "terralith:shield_clearing": "Terralith_26.2_v2.6.4.jar",
+    "terralith:shrubland": "Terralith_26.2_v2.6.4.jar",
+    "terralith:siberian_grove": "Terralith_26.2_v2.6.4.jar",
+    "terralith:siberian_taiga": "Terralith_26.2_v2.6.4.jar",
+    "terralith:skylands_autumn": "Terralith_26.2_v2.6.4.jar",
+    "terralith:skylands_spring": "Terralith_26.2_v2.6.4.jar",
+    "terralith:skylands_summer": "Terralith_26.2_v2.6.4.jar",
+    "terralith:skylands_winter": "Terralith_26.2_v2.6.4.jar",
+    "terralith:snowy_badlands": "Terralith_26.2_v2.6.4.jar",
+    "terralith:snowy_cherry_grove": "Terralith_26.2_v2.6.4.jar",
+    "terralith:snowy_maple_forest": "Terralith_26.2_v2.6.4.jar",
+    "terralith:snowy_shield": "Terralith_26.2_v2.6.4.jar",
+    "terralith:steppe": "Terralith_26.2_v2.6.4.jar",
+    "terralith:stony_spires": "Terralith_26.2_v2.6.4.jar",
+    "terralith:temperate_highlands": "Terralith_26.2_v2.6.4.jar",
+    "terralith:tropical_jungle": "Terralith_26.2_v2.6.4.jar",
+    "terralith:valley_clearing": "Terralith_26.2_v2.6.4.jar",
+    "terralith:volcanic_crater": "Terralith_26.2_v2.6.4.jar",
+    "terralith:volcanic_peaks": "Terralith_26.2_v2.6.4.jar",
+    "terralith:warm_river": "Terralith_26.2_v2.6.4.jar",
+    "terralith:warped_mesa": "Terralith_26.2_v2.6.4.jar",
+    "terralith:white_cliffs": "Terralith_26.2_v2.6.4.jar",
+    "terralith:white_mesa": "Terralith_26.2_v2.6.4.jar",
+    "terralith:windswept_spires": "Terralith_26.2_v2.6.4.jar",
+    "terralith:wintry_forest": "Terralith_26.2_v2.6.4.jar",
+    "terralith:wintry_lowlands": "Terralith_26.2_v2.6.4.jar",
+    "terralith:yellowstone": "Terralith_26.2_v2.6.4.jar",
+    "terralith:yosemite_cliffs": "Terralith_26.2_v2.6.4.jar",
+    "terralith:yosemite_lowlands": "Terralith_26.2_v2.6.4.jar",
+    "wilderwild:arid_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:arid_savanna": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:birch_jungle": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:birch_taiga": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:cypress_wetlands": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:dark_birch_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:dark_taiga": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:dying_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:dying_mixed_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:flower_field": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:frozen_caves": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:magmatic_caves": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:maple_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:mesoglea_caves": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:mixed_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:oasis": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:old_growth_birch_taiga": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:old_growth_dark_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:parched_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:rainforest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:semi_birch_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:snowy_dying_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:snowy_dying_mixed_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:snowy_old_growth_pine_taiga": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:sparse_birch_jungle": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:sparse_forest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:temperate_rainforest": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:tundra": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:warm_beach": "WilderWild-4.3.3-mc26.2-fabric.jar",
+    "wilderwild:warm_river": "WilderWild-4.3.3-mc26.2-fabric.jar"
+  },
+  "coastal_tags": {
+    "abyssaldepths:additional_oceans": [],
+    "c:is_beach": [
+      "still_life:arctic_beach",
+      "still_life:arid_beach",
+      "still_life:cold_tundra_beach",
+      "still_life:mediterranean_beach",
+      "still_life:savanna_beach",
+      "still_life:taiga_beach",
+      "still_life:temperate_beach",
+      "still_life:tropical_beach",
+      "still_life:tundra_beach",
+      "terralith:gravel_beach",
+      "wilderwild:warm_beach"
+    ],
+    "c:is_deep_ocean": [
+      "still_life:arctic_deep_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:tropical_deep_ocean"
+    ],
+    "c:is_ocean": [
+      "still_life:arctic_deep_ocean",
+      "still_life:arctic_shallow_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:cold_shallow_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:subtropical_shallow_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:temperate_shallow_ocean",
+      "still_life:tropical_deep_ocean",
+      "still_life:tropical_shallow_ocean"
+    ],
+    "c:is_shallow_ocean": [
+      "still_life:arctic_shallow_ocean",
+      "still_life:cold_shallow_ocean",
+      "still_life:subtropical_shallow_ocean",
+      "still_life:temperate_shallow_ocean",
+      "still_life:tropical_shallow_ocean"
+    ],
+    "c:is_stony_shores": [
+      "terralith:gravel_beach"
+    ],
+    "minecraft:has_structure/ocean_monument": [
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "terralith:deep_warm_ocean",
+      "terralith:skylands_autumn",
+      "terralith:skylands_spring",
+      "terralith:skylands_summer",
+      "terralith:skylands_winter"
+    ],
+    "minecraft:has_structure/ocean_ruin_cold": [
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:frozen_ocean",
+      "minecraft:ocean"
+    ],
+    "minecraft:has_structure/ocean_ruin_warm": [
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:warm_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "minecraft:has_structure/ruined_portal_ocean": [
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:frozen_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:ocean",
+      "minecraft:warm_ocean",
+      "terralith:deep_warm_ocean",
+      "wilderwild:mesoglea_caves"
+    ],
+    "minecraft:has_structure/shipwreck_beached": [
+      "minecraft:beach",
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:frozen_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:ocean",
+      "minecraft:river",
+      "minecraft:snowy_beach",
+      "minecraft:warm_ocean",
+      "terralith:deep_warm_ocean",
+      "terralith:gravel_beach",
+      "wilderwild:warm_beach"
+    ],
+    "minecraft:is_beach": [
+      "minecraft:beach",
+      "minecraft:snowy_beach",
+      "terralith:gravel_beach",
+      "wilderwild:warm_beach"
+    ],
+    "minecraft:is_deep_ocean": [
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "minecraft:is_ocean": [
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:frozen_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:ocean",
+      "minecraft:warm_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "minecraft:required_ocean_monument_surrounding": [
+      "climaterivers:cold_river",
+      "climaterivers:lukewarm_river",
+      "climaterivers:warm_river",
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:frozen_ocean",
+      "minecraft:frozen_river",
+      "minecraft:lukewarm_ocean",
+      "minecraft:ocean",
+      "minecraft:river",
+      "minecraft:warm_ocean",
+      "streamsreflowing:stream",
+      "terralith:deep_warm_ocean",
+      "terralith:skylands_autumn",
+      "terralith:skylands_spring",
+      "terralith:skylands_summer",
+      "terralith:skylands_winter",
+      "terralith:warm_river",
+      "wilderwild:cypress_wetlands",
+      "wilderwild:warm_river"
+    ],
+    "nova_structures:collections/beaches": [
+      "minecraft:beach",
+      "minecraft:snowy_beach",
+      "terralith:gravel_beach",
+      "wilderwild:warm_beach"
+    ],
+    "nova_structures:collections/deep_oceans": [
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "nova_structures:collections/oceans": [
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:frozen_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:ocean",
+      "minecraft:warm_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "nova_structures:collections/stony_shores": [
+      "biomesoplenty:cold_desert",
+      "minecraft:stony_shore",
+      "terralith:gravel_desert"
+    ],
+    "repurposed_structures:collections/beaches": [
+      "minecraft:beach",
+      "minecraft:snowy_beach",
+      "still_life:arctic_beach",
+      "still_life:arid_beach",
+      "still_life:cold_tundra_beach",
+      "still_life:mediterranean_beach",
+      "still_life:savanna_beach",
+      "still_life:taiga_beach",
+      "still_life:temperate_beach",
+      "still_life:tropical_beach",
+      "still_life:tundra_beach",
+      "terralith:gravel_beach",
+      "wilderwild:warm_beach"
+    ],
+    "repurposed_structures:collections/deep_oceans": [
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "still_life:arctic_deep_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:tropical_deep_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "repurposed_structures:collections/oceans": [
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:frozen_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:ocean",
+      "minecraft:warm_ocean",
+      "still_life:arctic_deep_ocean",
+      "still_life:arctic_shallow_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:cold_shallow_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:subtropical_shallow_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:temperate_shallow_ocean",
+      "still_life:tropical_deep_ocean",
+      "still_life:tropical_shallow_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "repurposed_structures:collections/stony_shores": [
+      "biomesoplenty:cold_desert",
+      "minecraft:stony_shore",
+      "regions_unexplored:chalk_cliffs",
+      "terralith:gravel_beach",
+      "terralith:gravel_desert"
+    ],
+    "repurposed_structures:has_structure/ancient_cities/ocean": [
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "still_life:arctic_deep_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:tropical_deep_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "repurposed_structures:has_structure/dungeons/ocean": [
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:frozen_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:ocean",
+      "minecraft:warm_ocean",
+      "still_life:arctic_deep_ocean",
+      "still_life:arctic_shallow_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:cold_shallow_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:subtropical_shallow_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:temperate_shallow_ocean",
+      "still_life:tropical_deep_ocean",
+      "still_life:tropical_shallow_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "repurposed_structures:has_structure/mineshafts/ocean": [
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:frozen_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:ocean",
+      "minecraft:warm_ocean",
+      "still_life:arctic_deep_ocean",
+      "still_life:arctic_shallow_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:cold_shallow_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:subtropical_shallow_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:temperate_shallow_ocean",
+      "still_life:tropical_deep_ocean",
+      "still_life:tropical_shallow_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "repurposed_structures:has_structure/outposts/ocean": [
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "still_life:arctic_deep_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:tropical_deep_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "repurposed_structures:has_structure/pyramids/ocean": [
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:frozen_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:ocean",
+      "minecraft:warm_ocean",
+      "still_life:arctic_deep_ocean",
+      "still_life:arctic_shallow_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:cold_shallow_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:subtropical_shallow_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:temperate_shallow_ocean",
+      "still_life:tropical_deep_ocean",
+      "still_life:tropical_shallow_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "repurposed_structures:has_structure/temples/ocean": [
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "still_life:arctic_deep_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:tropical_deep_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "repurposed_structures:has_structure/villages/ocean": [
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_frozen_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:deep_ocean",
+      "still_life:arctic_deep_ocean",
+      "still_life:cold_deep_ocean",
+      "still_life:subtropical_deep_ocean",
+      "still_life:temperate_deep_ocean",
+      "still_life:tropical_deep_ocean",
+      "terralith:deep_warm_ocean"
+    ],
+    "wilderwild:beta_beach/gravel": [
+      "minecraft:birch_forest",
+      "minecraft:frozen_river",
+      "minecraft:old_growth_birch_forest",
+      "minecraft:old_growth_pine_taiga",
+      "minecraft:old_growth_spruce_taiga",
+      "minecraft:pale_garden",
+      "minecraft:river",
+      "minecraft:snowy_taiga",
+      "minecraft:taiga",
+      "wilderwild:birch_taiga",
+      "wilderwild:dark_birch_forest",
+      "wilderwild:dark_taiga",
+      "wilderwild:dying_forest",
+      "wilderwild:dying_mixed_forest",
+      "wilderwild:mixed_forest",
+      "wilderwild:old_growth_birch_taiga",
+      "wilderwild:snowy_dying_forest",
+      "wilderwild:snowy_dying_mixed_forest"
+    ],
+    "wilderwild:beta_beach/multi_layer_sand": [
+      "minecraft:jungle",
+      "minecraft:savanna",
+      "minecraft:sparse_jungle",
+      "wilderwild:arid_savanna",
+      "wilderwild:birch_jungle",
+      "wilderwild:sparse_birch_jungle"
+    ],
+    "wilderwild:beta_beach/sand": [
+      "minecraft:cherry_grove",
+      "minecraft:dark_forest",
+      "minecraft:flower_forest",
+      "minecraft:forest",
+      "minecraft:frozen_river",
+      "minecraft:river",
+      "wilderwild:arid_forest",
+      "wilderwild:parched_forest",
+      "wilderwild:semi_birch_forest",
+      "wilderwild:sparse_forest"
+    ],
+    "wilderwild:feature/has_beta_beach_gravel_transition": [
+      "minecraft:birch_forest",
+      "minecraft:frozen_river",
+      "minecraft:old_growth_birch_forest",
+      "minecraft:old_growth_pine_taiga",
+      "minecraft:old_growth_spruce_taiga",
+      "minecraft:pale_garden",
+      "minecraft:river",
+      "minecraft:snowy_taiga",
+      "minecraft:taiga",
+      "wilderwild:birch_taiga",
+      "wilderwild:dark_birch_forest",
+      "wilderwild:dark_taiga",
+      "wilderwild:dying_forest",
+      "wilderwild:dying_mixed_forest",
+      "wilderwild:mixed_forest",
+      "wilderwild:old_growth_birch_taiga",
+      "wilderwild:snowy_dying_forest",
+      "wilderwild:snowy_dying_mixed_forest"
+    ],
+    "wilderwild:feature/has_beta_beach_sand_transition": [
+      "minecraft:cherry_grove",
+      "minecraft:dark_forest",
+      "minecraft:flower_forest",
+      "minecraft:forest",
+      "minecraft:frozen_river",
+      "minecraft:jungle",
+      "minecraft:river",
+      "minecraft:savanna",
+      "minecraft:sparse_jungle",
+      "wilderwild:arid_forest",
+      "wilderwild:arid_savanna",
+      "wilderwild:birch_jungle",
+      "wilderwild:parched_forest",
+      "wilderwild:semi_birch_forest",
+      "wilderwild:sparse_birch_jungle",
+      "wilderwild:sparse_forest"
+    ],
+    "wilderwild:feature/has_dry_grass_beach": [
+      "minecraft:beach",
+      "wilderwild:arid_forest",
+      "wilderwild:warm_beach"
+    ],
+    "wilderwild:feature/has_dry_grass_beta_beach": [
+      "minecraft:cherry_grove",
+      "minecraft:dark_forest",
+      "minecraft:flower_forest",
+      "minecraft:forest",
+      "minecraft:frozen_river",
+      "minecraft:jungle",
+      "minecraft:river",
+      "minecraft:savanna",
+      "minecraft:sparse_jungle",
+      "wilderwild:arid_forest",
+      "wilderwild:arid_savanna",
+      "wilderwild:birch_jungle",
+      "wilderwild:parched_forest",
+      "wilderwild:semi_birch_forest",
+      "wilderwild:sparse_birch_jungle",
+      "wilderwild:sparse_forest"
+    ],
+    "wilderwild:feature/has_ocean_moss": [
+      "minecraft:deep_lukewarm_ocean"
+    ],
+    "wilderwild:feature/has_warm_beach_palms": [
+      "wilderwild:warm_beach"
+    ],
+    "wilderwild:music_pool/has_frozen_ocean_music": [
+      "minecraft:deep_frozen_ocean",
+      "minecraft:frozen_ocean"
+    ],
+    "wilderwild:music_pool/has_ocean_music": [
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:deep_ocean",
+      "minecraft:ocean"
+    ],
+    "wilderwild:music_pool/has_warm_ocean_music": [
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:warm_ocean"
+    ]
+  },
+  "structures": [
+    {
+      "id": "minecraft:fortress",
+      "biomes": "#minecraft:has_structure/nether_fortress",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:ancient_city",
+      "biomes": "#minecraft:has_structure/ancient_city",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:bastion_remnant",
+      "biomes": "#minecraft:has_structure/bastion_remnant",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:desert_pyramid",
+      "biomes": "#minecraft:has_structure/desert_pyramid",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:buried_treasure",
+      "biomes": "#minecraft:has_structure/buried_treasure",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:end_city",
+      "biomes": "#minecraft:has_structure/end_city",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:pillager_outpost",
+      "biomes": "#minecraft:has_structure/pillager_outpost",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:igloo",
+      "biomes": "#minecraft:has_structure/igloo",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:jungle_pyramid",
+      "biomes": "#minecraft:has_structure/jungle_temple",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:mineshaft_mesa",
+      "biomes": "#minecraft:has_structure/mineshaft_mesa",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:mineshaft",
+      "biomes": "#minecraft:has_structure/mineshaft",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:ocean_ruin_cold",
+      "biomes": "#minecraft:has_structure/ocean_ruin_cold",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:monument",
+      "biomes": "#minecraft:has_structure/ocean_monument",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:ocean_ruin_warm",
+      "biomes": "#minecraft:has_structure/ocean_ruin_warm",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:mansion",
+      "biomes": "#minecraft:has_structure/woodland_mansion",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:nether_fossil",
+      "biomes": "#minecraft:has_structure/nether_fossil",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:ruined_portal_desert",
+      "biomes": "#minecraft:has_structure/ruined_portal_desert",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:ruined_portal",
+      "biomes": "#minecraft:has_structure/ruined_portal_standard",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:ruined_portal_mountain",
+      "biomes": "#minecraft:has_structure/ruined_portal_mountain",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:ruined_portal_jungle",
+      "biomes": "#minecraft:has_structure/ruined_portal_jungle",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:ruined_portal_nether",
+      "biomes": "#minecraft:has_structure/ruined_portal_nether",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:ruined_portal_ocean",
+      "biomes": "#minecraft:has_structure/ruined_portal_ocean",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:ruined_portal_swamp",
+      "biomes": "#minecraft:has_structure/ruined_portal_swamp",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:shipwreck_beached",
+      "biomes": "#minecraft:has_structure/shipwreck_beached",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:village_savanna",
+      "biomes": "#minecraft:has_structure/village_savanna",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:swamp_hut",
+      "biomes": "#minecraft:has_structure/swamp_hut",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:village_snowy",
+      "biomes": "#minecraft:has_structure/village_snowy",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:stronghold",
+      "biomes": "#minecraft:has_structure/stronghold",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:village_desert",
+      "biomes": "#minecraft:has_structure/village_desert",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:trail_ruins",
+      "biomes": "#minecraft:has_structure/trail_ruins",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:shipwreck",
+      "biomes": "#minecraft:has_structure/shipwreck",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:village_taiga",
+      "biomes": "#minecraft:has_structure/village_taiga",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:trial_chambers",
+      "biomes": "#minecraft:has_structure/trial_chambers",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "minecraft:village_plains",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "minecraft-merged.jar"
+    },
+    {
+      "id": "ctov:large/village_beach",
+      "biomes": "#minecraft:is_beach",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_christmas",
+      "biomes": "#minecraft:has_structure/village_snowy",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_dark_forest",
+      "biomes": "#minecraft:has_structure/woodland_mansion",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_desert",
+      "biomes": "#minecraft:has_structure/village_desert",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_desert_oasis",
+      "biomes": "#minecraft:has_structure/village_desert",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_jungle",
+      "biomes": "#minecraft:is_jungle",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_jungle_tree",
+      "biomes": "#minecraft:is_jungle",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_mesa",
+      "biomes": "#minecraft:is_badlands",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_mesa_fortified",
+      "biomes": "#minecraft:is_badlands",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_mountain",
+      "biomes": "#minecraft:is_mountain",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_mountain_alpine",
+      "biomes": "#minecraft:is_mountain",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_mushroom",
+      "biomes": "minecraft:mushroom_fields",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_plains",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_plains_fortified",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_savanna",
+      "biomes": "#minecraft:has_structure/village_savanna",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_savanna_na",
+      "biomes": "#minecraft:has_structure/village_savanna",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_snowy_igloo",
+      "biomes": "#minecraft:has_structure/village_snowy",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_swamp",
+      "biomes": "#minecraft:has_structure/ruined_portal_swamp",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_swamp_fortified",
+      "biomes": "#minecraft:has_structure/ruined_portal_swamp",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_taiga",
+      "biomes": "#minecraft:has_structure/village_taiga",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_taiga_fortified",
+      "biomes": "#minecraft:has_structure/village_taiga",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:large/village_underground",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_beach",
+      "biomes": "#minecraft:is_beach",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_christmas",
+      "biomes": "#minecraft:has_structure/village_snowy",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_dark_forest",
+      "biomes": "#minecraft:has_structure/woodland_mansion",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_desert",
+      "biomes": "#minecraft:has_structure/village_desert",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_desert_oasis",
+      "biomes": "#minecraft:has_structure/village_desert",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_jungle",
+      "biomes": "#minecraft:is_jungle",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_jungle_tree",
+      "biomes": "#minecraft:is_jungle",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_mesa",
+      "biomes": "#minecraft:is_badlands",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_mesa_fortified",
+      "biomes": "#minecraft:is_badlands",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_mountain",
+      "biomes": "#minecraft:is_mountain",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_mountain_alpine",
+      "biomes": "#minecraft:is_mountain",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_mushroom",
+      "biomes": "minecraft:mushroom_fields",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_plains",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_plains_fortified",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_savanna",
+      "biomes": "#minecraft:has_structure/village_savanna",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_savanna_na",
+      "biomes": "#minecraft:has_structure/village_savanna",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_snowy_igloo",
+      "biomes": "#minecraft:has_structure/village_snowy",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_swamp",
+      "biomes": "#minecraft:has_structure/ruined_portal_swamp",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_swamp_fortified",
+      "biomes": "#minecraft:has_structure/ruined_portal_swamp",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_taiga",
+      "biomes": "#minecraft:has_structure/village_taiga",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_taiga_fortified",
+      "biomes": "#minecraft:has_structure/village_taiga",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:medium/village_underground",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_badlands",
+      "biomes": "#minecraft:is_badlands",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_beach",
+      "biomes": "#minecraft:is_beach",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_dark_forest",
+      "biomes": "#minecraft:has_structure/woodland_mansion",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_desert",
+      "biomes": "#minecraft:has_structure/village_desert",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_jungle",
+      "biomes": "#minecraft:is_jungle",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_mesa",
+      "biomes": "#minecraft:is_badlands",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_mountain",
+      "biomes": "#minecraft:is_mountain",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_plains",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_savanna",
+      "biomes": "#minecraft:has_structure/village_savanna",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_snowy",
+      "biomes": "#minecraft:has_structure/village_snowy",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_swamp",
+      "biomes": "#minecraft:has_structure/ruined_portal_swamp",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:pillager_outpost_taiga",
+      "biomes": "#minecraft:has_structure/village_taiga",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_beach",
+      "biomes": "#minecraft:is_beach",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_christmas",
+      "biomes": "#minecraft:has_structure/village_snowy",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_dark_forest",
+      "biomes": "#minecraft:has_structure/woodland_mansion",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_desert",
+      "biomes": "#minecraft:has_structure/village_desert",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_desert_oasis",
+      "biomes": "#minecraft:has_structure/village_desert",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_jungle",
+      "biomes": "#minecraft:is_jungle",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_jungle_tree",
+      "biomes": "#minecraft:is_jungle",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_mesa",
+      "biomes": "#minecraft:is_badlands",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_mesa_fortified",
+      "biomes": "#minecraft:is_badlands",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_mountain",
+      "biomes": "#minecraft:is_mountain",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_mountain_alpine",
+      "biomes": "#minecraft:is_mountain",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_mushroom",
+      "biomes": "minecraft:mushroom_fields",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_plains",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_plains_fortified",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_savanna",
+      "biomes": "#minecraft:has_structure/village_savanna",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_savanna_na",
+      "biomes": "#minecraft:has_structure/village_savanna",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_snowy_igloo",
+      "biomes": "#minecraft:has_structure/village_snowy",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_swamp",
+      "biomes": "#minecraft:has_structure/ruined_portal_swamp",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_swamp_fortified",
+      "biomes": "#minecraft:has_structure/ruined_portal_swamp",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_taiga",
+      "biomes": "#minecraft:has_structure/village_taiga",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_taiga_fortified",
+      "biomes": "#minecraft:has_structure/village_taiga",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "ctov:small/village_underground",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "[fabric]ctov-26-2-4.1.0.jar"
+    },
+    {
+      "id": "friendsandfoes:beekeeper_hut",
+      "biomes": "#friendsandfoes:has_structure/beekeeper_hut",
+      "source": "beekeeperhut-fabric-3.0.4+mc26.2.jar"
+    },
+    {
+      "id": "betterend:blossoming_spires_house",
+      "biomes": "#betterend:has_structure/blossoming_spires_house",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:blossoming_spires_ruins",
+      "biomes": "#betterend:has_structure/blossoming_spires_ruins",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:chorus_forest_fallen_tree",
+      "biomes": "#betterend:has_structure/chorus_forest_fallen_tree",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:chorus_forest_ruins",
+      "biomes": "#betterend:has_structure/chorus_forest_ruins",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:chorus_forest_stump",
+      "biomes": "#betterend:has_structure/chorus_forest_stump",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:crashed_ship",
+      "biomes": "#betterend:has_structure/crashed_ship",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:end_bridge",
+      "biomes": "#betterend:has_structure/end_bridge",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:end_lake",
+      "biomes": "#betterend:has_structure/end_lake",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:end_lake_normal",
+      "biomes": "#betterend:has_structure/end_lake_normal",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:end_lake_rare",
+      "biomes": "#betterend:has_structure/end_lake_rare",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:end_village",
+      "biomes": "#betterend:has_structure/end_village",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:eternal_portal",
+      "biomes": "#betterend:has_structure/eternal_portal",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:foggy_mushroomland_fallen_tree",
+      "biomes": "#betterend:has_structure/foggy_mushroomland_fallen_tree",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:foggy_mushroomland_library",
+      "biomes": "#betterend:has_structure/foggy_mushroomland_library",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:foggy_mushroomland_ruins",
+      "biomes": "#betterend:has_structure/foggy_mushroomland_ruins",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:foggy_mushroomland_stump",
+      "biomes": "#betterend:has_structure/foggy_mushroomland_stump",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:foggy_mushroomland_tree_house",
+      "biomes": "#betterend:has_structure/foggy_mushroomland_tree_house",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:giant_ice_star",
+      "biomes": "#betterend:has_structure/giant_ice_star",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:giant_mossy_glowshroom",
+      "biomes": "#betterend:has_structure/giant_mossy_glowshroom",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:lantern_woods_cabin",
+      "biomes": "#betterend:has_structure/lantern_woods_cabin",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:lantern_woods_light_1",
+      "biomes": "#betterend:has_structure/lantern_woods_light_1",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:lantern_woods_log",
+      "biomes": "#betterend:has_structure/lantern_woods_log",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:lantern_woods_ruins",
+      "biomes": "#betterend:has_structure/lantern_woods_ruins",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:lantern_woods_stump",
+      "biomes": "#betterend:has_structure/lantern_woods_stump",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:megalake",
+      "biomes": "#betterend:has_structure/megalake",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:megalake_small",
+      "biomes": "#betterend:has_structure/megalake_small",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:mountain",
+      "biomes": "#betterend:has_structure/mountain",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:painted_mountain",
+      "biomes": "#betterend:has_structure/painted_mountain",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:shadow_forest_fallen_log",
+      "biomes": "#betterend:has_structure/shadow_forest_fallen_log",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:shadow_forest_ruins",
+      "biomes": "#betterend:has_structure/shadow_forest_ruins",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:shadow_forest_small_mansion",
+      "biomes": "#betterend:has_structure/shadow_forest_small_mansion",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:shadow_forest_stump",
+      "biomes": "#betterend:has_structure/shadow_forest_stump",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:small_island",
+      "biomes": "#betterend:has_structure/small_island",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:sulphuric_cave",
+      "biomes": "#betterend:has_structure/sulphuric_cave",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:umbrella_jungle_house_1",
+      "biomes": "#betterend:has_structure/umbrella_jungle_house_1",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:umbrella_jungle_house_2",
+      "biomes": "#betterend:has_structure/umbrella_jungle_house_2",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:umbrella_jungle_jellyshroom_cluster",
+      "biomes": "#betterend:has_structure/umbrella_jungle_jellyshroom_cluster",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betterend:umbrella_jungle_ruins",
+      "biomes": "#betterend:has_structure/umbrella_jungle_ruins",
+      "source": "better-end-26.201.5.jar"
+    },
+    {
+      "id": "betternether:altars",
+      "biomes": "#betternether:has_structure/nether_decorations",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "betternether:gardens",
+      "biomes": "#betternether:has_structure/nether_decorations",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "betternether:ghast_hive",
+      "biomes": "#betternether:has_structure/ghast_hive",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "betternether:jungle_temples",
+      "biomes": "#betternether:has_structure/jungle_temples",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "betternether:mega_lava_lake",
+      "biomes": "#betternether:has_structure/mega_lava_lake",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "betternether:nether_city",
+      "biomes": "#betternether:has_structure/nether_city",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "betternether:pillars",
+      "biomes": "#betternether:has_structure/nether_decorations",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "betternether:portals",
+      "biomes": "#betternether:has_structure/nether_decorations",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "betternether:pyramid",
+      "biomes": "#betternether:has_structure/pyramid",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "betternether:respawn_points",
+      "biomes": "#betternether:has_structure/nether_decorations",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "betternether:spawn_altar_ladder",
+      "biomes": "#betternether:has_structure/nether_decorations",
+      "source": "better-nether-26.201.5.jar"
+    },
+    {
+      "id": "clifftree:toadstool",
+      "biomes": "#clifftree:frog/spawns_toadstool_worldgen",
+      "source": "ButterBee-1.0.8.jar"
+    },
+    {
+      "id": "minecraft:ancient_city",
+      "biomes": "#minecraft:has_structure/ancient_city",
+      "source": "dungeons-and-taverns-ancient-city-overhaul-3.4.jar"
+    },
+    {
+      "id": "minecraft:desert_pyramid",
+      "biomes": "#minecraft:has_structure/desert_pyramid",
+      "source": "dungeons-and-taverns-desert-temple-overhaul-v2.1.jar"
+    },
+    {
+      "id": "minecraft:jungle_pyramid",
+      "biomes": "#minecraft:has_structure/jungle_temple",
+      "source": "dungeons-and-taverns-jungle-temple-overhaul-v2.1.jar"
+    },
+    {
+      "id": "minecraft:fortress",
+      "biomes": "#minecraft:has_structure/nether_fortress",
+      "source": "dungeons-and-taverns-nether-fortress-overhaul-v3.1.jar"
+    },
+    {
+      "id": "minecraft:pillager_outpost",
+      "biomes": "#minecraft:has_structure/pillager_outpost",
+      "source": "dungeons-and-taverns-pillager-outpost-overhaul-v3.3.jar"
+    },
+    {
+      "id": "minecraft:stronghold",
+      "biomes": "#minecraft:has_structure/stronghold",
+      "source": "dungeons-and-taverns-stronghold-overhaul-v2.4.0.jar"
+    },
+    {
+      "id": "minecraft:swamp_hut",
+      "biomes": "#minecraft:has_structure/swamp_hut",
+      "source": "dungeons-and-taverns-swamp-hut-overhaul-v2.3.jar"
+    },
+    {
+      "id": "minecraft:mansion",
+      "biomes": "#minecraft:has_structure/woodland_mansion",
+      "source": "dungeons-and-taverns-woodland-mansion-overhaul-2.1.jar"
+    },
+    {
+      "id": "earth-and-water:ancient_ruins",
+      "biomes": "#earth-and-water:has_structure/ancient_ruins",
+      "source": "earth-and-water-1.0.6-26.2-hotfix.jar"
+    },
+    {
+      "id": "earth-and-water:conduit_monument",
+      "biomes": "#earth-and-water:has_structure/conduit_monument",
+      "source": "earth-and-water-1.0.6-26.2-hotfix.jar"
+    },
+    {
+      "id": "ecologics:desert_ruin",
+      "biomes": "#ecologics:has_structure/desert_ruin",
+      "source": "Ecologics-NeoFab-26.2-2.6.4.jar"
+    },
+    {
+      "id": "fishofthieves:guardian_fruit_tree",
+      "biomes": "#minecraft:is_deep_ocean",
+      "source": "fish_of_thieves-mc26.2-v26.2.2.0-fabric.jar"
+    },
+    {
+      "id": "fishofthieves:seapost",
+      "biomes": "#fishofthieves:has_seapost",
+      "source": "fish_of_thieves-mc26.2-v26.2.2.0-fabric.jar"
+    },
+    {
+      "id": "friendsandfoes:citadel",
+      "biomes": "#friendsandfoes:has_structure/citadel",
+      "source": "friendsandfoes-fabric-5.0.4+mc26.2.jar"
+    },
+    {
+      "id": "friendsandfoes:iceologer_cabin",
+      "biomes": "#friendsandfoes:has_structure/iceologer_cabin",
+      "source": "friendsandfoes-fabric-5.0.4+mc26.2.jar"
+    },
+    {
+      "id": "friendsandfoes:illusioner_shack",
+      "biomes": "#friendsandfoes:has_structure/illusioner_shack",
+      "source": "friendsandfoes-fabric-5.0.4+mc26.2.jar"
+    },
+    {
+      "id": "friendsandfoes:illusioner_training_grounds",
+      "biomes": "#friendsandfoes:has_structure/illusioner_training_grounds",
+      "source": "friendsandfoes-fabric-5.0.4+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:altar",
+      "biomes": "#graveyard:has_structure/altar",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:crypt",
+      "biomes": "#graveyard:has_structure/crypt",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:dead_tree",
+      "biomes": "#graveyard:has_structure/dead_tree",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:giant_mushroom",
+      "biomes": "#graveyard:has_structure/giant_mushroom",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:haunted_house",
+      "biomes": "#graveyard:has_structure/haunted_house",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:large_graveyard",
+      "biomes": "#graveyard:has_structure/large_graveyard",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:lich_prison",
+      "biomes": "#graveyard:has_structure/lich_prison",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:medium_graveyard",
+      "biomes": "#graveyard:has_structure/medium_graveyard",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:memorial_tree",
+      "biomes": "#graveyard:has_structure/memorial_tree",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:mushroom_grave",
+      "biomes": "#graveyard:has_structure/mushroom_grave",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:overrun_desert_village",
+      "biomes": "#graveyard:has_structure/overrun_desert_village",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:overrun_plains_village",
+      "biomes": "#graveyard:has_structure/overrun_plains_village",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:overrun_savanna_village",
+      "biomes": "#graveyard:has_structure/overrun_savanna_village",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:overrun_snowy_village",
+      "biomes": "#graveyard:has_structure/overrun_snowy_village",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:overrun_taiga_village",
+      "biomes": "#graveyard:has_structure/overrun_taiga_village",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:ruins",
+      "biomes": "#graveyard:has_structure/ruins",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:small_desert_grave",
+      "biomes": "#graveyard:has_structure/small_desert_grave",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:small_desert_graveyard",
+      "biomes": "#graveyard:has_structure/small_desert_graveyard",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:small_grave",
+      "biomes": "#graveyard:has_structure/small_grave",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:small_graveyard",
+      "biomes": "#graveyard:has_structure/small_graveyard",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:small_mountain_grave",
+      "biomes": "#graveyard:has_structure/small_mountain_grave",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "graveyard:small_savanna_grave",
+      "biomes": "#graveyard:has_structure/small_savanna_grave",
+      "source": "graveyard-FABRIC-4.0.0+mc26.2.jar"
+    },
+    {
+      "id": "hopo:mineshaft/acacia_mineshaft",
+      "biomes": "#zhopo:has_structure/acacia_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/bamboo_mineshaft",
+      "biomes": "#zhopo:has_structure/bamboo_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/birch_mineshaft",
+      "biomes": "#zhopo:has_structure/birch_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/cherry_mineshaft",
+      "biomes": "#zhopo:has_structure/cherry_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/dark_oak_mineshaft",
+      "biomes": "#zhopo:has_structure/dark_oak_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/deepslate_mineshaft",
+      "biomes": "#zhopo:has_structure/deepslate_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/jungle_mineshaft",
+      "biomes": "#zhopo:has_structure/jungle_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/mangrove_mineshaft",
+      "biomes": "#zhopo:has_structure/mangrove_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/mud_mineshaft",
+      "biomes": "#zhopo:has_structure/mud_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/oak_mineshaft",
+      "biomes": "#zhopo:has_structure/oak_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/spruce_mineshaft",
+      "biomes": "#zhopo:has_structure/spruce_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/stone_mineshaft",
+      "biomes": "#zhopo:has_structure/stone_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/biomes/dripstone_mineshaft",
+      "biomes": "#zhopo:has_structure/dripstone_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/biomes/lush_mineshaft",
+      "biomes": "#zhopo:has_structure/lush_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "hopo:mineshaft/pale_mineshaft",
+      "biomes": "#zhopo:has_structure/pale_mineshaft",
+      "source": "HopoBetterMineshaft-[26.2]-1.3.7.jar"
+    },
+    {
+      "id": "minecraft:ruined_portal",
+      "biomes": "#minecraft:has_structure/ruined_portal_standard",
+      "source": "HopoBetterRuinedPortals-[26.2]-1.5.1.jar"
+    },
+    {
+      "id": "hopo:portal/overworld/portal_deepslate",
+      "biomes": "#minecraft:has_structure/mineshaft",
+      "source": "HopoBetterRuinedPortals-[26.2]-1.5.1.jar"
+    },
+    {
+      "id": "hopo:portal/overworld/portal_dripstone",
+      "biomes": "minecraft:dripstone_caves",
+      "source": "HopoBetterRuinedPortals-[26.2]-1.5.1.jar"
+    },
+    {
+      "id": "hopo:portal/overworld/portal_lush",
+      "biomes": "minecraft:lush_caves",
+      "source": "HopoBetterRuinedPortals-[26.2]-1.5.1.jar"
+    },
+    {
+      "id": "hopo:portal/overworld/portal_ruined",
+      "biomes": "#zhopo:has_structure/portal_ruined",
+      "source": "HopoBetterRuinedPortals-[26.2]-1.5.1.jar"
+    },
+    {
+      "id": "hopo:portal/nether/piglin_ruin",
+      "biomes": "#zhopo:has_structure/piglin_ruin",
+      "source": "HopoBetterRuinedPortals-[26.2]-1.5.1.jar"
+    },
+    {
+      "id": "minecraft:shipwreck",
+      "biomes": "#minecraft:has_structure/shipwreck_beached",
+      "source": "HopoBetterUnderwaterRuins-[26.2]-1.2.8.jar"
+    },
+    {
+      "id": "minecraft:shipwreck_beached",
+      "biomes": "#minecraft:has_structure/shipwreck_beached",
+      "source": "HopoBetterUnderwaterRuins-[26.2]-1.2.8.jar"
+    },
+    {
+      "id": "hopo:underwater/underwater_city",
+      "biomes": "#zhopo:has_structure/underwater_city",
+      "source": "HopoBetterUnderwaterRuins-[26.2]-1.2.8.jar"
+    },
+    {
+      "id": "hopo:underwater/underwater_fossils",
+      "biomes": "#zhopo:has_structure/underwater_fossils",
+      "source": "HopoBetterUnderwaterRuins-[26.2]-1.2.8.jar"
+    },
+    {
+      "id": "hopo:underwater/underwater_small_ruins",
+      "biomes": "#zhopo:has_structure/underwater_small_ruins",
+      "source": "HopoBetterUnderwaterRuins-[26.2]-1.2.8.jar"
+    },
+    {
+      "id": "hopo:underwater/underwater_warm_small_ruins",
+      "biomes": "#zhopo:has_structure/underwater_warm_small_ruins",
+      "source": "HopoBetterUnderwaterRuins-[26.2]-1.2.8.jar"
+    },
+    {
+      "id": "ivp:small_village_desert",
+      "biomes": "#minecraft:has_structure/village_desert",
+      "source": "improved-village-placement-1.2.0-fabric-26.2.jar"
+    },
+    {
+      "id": "ivp:small_village_plains",
+      "biomes": "#minecraft:has_structure/village_plains",
+      "source": "improved-village-placement-1.2.0-fabric-26.2.jar"
+    },
+    {
+      "id": "ivp:small_village_savanna",
+      "biomes": "#minecraft:has_structure/village_savanna",
+      "source": "improved-village-placement-1.2.0-fabric-26.2.jar"
+    },
+    {
+      "id": "ivp:small_village_snowy",
+      "biomes": "#minecraft:has_structure/village_snowy",
+      "source": "improved-village-placement-1.2.0-fabric-26.2.jar"
+    },
+    {
+      "id": "ivp:small_village_taiga",
+      "biomes": "#minecraft:has_structure/village_taiga",
+      "source": "improved-village-placement-1.2.0-fabric-26.2.jar"
+    },
+    {
+      "id": "incendium:pipeline",
+      "biomes": "#incendium:structure/has_pipeline",
+      "source": "Incendium_26.2_v5.5.1.jar"
+    },
+    {
+      "id": "incendium:infernal_altar",
+      "biomes": "incendium:infernal_dunes",
+      "source": "Incendium_26.2_v5.5.1.jar"
+    },
+    {
+      "id": "incendium:nether_reactor",
+      "biomes": "#incendium:structure/has_reactor",
+      "source": "Incendium_26.2_v5.5.1.jar"
+    },
+    {
+      "id": "incendium:piglin_village",
+      "biomes": [
+        "crimson_forest",
+        "warped_forest"
+      ],
+      "source": "Incendium_26.2_v5.5.1.jar"
+    },
+    {
+      "id": "incendium:sanctum",
+      "biomes": "#incendium:structure/has_sanctum",
+      "source": "Incendium_26.2_v5.5.1.jar"
+    },
+    {
+      "id": "incendium:quartz_kitchen",
+      "biomes": [
+        "incendium:quartz_flats"
+      ],
+      "source": "Incendium_26.2_v5.5.1.jar"
+    },
+    {
+      "id": "incendium:forbidden_castle",
+      "biomes": "#incendium:structure/has_castle",
+      "source": "Incendium_26.2_v5.5.1.jar"
+    },
+    {
+      "id": "incendium:ruined_lab",
+      "biomes": "incendium:withered_forest",
+      "source": "Incendium_26.2_v5.5.1.jar"
+    },
+    {
+      "id": "incendium:abandoned_tower",
+      "biomes": [
+        "incendium:quartz_flats"
+      ],
+      "source": "Incendium_26.2_v5.5.1.jar"
+    },
+    {
+      "id": "mmv:village_swamp",
+      "biomes": "#mmv:has_structure/swampy_biomes",
+      "source": "MoogsMissingVillages-universal-1.21-2.2.0.jar"
+    },
+    {
+      "id": "mmv:village_jungle",
+      "biomes": "#mmv:has_structure/jungle_biomes",
+      "source": "MoogsMissingVillages-universal-1.21-2.2.0.jar"
+    },
+    {
+      "id": "mmv:village_dark_forest",
+      "biomes": "#mmv:has_structure/dark_forest_biomes",
+      "source": "MoogsMissingVillages-universal-1.21-2.2.0.jar"
+    },
+    {
+      "id": "mns:ruined_portal",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:small_nether_brick",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:medium_blackstone",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:leafy_rubble",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:mega_fortress",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:small_arena",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:very_small_blackstone",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:large_blackstone_pillars",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:circle_blackstone",
+      "biomes": "#mns:has_structure/soul_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:shrine",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:very_small_nether_brick_3",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:medium_warped_fungus",
+      "biomes": "#mns:has_structure/warped_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:circle_nether_brick",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:crimson_lava_well",
+      "biomes": "#mns:has_structure/crimson_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:crimson_forge",
+      "biomes": "#mns:has_structure/crimson_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:nether_wart_farm",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:large_blackstone_walls",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:dragon_arena",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:sword",
+      "biomes": "#mns:has_structure/crimson_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:very_small_blackstone_4",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:very_small_nether_brick_2",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:train",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:very_small_nether_brick",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:medium_crimson_fungus",
+      "biomes": "#mns:has_structure/crimson_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:bridge_4",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:smoking_shrine",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:bridge_3",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:bridge_6",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:copper_tower",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:bridge_1",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:medium_warped_fungus_2",
+      "biomes": "#mns:has_structure/warped_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:giant_skull",
+      "biomes": "#mns:has_structure/nether_wastes_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:warped_dome",
+      "biomes": "#mns:has_structure/warped_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:soul_fire",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:medium_crimson_well",
+      "biomes": "#mns:has_structure/crimson_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:warped_house",
+      "biomes": "#mns:has_structure/warped_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:medium_crimson_fungus_2",
+      "biomes": "#mns:has_structure/crimson_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:bridge_2",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:medium_house",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:large_house_1",
+      "biomes": "#mns:has_structure/warped_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:large_nether_brick",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:nether_tower",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:large_arena",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:medium_warped_well",
+      "biomes": "#mns:has_structure/warped_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:lava_pool",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:bridge_5",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:grave_yard",
+      "biomes": "#mns:has_structure/soul_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:medium_house_2",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:very_small_blackstone_2",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:very_small_blackstone_3",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:warped_pool",
+      "biomes": "#mns:has_structure/warped_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "mns:sandy_skull",
+      "biomes": "#mns:has_structure/nether_biomes",
+      "source": "MoogsNetherStructures-universal-1.21-3.1.1.jar"
+    },
+    {
+      "id": "nullscape:rift",
+      "biomes": "#nullscape:has_structure/rift",
+      "source": "Nullscape_26.2_v1.2.20.jar"
+    },
+    {
+      "id": "nullscape:dragon_skeleton",
+      "biomes": "#nullscape:has_structure/dragon_skeleton",
+      "source": "Nullscape_26.2_v1.2.20.jar"
+    },
+    {
+      "id": "repurposed_structures:ancient_city_end",
+      "biomes": "#repurposed_structures:has_structure/ancient_cities/end",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:ancient_city_nether",
+      "biomes": "#repurposed_structures:has_structure/ancient_cities/nether",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:ancient_city_ocean",
+      "biomes": "#repurposed_structures:has_structure/ancient_cities/ocean",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:bastion_underground",
+      "biomes": "#repurposed_structures:has_structure/bastions/underground",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:city_nether",
+      "biomes": "#repurposed_structures:has_structure/cities/nether",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:city_overworld",
+      "biomes": "#repurposed_structures:has_structure/cities/overworld",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:fortress_jungle",
+      "biomes": "#repurposed_structures:has_structure/fortresses/jungle",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:igloo_grassy",
+      "biomes": "#repurposed_structures:has_structure/igloos/grassy",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:igloo_mangrove",
+      "biomes": "#repurposed_structures:has_structure/igloos/mangrove",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:igloo_mushroom",
+      "biomes": "#repurposed_structures:has_structure/igloos/mushroom",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:igloo_stone",
+      "biomes": "#repurposed_structures:has_structure/igloos/stone",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mansion_birch",
+      "biomes": "#repurposed_structures:has_structure/mansions/birch",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mansion_desert",
+      "biomes": "#repurposed_structures:has_structure/mansions/desert",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mansion_jungle",
+      "biomes": "#repurposed_structures:has_structure/mansions/jungle",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mansion_mangrove",
+      "biomes": "#repurposed_structures:has_structure/mansions/mangrove",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mansion_oak",
+      "biomes": "#repurposed_structures:has_structure/mansions/oak",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mansion_savanna",
+      "biomes": "#repurposed_structures:has_structure/mansions/savanna",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mansion_snowy",
+      "biomes": "#repurposed_structures:has_structure/mansions/snowy",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mansion_taiga",
+      "biomes": "#repurposed_structures:has_structure/mansions/taiga",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_basalt",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/basalt",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_birch",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/birch",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_crimson",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/crimson",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_dark_forest",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/dark_forest",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_desert",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/desert",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_end",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/end",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_icy",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/icy",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_jungle",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/jungle",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_nether",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/nether",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_ocean",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/ocean",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_savanna",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/savanna",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_soul",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/soul",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_stone",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/stone",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_swamp",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/swamp",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_taiga",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/taiga",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:mineshaft_warped",
+      "biomes": "#repurposed_structures:has_structure/mineshafts/warped",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:monument_desert",
+      "biomes": "#repurposed_structures:has_structure/monuments/desert",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:monument_icy",
+      "biomes": "#repurposed_structures:has_structure/monuments/icy",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:monument_jungle",
+      "biomes": "#repurposed_structures:has_structure/monuments/jungle",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:monument_nether",
+      "biomes": "#repurposed_structures:has_structure/monuments/nether",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_badlands",
+      "biomes": "#repurposed_structures:has_structure/outposts/badlands",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_basalt",
+      "biomes": "#repurposed_structures:has_structure/outposts/basalt",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_birch",
+      "biomes": "#repurposed_structures:has_structure/outposts/birch",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_crimson",
+      "biomes": "#repurposed_structures:has_structure/outposts/crimson",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_desert",
+      "biomes": "#repurposed_structures:has_structure/outposts/desert",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_end",
+      "biomes": "#repurposed_structures:has_structure/outposts/end",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_giant_tree_taiga",
+      "biomes": "#repurposed_structures:has_structure/outposts/giant_tree_taiga",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_icy",
+      "biomes": "#repurposed_structures:has_structure/outposts/icy",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_jungle",
+      "biomes": "#repurposed_structures:has_structure/outposts/jungle",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_mangrove",
+      "biomes": "#repurposed_structures:has_structure/outposts/mangrove",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_nether_brick",
+      "biomes": "#repurposed_structures:has_structure/outposts/nether_brick",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_oak",
+      "biomes": "#repurposed_structures:has_structure/outposts/oak",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_ocean",
+      "biomes": "#repurposed_structures:has_structure/outposts/ocean",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_savanna",
+      "biomes": "#repurposed_structures:has_structure/outposts/savanna",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_snowy",
+      "biomes": "#repurposed_structures:has_structure/outposts/snowy",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_soul",
+      "biomes": "#repurposed_structures:has_structure/outposts/soul",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_taiga",
+      "biomes": "#repurposed_structures:has_structure/outposts/taiga",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:outpost_warped",
+      "biomes": "#repurposed_structures:has_structure/outposts/warped",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_badlands",
+      "biomes": "#repurposed_structures:has_structure/pyramids/badlands",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_dark_forest",
+      "biomes": "#repurposed_structures:has_structure/pyramids/dark_forest",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_end",
+      "biomes": "#repurposed_structures:has_structure/pyramids/end",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_flower_forest",
+      "biomes": "#repurposed_structures:has_structure/pyramids/flower_forest",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_giant_tree_taiga",
+      "biomes": "#repurposed_structures:has_structure/pyramids/giant_tree_taiga",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_icy",
+      "biomes": "#repurposed_structures:has_structure/pyramids/icy",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_jungle",
+      "biomes": "#repurposed_structures:has_structure/pyramids/jungle",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_mushroom",
+      "biomes": "#repurposed_structures:has_structure/pyramids/mushroom",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_nether",
+      "biomes": "#repurposed_structures:has_structure/pyramids/nether",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_ocean",
+      "biomes": "#repurposed_structures:has_structure/pyramids/ocean",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:pyramid_snowy",
+      "biomes": "#repurposed_structures:has_structure/pyramids/snowy",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:ruined_portal_end",
+      "biomes": "#repurposed_structures:has_structure/ruined_portals/end",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:ruins_land_cold",
+      "biomes": "#repurposed_structures:has_structure/ruins/land_cold",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:ruins_land_hot",
+      "biomes": "#repurposed_structures:has_structure/ruins/land_hot",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:ruins_land_icy",
+      "biomes": "#repurposed_structures:has_structure/ruins/land_icy",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:ruins_land_warm",
+      "biomes": "#repurposed_structures:has_structure/ruins/land_warm",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:ruins_nether",
+      "biomes": "#repurposed_structures:has_structure/ruins/nether",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:shipwreck_crimson",
+      "biomes": "#repurposed_structures:has_structure/shipwrecks/crimson",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:shipwreck_end",
+      "biomes": "#repurposed_structures:has_structure/shipwrecks/end",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:shipwreck_nether_bricks",
+      "biomes": "#repurposed_structures:has_structure/shipwrecks/nether_bricks",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:shipwreck_warped",
+      "biomes": "#repurposed_structures:has_structure/shipwrecks/warped",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:stronghold_end",
+      "biomes": "#repurposed_structures:has_structure/strongholds/end",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:stronghold_nether",
+      "biomes": "#repurposed_structures:has_structure/strongholds/nether",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:temple_nether_basalt",
+      "biomes": "#repurposed_structures:has_structure/temples/nether_basalt",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:temple_nether_crimson",
+      "biomes": "#repurposed_structures:has_structure/temples/nether_crimson",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:temple_nether_soul",
+      "biomes": "#repurposed_structures:has_structure/temples/nether_soul",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:temple_nether_warped",
+      "biomes": "#repurposed_structures:has_structure/temples/nether_warped",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:temple_nether_wasteland",
+      "biomes": "#repurposed_structures:has_structure/temples/nether_wasteland",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:temple_ocean",
+      "biomes": "#repurposed_structures:has_structure/temples/ocean",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:temple_taiga",
+      "biomes": "#repurposed_structures:has_structure/temples/taiga",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_badlands",
+      "biomes": "#repurposed_structures:has_structure/villages/badlands",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_bamboo",
+      "biomes": "#repurposed_structures:has_structure/villages/bamboo",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_birch",
+      "biomes": "#repurposed_structures:has_structure/villages/birch",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_cherry",
+      "biomes": "#repurposed_structures:has_structure/villages/cherry",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_crimson",
+      "biomes": "#repurposed_structures:has_structure/villages/crimson",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_dark_forest",
+      "biomes": "#repurposed_structures:has_structure/villages/dark_forest",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_giant_taiga",
+      "biomes": "#repurposed_structures:has_structure/villages/giant_taiga",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_jungle",
+      "biomes": "#repurposed_structures:has_structure/villages/jungle",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_mountains",
+      "biomes": "#repurposed_structures:has_structure/villages/mountains",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_mushroom",
+      "biomes": "#repurposed_structures:has_structure/villages/mushroom",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_oak",
+      "biomes": "#repurposed_structures:has_structure/villages/oak",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_ocean",
+      "biomes": "#repurposed_structures:has_structure/villages/ocean",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_swamp",
+      "biomes": "#repurposed_structures:has_structure/villages/swamp",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:village_warped",
+      "biomes": "#repurposed_structures:has_structure/villages/warped",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:witch_hut_birch",
+      "biomes": "#repurposed_structures:has_structure/witch_huts/birch",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:witch_hut_dark_forest",
+      "biomes": "#repurposed_structures:has_structure/witch_huts/dark_forest",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:witch_hut_giant_tree_taiga",
+      "biomes": "#repurposed_structures:has_structure/witch_huts/giant_tree_taiga",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:witch_hut_mangrove",
+      "biomes": "#repurposed_structures:has_structure/witch_huts/mangrove",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:witch_hut_oak",
+      "biomes": "#repurposed_structures:has_structure/witch_huts/oak",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "repurposed_structures:witch_hut_taiga",
+      "biomes": "#repurposed_structures:has_structure/witch_huts/taiga",
+      "source": "repurposed_structures-7.7.6+26.2-fabric.jar"
+    },
+    {
+      "id": "minecraft:ancient_city",
+      "biomes": "#minecraft:has_structure/ancient_city",
+      "source": "SpiderOverhaul-0.1.0-Fabric-v26.2.jar"
+    },
+    {
+      "id": "spider-overhaul:birch_spidernest",
+      "biomes": "#spider-overhaul:has_structure/birch_spidernest",
+      "source": "SpiderOverhaul-0.1.0-Fabric-v26.2.jar"
+    },
+    {
+      "id": "structory:northern_ruin",
+      "biomes": "#structory:has_structure/northern_ruin",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:taiga_ruin_underground",
+      "biomes": "#structory:has_structure/ruin_taiga",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:abandoned_chapel",
+      "biomes": "#structory:has_structure/chapel",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:jungle_ruin",
+      "biomes": "#structory:has_structure/jungle_well",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:taiga_ruin_surface",
+      "biomes": "#structory:has_structure/ruin_taiga",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:swamp_ruin",
+      "biomes": "mangrove_swamp",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:old_manor",
+      "biomes": "#structory:has_structure/old_manor",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:outcast_villager_grassy",
+      "biomes": "#structory:has_structure/outcast_villager_grassy",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:outcast_villager_desert",
+      "biomes": "#structory:has_structure/outcast_villager_desert",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:graveyard",
+      "biomes": "#structory:has_structure/chapel",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:ruin_grassy",
+      "biomes": "#structory:has_structure/outcast_villager_grassy",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:boat",
+      "biomes": "#structory:has_structure/boat",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:dense_forest_ruin",
+      "biomes": "#structory:has_structure/old_manor",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:abandoned_camp",
+      "biomes": "#structory:has_structure/chapel",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "structory:firetower",
+      "biomes": "#structory:has_structure/firetower",
+      "source": "Structory_26.2_v1.3.7.jar"
+    },
+    {
+      "id": "takesapillage:bastille",
+      "biomes": "#takesapillage:has_structure/pillager_structure",
+      "source": "takesapillage-fabric-1.0.13+mc26.2.jar"
+    },
+    {
+      "id": "takesapillage:pillager_camp",
+      "biomes": "#takesapillage:has_structure/pillager_structure",
+      "source": "takesapillage-fabric-1.0.13+mc26.2.jar"
+    },
+    {
+      "id": "terralith:desert_outpost",
+      "biomes": "#terralith:has_structure/desert_outpost",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:fortified_desert_village",
+      "biomes": "#terralith:has_structure/fortified_desert_village",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:fortified_village",
+      "biomes": "#terralith:has_structure/fortified_village",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:glacial_hut",
+      "biomes": "terralith:glacial_chasm",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:igloo",
+      "biomes": "#terralith:has_structure/igloo",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:mage_complex",
+      "biomes": "#terralith:has_structure/mage_complex",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:mage_tower",
+      "biomes": "#terralith:has_structure/mage_tower",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:mage_tower_autumn",
+      "biomes": "terralith:skylands_autumn",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:mage_tower_spring",
+      "biomes": "terralith:skylands_spring",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:mage_tower_summer",
+      "biomes": "terralith:skylands_summer",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:mage_tower_winter",
+      "biomes": "terralith:skylands_winter",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:rubble_desert",
+      "biomes": "#terralith:has_structure/rubble_desert",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:rubble_forest",
+      "biomes": "#terralith:has_structure/rubble_forest",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:rubble_jungle",
+      "biomes": "#terralith:has_structure/rubble_jungle",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:rubble_mesa",
+      "biomes": "#terralith:has_structure/rubble_mesa",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:rubble_mountain",
+      "biomes": "#terralith:has_structure/rubble_mountain",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:rubble_taiga",
+      "biomes": "#terralith:has_structure/rubble_taiga",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:spire",
+      "biomes": "#terralith:has_structure/spire",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:underground/frosted_dungeon",
+      "biomes": "#terralith:has_structure/frosted_dungeon",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:underground/giant_bee_hive",
+      "biomes": "#terralith:has_structure/giant_bee_hive",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:underground/mining_outpost",
+      "biomes": "#terralith:has_structure/mining_outpost",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:underground/oak_cabin",
+      "biomes": "#terralith:has_structure/oak_cabin",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:underground/old_refinery",
+      "biomes": "#terralith:has_structure/old_refinery",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:underground/sunken_tower",
+      "biomes": "#terralith:has_structure/sunken_tower",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:underground/witch_hut",
+      "biomes": "#terralith:has_structure/none",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:underground_cabin",
+      "biomes": "#terralith:has_structure/oak_cabin",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:valley_lodge",
+      "biomes": "#terralith:has_structure/valley_lodge",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "terralith:witch_hut",
+      "biomes": "#terralith:has_structure/witch_hut",
+      "source": "Terralith_26.2_v2.6.4.jar"
+    },
+    {
+      "id": "joshie:village_ocean",
+      "biomes": "minecraft:deep_ocean",
+      "source": "tidal-towns-2.0.jar"
+    },
+    {
+      "id": "villagesandpillages:village_witch",
+      "biomes": "#villagesandpillages:has_structure/village_witch",
+      "source": "villagesandpillages-fabric-2.0.0+mc26.2.jar"
+    }
+  ],
+  "limitations": [
+    "Static resources only; Java-registered biomes may be absent.",
+    "World datapacks scanned as candidates; enabled order not established.",
+    "No personal profile or save was modified."
+  ]
+}

@@ -1,0 +1,5 @@
+Abra index.html para filtrar por execução, modelo, vista e ação.
+Os recortes WebP servem para navegação. Não substituem os PNGs originais.
+Extraia todos os raw-*.zip nesta pasta para ativar os links Abrir PNG original.
+manifest.csv vincula cada PNG ao hash e à captura original do workspace.
+Resultados técnicos/artísticos ficam no relatório; a galeria não concede PASS.

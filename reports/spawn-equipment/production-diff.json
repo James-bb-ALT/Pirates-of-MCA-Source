@@ -1,0 +1,14 @@
+{
+  "changed": [
+    "dev/arandu/piratesmca/PirateBehavior.class",
+    "fabric.mod.json",
+    "piratesmca.mixins.json"
+  ],
+  "added": [
+    "data/piratesmca/tags/item/",
+    "data/piratesmca/tags/item/spawn_equipment.json",
+    "dev/arandu/piratesmca/PirateSpawnEquipment.class",
+    "dev/arandu/piratesmca/mixin/PirateEquipmentTaskMixin.class"
+  ],
+  "removed": []
+}

@@ -1,0 +1,249 @@
+Compiled from "ClothingList.java"
+public class net.conczin.mca.resources.ClothingList extends net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener<com.google.gson.JsonElement> {
+  public static final net.minecraft.resources.Identifier ID;
+
+  private static net.conczin.mca.resources.ClothingList INSTANCE;
+
+  public final java.util.HashMap<java.lang.String, net.conczin.mca.resources.data.skin.Clothing> clothing;
+
+  public net.conczin.mca.resources.ClothingList();
+    Code:
+         0: aload_0
+         1: getstatic     #1                  // Field net/minecraft/util/ExtraCodecs.JSON:Lcom/mojang/serialization/Codec;
+         4: ldc           #7                  // String skins/clothing
+         6: invokestatic  #9                  // Method net/minecraft/resources/FileToIdConverter.json:(Ljava/lang/String;)Lnet/minecraft/resources/FileToIdConverter;
+         9: invokespecial #15                 // Method net/minecraft/server/packs/resources/SimpleJsonResourceReloadListener."<init>":(Lcom/mojang/serialization/Codec;Lnet/minecraft/resources/FileToIdConverter;)V
+        12: aload_0
+        13: new           #21                 // class java/util/HashMap
+        16: dup
+        17: invokespecial #23                 // Method java/util/HashMap."<init>":()V
+        20: putfield      #26                 // Field clothing:Ljava/util/HashMap;
+        23: aload_0
+        24: putstatic     #32                 // Field INSTANCE:Lnet/conczin/mca/resources/ClothingList;
+        27: return
+
+  public static net.conczin.mca.resources.ClothingList getInstance();
+    Code:
+         0: getstatic     #32                 // Field INSTANCE:Lnet/conczin/mca/resources/ClothingList;
+         3: areturn
+
+  protected void apply(java.util.Map<net.minecraft.resources.Identifier, com.google.gson.JsonElement>, net.minecraft.server.packs.resources.ResourceManager, net.minecraft.util.profiling.ProfilerFiller);
+    Code:
+         0: aload_0
+         1: getfield      #26                 // Field clothing:Ljava/util/HashMap;
+         4: invokevirtual #36                 // Method java/util/HashMap.clear:()V
+         7: aload_1
+         8: aload_0
+         9: invokedynamic #39,  0             // InvokeDynamic #0:accept:(Lnet/conczin/mca/resources/ClothingList;)Ljava/util/function/BiConsumer;
+        14: invokeinterface #43,  2           // InterfaceMethod java/util/Map.forEach:(Ljava/util/function/BiConsumer;)V
+        19: return
+
+  public net.conczin.mca.resources.WeightedPool<java.lang.String> getPool(net.conczin.mca.entity.VillagerLike<?>);
+    Code:
+         0: aload_0
+         1: aload_0
+         2: aload_1
+         3: aload_0
+         4: invokevirtual #49                 // Method allClothing:()Ljava/util/List;
+         7: invokevirtual #53                 // Method getOptions:(Lnet/conczin/mca/entity/VillagerLike;Ljava/util/Collection;)Ljava/util/List;
+        10: invokevirtual #57                 // Method toPool:(Ljava/util/List;)Lnet/conczin/mca/resources/WeightedPool;
+        13: areturn
+
+  public net.conczin.mca.resources.WeightedPool<java.lang.String> getPool(net.conczin.mca.entity.ai.relationship.Gender, net.minecraft.world.entity.npc.villager.VillagerProfession);
+    Code:
+         0: aload_0
+         1: aload_0
+         2: aload_1
+         3: aload_2
+         4: aload_0
+         5: invokevirtual #49                 // Method allClothing:()Ljava/util/List;
+         8: invokevirtual #61                 // Method getOptions:(Lnet/conczin/mca/entity/ai/relationship/Gender;Lnet/minecraft/world/entity/npc/villager/VillagerProfession;Ljava/util/Collection;)Ljava/util/List;
+        11: invokevirtual #57                 // Method toPool:(Ljava/util/List;)Lnet/conczin/mca/resources/WeightedPool;
+        14: areturn
+
+  private java.util.List<net.conczin.mca.resources.data.skin.Clothing> getOptions(net.conczin.mca.entity.VillagerLike<?>, java.util.Collection<net.conczin.mca.resources.data.skin.Clothing>);
+    Code:
+         0: aload_2
+         1: aload_1
+         2: invokestatic  #64                 // Method net/conczin/mca/Config.getInstance:()Lnet/conczin/mca/Config;
+         5: getfield      #70                 // Field net/conczin/mca/Config.professionConversionsMap:Ljava/util/Map;
+         8: invokestatic  #74                 // Method net/conczin/mca/resources/SkinSelection.clothingForVillager:(Ljava/util/Collection;Lnet/conczin/mca/entity/VillagerLike;Ljava/util/Map;)Ljava/util/List;
+        11: areturn
+
+  private java.util.List<net.conczin.mca.resources.data.skin.Clothing> getOptions(net.conczin.mca.entity.ai.relationship.Gender, net.minecraft.world.entity.npc.villager.VillagerProfession, java.util.Collection<net.conczin.mca.resources.data.skin.Clothing>);
+    Code:
+         0: invokestatic  #64                 // Method net/conczin/mca/Config.getInstance:()Lnet/conczin/mca/Config;
+         3: getfield      #70                 // Field net/conczin/mca/Config.professionConversionsMap:Ljava/util/Map;
+         6: astore        4
+         8: aload_2
+         9: ifnonnull     17
+        12: ldc           #80                 // String minecraft:none
+        14: goto          29
+        17: getstatic     #82                 // Field net/minecraft/core/registries/BuiltInRegistries.VILLAGER_PROFESSION:Lnet/minecraft/core/DefaultedRegistry;
+        20: aload_2
+        21: invokeinterface #88,  2           // InterfaceMethod net/minecraft/core/DefaultedRegistry.getKey:(Ljava/lang/Object;)Lnet/minecraft/resources/Identifier;
+        26: invokevirtual #94                 // Method net/minecraft/resources/Identifier.toString:()Ljava/lang/String;
+        29: astore        5
+        31: aload_0
+        32: aload_1
+        33: aload         5
+        35: aload         4
+        37: invokestatic  #100                // Method net/conczin/mca/resources/SkinSelection.mapProfession:(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
+        40: aload_3
+        41: invokevirtual #104                // Method getOptions:(Lnet/conczin/mca/entity/ai/relationship/Gender;Ljava/lang/String;Ljava/util/Collection;)Ljava/util/List;
+        44: areturn
+
+  public net.conczin.mca.resources.WeightedPool<java.lang.String> getPool(net.conczin.mca.entity.ai.relationship.Gender, java.lang.String);
+    Code:
+         0: aload_0
+         1: aload_0
+         2: aload_1
+         3: aload_2
+         4: aload_0
+         5: invokevirtual #49                 // Method allClothing:()Ljava/util/List;
+         8: invokevirtual #104                // Method getOptions:(Lnet/conczin/mca/entity/ai/relationship/Gender;Ljava/lang/String;Ljava/util/Collection;)Ljava/util/List;
+        11: invokevirtual #57                 // Method toPool:(Ljava/util/List;)Lnet/conczin/mca/resources/WeightedPool;
+        14: areturn
+
+  public net.conczin.mca.resources.WeightedPool<java.lang.String> getEditorPool(net.conczin.mca.entity.ai.relationship.Gender);
+    Code:
+         0: aload_0
+         1: aload_0
+         2: aload_1
+         3: aload_0
+         4: invokevirtual #49                 // Method allClothing:()Ljava/util/List;
+         7: invokevirtual #107                // Method getEditorOptions:(Lnet/conczin/mca/entity/ai/relationship/Gender;Ljava/util/Collection;)Ljava/util/List;
+        10: invokevirtual #57                 // Method toPool:(Ljava/util/List;)Lnet/conczin/mca/resources/WeightedPool;
+        13: areturn
+
+  public java.util.List<net.conczin.mca.resources.data.skin.Clothing> getEditorOptions(net.conczin.mca.entity.ai.relationship.Gender, java.util.Collection<net.conczin.mca.resources.data.skin.Clothing>);
+    Code:
+         0: aload_2
+         1: aload_1
+         2: invokestatic  #111                // Method net/conczin/mca/resources/SkinSelection.editorClothing:(Ljava/util/Collection;Lnet/conczin/mca/entity/ai/relationship/Gender;)Ljava/util/List;
+         5: areturn
+
+  private java.util.List<net.conczin.mca.resources.data.skin.Clothing> getOptions(net.conczin.mca.entity.ai.relationship.Gender, java.lang.String, java.util.Collection<net.conczin.mca.resources.data.skin.Clothing>);
+    Code:
+         0: aload_3
+         1: aload_1
+         2: aload_2
+         3: invokestatic  #115                // Method net/conczin/mca/resources/SkinSelection.clothingForProfession:(Ljava/util/Collection;Lnet/conczin/mca/entity/ai/relationship/Gender;Ljava/lang/String;)Ljava/util/List;
+         6: areturn
+
+  private java.util.List<net.conczin.mca.resources.data.skin.Clothing> allClothing();
+    Code:
+         0: aload_0
+         1: getfield      #26                 // Field clothing:Ljava/util/HashMap;
+         4: invokevirtual #119                // Method java/util/HashMap.values:()Ljava/util/Collection;
+         7: invokeinterface #123,  1          // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+        12: invokestatic  #129                // Method net/conczin/mca/server/world/data/CustomClothingManager.getClothing:()Lnet/conczin/mca/server/world/data/CustomClothingManager$Storage;
+        15: invokevirtual #135                // Method net/conczin/mca/server/world/data/CustomClothingManager$Storage.getEntries:()Ljava/util/Map;
+        18: invokeinterface #141,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+        23: invokeinterface #123,  1          // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+        28: invokestatic  #142                // InterfaceMethod java/util/stream/Stream.concat:(Ljava/util/stream/Stream;Ljava/util/stream/Stream;)Ljava/util/stream/Stream;
+        31: invokeinterface #148,  1          // InterfaceMethod java/util/stream/Stream.toList:()Ljava/util/List;
+        36: areturn
+
+  private net.conczin.mca.resources.WeightedPool<java.lang.String> toPool(java.util.List<net.conczin.mca.resources.data.skin.Clothing>);
+    Code:
+         0: aload_1
+         1: ldc           #151                // String mca:missing
+         3: invokestatic  #153                // Method net/conczin/mca/resources/SkinSelection.toPool:(Ljava/util/Collection;Ljava/lang/String;)Lnet/conczin/mca/resources/WeightedPool;
+         6: areturn
+
+  protected void apply(java.lang.Object, net.minecraft.server.packs.resources.ResourceManager, net.minecraft.util.profiling.ProfilerFiller);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #44                 // class java/util/Map
+         5: aload_2
+         6: aload_3
+         7: invokevirtual #156                // Method apply:(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V
+        10: return
+
+  private void lambda$apply$0(net.minecraft.resources.Identifier, com.google.gson.JsonElement);
+    Code:
+         0: aload_1
+         1: invokestatic  #160                // Method net/conczin/mca/resources/BodySkinList.getGenderFromPath:(Lnet/minecraft/resources/Identifier;)Lnet/conczin/mca/entity/ai/relationship/Gender;
+         4: astore_3
+         5: aload_1
+         6: aload_2
+         7: invokestatic  #166                // Method net/conczin/mca/resources/SkinListJson.entries:(Lnet/minecraft/resources/Identifier;Lcom/google/gson/JsonElement;)Ljava/util/List;
+        10: invokeinterface #172,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        15: astore        4
+        17: aload         4
+        19: invokeinterface #178,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        24: ifeq          174
+        27: aload         4
+        29: invokeinterface #184,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        34: checkcast     #188                // class net/conczin/mca/resources/SkinListJson$Entry
+        37: astore        5
+        39: aload_3
+        40: aload         5
+        42: invokestatic  #190                // Method net/conczin/mca/resources/SkinListJson.resolveGender:(Lnet/conczin/mca/entity/ai/relationship/Gender;Lnet/conczin/mca/resources/SkinListJson$Entry;)Lnet/conczin/mca/entity/ai/relationship/Gender;
+        45: astore        6
+        47: aload         6
+        49: getstatic     #194                // Field net/conczin/mca/entity/ai/relationship/Gender.UNASSIGNED:Lnet/conczin/mca/entity/ai/relationship/Gender;
+        52: if_acmpne     74
+        55: getstatic     #200                // Field net/conczin/mca/MCA.LOGGER:Lorg/apache/logging/log4j/Logger;
+        58: ldc           #206                // String Invalid gender for clothing entry {} in {}
+        60: aload         5
+        62: invokevirtual #208                // Method net/conczin/mca/resources/SkinListJson$Entry.identifier:()Ljava/lang/String;
+        65: aload_1
+        66: invokeinterface #211,  4          // InterfaceMethod org/apache/logging/log4j/Logger.warn:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+        71: goto          17
+        74: aload         5
+        76: invokevirtual #217                // Method net/conczin/mca/resources/SkinListJson$Entry.metadata:()Lcom/google/gson/JsonObject;
+        79: astore        7
+        81: aload         7
+        83: ldc           #221                // String profession
+        85: invokevirtual #223                // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+        88: ifeq          115
+        91: aload         7
+        93: ldc           #221                // String profession
+        95: invokevirtual #229                // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+        98: invokevirtual #233                // Method com/google/gson/JsonElement.isJsonNull:()Z
+       101: ifne          115
+       104: aload         7
+       106: ldc           #221                // String profession
+       108: aconst_null
+       109: invokestatic  #238                // Method net/minecraft/util/GsonHelper.getAsString:(Lcom/google/gson/JsonObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       112: goto          116
+       115: aconst_null
+       116: astore        8
+       118: aload         7
+       120: ldc           #244                // String exclude
+       122: iconst_0
+       123: invokestatic  #246                // Method net/minecraft/util/GsonHelper.getAsBoolean:(Lcom/google/gson/JsonObject;Ljava/lang/String;Z)Z
+       126: istore        9
+       128: aload         7
+       130: ldc           #250                // String temperature
+       132: iconst_0
+       133: invokestatic  #252                // Method net/minecraft/util/GsonHelper.getAsInt:(Lcom/google/gson/JsonObject;Ljava/lang/String;I)I
+       136: istore        10
+       138: aload_0
+       139: getfield      #26                 // Field clothing:Ljava/util/HashMap;
+       142: aload         5
+       144: invokevirtual #208                // Method net/conczin/mca/resources/SkinListJson$Entry.identifier:()Ljava/lang/String;
+       147: new           #256                // class net/conczin/mca/resources/data/skin/Clothing
+       150: dup
+       151: aload         5
+       153: invokevirtual #208                // Method net/conczin/mca/resources/SkinListJson$Entry.identifier:()Ljava/lang/String;
+       156: aload         8
+       158: iload         10
+       160: iload         9
+       162: aload         6
+       164: invokespecial #258                // Method net/conczin/mca/resources/data/skin/Clothing."<init>":(Ljava/lang/String;Ljava/lang/String;IZLnet/conczin/mca/entity/ai/relationship/Gender;)V
+       167: invokevirtual #261                // Method java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       170: pop
+       171: goto          17
+       174: return
+
+  static {};
+    Code:
+         0: ldc           #7                  // String skins/clothing
+         2: invokestatic  #265                // Method net/conczin/mca/MCA.locate:(Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
+         5: putstatic     #269                // Field ID:Lnet/minecraft/resources/Identifier;
+         8: return
+}

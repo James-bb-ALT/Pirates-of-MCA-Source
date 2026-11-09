@@ -1,0 +1,6 @@
+fa64c8246785a9bca99b69396f903f9efd42f7df45c8f4a75bdb051ea7114403  CHANGELOG.md
+76b7ef391419b020b94327068ee2067664dd8bffe27a34c6702d3af7bbfbee90  piratesmca-11.1.1-alpha.17-evidence.zip
+007f42400d1ce98bc8bf595a1d6c2dc7fc4fd9014da47cc80cbc7237467ad72d  piratesmca-11.1.1-alpha.17-source-delta.zip
+ad02139fd9e1432832aea8fe5f4eae46b607bbf192866aa5c4179de1c764327b  piratesmca-11.1.1-alpha.17-sources.jar
+9b0db65b954595990794953bc9a3dcfddead762bbfdb9505ad5c66cf3614002e  piratesmca-11.1.1-alpha.17.jar
+c86f2bf2446231e59a28da9517cfff4cd283615b16b279e1018c8c455c5ae352  weapons_handheld.md

@@ -1,0 +1,39 @@
+{
+  "silent": false,
+  "auto": false,
+  "answers": [
+    {
+      "name": "offer_diplomacy",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_hostile_rival_flag.offer_diplomacy.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fight_together",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_hostile_rival_flag.fight_together.reply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "walk_away",
+      "results": [
+        {
+          "baseChance": 1,
+          "actions": {
+            "say": "piratesmca_hostile_rival_flag.walk_away.reply"
+          }
+        }
+      ]
+    }
+  ]
+}
